@@ -1,0 +1,100 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "tools": "工具",
+    "directory": "目录",
+    "blog": "博客",
+    "login": "登录",
+    "signup": "注册",
+    "settings": "设置",
+    "language": "语言",
+    "theme": "主题",
+    "development": "开发",
+    "developmentDesc": "代码编辑器、框架和开发工具",
+    "design": "设计",
+    "designDesc": "UI/UX设计工具、图形软件和创意应用程序",
+    "productivity": "生产力",
+    "productivityDesc": "任务管理、笔记和工作流优化工具",
+    "allCategories": "所有分类",
+    "allCategoriesDesc": "浏览所有工具分类"
+  },
+  "Homepage": {
+    "title": "发现优质工具",
+    "subtitle": "找到适合您工作流程的完美工具。浏览我们精心策划的开发工具、生产力应用等收藏。",
+    "browseTools": "浏览工具",
+    "viewDirectory": "查看目录",
+    "popularCategories": "热门分类",
+    "development": "开发",
+    "developmentDesc": "代码编辑器、框架和开发工具",
+    "productivity": "生产力",
+    "productivityDesc": "任务管理和生产力应用程序",
+    "design": "设计",
+    "designDesc": "设计工具和创意应用程序"
+  },
+  "Tools": {
+    "title": "所有工具",
+    "subtitle": "发现并探索我们完整的工具集合",
+    "featuredTools": "精选工具",
+    "allTools": "所有工具",
+    "featured": "精选"
+  },
+  "Directory": {
+    "title": "工具目录",
+    "subtitle": "按分类浏览工具，找到您工作流程所需的完美工具",
+    "totalTools": "工具总数",
+    "categories": "分类",
+    "featuredTools": "精选工具",
+    "toolsCount": "个工具",
+    "categories": {
+      "development": {
+        "name": "开发",
+        "description": "代码编辑器、框架、库和开发工具"
+      },
+      "design": {
+        "name": "设计",
+        "description": "UI/UX设计工具、图形软件和创意应用程序"
+      },
+      "productivity": {
+        "name": "生产力",
+        "description": "任务管理、笔记和工作流优化工具"
+      },
+      "analytics": {
+        "name": "数据分析",
+        "description": "数据分析、跟踪和商业智能工具"
+      },
+      "communication": {
+        "name": "沟通",
+        "description": "团队聊天、视频会议和协作平台"
+      },
+      "marketing": {
+        "name": "营销",
+        "description": "电子邮件营销、社交媒体和广告工具"
+      }
+    }
+  },
+  "Blog": {
+    "title": "我们的博客",
+    "subtitle": "有关最新工具和技术的见解、技巧和新闻",
+    "featuredArticles": "精选文章",
+    "recentArticles": "最新文章",
+    "readMore": "阅读更多",
+    "featured": "精选",
+    "stayUpdated": "保持更新",
+    "newsletterDesc": "获取最新文章和工具推荐，直接发送到您的收件箱。",
+    "emailPlaceholder": "输入您的邮箱",
+    "subscribe": "订阅",
+    "by": "作者："
+  },
+  "ToolDetail": {
+    "backToTools": "返回工具",
+    "visitWebsite": "访问网站",
+    "about": "关于",
+    "keyFeatures": "主要功能",
+    "pricing": "价格"
+  },
+  "CategoryDetail": {
+    "backToDirectory": "返回目录",
+    "toolsAvailable": "个可用工具",
+    "featuredTools": "精选工具"
+  }
+}

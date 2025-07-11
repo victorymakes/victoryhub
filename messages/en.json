@@ -1,0 +1,100 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "tools": "Tools",
+    "directory": "Directory",
+    "blog": "Blog",
+    "login": "Login",
+    "signup": "Sign up",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "development": "Development",
+    "developmentDesc": "Code editors, frameworks, and development tools",
+    "design": "Design",
+    "designDesc": "UI/UX design tools, graphics software, and creative applications",
+    "productivity": "Productivity",
+    "productivityDesc": "Task management, note-taking, and workflow optimization tools",
+    "allCategories": "All Categories",
+    "allCategoriesDesc": "Browse all tool categories"
+  },
+  "Homepage": {
+    "title": "Discover Amazing Tools",
+    "subtitle": "Find the perfect tools for your workflow. Browse our curated collection of development tools, productivity apps, and more.",
+    "browseTools": "Browse Tools",
+    "viewDirectory": "View Directory",
+    "popularCategories": "Popular Categories",
+    "development": "Development",
+    "developmentDesc": "Code editors, frameworks, and development tools",
+    "productivity": "Productivity",
+    "productivityDesc": "Task management and productivity applications",
+    "design": "Design",
+    "designDesc": "Design tools and creative applications"
+  },
+  "Tools": {
+    "title": "All Tools",
+    "subtitle": "Discover and explore our complete collection of tools",
+    "featuredTools": "Featured Tools",
+    "allTools": "All Tools",
+    "featured": "Featured"
+  },
+  "Directory": {
+    "title": "Tool Directory",
+    "subtitle": "Browse tools by category to find exactly what you need for your workflow",
+    "totalTools": "Total Tools",
+    "categories": "Categories",
+    "featuredTools": "Featured Tools",
+    "toolsCount": "tools",
+    "categories": {
+      "development": {
+        "name": "Development",
+        "description": "Code editors, frameworks, libraries, and development tools"
+      },
+      "design": {
+        "name": "Design",
+        "description": "UI/UX design tools, graphics software, and creative applications"
+      },
+      "productivity": {
+        "name": "Productivity",
+        "description": "Task management, note-taking, and workflow optimization tools"
+      },
+      "analytics": {
+        "name": "Analytics",
+        "description": "Data analysis, tracking, and business intelligence tools"
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Team chat, video conferencing, and collaboration platforms"
+      },
+      "marketing": {
+        "name": "Marketing",
+        "description": "Email marketing, social media, and advertising tools"
+      }
+    }
+  },
+  "Blog": {
+    "title": "Our Blog",
+    "subtitle": "Insights, tips, and news about the latest tools and technologies",
+    "featuredArticles": "Featured Articles",
+    "recentArticles": "Recent Articles",
+    "readMore": "Read More",
+    "featured": "Featured",
+    "stayUpdated": "Stay Updated",
+    "newsletterDesc": "Get the latest articles and tool recommendations delivered to your inbox.",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "by": "By"
+  },
+  "ToolDetail": {
+    "backToTools": "Back to Tools",
+    "visitWebsite": "Visit Website",
+    "about": "About",
+    "keyFeatures": "Key Features",
+    "pricing": "Pricing"
+  },
+  "CategoryDetail": {
+    "backToDirectory": "Back to Directory",
+    "toolsAvailable": "tools available",
+    "featuredTools": "Featured Tools"
+  }
+}
