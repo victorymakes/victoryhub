@@ -1,0 +1,100 @@
+{
+  "Navigation": {
+    "home": "홈",
+    "tools": "도구",
+    "directory": "디렉토리",
+    "blog": "블로그",
+    "login": "로그인",
+    "signup": "회원가입",
+    "settings": "설정",
+    "language": "언어",
+    "theme": "테마",
+    "development": "개발",
+    "developmentDesc": "코드 에디터, 프레임워크, 개발 도구",
+    "design": "디자인",
+    "designDesc": "UI/UX 디자인 도구, 그래픽 소프트웨어, 크리에이티브 애플리케이션",
+    "productivity": "생산성",
+    "productivityDesc": "작업 관리, 메모 작성, 워크플로우 최적화 도구",
+    "allCategories": "모든 카테고리",
+    "allCategoriesDesc": "모든 도구 카테고리 탐색"
+  },
+  "Homepage": {
+    "title": "놀라운 도구 발견하기",
+    "subtitle": "워크플로우에 완벽한 도구를 찾아보세요. 엄선된 개발 도구, 생산성 앱 등의 컬렉션을 둘러보세요.",
+    "browseTools": "도구 둘러보기",
+    "viewDirectory": "디렉토리 보기",
+    "popularCategories": "인기 카테고리",
+    "development": "개발",
+    "developmentDesc": "코드 에디터, 프레임워크, 개발 도구",
+    "productivity": "생산성",
+    "productivityDesc": "작업 관리 및 생산성 애플리케이션",
+    "design": "디자인",
+    "designDesc": "디자인 도구 및 크리에이티브 애플리케이션"
+  },
+  "Tools": {
+    "title": "모든 도구",
+    "subtitle": "완전한 도구 컬렉션을 발견하고 탐색하세요",
+    "featuredTools": "추천 도구",
+    "allTools": "모든 도구",
+    "featured": "추천"
+  },
+  "Directory": {
+    "title": "도구 디렉토리",
+    "subtitle": "카테고리별로 도구를 탐색하여 워크플로우에 필요한 것을 정확히 찾아보세요",
+    "totalTools": "총 도구 수",
+    "categories": "카테고리",
+    "featuredTools": "추천 도구",
+    "toolsCount": "개 도구",
+    "categories": {
+      "development": {
+        "name": "개발",
+        "description": "코드 에디터, 프레임워크, 라이브러리 및 개발 도구"
+      },
+      "design": {
+        "name": "디자인",
+        "description": "UI/UX 디자인 도구, 그래픽 소프트웨어 및 크리에이티브 애플리케이션"
+      },
+      "productivity": {
+        "name": "생산성",
+        "description": "작업 관리, 메모 작성 및 워크플로우 최적화 도구"
+      },
+      "analytics": {
+        "name": "분석",
+        "description": "데이터 분석, 추적 및 비즈니스 인텔리전스 도구"
+      },
+      "communication": {
+        "name": "소통",
+        "description": "팀 채팅, 화상 회의 및 협업 플랫폼"
+      },
+      "marketing": {
+        "name": "마케팅",
+        "description": "이메일 마케팅, 소셜 미디어 및 광고 도구"
+      }
+    }
+  },
+  "Blog": {
+    "title": "블로그",
+    "subtitle": "최신 도구와 기술에 대한 통찰, 팁, 뉴스",
+    "featuredArticles": "추천 기사",
+    "recentArticles": "최신 기사",
+    "readMore": "더 읽기",
+    "featured": "추천",
+    "stayUpdated": "최신 정보 받기",
+    "newsletterDesc": "최신 기사와 도구 추천을 받은편지함으로 직접 받아보세요.",
+    "emailPlaceholder": "이메일을 입력하세요",
+    "subscribe": "구독",
+    "by": "작성자:"
+  },
+  "ToolDetail": {
+    "backToTools": "도구로 돌아가기",
+    "visitWebsite": "웹사이트 방문",
+    "about": "소개",
+    "keyFeatures": "주요 기능",
+    "pricing": "가격"
+  },
+  "CategoryDetail": {
+    "backToDirectory": "디렉토리로 돌아가기",
+    "toolsAvailable": "개의 사용 가능한 도구",
+    "featuredTools": "추천 도구"
+  }
+}

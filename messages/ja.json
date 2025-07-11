@@ -1,0 +1,100 @@
+{
+  "Navigation": {
+    "home": "ホーム",
+    "tools": "ツール",
+    "directory": "ディレクトリ",
+    "blog": "ブログ",
+    "login": "ログイン",
+    "signup": "サインアップ",
+    "settings": "設定",
+    "language": "言語",
+    "theme": "テーマ",
+    "development": "開発",
+    "developmentDesc": "コードエディタ、フレームワーク、開発ツール",
+    "design": "デザイン",
+    "designDesc": "UI/UXデザインツール、グラフィックソフトウェア、クリエイティブアプリケーション",
+    "productivity": "生産性",
+    "productivityDesc": "タスク管理、ノート取り、ワークフロー最適化ツール",
+    "allCategories": "全カテゴリ",
+    "allCategoriesDesc": "すべてのツールカテゴリを参照"
+  },
+  "Homepage": {
+    "title": "素晴らしいツールを発見",
+    "subtitle": "ワークフローに最適なツールを見つけてください。厳選された開発ツール、生産性アプリなどのコレクションをご覧ください。",
+    "browseTools": "ツールを見る",
+    "viewDirectory": "ディレクトリを見る",
+    "popularCategories": "人気カテゴリ",
+    "development": "開発",
+    "developmentDesc": "コードエディタ、フレームワーク、開発ツール",
+    "productivity": "生産性",
+    "productivityDesc": "タスク管理と生産性アプリケーション",
+    "design": "デザイン",
+    "designDesc": "デザインツールとクリエイティブアプリケーション"
+  },
+  "Tools": {
+    "title": "すべてのツール",
+    "subtitle": "完全なツールコレクションを発見し、探索してください",
+    "featuredTools": "注目のツール",
+    "allTools": "すべてのツール",
+    "featured": "注目"
+  },
+  "Directory": {
+    "title": "ツールディレクトリ",
+    "subtitle": "カテゴリ別にツールを参照して、ワークフローに必要なものを正確に見つけてください",
+    "totalTools": "総ツール数",
+    "categories": "カテゴリ",
+    "featuredTools": "注目のツール",
+    "toolsCount": "ツール",
+    "categories": {
+      "development": {
+        "name": "開発",
+        "description": "コードエディタ、フレームワーク、ライブラリ、開発ツール"
+      },
+      "design": {
+        "name": "デザイン",
+        "description": "UI/UXデザインツール、グラフィックソフトウェア、クリエイティブアプリケーション"
+      },
+      "productivity": {
+        "name": "生産性",
+        "description": "タスク管理、ノート取り、ワークフロー最適化ツール"
+      },
+      "analytics": {
+        "name": "アナリティクス",
+        "description": "データ分析、トラッキング、ビジネスインテリジェンスツール"
+      },
+      "communication": {
+        "name": "コミュニケーション",
+        "description": "チームチャット、ビデオ会議、コラボレーションプラットフォーム"
+      },
+      "marketing": {
+        "name": "マーケティング",
+        "description": "メールマーケティング、ソーシャルメディア、広告ツール"
+      }
+    }
+  },
+  "Blog": {
+    "title": "私たちのブログ",
+    "subtitle": "最新ツールとテクノロジーに関する洞察、ヒント、ニュース",
+    "featuredArticles": "注目記事",
+    "recentArticles": "最新記事",
+    "readMore": "続きを読む",
+    "featured": "注目",
+    "stayUpdated": "最新情報を入手",
+    "newsletterDesc": "最新記事とツール推奨事項を受信トレイに直接お届けします。",
+    "emailPlaceholder": "メールアドレスを入力",
+    "subscribe": "購読",
+    "by": "著者："
+  },
+  "ToolDetail": {
+    "backToTools": "ツールに戻る",
+    "visitWebsite": "ウェブサイトを訪問",
+    "about": "について",
+    "keyFeatures": "主な機能",
+    "pricing": "価格"
+  },
+  "CategoryDetail": {
+    "backToDirectory": "ディレクトリに戻る",
+    "toolsAvailable": "利用可能ツール",
+    "featuredTools": "注目のツール"
+  }
+}
