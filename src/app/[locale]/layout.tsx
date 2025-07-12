@@ -5,7 +5,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-import {Navbar1} from "@/components/Navigation";
+import {Navbar1} from "@/components/navigation";
 import {ThemeProvider} from "@/components/theme-provider";
 
 const geistSans = Geist({

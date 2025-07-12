@@ -1,7 +1,7 @@
 import {Book, Code, Menu, Palette, Zap} from "lucide-react";
-import Container from "@/components/Container";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { LanguageToggle } from "@/components/LanguageToggle";
+import Container from "@/components/container";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageToggle } from "@/components/language-toggle";
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 
