@@ -132,15 +132,15 @@ const Navbar1 = async ({
           </div>
           <div className="flex items-center gap-3">
             {/* Language and Theme toggles */}
-            <LanguageToggle />
             <ThemeToggle />
+            <LanguageToggle />
 
             {/* Auth buttons */}
             <div className="flex gap-2 ml-2">
-              <Button asChild variant="outline" size="sm">
+              <Button asChild variant="outline">
                 <a href={auth.login.url}>{auth.login.title}</a>
               </Button>
-              <Button asChild size="sm">
+              <Button asChild>
                 <a href={auth.signup.url}>{auth.signup.title}</a>
               </Button>
             </div>

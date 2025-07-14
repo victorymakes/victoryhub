@@ -7,6 +7,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import {Navbar1} from "@/components/navigation";
 import {ThemeProvider} from "@/components/theme-provider";
+import Container from "@/components/container";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -49,7 +50,11 @@ export default async function LocaleLayout({
                 disableTransitionOnChange
             >
                 <Navbar1/>
-                {children}
+                <div className="min-h-screen bg-background">
+                    <Container className="py-8">
+                        {children}
+                    </Container>
+                </div>
             </ThemeProvider>
         </NextIntlClientProvider>
         </body>

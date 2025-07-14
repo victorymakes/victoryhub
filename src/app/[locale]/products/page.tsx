@@ -5,13 +5,6 @@ import { Link } from '@/i18n/navigation';
 // Mock data - in a real app, this would come from a database or API
 const tools = [
 	{
-		slug: "uuid-generator",
-		name: "UUID Generator",
-		description: "A powerful, lightweight code editor with extensive extension support",
-		category: "Development",
-		featured: true,
-	},
-	{
 		slug: "visual-studio-code",
 		name: "Visual Studio Code",
 		description: "A powerful, lightweight code editor with extensive extension support",
