@@ -1,0 +1,45 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "UUID Generator",
+    "description": "Generate unique identifiers for your applications",
+    "category": "Development",
+    "keywords": [
+      "uuid generator",
+      "generate uuid",
+      "uuid v4 online"
+    ],
+    "faq": [
+      {
+        "question": "What is UUID v4?",
+        "answer": "UUID v4 is a universally unique identifier generated using random numbers."
+      },
+      {
+        "question": "Is this tool secure?",
+        "answer": "Yes. UUIDs are generated locally using the crypto module and are not sent to any server."
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "Timestamp Converter",
+    "description": "Convert between timestamp and human-readable date formats",
+    "category": "Development",
+    "keywords": [
+      "unix timestamp converter",
+      "epoch to date",
+      "timestamp to datetime",
+      "convert unix time"
+    ],
+    "faq": [
+      {
+        "question": "What is a Unix timestamp?",
+        "answer": "A Unix timestamp is the number of seconds that have elapsed since January 1, 1970 (UTC)."
+      },
+      {
+        "question": "Can I convert both ways?",
+        "answer": "Yes. You can convert both from and to Unix timestamps."
+      }
+    ]
+  }
+]

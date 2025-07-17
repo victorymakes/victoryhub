@@ -1,24 +1,10 @@
 "use client";
 
-import {FC, useState} from "react";
-import {Button} from "@/components/ui/button";
-import {Input} from "@/components/ui/input";
-import {tools} from "@/lib/tools";
+import { FC, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
-interface ToolComponentProps {
-    tool: (typeof tools)[number];
-}
-
-export const ToolComponent: FC<ToolComponentProps> = ({tool}) => {
-    switch (tool.slug) {
-        case "uuid-generator":
-            return <UuidGenerator/>;
-        default:
-            return <p className="text-muted-foreground text-sm">This tool is under construction.</p>;
-    }
-};
-
-const UuidGenerator: FC = () => {
+export const UuidGenerator: FC = () => {
     const [uuid, setUuid] = useState<string>("");
 
     const generate = () => {
