@@ -1,32 +1,33 @@
 import { notFound } from "next/navigation";
-import { tools } from "@/lib/tools";
 import { Metadata } from "next";
-import { ToolComponent } from "@/components/tools/tool";
-import Container from "@/components/container";
+import { ToolComponent } from "@/components/tool/tool";
+import Container from "@/components/layout/container";
+import {getTool} from "@/service/tool-service";
 
 interface ToolPageProps {
   params: {
     slug: string;
+    locale: string;
   };
 }
 
 export async function generateMetadata({ params }: ToolPageProps): Promise<Metadata> {
-  const tool = tools.find((t) => t.slug === params.slug);
+  const tool = getTool(params.slug, params.locale);
   if (!tool) return {};
   return {
-    title: tool.title,
+    title: tool.name,
     description: tool.description,
     keywords: tool.keywords,
   };
 }
 
 export default async function ToolPage({ params }: ToolPageProps) {
-  const tool = tools.find((t) => t.slug === params.slug);
+  const tool = getTool(params.slug, params.locale);
   if (!tool) return notFound();
 
   return (
       <Container>
-        <h1 className="text-2xl font-bold mb-2">{tool.title}</h1>
+        <h1 className="text-2xl font-bold mb-2">{tool.name}</h1>
         <p className="text-muted-foreground mb-6">{tool.description}</p>
 
         {/* Ad Slot */}
@@ -35,7 +36,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         {/*</div>*/}
 
         {/* Tool Component (can switch by slug or pass in tool) */}
-        <ToolComponent tool={tool} />
+        <ToolComponent id={tool.slug} />
 
         {/* FAQ Section */}
         <div className="mt-8 space-y-4">

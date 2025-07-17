@@ -1,7 +1,7 @@
 import {Book, Code, Menu, Palette, Zap} from "lucide-react";
-import Container from "@/components/container";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { LanguageToggle } from "@/components/language-toggle";
+import Container from "@/components/layout/container";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { LanguageToggle } from "@/components/layout/language-toggle";
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 
@@ -68,7 +68,7 @@ const Navbar1 = async ({
 
   const menu = [
     {title: t('home'), url: "/"},
-    {title: t('tools'), url: "/tools"},
+    {title: t('tools'), url: "/tool"},
     {
       title: t('directory'),
       url: "/directory",

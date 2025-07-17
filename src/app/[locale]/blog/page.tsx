@@ -1,4 +1,4 @@
-import Container from "@/components/container";
+import Container from "@/components/layout/container";
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 

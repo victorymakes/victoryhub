@@ -5,9 +5,9 @@ import {Geist, Geist_Mono} from "next/font/google";
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-import {Navbar1} from "@/components/navigation";
-import {ThemeProvider} from "@/components/theme-provider";
-import Container from "@/components/container";
+import {Navbar1} from "@/components/layout/navigation";
+import {ThemeProvider} from "@/components/layout/theme-provider";
+import Container from "@/components/layout/container";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
