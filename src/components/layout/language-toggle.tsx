@@ -5,15 +5,15 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
-import {Globe} from "lucide-react";
-import {useLocale} from "next-intl";
-import {useRouter, usePathname} from "@/i18n/navigation";
+import { Button } from "@/components/ui/button";
+import { useLocale } from "next-intl";
+import { useRouter, usePathname } from "@/i18n/navigation";
 
 const languages = [
-    {code: "en", name: "English", flag: "🇺🇸"},
-    {code: "zh", name: "中文", flag: "🇨🇳"},
-    {code: "ja", name: "日本語", flag: "🇯🇵"},
-    {code: "ko", name: "한국어", flag: "🇰🇷"},
+    { code: "en", name: "English", flag: "🇺🇸" },
+    { code: "zh", name: "中文", flag: "🇨🇳" },
+    { code: "ja", name: "日本語", flag: "🇯🇵" },
+    { code: "ko", name: "한국어", flag: "🇰🇷" },
 ];
 
 export function LanguageToggle() {
@@ -24,18 +24,25 @@ export function LanguageToggle() {
         languages.find((lang) => lang.code === locale) || languages[0];
 
     const handleLanguageChange = (language: { code: string }) => {
-        router.push(pathname, {locale: language.code});
+        router.push(pathname, { locale: language.code });
     };
 
     return (
         <Popover>
-            <PopoverTrigger
-                className="flex items-center gap-2 h-9 px-3 rounded-md border text-sm hover:bg-muted transition">
-                <Globe className="h-4 w-4"/>
-                <span className="hidden sm:inline">{currentLanguage.flag}</span>
+            <PopoverTrigger asChild>
+                <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-9 w-9 rounded-full"
+                >
+                    <span className="text-2xl">{currentLanguage.flag}</span>
+                    <span className="sr-only">Change language</span>
+                </Button>
             </PopoverTrigger>
-            <PopoverContent align="start"
-                            className="w-52 p-2 bg-popover border border-border rounded-xl shadow-xl space-y-1">
+            <PopoverContent
+                align="start"
+                className="w-52 p-2 bg-popover border border-border rounded-xl shadow-xl space-y-1"
+            >
                 {languages.map((language) => (
                     <button
                         key={language.code}
@@ -49,7 +56,9 @@ export function LanguageToggle() {
                         <span className="text-lg">{language.flag}</span>
                         <span>{language.name}</span>
                         {currentLanguage.code === language.code && (
-                            <span className="ml-auto text-xs text-muted-foreground">✓</span>
+                            <span className="ml-auto text-xs text-muted-foreground">
+                                ✓
+                            </span>
                         )}
                     </button>
                 ))}

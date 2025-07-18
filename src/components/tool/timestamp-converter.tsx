@@ -26,7 +26,7 @@ export const TimestampConverter: FC = () => {
         try {
             const ts = parseInt(timestamp);
             if (isNaN(ts)) {
-                alert('Please enter a valid timestamp');
+                alert("Please enter a valid timestamp");
                 return;
             }
 
@@ -34,7 +34,7 @@ export const TimestampConverter: FC = () => {
             const date = new Date(ts < 10000000000 ? ts * 1000 : ts);
             setDateTime(date.toLocaleString());
         } catch {
-            alert('Invalid timestamp format');
+            alert("Invalid timestamp format");
         }
     };
 
@@ -42,12 +42,12 @@ export const TimestampConverter: FC = () => {
         try {
             const date = new Date(dateTime);
             if (isNaN(date.getTime())) {
-                alert('Please enter a valid date format');
+                alert("Please enter a valid date format");
                 return;
             }
             setTimestamp(Math.floor(date.getTime() / 1000).toString());
         } catch {
-            alert('Invalid date format');
+            alert("Invalid date format");
         }
     };
 
@@ -70,8 +70,14 @@ export const TimestampConverter: FC = () => {
             {/* Current Time Display */}
             <div className="bg-muted/50 rounded-lg p-4">
                 <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">Current Timestamp: {currentTimestamp}</span>
-                    <Button onClick={useCurrentTimestamp} variant="outline" size="sm">
+                    <span className="text-sm text-muted-foreground">
+                        Current Timestamp: {currentTimestamp}
+                    </span>
+                    <Button
+                        onClick={useCurrentTimestamp}
+                        variant="outline"
+                        size="sm"
+                    >
                         Use Current
                     </Button>
                 </div>
@@ -90,7 +96,11 @@ export const TimestampConverter: FC = () => {
                     <Button onClick={convertTimestampToDate} variant="default">
                         Convert to Date
                     </Button>
-                    <Button onClick={copyTimestamp} variant="secondary" disabled={!timestamp}>
+                    <Button
+                        onClick={copyTimestamp}
+                        variant="secondary"
+                        disabled={!timestamp}
+                    >
                         Copy
                     </Button>
                 </div>
@@ -115,7 +125,11 @@ export const TimestampConverter: FC = () => {
                     <Button onClick={convertDateToTimestamp} variant="default">
                         Convert to Timestamp
                     </Button>
-                    <Button onClick={copyDateTime} variant="secondary" disabled={!dateTime}>
+                    <Button
+                        onClick={copyDateTime}
+                        variant="secondary"
+                        disabled={!dateTime}
+                    >
                         Copy
                     </Button>
                 </div>
