@@ -19,9 +19,13 @@ export const UuidGenerator: FC = () => {
     return (
         <div className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-3">
-                <Input readOnly value={uuid} className="flex-1"/>
-                <Button onClick={generate} variant="default">Generate UUID</Button>
-                <Button onClick={copy} variant="secondary" disabled={!uuid}>Copy</Button>
+                <Input readOnly value={uuid} className="flex-1" />
+                <Button onClick={generate} variant="default">
+                    Generate UUID
+                </Button>
+                <Button onClick={copy} variant="secondary" disabled={!uuid}>
+                    Copy
+                </Button>
             </div>
         </div>
     );

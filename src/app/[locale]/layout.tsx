@@ -1,13 +1,12 @@
 import "../globals.css";
 
-import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
-import {hasLocale, NextIntlClientProvider} from 'next-intl';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
-import {Navbar1} from "@/components/layout/navigation";
-import {ThemeProvider} from "@/components/layout/theme-provider";
-import Container from "@/components/layout/container";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { Navbar1 } from "@/components/layout/navigation";
+import { ThemeProvider } from "@/components/layout/theme-provider";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -25,39 +24,35 @@ export const metadata: Metadata = {
 };
 
 export default async function LocaleLayout({
-                                               children,
-                                               params
-                                           }: {
+    children,
+    params,
+}: {
     children: React.ReactNode;
     params: Promise<{ locale: string }>;
 }) {
     // Ensure that the incoming `locale` is valid
-    const {locale} = await params;
+    const { locale } = await params;
     if (!hasLocale(routing.locales, locale)) {
         notFound();
     }
 
     return (
         <html lang={locale} suppressHydrationWarning>
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-        <NextIntlClientProvider>
-            <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <Navbar1/>
-                <div className="min-h-screen bg-background">
-                    <Container className="py-8">
+                <NextIntlClientProvider>
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
+                        <Navbar1 />
                         {children}
-                    </Container>
-                </div>
-            </ThemeProvider>
-        </NextIntlClientProvider>
-        </body>
+                    </ThemeProvider>
+                </NextIntlClientProvider>
+            </body>
         </html>
     );
 }

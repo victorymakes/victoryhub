@@ -10,7 +10,7 @@ interface Tool {
     }>;
 }
 
-export const getTools = async (locale: string = 'en'): Promise<Tool[]> => {
+export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
     try {
         // Try to import the locale-specific file
         const tools = await import(`../../data/tool/${locale}.json`);
@@ -22,7 +22,10 @@ export const getTools = async (locale: string = 'en'): Promise<Tool[]> => {
     }
 };
 
-export const getTool = async (slug: string, locale: string = 'en'): Promise<Tool | null> => {
+export const getTool = async (
+    slug: string,
+    locale: string = "en",
+): Promise<Tool | null> => {
     const tools = await getTools(locale);
-    return tools.find(tool => tool.slug === slug) || null;
+    return tools.find((tool) => tool.slug === slug) || null;
 };
