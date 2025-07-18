@@ -4,6 +4,7 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { LanguageToggle } from "@/components/layout/language-toggle";
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 
 import {
     Accordion,
@@ -172,7 +173,7 @@ const Navbar1 = async ({
                   <SheetHeader>
                     <SheetTitle>
                       <Link href={logo.url} className="flex items-center gap-2">
-                        <img src={logo.src} className="max-h-8" alt={logo.alt}/>
+                        <Image src={logo.src} width={32} height={32} className="max-h-8" alt={logo.alt}/>
                       </Link>
                     </SheetTitle>
                   </SheetHeader>
