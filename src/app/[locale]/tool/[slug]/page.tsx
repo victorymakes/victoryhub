@@ -5,14 +5,15 @@ import Container from "@/components/layout/container";
 import {getTool} from "@/service/tool-service";
 
 interface ToolPageProps {
-  params: {
+  params: Promise<{
     slug: string;
     locale: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: ToolPageProps): Promise<Metadata> {
-  const tool = getTool(params.slug, params.locale);
+  const resolvedParams = await params;
+  const tool = await getTool(resolvedParams.slug, resolvedParams.locale);
   if (!tool) return {};
   return {
     title: tool.name,
@@ -22,7 +23,8 @@ export async function generateMetadata({ params }: ToolPageProps): Promise<Metad
 }
 
 export default async function ToolPage({ params }: ToolPageProps) {
-  const tool = getTool(params.slug, params.locale);
+  const resolvedParams = await params;
+  const tool = await getTool(resolvedParams.slug, resolvedParams.locale);
   if (!tool) return notFound();
 
   return (
@@ -30,13 +32,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         <h1 className="text-2xl font-bold mb-2">{tool.name}</h1>
         <p className="text-muted-foreground mb-6">{tool.description}</p>
 
-        {/* Ad Slot */}
-        {/*<div id="ad-1" className="mb-6 w-full h-[90px] bg-muted rounded-md flex items-center justify-center text-xs text-muted-foreground">*/}
-        {/*  AD Slot*/}
-        {/*</div>*/}
-
-        {/* Tool Component (can switch by slug or pass in tool) */}
-        <ToolComponent id={tool.slug} />
+        <ToolComponent id={resolvedParams.slug} />
 
         {/* FAQ Section */}
         <div className="mt-8 space-y-4">
@@ -48,11 +44,6 @@ export default async function ToolPage({ params }: ToolPageProps) {
               </div>
           ))}
         </div>
-
-        {/* Ad Slot Bottom */}
-        {/*<div id="ad-2" className="mt-10 w-full h-[90px] bg-muted rounded-md flex items-center justify-center text-xs text-muted-foreground">*/}
-        {/*  AD Slot*/}
-        {/*</div>*/}
       </Container>
   );
 }

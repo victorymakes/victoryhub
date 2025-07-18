@@ -5,14 +5,15 @@ import {getTools} from "@/service/tool-service";
 
 
 interface ToolsPageProps {
-	params: {
+	params: Promise<{
 		locale: string;
-	};
+	}>;
 }
 
 export default async function ToolsPage({ params }: ToolsPageProps) {
+	const resolvedParams = await params;
 	const t = await getTranslations('Tools');
-	const tools = getTools(params.locale);
+	const tools = await getTools(resolvedParams.locale);
 
 	// Group tools by category
 	const toolsByCategory = tools.reduce((acc, tool) => {

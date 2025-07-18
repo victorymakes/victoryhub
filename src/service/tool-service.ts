@@ -1,7 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-
-interface ToolService {
+interface Tool {
     slug: string;
     name: string;
     description: string;
@@ -13,17 +10,19 @@ interface ToolService {
     }>;
 }
 
-export const getTools = (locale: string = 'en'): ToolService[] => {
-    // Check if the locale file exists, fallback to English if not
-    const localePath = path.join(process.cwd(), 'data', 'tool', `${locale}.json`);
-    const fallbackPath = path.join(process.cwd(), 'data', 'tool', 'en.json');
-
-    const filePath = fs.existsSync(localePath) ? localePath : fallbackPath;
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(fileContent);
+export const getTools = async (locale: string = 'en'): Promise<Tool[]> => {
+    try {
+        // Try to import the locale-specific file
+        const tools = await import(`../../data/tool/${locale}.json`);
+        return tools.default;
+    } catch {
+        // Fallback to English if locale file doesn't exist
+        const tools = await import(`../../data/tool/en.json`);
+        return tools.default;
+    }
 };
 
-export const getTool = (slug: string, locale: string = 'en'): ToolService | null => {
-    const tools = getTools(locale);
+export const getTool = async (slug: string, locale: string = 'en'): Promise<Tool | null> => {
+    const tools = await getTools(locale);
     return tools.find(tool => tool.slug === slug) || null;
 };
