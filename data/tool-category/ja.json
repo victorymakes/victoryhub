@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "all",
+    "name": "全ツール",
+    "description": "すべてのカテゴリのツールを表示",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "開発",
+    "description": "UUID生成器、タイムスタンプ変換器、URLエンコーダー/デコーダーなどの開発者向けユーティリティ",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "セキュリティ",
+    "description": "パスワード生成器やIPチェッカーなどのセキュリティとプライバシーツール",
+    "icon": "lock"
+  }
+]
+

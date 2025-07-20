@@ -175,24 +175,6 @@ export default async function BlogPage() {
                         ))}
                     </div>
                 </div>
-
-                {/* Newsletter Signup */}
-                <div className="mt-16 bg-primary rounded-lg p-8 text-center text-primary-foreground">
-                    <h3 className="text-2xl font-bold mb-4">
-                        {t("stayUpdated")}
-                    </h3>
-                    <p className="mb-6">{t("newsletterDesc")}</p>
-                    <div className="max-w-md mx-auto flex gap-4">
-                        <input
-                            type="email"
-                            placeholder={t("emailPlaceholder")}
-                            className="flex-1 px-4 py-2 rounded-lg text-foreground bg-background focus:outline-none focus:ring-2 focus:ring-primary-foreground"
-                        />
-                        <button className="bg-background text-foreground px-6 py-2 rounded-lg font-medium hover:bg-muted transition-colors">
-                            {t("subscribe")}
-                        </button>
-                    </div>
-                </div>
             </Container>
         </div>
     );

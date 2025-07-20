@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "UUID生成器",
+    "description": "为您的应用程序生成唯一标识符",
+    "category": "development",
+    "keywords": [
+      "uuid生成器",
+      "生成uuid",
+      "uuid v4在线"
+    ],
+    "faq": [
+      {
+        "question": "什么是UUID v4？",
+        "answer": "UUID v4是使用随机数生成的通用唯一标识符。"
+      },
+      {
+        "question": "这个工具安全吗？",
+        "answer": "是的。UUID使用crypto模块在本地生成，不会发送到任何服务器。"
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "时间戳转换器",
+    "description": "在时间戳和人类可读的日期格式之间转换",
+    "category": "development",
+    "keywords": [
+      "unix时间戳转换器",
+      "纪元转日期",
+      "时间戳转日期时间",
+      "转换unix时间"
+    ],
+    "faq": [
+      {
+        "question": "什么是Unix时间戳？",
+        "answer": "Unix时间戳是自1970年1月1日（UTC）以来经过的秒数。"
+      },
+      {
+        "question": "可以双向转换吗？",
+        "answer": "是的。您可以从Unix时间戳转换到日期，也可以从日期转换到Unix时间戳。"
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "我的IP地址",
+    "description": "快速检查您的公网IP地址和位置信息",
+    "category": "security",
+    "keywords": [
+      "ip地址检查器",
+      "查找我的ip",
+      "公网ip",
+      "我的ip是什么",
+      "ip查询"
+    ],
+    "faq": [
+      {
+        "question": "这个工具显示什么信息？",
+        "answer": "这个工具显示您的公网IP地址、IP版本（IPv4/IPv6）、大致位置和ISP信息。"
+      },
+      {
+        "question": "使用这个工具时我的隐私受到保护吗？",
+        "answer": "是的。您的IP地址仅用于向您显示信息，不会被存储或与第三方共享。"
+      },
+      {
+        "question": "为什么我需要知道我的IP地址？",
+        "answer": "了解您的IP地址对于网络故障排除、配置远程连接或验证VPN功能很有用。"
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "密码生成器",
+    "description": "生成具有可自定义选项的安全随机密码",
+    "category": "security",
+    "keywords": [
+      "密码生成器",
+      "安全密码",
+      "随机密码",
+      "强密码",
+      "密码创建器"
+    ],
+    "faq": [
+      {
+        "question": "生成的密码有多安全？",
+        "answer": "密码使用加密安全的随机数生成，不会存储在任何地方。"
+      },
+      {
+        "question": "我可以自定义密码选项吗？",
+        "answer": "是的，您可以调整长度，包含/排除大写字母、小写字母、数字和特殊字符。"
+      },
+      {
+        "question": "什么是强密码？",
+        "answer": "强密码应该长（12个字符以上），使用混合字符类型，并且每个账户都是唯一的。"
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "URL编码器/解码器",
+    "description": "为Web开发编码和解码URL及URL组件",
+    "category": "development",
+    "keywords": [
+      "url编码器",
+      "url解码器",
+      "百分号编码",
+      "uri编码",
+      "uri解码",
+      "web开发"
+    ],
+    "faq": [
+      {
+        "question": "什么是URL编码？",
+        "answer": "URL编码通过将不安全的ASCII字符替换为'%'后跟两位十六进制数字，将字符转换为可通过互联网传输的格式。"
+      },
+      {
+        "question": "什么时候应该使用URL编码？",
+        "answer": "当您需要在URL、表单数据或查询参数中包含特殊字符时使用URL编码。"
+      },
+      {
+        "question": "这个工具对敏感数据安全吗？",
+        "answer": "是的，所有编码和解码都在您的浏览器中本地执行。不会向任何服务器发送数据。"
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Base64编码器/解码器",
+    "description": "为数据传输和存储编码和解码Base64字符串",
+    "category": "development",
+    "keywords": [
+      "base64编码器",
+      "base64解码器",
+      "base64编码",
+      "base64解码",
+      "数据编码",
+      "web开发"
+    ],
+    "faq": [
+      {
+        "question": "什么是Base64编码？",
+        "answer": "Base64是一种二进制到文本的编码方案，使用64字符集（A-Z、a-z、0-9、+、/）以ASCII字符表示二进制数据。"
+      },
+      {
+        "question": "什么时候应该使用Base64编码？",
+        "answer": "Base64常用于电子邮件中的二进制数据编码、在HTML/CSS中嵌入图像、API令牌和数据URL。"
+      },
+      {
+        "question": "这个工具对敏感数据安全吗？",
+        "answer": "是的，所有编码和解码都在您的浏览器中本地进行。但是，Base64是编码而不是加密 - 不要用它来保护敏感数据。"
+      }
+    ]
+  }
+]
+

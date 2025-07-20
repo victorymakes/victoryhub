@@ -1,7 +1,8 @@
 import Container from "@/components/layout/container";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getTools } from "@/service/tool-service";
+import { getCategories, getTools } from "@/service/tool-service";
+import { DynamicIcon } from "@/components/layout/dynamic-icon";
 
 interface ToolsPageProps {
     params: Promise<{
@@ -27,7 +28,9 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
     );
 
     // Sort categories alphabetically
-    const sortedCategories = Object.keys(toolsByCategory).sort();
+    const categories = (await getCategories(resolvedParams.locale)).filter(
+        (item) => item.slug.length > 0 && item.slug !== "all",
+    );
 
     return (
         <div className="min-h-screen bg-background">
@@ -42,13 +45,17 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
 
                 {/* Tools by Category */}
                 <div className="space-y-12">
-                    {sortedCategories.map((category) => (
-                        <div key={category}>
-                            <h2 className="text-2xl font-bold text-foreground mb-6">
-                                {category}
-                            </h2>
+                    {categories.map((category) => (
+                        <div id={category.slug} key={category.slug}>
+                            <div className={"mb-6 flex gap-2 items-center"}>
+                                <DynamicIcon name={category.icon} />
+                                <h2 className="text-2xl font-bold text-foreground">
+                                    {category.name}
+                                </h2>
+                            </div>
+
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {toolsByCategory[category].map((tool) => (
+                                {toolsByCategory[category.slug]?.map((tool) => (
                                     <Link
                                         key={tool.slug}
                                         href={`/tool/${tool.slug}`}

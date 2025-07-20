@@ -3,7 +3,7 @@
     "slug": "uuid-generator",
     "name": "UUID Generator",
     "description": "Generate unique identifiers for your applications",
-    "category": "Development",
+    "category": "development",
     "keywords": [
       "uuid generator",
       "generate uuid",
@@ -24,7 +24,7 @@
     "slug": "timestamp-converter",
     "name": "Timestamp Converter",
     "description": "Convert between timestamp and human-readable date formats",
-    "category": "Development",
+    "category": "development",
     "keywords": [
       "unix timestamp converter",
       "epoch to date",
@@ -39,6 +39,116 @@
       {
         "question": "Can I convert both ways?",
         "answer": "Yes. You can convert both from and to Unix timestamps."
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "What's My IP",
+    "description": "Quickly check your public IP address and location information",
+    "category": "security",
+    "keywords": [
+      "ip address checker",
+      "find my ip",
+      "public ip",
+      "what is my ip",
+      "ip lookup"
+    ],
+    "faq": [
+      {
+        "question": "What information does this tool show?",
+        "answer": "This tool displays your public IP address, IP version (IPv4/IPv6), approximate location, and ISP information."
+      },
+      {
+        "question": "Is my privacy protected when using this tool?",
+        "answer": "Yes. Your IP address is only used to display information to you and is not stored or shared with third parties."
+      },
+      {
+        "question": "Why might I need to know my IP address?",
+        "answer": "Knowing your IP address can be useful for network troubleshooting, configuring remote connections, or verifying VPN functionality."
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "Password Generator",
+    "description": "Generate secure, random passwords with customizable options",
+    "category": "security",
+    "keywords": [
+      "password generator",
+      "secure password",
+      "random password",
+      "strong password",
+      "password creator"
+    ],
+    "faq": [
+      {
+        "question": "How secure are the generated passwords?",
+        "answer": "Passwords are generated using cryptographically secure random number generation and are not stored anywhere."
+      },
+      {
+        "question": "Can I customize the password options?",
+        "answer": "Yes, you can adjust length, include/exclude uppercase, lowercase, numbers, and special characters."
+      },
+      {
+        "question": "What makes a password strong?",
+        "answer": "Strong passwords are long (12+ characters), use a mix of character types, and are unique for each account."
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "URL Encoder/Decoder",
+    "description": "Encode and decode URLs and URL components for web development",
+    "category": "development",
+    "keywords": [
+      "url encoder",
+      "url decoder",
+      "percent encoding",
+      "uri encode",
+      "uri decode",
+      "web development"
+    ],
+    "faq": [
+      {
+        "question": "What is URL encoding?",
+        "answer": "URL encoding converts characters into a format that can be transmitted over the Internet by replacing unsafe ASCII characters with a '%' followed by two hexadecimal digits."
+      },
+      {
+        "question": "When should I use URL encoding?",
+        "answer": "Use URL encoding when you need to include special characters in URLs, form data, or query parameters."
+      },
+      {
+        "question": "Is this tool safe to use with sensitive data?",
+        "answer": "Yes, all encoding and decoding is performed locally in your browser. No data is sent to any server."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Base64 Encoder/Decoder",
+    "description": "Encode and decode Base64 strings for data transmission and storage",
+    "category": "development",
+    "keywords": [
+      "base64 encoder",
+      "base64 decoder",
+      "base64 encode",
+      "base64 decode",
+      "data encoding",
+      "web development"
+    ],
+    "faq": [
+      {
+        "question": "What is Base64 encoding?",
+        "answer": "Base64 is a binary-to-text encoding scheme that represents binary data in ASCII characters using a 64-character set (A-Z, a-z, 0-9, +, /)."
+      },
+      {
+        "question": "When should I use Base64 encoding?",
+        "answer": "Base64 is commonly used for encoding binary data in emails, embedding images in HTML/CSS, API tokens, and data URLs."
+      },
+      {
+        "question": "Is this tool secure for sensitive data?",
+        "answer": "Yes, all encoding and decoding happens locally in your browser. However, Base64 is encoding, not encryption - don't use it for securing sensitive data."
       }
     ]
   }

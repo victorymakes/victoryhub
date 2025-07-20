@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "",
+    "name": "All Tools",
+    "description": "View all available tools across all categories",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Development",
+    "description": "Developer utilities like UUID generator, Timestamp Convertor, URL encoder/decoder and more",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Security",
+    "description": "Security and privacy tools like Password Generator and IP checker",
+    "icon": "lock"
+  }
+]

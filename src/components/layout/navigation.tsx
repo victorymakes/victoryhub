@@ -1,10 +1,9 @@
-import { Book, Code, Menu, Palette, Zap } from "lucide-react";
+import { Menu } from "lucide-react";
 import Container from "@/components/layout/container";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { LanguageToggle } from "@/components/layout/language-toggle";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import Image from "next/image";
 
 import {
     Accordion,
@@ -28,6 +27,8 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet";
+import { getCategories } from "@/service/tool-service";
+import { DynamicIcon } from "@/components/layout/dynamic-icon";
 
 interface MenuItem {
     title: string;
@@ -57,47 +58,24 @@ interface Navbar1Props {
     };
 }
 
-const Navbar1 = async ({
-    logo = {
-        url: "/",
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-        alt: "Tools Directory",
-        title: "Tools Directory",
-    },
-}: Navbar1Props) => {
+const Navbar1 = async ({}: Navbar1Props) => {
     const t = await getTranslations("Navigation");
+    const locale = await getLocale();
+    const toolItems: MenuItem[] = (await getCategories(locale)).map((item) => {
+        return {
+            title: item.name,
+            url: `${item.slug === "all" ? `/tools` : `/tools#${item.slug}`}`,
+            description: item.description,
+            icon: item.icon ? <DynamicIcon name={item.icon} /> : undefined,
+        };
+    });
 
     const menu = [
         { title: t("home"), url: "/" },
         {
             title: t("tools"),
-            url: "/tool",
-            items: [
-                {
-                    title: t("development"),
-                    description: t("developmentDesc"),
-                    icon: <Code className="size-5 shrink-0" />,
-                    url: "/tool#development",
-                },
-                {
-                    title: t("design"),
-                    description: t("designDesc"),
-                    icon: <Palette className="size-5 shrink-0" />,
-                    url: "/tool#design",
-                },
-                {
-                    title: t("productivity"),
-                    description: t("productivityDesc"),
-                    icon: <Zap className="size-5 shrink-0" />,
-                    url: "/tool#design",
-                },
-                {
-                    title: t("allCategories"),
-                    description: t("allCategoriesDesc"),
-                    icon: <Book className="size-5 shrink-0" />,
-                    url: "/tool",
-                },
-            ],
+            url: "/tools",
+            items: toolItems,
         },
         { title: t("blog"), url: "/blog" },
     ];
@@ -109,17 +87,14 @@ const Navbar1 = async ({
                 <nav className="hidden justify-between lg:flex items-center">
                     <div className="flex items-center gap-8">
                         {/* Logo */}
-                        <Link
-                            href={logo.url}
-                            className="flex items-center gap-3"
-                        >
+                        <Link href={"/"} className="flex items-center gap-3">
                             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                                 <span className="text-primary-foreground font-bold text-lg">
-                                    T
+                                    V
                                 </span>
                             </div>
                             <span className="text-xl font-bold text-foreground tracking-tight">
-                                {logo.title}
+                                Victory
                             </span>
                         </Link>
                         <div className="flex items-center">
@@ -130,7 +105,7 @@ const Navbar1 = async ({
                             </NavigationMenu>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2">
                         {/* Language and Theme toggles */}
                         <ThemeToggle />
                         <LanguageToggle />
@@ -151,17 +126,14 @@ const Navbar1 = async ({
                 <div className="block lg:hidden">
                     <div className="flex items-center justify-between">
                         {/* Logo */}
-                        <Link
-                            href={logo.url}
-                            className="flex items-center gap-3"
-                        >
+                        <Link href={"/"} className="flex items-center gap-3">
                             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                                 <span className="text-primary-foreground font-bold text-lg">
-                                    T
+                                    V
                                 </span>
                             </div>
                             <span className="text-lg font-bold text-foreground">
-                                {logo.title}
+                                Victory
                             </span>
                         </Link>
                         <div className="flex items-center gap-2">
@@ -177,16 +149,14 @@ const Navbar1 = async ({
                                     <SheetHeader>
                                         <SheetTitle>
                                             <Link
-                                                href={logo.url}
+                                                href={"/"}
                                                 className="flex items-center gap-2"
                                             >
-                                                <Image
-                                                    src={logo.src}
-                                                    width={32}
-                                                    height={32}
-                                                    className="max-h-8"
-                                                    alt={logo.alt}
-                                                />
+                                                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                                                    <span className="text-primary-foreground font-bold text-lg">
+                                                        V
+                                                    </span>
+                                                </div>
                                             </Link>
                                         </SheetTitle>
                                     </SheetHeader>
