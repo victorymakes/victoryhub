@@ -10,6 +10,29 @@ interface Tool {
     }>;
 }
 
+interface Category {
+    slug: string;
+    name: string;
+    description: string;
+    icon?: string;
+}
+
+export const getCategories = async (
+    locale: string = "en",
+): Promise<Category[]> => {
+    try {
+        // Try to import the locale-specific file
+        const categories = await import(
+            `../../data/tool-category/${locale}.json`
+        );
+        return categories.default;
+    } catch {
+        // Fallback to English if locale file doesn't exist
+        const categories = await import(`../../data/tool-category/en.json`);
+        return categories.default;
+    }
+};
+
 export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
     try {
         // Try to import the locale-specific file

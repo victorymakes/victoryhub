@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "UUID 생성기",
+    "description": "애플리케이션용 고유 식별자 생성",
+    "category": "development",
+    "keywords": [
+      "uuid 생성기",
+      "uuid 생성",
+      "uuid v4 온라인"
+    ],
+    "faq": [
+      {
+        "question": "UUID v4란 무엇인가요?",
+        "answer": "UUID v4는 난수를 사용하여 생성되는 범용 고유 식별자입니다."
+      },
+      {
+        "question": "이 도구는 안전한가요?",
+        "answer": "네. UUID는 crypto 모듈을 사용하여 로컬에서 생성되며 서버로 전송되지 않습니다."
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "타임스탬프 변환기",
+    "description": "타임스탬프와 사람이 읽을 수 있는 날짜 형식 간 변환",
+    "category": "development",
+    "keywords": [
+      "unix 타임스탬프 변환기",
+      "에포크에서 날짜로",
+      "타임스탬프를 날짜시간으로",
+      "unix 시간 변환"
+    ],
+    "faq": [
+      {
+        "question": "Unix 타임스탬프란 무엇인가요?",
+        "answer": "Unix 타임스탬프는 1970년 1월 1일(UTC) 이후 경과된 초 수입니다."
+      },
+      {
+        "question": "양방향 변환이 가능한가요?",
+        "answer": "네. Unix 타임스탬프에서 날짜로, 날짜에서 Unix 타임스탬프로 양방향 변환이 모두 가능합니다."
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "내 IP 주소",
+    "description": "공개 IP 주소와 위치 정보를 빠르게 확인",
+    "category": "security",
+    "keywords": [
+      "ip 주소 확인기",
+      "내 ip 찾기",
+      "공개 ip",
+      "내 ip는 무엇",
+      "ip 조회"
+    ],
+    "faq": [
+      {
+        "question": "이 도구는 어떤 정보를 보여주나요?",
+        "answer": "이 도구는 공개 IP 주소, IP 버전(IPv4/IPv6), 대략적인 위치, ISP 정보를 표시합니다."
+      },
+      {
+        "question": "이 도구를 사용할 때 개인정보가 보호되나요?",
+        "answer": "네. IP 주소는 표시 목적으로만 사용되며 저장되거나 제3자와 공유되지 않습니다."
+      },
+      {
+        "question": "IP 주소를 알아야 하는 이유는 무엇인가요?",
+        "answer": "IP 주소를 아는 것은 네트워크 문제 해결, 원격 연결 구성, VPN 기능 확인에 유용합니다."
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "비밀번호 생성기",
+    "description": "사용자 정의 옵션으로 안전하고 무작위적인 비밀번호 생성",
+    "category": "security",
+    "keywords": [
+      "비밀번호 생성기",
+      "안전한 비밀번호",
+      "무작위 비밀번호",
+      "강력한 비밀번호",
+      "비밀번호 제작기"
+    ],
+    "faq": [
+      {
+        "question": "생성된 비밀번호는 얼마나 안전한가요?",
+        "answer": "비밀번호는 암호학적으로 안전한 난수 생성을 사용하여 생성되며 어디에도 저장되지 않습니다."
+      },
+      {
+        "question": "비밀번호 옵션을 사용자 정의할 수 있나요?",
+        "answer": "네. 길이를 조정하고 대문자, 소문자, 숫자, 특수 문자의 포함/제외를 설정할 수 있습니다."
+      },
+      {
+        "question": "강력한 비밀번호의 조건은 무엇인가요?",
+        "answer": "강력한 비밀번호는 길고(12자 이상), 다양한 문자 유형을 혼합하며, 각 계정마다 고유해야 합니다."
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "URL 인코더/디코더",
+    "description": "웹 개발을 위한 URL 및 URL 구성 요소 인코딩/디코딩",
+    "category": "development",
+    "keywords": [
+      "url 인코더",
+      "url 디코더",
+      "퍼센트 인코딩",
+      "uri 인코드",
+      "uri 디코드",
+      "웹 개발"
+    ],
+    "faq": [
+      {
+        "question": "URL 인코딩이란 무엇인가요?",
+        "answer": "URL 인코딩은 안전하지 않은 ASCII 문자를 '%'와 그 뒤의 2자리 16진수로 바꿔 인터넷을 통해 전송할 수 있는 형식으로 문자를 변환합니다."
+      },
+      {
+        "question": "URL 인코딩은 언제 사용해야 하나요?",
+        "answer": "URL, 폼 데이터, 쿼리 매개변수에 특수 문자를 포함해야 할 때 URL 인코딩을 사용합니다."
+      },
+      {
+        "question": "이 도구는 민감한 데이터에 안전한가요?",
+        "answer": "네. 모든 인코딩과 디코딩은 브라우저에서 로컬로 수행됩니다. 데이터는 서버로 전송되지 않습니다."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Base64 인코더/디코더",
+    "description": "데이터 전송 및 저장을 위한 Base64 문자열 인코딩/디코딩",
+    "category": "development",
+    "keywords": [
+      "base64 인코더",
+      "base64 디코더",
+      "base64 인코드",
+      "base64 디코드",
+      "데이터 인코딩",
+      "웹 개발"
+    ],
+    "faq": [
+      {
+        "question": "Base64 인코딩이란 무엇인가요?",
+        "answer": "Base64는 64문자 집합(A-Z, a-z, 0-9, +, /)을 사용하여 ASCII 문자로 바이너리 데이터를 표현하는 바이너리-텍스트 인코딩 방식입니다."
+      },
+      {
+        "question": "Base64 인코딩은 언제 사용해야 하나요?",
+        "answer": "Base64는 이메일에서 바이너리 데이터 인코딩, HTML/CSS에 이미지 삽입, API 토큰, 데이터 URL에 일반적으로 사용됩니다."
+      },
+      {
+        "question": "이 도구는 민감한 데이터에 안전한가요?",
+        "answer": "네. 모든 인코딩과 디코딩은 브라우저에서 로컬로 수행됩니다. 하지만 Base64는 인코딩이지 암호화가 아닙니다. 민감한 데이터 보안에는 사용하지 마세요."
+      }
+    ]
+  }
+]
+
