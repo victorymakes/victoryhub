@@ -45,6 +45,14 @@ export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
     }
 };
 
+export const getPopularTools = async (
+    count: number = 6,
+    locale: string = "en",
+): Promise<Tool[]> => {
+    const tools = await getTools(locale);
+    return tools.slice(0, Math.max(count, tools.length));
+};
+
 export const getTool = async (
     slug: string,
     locale: string = "en",
