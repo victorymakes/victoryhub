@@ -18,6 +18,7 @@ import {
     Loader2,
 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useTranslations } from "next-intl";
 
 interface IPInfo {
     ip: string;
@@ -31,6 +32,7 @@ interface IPInfo {
 }
 
 export default function WhatsMyIP() {
+    const t = useTranslations("Tools.whatsMyIp");
     const [ipInfo, setIpInfo] = useState<IPInfo>({
         ip: "",
         version: "",
@@ -82,113 +84,102 @@ export default function WhatsMyIP() {
         <div className="space-y-6">
             <Card>
                 <CardHeader>
-                    <div className="flex items-center justify-between">
-                        <div>
-                            <CardTitle>What&apos;s My IP</CardTitle>
-                            <CardDescription>
-                                View your public IP address and related
-                                information
-                            </CardDescription>
-                        </div>
-                        <Button
-                            onClick={fetchIPInfo}
-                            disabled={ipInfo.loading}
-                            variant="outline"
-                            size="sm"
-                        >
-                            {ipInfo.loading ? (
-                                <Loader2 className="h-4 w-4 animate-spin" />
-                            ) : (
-                                <RefreshCw className="h-4 w-4" />
-                            )}
-                            Refresh
-                        </Button>
-                    </div>
+                    <CardTitle className="flex items-center gap-2">
+                        <Globe className="h-5 w-5" />
+                        {t("title")}
+                    </CardTitle>
+                    <CardDescription>{t("description")}</CardDescription>
                 </CardHeader>
 
-                <CardContent>
-                    {ipInfo.error && (
-                        <Alert variant="destructive" className="mb-6">
-                            <AlertCircle />
-                            <AlertDescription>{ipInfo.error}</AlertDescription>
-                        </Alert>
-                    )}
-
-                    {ipInfo.loading ? (
-                        <div className="flex items-center justify-center py-12">
-                            <div className="flex items-center space-x-2">
-                                <Loader2 className="h-6 w-6 animate-spin" />
-                                <span className="text-muted-foreground">
-                                    Loading IP information...
+                <CardContent className="space-y-6">
+                    {ipInfo.loading && (
+                        <div className="flex items-center justify-center py-8">
+                            <div className="flex items-center gap-2">
+                                <Loader2 className="h-4 w-4 animate-spin" />
+                                <span className="text-sm text-muted-foreground">
+                                    {t("loading")}
                                 </span>
                             </div>
                         </div>
-                    ) : (
-                        <div className="grid gap-4">
+                    )}
+
+                    {ipInfo.error && (
+                        <Alert variant="destructive">
+                            <AlertCircle className="h-4 w-4" />
+                            <AlertDescription>
+                                {t("error")}: {ipInfo.error}
+                            </AlertDescription>
+                        </Alert>
+                    )}
+
+                    {!ipInfo.loading && !ipInfo.error && (
+                        <div className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <Card>
-                                    <CardContent className="flex items-start space-x-3">
-                                        <div className="rounded-full bg-blue-100 p-2 dark:bg-blue-900/20">
-                                            <Wifi className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                                    <CardContent className="pt-6">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <Wifi className="h-4 w-4" />
+                                            <span className="text-sm font-medium">
+                                                {t("ipAddress")}
+                                            </span>
                                         </div>
-                                        <div className="space-y-1">
-                                            <p className="text-sm font-medium text-muted-foreground">
-                                                IP Address
-                                            </p>
-                                            <p className="text-xl font-semibold">
-                                                {ipInfo.ip}
-                                            </p>
-                                            <p className="text-xs text-muted-foreground">
-                                                IPv{ipInfo.version}
-                                            </p>
-                                        </div>
+                                        <p className="text-2xl font-mono">
+                                            {ipInfo.ip}
+                                        </p>
                                     </CardContent>
                                 </Card>
 
                                 <Card>
-                                    <CardContent className="flex items-start space-x-3">
-                                        <div className="rounded-full bg-green-100 p-2 dark:bg-green-900/20">
-                                            <Globe className="h-4 w-4 text-green-600 dark:text-green-400" />
+                                    <CardContent className="pt-6">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <AlertCircle className="h-4 w-4" />
+                                            <span className="text-sm font-medium">
+                                                {t("version")}
+                                            </span>
                                         </div>
-                                        <div className="space-y-1">
-                                            <p className="text-sm font-medium text-muted-foreground">
-                                                Location
-                                            </p>
-                                            <p className="text-xl font-semibold">
-                                                {ipInfo.city}, {ipInfo.region}
-                                            </p>
-                                            <p className="text-xs text-muted-foreground">
-                                                {ipInfo.country}
-                                            </p>
+                                        <p className="text-2xl">
+                                            {ipInfo.version}
+                                        </p>
+                                    </CardContent>
+                                </Card>
+
+                                <Card>
+                                    <CardContent className="pt-6">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <Globe className="h-4 w-4" />
+                                            <span className="text-sm font-medium">
+                                                {t("location")}
+                                            </span>
                                         </div>
+                                        <p className="text-lg">
+                                            {ipInfo.city}, {ipInfo.region},{" "}
+                                            {ipInfo.country}
+                                        </p>
+                                    </CardContent>
+                                </Card>
+
+                                <Card>
+                                    <CardContent className="pt-6">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <User className="h-4 w-4" />
+                                            <span className="text-sm font-medium">
+                                                {t("isp")}
+                                            </span>
+                                        </div>
+                                        <p className="text-lg">{ipInfo.isp}</p>
                                     </CardContent>
                                 </Card>
                             </div>
 
-                            <Card>
-                                <CardContent className="flex items-start space-x-3">
-                                    <div className="rounded-full bg-purple-100 p-2 dark:bg-purple-900/20">
-                                        <User className="h-4 w-4 text-purple-600 dark:text-purple-400" />
-                                    </div>
-                                    <div className="space-y-1">
-                                        <p className="text-sm font-medium text-muted-foreground">
-                                            Internet Service Provider
-                                        </p>
-                                        <p className="text-xl font-semibold">
-                                            {ipInfo.isp}
-                                        </p>
-                                    </div>
-                                </CardContent>
-                            </Card>
-
-                            <div className="rounded-lg bg-muted/50 p-4">
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    <strong>Privacy Note:</strong> Location data
-                                    is approximate and based on your IP address.
-                                    Your IP address is only used to display
-                                    information to you and is not stored or
-                                    shared with third parties.
-                                </p>
+                            <div className="flex justify-center">
+                                <Button
+                                    onClick={fetchIPInfo}
+                                    className="flex items-center gap-2"
+                                    disabled={ipInfo.loading}
+                                >
+                                    <RefreshCw className="h-4 w-4" />
+                                    Refresh
+                                </Button>
                             </div>
                         </div>
                     )}

@@ -19,9 +19,9 @@
     "allCategoriesDesc": "Browse all tool categories"
   },
   "Homepage": {
-    "title": "Discover Amazing Tools",
-    "subtitle": "Find the perfect tools for your workflow. Browse our curated collection of development tools, productivity apps, and more.",
-    "browseTools": "Browse Tools",
+    "title": "Free Online Tools",
+    "subtitle": "Essential utilities for developers, designers, and professionals. Generate UUIDs, convert timestamps, encode URLs, create secure passwords, process images, manipulate text and more - all free and privacy-focused.",
+    "browseTools": "Browse All Tools",
     "viewDirectory": "View Directory",
     "popularCategories": "Popular Categories",
     "development": "Development",
@@ -29,47 +29,109 @@
     "productivity": "Productivity",
     "productivityDesc": "Task management and productivity applications",
     "design": "Design",
-    "designDesc": "Design tools and creative applications"
+    "designDesc": "Design tools and creative applications",
+    "popularTools": "Popular Tools",
+    "privacyFirst": "Privacy-First Online Tools",
+    "privacyDescription": "All tools run locally in your browser. No data is sent to servers, ensuring your privacy and security.",
+    "private": "Private",
+    "privateDesc": "Everything runs in your browser",
+    "fast": "Fast",
+    "fastDesc": "No server requests needed",
+    "free": "Free",
+    "freeDesc": "Always free to use"
   },
   "Tools": {
     "title": "All Tools",
     "subtitle": "Discover and explore our complete collection of tools",
     "featuredTools": "Featured Tools",
     "allTools": "All Tools",
-    "featured": "Featured"
-  },
-  "Directory": {
-    "title": "Tool Directory",
-    "subtitle": "Browse tools by category to find exactly what you need for your workflow",
-    "totalTools": "Total Tools",
-    "categories": "Categories",
-    "featuredTools": "Featured Tools",
-    "toolsCount": "tools",
-    "categories": {
-      "development": {
-        "name": "Development",
-        "description": "Code editors, frameworks, libraries, and development tools"
-      },
-      "design": {
-        "name": "Design",
-        "description": "UI/UX design tools, graphics software, and creative applications"
-      },
-      "productivity": {
-        "name": "Productivity",
-        "description": "Task management, note-taking, and workflow optimization tools"
-      },
-      "analytics": {
-        "name": "Analytics",
-        "description": "Data analysis, tracking, and business intelligence tools"
-      },
-      "communication": {
-        "name": "Communication",
-        "description": "Team chat, video conferencing, and collaboration platforms"
-      },
-      "marketing": {
-        "name": "Marketing",
-        "description": "Email marketing, social media, and advertising tools"
-      }
+    "featured": "Featured",
+    "uuidGenerator": {
+      "title": "UUID Generator",
+      "description": "Generate unique identifiers for your applications with batch support",
+      "numberOfUuids": "Number of UUIDs to Generate",
+      "generate": "Generate",
+      "generateMultiple": "Generate {count} UUIDs",
+      "generateSingle": "Generate UUID",
+      "generateBetween": "Generate between 1 and 50 UUIDs at once",
+      "generatedUuids": "Generated UUID",
+      "generatedUuidsPlural": "Generated UUIDs",
+      "copyAll": "Copy All",
+      "copiedAll": "Copied All!",
+      "aboutUuid": "About UUID v4:",
+      "format": "Format:",
+      "formatDesc": "8-4-4-4-12 hexadecimal digits (36 characters total)",
+      "example": "Example:",
+      "uniqueness": "Uniqueness:",
+      "uniquenessDesc": "Virtually guaranteed to be unique across time and space",
+      "security": "Security:",
+      "securityDesc": "Generated using cryptographically secure random numbers",
+      "securityNote": "Security Note:",
+      "securityNoteDesc": "UUIDs are generated locally using the crypto.randomUUID() method, which provides cryptographically secure random generation. No UUIDs are stored or transmitted to any server."
+    },
+    "passwordGenerator": {
+      "title": "Password Generator",
+      "description": "Generate secure passwords with customizable options",
+      "length": "Length",
+      "includeUppercase": "Include Uppercase Letters",
+      "includeLowercase": "Include Lowercase Letters",
+      "includeNumbers": "Include Numbers",
+      "includeSymbols": "Include Symbols",
+      "generate": "Generate Password",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "strengthVeryWeak": "Very Weak",
+      "strengthWeak": "Weak",
+      "strengthFair": "Fair",
+      "strengthGood": "Good",
+      "strengthStrong": "Strong"
+    },
+    "timestampConverter": {
+      "title": "Timestamp Converter",
+      "description": "Convert between timestamp and human-readable date formats",
+      "currentTimestamp": "Current Timestamp",
+      "enterTimestamp": "Enter Timestamp",
+      "timestampPlaceholder": "Enter Unix timestamp...",
+      "convert": "Convert",
+      "humanReadable": "Human Readable",
+      "iso8601": "ISO 8601",
+      "utc": "UTC",
+      "local": "Local Time"
+    },
+    "whatsMyIp": {
+      "title": "What's My IP",
+      "description": "Check your public IP address and location information",
+      "loading": "Loading your IP information...",
+      "ipAddress": "IP Address",
+      "version": "Version",
+      "location": "Location",
+      "isp": "ISP",
+      "timezone": "Timezone",
+      "error": "Unable to fetch IP information"
+    },
+    "urlEncoder": {
+      "title": "URL Encoder/Decoder",
+      "description": "Encode and decode URLs for web development",
+      "encode": "Encode",
+      "decode": "Decode",
+      "input": "Input",
+      "output": "Output",
+      "enterUrl": "Enter URL to encode/decode...",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear"
+    },
+    "base64Encoder": {
+      "title": "Base64 Encoder/Decoder",
+      "description": "Encode and decode Base64 strings for data transmission",
+      "encode": "Encode",
+      "decode": "Decode",
+      "input": "Input",
+      "output": "Output",
+      "enterText": "Enter text to encode/decode...",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear"
     }
   },
   "Blog": {
@@ -86,15 +148,26 @@
     "by": "By"
   },
   "ToolDetail": {
-    "backToTools": "Back to Tools",
-    "visitWebsite": "Visit Website",
-    "about": "About",
-    "keyFeatures": "Key Features",
-    "pricing": "Pricing"
+    "title": "Tool Detail",
+    "description": "Detailed information about the tool, including usage examples and technical specifications.",
+    "usage": "Usage",
+    "examples": "Examples",
+    "technicalSpecifications": "Technical Specifications",
+    "noExamples": "No usage examples available for this tool.",
+    "exampleInput": "Example Input",
+    "exampleOutput": "Example Output",
+    "tryIt": "Try It Now",
+    "relatedTools": "Related Tools",
+    "viewAllTools": "View All Tools"
   },
-  "CategoryDetail": {
-    "backToDirectory": "Back to Directory",
-    "toolsAvailable": "tools available",
-    "featuredTools": "Featured Tools"
+  "Footer": {
+    "description": "Free online tools for developers, designers, and professionals. Privacy-focused utilities that run locally in your browser.",
+    "navigation": "Navigation",
+    "information": "Information",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contact": "Contact",
+    "copyright": "© {year} VictoryHub. All rights reserved.",
+    "madeWith": "Made with ❤️ for developers and creators"
   }
 }

@@ -5,7 +5,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Navbar1 } from "@/components/layout/navigation";
+import { Navbar } from "@/components/layout/navigation";
+import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 
 const geistSans = Geist({
@@ -19,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Tools Directory",
+    title: "VictoryHub",
     description: "Discover amazing tools for your workflow",
 };
 
@@ -39,7 +40,7 @@ export default async function LocaleLayout({
     return (
         <html lang={locale} suppressHydrationWarning>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
             >
                 <NextIntlClientProvider>
                     <ThemeProvider
@@ -48,8 +49,9 @@ export default async function LocaleLayout({
                         enableSystem
                         disableTransitionOnChange
                     >
-                        <Navbar1 />
-                        {children}
+                        <Navbar />
+                        <main className="flex-1">{children}</main>
+                        <Footer />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>

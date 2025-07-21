@@ -38,7 +38,7 @@ interface MenuItem {
     items?: MenuItem[];
 }
 
-interface Navbar1Props {
+interface NavbarProps {
     logo?: {
         url: string;
         src: string;
@@ -58,7 +58,9 @@ interface Navbar1Props {
     };
 }
 
-const Navbar1 = async ({}: Navbar1Props) => {
+const websiteName = "VictoryHub";
+
+export const Navbar = async ({}: NavbarProps) => {
     const t = await getTranslations("Navigation");
     const locale = await getLocale();
     const toolItems: MenuItem[] = (await getCategories(locale)).map((item) => {
@@ -94,7 +96,7 @@ const Navbar1 = async ({}: Navbar1Props) => {
                                 </span>
                             </div>
                             <span className="text-xl font-bold text-foreground tracking-tight">
-                                Victory
+                                {websiteName}
                             </span>
                         </Link>
                         <div className="flex items-center">
@@ -133,7 +135,7 @@ const Navbar1 = async ({}: Navbar1Props) => {
                                 </span>
                             </div>
                             <span className="text-lg font-bold text-foreground">
-                                Victory
+                                {websiteName}
                             </span>
                         </Link>
                         <div className="flex items-center gap-2">
@@ -286,5 +288,3 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
         </a>
     );
 };
-
-export { Navbar1 };

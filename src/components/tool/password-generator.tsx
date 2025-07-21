@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Copy, RefreshCw, Check, Shield, Eye, EyeOff } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useTranslations } from "next-intl";
 
 interface PasswordOptions {
     length: number;
@@ -22,6 +23,7 @@ interface PasswordOptions {
 }
 
 export default function PasswordGenerator() {
+    const t = useTranslations("Tools.passwordGenerator");
     const [password, setPassword] = useState("");
     const [copied, setCopied] = useState(false);
     const [showPassword, setShowPassword] = useState(true);
@@ -113,38 +115,128 @@ export default function PasswordGenerator() {
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <Shield className="h-5 w-5" />
-                        Password Generator
+                        {t("title")}
                     </CardTitle>
-                    <CardDescription>
-                        Generate secure, random passwords with customizable
-                        options
-                    </CardDescription>
+                    <CardDescription>{t("description")}</CardDescription>
                 </CardHeader>
 
                 <CardContent className="space-y-6">
-                    {!hasValidOptions() && (
-                        <Alert variant="destructive">
-                            <AlertDescription>
-                                Please select at least one character type to
-                                generate a password.
-                            </AlertDescription>
-                        </Alert>
-                    )}
-
-                    {/* Password Output */}
+                    {/* Password Length */}
                     <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                            <label className="text-sm font-medium">
-                                Generated Password
+                        <label className="text-sm font-medium">
+                            {t("length")}: {options.length}
+                        </label>
+                        <Input
+                            type="range"
+                            min="4"
+                            max="100"
+                            value={options.length}
+                            onChange={(e) =>
+                                setOptions({
+                                    ...options,
+                                    length: parseInt(e.target.value),
+                                })
+                            }
+                            className="w-full"
+                        />
+                    </div>
+
+                    {/* Password Options */}
+                    <div className="space-y-4">
+                        <div className="flex items-center space-x-2">
+                            <input
+                                type="checkbox"
+                                id="uppercase"
+                                checked={options.includeUppercase}
+                                onChange={(e) =>
+                                    setOptions({
+                                        ...options,
+                                        includeUppercase: e.target.checked,
+                                    })
+                                }
+                                className="rounded"
+                            />
+                            <label htmlFor="uppercase" className="text-sm">
+                                {t("includeUppercase")}
                             </label>
+                        </div>
+
+                        <div className="flex items-center space-x-2">
+                            <input
+                                type="checkbox"
+                                id="lowercase"
+                                checked={options.includeLowercase}
+                                onChange={(e) =>
+                                    setOptions({
+                                        ...options,
+                                        includeLowercase: e.target.checked,
+                                    })
+                                }
+                                className="rounded"
+                            />
+                            <label htmlFor="lowercase" className="text-sm">
+                                {t("includeLowercase")}
+                            </label>
+                        </div>
+
+                        <div className="flex items-center space-x-2">
+                            <input
+                                type="checkbox"
+                                id="numbers"
+                                checked={options.includeNumbers}
+                                onChange={(e) =>
+                                    setOptions({
+                                        ...options,
+                                        includeNumbers: e.target.checked,
+                                    })
+                                }
+                                className="rounded"
+                            />
+                            <label htmlFor="numbers" className="text-sm">
+                                {t("includeNumbers")}
+                            </label>
+                        </div>
+
+                        <div className="flex items-center space-x-2">
+                            <input
+                                type="checkbox"
+                                id="symbols"
+                                checked={options.includeSymbols}
+                                onChange={(e) =>
+                                    setOptions({
+                                        ...options,
+                                        includeSymbols: e.target.checked,
+                                    })
+                                }
+                                className="rounded"
+                            />
+                            <label htmlFor="symbols" className="text-sm">
+                                {t("includeSymbols")}
+                            </label>
+                        </div>
+                    </div>
+
+                    {/* Generate Button */}
+                    <Button
+                        onClick={generatePassword}
+                        className="w-full flex items-center gap-2"
+                    >
+                        <RefreshCw className="h-4 w-4" />
+                        {t("generate")}
+                    </Button>
+
+                    {/* Generated Password */}
+                    {password && (
+                        <div className="space-y-3">
                             <div className="flex items-center gap-2">
-                                <span
-                                    className={`text-xs font-medium ${strength.color}`}
-                                >
-                                    {strength.text}
-                                </span>
+                                <Input
+                                    value={password}
+                                    type={showPassword ? "text" : "password"}
+                                    readOnly
+                                    className="flex-1 font-mono"
+                                />
                                 <Button
-                                    variant="ghost"
+                                    variant="outline"
                                     size="sm"
                                     onClick={() =>
                                         setShowPassword(!showPassword)
@@ -156,155 +248,27 @@ export default function PasswordGenerator() {
                                         <Eye className="h-4 w-4" />
                                     )}
                                 </Button>
+                                <Button
+                                    variant="outline"
+                                    size="sm"
+                                    onClick={copyToClipboard}
+                                >
+                                    {copied ? (
+                                        <Check className="h-4 w-4 text-green-500" />
+                                    ) : (
+                                        <Copy className="h-4 w-4" />
+                                    )}
+                                </Button>
                             </div>
+                            {copied && (
+                                <Alert>
+                                    <AlertDescription>
+                                        {t("copied")}
+                                    </AlertDescription>
+                                </Alert>
+                            )}
                         </div>
-
-                        <div className="flex gap-2">
-                            <Input
-                                value={password}
-                                readOnly
-                                type={showPassword ? "text" : "password"}
-                                placeholder="Click 'Generate Password' to create a secure password"
-                                className="font-mono text-sm"
-                            />
-                            <Button
-                                onClick={copyToClipboard}
-                                disabled={!password}
-                                variant="outline"
-                                size="sm"
-                            >
-                                {copied ? (
-                                    <Check className="h-4 w-4 text-green-500" />
-                                ) : (
-                                    <Copy className="h-4 w-4" />
-                                )}
-                            </Button>
-                        </div>
-                    </div>
-
-                    {/* Password Options */}
-                    <Card>
-                        <CardContent className="pt-6 space-y-4">
-                            <div className="space-y-3">
-                                <label className="text-sm font-medium">
-                                    Password Length: {options.length}
-                                </label>
-                                <input
-                                    type="range"
-                                    min="4"
-                                    max="128"
-                                    value={options.length}
-                                    onChange={(e) =>
-                                        setOptions({
-                                            ...options,
-                                            length: parseInt(e.target.value),
-                                        })
-                                    }
-                                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
-                                />
-                                <div className="flex justify-between text-xs text-muted-foreground">
-                                    <span>4</span>
-                                    <span>128</span>
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-4">
-                                <label className="flex items-center space-x-2 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        checked={options.includeUppercase}
-                                        onChange={(e) =>
-                                            setOptions({
-                                                ...options,
-                                                includeUppercase:
-                                                    e.target.checked,
-                                            })
-                                        }
-                                        className="rounded border-gray-300"
-                                    />
-                                    <span className="text-sm">
-                                        Uppercase (A-Z)
-                                    </span>
-                                </label>
-
-                                <label className="flex items-center space-x-2 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        checked={options.includeLowercase}
-                                        onChange={(e) =>
-                                            setOptions({
-                                                ...options,
-                                                includeLowercase:
-                                                    e.target.checked,
-                                            })
-                                        }
-                                        className="rounded border-gray-300"
-                                    />
-                                    <span className="text-sm">
-                                        Lowercase (a-z)
-                                    </span>
-                                </label>
-
-                                <label className="flex items-center space-x-2 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        checked={options.includeNumbers}
-                                        onChange={(e) =>
-                                            setOptions({
-                                                ...options,
-                                                includeNumbers:
-                                                    e.target.checked,
-                                            })
-                                        }
-                                        className="rounded border-gray-300"
-                                    />
-                                    <span className="text-sm">
-                                        Numbers (0-9)
-                                    </span>
-                                </label>
-
-                                <label className="flex items-center space-x-2 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        checked={options.includeSymbols}
-                                        onChange={(e) =>
-                                            setOptions({
-                                                ...options,
-                                                includeSymbols:
-                                                    e.target.checked,
-                                            })
-                                        }
-                                        className="rounded border-gray-300"
-                                    />
-                                    <span className="text-sm">
-                                        Symbols (!@#$...)
-                                    </span>
-                                </label>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    {/* Generate Button */}
-                    <Button
-                        onClick={generatePassword}
-                        disabled={!hasValidOptions()}
-                        className="w-full"
-                        size="lg"
-                    >
-                        <RefreshCw className="h-4 w-4 mr-2" />
-                        Generate Password
-                    </Button>
-
-                    {/* Security Note */}
-                    <div className="rounded-lg bg-muted/50 p-4">
-                        <p className="text-xs text-muted-foreground leading-relaxed">
-                            <strong>Security Note:</strong> Passwords are
-                            generated locally using cryptographically secure
-                            random number generation. No passwords are stored or
-                            transmitted to any server. Always use unique
-                            passwords for different accounts.
-                        </p>
-                    </div>
+                    )}
                 </CardContent>
             </Card>
         </div>

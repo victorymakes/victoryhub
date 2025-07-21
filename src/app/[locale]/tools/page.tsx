@@ -33,7 +33,7 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
     );
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="bg-background">
             <Container className="py-8">
                 {/* Header */}
                 <div className="mb-8">

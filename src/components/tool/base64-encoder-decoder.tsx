@@ -19,8 +19,10 @@ import {
     AlertTriangle,
 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useTranslations } from "next-intl";
 
 export default function Base64EncoderDecoder() {
+    const t = useTranslations("Tools.base64Encoder");
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [mode, setMode] = useState<"encode" | "decode">("encode");
@@ -129,94 +131,53 @@ export default function Base64EncoderDecoder() {
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <FileText className="h-5 w-5" />
-                        Base64 Encoder/Decoder
+                        {t("title")}
                     </CardTitle>
-                    <CardDescription>
-                        Encode and decode Base64 strings for data transmission
-                        and storage
-                    </CardDescription>
+                    <CardDescription>{t("description")}</CardDescription>
                 </CardHeader>
 
                 <CardContent className="space-y-6">
                     {/* Mode Toggle */}
-                    <div className="flex items-center justify-center gap-4">
-                        <div className="flex items-center gap-2 bg-muted rounded-lg p-1">
-                            <Button
-                                variant={
-                                    mode === "encode" ? "default" : "ghost"
-                                }
-                                size="sm"
-                                onClick={() => setMode("encode")}
-                                className="flex items-center gap-1"
-                            >
-                                <ArrowDown className="h-4 w-4" />
-                                Encode
-                            </Button>
-                            <Button
-                                variant={
-                                    mode === "decode" ? "default" : "ghost"
-                                }
-                                size="sm"
-                                onClick={() => setMode("decode")}
-                                className="flex items-center gap-1"
-                            >
-                                <ArrowUp className="h-4 w-4" />
-                                Decode
-                            </Button>
-                        </div>
+                    <div className="flex items-center justify-center">
                         <Button
                             variant="outline"
-                            size="sm"
-                            onClick={swapMode}
-                            title="Swap input and output"
+                            onClick={() =>
+                                setMode(mode === "encode" ? "decode" : "encode")
+                            }
+                            className="flex items-center gap-2"
                         >
                             <ArrowUpDown className="h-4 w-4" />
+                            {mode === "encode" ? t("encode") : t("decode")}
                         </Button>
                     </div>
 
                     {/* Input Section */}
                     <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                            <label className="text-sm font-medium">
-                                {mode === "encode"
-                                    ? "Text to Encode"
-                                    : "Base64 to Decode"}
-                            </label>
-                            <div className="flex items-center gap-2">
-                                <span className="text-xs text-muted-foreground">
-                                    {inputStats.characters} chars,{" "}
-                                    {inputStats.bytes} bytes
-                                </span>
-                                <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    onClick={clearAll}
-                                    className="text-xs"
-                                >
-                                    Clear
-                                </Button>
-                            </div>
-                        </div>
+                        <label className="text-sm font-medium flex items-center gap-2">
+                            {mode === "encode" ? (
+                                <ArrowDown className="h-4 w-4" />
+                            ) : (
+                                <ArrowUp className="h-4 w-4" />
+                            )}
+                            {t("input")}
+                        </label>
                         <textarea
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
-                            placeholder={
-                                mode === "encode"
-                                    ? "Enter text to encode (e.g., Hello World!)"
-                                    : "Enter Base64 string to decode (e.g., SGVsbG8gV29ybGQh)"
-                            }
-                            className="w-full h-32 p-3 border rounded-lg resize-none font-mono text-sm"
-                            rows={4}
+                            placeholder={t("enterText")}
+                            className="w-full min-h-[150px] p-3 border rounded-lg resize-y font-mono text-sm"
                         />
                     </div>
 
-                    {/* Error/Warning Alerts */}
+                    {/* Error Display */}
                     {error && (
                         <Alert variant="destructive">
+                            <AlertTriangle className="h-4 w-4" />
                             <AlertDescription>{error}</AlertDescription>
                         </Alert>
                     )}
 
+                    {/* Warning Display */}
                     {warning && (
                         <Alert>
                             <AlertTriangle className="h-4 w-4" />
@@ -225,148 +186,59 @@ export default function Base64EncoderDecoder() {
                     )}
 
                     {/* Output Section */}
-                    <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                            <label className="text-sm font-medium">
-                                {mode === "encode"
-                                    ? "Base64 Encoded"
-                                    : "Decoded Text"}
-                            </label>
-                            <div className="flex items-center gap-2">
-                                <span className="text-xs text-muted-foreground">
-                                    {outputStats.characters} chars,{" "}
-                                    {outputStats.bytes} bytes
-                                </span>
-                                {output && (
-                                    <Button
-                                        variant="outline"
-                                        size="sm"
-                                        onClick={copyToClipboard}
-                                        className="flex items-center gap-1"
-                                    >
-                                        {copied ? (
-                                            <Check className="h-4 w-4 text-green-500" />
-                                        ) : (
-                                            <Copy className="h-4 w-4" />
-                                        )}
-                                        {copied ? "Copied!" : "Copy"}
-                                    </Button>
+                    {output && (
+                        <div className="space-y-3">
+                            <label className="text-sm font-medium flex items-center gap-2">
+                                {mode === "encode" ? (
+                                    <ArrowUp className="h-4 w-4" />
+                                ) : (
+                                    <ArrowDown className="h-4 w-4" />
                                 )}
+                                {t("output")}
+                            </label>
+                            <div className="flex items-start gap-2">
+                                <textarea
+                                    value={output}
+                                    readOnly
+                                    className="flex-1 min-h-[150px] p-3 border rounded-lg font-mono text-sm bg-muted/50"
+                                />
+                                <Button
+                                    variant="outline"
+                                    size="sm"
+                                    onClick={copyToClipboard}
+                                    className="mt-2"
+                                >
+                                    {copied ? (
+                                        <Check className="h-4 w-4 text-green-500" />
+                                    ) : (
+                                        <Copy className="h-4 w-4" />
+                                    )}
+                                </Button>
                             </div>
+                            {copied && (
+                                <Alert>
+                                    <AlertDescription>
+                                        {t("copied")}
+                                    </AlertDescription>
+                                </Alert>
+                            )}
                         </div>
-                        <textarea
-                            value={output}
-                            readOnly
-                            placeholder={`${mode === "encode" ? "Base64 encoded" : "Decoded"} result will appear here`}
-                            className="w-full h-32 p-3 border rounded-lg resize-none font-mono text-sm bg-muted/50"
-                            rows={4}
-                        />
-                    </div>
+                    )}
 
-                    {/* Examples */}
-                    <Card>
-                        <CardContent className="pt-6">
-                            <h4 className="text-sm font-semibold mb-3">
-                                Examples:
-                            </h4>
-                            <div className="space-y-3">
-                                <div className="grid grid-cols-1 gap-4">
-                                    <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                                        <div className="space-y-1">
-                                            <p className="text-xs font-medium text-muted-foreground">
-                                                Simple text:
-                                            </p>
-                                            <code className="text-xs break-all">
-                                                Hello World!
-                                            </code>
-                                            <p className="text-xs text-muted-foreground">
-                                                → SGVsbG8gV29ybGQh
-                                            </p>
-                                        </div>
-                                        <Button
-                                            variant="outline"
-                                            size="sm"
-                                            onClick={() =>
-                                                loadExample(
-                                                    "Hello World!",
-                                                    "encode",
-                                                )
-                                            }
-                                            className="text-xs"
-                                        >
-                                            Try
-                                        </Button>
-                                    </div>
-
-                                    <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                                        <div className="space-y-1">
-                                            <p className="text-xs font-medium text-muted-foreground">
-                                                JSON data:
-                                            </p>
-                                            <code className="text-xs break-all">
-                                                {"{"}"name":"John","age":30{"}"}
-                                            </code>
-                                            <p className="text-xs text-muted-foreground">
-                                                →
-                                                eyJuYW1lIjoiSm9obiIsImFnZSI6MzB9
-                                            </p>
-                                        </div>
-                                        <Button
-                                            variant="outline"
-                                            size="sm"
-                                            onClick={() =>
-                                                loadExample(
-                                                    '{"name":"John","age":30}',
-                                                    "encode",
-                                                )
-                                            }
-                                            className="text-xs"
-                                        >
-                                            Try
-                                        </Button>
-                                    </div>
-
-                                    <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                                        <div className="space-y-1">
-                                            <p className="text-xs font-medium text-muted-foreground">
-                                                Decode example:
-                                            </p>
-                                            <code className="text-xs break-all">
-                                                VGhpcyBpcyBhIHRlc3Q=
-                                            </code>
-                                            <p className="text-xs text-muted-foreground">
-                                                → This is a test
-                                            </p>
-                                        </div>
-                                        <Button
-                                            variant="outline"
-                                            size="sm"
-                                            onClick={() =>
-                                                loadExample(
-                                                    "VGhpcyBpcyBhIHRlc3Q=",
-                                                    "decode",
-                                                )
-                                            }
-                                            className="text-xs"
-                                        >
-                                            Try
-                                        </Button>
-                                    </div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    {/* Info Note */}
-                    <div className="rounded-lg bg-muted/50 p-4">
-                        <p className="text-xs text-muted-foreground leading-relaxed">
-                            <strong>Note:</strong> Base64 is an encoding scheme,
-                            not encryption. It&apos;s designed to transport
-                            binary data over text-based protocols. All
-                            processing happens locally - no data is sent to
-                            servers. Base64 encoded data is roughly 33% larger
-                            than the original.
-                        </p>
+                    {/* Action Buttons */}
+                    <div className="flex gap-2">
+                        <Button
+                            variant="outline"
+                            onClick={() => {
+                                setInput("");
+                                setOutput("");
+                                setError(null);
+                                setWarning(null);
+                            }}
+                            className="flex-1"
+                        >
+                            {t("clear")}
+                        </Button>
                     </div>
                 </CardContent>
             </Card>

@@ -19,82 +19,144 @@
     "allCategoriesDesc": "すべてのツールカテゴリを参照"
   },
   "Homepage": {
-    "title": "素晴らしいツールを発見",
-    "subtitle": "ワークフローに最適なツールを見つけてください。厳選された開発ツール、生産性アプリなどのコレクションをご覧ください。",
-    "browseTools": "ツールを見る",
-    "viewDirectory": "ディレクトリを見る",
-    "popularCategories": "人気カテゴリ",
-    "development": "開発",
-    "developmentDesc": "コードエディタ、フレームワーク、開発ツール",
-    "productivity": "生産性",
-    "productivityDesc": "タスク管理と生産性アプリケーション",
-    "design": "デザイン",
-    "designDesc": "デザインツールとクリエイティブアプリケーション"
+    "title": "無料オンラインツール",
+    "subtitle": "開発者、デザイナー、プロフェッショナルのための必須ユーティリティ。UUID生成、タイムスタンプ変換、URL符号化、安全なパスワード作成、画像処理、テキスト操作など - すべて無料でプライバシー重視。",
+    "browseTools": "すべてのツールを見る",
+    "popularTools": "人気のツール",
+    "privacyFirst": "プライバシー第一のオンラインツール",
+    "privacyDescription": "すべてのツールはブラウザ内でローカルに動作します。データはサーバーに送信されず、プライバシーとセキュリティを確保します。",
+    "private": "プライベート",
+    "privateDesc": "すべてがブラウザ内で動作",
+    "fast": "高速",
+    "fastDesc": "サーバーリクエスト不要",
+    "free": "無料",
+    "freeDesc": "いつでも無料で使用"
   },
   "Tools": {
     "title": "すべてのツール",
-    "subtitle": "完全なツールコレクションを発見し、探索してください",
+    "subtitle": "完全なツールコレクションを発見・探索",
     "featuredTools": "注目のツール",
     "allTools": "すべてのツール",
-    "featured": "注目"
-  },
-  "Directory": {
-    "title": "ツールディレクトリ",
-    "subtitle": "カテゴリ別にツールを参照して、ワークフローに必要なものを正確に見つけてください",
-    "totalTools": "総ツール数",
-    "categories": "カテゴリ",
-    "featuredTools": "注目のツール",
-    "toolsCount": "ツール",
-    "categories": {
-      "development": {
-        "name": "開発",
-        "description": "コードエディタ、フレームワーク、ライブラリ、開発ツール"
-      },
-      "design": {
-        "name": "デザイン",
-        "description": "UI/UXデザインツール、グラフィックソフトウェア、クリエイティブアプリケーション"
-      },
-      "productivity": {
-        "name": "生産性",
-        "description": "タスク管理、ノート取り、ワークフロー最適化ツール"
-      },
-      "analytics": {
-        "name": "アナリティクス",
-        "description": "データ分析、トラッキング、ビジネスインテリジェンスツール"
-      },
-      "communication": {
-        "name": "コミュニケーション",
-        "description": "チームチャット、ビデオ会議、コラボレーションプラットフォーム"
-      },
-      "marketing": {
-        "name": "マーケティング",
-        "description": "メールマーケティング、ソーシャルメディア、広告ツール"
-      }
+    "featured": "注目",
+    "uuidGenerator": {
+      "title": "UUID生成器",
+      "description": "バッチサポート付きでアプリケーション用の一意識別子を生成",
+      "numberOfUuids": "生成するUUIDの数",
+      "generate": "生成",
+      "generateMultiple": "{count}個のUUIDを生成",
+      "generateSingle": "UUIDを生成",
+      "generateBetween": "1〜50個のUUIDを一度に生成",
+      "generatedUuids": "生成されたUUID",
+      "generatedUuidsPlural": "生成されたUUID",
+      "copyAll": "すべてコピー",
+      "copiedAll": "すべてコピーしました！",
+      "aboutUuid": "UUID v4について：",
+      "format": "形式：",
+      "formatDesc": "8-4-4-4-12の16進数（合計36文字）",
+      "example": "例：",
+      "uniqueness": "一意性：",
+      "uniquenessDesc": "時間と空間を通じて事実上一意であることが保証",
+      "security": "セキュリティ：",
+      "securityDesc": "暗号学的に安全な乱数を使用して生成",
+      "securityNote": "セキュリティ注意：",
+      "securityNoteDesc": "UUIDは暗号学的に安全な乱数生成を提供するcrypto.randomUUID()メソッドを使用してローカルで生成されます。UUIDは保存されたりサーバーに送信されたりしません。"
+    },
+    "passwordGenerator": {
+      "title": "パスワード生成器",
+      "description": "カスタマイズ可能なオプションで安全なパスワードを生成",
+      "length": "長さ",
+      "includeUppercase": "大文字を含む",
+      "includeLowercase": "小文字を含む",
+      "includeNumbers": "数字を含む",
+      "includeSymbols": "記号を含む",
+      "generate": "パスワードを生成",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "strengthVeryWeak": "非常に弱い",
+      "strengthWeak": "弱い",
+      "strengthFair": "普通",
+      "strengthGood": "良い",
+      "strengthStrong": "強い"
+    },
+    "timestampConverter": {
+      "title": "タイムスタンプ変換器",
+      "description": "タイムスタンプと人間が読める日付形式を相互変換",
+      "currentTimestamp": "現在のタイムスタンプ",
+      "enterTimestamp": "タイムスタンプを入力",
+      "timestampPlaceholder": "Unixタイムスタンプを入力...",
+      "convert": "変換",
+      "humanReadable": "人間が読める形式",
+      "iso8601": "ISO 8601",
+      "utc": "UTC",
+      "local": "ローカル時間"
+    },
+    "whatsMyIp": {
+      "title": "私のIPアドレス",
+      "description": "パブリックIPアドレスと位置情報を確認",
+      "loading": "IP情報を読み込み中...",
+      "ipAddress": "IPアドレス",
+      "version": "バージョン",
+      "location": "位置",
+      "isp": "ISP",
+      "timezone": "タイムゾーン",
+      "error": "IP情報を取得できません"
+    },
+    "urlEncoder": {
+      "title": "URLエンコーダー/デコーダー",
+      "description": "Web開発用のURLエンコードとデコード",
+      "encode": "エンコード",
+      "decode": "デコード",
+      "input": "入力",
+      "output": "出力",
+      "enterUrl": "エンコード/デコードするURLを入力...",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "clear": "クリア"
+    },
+    "base64Encoder": {
+      "title": "Base64エンコーダー/デコーダー",
+      "description": "データ転送用のBase64文字列のエンコードとデコード",
+      "encode": "エンコード",
+      "decode": "デコード",
+      "input": "入力",
+      "output": "出力",
+      "enterText": "エンコード/デコードするテキストを入力...",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "clear": "クリア"
     }
   },
   "Blog": {
     "title": "私たちのブログ",
-    "subtitle": "最新ツールとテクノロジーに関する洞察、ヒント、ニュース",
-    "featuredArticles": "注目記事",
+    "subtitle": "最新のツールとテクノロジーに関する洞察、ヒント、ニュース",
+    "featuredArticles": "注目の記事",
     "recentArticles": "最新記事",
     "readMore": "続きを読む",
     "featured": "注目",
-    "stayUpdated": "最新情報を入手",
-    "newsletterDesc": "最新記事とツール推奨事項を受信トレイに直接お届けします。",
+    "stayUpdated": "最新情報を受け取る",
+    "newsletterDesc": "最新の記事とツール推奨事項をメールで受け取ります。",
     "emailPlaceholder": "メールアドレスを入力",
     "subscribe": "購読",
-    "by": "著者："
+    "by": "著者"
   },
   "ToolDetail": {
-    "backToTools": "ツールに戻る",
-    "visitWebsite": "ウェブサイトを訪問",
-    "about": "について",
-    "keyFeatures": "主な機能",
-    "pricing": "価格"
+    "title": "ツールの詳細",
+    "description": "このツールは、特定の目的のために設計された強力なユーティリティです。",
+    "features": "特徴",
+    "howToUse": "使い方",
+    "faq": "よくある質問",
+    "feedback": "フィードバック",
+    "relatedTools": "関連ツール",
+    "noRelatedTools": "関連ツールはありません"
   },
-  "CategoryDetail": {
-    "backToDirectory": "ディレクトリに戻る",
-    "toolsAvailable": "利用可能ツール",
-    "featuredTools": "注目のツール"
+  "Footer": {
+    "description": "開発者、デザイナー、プロフェッショナルのための無料オンラインツール。ブラウザ内でローカルに動作するプライバシー重視のユーティリティ。",
+    "navigation": "ナビゲーション",
+    "information": "情報",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "contact": "お問い合わせ",
+    "copyright": "© {year} VictoryHub. All rights reserved.",
+    "madeWith": "開発者とクリエイターのために❤️で作られました"
   }
 }
