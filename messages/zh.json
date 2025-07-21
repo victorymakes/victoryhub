@@ -19,82 +19,149 @@
     "allCategoriesDesc": "浏览所有工具分类"
   },
   "Homepage": {
-    "title": "发现优质工具",
-    "subtitle": "找到适合您工作流程的完美工具。浏览我们精心策划的开发工具、生产力应用等收藏。",
-    "browseTools": "浏览工具",
-    "viewDirectory": "查看目录",
-    "popularCategories": "热门分类",
-    "development": "开发",
-    "developmentDesc": "代码编辑器、框架和开发工具",
-    "productivity": "生产力",
-    "productivityDesc": "任务管理和生产力应用程序",
-    "design": "设计",
-    "designDesc": "设计工具和创意应用程序"
+    "title": "免费在线工具",
+    "subtitle": "为开发者、设计师和专业人士提供的必备工具。生成UUID、转换时间戳、编码URL、创建安全密码、处理图像、文本操作等 - 全部免费且注重隐私。",
+    "browseTools": "浏览所有工具",
+    "popularTools": "热门工具",
+    "privacyFirst": "隐私优先的在线工具",
+    "privacyDescription": "所有工具都在您的浏览器中本地运行。不会向服务器发送数据，确保您的隐私和安全。",
+    "private": "私密",
+    "privateDesc": "一切都在您的浏览器中运行",
+    "fast": "快速",
+    "fastDesc": "无需服务器请求",
+    "free": "免费",
+    "freeDesc": "永远免费使用"
   },
   "Tools": {
     "title": "所有工具",
-    "subtitle": "发现并探索我们完整的工具集合",
+    "subtitle": "发现和探索我们完整的工具集合",
     "featuredTools": "精选工具",
     "allTools": "所有工具",
-    "featured": "精选"
-  },
-  "Directory": {
-    "title": "工具目录",
-    "subtitle": "按分类浏览工具，找到您工作流程所需的完美工具",
-    "totalTools": "工具总数",
-    "categories": "分类",
-    "featuredTools": "精选工具",
-    "toolsCount": "个工具",
-    "categories": {
-      "development": {
-        "name": "开发",
-        "description": "代码编辑器、框架、库和开发工具"
-      },
-      "design": {
-        "name": "设计",
-        "description": "UI/UX设计工具、图形软件和创意应用程序"
-      },
-      "productivity": {
-        "name": "生产力",
-        "description": "任务管理、笔记和工作流优化工具"
-      },
-      "analytics": {
-        "name": "数据分析",
-        "description": "数据分析、跟踪和商业智能工具"
-      },
-      "communication": {
-        "name": "沟通",
-        "description": "团队聊天、视频会议和协作平台"
-      },
-      "marketing": {
-        "name": "营销",
-        "description": "电子邮件营销、社交媒体和广告工具"
-      }
+    "featured": "精选",
+    "uuidGenerator": {
+      "title": "UUID生成器",
+      "description": "支持批量生成应用程序的唯一标识符",
+      "numberOfUuids": "要生成的UUID数量",
+      "generate": "生成",
+      "generateMultiple": "生成{count}个UUID",
+      "generateSingle": "生成UUID",
+      "generateBetween": "一次生成1到50个UUID",
+      "generatedUuids": "生成的UUID",
+      "generatedUuidsPlural": "生成的UUID",
+      "copyAll": "全部复制",
+      "copiedAll": "全部已复制！",
+      "aboutUuid": "关于UUID v4：",
+      "format": "格式：",
+      "formatDesc": "8-4-4-4-12十六进制数字（总共36个字符）",
+      "example": "示例：",
+      "uniqueness": "唯一性：",
+      "uniquenessDesc": "在时间和空间上实际保证唯一",
+      "security": "安全性：",
+      "securityDesc": "使用加密安全的随机数生成",
+      "securityNote": "安全说明：",
+      "securityNoteDesc": "UUID使用crypto.randomUUID()方法在本地生成，该方法提供加密安全的随机生成。UUID不会被存储或传输到任何服务器。"
+    },
+    "passwordGenerator": {
+      "title": "密码生成器",
+      "description": "使用可自定义选项生成安全密码",
+      "length": "长度",
+      "includeUppercase": "包含大写字母",
+      "includeLowercase": "包含小写字母",
+      "includeNumbers": "包含数字",
+      "includeSymbols": "包含符号",
+      "generate": "生成密码",
+      "copy": "复制",
+      "copied": "已复制！",
+      "strengthVeryWeak": "极弱",
+      "strengthWeak": "弱",
+      "strengthFair": "一般",
+      "strengthGood": "好",
+      "strengthStrong": "强"
+    },
+    "timestampConverter": {
+      "title": "时间戳转换器",
+      "description": "在时间戳和人类可读日期格式之间转换",
+      "currentTimestamp": "当前时间戳",
+      "enterTimestamp": "输入时间戳",
+      "timestampPlaceholder": "输入Unix时间戳...",
+      "convert": "转换",
+      "humanReadable": "人类可读格式",
+      "iso8601": "ISO 8601",
+      "utc": "UTC",
+      "local": "本地时间"
+    },
+    "whatsMyIp": {
+      "title": "我的IP地址",
+      "description": "检查您的公网IP地址和位置信息",
+      "loading": "正在加载IP信息...",
+      "ipAddress": "IP地址",
+      "version": "版本",
+      "location": "位置",
+      "isp": "ISP",
+      "timezone": "时区",
+      "error": "无法获取IP信息"
+    },
+    "urlEncoder": {
+      "title": "URL编码器/解码器",
+      "description": "用于Web开发的URL编码和解码",
+      "encode": "编码",
+      "decode": "解码",
+      "input": "输入",
+      "output": "输出",
+      "enterUrl": "输入要编码/解码的URL...",
+      "copy": "复制",
+      "copied": "已复制！",
+      "clear": "清空"
+    },
+    "base64Encoder": {
+      "title": "Base64编码器/解码器",
+      "description": "用于数据传输的Base64字符串编码和解码",
+      "encode": "编码",
+      "decode": "解码",
+      "input": "输入",
+      "output": "输出",
+      "enterText": "输入要编码/解码的文本...",
+      "copy": "复制",
+      "copied": "已复制！",
+      "clear": "清空"
     }
   },
   "Blog": {
     "title": "我们的博客",
-    "subtitle": "有关最新工具和技术的见解、技巧和新闻",
+    "subtitle": "关于最新工具和技术的见解、技巧和新闻",
     "featuredArticles": "精选文章",
     "recentArticles": "最新文章",
     "readMore": "阅读更多",
     "featured": "精选",
     "stayUpdated": "保持更新",
-    "newsletterDesc": "获取最新文章和工具推荐，直接发送到您的收件箱。",
+    "newsletterDesc": "将最新文章和工具推荐发送到您的邮箱。",
     "emailPlaceholder": "输入您的邮箱",
     "subscribe": "订阅",
-    "by": "作者："
+    "by": "作者"
   },
   "ToolDetail": {
-    "backToTools": "返回工具",
-    "visitWebsite": "访问网站",
-    "about": "关于",
-    "keyFeatures": "主要功能",
-    "pricing": "价格"
+    "title": "工具详情",
+    "description": "关于此工具的更多信息",
+    "features": "功能",
+    "usage": "如何使用",
+    "examples": "示例",
+    "faq": "常见问题",
+    "relatedTools": "相关工具",
+    "noRelatedTools": "没有相关工具",
+    "share": "分享",
+    "copyLink": "复制链接",
+    "copiedLink": "已复制链接！",
+    "emailSubject": "检查这个工具：{toolName}",
+    "emailBody": "嗨，我发现了这个很棒的工具：{toolName}。我认为你会喜欢的！"
   },
-  "CategoryDetail": {
-    "backToDirectory": "返回目录",
-    "toolsAvailable": "个可用工具",
-    "featuredTools": "精选工具"
+  "Footer": {
+    "description": "为开发者、设计师和专业人士提供的免费在线工具。在浏览器中本地运行的注重隐私的实用程序。",
+    "navigation": "导航",
+    "information": "信息",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "contact": "联系我们",
+    "copyright": "© {year} VictoryHub. All rights reserved.",
+    "madeWith": "为开发者和创作者用❤️制作"
   }
 }

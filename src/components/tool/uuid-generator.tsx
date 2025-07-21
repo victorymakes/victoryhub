@@ -11,8 +11,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Copy, RefreshCw, Check, Hash, Plus, Minus } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const UuidGenerator = () => {
+    const t = useTranslations("Tools.uuidGenerator");
     const [uuids, setUuids] = useState<string[]>([]);
     const [count, setCount] = useState(1);
     const [copied, setCopied] = useState<number | null>(null);
@@ -53,19 +55,16 @@ export const UuidGenerator = () => {
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <Hash className="h-5 w-5" />
-                        UUID Generator
+                        {t("title")}
                     </CardTitle>
-                    <CardDescription>
-                        Generate unique identifiers for your applications with
-                        batch support
-                    </CardDescription>
+                    <CardDescription>{t("description")}</CardDescription>
                 </CardHeader>
 
                 <CardContent className="space-y-6">
                     {/* Batch Count Control */}
                     <div className="space-y-3">
                         <label className="text-sm font-medium">
-                            Number of UUIDs to Generate
+                            {t("numberOfUuids")}
                         </label>
                         <div className="flex items-center gap-3">
                             <Button
@@ -108,11 +107,13 @@ export const UuidGenerator = () => {
                                 className="flex items-center gap-2"
                             >
                                 <RefreshCw className="h-4 w-4" />
-                                Generate {count > 1 ? `${count} UUIDs` : "UUID"}
+                                {count > 1
+                                    ? t("generateMultiple", { count })
+                                    : t("generateSingle")}
                             </Button>
                         </div>
                         <p className="text-xs text-muted-foreground">
-                            Generate between 1 and 50 UUIDs at once
+                            {t("generateBetween")}
                         </p>
                     </div>
 
@@ -121,7 +122,9 @@ export const UuidGenerator = () => {
                         <div className="space-y-3">
                             <div className="flex items-center justify-between">
                                 <label className="text-sm font-medium">
-                                    Generated UUID{uuids.length > 1 ? "s" : ""}{" "}
+                                    {uuids.length > 1
+                                        ? t("generatedUuidsPlural")
+                                        : t("generatedUuids")}{" "}
                                     ({uuids.length})
                                 </label>
                                 {uuids.length > 1 && (
@@ -136,7 +139,9 @@ export const UuidGenerator = () => {
                                         ) : (
                                             <Copy className="h-4 w-4" />
                                         )}
-                                        {copiedAll ? "Copied All!" : "Copy All"}
+                                        {copiedAll
+                                            ? t("copiedAll")
+                                            : t("copyAll")}
                                     </Button>
                                 )}
                             </div>
@@ -182,25 +187,24 @@ export const UuidGenerator = () => {
                     <Card>
                         <CardContent className="pt-6">
                             <h4 className="text-sm font-semibold mb-3">
-                                About UUID v4:
+                                {t("aboutUuid")}
                             </h4>
                             <div className="space-y-2 text-xs text-muted-foreground">
                                 <p>
-                                    • <strong>Format:</strong> 8-4-4-4-12
-                                    hexadecimal digits (36 characters total)
+                                    • <strong>{t("format")}</strong>{" "}
+                                    {t("formatDesc")}
                                 </p>
                                 <p>
-                                    • <strong>Example:</strong>{" "}
+                                    • <strong>{t("example")}</strong>{" "}
                                     550e8400-e29b-41d4-a716-446655440000
                                 </p>
                                 <p>
-                                    • <strong>Uniqueness:</strong> Virtually
-                                    guaranteed to be unique across time and
-                                    space
+                                    • <strong>{t("uniqueness")}</strong>{" "}
+                                    {t("uniquenessDesc")}
                                 </p>
                                 <p>
-                                    • <strong>Security:</strong> Generated using
-                                    cryptographically secure random numbers
+                                    • <strong>{t("security")}</strong>{" "}
+                                    {t("securityDesc")}
                                 </p>
                             </div>
                         </CardContent>
@@ -209,10 +213,8 @@ export const UuidGenerator = () => {
                     {/* Security Note */}
                     <div className="rounded-lg bg-muted/50 p-4">
                         <p className="text-xs text-muted-foreground leading-relaxed">
-                            <strong>Security Note:</strong> UUIDs are generated
-                            locally using the crypto.randomUUID() method, which
-                            provides cryptographically secure random generation.
-                            No UUIDs are stored or transmitted to any server.
+                            <strong>{t("securityNote")}</strong>{" "}
+                            {t("securityNoteDesc")}
                         </p>
                     </div>
                 </CardContent>
