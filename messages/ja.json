@@ -51,63 +51,65 @@
       "description": "バッチサポート付きでアプリケーション用の一意識別子を生成",
       "numberOfUuids": "生成するUUIDの数",
       "generate": "生成",
-      "generateMultiple": "{count}個のUUIDを生成",
-      "generateSingle": "UUIDを生成",
-      "generateBetween": "1〜50個のUUIDを一度に生成",
       "generatedUuids": "生成されたUUID",
-      "generatedUuidsPlural": "生成されたUUID",
+      "copied": "コピーしました！",
+      "allCopied": "すべてのUUIDをコピーしました！",
+      "clear": "クリア",
       "copyAll": "すべてコピー",
-      "copiedAll": "すべてコピーしました！",
-      "aboutUuid": "UUID v4について：",
-      "format": "形式：",
-      "formatDesc": "8-4-4-4-12の16進数（合計36文字）",
-      "example": "例：",
-      "uniqueness": "一意性：",
-      "uniquenessDesc": "時間と空間を通じて事実上一意であることが保証",
-      "security": "セキュリティ：",
-      "securityDesc": "暗号学的に安全な乱数を使用して生成",
-      "securityNote": "セキュリティ注意：",
-      "securityNoteDesc": "UUIDは暗号学的に安全な乱数生成を提供するcrypto.randomUUID()メソッドを使用してローカルで生成されます。UUIDは保存されたりサーバーに送信されたりしません。"
+      "warnings": {
+        "largeBatch": "大量のUUID生成には時間がかかる場合があります。"
+      }
     },
     "passwordGenerator": {
       "title": "パスワード生成器",
       "description": "カスタマイズ可能なオプションで安全なパスワードを生成",
       "length": "長さ",
+      "characterSets": "文字セット",
       "includeUppercase": "大文字を含む",
       "includeLowercase": "小文字を含む",
       "includeNumbers": "数字を含む",
       "includeSymbols": "記号を含む",
       "generate": "パスワードを生成",
+      "generatedPassword": "生成されたパスワード",
       "copy": "コピー",
       "copied": "コピーしました！",
-      "strengthVeryWeak": "非常に弱い",
+      "clear": "クリア",
+      "passwordStrength": "パスワード強度",
       "strengthWeak": "弱い",
       "strengthFair": "普通",
       "strengthGood": "良い",
-      "strengthStrong": "強い"
+      "strengthStrong": "強い",
+      "strengthGenerate": "パスワードを生成してください",
+      "warnings": {
+        "noCharacterSet": "少なくとも1つの文字セットを選択してください。",
+        "shortPassword": "8文字未満のパスワードは推奨されません。",
+        "weakPassword": "セキュリティ向上のため記号と数字の使用を検討してください。"
+      }
     },
     "timestampConverter": {
       "title": "タイムスタンプ変換器",
       "description": "タイムスタンプと人間が読める日付形式を相互変換",
-      "currentTimestamp": "現在のタイムスタンプ",
-      "enterTimestamp": "タイムスタンプを入力",
-      "timestampPlaceholder": "Unixタイムスタンプを入力...",
-      "convert": "変換",
-      "humanReadable": "人間が読める形式",
-      "iso8601": "ISO 8601",
-      "utc": "UTC",
-      "local": "ローカル時刻"
-    },
-    "whatsMyIp": {
-      "title": "私のIPアドレス",
-      "description": "パブリックIPアドレスと位置情報を確認",
-      "loading": "IP情報を読み込み中...",
-      "ipAddress": "IPアドレス",
-      "version": "バージョン",
-      "location": "位置",
-      "isp": "ISP",
-      "timezone": "タイムゾーン",
-      "error": "IP情報を取得できません"
+      "currentTime": "現在時刻",
+      "timestamp": "タイムスタンプ",
+      "dateTime": "日付と時刻",
+      "timestampToDate": "タイムスタンプから日付へ",
+      "dateToTimestamp": "日付からタイムスタンプへ",
+      "enterTimestamp": "Unixタイムスタンプを入力...",
+      "enterDateTime": "日付と時刻を入力...",
+      "useCurrentTimestamp": "現在のタイムスタンプを使用",
+      "copied": "コピーしました！",
+      "clear": "クリア",
+      "outputPlaceholderDate": "日付がここに表示されます...",
+      "outputPlaceholderTimestamp": "タイムスタンプがここに表示されます...",
+      "errors": {
+        "invalidTimestamp": "無効なタイムスタンプです。有効な数値を入力してください。",
+        "invalidDate": "無効な日付形式です。入力を確認してください。",
+        "conversionFailed": "変換に失敗しました。再試行してください。"
+      },
+      "warnings": {
+        "oldTimestamp": "このタイムスタンプは2000年以前のもののようです。",
+        "futureTimestamp": "このタイムスタンプは1年以上先の未来のもののようです。"
+      }
     },
     "urlEncoder": {
       "title": "URLエンコーダー/デコーダー",
@@ -119,7 +121,34 @@
       "enterUrl": "エンコード/デコードするURLを入力...",
       "copy": "コピー",
       "copied": "コピーしました！",
-      "clear": "クリア"
+      "clear": "クリア",
+      "outputPlaceholder": "出力がここに表示されます...",
+      "errors": {
+        "invalidUrl": "デコード用の無効なURL形式です。入力を確認してください。",
+        "encodeFailed": "URLのエンコードに失敗しました。再試行してください。"
+      },
+      "warnings": {
+        "longUrl": "非常に長いURLです。互換性向上のため短縮を検討してください。",
+        "alreadyDecoded": "このURLは既にデコード済みのようです。"
+      }
+    },
+    "whatsMyIp": {
+      "title": "私のIPアドレス",
+      "description": "パブリックIPアドレスと位置情報を確認",
+      "loading": "IP情報を読み込み中...",
+      "refresh": "更新",
+      "copied": "コピーしました！",
+      "copyIpAddress": "IPアドレスをコピー",
+      "yourIpAddress": "あなたのIPアドレス",
+      "locationInfo": "位置情報",
+      "country": "国",
+      "region": "地域",
+      "city": "都市",
+      "isp": "インターネットサービスプロバイダー",
+      "privacyNotice": "IP情報はサードパーティサービスから取得されます。当サーバーにはデータは保存されません。",
+      "errors": {
+        "fetchFailed": "IP情報の取得に失敗しました。接続を確認して再試行してください。"
+      }
     },
     "base64Encoder": {
       "title": "Base64エンコーダー/デコーダー",
@@ -132,6 +161,7 @@
       "copy": "コピー",
       "copied": "コピーしました！",
       "clear": "クリア",
+      "outputPlaceholder": "出力がここに表示されます...",
       "errors": {
         "invalidBase64": "無効なBase64入力です。入力を確認して再試行してください。",
         "encodeFailed": "入力のエンコードに失敗しました。再試行してください。"

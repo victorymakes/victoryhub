@@ -1,25 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import { useState, useEffect, useCallback } from "react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import {
-    Copy,
-    RefreshCw,
-    Check,
-    Clock,
-    ArrowUpDown,
-    Calendar,
-} from "lucide-react";
+import { Copy, ArrowDown, ArrowUp, AlertTriangle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 export const TimestampConverter = () => {
     const t = useTranslations("Tools.timestampConverter");
@@ -28,9 +16,8 @@ export const TimestampConverter = () => {
     const [currentTimestamp, setCurrentTimestamp] = useState<string>("");
     const [currentDateTime, setCurrentDateTime] = useState<string>("");
     const [currentDateTimeUTC, setCurrentDateTimeUTC] = useState<string>("");
-    const [copiedTimestamp, setCopiedTimestamp] = useState(false);
-    const [copiedDateTime, setCopiedDateTime] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [warning, setWarning] = useState<string | null>(null);
     const [mode, setMode] = useState<"timestamp-to-date" | "date-to-timestamp">(
         "timestamp-to-date",
     );
@@ -42,7 +29,6 @@ export const TimestampConverter = () => {
             const timestampSeconds = Math.floor(now.getTime() / 1000);
             setCurrentTimestamp(timestampSeconds.toString());
 
-            // Use consistent date formatting
             const localTime = now.toLocaleString("en-US", {
                 year: "numeric",
                 month: "2-digit",
@@ -64,33 +50,51 @@ export const TimestampConverter = () => {
             });
 
             setCurrentDateTime(localTime);
-            setCurrentDateTimeUTC(utcTime + " UTC");
+            setCurrentDateTimeUTC(utcTime);
         };
 
         updateCurrentTime();
         const interval = setInterval(updateCurrentTime, 1000);
-
         return () => clearInterval(interval);
     }, []);
 
-    const convertTimestampToDate = () => {
+    const convertTimestampToDate = useCallback(() => {
         setError(null);
+        setWarning(null);
+
+        if (!timestamp.trim()) {
+            setDateTime("");
+            return;
+        }
+
         try {
             const ts = parseInt(timestamp);
             if (isNaN(ts) || ts < 0) {
-                setError("Please enter a valid timestamp (positive number)");
+                setError(t("errors.invalidTimestamp"));
+                setDateTime("");
                 return;
             }
 
-            // Handle both seconds and milliseconds timestamps
+            // Show warning for very old or future timestamps
+            const now = Date.now() / 1000;
+            const timestampSeconds = ts < 10000000000 ? ts : ts / 1000;
+
+            if (timestampSeconds < 946684800) {
+                // Before year 2000
+                setWarning(t("warnings.oldTimestamp"));
+            } else if (timestampSeconds > now + 31536000) {
+                // More than 1 year in future
+                setWarning(t("warnings.futureTimestamp"));
+            }
+
             const date = new Date(ts < 10000000000 ? ts * 1000 : ts);
 
             if (isNaN(date.getTime())) {
-                setError("Invalid timestamp value");
+                setError(t("errors.invalidDate"));
+                setDateTime("");
                 return;
             }
 
-            // Use consistent date formatting
             const localTime = date.toLocaleString("en-US", {
                 year: "numeric",
                 month: "2-digit",
@@ -100,244 +104,305 @@ export const TimestampConverter = () => {
                 second: "2-digit",
                 hour12: false,
             });
-            const utcTime = date.toLocaleString("en-US", {
-                year: "numeric",
-                month: "2-digit",
-                day: "2-digit",
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit",
-                hour12: false,
-                timeZone: "UTC",
-            });
 
-            setDateTime(`${localTime} (Local)\n${utcTime} (UTC)`);
-        } catch {
-            setError("Invalid timestamp format");
+            setDateTime(localTime);
+        } catch (error) {
+            console.error("Timestamp conversion error:", error);
+            setError(t("errors.conversionFailed"));
+            setDateTime("");
         }
-    };
+    }, [timestamp, t]);
 
-    const convertDateToTimestamp = () => {
+    const convertDateToTimestamp = useCallback(() => {
         setError(null);
+        setWarning(null);
+
+        if (!dateTime.trim()) {
+            setTimestamp("");
+            return;
+        }
+
         try {
-            const date = new Date(dateTime.split(" (")[0]); // Remove (Local) part if present
+            const date = new Date(dateTime);
+
             if (isNaN(date.getTime())) {
-                setError(
-                    "Please enter a valid date format (e.g., 2024-01-01 12:00:00 or Jan 1, 2024)",
-                );
+                setError(t("errors.invalidDate"));
+                setTimestamp("");
                 return;
             }
-            setTimestamp(Math.floor(date.getTime() / 1000).toString());
-        } catch {
-            setError("Invalid date format");
+
+            const timestampSeconds = Math.floor(date.getTime() / 1000);
+            setTimestamp(timestampSeconds.toString());
+        } catch (error) {
+            console.error("Date conversion error:", error);
+            setError(t("errors.conversionFailed"));
+            setTimestamp("");
+        }
+    }, [dateTime, t]);
+
+    // Auto-convert when input changes
+    useEffect(() => {
+        if (mode === "timestamp-to-date") {
+            convertTimestampToDate();
+        } else {
+            convertDateToTimestamp();
+        }
+    }, [mode, convertTimestampToDate, convertDateToTimestamp]);
+
+    const copyToClipboard = async (text: string) => {
+        if (text) {
+            await navigator.clipboard.writeText(text);
+            toast.success(t("copied"));
         }
     };
 
     const useCurrentTimestamp = () => {
         setTimestamp(currentTimestamp);
-        const date = new Date(parseInt(currentTimestamp) * 1000);
-
-        // Use consistent date formatting
-        const localTime = date.toLocaleString("en-US", {
-            year: "numeric",
-            month: "2-digit",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: false,
-        });
-        const utcTime = date.toLocaleString("en-US", {
-            year: "numeric",
-            month: "2-digit",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: false,
-            timeZone: "UTC",
-        });
-
-        setDateTime(`${localTime} (Local)\n${utcTime} (UTC)`);
-        setError(null);
+        setMode("timestamp-to-date");
     };
-
-    const swapMode = () => {
-        setMode(
-            mode === "timestamp-to-date"
-                ? "date-to-timestamp"
-                : "timestamp-to-date",
-        );
-        // Clear inputs when switching modes
-        setTimestamp("");
-        setDateTime("");
-        setError(null);
-    };
-
-    const copyTimestamp = async () => {
-        if (timestamp) {
-            await navigator.clipboard.writeText(timestamp);
-            setCopiedTimestamp(true);
-            setTimeout(() => setCopiedTimestamp(false), 2000);
-        }
-    };
-
-    const copyDateTime = async () => {
-        if (dateTime) {
-            await navigator.clipboard.writeText(dateTime);
-            setCopiedDateTime(true);
-            setTimeout(() => setCopiedDateTime(false), 2000);
-        }
-    };
-
-    // Auto-convert when input changes
-    useEffect(() => {
-        if (timestamp && mode === "timestamp-to-date") {
-            convertTimestampToDate();
-        }
-    }, [timestamp, mode]);
-
-    useEffect(() => {
-        if (dateTime && mode === "date-to-timestamp") {
-            convertDateToTimestamp();
-        }
-    }, [dateTime, mode]);
 
     return (
         <div className="space-y-6">
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                        <Clock className="h-5 w-5" />
-                        {t("title")}
-                    </CardTitle>
-                    <CardDescription>{t("description")}</CardDescription>
+                    {/* Mode Toggle - Improved Design */}
+                    <div className="flex items-center justify-center mt-4">
+                        <div className="inline-flex items-center rounded-lg bg-muted p-1">
+                            <button
+                                onClick={() => setMode("timestamp-to-date")}
+                                className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                                    mode === "timestamp-to-date"
+                                        ? "bg-background text-foreground shadow-sm"
+                                        : "text-muted-foreground hover:text-foreground"
+                                }`}
+                            >
+                                {t("timestampToDate")}
+                            </button>
+                            <button
+                                onClick={() => setMode("date-to-timestamp")}
+                                className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                                    mode === "date-to-timestamp"
+                                        ? "bg-background text-foreground shadow-sm"
+                                        : "text-muted-foreground hover:text-foreground"
+                                }`}
+                            >
+                                {t("dateToTimestamp")}
+                            </button>
+                        </div>
+                    </div>
                 </CardHeader>
 
                 <CardContent className="space-y-6">
-                    {/* Current Timestamp Display */}
-                    <Card>
-                        <CardContent className="pt-6">
-                            <h3 className="text-sm font-medium mb-3 flex items-center gap-2">
-                                <Calendar className="h-4 w-4" />
-                                {t("currentTimestamp")}
-                            </h3>
-                            <div className="space-y-3">
+                    {/* Current Time Display */}
+                    <div className="p-4 border rounded-lg bg-muted/50">
+                        <h3 className="text-sm font-medium mb-3">
+                            {t("currentTime")}
+                        </h3>
+                        <div className="space-y-2">
+                            <div className="flex justify-between items-center">
+                                <span className="text-sm text-muted-foreground">
+                                    {t("timestamp")}:
+                                </span>
                                 <div className="flex items-center gap-2">
-                                    <Input
-                                        value={currentTimestamp}
-                                        readOnly
-                                        className="flex-1 font-mono text-sm"
-                                        placeholder="Current timestamp"
-                                    />
+                                    <span className="font-mono text-sm">
+                                        {currentTimestamp}
+                                    </span>
                                     <Button
                                         variant="outline"
                                         size="sm"
-                                        onClick={copyTimestamp}
+                                        onClick={() =>
+                                            copyToClipboard(currentTimestamp)
+                                        }
                                     >
-                                        {copiedTimestamp ? (
-                                            <Check className="h-4 w-4 text-green-500" />
-                                        ) : (
-                                            <Copy className="h-4 w-4" />
-                                        )}
+                                        <Copy className="h-3 w-3" />
                                     </Button>
                                 </div>
-                                <div className="text-xs text-muted-foreground space-y-1">
-                                    <p>
-                                        <strong>{t("local")}:</strong>{" "}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span className="text-sm text-muted-foreground">
+                                    Local:
+                                </span>
+                                <div className="flex items-center gap-2">
+                                    <span className="font-mono text-sm">
                                         {currentDateTime}
-                                    </p>
-                                    <p>
-                                        <strong>{t("utc")}:</strong>{" "}
-                                        {currentDateTimeUTC}
-                                    </p>
-                                    <p>
-                                        <strong>{t("iso8601")}:</strong>{" "}
-                                        {new Date().toISOString()}
-                                    </p>
+                                    </span>
+                                    <Button
+                                        variant="outline"
+                                        size="sm"
+                                        onClick={() =>
+                                            copyToClipboard(currentDateTime)
+                                        }
+                                    >
+                                        <Copy className="h-3 w-3" />
+                                    </Button>
                                 </div>
                             </div>
-                        </CardContent>
-                    </Card>
-
-                    {/* Mode Toggle */}
-                    <div className="flex items-center justify-center">
+                            <div className="flex justify-between items-center">
+                                <span className="text-sm text-muted-foreground">
+                                    UTC:
+                                </span>
+                                <div className="flex items-center gap-2">
+                                    <span className="font-mono text-sm">
+                                        {currentDateTimeUTC}
+                                    </span>
+                                    <Button
+                                        variant="outline"
+                                        size="sm"
+                                        onClick={() =>
+                                            copyToClipboard(currentDateTimeUTC)
+                                        }
+                                    >
+                                        <Copy className="h-3 w-3" />
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
                         <Button
                             variant="outline"
-                            onClick={swapMode}
-                            className="flex items-center gap-2"
+                            size="sm"
+                            onClick={useCurrentTimestamp}
+                            className="w-full mt-3"
                         >
-                            <ArrowUpDown className="h-4 w-4" />
-                            {mode === "timestamp-to-date"
-                                ? "Convert to Date"
-                                : "Convert to Timestamp"}
+                            {t("useCurrentTimestamp")}
                         </Button>
                     </div>
 
-                    {/* Input Section */}
-                    <div className="space-y-3">
-                        <label className="text-sm font-medium">
-                            {t("enterTimestamp")}
-                        </label>
-                        <div className="flex items-center gap-2">
-                            <Input
-                                type={
-                                    mode === "timestamp-to-date"
-                                        ? "number"
-                                        : "datetime-local"
-                                }
-                                value={timestamp}
-                                onChange={(e) => setTimestamp(e.target.value)}
-                                placeholder={t("timestampPlaceholder")}
-                                className="flex-1"
-                            />
-                            <Button
-                                onClick={
-                                    mode === "timestamp-to-date"
-                                        ? convertTimestampToDate
-                                        : convertDateToTimestamp
-                                }
-                                className="flex items-center gap-2"
-                            >
-                                <RefreshCw className="h-4 w-4" />
-                                {t("convert")}
-                            </Button>
-                        </div>
-                    </div>
+                    {mode === "timestamp-to-date" ? (
+                        <>
+                            {/* Timestamp Input */}
+                            <div className="space-y-3">
+                                <label className="text-sm font-medium flex items-center gap-2">
+                                    <ArrowDown className="h-4 w-4" />
+                                    {t("timestamp")}
+                                </label>
+                                <Input
+                                    value={timestamp}
+                                    onChange={(e) =>
+                                        setTimestamp(e.target.value)
+                                    }
+                                    placeholder={t("enterTimestamp")}
+                                    className="font-mono"
+                                />
+                            </div>
 
-                    {/* Error Display */}
-                    {error && (
-                        <Alert variant="destructive">
-                            <AlertDescription>{error}</AlertDescription>
-                        </Alert>
-                    )}
+                            {/* Error/Warning Display */}
+                            {error && (
+                                <Alert variant="destructive">
+                                    <AlertTriangle className="h-4 w-4" />
+                                    <AlertDescription>{error}</AlertDescription>
+                                </Alert>
+                            )}
 
-                    {/* Result Display */}
-                    {dateTime && (
-                        <div className="space-y-3">
-                            <label className="text-sm font-medium">
-                                {t("humanReadable")}
-                            </label>
-                            <div className="flex items-center gap-2">
+                            {warning && (
+                                <Alert>
+                                    <AlertTriangle className="h-4 w-4" />
+                                    <AlertDescription>
+                                        {warning}
+                                    </AlertDescription>
+                                </Alert>
+                            )}
+
+                            {/* Date Output */}
+                            <div className="space-y-3">
+                                <label className="text-sm font-medium flex items-center gap-2">
+                                    <ArrowUp className="h-4 w-4" />
+                                    {t("dateTime")}
+                                </label>
+                                <div className="flex items-center gap-2">
+                                    <Input
+                                        value={dateTime}
+                                        readOnly
+                                        placeholder={t("outputPlaceholderDate")}
+                                        className="flex-1 font-mono bg-muted/50"
+                                    />
+                                    <Button
+                                        variant={
+                                            dateTime ? "default" : "outline"
+                                        }
+                                        size="sm"
+                                        onClick={() =>
+                                            copyToClipboard(dateTime)
+                                        }
+                                        disabled={!dateTime}
+                                    >
+                                        <Copy className="h-4 w-4" />
+                                    </Button>
+                                </div>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            {/* Date Input */}
+                            <div className="space-y-3">
+                                <label className="text-sm font-medium flex items-center gap-2">
+                                    <ArrowDown className="h-4 w-4" />
+                                    {t("dateTime")}
+                                </label>
                                 <Input
                                     value={dateTime}
-                                    readOnly
-                                    className="flex-1 font-mono text-sm"
+                                    onChange={(e) =>
+                                        setDateTime(e.target.value)
+                                    }
+                                    placeholder={t("enterDateTime")}
+                                    className="font-mono"
                                 />
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    onClick={copyDateTime}
-                                >
-                                    {copiedDateTime ? (
-                                        <Check className="h-4 w-4 text-green-500" />
-                                    ) : (
-                                        <Copy className="h-4 w-4" />
-                                    )}
-                                </Button>
                             </div>
-                        </div>
+
+                            {/* Error Display */}
+                            {error && (
+                                <Alert variant="destructive">
+                                    <AlertTriangle className="h-4 w-4" />
+                                    <AlertDescription>{error}</AlertDescription>
+                                </Alert>
+                            )}
+
+                            {/* Timestamp Output */}
+                            <div className="space-y-3">
+                                <label className="text-sm font-medium flex items-center gap-2">
+                                    <ArrowUp className="h-4 w-4" />
+                                    {t("timestamp")}
+                                </label>
+                                <div className="flex items-center gap-2">
+                                    <Input
+                                        value={timestamp}
+                                        readOnly
+                                        placeholder={t(
+                                            "outputPlaceholderTimestamp",
+                                        )}
+                                        className="flex-1 font-mono bg-muted/50"
+                                    />
+                                    <Button
+                                        variant={
+                                            timestamp ? "default" : "outline"
+                                        }
+                                        size="sm"
+                                        onClick={() =>
+                                            copyToClipboard(timestamp)
+                                        }
+                                        disabled={!timestamp}
+                                    >
+                                        <Copy className="h-4 w-4" />
+                                    </Button>
+                                </div>
+                            </div>
+                        </>
                     )}
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-2">
+                        <Button
+                            variant="outline"
+                            onClick={() => {
+                                setTimestamp("");
+                                setDateTime("");
+                                setError(null);
+                                setWarning(null);
+                            }}
+                            className="flex-1"
+                        >
+                            {t("clear")}
+                        </Button>
+                    </div>
                 </CardContent>
             </Card>
         </div>

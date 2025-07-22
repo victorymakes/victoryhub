@@ -148,9 +148,7 @@ export default function Base64EncoderDecoder() {
                         <textarea
                             value={output}
                             readOnly
-                            placeholder={
-                                output ? "" : "Output will appear here..."
-                            }
+                            placeholder={output ? "" : t("outputPlaceholder")}
                             className="w-full min-h-[150px] p-3 border rounded-lg font-mono text-sm bg-muted/50"
                         />
                         <div className="flex justify-end">
@@ -162,7 +160,7 @@ export default function Base64EncoderDecoder() {
                                 className="flex items-center gap-2"
                             >
                                 <Copy className="h-4 w-4" />
-                                <span className="text-sm">Copy</span>
+                                <span className="text-sm">{t("copy")}</span>
                             </Button>
                         </div>
                     </div>
