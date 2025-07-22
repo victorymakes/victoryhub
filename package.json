@@ -3,16 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "generate-blog-metadata": "node scripts/blog-metadata-generator.mjs",
+    "dev": "npm run generate-blog-metadata && next dev",
+    "build": "npm run generate-blog-metadata && next build",
+    "start": "npm run generate-blog-metadata && next start",
     "lint": "next lint",
     "format": "prettier . --write",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "npm run generate-blog-metadata && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "npm run generate-blog-metadata && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.4.2",
     "@opennextjs/cloudflare": "^1.5.1",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-dialog": "^1.1.14",
@@ -32,6 +36,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/mdx": "^2.0.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

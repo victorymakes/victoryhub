@@ -31,6 +31,8 @@
     "design": "Design",
     "designDesc": "Design tools and creative applications",
     "popularTools": "Popular Tools",
+    "recentPosts": "Recent Blog Posts",
+    "viewAllPosts": "View All Posts",
     "privacyFirst": "Privacy-First Online Tools",
     "privacyDescription": "All tools run locally in your browser. No data is sent to servers, ensuring your privacy and security.",
     "private": "Private",
@@ -38,7 +40,10 @@
     "fast": "Fast",
     "fastDesc": "No server requests needed",
     "free": "Free",
-    "freeDesc": "Always free to use"
+    "freeDesc": "Always free to use",
+    "seoTitle": "Free Online Tools Collection",
+    "seoDescription": "Discover powerful free online tools including password generators, Base64 encoders, UUID generators, and more. Boost your productivity.",
+    "seoKeywords": "online tools, free tools, password generator, Base64, UUID, developer tools"
   },
   "Tools": {
     "title": "All Tools",
@@ -46,6 +51,9 @@
     "featuredTools": "Featured Tools",
     "allTools": "All Tools",
     "featured": "Featured",
+    "seoTitle": "All Online Tools",
+    "seoDescription": "Browse our complete collection of free online tools. Including password generators, encoders/decoders, formatters, and more.",
+    "seoKeywords": "online tools, developer tools, password generator, encoder, formatter, UUID generator",
     "uuidGenerator": {
       "title": "UUID Generator",
       "description": "Generate unique identifiers for your applications with batch support",
@@ -145,7 +153,12 @@
     "newsletterDesc": "Get the latest articles and tool recommendations delivered to your inbox.",
     "emailPlaceholder": "Enter your email",
     "subscribe": "Subscribe",
-    "by": "By"
+    "by": "By",
+    "seoTitle": "Blog Articles",
+    "seoDescription": "Browse our latest blog articles for technical insights and tutorials.",
+    "seoKeywords": "blog, articles, tutorials, technical insights, programming, development",
+    "notFoundTitle": "Blog Post Not Found",
+    "notFoundDescription": "The requested blog post could not be found."
   },
   "ToolDetail": {
     "title": "Tool Detail",
@@ -158,7 +171,9 @@
     "exampleOutput": "Example Output",
     "tryIt": "Try It Now",
     "relatedTools": "Related Tools",
-    "viewAllTools": "View All Tools"
+    "viewAllTools": "View All Tools",
+    "notFoundTitle": "Tool Not Found",
+    "notFoundDescription": "The requested tool could not be found."
   },
   "Footer": {
     "description": "Free online tools for developers, designers, and professionals. Privacy-focused utilities that run locally in your browser.",
