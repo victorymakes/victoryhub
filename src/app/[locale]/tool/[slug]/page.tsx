@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import { ToolComponent } from "@/components/tool/tool";
 import Container from "@/components/layout/container";
 import { getTool } from "@/service/tool-service";
+import { config, getLocalizedUrls, getLocalizedUrl } from "@/lib/config";
+import { getTranslations } from "next-intl/server";
 
 interface ToolPageProps {
     params: Promise<{
@@ -16,11 +18,41 @@ export async function generateMetadata({
 }: ToolPageProps): Promise<Metadata> {
     const resolvedParams = await params;
     const tool = await getTool(resolvedParams.slug, resolvedParams.locale);
-    if (!tool) return {};
+
+    if (!tool) {
+        const t = await getTranslations("ToolDetail");
+        return {
+            title: t("notFoundTitle"),
+            description: t("notFoundDescription"),
+        };
+    }
+
+    const url = getLocalizedUrl(
+        resolvedParams.locale,
+        `/tool/${resolvedParams.slug}`,
+    );
+
     return {
         title: tool.name,
         description: tool.description,
         keywords: tool.keywords,
+        openGraph: {
+            title: tool.name,
+            description: tool.description,
+            url,
+            siteName: config.siteName,
+            locale: resolvedParams.locale,
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: tool.name,
+            description: tool.description,
+        },
+        alternates: {
+            canonical: url,
+            languages: getLocalizedUrls(`/tool/${resolvedParams.slug}`),
+        },
     };
 }
 

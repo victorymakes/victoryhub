@@ -3,11 +3,47 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getCategories, getTools } from "@/service/tool-service";
 import { DynamicIcon } from "@/components/layout/dynamic-icon";
+import { Metadata } from "next";
+import { config, getLocalizedUrl, getLocalizedUrls } from "@/lib/config";
 
 interface ToolsPageProps {
     params: Promise<{
         locale: string;
     }>;
+}
+
+// SEO metadata for tools listing page
+export async function generateMetadata({
+    params,
+}: ToolsPageProps): Promise<Metadata> {
+    const resolvedParams = await params;
+    const { locale } = resolvedParams;
+    const t = await getTranslations("Tools");
+
+    const url = getLocalizedUrl(locale, "/tools");
+
+    return {
+        title: t("seoTitle"),
+        description: t("seoDescription"),
+        keywords: t("seoKeywords"),
+        openGraph: {
+            title: t("seoTitle"),
+            description: t("seoDescription"),
+            url,
+            siteName: config.siteName,
+            locale: locale,
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: t("seoTitle"),
+            description: t("seoDescription"),
+        },
+        alternates: {
+            canonical: url,
+            languages: getLocalizedUrls("/tools"),
+        },
+    };
 }
 
 export default async function ToolsPage({ params }: ToolsPageProps) {

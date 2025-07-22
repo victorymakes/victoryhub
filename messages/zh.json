@@ -23,6 +23,8 @@
     "subtitle": "为开发者、设计师和专业人士提供的必备工具。生成UUID、转换时间戳、编码URL、创建安全密码、处理图像、文本操作等 - 全部免费且注重隐私。",
     "browseTools": "浏览所有工具",
     "popularTools": "热门工具",
+    "recentPosts": "最新博客文章",
+    "viewAllPosts": "查看所有文章",
     "privacyFirst": "隐私优先的在线工具",
     "privacyDescription": "所有工具都在您的浏览器中本地运行。不会向服务器发送数据，确保您的隐私和安全。",
     "private": "私密",
@@ -30,7 +32,10 @@
     "fast": "快速",
     "fastDesc": "无需服务器请求",
     "free": "免费",
-    "freeDesc": "永远免费使用"
+    "freeDesc": "永远免费使用",
+    "seoTitle": "免费在线工具集合",
+    "seoDescription": "发现强大的免费在线工具，包括密码生成器、Base64编码器、UUID生成器等。提高��的工作效率。",
+    "seoKeywords": "在线工具, 免费工具, 密码生成器, Base64, UUID, 开发工具"
   },
   "Tools": {
     "title": "所有工具",
@@ -38,6 +43,9 @@
     "featuredTools": "精选工具",
     "allTools": "所有工具",
     "featured": "精选",
+    "seoTitle": "所有在线工具",
+    "seoDescription": "浏览我们完整的免费在线工具集合。包括密码生成器、编码解码器、格式化工具等。",
+    "seoKeywords": "在线工具, 开发工具, 密码生成器, 编码器, 格式化工具, UUID生成器",
     "uuidGenerator": {
       "title": "UUID生成器",
       "description": "支持批量生成应用程序的唯一标识符",
@@ -119,7 +127,7 @@
       "encode": "编码",
       "decode": "解码",
       "input": "输入",
-      "output": "输出",
+      "output": "输���",
       "enterText": "输入要编码/解码的文本...",
       "copy": "复制",
       "copied": "已复制！",
@@ -137,7 +145,12 @@
     "newsletterDesc": "将最新文章和工具推荐发送到您的邮箱。",
     "emailPlaceholder": "输入您的邮箱",
     "subscribe": "订阅",
-    "by": "作者"
+    "by": "作者",
+    "seoTitle": "博客文章",
+    "seoDescription": "浏览我们的最新博客文章，获取技术见解和教程。",
+    "seoKeywords": "博客, 文章, 教程, 技术见解, 编程, 开发",
+    "notFoundTitle": "未找到博客文章",
+    "notFoundDescription": "找不到请求的博客文章。"
   },
   "ToolDetail": {
     "title": "工具详情",
@@ -152,10 +165,12 @@
     "copyLink": "复制链接",
     "copiedLink": "已复制链接！",
     "emailSubject": "检查这个工具：{toolName}",
-    "emailBody": "嗨，我发现了这个很棒的工具：{toolName}。我认为你会喜欢的！"
+    "emailBody": "嗨，我发现了这个很棒的工具：{toolName}。我认为你会喜欢的！",
+    "notFoundTitle": "未找到工具",
+    "notFoundDescription": "找不到请求的工具。"
   },
   "Footer": {
-    "description": "为开发者、设计师和专业人士提供的免费在线工具。在浏览器中本地运行的注重隐私的实用程序。",
+    "description": "为���发者、设计师和专业人士提供的免费在线工具。在浏览器中本地运行的注重隐私的实用程序。",
     "navigation": "导航",
     "information": "信息",
     "privacyPolicy": "隐私政策",
