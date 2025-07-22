@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/layout/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -52,6 +53,7 @@ export default async function LocaleLayout({
                         <Navbar />
                         <main className="flex-1">{children}</main>
                         <Footer />
+                        <Toaster />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>

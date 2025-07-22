@@ -1,36 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import { useState, useEffect, useCallback } from "react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
-    Copy,
-    ArrowUpDown,
-    Check,
-    FileText,
-    ArrowDown,
-    ArrowUp,
-    AlertTriangle,
-} from "lucide-react";
+import { Copy, ArrowDown, ArrowUp, AlertTriangle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 export default function Base64EncoderDecoder() {
     const t = useTranslations("Tools.base64Encoder");
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [mode, setMode] = useState<"encode" | "decode">("encode");
-    const [copied, setCopied] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [warning, setWarning] = useState<string | null>(null);
 
-    const processBase64 = () => {
+    const processBase64 = useCallback(() => {
         setError(null);
         setWarning(null);
 
@@ -47,9 +33,7 @@ export default function Base64EncoderDecoder() {
 
                 // Show warning for large outputs
                 if (encoded.length > 1000) {
-                    setWarning(
-                        "Large Base64 output. Consider splitting for better readability.",
-                    );
+                    setWarning(t("warnings.largeOutput"));
                 }
             } else {
                 // Decode Base64 to string
@@ -60,97 +44,63 @@ export default function Base64EncoderDecoder() {
                 const hasNonPrintable =
                     /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/.test(decoded);
                 if (hasNonPrintable) {
-                    setWarning(
-                        "Decoded result contains non-printable characters. This might be binary data.",
-                    );
+                    setWarning(t("warnings.nonPrintableCharacters"));
                 }
             }
-        } catch (err) {
+        } catch (error) {
+            console.error("Base64 processing error:", error);
             if (mode === "decode") {
-                setError(
-                    "Invalid Base64 input. Please check your input and try again.",
-                );
+                setError(t("errors.invalidBase64"));
             } else {
-                setError("Failed to encode input. Please try again.");
+                setError(t("errors.encodeFailed"));
             }
             setOutput("");
         }
-    };
-
-    const swapMode = () => {
-        setMode(mode === "encode" ? "decode" : "encode");
-        // Swap input and output
-        const temp = input;
-        setInput(output);
-        setOutput(temp);
-        setError(null);
-        setWarning(null);
-    };
+    }, [input, mode, t]);
 
     const copyToClipboard = async () => {
         if (output) {
             await navigator.clipboard.writeText(output);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
+            toast.success(t("copied"));
         }
-    };
-
-    const clearAll = () => {
-        setInput("");
-        setOutput("");
-        setError(null);
-        setWarning(null);
-    };
-
-    const loadExample = (
-        exampleInput: string,
-        exampleMode: "encode" | "decode",
-    ) => {
-        setMode(exampleMode);
-        setInput(exampleInput);
     };
 
     // Auto-process when input or mode changes
     useEffect(() => {
         processBase64();
-    }, [input, mode]);
-
-    const getCharacterCount = (text: string) => {
-        return {
-            characters: text.length,
-            bytes: new Blob([text]).size,
-        };
-    };
-
-    const inputStats = getCharacterCount(input);
-    const outputStats = getCharacterCount(output);
+    }, [processBase64]);
 
     return (
         <div className="space-y-6">
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                        <FileText className="h-5 w-5" />
-                        {t("title")}
-                    </CardTitle>
-                    <CardDescription>{t("description")}</CardDescription>
-                </CardHeader>
-
-                <CardContent className="space-y-6">
-                    {/* Mode Toggle */}
+                    {/* Mode Toggle - Improved Design */}
                     <div className="flex items-center justify-center">
-                        <Button
-                            variant="outline"
-                            onClick={() =>
-                                setMode(mode === "encode" ? "decode" : "encode")
-                            }
-                            className="flex items-center gap-2"
-                        >
-                            <ArrowUpDown className="h-4 w-4" />
-                            {mode === "encode" ? t("encode") : t("decode")}
-                        </Button>
+                        <div className="inline-flex items-center rounded-lg bg-muted p-1">
+                            <button
+                                onClick={() => setMode("encode")}
+                                className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                                    mode === "encode"
+                                        ? "bg-background text-foreground shadow-sm"
+                                        : "text-muted-foreground hover:text-foreground"
+                                }`}
+                            >
+                                {t("encode")}
+                            </button>
+                            <button
+                                onClick={() => setMode("decode")}
+                                className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                                    mode === "decode"
+                                        ? "bg-background text-foreground shadow-sm"
+                                        : "text-muted-foreground hover:text-foreground"
+                                }`}
+                            >
+                                {t("decode")}
+                            </button>
+                        </div>
                     </div>
-
+                </CardHeader>
+                <CardContent className="space-y-6">
                     {/* Input Section */}
                     <div className="space-y-3">
                         <label className="text-sm font-medium flex items-center gap-2">
@@ -186,44 +136,36 @@ export default function Base64EncoderDecoder() {
                     )}
 
                     {/* Output Section */}
-                    {output && (
-                        <div className="space-y-3">
-                            <label className="text-sm font-medium flex items-center gap-2">
-                                {mode === "encode" ? (
-                                    <ArrowUp className="h-4 w-4" />
-                                ) : (
-                                    <ArrowDown className="h-4 w-4" />
-                                )}
-                                {t("output")}
-                            </label>
-                            <div className="flex items-start gap-2">
-                                <textarea
-                                    value={output}
-                                    readOnly
-                                    className="flex-1 min-h-[150px] p-3 border rounded-lg font-mono text-sm bg-muted/50"
-                                />
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    onClick={copyToClipboard}
-                                    className="mt-2"
-                                >
-                                    {copied ? (
-                                        <Check className="h-4 w-4 text-green-500" />
-                                    ) : (
-                                        <Copy className="h-4 w-4" />
-                                    )}
-                                </Button>
-                            </div>
-                            {copied && (
-                                <Alert>
-                                    <AlertDescription>
-                                        {t("copied")}
-                                    </AlertDescription>
-                                </Alert>
+                    <div className="space-y-3">
+                        <label className="text-sm font-medium flex items-center gap-2">
+                            {mode === "encode" ? (
+                                <ArrowUp className="h-4 w-4" />
+                            ) : (
+                                <ArrowDown className="h-4 w-4" />
                             )}
+                            {t("output")}
+                        </label>
+                        <textarea
+                            value={output}
+                            readOnly
+                            placeholder={
+                                output ? "" : "Output will appear here..."
+                            }
+                            className="w-full min-h-[150px] p-3 border rounded-lg font-mono text-sm bg-muted/50"
+                        />
+                        <div className="flex justify-end">
+                            <Button
+                                variant={output ? "default" : "outline"}
+                                size="sm"
+                                onClick={copyToClipboard}
+                                disabled={!output}
+                                className="flex items-center gap-2"
+                            >
+                                <Copy className="h-4 w-4" />
+                                <span className="text-sm">Copy</span>
+                            </Button>
                         </div>
-                    )}
+                    </div>
 
                     {/* Action Buttons */}
                     <div className="flex gap-2">

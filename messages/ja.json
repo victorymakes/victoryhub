@@ -20,13 +20,13 @@
   },
   "Homepage": {
     "title": "無料オンラインツール",
-    "subtitle": "開発者、デザイナー、プロフェッシ���ナルのための必須ユーティリティ。UUID生成、タイムスタンプ変換、URL符号化、安全なパスワード作成、画像処理、テキスト操作など - すべて無料でプライバシー重視。",
+    "subtitle": "開発者、デザイナー、プロフェッショナルのための必須ユーティリティ。UUID生成、タイムスタンプ変換、URL符号化、安全なパスワード作成、画像処理、テキスト操作など - すべて無料でプライバシー重視。",
     "browseTools": "すべてのツールを見る",
     "popularTools": "人気のツール",
     "recentPosts": "最新ブログ記事",
     "viewAllPosts": "すべての記事を見る",
     "privacyFirst": "プライバシー第一のオンラインツール",
-    "privacyDescription": "すべてのツールはブラウザ内でローカルに動作します。データはサーバーに送信されず、プラ���バシーとセキュリティを確保します。",
+    "privacyDescription": "すべてのツールはブラウザ内でローカルに動作します。データはサーバーに送信されず、プライバシーとセキュリティを確保します。",
     "private": "プライベート",
     "privateDesc": "すべてがブラウザ内で動作",
     "fast": "高速",
@@ -43,8 +43,8 @@
     "featuredTools": "注目のツール",
     "allTools": "すべてのツール",
     "featured": "注目",
-    "seoTitle": "すべての�����ンラインツール",
-    "seoDescription": "無料オンラ��ンツールの完全なコレクションをご覧ください。パスワード生成器、エンコーダー/デコーダー、フォーマッターなどが含まれます。",
+    "seoTitle": "すべてのオンラインツール",
+    "seoDescription": "無料オンラインツールの完全なコレクションをご覧ください。パスワード生成器、エンコーダー/デコーダー、フォーマッターなどが含まれます。",
     "seoKeywords": "オンラインツール, 開発者ツール, パスワード生成器, エンコーダー, フォーマッター, UUID生成器",
     "uuidGenerator": {
       "title": "UUID生成器",
@@ -67,7 +67,7 @@
       "security": "セキュリティ：",
       "securityDesc": "暗号学的に安全な乱数を使用して生成",
       "securityNote": "セキュリティ注意：",
-      "securityNoteDesc": "UUIDは暗号学的に安全な乱数生成を提供するcrypto.randomUUID()メソッドを使用し���ローカルで生成されます。UUIDは保存されたりサーバーに送信されたりしません。"
+      "securityNoteDesc": "UUIDは暗号学的に安全な乱数生成を提供するcrypto.randomUUID()メソッドを使用してローカルで生成されます。UUIDは保存されたりサーバーに送信されたりしません。"
     },
     "passwordGenerator": {
       "title": "パスワード生成器",
@@ -88,7 +88,7 @@
     },
     "timestampConverter": {
       "title": "タイムスタンプ変換器",
-      "description": "タイムスタ��プ��人間が読める日付形式を相互変換",
+      "description": "タイムスタンプと人間が読める日付形式を相互変換",
       "currentTimestamp": "現在のタイムスタンプ",
       "enterTimestamp": "タイムスタンプを入力",
       "timestampPlaceholder": "Unixタイムスタンプを入力...",
@@ -96,7 +96,7 @@
       "humanReadable": "人間が読める形式",
       "iso8601": "ISO 8601",
       "utc": "UTC",
-      "local": "ローカル時���"
+      "local": "ローカル時刻"
     },
     "whatsMyIp": {
       "title": "私のIPアドレス",
@@ -123,15 +123,23 @@
     },
     "base64Encoder": {
       "title": "Base64エンコーダー/デコーダー",
-      "description": "データ転送用���Base64文字列のエ���コードとデコード",
+      "description": "データ転送用のBase64文字列のエンコードとデコード",
       "encode": "エンコード",
       "decode": "デコード",
       "input": "入力",
       "output": "出力",
-      "enterText": "エンコード/デコードするテキス��を入力...",
+      "enterText": "エンコード/デコードするテキストを入力...",
       "copy": "コピー",
       "copied": "コピーしました！",
-      "clear": "クリア"
+      "clear": "クリア",
+      "errors": {
+        "invalidBase64": "無効なBase64入力です。入力を確認して再試行してください。",
+        "encodeFailed": "入力のエンコードに失敗しました。再試行してください。"
+      },
+      "warnings": {
+        "largeOutput": "大きなBase64出力です。読みやすさのために分割を検討してください。",
+        "nonPrintableCharacters": "デコード結果に印刷不可能な文字が含まれています。これはバイナリデータの可能性があります。"
+      }
     }
   },
   "Blog": {
@@ -147,7 +155,7 @@
     "subscribe": "購読",
     "by": "著者",
     "seoTitle": "ブログ記事",
-    "seoDescription": "技術的洞察とチュートリアルのため��最新ブログ記事をご覧ください。",
+    "seoDescription": "技術的洞察とチュートリアルのための最新ブログ記事をご覧ください。",
     "seoKeywords": "ブログ, 記事, チュートリアル, 技術的洞察, プログラミング, 開発",
     "notFoundTitle": "ブログ記事が見つかりません",
     "notFoundDescription": "要求されたブログ記事が見つかりませんでした。"
@@ -165,13 +173,13 @@
     "notFoundDescription": "要求されたツールが見つかりませんでした。"
   },
   "Footer": {
-    "description": "開発者、デザイナー、プロフェッショナルのための無料オンラインツール。ブラウザ内でローカルに動作するプライバシー重視のユーテ���リティ。",
+    "description": "開発者、デザイナー、プロフェッショナルのための無料オンラインツール。ブラウザ内でローカルに動作するプライバシー重視のユーティリティ。",
     "navigation": "ナビゲーション",
     "information": "情報",
     "privacyPolicy": "プライバシーポリシー",
     "termsOfService": "利用規約",
     "contact": "お問い合わせ",
     "copyright": "© {year} VictoryHub. All rights reserved.",
-    "madeWith": "開発者とクリエイターのために❤���で作られました"
+    "madeWith": "開発者とクリエイターのために❤で作られました"
   }
 }

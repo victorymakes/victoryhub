@@ -131,7 +131,15 @@
       "enterText": "인코딩/디코딩할 텍스트 입력...",
       "copy": "복사",
       "copied": "복사됨!",
-      "clear": "지우기"
+      "clear": "지우기",
+      "errors": {
+        "invalidBase64": "잘못된 Base64 입력입니다. 입력을 확인하고 다시 시도해주세요.",
+        "encodeFailed": "입력 인코딩에 실패했습니다. 다시 시도해주세요."
+      },
+      "warnings": {
+        "largeOutput": "큰 Base64 출력입니다. 가독성을 위해 분할을 고려해주세요.",
+        "nonPrintableCharacters": "디코딩 결과에 출력 불가능한 문자가 포함되어 있습니다. 이것은 바이너리 데이터일 수 있습니다."
+      }
     }
   },
   "Blog": {
