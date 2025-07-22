@@ -1,46 +1,44 @@
 "use client";
 
-import { useState } from "react";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import { useState, useCallback } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Copy, RefreshCw, Check, Hash, Plus, Minus } from "lucide-react";
+import { Copy, RefreshCw, Plus, Minus, AlertTriangle } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 export const UuidGenerator = () => {
     const t = useTranslations("Tools.uuidGenerator");
     const [uuids, setUuids] = useState<string[]>([]);
     const [count, setCount] = useState(1);
-    const [copied, setCopied] = useState<number | null>(null);
-    const [copiedAll, setCopiedAll] = useState(false);
+    const [warning, setWarning] = useState<string | null>(null);
 
-    const generateUUIDs = () => {
+    const generateUUIDs = useCallback(() => {
+        setWarning(null);
+
+        // Show warning for large batch generation
+        if (count > 25) {
+            setWarning(t("warnings.largeBatch"));
+        }
+
         const newUuids = Array.from({ length: count }, () =>
             crypto.randomUUID(),
         );
         setUuids(newUuids);
-        setCopied(null);
-        setCopiedAll(false);
-    };
+    }, [count, t]);
 
-    const copyUUID = async (uuid: string, index: number) => {
+    const copyUUID = async (uuid: string) => {
         await navigator.clipboard.writeText(uuid);
-        setCopied(index);
-        setTimeout(() => setCopied(null), 2000);
+        toast.success(t("copied"));
     };
 
     const copyAllUUIDs = async () => {
         if (uuids.length > 0) {
             const allUuids = uuids.join("\n");
             await navigator.clipboard.writeText(allUuids);
-            setCopiedAll(true);
-            setTimeout(() => setCopiedAll(false), 2000);
+            toast.success(t("allCopied"));
         }
     };
 
@@ -52,26 +50,19 @@ export const UuidGenerator = () => {
     return (
         <div className="space-y-6">
             <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                        <Hash className="h-5 w-5" />
-                        {t("title")}
-                    </CardTitle>
-                    <CardDescription>{t("description")}</CardDescription>
-                </CardHeader>
-
                 <CardContent className="space-y-6">
-                    {/* Batch Count Control */}
+                    {/* Batch Count Control - Improved styling */}
                     <div className="space-y-3">
                         <label className="text-sm font-medium">
                             {t("numberOfUuids")}
                         </label>
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center gap-3">
                             <Button
                                 variant="outline"
                                 size="sm"
                                 onClick={() => adjustCount(-1)}
                                 disabled={count <= 1}
+                                className="h-10 w-10 p-0"
                             >
                                 <Minus className="h-4 w-4" />
                             </Button>
@@ -98,124 +89,90 @@ export const UuidGenerator = () => {
                                 size="sm"
                                 onClick={() => adjustCount(1)}
                                 disabled={count >= 50}
+                                className="h-10 w-10 p-0"
                             >
                                 <Plus className="h-4 w-4" />
                             </Button>
-                            <div className="flex-1" />
-                            <Button
-                                onClick={generateUUIDs}
-                                className="flex items-center gap-2"
-                            >
-                                <RefreshCw className="h-4 w-4" />
-                                {count > 1
-                                    ? t("generateMultiple", { count })
-                                    : t("generateSingle")}
-                            </Button>
                         </div>
-                        <p className="text-xs text-muted-foreground">
-                            {t("generateBetween")}
-                        </p>
                     </div>
+
+                    {/* Warning Display */}
+                    {warning && (
+                        <Alert>
+                            <AlertTriangle className="h-4 w-4" />
+                            <AlertDescription>{warning}</AlertDescription>
+                        </Alert>
+                    )}
+
+                    {/* Generate Button */}
+                    <Button
+                        onClick={generateUUIDs}
+                        className="w-full flex items-center gap-2"
+                    >
+                        <RefreshCw className="h-4 w-4" />
+                        {t("generate")} {count > 1 ? `${count} UUIDs` : "UUID"}
+                    </Button>
 
                     {/* Generated UUIDs */}
                     {uuids.length > 0 && (
-                        <div className="space-y-3">
+                        <div className="space-y-4">
                             <div className="flex items-center justify-between">
                                 <label className="text-sm font-medium">
-                                    {uuids.length > 1
-                                        ? t("generatedUuidsPlural")
-                                        : t("generatedUuids")}{" "}
-                                    ({uuids.length})
+                                    {t("generatedUuids")} ({uuids.length})
                                 </label>
                                 {uuids.length > 1 && (
                                     <Button
                                         variant="outline"
                                         size="sm"
                                         onClick={copyAllUUIDs}
-                                        className="flex items-center gap-1"
+                                        className="flex items-center gap-2"
                                     >
-                                        {copiedAll ? (
-                                            <Check className="h-4 w-4 text-green-500" />
-                                        ) : (
-                                            <Copy className="h-4 w-4" />
-                                        )}
-                                        {copiedAll
-                                            ? t("copiedAll")
-                                            : t("copyAll")}
+                                        <Copy className="h-4 w-4" />
+                                        <span className="text-sm">
+                                            {t("copyAll")}
+                                        </span>
                                     </Button>
                                 )}
                             </div>
 
-                            <Card>
-                                <CardContent className="pt-6">
-                                    <div className="space-y-2 max-h-80 overflow-y-auto">
-                                        {uuids.map((uuid, index) => (
-                                            <div
-                                                key={index}
-                                                className="flex items-center gap-2 p-2 bg-muted/50 rounded-lg"
-                                            >
-                                                <span className="text-xs text-muted-foreground w-6">
-                                                    {index + 1}.
-                                                </span>
-                                                <Input
-                                                    value={uuid}
-                                                    readOnly
-                                                    className="flex-1 font-mono text-sm"
-                                                />
-                                                <Button
-                                                    variant="outline"
-                                                    size="sm"
-                                                    onClick={() =>
-                                                        copyUUID(uuid, index)
-                                                    }
-                                                >
-                                                    {copied === index ? (
-                                                        <Check className="h-4 w-4 text-green-500" />
-                                                    ) : (
-                                                        <Copy className="h-4 w-4" />
-                                                    )}
-                                                </Button>
-                                            </div>
-                                        ))}
+                            <div className="space-y-2 max-h-80 overflow-y-auto">
+                                {uuids.map((uuid, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex items-center gap-2 p-3 border rounded-lg bg-muted/30"
+                                    >
+                                        <Input
+                                            value={uuid}
+                                            readOnly
+                                            className="flex-1 font-mono text-sm border-0 bg-transparent"
+                                        />
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            onClick={() => copyUUID(uuid)}
+                                            className="flex items-center gap-2"
+                                        >
+                                            <Copy className="h-4 w-4" />
+                                        </Button>
                                     </div>
-                                </CardContent>
-                            </Card>
+                                ))}
+                            </div>
                         </div>
                     )}
 
-                    {/* UUID Information */}
-                    <Card>
-                        <CardContent className="pt-6">
-                            <h4 className="text-sm font-semibold mb-3">
-                                {t("aboutUuid")}
-                            </h4>
-                            <div className="space-y-2 text-xs text-muted-foreground">
-                                <p>
-                                    • <strong>{t("format")}</strong>{" "}
-                                    {t("formatDesc")}
-                                </p>
-                                <p>
-                                    • <strong>{t("example")}</strong>{" "}
-                                    550e8400-e29b-41d4-a716-446655440000
-                                </p>
-                                <p>
-                                    • <strong>{t("uniqueness")}</strong>{" "}
-                                    {t("uniquenessDesc")}
-                                </p>
-                                <p>
-                                    • <strong>{t("security")}</strong>{" "}
-                                    {t("securityDesc")}
-                                </p>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    {/* Security Note */}
-                    <div className="rounded-lg bg-muted/50 p-4">
-                        <p className="text-xs text-muted-foreground leading-relaxed">
-                            <strong>{t("securityNote")}</strong>{" "}
-                            {t("securityNoteDesc")}
-                        </p>
+                    {/* Action Buttons */}
+                    <div className="flex gap-2">
+                        <Button
+                            variant="outline"
+                            onClick={() => {
+                                setUuids([]);
+                                setWarning(null);
+                            }}
+                            className="flex-1"
+                            disabled={uuids.length === 0}
+                        >
+                            {t("clear")}
+                        </Button>
                     </div>
                 </CardContent>
             </Card>

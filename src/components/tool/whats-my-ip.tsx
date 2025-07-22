@@ -1,24 +1,21 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import { useState, useEffect, useCallback } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
+    Copy,
     AlertCircle,
     Globe,
     Wifi,
     User,
     RefreshCw,
     Loader2,
+    AlertTriangle,
 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 interface IPInfo {
     ip: string;
@@ -44,21 +41,21 @@ export default function WhatsMyIP() {
         error: null,
     });
 
-    const fetchIPInfo = async () => {
+    const fetchIPInfo = useCallback(async () => {
         setIpInfo((prev) => ({ ...prev, loading: true, error: null }));
         try {
             const response = await fetch("https://ipapi.co/json/");
             if (!response.ok) {
-                setIpInfo((prev) => ({
-                    ...prev,
-                    loading: false,
-                    error: "Failed to fetch IP information. Server returned an error.",
-                }));
-                return;
+                throw new Error(`HTTP ${response.status}`);
             }
             const data = await response.json();
+
+            if (data.error) {
+                throw new Error(data.reason || "API returned an error");
+            }
+
             setIpInfo({
-                ip: data.ip,
+                ip: data.ip || "Unknown",
                 version: data.version === "IPv4" ? "4" : "6",
                 city: data.city || "Unknown",
                 region: data.region || "Unknown",
@@ -67,30 +64,62 @@ export default function WhatsMyIP() {
                 loading: false,
                 error: null,
             });
-        } catch {
+        } catch (error) {
+            console.error("IP fetch error:", error);
             setIpInfo((prev) => ({
                 ...prev,
                 loading: false,
-                error: "Failed to fetch IP information. Please try again.",
+                error: t("errors.fetchFailed"),
             }));
         }
-    };
+    }, [t]);
 
     useEffect(() => {
         fetchIPInfo();
-    }, []);
+    }, [fetchIPInfo]);
+
+    const copyToClipboard = async (text: string) => {
+        await navigator.clipboard.writeText(text);
+        toast.success(t("copied"));
+    };
+
+    const InfoRow = ({
+        icon: Icon,
+        label,
+        value,
+        copyable = true,
+    }: {
+        icon: React.ComponentType<{ className?: string }>;
+        label: string;
+        value: string;
+        copyable?: boolean;
+    }) => (
+        <div className="flex items-center justify-between p-3 border rounded-lg bg-muted/30">
+            <div className="flex items-center gap-3">
+                <Icon className="h-4 w-4 text-muted-foreground" />
+                <div>
+                    <div className="text-sm font-medium">{label}</div>
+                    <div className="text-sm text-muted-foreground font-mono">
+                        {value}
+                    </div>
+                </div>
+            </div>
+            {copyable && value !== "Unknown" && (
+                <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => copyToClipboard(value)}
+                    className="flex items-center gap-2"
+                >
+                    <Copy className="h-4 w-4" />
+                </Button>
+            )}
+        </div>
+    );
 
     return (
         <div className="space-y-6">
             <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                        <Globe className="h-5 w-5" />
-                        {t("title")}
-                    </CardTitle>
-                    <CardDescription>{t("description")}</CardDescription>
-                </CardHeader>
-
                 <CardContent className="space-y-6">
                     {ipInfo.loading && (
                         <div className="flex items-center justify-center py-8">
@@ -105,84 +134,95 @@ export default function WhatsMyIP() {
 
                     {ipInfo.error && (
                         <Alert variant="destructive">
-                            <AlertCircle className="h-4 w-4" />
-                            <AlertDescription>
-                                {t("error")}: {ipInfo.error}
-                            </AlertDescription>
+                            <AlertTriangle className="h-4 w-4" />
+                            <AlertDescription>{ipInfo.error}</AlertDescription>
                         </Alert>
                     )}
 
                     {!ipInfo.loading && !ipInfo.error && (
                         <div className="space-y-4">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <Card>
-                                    <CardContent className="pt-6">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <Wifi className="h-4 w-4" />
-                                            <span className="text-sm font-medium">
-                                                {t("ipAddress")}
-                                            </span>
-                                        </div>
-                                        <p className="text-2xl font-mono">
-                                            {ipInfo.ip}
-                                        </p>
-                                    </CardContent>
-                                </Card>
-
-                                <Card>
-                                    <CardContent className="pt-6">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <AlertCircle className="h-4 w-4" />
-                                            <span className="text-sm font-medium">
-                                                {t("version")}
-                                            </span>
-                                        </div>
-                                        <p className="text-2xl">
-                                            {ipInfo.version}
-                                        </p>
-                                    </CardContent>
-                                </Card>
-
-                                <Card>
-                                    <CardContent className="pt-6">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <Globe className="h-4 w-4" />
-                                            <span className="text-sm font-medium">
-                                                {t("location")}
-                                            </span>
-                                        </div>
-                                        <p className="text-lg">
-                                            {ipInfo.city}, {ipInfo.region},{" "}
-                                            {ipInfo.country}
-                                        </p>
-                                    </CardContent>
-                                </Card>
-
-                                <Card>
-                                    <CardContent className="pt-6">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <User className="h-4 w-4" />
-                                            <span className="text-sm font-medium">
-                                                {t("isp")}
-                                            </span>
-                                        </div>
-                                        <p className="text-lg">{ipInfo.isp}</p>
-                                    </CardContent>
-                                </Card>
+                            <div className="text-center p-6 border rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20">
+                                <div className="text-sm text-muted-foreground mb-2">
+                                    {t("yourIpAddress")}
+                                </div>
+                                <div className="text-2xl font-bold font-mono text-blue-600 dark:text-blue-400">
+                                    {ipInfo.ip}
+                                </div>
+                                <div className="text-sm text-muted-foreground mt-2">
+                                    IPv{ipInfo.version}
+                                </div>
+                                <Button
+                                    variant="outline"
+                                    size="sm"
+                                    onClick={() => copyToClipboard(ipInfo.ip)}
+                                    className="mt-4 flex items-center gap-2"
+                                    disabled={
+                                        !ipInfo.ip || ipInfo.ip === "Unknown"
+                                    }
+                                >
+                                    <Copy className="h-4 w-4" />
+                                    <span className="text-sm">
+                                        {t("copyIpAddress")}
+                                    </span>
+                                </Button>
                             </div>
 
-                            <div className="flex justify-center">
-                                <Button
-                                    onClick={fetchIPInfo}
-                                    className="flex items-center gap-2"
-                                    disabled={ipInfo.loading}
-                                >
-                                    <RefreshCw className="h-4 w-4" />
-                                    Refresh
-                                </Button>
+                            <div className="space-y-3">
+                                <h3 className="text-sm font-medium">
+                                    {t("locationInfo")}
+                                </h3>
+
+                                <InfoRow
+                                    icon={Globe}
+                                    label={t("country")}
+                                    value={ipInfo.country}
+                                />
+
+                                <InfoRow
+                                    icon={User}
+                                    label={t("region")}
+                                    value={ipInfo.region}
+                                />
+
+                                <InfoRow
+                                    icon={User}
+                                    label={t("city")}
+                                    value={ipInfo.city}
+                                />
+
+                                <InfoRow
+                                    icon={Wifi}
+                                    label={t("isp")}
+                                    value={ipInfo.isp}
+                                />
                             </div>
                         </div>
                     )}
+
+                    {/* Refresh Button */}
+                    <div className="flex gap-2">
+                        <Button
+                            variant="outline"
+                            onClick={fetchIPInfo}
+                            disabled={ipInfo.loading}
+                            className="flex-1 flex items-center gap-2"
+                        >
+                            <RefreshCw
+                                className={`h-4 w-4 ${
+                                    ipInfo.loading ? "animate-spin" : ""
+                                }`}
+                            />
+                            {t("refresh")}
+                        </Button>
+                    </div>
+
+                    {/* Privacy Notice */}
+                    <Alert>
+                        <AlertCircle className="h-4 w-4" />
+                        <AlertDescription className="text-xs">
+                            {t("privacyNotice")}
+                        </AlertDescription>
+                    </Alert>
                 </CardContent>
             </Card>
         </div>

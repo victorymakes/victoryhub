@@ -51,63 +51,65 @@
       "description": "支持批量生成应用程序的唯一标识符",
       "numberOfUuids": "要生成的UUID数量",
       "generate": "生成",
-      "generateMultiple": "生成{count}个UUID",
-      "generateSingle": "生成UUID",
-      "generateBetween": "一次生成1到50个UUID",
       "generatedUuids": "生成的UUID",
-      "generatedUuidsPlural": "生成的UUID",
+      "copied": "已复制！",
+      "allCopied": "所有UUID已复制！",
+      "clear": "清空",
       "copyAll": "全部复制",
-      "copiedAll": "全部已复制！",
-      "aboutUuid": "关于UUID v4：",
-      "format": "格式：",
-      "formatDesc": "8-4-4-4-12十六进制数字（总共36个字符）",
-      "example": "示例：",
-      "uniqueness": "唯一性：",
-      "uniquenessDesc": "在时间和空间上实际保证唯一",
-      "security": "安全性：",
-      "securityDesc": "使用加密安全的随机数生成",
-      "securityNote": "安全说明：",
-      "securityNoteDesc": "UUID使用crypto.randomUUID()方法在本地生成，该方法提供加密安全的随机生成。UUID不会被存储或传输到任何服务器。"
+      "warnings": {
+        "largeBatch": "生成大量UUID可能需要一些时间。"
+      }
     },
     "passwordGenerator": {
       "title": "密码生成器",
       "description": "使用可自定义选项生成安全密码",
       "length": "长度",
+      "characterSets": "字符集",
       "includeUppercase": "包含大写字母",
       "includeLowercase": "包含小写字母",
       "includeNumbers": "包含数字",
       "includeSymbols": "包含符号",
       "generate": "生成密码",
+      "generatedPassword": "生成的密码",
       "copy": "复制",
       "copied": "已复制！",
-      "strengthVeryWeak": "极弱",
+      "clear": "清空",
+      "passwordStrength": "密码强度",
       "strengthWeak": "弱",
       "strengthFair": "一般",
       "strengthGood": "好",
-      "strengthStrong": "强"
+      "strengthStrong": "强",
+      "strengthGenerate": "请生成密码",
+      "warnings": {
+        "noCharacterSet": "请至少选择一个字符集。",
+        "shortPassword": "不建议使用少于8个字符的密码。",
+        "weakPassword": "建议包含符号和数字以提高安全性。"
+      }
     },
     "timestampConverter": {
       "title": "时间戳转换器",
       "description": "在时间戳和人类可读日期格式之间转换",
-      "currentTimestamp": "当前时间戳",
-      "enterTimestamp": "输入时间戳",
-      "timestampPlaceholder": "输入Unix时间戳...",
-      "convert": "转换",
-      "humanReadable": "人类可读格式",
-      "iso8601": "ISO 8601",
-      "utc": "UTC",
-      "local": "本地时间"
-    },
-    "whatsMyIp": {
-      "title": "我的IP地址",
-      "description": "检查您的公网IP地址和位置信息",
-      "loading": "正在加载IP信息...",
-      "ipAddress": "IP地址",
-      "version": "版本",
-      "location": "位置",
-      "isp": "ISP",
-      "timezone": "时区",
-      "error": "无法获取IP信息"
+      "currentTime": "当前时间",
+      "timestamp": "时间戳",
+      "dateTime": "日期和时间",
+      "timestampToDate": "时间戳转日期",
+      "dateToTimestamp": "日期转时间戳",
+      "enterTimestamp": "输入Unix时间戳...",
+      "enterDateTime": "输入日期和时间...",
+      "useCurrentTimestamp": "使用当前时间戳",
+      "copied": "已复制！",
+      "clear": "清空",
+      "outputPlaceholderDate": "日期将在此显示...",
+      "outputPlaceholderTimestamp": "时间戳将在此显示...",
+      "errors": {
+        "invalidTimestamp": "无效的时间戳。请输入有效的数字。",
+        "invalidDate": "无效的日期格式。请检查您的输入。",
+        "conversionFailed": "转换失败。请重试。"
+      },
+      "warnings": {
+        "oldTimestamp": "此时间戳似乎是2000年之前的。",
+        "futureTimestamp": "此时间戳似乎是一年以后的未来时间。"
+      }
     },
     "urlEncoder": {
       "title": "URL编码器/解码器",
@@ -119,7 +121,34 @@
       "enterUrl": "输入要编码/解码的URL...",
       "copy": "复制",
       "copied": "已复制！",
-      "clear": "清空"
+      "clear": "清空",
+      "outputPlaceholder": "输出将在此显示...",
+      "errors": {
+        "invalidUrl": "解码的URL格式无效。请检查您的输入。",
+        "encodeFailed": "URL编码失败。请重试。"
+      },
+      "warnings": {
+        "longUrl": "URL过长。建议缩短以提高兼容性。",
+        "alreadyDecoded": "此URL似乎已经解码。"
+      }
+    },
+    "whatsMyIp": {
+      "title": "我的IP地址",
+      "description": "检查您的公网IP地址和位置信息",
+      "loading": "正在加载IP信息...",
+      "refresh": "刷新",
+      "copied": "已复制！",
+      "copyIpAddress": "复制IP地址",
+      "yourIpAddress": "您的IP地址",
+      "locationInfo": "位置信息",
+      "country": "国家",
+      "region": "地区",
+      "city": "城市",
+      "isp": "互联网服务提供商",
+      "privacyNotice": "IP信息从第三方服务获取。我们的服务器不存储任何数据。",
+      "errors": {
+        "fetchFailed": "获取IP信息失败。请检查您的连接并重试。"
+      }
     },
     "base64Encoder": {
       "title": "Base64编码器/解码器",
@@ -132,6 +161,7 @@
       "copy": "复制",
       "copied": "已复制！",
       "clear": "清空",
+      "outputPlaceholder": "输出将在此显示...",
       "errors": {
         "invalidBase64": "无效的Base64输入。请检查您的输入并重试。",
         "encodeFailed": "编码输入失败。请重试。"
@@ -178,7 +208,7 @@
     "notFoundDescription": "找不到请求的工具。"
   },
   "Footer": {
-    "description": "为���发者、设计师和专业人士提供的免费在线工具。在浏览器中本地运行的注重隐私的实用程序。",
+    "description": "为开发者、设计师和专业人士提供的免费在线工具。在浏览器中本地运行的注重隐私的实用程序。",
     "navigation": "导航",
     "information": "信息",
     "privacyPolicy": "隐私政策",

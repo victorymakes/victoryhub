@@ -59,63 +59,65 @@
       "description": "Generate unique identifiers for your applications with batch support",
       "numberOfUuids": "Number of UUIDs to Generate",
       "generate": "Generate",
-      "generateMultiple": "Generate {count} UUIDs",
-      "generateSingle": "Generate UUID",
-      "generateBetween": "Generate between 1 and 50 UUIDs at once",
-      "generatedUuids": "Generated UUID",
-      "generatedUuidsPlural": "Generated UUIDs",
+      "generatedUuids": "Generated UUIDs",
+      "copied": "Copied!",
+      "allCopied": "All UUIDs copied!",
+      "clear": "Clear",
       "copyAll": "Copy All",
-      "copiedAll": "Copied All!",
-      "aboutUuid": "About UUID v4:",
-      "format": "Format:",
-      "formatDesc": "8-4-4-4-12 hexadecimal digits (36 characters total)",
-      "example": "Example:",
-      "uniqueness": "Uniqueness:",
-      "uniquenessDesc": "Virtually guaranteed to be unique across time and space",
-      "security": "Security:",
-      "securityDesc": "Generated using cryptographically secure random numbers",
-      "securityNote": "Security Note:",
-      "securityNoteDesc": "UUIDs are generated locally using the crypto.randomUUID() method, which provides cryptographically secure random generation. No UUIDs are stored or transmitted to any server."
+      "warnings": {
+        "largeBatch": "Generating a large batch of UUIDs may take some time."
+      }
     },
     "passwordGenerator": {
       "title": "Password Generator",
       "description": "Generate secure passwords with customizable options",
       "length": "Length",
+      "characterSets": "Character Sets",
       "includeUppercase": "Include Uppercase Letters",
       "includeLowercase": "Include Lowercase Letters",
       "includeNumbers": "Include Numbers",
       "includeSymbols": "Include Symbols",
       "generate": "Generate Password",
+      "generatedPassword": "Generated Password",
       "copy": "Copy",
       "copied": "Copied!",
-      "strengthVeryWeak": "Very Weak",
+      "clear": "Clear",
+      "passwordStrength": "Password Strength",
       "strengthWeak": "Weak",
       "strengthFair": "Fair",
       "strengthGood": "Good",
-      "strengthStrong": "Strong"
+      "strengthStrong": "Strong",
+      "strengthGenerate": "Generate a password",
+      "warnings": {
+        "noCharacterSet": "Please select at least one character set.",
+        "shortPassword": "Passwords shorter than 8 characters are not recommended.",
+        "weakPassword": "Consider including symbols and numbers for better security."
+      }
     },
     "timestampConverter": {
       "title": "Timestamp Converter",
       "description": "Convert between timestamp and human-readable date formats",
-      "currentTimestamp": "Current Timestamp",
-      "enterTimestamp": "Enter Timestamp",
-      "timestampPlaceholder": "Enter Unix timestamp...",
-      "convert": "Convert",
-      "humanReadable": "Human Readable",
-      "iso8601": "ISO 8601",
-      "utc": "UTC",
-      "local": "Local Time"
-    },
-    "whatsMyIp": {
-      "title": "What's My IP",
-      "description": "Check your public IP address and location information",
-      "loading": "Loading your IP information...",
-      "ipAddress": "IP Address",
-      "version": "Version",
-      "location": "Location",
-      "isp": "ISP",
-      "timezone": "Timezone",
-      "error": "Unable to fetch IP information"
+      "currentTime": "Current Time",
+      "timestamp": "Timestamp",
+      "dateTime": "Date & Time",
+      "timestampToDate": "Timestamp to Date",
+      "dateToTimestamp": "Date to Timestamp",
+      "enterTimestamp": "Enter Unix timestamp...",
+      "enterDateTime": "Enter date and time...",
+      "useCurrentTimestamp": "Use Current Timestamp",
+      "copied": "Copied!",
+      "clear": "Clear",
+      "outputPlaceholderDate": "Date will appear here...",
+      "outputPlaceholderTimestamp": "Timestamp will appear here...",
+      "errors": {
+        "invalidTimestamp": "Invalid timestamp. Please enter a valid number.",
+        "invalidDate": "Invalid date format. Please check your input.",
+        "conversionFailed": "Conversion failed. Please try again."
+      },
+      "warnings": {
+        "oldTimestamp": "This timestamp appears to be from before the year 2000.",
+        "futureTimestamp": "This timestamp appears to be more than a year in the future."
+      }
     },
     "urlEncoder": {
       "title": "URL Encoder/Decoder",
@@ -127,7 +129,34 @@
       "enterUrl": "Enter URL to encode/decode...",
       "copy": "Copy",
       "copied": "Copied!",
-      "clear": "Clear"
+      "clear": "Clear",
+      "outputPlaceholder": "Output will appear here...",
+      "errors": {
+        "invalidUrl": "Invalid URL format for decoding. Please check your input.",
+        "encodeFailed": "Failed to encode URL. Please try again."
+      },
+      "warnings": {
+        "longUrl": "Very long URL. Consider shortening for better compatibility.",
+        "alreadyDecoded": "This URL appears to already be decoded."
+      }
+    },
+    "whatsMyIp": {
+      "title": "What's My IP",
+      "description": "Check your public IP address and location information",
+      "loading": "Loading your IP information...",
+      "refresh": "Refresh",
+      "copied": "Copied!",
+      "copyIpAddress": "Copy IP Address",
+      "yourIpAddress": "Your IP Address",
+      "locationInfo": "Location Information",
+      "country": "Country",
+      "region": "Region",
+      "city": "City",
+      "isp": "Internet Service Provider",
+      "privacyNotice": "Your IP information is fetched from a third-party service. No data is stored on our servers.",
+      "errors": {
+        "fetchFailed": "Failed to fetch IP information. Please check your connection and try again."
+      }
     },
     "base64Encoder": {
       "title": "Base64 Encoder/Decoder",
@@ -140,6 +169,7 @@
       "copy": "Copy",
       "copied": "Copied!",
       "clear": "Clear",
+      "outputPlaceholder": "Output will appear here...",
       "errors": {
         "invalidBase64": "Invalid Base64 input. Please check your input and try again.",
         "encodeFailed": "Failed to encode input. Please try again."
