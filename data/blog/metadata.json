@@ -3,7 +3,7 @@
     {
       "slug": "blog-post-a",
       "title": "This is a test blog post a",
-      "description": "This is a test blog post for testing purposes. It contains some sample text to demonstrate the structure of a blog post in markdown format.",
+      "description": "This is a test blog post for testing purposes. ",
       "date": "2024-12-13",
       "author": "Victory",
       "tags": [
@@ -15,12 +15,13 @@
       "draft": false,
       "locale": "en",
       "type": "mdx",
-      "readingTime": 1
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop"
     },
     {
       "slug": "blog-post-b",
       "title": "This is a test blog post B",
-      "description": "This is a test blog post for testing purposes. It contains some sample text to demonstrate the structure of a blog post in markdown format.",
+      "description": "This is a test blog post for testing purposes. It contains some sample text to demonstrate the structure of a blog post in markdown format.It contains some sample text to demonstrate the structure of a blog post in markdown format.It contains some sample text to demonstrate the structure of a blog post in markdown format.",
       "date": "2024-12-13",
       "author": "Victory",
       "tags": [
@@ -32,7 +33,8 @@
       "draft": false,
       "locale": "en",
       "type": "mdx",
-      "readingTime": 1
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop"
     },
     {
       "slug": "blog-post-c",
@@ -49,7 +51,8 @@
       "draft": false,
       "locale": "en",
       "type": "mdx",
-      "readingTime": 1
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop"
     }
   ],
   "zh": []

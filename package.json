@@ -9,9 +9,10 @@
     "start": "npm run generate-blog-metadata && next start",
     "lint": "next lint",
     "format": "prettier . --write",
-    "preview": "npm run generate-blog-metadata && opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "npm run generate-blog-metadata && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf:login": "wrangler login",
+    "cf:preview": "npm run generate-blog-metadata && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf:deploy": "npm run generate-blog-metadata && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

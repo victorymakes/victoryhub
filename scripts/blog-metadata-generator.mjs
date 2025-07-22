@@ -85,6 +85,7 @@ const processMarkdownFile = (filePath, locale) => {
             locale,
             type: fileExtension === ".mdx" ? "mdx" : "md",
             readingTime: estimateReadingTime(content),
+            cover: exportedMetadata.cover || "",
         };
 
         console.log(`  - Processed: ${fileName}`);
