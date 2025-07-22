@@ -1,7 +1,7 @@
 import * as blogData from "../../data/blog/metadata.json";
 import React from "react";
 
-interface Blog {
+export interface Blog {
     slug: string;
     title: string;
     description: string;
@@ -14,6 +14,7 @@ interface Blog {
     locale: string;
     readingTime: number;
     type: "mdx" | "md";
+    cover?: string;
 }
 
 // Type assertion for the imported JSON data
@@ -39,6 +40,52 @@ export const getBlogsByCategory = async (
     return posts.filter(
         (post: Blog) => post.category === category && !post.draft,
     );
+};
+
+// Get unique categories from all blogs
+export const getCategories = async (
+    locale: string = "en",
+): Promise<string[]> => {
+    const blogs = await getBlogs(locale);
+    const categories = new Set(blogs.map((blog) => blog.category));
+    return Array.from(categories).sort();
+};
+
+// Get paginated blogs with optional category filter
+export const getPaginatedBlogs = async (
+    page: number = 1,
+    limit: number = 6,
+    category?: string,
+    locale: string = "en",
+): Promise<{
+    blogs: Blog[];
+    totalBlogs: number;
+    totalPages: number;
+    currentPage: number;
+    hasNextPage: boolean;
+    hasPrevPage: boolean;
+}> => {
+    let blogs = await getBlogs(locale);
+
+    // Filter by category if provided
+    if (category && category !== "all") {
+        blogs = blogs.filter((blog) => blog.category === category);
+    }
+
+    const totalBlogs = blogs.length;
+    const totalPages = Math.ceil(totalBlogs / limit);
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedBlogs = blogs.slice(startIndex, endIndex);
+
+    return {
+        blogs: paginatedBlogs,
+        totalBlogs,
+        totalPages,
+        currentPage: page,
+        hasNextPage: page < totalPages,
+        hasPrevPage: page > 1,
+    };
 };
 
 export const getRelatedBlogs = async (blog: Blog, locale: string = "en") => {
@@ -69,16 +116,7 @@ export const getBlogContent = async (
             `../../data/blog/${locale}/${blog.slug}.${blog.type}`
         );
 
-        const MDXContent = content.default;
-        if (!MDXContent) {
-            throw new Error(
-                `No default export found in ${locale}/${blog.slug}.${blog.type}`,
-            );
-        }
-
-        // With the new export format, we can return the MDX content directly
-        // The mdx-components.tsx will be automatically applied by Next.js
-        return MDXContent;
+        return content.default;
     } catch (error) {
         console.warn(
             `Failed to load blog content for locale ${locale}, slug ${blog.slug}:`,
@@ -90,14 +128,7 @@ export const getBlogContent = async (
                 `../../data/blog/en/${blog.slug}.${blog.type}`
             );
 
-            const MDXContent = content.default;
-            if (!MDXContent) {
-                throw new Error(
-                    `No default export found in en/${blog.slug}.${blog.type}`,
-                );
-            }
-
-            return MDXContent;
+            return content.default;
         } catch (fallbackError) {
             console.error(
                 `Failed to load fallback blog content for slug ${blog.slug}:`,

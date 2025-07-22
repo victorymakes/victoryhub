@@ -5,6 +5,7 @@ import { getRecentBlogs } from "@/service/blog-service";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import { config, getLocalizedUrls, getLocalizedUrl } from "@/lib/config";
+import BlogGrid from "@/components/blog/blog-grid";
 
 interface HomeProps {
     params: Promise<{
@@ -107,46 +108,7 @@ export default async function Home({ params }: HomeProps) {
                             and tips about online tools and web development.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {recentPosts.map((post) => (
-                            <article key={post.slug} className="group">
-                                <Link
-                                    href={`/blog/${post.slug}`}
-                                    className="block bg-card text-card-foreground rounded-lg border overflow-hidden hover:shadow-md transition-shadow"
-                                >
-                                    <div className="p-6">
-                                        <div className="flex items-center gap-2 mb-3">
-                                            <span className="bg-primary text-primary-foreground px-2 py-1 text-xs rounded">
-                                                {post.category}
-                                            </span>
-                                            <span className="text-xs text-muted-foreground">
-                                                {post.readingTime} min read
-                                            </span>
-                                            {post.featured && (
-                                                <span className="bg-accent text-accent-foreground px-2 py-1 text-xs rounded">
-                                                    Featured
-                                                </span>
-                                            )}
-                                        </div>
-                                        <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                                            {post.title}
-                                        </h3>
-                                        <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-                                            {post.description}
-                                        </p>
-                                        <div className="flex items-center justify-between text-xs text-muted-foreground">
-                                            <span>By {post.author}</span>
-                                            <time dateTime={post.date}>
-                                                {new Date(
-                                                    post.date,
-                                                ).toLocaleDateString(locale)}
-                                            </time>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </article>
-                        ))}
-                    </div>
+                    <BlogGrid blogs={recentPosts} />
                     <div className="text-center mt-12">
                         <Link
                             href="/blog"
