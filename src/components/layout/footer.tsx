@@ -95,28 +95,28 @@ export async function Footer() {
                         </h3>
                         <ul className="space-y-2">
                             <li>
-                                <a
+                                <Link
                                     href="/privacy"
                                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                                 >
                                     {tFooter("privacyPolicy")}
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/terms"
                                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                                 >
                                     {tFooter("termsOfService")}
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/contact"
                                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                                 >
                                     {tFooter("contact")}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
