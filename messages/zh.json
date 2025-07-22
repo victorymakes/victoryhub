@@ -127,11 +127,19 @@
       "encode": "编码",
       "decode": "解码",
       "input": "输入",
-      "output": "输���",
+      "output": "输出",
       "enterText": "输入要编码/解码的文本...",
       "copy": "复制",
       "copied": "已复制！",
-      "clear": "清空"
+      "clear": "清空",
+      "errors": {
+        "invalidBase64": "无效的Base64输入。请检查您的输入并重试。",
+        "encodeFailed": "编码输入失败。请重试。"
+      },
+      "warnings": {
+        "largeOutput": "Base64输出较大。为了提高可读性，请考虑分割。",
+        "nonPrintableCharacters": "解码结果包含不可打印字符。这可能是二进制数据。"
+      }
     }
   },
   "Blog": {

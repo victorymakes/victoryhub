@@ -139,7 +139,15 @@
       "enterText": "Enter text to encode/decode...",
       "copy": "Copy",
       "copied": "Copied!",
-      "clear": "Clear"
+      "clear": "Clear",
+      "errors": {
+        "invalidBase64": "Invalid Base64 input. Please check your input and try again.",
+        "encodeFailed": "Failed to encode input. Please try again."
+      },
+      "warnings": {
+        "largeOutput": "Large Base64 output. Consider splitting for better readability.",
+        "nonPrintableCharacters": "Decoded result contains non-printable characters. This might be binary data."
+      }
     }
   },
   "Blog": {
