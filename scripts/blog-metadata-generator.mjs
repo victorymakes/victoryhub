@@ -69,21 +69,25 @@ const processMarkdownFile = (filePath, locale) => {
         }
 
         const fileName = path.basename(filePath);
-        const slug = path.basename(filePath, path.extname(filePath));
-        const fileExtension = path.extname(filePath);
+        if (!exportedMetadata.title) {
+            throw new Error(`Missing title in metadata for ${fileName}`);
+        }
 
+        const slug = path.basename(filePath, path.extname(filePath));
         const metadata = {
             slug,
-            title: exportedMetadata.title || "Untitled",
+            title: exportedMetadata.title,
             description: exportedMetadata.description || "",
             date: exportedMetadata.date || new Date().toISOString(),
             author: exportedMetadata.author || "Victory",
             tags: exportedMetadata.tags || [],
-            category: exportedMetadata.category || "General",
+            category: exportedMetadata.category || {
+                id: "general",
+                name: "General",
+            },
             featured: exportedMetadata.featured || false,
             draft: exportedMetadata.draft || false,
             locale,
-            type: fileExtension === ".mdx" ? "mdx" : "md",
             readingTime: estimateReadingTime(content),
             cover: exportedMetadata.cover || "",
         };

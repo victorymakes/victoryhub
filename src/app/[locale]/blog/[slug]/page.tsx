@@ -48,7 +48,7 @@ export async function generateMetadata({
             type: "article",
             publishedTime: post.date,
             authors: [post.author],
-            tags: post.tags,
+            tags: post.tags.map((item) => item.name),
         },
         twitter: {
             card: "summary_large_image",
@@ -63,7 +63,7 @@ export async function generateMetadata({
         other: {
             "article:author": post.author,
             "article:published_time": post.date,
-            "article:section": post.category,
+            "article:section": post.category.name,
             "article:tag": post.tags.join(","),
         },
     };
@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="bg-primary text-primary-foreground px-3 py-1 text-sm rounded-full">
-                                {post.category}
+                                {post.category.name}
                             </span>
                             <span className="text-sm text-muted-foreground">
                                 {post.readingTime} min read
@@ -136,10 +136,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                 <div className="flex flex-wrap gap-2">
                                     {post.tags.map((tag) => (
                                         <span
-                                            key={tag}
+                                            key={tag.id}
                                             className="bg-muted text-muted-foreground px-3 py-1 text-sm rounded-full"
                                         >
-                                            #{tag}
+                                            #{tag.name}
                                         </span>
                                     ))}
                                 </div>
@@ -198,7 +198,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                         <div className="p-4">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <span className="bg-muted text-muted-foreground px-2 py-1 text-xs rounded">
-                                                    {relatedPost.category}
+                                                    {relatedPost.category.name}
                                                 </span>
                                                 <span className="text-xs text-muted-foreground">
                                                     {relatedPost.readingTime}{" "}

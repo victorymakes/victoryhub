@@ -1,27 +1,19 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { useRouter, useParams } from "next/navigation";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { Category } from "@/types/blog";
+import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
 
 interface CategoryFiltersProps {
-    categories: string[];
-    currentCategory: string;
+    currentCategoryId: string;
+    categories: Category[];
 }
 
 export default function CategoryFilters({
+    currentCategoryId,
     categories,
-    currentCategory,
 }: CategoryFiltersProps) {
     const t = useTranslations("Blog");
-    const router = useRouter();
-    const params = useParams();
-
-    const handleCategoryChange = (category: string) => {
-        const locale = params.locale;
-        // Navigate to page 1 of the selected category
-        router.push(`/${locale}/blog/category/${category}/page/1`);
-    };
 
     return (
         <div className="space-y-4">
@@ -31,30 +23,38 @@ export default function CategoryFilters({
                     {t("allCategories")}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                    <Button
-                        variant={
-                            currentCategory === "all" ? "default" : "outline"
-                        }
-                        size="sm"
-                        onClick={() => handleCategoryChange("all")}
-                        className="rounded-full"
+                    <Link
+                        href={`/blog/category/all/page/1`}
+                        className={cn(
+                            buttonVariants({
+                                variant:
+                                    currentCategoryId === "all"
+                                        ? "default"
+                                        : "outline",
+                                size: "sm",
+                            }),
+                            "rounded-full",
+                        )}
                     >
                         {t("allCategories")}
-                    </Button>
+                    </Link>
                     {categories.map((category) => (
-                        <Button
-                            key={category}
-                            variant={
-                                currentCategory === category
-                                    ? "default"
-                                    : "outline"
-                            }
-                            size="sm"
-                            onClick={() => handleCategoryChange(category)}
-                            className="rounded-full"
+                        <Link
+                            key={category.id}
+                            href={`/blog/category/${category.id}/page/1`}
+                            className={cn(
+                                buttonVariants({
+                                    variant:
+                                        currentCategoryId === category.id
+                                            ? "default"
+                                            : "outline",
+                                    size: "sm",
+                                }),
+                                "rounded-full",
+                            )}
                         >
-                            {category}
-                        </Button>
+                            {category.name}
+                        </Link>
                     ))}
                 </div>
             </div>
