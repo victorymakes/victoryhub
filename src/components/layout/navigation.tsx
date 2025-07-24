@@ -215,7 +215,9 @@ const renderMenuItem = (item: MenuItem) => {
     if (item.items) {
         return (
             <NavigationMenuItem key={item.title}>
-                <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+                <NavigationMenuTrigger className={"cursor-pointer"}>
+                    {item.title}
+                </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-popover text-popover-foreground">
                     {item.items.map((subItem) => (
                         <NavigationMenuLink

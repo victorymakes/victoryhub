@@ -1,8 +1,6 @@
-import { Category, Tool } from "@/types/tool";
+import { Category, Tool, RawTool } from "@/types/tool";
 
-export const getCategories = async (
-    locale: string = "en",
-): Promise<Category[]> => {
+const loadCategories = async (locale: string = "en"): Promise<Category[]> => {
     try {
         // Try to import the locale-specific file
         const categories = await import(
@@ -16,7 +14,7 @@ export const getCategories = async (
     }
 };
 
-export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
+const loadTools = async (locale: string = "en"): Promise<RawTool[]> => {
     try {
         // Try to import the locale-specific file
         const tools = await import(`../../data/tool/${locale}.json`);
@@ -26,6 +24,34 @@ export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
         const tools = await import(`../../data/tool/en.json`);
         return tools.default;
     }
+};
+
+export const getCategories = async (
+    locale: string = "en",
+): Promise<Category[]> => {
+    return loadCategories(locale);
+};
+
+export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
+    const categories = await getCategories(locale);
+    const categoryMap = new Map(categories.map((cat) => [cat.slug, cat]));
+    const tools = await loadTools(locale);
+
+    const validTools: Tool[] = [];
+
+    for (const tool of tools) {
+        if (categoryMap.has(tool.category)) {
+            validTools.push({
+                ...tool,
+                category: categoryMap.get(tool.category)!,
+            });
+        } else {
+            console.error(
+                `Tool "${tool.slug}" has invalid category "${tool.category}" - no mapping found in locale "${locale}"`,
+            );
+        }
+    }
+    return validTools;
 };
 
 export const getPopularTools = async (

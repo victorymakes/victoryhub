@@ -1,6 +1,5 @@
 import "../globals.css";
 
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -19,11 +18,6 @@ const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
     subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-    title: "VictoryHub",
-    description: "Discover amazing tools for your workflow",
-};
 
 export default async function LocaleLayout({
     children,

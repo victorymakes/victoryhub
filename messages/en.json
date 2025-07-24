@@ -32,6 +32,7 @@
     "designDesc": "Design tools and creative applications",
     "popularTools": "Popular Tools",
     "recentPosts": "Recent Blog Posts",
+    "recentPostsDesc": "Stay updated with our latest insights, tutorials, and tips about online tools and web development.",
     "viewAllPosts": "View All Posts",
     "privacyFirst": "Privacy-First Online Tools",
     "privacyDescription": "All tools run locally in your browser. No data is sent to servers, ensuring your privacy and security.",
@@ -105,6 +106,7 @@
       "enterTimestamp": "Enter Unix timestamp...",
       "enterDateTime": "Enter date and time...",
       "useCurrentTimestamp": "Use Current Timestamp",
+      "useCurrentDateTime": "Use Current Date Time",
       "copied": "Copied!",
       "clear": "Clear",
       "outputPlaceholderDate": "Date will appear here...",
@@ -205,7 +207,16 @@
     "seoDescription": "Browse our latest blog articles for technical insights and tutorials.",
     "seoKeywords": "blog, articles, tutorials, technical insights, programming, development",
     "notFoundTitle": "Blog Post Not Found",
-    "notFoundDescription": "The requested blog post could not be found."
+    "notFoundDescription": "The requested blog post could not be found.",
+    "minRead": "min read",
+    "backToBlog": "← Back to Blog",
+    "share": "Share",
+    "shareOnX": "Share on X",
+    "shareOnFacebook": "Share on Facebook",
+    "shareOnLinkedIn": "Share on LinkedIn",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "relatedArticles": "Related Articles"
   },
   "ToolDetail": {
     "title": "Tool Detail",

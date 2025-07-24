@@ -1,4 +1,5 @@
 import type { MDXComponents } from "mdx/types";
+import Image from "next/image";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
     return {
@@ -85,6 +86,17 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         ),
         td: ({ children }) => (
             <td className="border border-border px-4 py-2">{children}</td>
+        ),
+        img: ({ src, alt, ...props }) => (
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                <Image
+                    fill
+                    src={src}
+                    alt={alt}
+                    className="object-cover"
+                    {...props}
+                />
+            </div>
         ),
         ...components,
     };

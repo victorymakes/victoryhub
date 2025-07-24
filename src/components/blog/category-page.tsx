@@ -5,7 +5,12 @@ import Container from "@/components/layout/container";
 import CategoryFilters from "@/components/blog/blog-filters";
 import BlogGrid from "@/components/blog/blog-grid";
 import BlogPagination from "@/components/blog/blog-pagination";
-import { config, getLocalizedUrl, getLocalizedUrls } from "@/lib/config";
+import {
+    config,
+    getLocalizedUrl,
+    getLocalizedUrls,
+    generateTitle,
+} from "@/lib/config";
 
 interface CategoryPageProps {
     locale: string;
@@ -26,12 +31,14 @@ export const generateCategoryPageMetadata = async ({
         `/blog/category/${category}/page/${page}`,
     );
 
+    const pageTitle = `${t("seoTitle")} - ${category} - ${t("page")} ${page}`;
+
     return {
-        title: `${t("seoTitle")} - ${category} - ${t("page")} ${page}`,
+        title: generateTitle(pageTitle),
         description: t("seoDescription"),
         keywords: t("seoKeywords"),
         openGraph: {
-            title: `${t("seoTitle")} - ${category}`,
+            title: generateTitle(`${t("seoTitle")} - ${category}`),
             description: t("seoDescription"),
             url,
             siteName: config.siteName,

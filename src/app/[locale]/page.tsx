@@ -4,8 +4,14 @@ import { getPopularTools } from "@/service/tool-service";
 import { getRecentBlogs } from "@/service/blog-service";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
-import { config, getLocalizedUrls, getLocalizedUrl } from "@/lib/config";
+import {
+    config,
+    getLocalizedUrls,
+    getLocalizedUrl,
+    generateTitle,
+} from "@/lib/config";
 import BlogGrid from "@/components/blog/blog-grid";
+import ToolGrid from "@/components/tool/tool-grid";
 
 interface HomeProps {
     params: Promise<{
@@ -22,11 +28,11 @@ export async function generateMetadata({
     const url = getLocalizedUrl(locale, "");
 
     return {
-        title: t("seoTitle"),
+        title: generateTitle(t("seoTitle")),
         description: t("seoDescription"),
         keywords: t("seoKeywords"),
         openGraph: {
-            title: t("seoTitle"),
+            title: generateTitle(t("seoTitle")),
             description: t("seoDescription"),
             url,
             siteName: config.siteName,
@@ -78,22 +84,7 @@ export default async function Home({ params }: HomeProps) {
                 <h2 className="text-3xl font-bold text-foreground text-center mb-12">
                     {t("popularTools")}
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {popularTools.map((tool) => (
-                        <Link
-                            key={tool.slug}
-                            href={`/tool/${tool.slug}`}
-                            className="bg-card text-card-foreground p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"
-                        >
-                            <h3 className="text-xl font-semibold text-foreground mb-2">
-                                {tool.name}
-                            </h3>
-                            <p className="text-muted-foreground text-sm">
-                                {tool.description}
-                            </p>
-                        </Link>
-                    ))}
-                </div>
+                <ToolGrid tools={popularTools} />
             </Container>
 
             {/* Recent Blog Posts */}
@@ -104,8 +95,7 @@ export default async function Home({ params }: HomeProps) {
                             {t("recentPosts")}
                         </h2>
                         <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Stay updated with our latest insights, tutorials,
-                            and tips about online tools and web development.
+                            {t("recentPostsDesc")}
                         </p>
                     </div>
                     <BlogGrid blogs={recentPosts} />

@@ -157,8 +157,12 @@ export const TimestampConverter = () => {
     };
 
     const useCurrentTimestamp = () => {
-        setTimestamp(currentTimestamp);
-        setMode("timestamp-to-date");
+        if (mode === "timestamp-to-date") {
+            setTimestamp(currentTimestamp);
+        } else {
+            // 在日期转时间戳模式下，使用当前的本地时间
+            setDateTime(currentDateTime);
+        }
     };
 
     return (
@@ -263,7 +267,9 @@ export const TimestampConverter = () => {
                             onClick={useCurrentTimestamp}
                             className="w-full mt-3"
                         >
-                            {t("useCurrentTimestamp")}
+                            {mode === "timestamp-to-date"
+                                ? t("useCurrentTimestamp")
+                                : t("useCurrentDateTime")}
                         </Button>
                     </div>
 

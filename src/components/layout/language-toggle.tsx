@@ -33,7 +33,7 @@ export function LanguageToggle() {
                 <Button
                     variant="ghost"
                     size="icon"
-                    className="h-9 w-9 rounded-full"
+                    className="h-9 w-9 rounded-full cursor-pointer"
                 >
                     <span className="text-2xl">{currentLanguage.flag}</span>
                     <span className="sr-only">Change language</span>
@@ -47,7 +47,7 @@ export function LanguageToggle() {
                     <button
                         key={language.code}
                         onClick={() => handleLanguageChange(language)}
-                        className={`w-full flex items-center gap-3 px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors whitespace-nowrap ${
+                        className={`cursor-pointer w-full flex items-center gap-3 px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors whitespace-nowrap ${
                             currentLanguage.code === language.code
                                 ? "bg-muted text-accent-foreground"
                                 : ""
