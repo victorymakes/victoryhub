@@ -1,14 +1,24 @@
-import { redirect } from "next/navigation";
+import { Metadata } from "next";
+import {
+    CategoryPage,
+    generateCategoryPageMetadata,
+} from "@/components/blog/category-page";
 
-interface BlogPageProps {
+interface CategoryPageProps {
     params: Promise<{
         locale: string;
     }>;
 }
 
-export default async function BlogPage({ params }: BlogPageProps) {
+// SEO metadata for category page
+export async function generateMetadata({
+    params,
+}: CategoryPageProps): Promise<Metadata> {
     const { locale } = await params;
+    return generateCategoryPageMetadata({ locale });
+}
 
-    // Redirect to all category, page 1 by default
-    redirect(`/${locale}/blog/category/all/page/1`);
+export default async function Page({ params }: CategoryPageProps) {
+    const { locale } = await params;
+    return CategoryPage({ locale });
 }

@@ -1,6 +1,3 @@
-"use client";
-
-import { useRouter, useParams } from "next/navigation";
 import {
     Pagination,
     PaginationContent,
@@ -12,27 +9,25 @@ import {
 } from "@/components/ui/pagination";
 
 interface BlogPaginationProps {
+    currentLocale: string;
+    currentCategoryId: string;
     currentPage: number;
     totalPages: number;
-    category: string;
 }
 
 export default function BlogPagination({
+    currentLocale,
+    currentCategoryId,
     currentPage,
     totalPages,
-    category,
 }: BlogPaginationProps) {
-    const router = useRouter();
-    const params = useParams();
-
-    const handlePageChange = (page: number) => {
-        const locale = params.locale;
-        router.push(`/${locale}/blog/category/${category}/page/${page}`);
-    };
-
     if (totalPages <= 1) {
         return null;
     }
+
+    const createPageUrl = (page: number) => {
+        return `/${currentLocale}/blog/category/${currentCategoryId}/page/${page}`;
+    };
 
     return (
         <div className="space-y-4">
@@ -40,14 +35,15 @@ export default function BlogPagination({
                 <PaginationContent>
                     <PaginationItem>
                         <PaginationPrevious
-                            onClick={() =>
-                                currentPage > 1 &&
-                                handlePageChange(currentPage - 1)
+                            href={
+                                currentPage > 1
+                                    ? createPageUrl(currentPage - 1)
+                                    : undefined
                             }
                             className={
                                 currentPage === 1
                                     ? "pointer-events-none opacity-50"
-                                    : "cursor-pointer"
+                                    : undefined
                             }
                         />
                     </PaginationItem>
@@ -56,10 +52,7 @@ export default function BlogPagination({
                     {currentPage > 3 && (
                         <>
                             <PaginationItem>
-                                <PaginationLink
-                                    onClick={() => handlePageChange(1)}
-                                    className="cursor-pointer"
-                                >
+                                <PaginationLink href={createPageUrl(1)}>
                                     1
                                 </PaginationLink>
                             </PaginationItem>
@@ -97,9 +90,8 @@ export default function BlogPagination({
                         return (
                             <PaginationItem key={page}>
                                 <PaginationLink
-                                    onClick={() => handlePageChange(page)}
+                                    href={createPageUrl(page)}
                                     isActive={currentPage === page}
-                                    className="cursor-pointer"
                                 >
                                     {page}
                                 </PaginationLink>
@@ -117,8 +109,7 @@ export default function BlogPagination({
                             )}
                             <PaginationItem>
                                 <PaginationLink
-                                    onClick={() => handlePageChange(totalPages)}
-                                    className="cursor-pointer"
+                                    href={createPageUrl(totalPages)}
                                 >
                                     {totalPages}
                                 </PaginationLink>
@@ -128,14 +119,15 @@ export default function BlogPagination({
 
                     <PaginationItem>
                         <PaginationNext
-                            onClick={() =>
-                                currentPage < totalPages &&
-                                handlePageChange(currentPage + 1)
+                            href={
+                                currentPage < totalPages
+                                    ? createPageUrl(currentPage + 1)
+                                    : undefined
                             }
                             className={
                                 currentPage === totalPages
                                     ? "pointer-events-none opacity-50"
-                                    : "cursor-pointer"
+                                    : undefined
                             }
                         />
                     </PaginationItem>

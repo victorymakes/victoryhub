@@ -1,24 +1,10 @@
 import * as blogData from "../../data/blog/metadata.json";
 import React from "react";
-
-export interface Blog {
-    slug: string;
-    title: string;
-    description: string;
-    date: string;
-    author: string;
-    tags: string[];
-    category: string;
-    featured: boolean;
-    draft: boolean;
-    locale: string;
-    readingTime: number;
-    type: "mdx" | "md";
-    cover?: string;
-}
+import { Blog, Category } from "@/types/blog";
+import { Pagination } from "@/types/page";
 
 // Type assertion for the imported JSON data
-const allBlogs = blogData as Record<string, Blog[]>;
+const allBlogs = blogData as unknown as Record<string, Blog[]>;
 
 export const getBlogs = async (locale: string = "en"): Promise<Blog[]> => {
     return allBlogs[locale]?.filter((post: Blog) => !post.draft) || [];
@@ -38,17 +24,23 @@ export const getBlogsByCategory = async (
 ): Promise<Blog[]> => {
     const posts = await getBlogs(locale);
     return posts.filter(
-        (post: Blog) => post.category === category && !post.draft,
+        (post: Blog) => post.category.id === category && !post.draft,
     );
 };
 
 // Get unique categories from all blogs
 export const getCategories = async (
     locale: string = "en",
-): Promise<string[]> => {
+): Promise<Category[]> => {
     const blogs = await getBlogs(locale);
-    const categories = new Set(blogs.map((blog) => blog.category));
-    return Array.from(categories).sort();
+    const categoryMap = new Map<string, Category>();
+    blogs.forEach((blog) => {
+        categoryMap.set(blog.category.id, blog.category);
+    });
+    // return sorted categories by id
+    return Array.from(categoryMap.values()).sort((a, b) =>
+        a.id.localeCompare(b.id),
+    );
 };
 
 // Get paginated blogs with optional category filter
@@ -57,30 +49,23 @@ export const getPaginatedBlogs = async (
     limit: number = 6,
     category?: string,
     locale: string = "en",
-): Promise<{
-    blogs: Blog[];
-    totalBlogs: number;
-    totalPages: number;
-    currentPage: number;
-    hasNextPage: boolean;
-    hasPrevPage: boolean;
-}> => {
+): Promise<Pagination<Blog>> => {
     let blogs = await getBlogs(locale);
 
     // Filter by category if provided
     if (category && category !== "all") {
-        blogs = blogs.filter((blog) => blog.category === category);
+        blogs = blogs.filter((blog) => blog.category.id === category);
     }
 
-    const totalBlogs = blogs.length;
-    const totalPages = Math.ceil(totalBlogs / limit);
+    const totalItems = blogs.length;
+    const totalPages = Math.ceil(totalItems / limit);
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
     const paginatedBlogs = blogs.slice(startIndex, endIndex);
 
     return {
-        blogs: paginatedBlogs,
-        totalBlogs,
+        items: paginatedBlogs,
+        totalItems,
         totalPages,
         currentPage: page,
         hasNextPage: page < totalPages,
@@ -89,7 +74,7 @@ export const getPaginatedBlogs = async (
 };
 
 export const getRelatedBlogs = async (blog: Blog, locale: string = "en") => {
-    const posts = await getBlogsByCategory(locale, blog.category);
+    const posts = await getBlogsByCategory(blog.category.id, locale);
     return posts
         .filter((post: Blog) => post.slug !== blog.slug && !post.draft)
         .slice(0, 3);
@@ -113,9 +98,8 @@ export const getBlogContent = async (
     try {
         // Try to import MDX file for the specified locale
         const content = await import(
-            `../../data/blog/${locale}/${blog.slug}.${blog.type}`
+            `../../data/blog/${locale}/${blog.slug}.mdx`
         );
-
         return content.default;
     } catch (error) {
         console.warn(
@@ -124,10 +108,7 @@ export const getBlogContent = async (
         );
         try {
             // Fallback to English if locale-specific file doesn't exist
-            const content = await import(
-                `../../data/blog/en/${blog.slug}.${blog.type}`
-            );
-
+            const content = await import(`../../data/blog/en/${blog.slug}.mdx`);
             return content.default;
         } catch (fallbackError) {
             console.error(

@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { Blog } from "@/service/blog-service";
+import { Blog } from "@/types/blog";
 
 interface BlogGridProps {
     blogs: Blog[];
@@ -43,7 +43,7 @@ export default async function BlogGrid({ blogs }: BlogGridProps) {
                         <div className="p-6 flex flex-col flex-1">
                             <div className="flex items-center gap-2 mb-3">
                                 <span className="bg-muted text-muted-foreground px-2 py-1 text-xs rounded">
-                                    {post.category}
+                                    {post.category.name}
                                 </span>
                                 <span className="text-xs text-muted-foreground">
                                     {post.readingTime} min read

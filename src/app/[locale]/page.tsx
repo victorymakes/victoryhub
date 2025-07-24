@@ -122,7 +122,7 @@ export default async function Home({ params }: HomeProps) {
 
             {/* Why Use These Tools */}
             <Container className={"py-16"}>
-                <div className="bg-muted/30 rounded-lg py-16">
+                <div className="bg-muted rounded-lg py-16">
                     <div className="text-center max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold text-foreground mb-6">
                             {t("privacyFirst")}
@@ -132,7 +132,7 @@ export default async function Home({ params }: HomeProps) {
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                             <div>
-                                <h3 className="font-semibold text-foreground mb-2 text-xl">
+                                <h3 className="font-semibold text-foreground mb-2 text-2xl">
                                     <span className="text-2xl">🔒</span>{" "}
                                     {t("private")}
                                 </h3>
@@ -141,7 +141,7 @@ export default async function Home({ params }: HomeProps) {
                                 </p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-foreground mb-2 text-xl">
+                                <h3 className="font-semibold text-foreground mb-2 text-2xl">
                                     <span className="text-2xl">⚡</span>{" "}
                                     {t("fast")}
                                 </h3>
@@ -150,7 +150,7 @@ export default async function Home({ params }: HomeProps) {
                                 </p>
                             </div>
                             <div>
-                                <h3 className="font-semibold text-foreground mb-2 text-xl">
+                                <h3 className="font-semibold text-foreground mb-2 text-2xl">
                                     <span className="text-2xl">🆓</span>{" "}
                                     {t("free")}
                                 </h3>
