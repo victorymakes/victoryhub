@@ -1,10 +1,15 @@
 import Container from "@/components/layout/container";
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import { getCategories, getTools } from "@/service/tool-service";
 import { DynamicIcon } from "@/components/layout/dynamic-icon";
 import { Metadata } from "next";
-import { config, getLocalizedUrl, getLocalizedUrls } from "@/lib/config";
+import {
+    config,
+    getLocalizedUrl,
+    getLocalizedUrls,
+    generateTitle,
+} from "@/lib/config";
+import ToolGrid from "@/components/tool/tool-grid";
 
 interface ToolsPageProps {
     params: Promise<{
@@ -23,11 +28,11 @@ export async function generateMetadata({
     const url = getLocalizedUrl(locale, "/tools");
 
     return {
-        title: t("seoTitle"),
+        title: generateTitle(t("seoTitle")),
         description: t("seoDescription"),
         keywords: t("seoKeywords"),
         openGraph: {
-            title: t("seoTitle"),
+            title: generateTitle(t("seoTitle")),
             description: t("seoDescription"),
             url,
             siteName: config.siteName,
@@ -54,10 +59,10 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
     // Group tools by category
     const toolsByCategory = tools.reduce(
         (acc, tool) => {
-            if (!acc[tool.category]) {
-                acc[tool.category] = [];
+            if (!acc[tool.category.slug]) {
+                acc[tool.category.slug] = [];
             }
-            acc[tool.category].push(tool);
+            acc[tool.category.slug].push(tool);
             return acc;
         },
         {} as Record<string, typeof tools>,
@@ -90,27 +95,10 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
                                 </h2>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {toolsByCategory[category.slug]?.map((tool) => (
-                                    <Link
-                                        key={tool.slug}
-                                        href={`/tool/${tool.slug}`}
-                                        className="bg-card text-card-foreground rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 border"
-                                    >
-                                        <div className="mb-3">
-                                            <h3 className="text-lg font-semibold text-foreground">
-                                                {tool.name}
-                                            </h3>
-                                        </div>
-                                        <p className="text-muted-foreground mb-3">
-                                            {tool.description}
-                                        </p>
-                                        <span className="inline-block bg-secondary text-secondary-foreground text-sm px-3 py-1 rounded-full">
-                                            {tool.category}
-                                        </span>
-                                    </Link>
-                                ))}
-                            </div>
+                            <ToolGrid
+                                tools={toolsByCategory[category.slug] || []}
+                                showCategory={false}
+                            />
                         </div>
                     ))}
                 </div>

@@ -24,6 +24,7 @@
     "browseTools": "すべてのツールを見る",
     "popularTools": "人気のツール",
     "recentPosts": "最新ブログ記事",
+    "recentPostsDesc": "オンラインツールとWeb開発に関する最新の洞察、チュートリアル、ヒントをお届けします。",
     "viewAllPosts": "すべての記事を見る",
     "privacyFirst": "プライバシー第一のオンラインツール",
     "privacyDescription": "すべてのツールはブラウザ内でローカルに動作します。データはサーバーに送信されず、プライバシーとセキュリティを確保します。",
@@ -97,6 +98,7 @@
       "enterTimestamp": "Unixタイムスタンプを入力...",
       "enterDateTime": "日付と時刻を入力...",
       "useCurrentTimestamp": "現在のタイムスタンプを使用",
+      "useCurrentDateTime": "現在の日時を使用",
       "copied": "コピーしました！",
       "clear": "クリア",
       "outputPlaceholderDate": "日付がここに表示されます...",
@@ -197,7 +199,16 @@
     "seoDescription": "技術的洞察とチュートリアルのための最新ブログ記事をご覧ください。",
     "seoKeywords": "ブログ, 記事, チュートリアル, 技術的洞察, プログラミング, 開発",
     "notFoundTitle": "ブログ記事が見つかりません",
-    "notFoundDescription": "要求されたブログ記事が見つかりませんでした。"
+    "notFoundDescription": "リクエストされたブログ記事が見つかりませんでした。",
+    "minRead": "分で読める",
+    "backToBlog": "← ブログに戻る",
+    "share": "シェア",
+    "shareOnX": "Xでシェア",
+    "shareOnFacebook": "Facebookでシェア",
+    "shareOnLinkedIn": "LinkedInでシェア",
+    "copyLink": "リンクをコピー",
+    "copied": "コピーしました！",
+    "relatedArticles": "関連記事"
   },
   "ToolDetail": {
     "title": "ツールの詳細",

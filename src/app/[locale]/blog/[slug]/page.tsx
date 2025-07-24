@@ -1,5 +1,7 @@
 import Container from "@/components/layout/container";
 import { Link } from "@/i18n/navigation";
+import { Badge } from "@/components/ui/badge";
+import Share from "@/components/layout/share";
 import {
     getBlog,
     getBlogContent,
@@ -8,7 +10,13 @@ import {
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { config, getLocalizedUrls, getLocalizedUrl } from "@/lib/config";
+import {
+    config,
+    getLocalizedUrls,
+    getLocalizedUrl,
+    generateTitle,
+} from "@/lib/config";
+import Image from "next/image";
 
 interface BlogPostPageProps {
     params: Promise<{
@@ -27,7 +35,7 @@ export async function generateMetadata({
     if (!post) {
         const t = await getTranslations("Blog");
         return {
-            title: t("notFoundTitle"),
+            title: generateTitle(t("notFoundTitle")),
             description: t("notFoundDescription"),
         };
     }
@@ -35,7 +43,7 @@ export async function generateMetadata({
     const url = getLocalizedUrl(locale, `/blog/${slug}`);
 
     return {
-        title: post.title,
+        title: generateTitle(post.title),
         description: post.description,
         keywords: post.tags.join(", "),
         authors: [{ name: post.author }],
@@ -49,12 +57,16 @@ export async function generateMetadata({
             publishedTime: post.date,
             authors: [post.author],
             tags: post.tags.map((item) => item.name),
+            ...(post.cover && {
+                images: [{ url: post.cover, alt: post.title }],
+            }),
         },
         twitter: {
             card: "summary_large_image",
             title: post.title,
             description: post.description,
             creator: `@${post.author}`,
+            ...(post.cover && { images: [post.cover] }),
         },
         alternates: {
             canonical: url,
@@ -84,32 +96,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     const t = await getTranslations("Blog");
     const relatedPosts = await getRelatedBlogs(post, locale);
 
+    // Generate the full URL for sharing
+    const shareUrl = `${config.baseUrl}${getLocalizedUrl(locale, `/blog/${slug}`).replace(config.baseUrl, "")}`;
+
     return (
         <div className="bg-background">
             {/* Article Header */}
             <Container className="py-16">
                 <div className="max-w-4xl mx-auto">
                     {/* Article Meta */}
-                    <div className="mb-8">
-                        <div className="flex items-center gap-4 mb-4">
-                            <span className="bg-primary text-primary-foreground px-3 py-1 text-sm rounded-full">
-                                {post.category.name}
-                            </span>
+                    <div className="mb-8 space-y-6">
+                        <div className="flex items-center gap-4">
+                            <Link
+                                href={`/blog/category/${post.category.id}/page/1`}
+                            >
+                                <Badge>{post.category.name}</Badge>
+                            </Link>
                             <span className="text-sm text-muted-foreground">
-                                {post.readingTime} min read
+                                {post.readingTime} {t("minRead")}
                             </span>
-                            {post.featured && (
-                                <span className="bg-accent text-accent-foreground px-3 py-1 text-sm rounded-full">
-                                    {t("featured")}
-                                </span>
-                            )}
+                            {post.featured && <Badge>{t("featured")}</Badge>}
                         </div>
 
-                        <h1 className="text-4xl font-bold text-foreground mb-4 lg:text-5xl">
+                        <h1 className="text-4xl font-bold text-foreground lg:text-5xl">
                             {post.title}
                         </h1>
-
-                        <div className="flex items-center justify-between border-b pb-6">
+                        <div className="flex items-center justify-between border-b">
                             <div className="flex items-center gap-4">
                                 <div>
                                     <p className="font-medium text-foreground">
@@ -145,6 +157,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                 </div>
                             )}
                         </div>
+                        {/* Cover Image */}
+                        {post.cover && (
+                            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                                <Image
+                                    fill
+                                    src={post.cover}
+                                    alt={post.title}
+                                    className="object-cover"
+                                />
+                            </div>
+                        )}
                     </div>
 
                     {/* Article Content */}
@@ -154,25 +177,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
                     {/* Article Footer */}
                     <div className="border-t pt-8 mt-12">
-                        <div className="flex items-center justify-between">
+                        <div className="flex items-center justify-between gap-4">
                             <Link
                                 href="/blog"
                                 className="text-primary hover:text-primary/80 transition-colors"
                             >
-                                ← Back to Blog
+                                {t("backToBlog")}
                             </Link>
 
-                            <div className="flex items-center gap-4">
-                                <span className="text-sm text-muted-foreground">
-                                    Share:
-                                </span>
-                                <button className="text-muted-foreground hover:text-foreground transition-colors">
-                                    Twitter
-                                </button>
-                                <button className="text-muted-foreground hover:text-foreground transition-colors">
-                                    LinkedIn
-                                </button>
-                            </div>
+                            <Share
+                                url={shareUrl}
+                                title={post.title}
+                                description={post.description}
+                                hashtags={[
+                                    config.siteName,
+                                    "blog",
+                                    ...post.tags.map((tag) => tag.name),
+                                ]}
+                            />
                         </div>
                     </div>
                 </div>
@@ -183,7 +205,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Container className="py-16 bg-muted/30">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold text-foreground mb-8">
-                            Related Articles
+                            {t("relatedArticles")}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {relatedPosts.map((relatedPost) => (
@@ -202,7 +224,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                                 </span>
                                                 <span className="text-xs text-muted-foreground">
                                                     {relatedPost.readingTime}{" "}
-                                                    min
+                                                    {t("minRead")}
                                                 </span>
                                             </div>
                                             <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">

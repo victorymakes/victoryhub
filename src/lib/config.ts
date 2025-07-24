@@ -20,3 +20,10 @@ export function getLocalizedUrls(path: string) {
 export function getLocalizedUrl(locale: string, path: string) {
     return `${config.baseUrl}/${locale}${path}`;
 }
+
+export function generateTitle(pageTitle?: string): string {
+    if (!pageTitle) {
+        return config.siteName;
+    }
+    return `${pageTitle} | ${config.siteName}`;
+}

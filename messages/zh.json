@@ -24,6 +24,7 @@
     "browseTools": "浏览所有工具",
     "popularTools": "热门工具",
     "recentPosts": "最新博客文章",
+    "recentPostsDesc": "获取我们关于在线工具和网页开发的最新见解、教程和技巧。",
     "viewAllPosts": "查看所有文章",
     "privacyFirst": "隐私优先的在线工具",
     "privacyDescription": "所有工具都在您的浏览器中本地运行。不会向服务器发送数据，确保您的隐私和安全。",
@@ -97,6 +98,7 @@
       "enterTimestamp": "输入Unix时间戳...",
       "enterDateTime": "输入日期和时间...",
       "useCurrentTimestamp": "使用当前时间戳",
+      "useCurrentDateTime": "使用当前日期时间",
       "copied": "已复制！",
       "clear": "清空",
       "outputPlaceholderDate": "日期将在此显示...",
@@ -197,7 +199,16 @@
     "seoDescription": "浏览我们的最新博客文章，获取技术见解和教程。",
     "seoKeywords": "博客, 文章, 教程, 技术见解, 编程, 开发",
     "notFoundTitle": "未找到博客文章",
-    "notFoundDescription": "找不到请求的博客文章。"
+    "notFoundDescription": "找不到请求的博客文章。",
+    "minRead": "分钟阅读",
+    "backToBlog": "← 返回博客",
+    "share": "分享",
+    "shareOnX": "在 X 上分享",
+    "shareOnFacebook": "在 Facebook 上分享",
+    "shareOnLinkedIn": "在 LinkedIn 上分享",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "relatedArticles": "相关文章"
   },
   "ToolDetail": {
     "title": "工具详情",
