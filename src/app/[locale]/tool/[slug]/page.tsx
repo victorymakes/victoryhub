@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { ToolComponent } from "@/components/tool/tool";
 import Container from "@/components/common/container";
 import Share from "@/components/common/share";
+import { FAQSection } from "@/components/tool/faq-section";
 import { getTool } from "@/service/tool-service";
 import {
     config,
@@ -67,6 +68,8 @@ export default async function ToolPage({ params }: ToolPageProps) {
     const tool = await getTool(resolvedParams.slug, resolvedParams.locale);
     if (!tool) return notFound();
 
+    const t = await getTranslations("ToolDetail");
+
     const currentUrl = getLocalizedUrl(
         resolvedParams.locale,
         `/tool/${resolvedParams.slug}`,
@@ -85,9 +88,14 @@ export default async function ToolPage({ params }: ToolPageProps) {
                     <div className="ml-4 flex-shrink-0">
                         <Share
                             url={currentUrl}
-                            title={tool.name}
+                            title={`${tool.name} - ${config.siteName}`}
                             description={tool.description}
-                            hashtags={["tools", "productivity", "developer"]}
+                            hashtags={[
+                                config.siteName,
+                                "tools",
+                                "productivity",
+                                "developer",
+                            ]}
                         />
                     </div>
                 </div>
@@ -95,17 +103,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 <ToolComponent id={resolvedParams.slug} />
 
                 {/* FAQ Section */}
-                <div className="mt-8 space-y-4">
-                    <h2 className="text-lg font-semibold">FAQs</h2>
-                    {tool.faq?.map((item, index) => (
-                        <div key={index}>
-                            <p className="font-medium">Q: {item.question}</p>
-                            <p className="text-sm text-muted-foreground">
-                                A: {item.answer}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                <FAQSection faqItems={tool.faq} title={t("faq")} />
             </Container>
         </div>
     );

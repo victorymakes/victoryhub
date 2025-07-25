@@ -231,7 +231,8 @@
     "relatedTools": "Related Tools",
     "viewAllTools": "View All Tools",
     "notFoundTitle": "Tool Not Found",
-    "notFoundDescription": "The requested tool could not be found."
+    "notFoundDescription": "The requested tool could not be found.",
+    "faq": "Frequently Asked Questions"
   },
   "Footer": {
     "description": "Free online tools for developers, designers, and professionals. Privacy-focused utilities that run locally in your browser.",
