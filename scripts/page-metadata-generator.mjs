@@ -1,36 +1,21 @@
-// Blog Metadata Generator Script
-// This script generates metadata for blog posts in different locales.
+// Page Metadata Generator Script
+// This script generates metadata for pages in different locales.
 // It reads all MDX files in each locale directory, extracts metadata from export statements,
 // and generates locale-specific JSON files and a merged metadata file.
-// Usage: node scripts/blog-metadata-generator.mjs
-// Directory structure: data/blog/{locale}/*.mdx
+// Usage: node scripts/page-metadata-generator.mjs
+// Directory structure: data/page/{slug}/{locale}.mdx
 
 import fs from "fs";
 import path from "path";
 
-const blogPath = "./data/blog";
-const outputPath = "./data/blog/metadata.json";
+const pagePath = "./data/page";
+const outputPath = "./data/page/metadata.json";
 
 // Helper function to estimate reading time
 const estimateReadingTime = (content) => {
     const wordsPerMinute = 200;
     const words = content.split(/\s+/).length;
     return Math.ceil(words / wordsPerMinute);
-};
-
-// Helper function to get all locale directories
-const getLocaleDirectories = (blogDir) => {
-    return fs.readdirSync(blogDir).filter((item) => {
-        const itemPath = path.join(blogDir, item);
-        return fs.statSync(itemPath).isDirectory();
-    });
-};
-
-// Helper function to get markdown files in a directory
-const getMarkdownFiles = (localeDir) => {
-    return fs
-        .readdirSync(localeDir)
-        .filter((file) => file.endsWith(".md") || file.endsWith(".mdx"));
 };
 
 // Helper function to extract metadata from export statement
@@ -58,22 +43,43 @@ const extractMetadataFromExport = (content) => {
     }
 };
 
-// Helper function to process a single markdown file
-const processMarkdownFile = (filePath, locale) => {
-    try {
+// Recursively find all .mdx files under a directory
+const findAllMarkdownFiles = (dir) => {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach((file) => {
+        const filePath = path.join(dir, file);
+        const stat = fs.statSync(filePath);
+        if (stat && stat.isDirectory()) {
+            results = results.concat(findAllMarkdownFiles(filePath));
+        } else if (file.endsWith(".mdx") || file.endsWith(".md")) {
+            results.push(filePath);
+        }
+    });
+    return results;
+};
+
+// Extract slug and locale from file path: data/page/{slug}/{locale}.mdx (or deeper)
+const extractSlugAndLocale = (filePath) => {
+    const relPath = path.relative(pagePath, filePath);
+    const parts = relPath.split(path.sep);
+    // Find locale (last part before extension)
+    const fileName = parts[parts.length - 1];
+    const locale = fileName.split(".")[0];
+    // Slug is everything before locale
+    const slug = parts.slice(0, -1).join("/");
+    return { slug, locale };
+};
+
+// Process all markdown files recursively
+const processAllMarkdownFiles = () => {
+    const files = findAllMarkdownFiles(pagePath);
+    const allMetadata = {};
+    files.forEach((filePath) => {
+        const { slug, locale } = extractSlugAndLocale(filePath);
         const content = fs.readFileSync(filePath, "utf8");
         const exportedMetadata = extractMetadataFromExport(content);
-
-        if (!exportedMetadata) {
-            throw new Error("Failed to extract metadata from export statement");
-        }
-
-        const fileName = path.basename(filePath);
-        if (!exportedMetadata.title) {
-            throw new Error(`Missing title in metadata for ${fileName}`);
-        }
-
-        const slug = path.basename(filePath, path.extname(filePath));
+        if (!exportedMetadata || !exportedMetadata.title) return;
         const metadata = {
             slug,
             title: exportedMetadata.title,
@@ -90,37 +96,16 @@ const processMarkdownFile = (filePath, locale) => {
             locale,
             readingTime: estimateReadingTime(content),
             cover: exportedMetadata.cover || "",
+            type: slug.startsWith("blog/") ? "blog" : "page",
         };
-
-        console.log(`  - Processed: ${fileName}`);
-        return metadata;
-    } catch (error) {
-        console.error(
-            `Error processing ${path.basename(filePath)}:`,
-            error.message,
-        );
-        return null;
-    }
-};
-
-// Helper function to process all files in a locale directory
-const processLocaleDirectory = (locale, localeDir) => {
-    console.log(`Processing locale: ${locale}`);
-    const files = getMarkdownFiles(localeDir);
-    const localeMetadata = [];
-
-    files.forEach((file) => {
-        const filePath = path.join(localeDir, file);
-        const metadata = processMarkdownFile(filePath, locale);
-
-        if (metadata) {
-            localeMetadata.push(metadata);
-        }
+        if (!allMetadata[locale]) allMetadata[locale] = [];
+        allMetadata[locale].push(metadata);
     });
-
     // Sort by date (newest first)
-    localeMetadata.sort((a, b) => new Date(b.date) - new Date(a.date));
-    return localeMetadata;
+    Object.keys(allMetadata).forEach((locale) => {
+        allMetadata[locale].sort((a, b) => new Date(b.date) - new Date(a.date));
+    });
+    return allMetadata;
 };
 
 // Helper function to save metadata to file
@@ -149,28 +134,16 @@ const generateStats = (allMetadata) => {
 
 // Main function - now much shorter and focused
 const generateMetadata = () => {
-    const allMetadata = {};
-
-    const blogDir = path.resolve(blogPath);
-    const locales = getLocaleDirectories(blogDir);
-    console.log(`Found locales: ${locales.join(", ")}`);
-
-    // Process each locale
-    locales.forEach((locale) => {
-        const localeDir = path.join(blogDir, locale);
-        allMetadata[locale] = processLocaleDirectory(locale, localeDir);
-    });
-
-    // Save the merged metadata
+    const allMetadata = processAllMarkdownFiles();
     saveMetadata(allMetadata, outputPath);
-
-    // Generate and display statistics
     const stats = generateStats(allMetadata);
-    console.log("\n=== Blog Metadata Generation Complete ===");
-    console.log(`Total posts: ${stats.totalPosts}`);
-    Object.entries(stats.postsByLocale).forEach(([locale, count]) => {
-        console.log(`${locale}: ${count} posts`);
-    });
+    saveMetadata(stats, path.join(pagePath, "metadata.stats.json"));
 };
 
-generateMetadata();
+// Run the script
+if (
+    typeof process !== "undefined" &&
+    process.argv[1] === import.meta.url.replace("file://", "")
+) {
+    generateMetadata();
+}

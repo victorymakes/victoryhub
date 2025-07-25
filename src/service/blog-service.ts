@@ -1,19 +1,20 @@
-import * as blogData from "../../data/blog/metadata.json";
 import React from "react";
-import { Blog, Category } from "@/types/blog";
-import { Pagination } from "@/types/page";
+import { Page, Category } from "@/types/page";
+import { Pagination } from "@/types/pagination";
+import { getPageContent, getPagesByType } from "@/service/page-service";
 
-// Type assertion for the imported JSON data
-const allBlogs = blogData as unknown as Record<string, Blog[]>;
+const getSlug = (slug: string) => {
+    return slug.startsWith("blog/") ? slug : `blog/${slug}`;
+};
 
-export const getBlogs = async (locale: string = "en"): Promise<Blog[]> => {
-    return allBlogs[locale]?.filter((post: Blog) => !post.draft) || [];
+export const getBlogs = async (locale: string = "en"): Promise<Page[]> => {
+    return await getPagesByType("blog", locale);
 };
 
 export const getRecentBlogs = async (
     count: number,
     locale: string = "en",
-): Promise<Blog[]> => {
+): Promise<Page[]> => {
     const blogs = await getBlogs(locale);
     return blogs.slice(0, Math.max(count, blogs.length));
 };
@@ -21,10 +22,10 @@ export const getRecentBlogs = async (
 export const getBlogsByCategory = async (
     category: string,
     locale: string = "en",
-): Promise<Blog[]> => {
+): Promise<Page[]> => {
     const posts = await getBlogs(locale);
     return posts.filter(
-        (post: Blog) => post.category.id === category && !post.draft,
+        (post: Page) => post.category.id === category && !post.draft,
     );
 };
 
@@ -49,7 +50,7 @@ export const getPaginatedBlogs = async (
     limit: number = 6,
     category?: string,
     locale: string = "en",
-): Promise<Pagination<Blog>> => {
+): Promise<Pagination<Page>> => {
     let blogs = await getBlogs(locale);
 
     // Filter by category if provided
@@ -73,49 +74,31 @@ export const getPaginatedBlogs = async (
     };
 };
 
-export const getRelatedBlogs = async (blog: Blog, locale: string = "en") => {
+export const getRelatedBlogs = async (blog: Page, locale: string = "en") => {
     const posts = await getBlogsByCategory(blog.category.id, locale);
     return posts
-        .filter((post: Blog) => post.slug !== blog.slug && !post.draft)
+        .filter((post: Page) => post.slug !== blog.slug && !post.draft)
         .slice(0, 3);
 };
 
 export const getBlog = async (
     slug: string,
     locale: string = "en",
-): Promise<Blog | null> => {
+): Promise<Page | null> => {
+    slug = getSlug(slug);
     const posts =
-        allBlogs[locale]?.filter(
-            (post: Blog) => !post.draft && post.slug === slug,
+        (await getBlogs(locale)).filter(
+            (post: Page) => !post.draft && post.slug === slug,
         ) || [];
     return posts.length > 0 ? posts[0] : null;
 };
 
 export const getBlogContent = async (
-    blog: Blog,
+    page: Page,
     locale: string = "en",
 ): Promise<React.ComponentType | null> => {
-    try {
-        // Try to import MDX file for the specified locale
-        const content = await import(
-            `../../data/blog/${locale}/${blog.slug}.mdx`
-        );
-        return content.default;
-    } catch (error) {
-        console.warn(
-            `Failed to load blog content for locale ${locale}, slug ${blog.slug}:`,
-            error,
-        );
-        try {
-            // Fallback to English if locale-specific file doesn't exist
-            const content = await import(`../../data/blog/en/${blog.slug}.mdx`);
-            return content.default;
-        } catch (fallbackError) {
-            console.error(
-                `Failed to load fallback blog content for slug ${blog.slug}:`,
-                fallbackError,
-            );
-            return null;
-        }
+    if (page.type !== "blog") {
+        return null;
     }
+    return await getPageContent(page.slug, locale);
 };

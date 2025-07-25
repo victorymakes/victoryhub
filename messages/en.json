@@ -243,5 +243,9 @@
     "contact": "Contact",
     "copyright": "© {year} VictoryHub. All rights reserved.",
     "madeWith": "Made with ❤️ for developers and creators"
+  },
+  "Page": {
+    "notFoundTitle": "Page Not Found",
+    "notFoundDescription": "Sorry, the page you are looking for does not exist."
   }
 }

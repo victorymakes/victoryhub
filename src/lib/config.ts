@@ -5,6 +5,13 @@ export const config = {
     siteName: "VictoryHub",
     locales: routing.locales,
     defaultLocale: routing.defaultLocale,
+    contact: {
+        email: "support@victoryhub.cc",
+        twitter: {
+            handle: "@Victory",
+            url: "https://twitter.com/victoryhub_cc",
+        },
+    },
     analytics: {
         googleAnalytics: {
             measurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
@@ -38,6 +45,7 @@ export function getLocalizedUrls(path: string) {
 }
 
 export function getLocalizedUrl(locale: string, path: string) {
+    path = path.startsWith("/") ? path : `/${path}`;
     return `${config.baseUrl}/${locale}${path}`;
 }
 
