@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { getCategories, getPaginatedBlogs } from "@/service/blog-service";
 import { notFound } from "next/navigation";
-import Container from "@/components/layout/container";
+import Container from "@/components/common/container";
 import CategoryFilters from "@/components/blog/blog-filters";
 import BlogGrid from "@/components/blog/blog-grid";
 import BlogPagination from "@/components/blog/blog-pagination";

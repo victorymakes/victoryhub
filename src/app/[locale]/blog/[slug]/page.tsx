@@ -1,7 +1,7 @@
-import Container from "@/components/layout/container";
+import Container from "@/components/common/container";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
-import Share from "@/components/layout/share";
+import Share from "@/components/common/share";
 import {
     getBlog,
     getBlogContent,

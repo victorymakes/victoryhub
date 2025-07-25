@@ -1,4 +1,4 @@
-import Container from "@/components/layout/container";
+import Container from "@/components/common/container";
 import { Link } from "@/i18n/navigation";
 import { getPopularTools } from "@/service/tool-service";
 import { getRecentBlogs } from "@/service/blog-service";

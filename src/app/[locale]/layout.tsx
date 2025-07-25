@@ -4,10 +4,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Navbar } from "@/components/layout/navigation";
-import { Footer } from "@/components/layout/footer";
-import { ThemeProvider } from "@/components/layout/theme-provider";
+import { Navbar } from "@/components/common/navigation";
+import { Footer } from "@/components/common/footer";
+import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@/components/common/analytics";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
                         <Toaster />
                     </ThemeProvider>
                 </NextIntlClientProvider>
+                <Analytics />
             </body>
         </html>
     );

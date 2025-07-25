@@ -1,7 +1,7 @@
-import Container from "@/components/layout/container";
+import Container from "@/components/common/container";
 import { getTranslations } from "next-intl/server";
 import { getCategories, getTools } from "@/service/tool-service";
-import { DynamicIcon } from "@/components/layout/dynamic-icon";
+import { DynamicIcon } from "@/components/common/dynamic-icon";
 import { Metadata } from "next";
 import {
     config,
