@@ -1,10 +1,30 @@
 import { routing } from "@/i18n/routing";
 
 export const config = {
-    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://yoursite.com",
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://victoryhub.cc",
     siteName: "VictoryHub",
     locales: routing.locales,
     defaultLocale: routing.defaultLocale,
+    analytics: {
+        googleAnalytics: {
+            measurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
+            enabled: Boolean(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID),
+        },
+        plausible: {
+            domain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
+            enabled: Boolean(process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN),
+        },
+        umami: {
+            websiteId: process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID,
+            src: process.env.NEXT_PUBLIC_UMAMI_SRC,
+            enabled: Boolean(process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID),
+        },
+        posthog: {
+            key: process.env.NEXT_PUBLIC_POSTHOG_KEY,
+            host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+            enabled: Boolean(process.env.NEXT_PUBLIC_POSTHOG_KEY),
+        },
+    },
 } as const;
 
 export function getLocalizedUrls(path: string) {

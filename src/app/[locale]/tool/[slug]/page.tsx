@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { ToolComponent } from "@/components/tool/tool";
-import Container from "@/components/layout/container";
-import Share from "@/components/layout/share";
+import Container from "@/components/common/container";
+import Share from "@/components/common/share";
 import { getTool } from "@/service/tool-service";
 import {
     config,

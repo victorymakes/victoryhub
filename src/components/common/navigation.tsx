@@ -1,7 +1,7 @@
 import { Menu } from "lucide-react";
-import Container from "@/components/layout/container";
-import { ThemeToggle } from "@/components/layout/theme-toggle";
-import { LanguageToggle } from "@/components/layout/language-toggle";
+import Container from "@/components/common/container";
+import { ThemeToggle } from "@/components/common/theme-toggle";
+import { LanguageToggle } from "@/components/common/language-toggle";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -28,7 +28,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import { getCategories } from "@/service/tool-service";
-import { DynamicIcon } from "@/components/layout/dynamic-icon";
+import { DynamicIcon } from "@/components/common/dynamic-icon";
 
 interface MenuItem {
     title: string;
