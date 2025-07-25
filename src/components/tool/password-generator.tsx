@@ -153,12 +153,12 @@ export default function PasswordGenerator() {
                         />
                     </div>
 
-                    {/* Password Options - Improved styling */}
+                    {/* Password Options - Improved responsive styling */}
                     <div className="space-y-4">
                         <h3 className="text-sm font-medium">
                             {t("characterSets")}
                         </h3>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="flex items-center space-x-2">
                                 <input
                                     type="checkbox"
