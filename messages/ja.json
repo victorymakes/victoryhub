@@ -20,7 +20,7 @@
   },
   "Homepage": {
     "title": "無料オンラインツール",
-    "subtitle": "開発者、デザイナー、プロフェッショナルのための必須ユーティリティ。UUID生成、タイムスタンプ変換、URL符号化、安全なパスワード作成、画像処理、テキスト操作など - すべて無料でプライバシー重視。",
+    "subtitle": "開発者、デザイナー、プロフェッシ���ナルのための必須ユーティリティ。UUID生成、タイムスタンプ変換、URL符号化、安全なパスワード作成、画像処理、テキスト操作など - すべて無料でプライバシー重視。",
     "browseTools": "すべてのツールを見る",
     "popularTools": "人気のツール",
     "recentPosts": "最新ブログ記事",
@@ -31,7 +31,7 @@
     "private": "プライベート",
     "privateDesc": "すべてがブラウザ内で動作",
     "fast": "高速",
-    "fastDesc": "サーバーリクエスト不要",
+    "fastDesc": "サーバー��クエスト不要",
     "free": "無料",
     "freeDesc": "いつでも無料で使用",
     "seoTitle": "無料オンラインツール集",
@@ -231,5 +231,9 @@
     "contact": "お問い合わせ",
     "copyright": "© {year} VictoryHub. All rights reserved.",
     "madeWith": "開発者とクリエイターのために❤で作られました"
+  },
+  "Page": {
+    "notFoundTitle": "ページが見つかりません",
+    "notFoundDescription": "お探しのページは存在しません。"
   }
 }

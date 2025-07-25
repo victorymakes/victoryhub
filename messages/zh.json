@@ -90,7 +90,7 @@
     "timestampConverter": {
       "title": "时间戳转换器",
       "description": "在时间戳和人类可读日期格式之间转换",
-      "currentTime": "当前时间",
+      "currentTime": "��前时间",
       "timestamp": "时间戳",
       "dateTime": "日期和时间",
       "timestampToDate": "时间戳转日期",
@@ -206,7 +206,7 @@
     "shareOnX": "在 X 上分享",
     "shareOnFacebook": "在 Facebook 上分享",
     "shareOnLinkedIn": "在 LinkedIn 上分享",
-    "copyLink": "复制链接",
+    "copyLink": "复制��接",
     "copied": "已复制！",
     "relatedArticles": "相关文章"
   },
@@ -236,5 +236,9 @@
     "contact": "联系我们",
     "copyright": "© {year} VictoryHub. All rights reserved.",
     "madeWith": "为开发者和创作者用❤️制作"
+  },
+  "Page": {
+    "notFoundTitle": "页面未找到",
+    "notFoundDescription": "很抱歉，您访问的页面不存在。"
   }
 }

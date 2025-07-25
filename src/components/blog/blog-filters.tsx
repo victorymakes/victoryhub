@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { buttonVariants } from "@/components/ui/button";
-import { Category } from "@/types/blog";
+import { Category } from "@/types/page";
 import { cn } from "@/lib/utils";
 import { Link } from "@/i18n/navigation";
 

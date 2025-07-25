@@ -1,14 +1,15 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { Blog } from "@/types/blog";
+import { Page } from "@/types/page";
 import { Badge } from "@/components/ui/badge";
 
 interface BlogGridProps {
-    blogs: Blog[];
+    blogs: Page[];
+    hideCover?: boolean;
 }
 
-export default async function BlogGrid({ blogs }: BlogGridProps) {
+export default async function BlogGrid({ blogs, hideCover }: BlogGridProps) {
     const t = await getTranslations("Blog");
 
     if (blogs.length === 0) {
@@ -27,10 +28,10 @@ export default async function BlogGrid({ blogs }: BlogGridProps) {
             {blogs.map((post) => (
                 <article key={post.slug} className="group h-full">
                     <Link
-                        href={`/blog/${post.slug}`}
+                        href={`/${post.slug}`}
                         className="flex flex-col bg-card text-card-foreground rounded-lg border overflow-hidden hover:shadow-md transition-shadow h-full"
                     >
-                        {post.cover && (
+                        {post.cover && !hideCover && (
                             <div className="relative w-full h-48 overflow-hidden flex-shrink-0">
                                 <Image
                                     src={post.cover}
