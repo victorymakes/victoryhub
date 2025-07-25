@@ -82,33 +82,6 @@
       "type": "page"
     },
     {
-      "slug": "blog/test",
-      "title": "[Test]Welcome to Our Website: Essential Online Tools for Everyone Now Live",
-      "description": "Discover our newly launched website featuring essential online tools for developers, designers, and everyday users. From UUID generators to password creators, find the perfect tool for any task. Learn about our current offerings and exciting upcoming features.",
-      "date": "2025-07-23",
-      "author": "Victory",
-      "tags": [
-        {
-          "id": "web-tools",
-          "name": "Web Tools"
-        },
-        {
-          "id": "productivity",
-          "name": "Productivity"
-        }
-      ],
-      "category": {
-        "id": "general",
-        "name": "General"
-      },
-      "featured": false,
-      "draft": false,
-      "locale": "en",
-      "readingTime": 6,
-      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-      "type": "blog"
-    },
-    {
       "slug": "blog/website-launch-and-tools-overview",
       "title": "Welcome to Our Website: Essential Online Tools for Everyone Now Live",
       "description": "Discover our newly launched website featuring essential online tools for developers, designers, and everyday users. From UUID generators to password creators, find the perfect tool for any task. Learn about our current offerings and exciting upcoming features.",
@@ -217,33 +190,6 @@
       "readingTime": 1,
       "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
       "type": "page"
-    },
-    {
-      "slug": "blog/test",
-      "title": "ウェブサイトへようこそ：誰でも使える必須オンラインツールが正式公開",
-      "description": "開発者、デザイナー、一般ユーザー向けの必須オンラインツールを特集した新しく公開されたウェブサイトをご紹介します。UUIDジェネレーターからパスワード作成ツールまで、あらゆるタスクに最適なツールを見つけてください。現在の機能と今後の予定についてもご紹介します。",
-      "date": "2025-07-23",
-      "author": "Victory",
-      "tags": [
-        {
-          "id": "web-tools",
-          "name": "ウェブツール"
-        },
-        {
-          "id": "productivity",
-          "name": "生産性"
-        }
-      ],
-      "category": {
-        "id": "general",
-        "name": "一般"
-      },
-      "featured": false,
-      "draft": false,
-      "locale": "ja",
-      "readingTime": 2,
-      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-      "type": "blog"
     },
     {
       "slug": "blog/website-launch-and-tools-overview",
@@ -356,33 +302,6 @@
       "type": "page"
     },
     {
-      "slug": "blog/test",
-      "title": "웹사이트에 오신 것을 환영합니다: 모든 사람을 위한 필수 온라인 도구가 공식 출시되었습니다",
-      "description": "개발자, 디자이너, 일반 사용자를 위한 필수 온라인 도구를 제공하는 새로 출시된 웹사이트를 소개합니다. UUID 생성기부터 비밀번호 생성기까지, 모든 작업에 완벽한 도구를 찾아보세요. 현재 제공되는 기능과 향후 계획에 대해 알아보세요.",
-      "date": "2025-07-23",
-      "author": "Victory",
-      "tags": [
-        {
-          "id": "web-tools",
-          "name": "웹 도구"
-        },
-        {
-          "id": "productivity",
-          "name": "생산성"
-        }
-      ],
-      "category": {
-        "id": "general",
-        "name": "일반"
-      },
-      "featured": false,
-      "draft": false,
-      "locale": "ko",
-      "readingTime": 5,
-      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-      "type": "blog"
-    },
-    {
       "slug": "blog/website-launch-and-tools-overview",
       "title": "웹사이트에 오신 것을 환영합니다: 모든 사람을 위한 필수 온라인 도구가 공식 출시되었습니다",
       "description": "개발자, 디자이너, 일반 사용자를 위한 필수 온라인 도구를 제공하는 새로 출시된 웹사이트를 소개합니다. UUID 생성기부터 비밀번호 생성기까지, 모든 작업에 완벽한 도구를 찾아보세요. 현재 제공되는 기능과 향후 계획에 대해 알아보세요.",
@@ -491,33 +410,6 @@
       "readingTime": 1,
       "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
       "type": "page"
-    },
-    {
-      "slug": "blog/test",
-      "title": "欢迎访问我们的网站：面向所有人的必备在线工具正式上线",
-      "description": "探索我们新推出的网站，为开发者、设计师和日常用户提供必备的在线工具。从UUID生成器到密码创建工具，为任何任务找到完美的工具。了解我们当前的产品和即将推出的精彩功能。",
-      "date": "2025-07-23",
-      "author": "Victory",
-      "tags": [
-        {
-          "id": "web-tools",
-          "name": "网络工具"
-        },
-        {
-          "id": "productivity",
-          "name": "生产力"
-        }
-      ],
-      "category": {
-        "id": "general",
-        "name": "综合"
-      },
-      "featured": false,
-      "draft": false,
-      "locale": "zh",
-      "readingTime": 2,
-      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-      "type": "blog"
     },
     {
       "slug": "blog/website-launch-and-tools-overview",

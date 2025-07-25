@@ -49,7 +49,7 @@
     "seoKeywords": "オンラインツール, 開発者ツール, パスワード生成器, エンコーダー, フォーマッター, UUID生成器",
     "uuidGenerator": {
       "title": "UUID生成器",
-      "description": "バッチサポート付きでアプリケーション用の一意識別子を生成",
+      "description": "バッチサポート付きでアプリケーション用の一��識別子を生成",
       "numberOfUuids": "生成するUUIDの数",
       "generate": "生成",
       "generatedUuids": "生成されたUUID",
@@ -235,5 +235,15 @@
   "Page": {
     "notFoundTitle": "ページが見つかりません",
     "notFoundDescription": "お探しのページは存在しません。"
+  },
+  "NotFound": {
+    "title": "404 - ページが見つかりません",
+    "description": "お探しのページは存在しません。URLを確認するか、ホームページに戻ってください。",
+    "goHome": "ホームに戻る"
+  },
+  "Error": {
+    "title": "500 - エラーが発生しました",
+    "description": "問題が発生しました。後でもう一度お試しいただくか、問題が解決しない場合はサポートにお問い合わせください。",
+    "goHome": "ホームに戻る"
   }
 }
