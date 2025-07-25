@@ -40,7 +40,7 @@
   },
   "Tools": {
     "title": "모든 도구",
-    "subtitle": "완전한 도구 컬렉���을 발견하고 탐색하세요",
+    "subtitle": "완전한 도구 컬렉션을 발견하고 탐색하세요",
     "featuredTools": "추천 도구",
     "allTools": "모든 도구",
     "featured": "추천",
@@ -84,7 +84,7 @@
       "warnings": {
         "noCharacterSet": "최소 하나의 문자 집합을 선택하세요.",
         "shortPassword": "8자 미만의 패스워드는 권장되지 않습니다.",
-        "weakPassword": "보안 향상을 ���해 기호와 숫자 사용을 고려하세요."
+        "weakPassword": "보안 향상을 위해 기호와 숫자 사용을 고려하세요."
       }
     },
     "timestampConverter": {
@@ -98,7 +98,7 @@
       "enterTimestamp": "Unix 타임스탬프 입력...",
       "enterDateTime": "날짜와 시간 입력...",
       "useCurrentTimestamp": "현재 타임스탬프 사용",
-      "useCurrentDateTime": "현재 날짜 시간 사���",
+      "useCurrentDateTime": "현재 날짜 시간 사용",
       "copied": "복사됨!",
       "clear": "지우기",
       "outputPlaceholderDate": "날짜가 여기에 표시됩니다...",
@@ -109,7 +109,7 @@
         "conversionFailed": "변환에 실패했습니다. 다시 시도하세요."
       },
       "warnings": {
-        "oldTimestamp": "이 타임스���프는 2000년 이전의 것으로 보입니다.",
+        "oldTimestamp": "이 타임스탬프는 2000년 이전의 것으로 보입니다.",
         "futureTimestamp": "이 타임스탬프는 1년 이상 미래의 것으로 보입니다."
       }
     },
@@ -170,7 +170,7 @@
       },
       "warnings": {
         "largeOutput": "큰 Base64 출력입니다. 가독성을 위해 분할을 고려하세요.",
-        "nonPrintableCharacters": "디코딩 결과에 인쇄할 수 없는 문자가 포함되어 ��습니다. 이것은 바이너리 데이터일 수 있습니다."
+        "nonPrintableCharacters": "디코딩 결과에 인쇄할 수 없는 문자가 포함되어 있습니다. 이것은 바이너리 데이터일 수 있습니다."
       }
     }
   },
