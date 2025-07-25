@@ -247,5 +247,15 @@
   "Page": {
     "notFoundTitle": "Page Not Found",
     "notFoundDescription": "Sorry, the page you are looking for does not exist."
+  },
+  "NotFound": {
+    "title": "404 - Page Not Found",
+    "description": "The page you are looking for does not exist. Please check the URL or return to the homepage.",
+    "goHome": "Go to Home"
+  },
+  "Error": {
+    "title": "500 - An Error Occurred",
+    "description": "Something went wrong. Please try again later or contact support if the issue persists.",
+    "goHome": "Go to Home"
   }
 }

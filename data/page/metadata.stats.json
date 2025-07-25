@@ -1,10 +1,10 @@
 {
-  "totalPosts": 20,
+  "totalPosts": 16,
   "postsByLocale": {
-    "en": 5,
-    "ja": 5,
-    "ko": 5,
-    "zh": 5
+    "en": 4,
+    "ja": 4,
+    "ko": 4,
+    "zh": 4
   },
-  "lastUpdated": "2025-07-25T09:41:31.296Z"
+  "lastUpdated": "2025-07-25T13:42:11.624Z"
 }
