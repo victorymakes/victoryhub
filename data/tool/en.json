@@ -207,5 +207,33 @@
         "answer": "Base64 has several variants for different use cases: standard Base64 uses +/ characters and = padding, URL-safe Base64 replaces +/ with -_ to avoid URL encoding issues, Base64 without padding removes = characters for cleaner appearance in URLs. The padding (=) ensures proper decoding when the input length isn't divisible by 3. Our tool handles standard Base64 with proper padding. Understanding these variants is important when working with different systems - JWT tokens use URL-safe Base64, while email systems typically use standard Base64. Always verify which variant your target system expects."
       }
     ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Image Compressor",
+    "description": "Compress and optimize images for web and sharing",
+    "category": "media",
+    "keywords": [
+      "image compressor",
+      "image optimization",
+      "compress image",
+      "reduce image size",
+      "webp compressor",
+      "jpeg compressor"
+    ],
+    "faq": [
+      {
+        "question": "What does the Image Compressor tool do?",
+        "answer": "The Image Compressor tool allows you to reduce the file size of your images by adjusting the quality, making them faster to upload, download, and share online."
+      },
+      {
+        "question": "Is my image processed securely?",
+        "answer": "Yes, all image compression is performed locally in your browser. No images are uploaded to any server, ensuring your privacy and security."
+      },
+      {
+        "question": "What image formats are supported?",
+        "answer": "You can compress JPEG, PNG, and most common image formats. The output is always a JPEG for maximum compatibility and compression."
+      }
+    ]
   }
 ]
