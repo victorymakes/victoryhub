@@ -9,6 +9,7 @@ import { Footer } from "@/components/common/footer";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/common/analytics";
+import { config } from "@/lib/config";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -35,6 +36,10 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale} suppressHydrationWarning>
+            <head>
+                <title>{config.siteName}</title>
+                <link rel="icon" href="/favicon.png" sizes="any" />
+            </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
             >
