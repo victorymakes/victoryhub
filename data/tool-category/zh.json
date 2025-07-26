@@ -16,6 +16,12 @@
     "name": "安全",
     "description": "密码生成器和 IP 检查器等安全和隐私工具",
     "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "媒体与图片",
+    "description": "用于图片、媒体和文件处理的工具",
+    "icon": "image"
   }
 ]
 

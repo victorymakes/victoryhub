@@ -16,5 +16,11 @@
     "name": "Security",
     "description": "Security and privacy tools like Password Generator and IP checker",
     "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Media & Image",
+    "description": "Tools for image, media, and file processing",
+    "icon": "image"
   }
 ]

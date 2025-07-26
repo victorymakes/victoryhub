@@ -5,6 +5,7 @@ import WhatsMyIP from "./whats-my-ip";
 import PasswordGenerator from "./password-generator";
 import URLEncoderDecoder from "./url-encoder-decoder";
 import Base64EncoderDecoder from "./base64-encoder-decoder";
+import ImageCompressor from "./image-compressor";
 
 interface ToolComponentProps {
     id: string;
@@ -24,6 +25,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({ id }) => {
             return <URLEncoderDecoder />;
         case "base64-encoder-decoder":
             return <Base64EncoderDecoder />;
+        case "image-compressor":
+            return <ImageCompressor />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

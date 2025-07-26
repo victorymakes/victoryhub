@@ -16,6 +16,12 @@
     "name": "セキュリティ",
     "description": "パスワード生成器やIPチェッカーなどのセキュリティとプライバシーツール",
     "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "メディア・画像",
+    "description": "画像やメディア、ファイル処理のためのツール",
+    "icon": "image"
   }
 ]
 

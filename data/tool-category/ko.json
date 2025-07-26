@@ -16,6 +16,12 @@
     "name": "보안",
     "description": "비밀번호 생성기 및 IP 확인기와 같은 보안 및 개인정보 보호 도구",
     "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "미디어/이미지",
+    "description": "이미지, 미디어, 파일 처리를 위한 도구",
+    "icon": "image"
   }
 ]
 
