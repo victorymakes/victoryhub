@@ -194,9 +194,11 @@
       "images": "이미지",
       "processing": "이미지 처리 중...",
       "compressionSummary": "압축 요약",
+      "lowerQualitySmallerFile": "낮은 품질, 작은 파일",
+      "higherQualityLargerFile": "높은 품질, 큰 파일",
       "errors": {
         "canvasContextFailed": "캔버스 컨텍스트를 가져오지 못했습니다.",
-        "compressionFailed": "압축에 실패했습니다. 다른 이미지나 품질 설정을 시도하세요.",
+        "compressionFailed": "압축에 실패했습니다. 다른 이미지나 품질 설정을 시도해보세요.",
         "fileReadFailed": "파일을 읽지 못했습니다. 파일이 손상되었을 수 있습니다."
       }
     },

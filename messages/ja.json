@@ -192,11 +192,13 @@
       "clearAll": "すべてクリア",
       "image": "画像",
       "images": "画像",
-      "processing": "処理中...",
+      "processing": "画像を処理中...",
       "compressionSummary": "圧縮サマリー",
+      "lowerQualitySmallerFile": "低品質、小さいファイル",
+      "higherQualityLargerFile": "高品質、大きいファイル",
       "errors": {
         "canvasContextFailed": "キャンバスコンテキストの取得に失敗しました。",
-        "compressionFailed": "圧縮に失敗しました。別の画像または品質設定を試してください。",
+        "compressionFailed": "圧縮に失敗しました。別の画像や品質設定を試してください。",
         "fileReadFailed": "ファイルの読み込みに失敗しました。ファイルが破損している可能性があります。"
       }
     },

@@ -494,8 +494,8 @@ const ImageCompressor: React.FC = () => {
                             className="w-full"
                         />
                         <div className="flex justify-between text-xs text-muted-foreground">
-                            <span>Lower quality, smaller file</span>
-                            <span>Higher quality, larger file</span>
+                            <span>{t("lowerQualitySmallerFile")}</span>
+                            <span>{t("higherQualityLargerFile")}</span>
                         </div>
                     </div>
 
