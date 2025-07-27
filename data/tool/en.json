@@ -299,5 +299,41 @@
         "answer": "Use JPEG for photos and images with many colors, PNG for images with transparency or sharp edges, and WebP for modern web applications that need smaller file sizes with good quality."
       }
     ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR Code Generator",
+    "description": "Create customizable QR codes with logos, colors, and frames",
+    "category": "media",
+    "keywords": [
+      "qr code generator",
+      "create qr code",
+      "custom qr code",
+      "qr code with logo",
+      "qr code maker",
+      "qr code creator"
+    ],
+    "faq": [
+      {
+        "question": "What does the QR Code Generator tool do?",
+        "answer": "The QR Code Generator tool allows you to create customizable QR codes for websites, contact information, or any text. You can personalize your QR codes with custom colors, add your own logo, and even include a frame with text."
+      },
+      {
+        "question": "Is my data processed securely?",
+        "answer": "Yes, all QR code generation is performed locally in your browser. No data is uploaded to any server, ensuring your privacy and security."
+      },
+      {
+        "question": "How do I add a logo to my QR code?",
+        "answer": "You can add a logo by clicking the 'Choose Logo' button or by dragging and dropping an image into the designated area. For best results, use a simple logo with transparent background and keep the logo size moderate to ensure the QR code remains scannable."
+      },
+      {
+        "question": "What is error correction level and which should I choose?",
+        "answer": "Error correction allows QR codes to be readable even when partially damaged or obscured. Level L (Low) provides 7% error correction, M (Medium) provides 15%, Q (Quartile) provides 25%, and H (High) provides 30%. If you're adding a logo or expect your QR code to be printed in challenging conditions, choose Q or H for better reliability."
+      },
+      {
+        "question": "Will my QR code still work if I change its colors or add a logo?",
+        "answer": "Yes, but with some considerations. Maintain high contrast between foreground and background colors for better scanning. When adding a logo, use a higher error correction level (Q or H) and keep the logo size reasonable. Always test your QR code with multiple devices and apps before distributing it widely."
+      }
+    ]
   }
 ]

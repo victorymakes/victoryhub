@@ -16,7 +16,6 @@ import {
     Upload,
     Download,
     Image as ImageIcon,
-    Trash2,
     Loader2,
     X,
     Lock,
@@ -193,32 +192,22 @@ const ImageResizer: React.FC = () => {
 
     // Effect to reprocess images when dimensions change
     useEffect(() => {
-        // Store the current dimension values to prevent stale closures
-        const currentWidth = width;
-        const currentHeight = height;
-        const currentMaintainAspectRatio = maintainAspectRatio;
-
         // Only trigger reprocessing if there are images
-        if (images.length > 0) {
+        if (images.length > 0 && !isProcessing) {
             // Use a debounce to prevent continuous reprocessing while inputs are changing
             const debounceTimer = setTimeout(() => {
-                // Only proceed if we're not already processing
-                if (!isProcessing) {
-                    // Mark all completed images as needing reprocessing
-                    setIsProcessing(true);
-                    setImages((prev) =>
-                        prev.map((img) => ({
-                            ...img,
-                            status:
-                                img.status === "done"
-                                    ? "processing"
-                                    : img.status,
-                        })),
-                    );
+                // Mark all completed images as needing reprocessing
+                setIsProcessing(true);
+                setImages((prev) =>
+                    prev.map((img) => ({
+                        ...img,
+                        status:
+                            img.status === "done" ? "processing" : img.status,
+                    })),
+                );
 
-                    // Process all images with the new dimensions
-                    processAllImages();
-                }
+                // Process all images with the new dimensions
+                processAllImages();
             }, 300); // 300ms debounce
 
             return () => clearTimeout(debounceTimer);
@@ -384,10 +373,6 @@ const ImageResizer: React.FC = () => {
     return (
         <div className="space-y-6">
             <Card>
-                <CardHeader>
-                    <CardTitle>{t("title")}</CardTitle>
-                    <CardDescription>{t("description")}</CardDescription>
-                </CardHeader>
                 <CardContent className="space-y-4">
                     {/* File Upload Section */}
                     <div className="space-y-4">

@@ -8,6 +8,7 @@ import Base64EncoderDecoder from "./base64-encoder-decoder";
 import ImageCompressor from "./image-compressor";
 import ImageResizer from "./image-resizer";
 import ImageConverter from "./image-converter";
+import QRCodeGenerator from "./qrcode-generator";
 
 interface ToolComponentProps {
     id: string;
@@ -33,6 +34,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({ id }) => {
             return <ImageResizer />;
         case "image-converter":
             return <ImageConverter />;
+        case "qrcode-generator":
+            return <QRCodeGenerator />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">
