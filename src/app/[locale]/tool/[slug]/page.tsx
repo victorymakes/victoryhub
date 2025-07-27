@@ -100,7 +100,10 @@ export default async function ToolPage({ params }: ToolPageProps) {
                     </div>
                 </div>
 
-                <ToolComponent id={resolvedParams.slug} />
+                <ToolComponent
+                    id={resolvedParams.slug}
+                    underConstructionMessage={t("toolUnderConstruction")}
+                />
 
                 {/* FAQ Section */}
                 <FAQSection faqItems={tool.faq} title={t("faq")} />

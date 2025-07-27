@@ -12,9 +12,13 @@ import QRCodeGenerator from "./qrcode-generator";
 
 interface ToolComponentProps {
     id: string;
+    underConstructionMessage: string;
 }
 
-export const ToolComponent: FC<ToolComponentProps> = ({ id }) => {
+export const ToolComponent: FC<ToolComponentProps> = ({
+    id,
+    underConstructionMessage,
+}) => {
     switch (id) {
         case "uuid-generator":
             return <UuidGenerator />;
@@ -39,7 +43,7 @@ export const ToolComponent: FC<ToolComponentProps> = ({ id }) => {
         default:
             return (
                 <p className="text-muted-foreground text-sm">
-                    This tool is under construction.
+                    ${underConstructionMessage}
                 </p>
             );
     }
