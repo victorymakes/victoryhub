@@ -6,6 +6,8 @@ import PasswordGenerator from "./password-generator";
 import URLEncoderDecoder from "./url-encoder-decoder";
 import Base64EncoderDecoder from "./base64-encoder-decoder";
 import ImageCompressor from "./image-compressor";
+import ImageResizer from "./image-resizer";
+import ImageConverter from "./image-converter";
 
 interface ToolComponentProps {
     id: string;
@@ -27,6 +29,10 @@ export const ToolComponent: FC<ToolComponentProps> = ({ id }) => {
             return <Base64EncoderDecoder />;
         case "image-compressor":
             return <ImageCompressor />;
+        case "image-resizer":
+            return <ImageResizer />;
+        case "image-converter":
+            return <ImageConverter />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

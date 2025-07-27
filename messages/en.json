@@ -180,6 +180,57 @@
         "largeOutput": "Large Base64 output. Consider splitting for better readability.",
         "nonPrintableCharacters": "Decoded result contains non-printable characters. This might be binary data."
       }
+    },
+    "imageCompressor": {
+      "title": "Image Compressor",
+      "description": "Compress and optimize your images for web and sharing",
+      "uploadImage": "Upload Image",
+      "chooseFile": "Choose File",
+      "chooseFiles": "Choose Files",
+      "quality": "Quality",
+      "originalSize": "Original size",
+      "compressedSize": "Compressed size",
+      "reduction": "Reduction",
+      "downloadCompressedImage": "Download Compressed Image",
+      "downloadAll": "Download All Compressed Images",
+      "compressedPreview": "Compressed Preview",
+      "dragAndDrop": "Drag and drop image here or click to browse",
+      "dropMoreImages": "Drop more images or click to browse",
+      "supportMultiple": "Supports multiple images at once",
+      "clearAll": "Clear All",
+      "image": "image",
+      "images": "images",
+      "processing": "Processing images...",
+      "compressionSummary": "Compression Summary",
+      "errors": {
+        "canvasContextFailed": "Failed to get canvas context.",
+        "compressionFailed": "Compression failed. Try a different image or quality setting.",
+        "fileReadFailed": "Failed to read file. The file may be corrupted."
+      }
+    },
+    "imageResizer": {
+      "title": "Image Resizer",
+      "description": "Resize your images to specific dimensions while maintaining quality",
+      "chooseFiles": "Choose Files",
+      "originalSize": "Original size",
+      "resizedSize": "Resized size",
+      "reduction": "Reduction",
+      "downloadAll": "Download All",
+      "dragAndDrop": "Drag and drop image here or click to browse",
+      "dropMoreImages": "Drop more images or click to browse",
+      "supportMultiple": "Supports multiple images at once",
+      "dimensions": "Dimensions",
+      "width": "Width",
+      "height": "Height",
+      "lockAspectRatio": "Lock aspect ratio",
+      "unlockAspectRatio": "Unlock aspect ratio",
+      "processing": "Processing images...",
+      "resizeSummary": "Resize Summary",
+      "errors": {
+        "canvasContextFailed": "Failed to get canvas context.",
+        "resizeFailed": "Resize failed. Try a different image or dimensions.",
+        "fileReadFailed": "Failed to read file. The file may be corrupted."
+      }
     }
   },
   "Blog": {

@@ -163,7 +163,7 @@
       "copy": "コピー",
       "copied": "コピーしました！",
       "clear": "クリア",
-      "outputPlaceholder": "出力がここに表示されます...",
+      "outputPlaceholder": "出力はここに表示されます...",
       "errors": {
         "invalidBase64": "無効なBase64入力です。入力を確認して再試行してください。",
         "encodeFailed": "入力のエンコードに失敗しました。再試行してください。"
@@ -171,6 +171,57 @@
       "warnings": {
         "largeOutput": "大きなBase64出力です。読みやすさのために分割を検討してください。",
         "nonPrintableCharacters": "デコード結果に印刷不可能な文字が含まれています。これはバイナリデータの可能性があります。"
+      }
+    },
+    "imageCompressor": {
+      "title": "画像圧縮ツール",
+      "description": "Webや共有用に画像を圧縮・最適化",
+      "uploadImage": "画像をアップロード",
+      "chooseFile": "ファイルを選択",
+      "chooseFiles": "ファイルを選択",
+      "quality": "品質",
+      "originalSize": "元のサイズ",
+      "compressedSize": "圧縮後のサイズ",
+      "reduction": "削減率",
+      "downloadCompressedImage": "圧縮画像をダウンロード",
+      "downloadAll": "すべての圧縮画像をダウンロード",
+      "compressedPreview": "圧縮プレビュー",
+      "dragAndDrop": "画像をここにドラッグ＆ドロップするか、クリックして参照",
+      "dropMoreImages": "さらに画像をドロップするか、クリックして参照",
+      "supportMultiple": "複数の画像を一度に処理できます",
+      "clearAll": "すべてクリア",
+      "image": "画像",
+      "images": "画像",
+      "processing": "処理中...",
+      "compressionSummary": "圧縮サマリー",
+      "errors": {
+        "canvasContextFailed": "キャンバスコンテキストの取得に失敗しました。",
+        "compressionFailed": "圧縮に失敗しました。別の画像または品質設定を試してください。",
+        "fileReadFailed": "ファイルの読み込みに失敗しました。ファイルが破損している可能性があります。"
+      }
+    },
+    "imageResizer": {
+      "title": "画像リサイズツール",
+      "description": "画質を維持しながら画像を特定のサイズに変更",
+      "chooseFiles": "ファイルを選択",
+      "originalSize": "元のサイズ",
+      "resizedSize": "リサイズ後のサイズ",
+      "reduction": "削減率",
+      "downloadAll": "すべてダウンロード",
+      "dragAndDrop": "画像をここにドラッグ＆ドロップするか、クリックして参照",
+      "dropMoreImages": "さらに画像をドロップするか、クリックして参照",
+      "supportMultiple": "複数の画像を一度に処理できます",
+      "dimensions": "サイズ",
+      "width": "幅",
+      "height": "高さ",
+      "lockAspectRatio": "縦横比を固定",
+      "unlockAspectRatio": "縦横比を解除",
+      "processing": "処理中...",
+      "resizeSummary": "リサイズサマリー",
+      "errors": {
+        "canvasContextFailed": "キャンバスコンテキストの取得に失敗しました。",
+        "resizeFailed": "リサイズに失敗しました。別の画像またはサイズを試してください。",
+        "fileReadFailed": "ファイルの読み込みに失敗しました。ファイルが破損している可能性があります。"
       }
     }
   },

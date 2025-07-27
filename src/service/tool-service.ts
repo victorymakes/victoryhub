@@ -59,7 +59,7 @@ export const getPopularTools = async (
     locale: string = "en",
 ): Promise<Tool[]> => {
     const tools = await getTools(locale);
-    return tools.slice(0, Math.max(count, tools.length));
+    return tools.slice(0, Math.min(count, tools.length));
 };
 
 export const getTool = async (
