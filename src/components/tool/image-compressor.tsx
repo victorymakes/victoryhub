@@ -438,7 +438,7 @@ const ImageCompressor: React.FC = () => {
                                                         )}
                                                 </div>
                                                 <button
-                                                    className="absolute top-1 right-1 p-1 rounded-full bg-muted/80 hover:bg-muted text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity"
+                                                    className="absolute top-1 right-1 p-1 rounded-full bg-muted/80 hover:bg-muted text-muted-foreground transition-opacity opacity-100"
                                                     onClick={() =>
                                                         removeImage(img.id)
                                                     }
