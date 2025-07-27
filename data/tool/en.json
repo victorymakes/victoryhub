@@ -235,5 +235,69 @@
         "answer": "You can compress JPEG, PNG, and most common image formats. The output is always a JPEG for maximum compatibility and compression."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Image Resizer",
+    "description": "Resize your images to specific dimensions while maintaining quality",
+    "category": "media",
+    "keywords": [
+      "image resizer",
+      "resize image",
+      "image dimensions",
+      "change image size",
+      "image scaling",
+      "aspect ratio"
+    ],
+    "faq": [
+      {
+        "question": "What does the Image Resizer tool do?",
+        "answer": "The Image Resizer tool allows you to change the dimensions of your images by specifying exact width and height values. You can maintain the original aspect ratio or set custom dimensions for your specific needs."
+      },
+      {
+        "question": "Is my image processed securely?",
+        "answer": "Yes, all image resizing is performed locally in your browser. No images are uploaded to any server, ensuring your privacy and security."
+      },
+      {
+        "question": "What image formats are supported?",
+        "answer": "You can resize JPEG, PNG, and most common image formats. The output is always a JPEG for maximum compatibility."
+      },
+      {
+        "question": "Will resizing affect my image quality?",
+        "answer": "Resizing an image smaller generally maintains good quality, but enlarging images beyond their original dimensions may result in some quality loss. The tool uses high-quality algorithms to minimize quality degradation during resizing."
+      }
+    ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Image Converter",
+    "description": "Convert images between different formats (JPEG, PNG, WebP)",
+    "category": "media",
+    "keywords": [
+      "image converter",
+      "convert image format",
+      "jpeg to png",
+      "png to jpeg",
+      "webp converter",
+      "image format conversion"
+    ],
+    "faq": [
+      {
+        "question": "What does the Image Converter tool do?",
+        "answer": "The Image Converter tool allows you to convert images between different formats including JPEG, PNG, and WebP. You can also adjust the quality settings for lossy formats like JPEG and WebP."
+      },
+      {
+        "question": "Is my image processed securely?",
+        "answer": "Yes, all image conversion is performed locally in your browser. No images are uploaded to any server, ensuring your privacy and security."
+      },
+      {
+        "question": "What image formats are supported?",
+        "answer": "You can convert between JPEG, PNG, and WebP formats. The tool supports most common input formats and provides high-quality output in your chosen format."
+      },
+      {
+        "question": "When should I use different image formats?",
+        "answer": "Use JPEG for photos and images with many colors, PNG for images with transparency or sharp edges, and WebP for modern web applications that need smaller file sizes with good quality."
+      }
+    ]
   }
 ]

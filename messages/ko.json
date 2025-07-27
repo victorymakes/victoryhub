@@ -172,82 +172,57 @@
         "largeOutput": "큰 Base64 출력입니다. 가독성을 위해 분할을 고려하세요.",
         "nonPrintableCharacters": "디코딩 결과에 인쇄할 수 없는 문자가 포함되어 있습니다. 이것은 바이너리 데이터일 수 있습니다."
       }
+    },
+    "imageCompressor": {
+      "title": "이미지 압축기",
+      "description": "웹 및 공유를 위한 이미지 압축 및 최적화",
+      "uploadImage": "이미지 업로드",
+      "chooseFile": "파일 선택",
+      "chooseFiles": "파일 선택",
+      "quality": "품질",
+      "originalSize": "원본 크기",
+      "compressedSize": "압축된 크기",
+      "reduction": "감소율",
+      "downloadCompressedImage": "압축된 이미지 다운로드",
+      "downloadAll": "모든 압축된 이미지 다운로드",
+      "compressedPreview": "압축 미리보기",
+      "dragAndDrop": "여기에 이미지를 끌어다 놓거나 클릭하여 찾아보기",
+      "dropMoreImages": "더 많은 이미지를 끌어다 놓거나 클릭하여 찾아보기",
+      "supportMultiple": "여러 이미지를 한 번에 처리할 수 있습니다",
+      "clearAll": "모두 지우기",
+      "image": "이미지",
+      "images": "이미지",
+      "processing": "이미지 처리 중...",
+      "compressionSummary": "압축 요약",
+      "errors": {
+        "canvasContextFailed": "캔버스 컨텍스트를 가져오지 못했습니다.",
+        "compressionFailed": "압축에 실패했습니다. 다른 이미지나 품질 설정을 시도하세요.",
+        "fileReadFailed": "파일을 읽지 못했습니다. 파일이 손상되었을 수 있습니다."
+      }
+    },
+    "imageResizer": {
+      "title": "이미지 리사이저",
+      "description": "품질을 유지하면서 이미지 크기 조정",
+      "chooseFiles": "파일 선택",
+      "originalSize": "원본 크기",
+      "resizedSize": "조정된 크기",
+      "reduction": "감소율",
+      "downloadAll": "모두 다운로드",
+      "dragAndDrop": "여기에 이미지를 끌어다 놓거나 클릭하여 찾아보기",
+      "dropMoreImages": "더 많은 이미지를 끌어다 놓거나 클릭하여 찾아보기",
+      "supportMultiple": "여러 이미지를 한 번에 처리할 수 있습니다",
+      "dimensions": "크기",
+      "width": "너비",
+      "height": "높이",
+      "lockAspectRatio": "화면비 고정",
+      "unlockAspectRatio": "화면비 해제",
+      "processing": "이미지 처리 중...",
+      "resizeSummary": "리사이징 요약",
+      "errors": {
+        "canvasContextFailed": "캔버스 컨텍스트를 가져오지 못했습니다.",
+        "resizeFailed": "크기 조정에 실패했습니다. 다른 이미지나 크기를 시도하세요.",
+        "fileReadFailed": "파일을 읽지 못했습니다. 파일이 손상되었을 수 있습니다."
+      }
     }
-  },
-  "Blog": {
-    "title": "우리 블로그",
-    "subtitle": "최신 도구와 기술에 대한 인사이트, 팁, 뉴스",
-    "featuredArticles": "추천 기사",
-    "recentArticles": "최신 기사",
-    "readMore": "더 읽기",
-    "featured": "추천",
-    "stayUpdated": "최신 정보 받기",
-    "newsletterDesc": "최신 기사와 도구 추천을 이메일로 받아보세요.",
-    "emailPlaceholder": "이메일 입력",
-    "subscribe": "구독",
-    "by": "작성자",
-    "allCategories": "모든 카테고리",
-    "showingResults": "{total}개 중 {count}개 기사 표시",
-    "noArticles": "이 카테고리에는 기사가 없습니다",
-    "noArticlesDesc": "다른 카테고리를 선택하여 더 많은 기사를 확인해보세요.",
-    "page": "페이지",
-    "of": "/",
-    "previous": "이전",
-    "next": "다음",
-    "goToPage": "{page}페이지로 이동",
-    "seoTitle": "블로그 기사",
-    "seoDescription": "기술적 인사이트와 튜토리얼을 위한 최신 블로그 기사를 둘러보세요.",
-    "seoKeywords": "블로그, 기사, 튜토리얼, 기술 인사이트, 프로그래밍, 개발",
-    "notFoundTitle": "블로그 포스트를 찾을 수 없습니다",
-    "notFoundDescription": "요청한 블로그 포스트를 찾을 수 없습니다.",
-    "minRead": "분 읽기",
-    "backToBlog": "← 블로그로 돌아가기",
-    "share": "공유",
-    "shareOnX": "X에서 공유",
-    "shareOnFacebook": "Facebook에서 공유",
-    "shareOnLinkedIn": "LinkedIn에서 공유",
-    "copyLink": "링크 복사",
-    "copied": "복사됨!",
-    "relatedArticles": "관련 기사"
-  },
-  "ToolDetail": {
-    "title": "도구 상세",
-    "description": "이 도구에 대한 자세한 정보와 사용법",
-    "features": "기능",
-    "usage": "사용법",
-    "examples": "예시",
-    "reviews": "리뷰",
-    "writeReview": "리뷰 작성",
-    "yourRating": "당신의 평점",
-    "submitReview": "리뷰 제출",
-    "reviewPlaceholder": "리뷰를 작성하세요...",
-    "relatedTools": "관련 도구",
-    "notFoundTitle": "도구를 찾을 수 없음",
-    "notFoundDescription": "요청한 도구를 찾을 수 없습니다.",
-    "faq": "자주 묻는 질문"
-  },
-  "Footer": {
-    "description": "개발자, 디자이너, 전문가를 위한 무료 온라인 도구. 브라우저에서 로컬로 실행되는 프라이버시 중심의 유틸리티.",
-    "navigation": "네비게이션",
-    "information": "정보",
-    "privacyPolicy": "개인정보처리방침",
-    "termsOfService": "이용약관",
-    "contact": "문의하기",
-    "copyright": "© {year} VictoryHub. All rights reserved.",
-    "madeWith": "개발자와 크리에이터를 위해 ❤️로 만들어졌습니다"
-  },
-  "Page": {
-    "notFoundTitle": "페이지를 찾을 수 없습니다",
-    "notFoundDescription": "찾으시는 페이지가 존재하지 않습니다."
-  },
-  "NotFound": {
-    "title": "404 - 페이지를 찾을 수 없습니다",
-    "description": "찾고 있는 페이지가 존재하지 않습니다. URL을 확인하거나 홈페이지로 돌아가세요.",
-    "goHome": "홈으로 돌아가기"
-  },
-  "Error": {
-    "title": "500 - 오류가 발생했습니다",
-    "description": "문제가 발생했습니다. 나중에 다시 시도하거나 문제가 지속되면 지원팀에 문의하세요.",
-    "goHome": "홈으로 돌아가기"
   }
 }
