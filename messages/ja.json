@@ -341,7 +341,8 @@
     "relatedTools": "関連ツール",
     "noRelatedTools": "関連ツールはありません",
     "notFoundTitle": "ツールが見つかりません",
-    "notFoundDescription": "要求されたツールが見つかりませんでした。"
+    "notFoundDescription": "要求されたツールが見つかりませんでした。",
+    "toolUnderConstruction": "このツールは現在開発中です。しばらくお待ちください。"
   },
   "Footer": {
     "description": "開発者、デザイナー、プロフェッショナルのための無料オンラインツール。ブラウザ内でローカルに動作するプライバシー重視のユーティリティ。",

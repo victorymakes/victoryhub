@@ -348,7 +348,8 @@
     "viewAllTools": "View All Tools",
     "notFoundTitle": "Tool Not Found",
     "notFoundDescription": "The requested tool could not be found.",
-    "faq": "Frequently Asked Questions"
+    "faq": "Frequently Asked Questions",
+    "toolUnderConstruction": "This tool is under construction. Please check back later."
   },
   "Footer": {
     "description": "Free online tools for developers, designers, and professionals. Privacy-focused utilities that run locally in your browser.",
