@@ -38,8 +38,17 @@ export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
     const tools = await loadTools(locale);
 
     const validTools: Tool[] = [];
+    const notPublishedTools = [
+        "image-resizer",
+        "image-converter",
+        "qrcode-generator",
+    ];
 
     for (const tool of tools) {
+        if (notPublishedTools.includes(tool.slug)) {
+            continue;
+        }
+
         if (categoryMap.has(tool.category)) {
             validTools.push({
                 ...tool,
