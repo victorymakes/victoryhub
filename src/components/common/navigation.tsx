@@ -13,14 +13,6 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import {
     Sheet,
     SheetContent,
     SheetHeader,
@@ -29,6 +21,11 @@ import {
 } from "@/components/ui/sheet";
 import { getCategories } from "@/service/tool-service";
 import { DynamicIcon } from "@/components/common/dynamic-icon";
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from "@/components/ui/popover";
 
 interface MenuItem {
     title: string;
@@ -100,11 +97,9 @@ export const Navbar = async ({}: NavbarProps) => {
                             </span>
                         </Link>
                         <div className="flex items-center">
-                            <NavigationMenu>
-                                <NavigationMenuList>
-                                    {menu.map((item) => renderMenuItem(item))}
-                                </NavigationMenuList>
-                            </NavigationMenu>
+                            <div className="flex items-center gap-2">
+                                {menu.map((item) => renderMenuItem(item))}
+                            </div>
                         </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -214,34 +209,39 @@ export const Navbar = async ({}: NavbarProps) => {
 const renderMenuItem = (item: MenuItem) => {
     if (item.items) {
         return (
-            <NavigationMenuItem key={item.title}>
-                <NavigationMenuTrigger className={"cursor-pointer"}>
-                    {item.title}
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-popover text-popover-foreground">
-                    {item.items.map((subItem) => (
-                        <NavigationMenuLink
-                            asChild
-                            key={subItem.title}
-                            className="w-80"
-                        >
-                            <SubMenuLink item={subItem} />
-                        </NavigationMenuLink>
-                    ))}
-                </NavigationMenuContent>
-            </NavigationMenuItem>
+            <Popover>
+                <PopoverTrigger asChild>
+                    <Button
+                        variant="ghost"
+                        className="cursor-pointer px-3 py-2 text-base font-medium"
+                    >
+                        {item.title}
+                    </Button>
+                </PopoverTrigger>
+
+                <PopoverContent
+                    align="start"
+                    sideOffset={8}
+                    className="bg-popover text-popover-foreground shadow-xl border w-80 p-2"
+                >
+                    <div className="flex flex-col gap-1">
+                        {item.items.map((subItem) => (
+                            <SubMenuLink key={subItem.title} item={subItem} />
+                        ))}
+                    </div>
+                </PopoverContent>
+            </Popover>
         );
     }
 
     return (
-        <NavigationMenuItem key={item.title}>
-            <NavigationMenuLink
-                href={item.url}
-                className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
-            >
-                {item.title}
-            </NavigationMenuLink>
-        </NavigationMenuItem>
+        <Button
+            asChild
+            variant="ghost"
+            className="px-3 py-2 text-base font-medium"
+        >
+            <Link href={item.url}>{item.title}</Link>
+        </Button>
     );
 };
 
