@@ -42,6 +42,7 @@ const ImageCompressor: React.FC = () => {
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement | null>(null);
+    const imagesRef = useRef<ImageItem[]>([]);
 
     // Track total size stats
     const totalOriginalSize = images.reduce(
@@ -276,8 +277,12 @@ const ImageCompressor: React.FC = () => {
 
     // Clean up object URLs when component unmounts
     useEffect(() => {
+        imagesRef.current = images;
+    }, [images]);
+
+    useEffect(() => {
         return () => {
-            images.forEach((img) => {
+            imagesRef.current.forEach((img) => {
                 if (img.compressedUrl) {
                     URL.revokeObjectURL(img.compressedUrl);
                 }
@@ -367,7 +372,7 @@ const ImageCompressor: React.FC = () => {
                                     <p className="text-sm text-muted-foreground mb-3">
                                         {t("dropMoreImages")}
                                     </p>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[300px] overflow-y-auto p-1">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[300px] overflow-y-auto p-1 relative z-10">
                                         {images.map((img) => (
                                             <div
                                                 key={img.id}
