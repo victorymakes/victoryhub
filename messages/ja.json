@@ -253,6 +253,9 @@
       "higherQuality": "高品質",
       "conversionSummary": "変換サマリー",
       "ready": "準備完了",
+      "uploadImage": "画像をアップロード",
+      "originalFormat": "元の形式",
+      "images": "画像",
       "errors": {
         "canvasContextFailed": "キャンバスコンテキストの取得に失敗しました。",
         "conversionFailed": "変換に失敗しました。別の画像または形式を試してください。",
