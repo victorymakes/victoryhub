@@ -1,13 +1,19 @@
 [
   {
     "slug": "uuid-generator",
-    "name": "UUID生成器",
-    "description": "为您的应用程序生成唯一标识符",
+    "name": "UUID生成器 – 在线创建唯一标识符",
+    "description": "为您的应用程序、数据库和系统生成随机UUID/GUID标识符。使用这个免费在线工具创建单个或批量UUID。",
     "category": "development",
     "keywords": [
       "uuid生成器",
       "生成uuid",
-      "uuid v4在线"
+      "uuid v4在线",
+      "guid生成器",
+      "创建uuid",
+      "随机uuid",
+      "批量uuid生成",
+      "数据库用uuid",
+      "唯一标识符生成器"
     ],
     "faq": [
       {
@@ -34,14 +40,19 @@
   },
   {
     "slug": "timestamp-converter",
-    "name": "时间戳转换器",
-    "description": "在时间戳和人类可读的日期格式之间转换",
+    "name": "时间戳转换器 – Unix时间转人类可读日期",
+    "description": "在Unix时间戳和可读日期之间转换，支持时区设置。完美适用于处理API、日志和数据库时间戳的开发人员。",
     "category": "development",
     "keywords": [
       "unix时间戳转换器",
       "纪元转日期",
       "时间戳转日期时间",
-      "转换unix时间"
+      "转换unix时间",
+      "时区转换",
+      "日期时间格式化",
+      "毫秒时间戳",
+      "ISO8601转换",
+      "开发者工具"
     ],
     "faq": [
       {
@@ -68,15 +79,20 @@
   },
   {
     "slug": "whats-my-ip",
-    "name": "我的IP地址",
-    "description": "快速检查您的公网IP地址和位置信息",
-    "category": "security",
+    "name": "我的IP地址 – 查看公共IP地址和位置信息",
+    "description": "即时查看您的公共IPv4/IPv6地址、地理位置、ISP和连接详情。对网络故障排除和VPN验证非常有用。",
+    "category": "networking",
     "keywords": [
-      "ip地址检查器",
-      "查找我的ip",
-      "公网ip",
-      "我的ip是什么",
-      "ip查询"
+      "ip地址查询",
+      "公共ip",
+      "ip地理位置",
+      "ipv4",
+      "ipv6",
+      "网络信息",
+      "ISP查询",
+      "VPN验证",
+      "地理位置",
+      "连接诊断"
     ],
     "faq": [
       {
@@ -103,15 +119,20 @@
   },
   {
     "slug": "password-generator",
-    "name": "密码生成器",
-    "description": "生成具有可自定义选项的安全随机密码",
+    "name": "密码生成器 – 在线创建强大安全的密码",
+    "description": "使用可自定义长度和字符集生成加密安全的密码。创建强大、随机的密码以获得最大的账户安全性。",
     "category": "security",
     "keywords": [
       "密码生成器",
       "安全密码",
       "随机密码",
       "强密码",
-      "密码创建器"
+      "密码创建器",
+      "加密安全密码",
+      "自定义密码",
+      "账户安全",
+      "密码强度",
+      "在线密码工具"
     ],
     "faq": [
       {
@@ -138,16 +159,20 @@
   },
   {
     "slug": "url-encoder-decoder",
-    "name": "URL编码器/解码器",
-    "description": "为Web开发编码和解码URL及URL组件",
+    "name": "URL编码器/解码器 – 转换Web使用的特殊字符",
+    "description": "对URL进行编码以安全传输或解码URL编码的字符串。对处理查询参数和特殊字符的Web开发人员至关重要。",
     "category": "development",
     "keywords": [
       "url编码器",
       "url解码器",
-      "百分号编码",
+      "百分比编码",
       "uri编码",
       "uri解码",
-      "web开发"
+      "Web开发",
+      "特殊字符转换",
+      "查询参数",
+      "URL转义",
+      "字符串编码"
     ],
     "faq": [
       {
@@ -174,8 +199,8 @@
   },
   {
     "slug": "base64-encoder-decoder",
-    "name": "Base64编码器/解码器",
-    "description": "为数据传输和存储编码和解码Base64字符串",
+    "name": "Base64编码器/解码器 – 转换文本和二进制数据",
+    "description": "将文本编码为Base64或将Base64字符串解码为原始格式。完美适用于嵌入图像、API认证和数据传输。",
     "category": "development",
     "keywords": [
       "base64编码器",
@@ -183,7 +208,11 @@
       "base64编码",
       "base64解码",
       "数据编码",
-      "web开发"
+      "Web开发",
+      "二进制转换",
+      "图像编码",
+      "API认证",
+      "数据传输编码"
     ],
     "faq": [
       {
