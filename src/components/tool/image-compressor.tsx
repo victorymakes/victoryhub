@@ -43,6 +43,8 @@ const ImageCompressor: React.FC = () => {
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement | null>(null);
+    const imagesRef = useRef<ImageItem[]>([]);
+    const isProcessingRef = useRef<boolean>(false);
 
     // Track total size stats
     const totalOriginalSize = images.reduce(
@@ -288,8 +290,11 @@ const ImageCompressor: React.FC = () => {
 
     // Clean up object URLs when component unmounts
     useEffect(() => {
+        imagesRef.current = images;
+    }, [images]);
+    useEffect(() => {
         return () => {
-            images.forEach((img) => {
+            imagesRef.current.forEach((img) => {
                 if (img.compressedUrl) {
                     URL.revokeObjectURL(img.compressedUrl);
                 }
@@ -299,8 +304,11 @@ const ImageCompressor: React.FC = () => {
 
     // Effect to reprocess images when quality changes
     useEffect(() => {
+        isProcessingRef.current = isProcessing;
+    }, [isProcessing]);
+    useEffect(() => {
         // Only trigger reprocessing if there are images and we're not already processing
-        if (images.length > 0 && !isProcessing) {
+        if (imagesRef.current.length > 0 && !isProcessingRef.current) {
             // Use a debounce to prevent continuous reprocessing while slider is moving
             const debounceTimer = setTimeout(() => {
                 // Mark all completed images as needing reprocessing
@@ -319,7 +327,7 @@ const ImageCompressor: React.FC = () => {
 
             return () => clearTimeout(debounceTimer);
         }
-    }, [quality]);
+    }, [quality, processAllImages]);
 
     return (
         <div className="space-y-6">
