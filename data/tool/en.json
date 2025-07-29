@@ -1,13 +1,19 @@
 [
   {
     "slug": "uuid-generator",
-    "name": "UUID Generator",
-    "description": "Generate unique identifiers for your applications",
+    "name": "UUID Generator – Create Unique Identifiers Online",
+    "description": "Generate random UUID/GUID identifiers for your applications, databases, and systems. Create single or bulk UUIDs with this free online tool.",
     "category": "development",
     "keywords": [
       "uuid generator",
       "generate uuid",
-      "uuid v4 online"
+      "uuid v4 online",
+      "guid generator",
+      "create uuid",
+      "random uuid",
+      "bulk uuid generator",
+      "uuid for database",
+      "unique identifier generator"
     ],
     "faq": [
       {
@@ -34,14 +40,19 @@
   },
   {
     "slug": "timestamp-converter",
-    "name": "Timestamp Converter",
-    "description": "Convert between timestamp and human-readable date formats",
+    "name": "Timestamp Converter – Unix Time to Human-Readable Date",
+    "description": "Convert between Unix timestamps and readable dates with timezone support. Perfect for developers working with APIs, logs, and database timestamps.",
     "category": "development",
     "keywords": [
       "unix timestamp converter",
       "epoch to date",
       "timestamp to datetime",
-      "convert unix time"
+      "convert unix time",
+      "milliseconds to date",
+      "human readable timestamp",
+      "date to unix time",
+      "timestamp converter online",
+      "timezone converter"
     ],
     "faq": [
       {
@@ -68,15 +79,19 @@
   },
   {
     "slug": "whats-my-ip",
-    "name": "What's My IP",
-    "description": "Quickly check your public IP address and location information",
+    "name": "What's My IP – Check Public IP Address & Location",
+    "description": "Instantly view your public IPv4/IPv6 address, geolocation, ISP, and connection details. Useful for network troubleshooting and VPN verification.",
     "category": "security",
     "keywords": [
       "ip address checker",
       "find my ip",
       "public ip",
       "what is my ip",
-      "ip lookup"
+      "ip lookup",
+      "my ip address",
+      "ip geolocation",
+      "check ip location",
+      "ip address finder"
     ],
     "faq": [
       {
@@ -103,15 +118,19 @@
   },
   {
     "slug": "password-generator",
-    "name": "Password Generator",
-    "description": "Generate secure, random passwords with customizable options",
+    "name": "Password Generator – Create Strong, Secure Passwords Online",
+    "description": "Generate cryptographically secure passwords with customizable length and character sets. Create strong, random passwords for maximum account security.",
     "category": "security",
     "keywords": [
       "password generator",
       "secure password",
       "random password",
       "strong password",
-      "password creator"
+      "password creator",
+      "create secure password",
+      "password generator tool",
+      "complex password generator",
+      "online password maker"
     ],
     "faq": [
       {
@@ -138,8 +157,8 @@
   },
   {
     "slug": "url-encoder-decoder",
-    "name": "URL Encoder/Decoder",
-    "description": "Encode and decode URLs and URL components for web development",
+    "name": "URL Encoder/Decoder – Convert Special Characters for Web Use",
+    "description": "Encode URLs for safe transmission or decode URL-encoded strings. Essential for web developers working with query parameters and special characters.",
     "category": "development",
     "keywords": [
       "url encoder",
@@ -147,7 +166,11 @@
       "percent encoding",
       "uri encode",
       "uri decode",
-      "web development"
+      "web development",
+      "encode special characters",
+      "decode url parameters",
+      "url encoding tool",
+      "query string encoder"
     ],
     "faq": [
       {
@@ -174,8 +197,8 @@
   },
   {
     "slug": "base64-encoder-decoder",
-    "name": "Base64 Encoder/Decoder",
-    "description": "Encode and decode Base64 strings for data transmission and storage",
+    "name": "Base64 Encoder/Decoder – Convert Text and Binary Data",
+    "description": "Encode text to Base64 or decode Base64 strings to original format. Perfect for embedding images, API authentication, and data transmission.",
     "category": "development",
     "keywords": [
       "base64 encoder",
@@ -183,7 +206,11 @@
       "base64 encode",
       "base64 decode",
       "data encoding",
-      "web development"
+      "web development",
+      "text to base64",
+      "base64 to text",
+      "base64 converter",
+      "binary to base64"
     ],
     "faq": [
       {
