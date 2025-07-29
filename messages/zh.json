@@ -224,6 +224,9 @@
       "higherQuality": "较高质量",
       "conversionSummary": "转换摘要",
       "ready": "准备就绪",
+      "uploadImage": "上传图片",
+      "originalFormat": "原始格式",
+      "images": "图片",
       "errors": {
         "canvasContextFailed": "获取画布上下文失败。",
         "conversionFailed": "转换失败。尝试不同的图像或格式。",

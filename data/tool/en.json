@@ -210,129 +210,165 @@
   },
   {
     "slug": "image-compressor",
-    "name": "Image Compressor",
-    "description": "Compress and optimize images for web and sharing",
+    "name": "Image Compressor – Reduce JPEG, PNG, and WebP File Sizes Online",
+    "description": "Compress JPEG, PNG, and WebP images online to reduce file size without losing quality. Perfect for web optimization, faster uploads, and email sharing.",
     "category": "media",
     "keywords": [
       "image compressor",
-      "image optimization",
-      "compress image",
+      "compress jpeg",
+      "compress png",
+      "compress webp",
       "reduce image size",
-      "webp compressor",
-      "jpeg compressor"
+      "optimize image for web",
+      "online image compression",
+      "image optimization tool",
+      "bulk image compressor"
     ],
     "faq": [
       {
-        "question": "What does the Image Compressor tool do?",
-        "answer": "The Image Compressor tool allows you to reduce the file size of your images by adjusting the quality, making them faster to upload, download, and share online."
+        "question": "How does the Image Compressor reduce file size without losing visible quality?",
+        "answer": "The Image Compressor uses browser-native canvas rendering and encoding techniques to compress images while preserving visual clarity. For JPEG and WebP, it reduces file size by adjusting compression quality using lossy encoding. For PNGs, it leverages lossless optimization like color depth reduction and palette refinement. You can manually set the compression level via a slider to balance quality vs. size."
       },
       {
-        "question": "Is my image processed securely?",
-        "answer": "Yes, all image compression is performed locally in your browser. No images are uploaded to any server, ensuring your privacy and security."
+        "question": "Can I compress a PNG image without losing transparency or quality?",
+        "answer": "Yes. PNG compression in this tool is lossless—meaning it reduces size by optimizing pixel data and removing unnecessary metadata, not by re-encoding pixels. The alpha (transparency) channel is preserved. However, for smaller output, you can choose to convert the PNG to JPEG if transparency isn’t required."
       },
       {
-        "question": "What image formats are supported?",
-        "answer": "You can compress JPEG, PNG, and most common image formats. The output is always a JPEG for maximum compatibility and compression."
+        "question": "Is it safe to use this compressor for sensitive images (e.g., personal photos)?",
+        "answer": "Absolutely. This is a fully client-side image compression tool. All processing happens locally in your browser using JavaScript and HTML5 APIs—your images are never uploaded or sent to any server. This makes it a secure option for privacy-sensitive content, including ID scans, documents, or private photos."
+      },
+      {
+        "question": "Can I compress images in bulk (multiple files at once)?",
+        "answer": "Yes. The tool supports batch image compression. Simply drag and drop multiple JPEG, PNG, or WebP files into the interface, and they’ll be queued and processed in parallel or sequentially depending on browser memory. A ZIP file containing all compressed images will be automatically prepared for download."
+      },
+      {
+        "question": "When should I choose WebP over JPEG for compression?",
+        "answer": "WebP typically offers 25–30% smaller file sizes compared to JPEG for the same visual quality. It's ideal for web developers optimizing performance, especially on mobile. However, JPEG is more universally compatible across older browsers and image viewers. This tool allows you to compress in JPEG for maximum compatibility, or you can use a separate converter to generate WebP if needed."
+      },
+      {
+        "question": "What’s the difference between lossy and lossless image compression?",
+        "answer": "Lossy compression (used in JPEG, WebP) removes some image data to reduce file size—best for photos or large images where minor quality trade-offs are acceptable. Lossless compression (used in PNG) retains all original data, ideal for logos, illustrations, and screenshots. Our tool uses lossy compression by default for best size-to-quality ratio, with visual quality preserved unless set to low-quality extremes."
       }
     ]
   },
   {
     "slug": "image-resizer",
-    "name": "Image Resizer",
-    "description": "Resize your images to specific dimensions while maintaining quality",
+    "name": "Image Resizer – Resize JPEG, PNG & WebP Images Online",
+    "description": "Resize images to exact dimensions while maintaining quality. Supports JPG, PNG, and WebP. Ideal for websites, social media, and email attachments.",
     "category": "media",
     "keywords": [
       "image resizer",
-      "resize image",
-      "image dimensions",
-      "change image size",
-      "image scaling",
-      "aspect ratio"
+      "resize image online",
+      "change image dimensions",
+      "resize png",
+      "resize jpeg",
+      "image scaling tool",
+      "resize photo for web",
+      "resize image without losing quality",
+      "maintain aspect ratio"
     ],
     "faq": [
       {
-        "question": "What does the Image Resizer tool do?",
-        "answer": "The Image Resizer tool allows you to change the dimensions of your images by specifying exact width and height values. You can maintain the original aspect ratio or set custom dimensions for your specific needs."
+        "question": "How does the Image Resizer adjust image dimensions without distortion?",
+        "answer": "The Image Resizer lets you set precise width and height values while maintaining the original aspect ratio if desired. It uses browser-based canvas resizing, which ensures accurate dimension scaling with minimal quality loss. This makes it ideal for resizing images for websites, thumbnails, or content delivery without compromising the image structure."
       },
       {
-        "question": "Is my image processed securely?",
-        "answer": "Yes, all image resizing is performed locally in your browser. No images are uploaded to any server, ensuring your privacy and security."
+        "question": "Can I resize images without losing quality or sharpness?",
+        "answer": "Yes. When reducing image size, quality is generally maintained. The tool leverages high-quality downscaling algorithms to preserve detail. Enlarging images may lead to softening or blur due to pixel interpolation, but results remain visually acceptable for moderate upscaling."
       },
       {
-        "question": "What image formats are supported?",
-        "answer": "You can resize JPEG, PNG, and most common image formats. The output is always a JPEG for maximum compatibility."
+        "question": "Is it secure to resize images in this tool?",
+        "answer": "Absolutely. All resizing is done in your browser using JavaScript. Images never leave your computer, ensuring that private or sensitive files remain local and secure. No data is uploaded or stored externally."
       },
       {
-        "question": "Will resizing affect my image quality?",
-        "answer": "Resizing an image smaller generally maintains good quality, but enlarging images beyond their original dimensions may result in some quality loss. The tool uses high-quality algorithms to minimize quality degradation during resizing."
+        "question": "Which image formats are supported for resizing?",
+        "answer": "You can upload JPEG, PNG, and WebP images. These are common formats used for photography, screenshots, and web graphics. Resized images are saved in JPEG format by default for maximum compatibility and minimal file size."
+      },
+      {
+        "question": "How do I lock aspect ratio when resizing an image?",
+        "answer": "The tool provides a toggle to lock the original aspect ratio. When enabled, entering a new width will automatically calculate the proportional height, and vice versa. This helps avoid stretched or squashed images, especially useful for product photos or social media posts."
       }
     ]
   },
   {
     "slug": "image-converter",
-    "name": "Image Converter",
-    "description": "Convert images between different formats (JPEG, PNG, WebP)",
+    "name": "Image Converter – Convert JPEG, PNG & WebP Formats Online",
+    "description": "Convert images between JPEG, PNG, and WebP formats directly in your browser. Adjust output quality and retain original resolution with no uploads required.",
     "category": "media",
     "keywords": [
       "image converter",
-      "convert image format",
-      "jpeg to png",
-      "png to jpeg",
-      "webp converter",
-      "image format conversion"
+      "convert jpeg to png",
+      "convert png to jpeg",
+      "webp to png",
+      "convert image online",
+      "jpg to webp converter",
+      "png to webp",
+      "image format converter",
+      "lossless image conversion"
     ],
     "faq": [
       {
-        "question": "What does the Image Converter tool do?",
-        "answer": "The Image Converter tool allows you to convert images between different formats including JPEG, PNG, and WebP. You can also adjust the quality settings for lossy formats like JPEG and WebP."
+        "question": "What does the Image Converter do and how does it work?",
+        "answer": "The Image Converter transforms image files between JPEG, PNG, and WebP formats using in-browser technology. It allows users to upload an image, select the desired output format, and optionally adjust quality for lossy formats like JPEG and WebP. All conversion is executed via browser APIs for instant results with no uploads."
       },
       {
-        "question": "Is my image processed securely?",
-        "answer": "Yes, all image conversion is performed locally in your browser. No images are uploaded to any server, ensuring your privacy and security."
+        "question": "Is image conversion secure and offline?",
+        "answer": "Yes. All operations take place entirely within your browser. Your files remain local and are never transmitted, stored, or accessed by any server. This makes the tool suitable for confidential or sensitive images."
       },
       {
-        "question": "What image formats are supported?",
-        "answer": "You can convert between JPEG, PNG, and WebP formats. The tool supports most common input formats and provides high-quality output in your chosen format."
+        "question": "What format should I choose: JPEG, PNG, or WebP?",
+        "answer": "Choose JPEG for photos or images with many colors and gradients. Use PNG when you need transparency or high-fidelity edges (like logos and UI assets). WebP is best for web use—it combines smaller file size with good visual quality, supported by all modern browsers."
       },
       {
-        "question": "When should I use different image formats?",
-        "answer": "Use JPEG for photos and images with many colors, PNG for images with transparency or sharp edges, and WebP for modern web applications that need smaller file sizes with good quality."
+        "question": "Does converting between formats reduce image quality?",
+        "answer": "Converting to a lossy format like JPEG or WebP may slightly degrade image quality, especially at lower quality settings. Converting between PNGs or from JPEG to PNG is generally lossless. You can control quality levels before downloading."
+      },
+      {
+        "question": "Can I convert many images at once (batch conversion)?",
+        "answer": "Yes. The tool supports batch format conversion. Drag and drop multiple files, and each will be processed and made available for download individually or bundled in a ZIP file."
       }
     ]
   },
   {
     "slug": "qrcode-generator",
-    "name": "QR Code Generator",
-    "description": "Create customizable QR codes with logos, colors, and frames",
+    "name": "QR Code Generator – Create Custom QR Codes with Logo, Color, and Frames",
+    "description": "Generate professional QR codes with custom branding, logos, colors, and frames. Perfect for websites, Wi-Fi sharing, business cards, and event promotion.",
     "category": "media",
     "keywords": [
       "qr code generator",
-      "create qr code",
       "custom qr code",
-      "qr code with logo",
-      "qr code maker",
-      "qr code creator"
+      "create qr code with logo",
+      "qr code with color",
+      "free qr code maker",
+      "download qr code",
+      "qr code with frame",
+      "qr code for website",
+      "qr code for Wi-Fi"
     ],
     "faq": [
       {
-        "question": "What does the QR Code Generator tool do?",
-        "answer": "The QR Code Generator tool allows you to create customizable QR codes for websites, contact information, or any text. You can personalize your QR codes with custom colors, add your own logo, and even include a frame with text."
+        "question": "What can I generate with this QR Code Generator?",
+        "answer": "You can generate QR codes for websites, plain text, contact cards (vCards), emails, phone numbers, locations, events, or Wi-Fi network credentials. The tool supports static QR code creation and includes customization features such as logo insertion, color adjustment, and styled frames for marketing use."
       },
       {
-        "question": "Is my data processed securely?",
-        "answer": "Yes, all QR code generation is performed locally in your browser. No data is uploaded to any server, ensuring your privacy and security."
+        "question": "How do I add a logo or brand icon to a QR code?",
+        "answer": "You can upload your logo image using the \"Choose Logo\" button or drag and drop it into the upload zone. The logo will be placed in the center of the QR code, with proper error correction to ensure it remains scannable. Use PNG with transparent background and moderate size for optimal results."
       },
       {
-        "question": "How do I add a logo to my QR code?",
-        "answer": "You can add a logo by clicking the 'Choose Logo' button or by dragging and dropping an image into the designated area. For best results, use a simple logo with transparent background and keep the logo size moderate to ensure the QR code remains scannable."
+        "question": "Can I change the QR code color and background?",
+        "answer": "Yes. You can choose any color combination for the QR code foreground and background. For best scanning reliability, we recommend using dark colors for the code and light backgrounds. Avoid low-contrast pairs like red-on-black."
       },
       {
-        "question": "What is error correction level and which should I choose?",
-        "answer": "Error correction allows QR codes to be readable even when partially damaged or obscured. Level L (Low) provides 7% error correction, M (Medium) provides 15%, Q (Quartile) provides 25%, and H (High) provides 30%. If you're adding a logo or expect your QR code to be printed in challenging conditions, choose Q or H for better reliability."
+        "question": "What is error correction and which level should I choose?",
+        "answer": "Error correction makes your QR code scannable even if part of it is damaged or obscured. Levels range from L (7%) to H (30%) error tolerance. If you're adding a logo or printing the QR code, we recommend level Q or H to ensure robust scan reliability."
       },
       {
-        "question": "Will my QR code still work if I change its colors or add a logo?",
-        "answer": "Yes, but with some considerations. Maintain high contrast between foreground and background colors for better scanning. When adding a logo, use a higher error correction level (Q or H) and keep the logo size reasonable. Always test your QR code with multiple devices and apps before distributing it widely."
+        "question": "Is QR code generation safe and offline?",
+        "answer": "Yes. All QR code generation is performed locally in your browser using JavaScript. No data is uploaded or stored. You can safely generate codes for private or sensitive uses such as passwords, payment links, or business contact info."
+      },
+      {
+        "question": "Can I download the QR code as SVG or PNG?",
+        "answer": "Yes. Once generated, you can download the QR code in high-resolution PNG or scalable SVG formats. These are ideal for both digital and print applications like flyers, posters, or packaging."
       }
     ]
   }
