@@ -256,6 +256,9 @@
       "higherQuality": "Higher quality",
       "conversionSummary": "Conversion Summary",
       "ready": "Ready",
+      "uploadImage": "Upload Image",
+      "originalFormat": "Original Format",
+      "images": "Images",
       "errors": {
         "canvasContextFailed": "Failed to get canvas context.",
         "conversionFailed": "Conversion failed. Try a different image or format.",

@@ -247,6 +247,9 @@
       "higherQuality": "높은 품질",
       "conversionSummary": "변환 요약",
       "ready": "준비 완료",
+      "uploadImage": "이미지 업로드",
+      "originalFormat": "원본 형식",
+      "images": "이미지",
       "errors": {
         "canvasContextFailed": "캔버스 컨텍스트를 가져오지 못했습니다.",
         "conversionFailed": "변환에 실패했습니다. 다른 이미지나 형식을 시도하세요.",
