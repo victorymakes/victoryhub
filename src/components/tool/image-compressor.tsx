@@ -22,6 +22,7 @@ import { Slider } from "@/components/ui/slider";
 import { formatBytes } from "@/lib/file";
 import JSZip from "jszip";
 import FileSaver from "file-saver";
+import Image from "next/image";
 
 interface ImageItem {
     id: string;
@@ -42,7 +43,6 @@ const ImageCompressor: React.FC = () => {
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement | null>(null);
-    const imagesRef = useRef<ImageItem[]>([]);
 
     // Track total size stats
     const totalOriginalSize = images.reduce(
@@ -196,9 +196,6 @@ const ImageCompressor: React.FC = () => {
             // Add new images to the queue
             setImages((prev) => [...prev, ...newImages]);
 
-            // Automatically start processing
-            setIsProcessing(true);
-
             // Process immediately without delay
             processAllImages();
         },
@@ -261,9 +258,14 @@ const ImageCompressor: React.FC = () => {
         const completedImages = images.filter(
             (img) => img.status === "done" && img.compressedUrl,
         );
+        if (completedImages.length === 1) {
+            // Directly download the single file
+            downloadSingleFile(completedImages[0]);
+            return;
+        }
+
         // Download as zip if more than one image
         const zip = new JSZip();
-        // Fetch blobs and add to zip
         await Promise.all(
             completedImages.map(async (img) => {
                 const response = await fetch(img.compressedUrl!);
@@ -275,14 +277,19 @@ const ImageCompressor: React.FC = () => {
         FileSaver.saveAs(zipBlob, "compressed-images.zip");
     };
 
+    const downloadSingleFile = (img: ImageItem) => {
+        const link = document.createElement("a");
+        link.href = img.compressedUrl!;
+        link.download = `compressed-${img.file.name}`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     // Clean up object URLs when component unmounts
     useEffect(() => {
-        imagesRef.current = images;
-    }, [images]);
-
-    useEffect(() => {
         return () => {
-            imagesRef.current.forEach((img) => {
+            images.forEach((img) => {
                 if (img.compressedUrl) {
                     URL.revokeObjectURL(img.compressedUrl);
                 }
@@ -312,7 +319,7 @@ const ImageCompressor: React.FC = () => {
 
             return () => clearTimeout(debounceTimer);
         }
-    }, [quality]); // Include isProcessing and processAllImages in dependencies
+    }, [quality]);
 
     return (
         <div className="space-y-6">
@@ -383,11 +390,13 @@ const ImageCompressor: React.FC = () => {
                                             >
                                                 <div className="relative w-16 h-16 rounded-md border overflow-hidden bg-muted mr-2 flex-shrink-0">
                                                     {img.compressedUrl ? (
-                                                        <img
+                                                        <Image
                                                             src={
                                                                 img.compressedUrl
                                                             }
                                                             alt={img.file.name}
+                                                            width={64}
+                                                            height={64}
                                                             className="object-cover w-full h-full"
                                                         />
                                                     ) : (
@@ -404,35 +413,37 @@ const ImageCompressor: React.FC = () => {
                                                         </div>
                                                     )}
                                                 </div>
-                                                <div className="text-sm flex-grow min-w-0">
-                                                    <p className="font-medium truncate">
+                                                <div className="text-sm flex flex-col min-w-0 pr-12 space-y-2">
+                                                    <span className="font-medium truncate">
                                                         {img.file.name}
-                                                    </p>
-                                                    <div className="flex items-center text-xs text-muted-foreground">
+                                                    </span>
+                                                    <div className="flex items-center text-xs text-muted-foreground justify-between">
                                                         <span>
                                                             {formatBytes(
                                                                 img.originalSize,
                                                             )}
                                                         </span>
                                                         {img.compressedSize && (
-                                                            <span className="ml-2">
-                                                                →{" "}
-                                                                {formatBytes(
-                                                                    img.compressedSize,
-                                                                )}
-                                                                <span className="ml-1 text-green-600">
-                                                                    (
-                                                                    {(
-                                                                        (1 -
-                                                                            img.compressedSize /
-                                                                                img.originalSize) *
-                                                                        100
-                                                                    ).toFixed(
-                                                                        1,
+                                                            <>
+                                                                <span>→ </span>
+                                                                <span>
+                                                                    {formatBytes(
+                                                                        img.compressedSize,
                                                                     )}
-                                                                    %)
+                                                                    <span className="ml-1 text-green-600">
+                                                                        (
+                                                                        {(
+                                                                            (1 -
+                                                                                img.compressedSize /
+                                                                                    img.originalSize) *
+                                                                            100
+                                                                        ).toFixed(
+                                                                            1,
+                                                                        )}
+                                                                        %)
+                                                                    </span>
                                                                 </span>
-                                                            </span>
+                                                            </>
                                                         )}
                                                     </div>
                                                     {img.status === "error" &&
@@ -442,15 +453,27 @@ const ImageCompressor: React.FC = () => {
                                                             </p>
                                                         )}
                                                 </div>
-                                                <button
-                                                    className="absolute top-1 right-1 p-1 rounded-full bg-muted/80 hover:bg-muted text-muted-foreground transition-opacity opacity-100"
+                                                <Button
+                                                    variant={"ghost"}
+                                                    className="absolute top-1 right-1 p-1 rounded-full text-muted-foreground transition-opacity opacity-100"
                                                     onClick={() =>
                                                         removeImage(img.id)
                                                     }
                                                     disabled={isProcessing}
                                                 >
                                                     <X className="h-3 w-3" />
-                                                </button>
+                                                </Button>
+                                                <Button
+                                                    variant={"ghost"}
+                                                    className="absolute bottom-1 right-1 p-1 rounded-full text-muted-foreground transition-opacity opacity-100"
+                                                    onClick={() =>
+                                                        downloadSingleFile(img)
+                                                    }
+                                                    disabled={isProcessing}
+                                                    aria-label={t("download")}
+                                                >
+                                                    <Download className="h-3 w-3" />
+                                                </Button>
                                             </div>
                                         ))}
                                     </div>
@@ -574,47 +597,14 @@ const ImageCompressor: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-wrap gap-2">
-                                {images
-                                    .filter(
-                                        (img) =>
-                                            img.status === "done" &&
-                                            img.compressedUrl,
-                                    )
-                                    .map((img) => (
-                                        <Button
-                                            key={img.id}
-                                            asChild
-                                            variant="outline"
-                                            size="sm"
-                                            className="flex-grow-0"
-                                        >
-                                            <a
-                                                href={img.compressedUrl}
-                                                download={`compressed-${img.file.name}`}
-                                                onClick={(e) =>
-                                                    e.stopPropagation()
-                                                }
-                                            >
-                                                <Download className="h-4 w-4 mr-2" />
-                                                {img.file.name.length > 15
-                                                    ? `${img.file.name.substring(0, 15)}...`
-                                                    : img.file.name}
-                                            </a>
-                                        </Button>
-                                    ))}
-                            </div>
-
-                            {images.filter((img) => img.status === "done")
-                                .length > 1 && (
-                                <Button
-                                    className="w-full"
-                                    onClick={downloadAllCompressedImages}
-                                >
-                                    <Download className="h-4 w-4 mr-2" />
-                                    {t("downloadAll")}
-                                </Button>
-                            )}
+                            <Button
+                                className="w-full"
+                                onClick={downloadAllCompressedImages}
+                                disabled={!hasCompletedImages}
+                            >
+                                <Download className="h-4 w-4 mr-2" />
+                                {t("downloadAll")}
+                            </Button>
                         </div>
                     )}
                 </CardContent>

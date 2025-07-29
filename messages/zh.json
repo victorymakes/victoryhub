@@ -196,6 +196,7 @@
       "compressionSummary": "压缩摘要",
       "lowerQualitySmallerFile": "较低质量，较小文件",
       "higherQualityLargerFile": "较高质量，较大文件",
+      "download": "下载",
       "errors": {
         "canvasContextFailed": "无法获取画布上下文。",
         "compressionFailed": "压缩失败。请尝试其他图片或质量设置。",

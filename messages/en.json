@@ -204,6 +204,7 @@
       "compressionSummary": "Compression Summary",
       "lowerQualitySmallerFile": "Lower quality, smaller file",
       "higherQualityLargerFile": "Higher quality, larger file",
+      "download": "Download",
       "errors": {
         "canvasContextFailed": "Failed to get canvas context.",
         "compressionFailed": "Compression failed. Try a different image or quality setting.",
