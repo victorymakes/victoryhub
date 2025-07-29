@@ -196,6 +196,7 @@
       "compressionSummary": "圧縮サマリー",
       "lowerQualitySmallerFile": "低品質、小さいファイル",
       "higherQualityLargerFile": "高品質、大きいファイル",
+      "download": "ダウンロード",
       "errors": {
         "canvasContextFailed": "キャンバスコンテキストの取得に失敗しました。",
         "compressionFailed": "圧縮に失敗しました。別の画像や品質設定を試してください。",

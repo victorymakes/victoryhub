@@ -22,10 +22,10 @@ import {
 import { getCategories } from "@/service/tool-service";
 import { DynamicIcon } from "@/components/common/dynamic-icon";
 import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from "@/components/ui/popover";
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 interface MenuItem {
     title: string;
@@ -209,33 +209,31 @@ export const Navbar = async ({}: NavbarProps) => {
 const renderMenuItem = (item: MenuItem) => {
     if (item.items) {
         return (
-            <Popover>
-                <PopoverTrigger asChild>
-                    <Button
-                        variant="ghost"
-                        className="cursor-pointer px-3 py-2 text-base font-medium"
-                    >
+            <HoverCard key={item.title} openDelay={100} closeDelay={100}>
+                <HoverCardTrigger asChild>
+                    <div className="relative z-20 px-4 py-2 text-sm font-medium cursor-pointer hover:bg-muted transition rounded-md">
                         {item.title}
-                    </Button>
-                </PopoverTrigger>
+                    </div>
+                </HoverCardTrigger>
 
-                <PopoverContent
+                <HoverCardContent
                     align="start"
                     sideOffset={8}
-                    className="bg-popover text-popover-foreground shadow-xl border w-80 p-2"
+                    className="w-80 z-30 bg-popover text-popover-foreground border shadow-xl p-2 rounded-md"
                 >
                     <div className="flex flex-col gap-1">
                         {item.items.map((subItem) => (
                             <SubMenuLink key={subItem.title} item={subItem} />
                         ))}
                     </div>
-                </PopoverContent>
-            </Popover>
+                </HoverCardContent>
+            </HoverCard>
         );
     }
 
     return (
         <Button
+            key={item.title}
             asChild
             variant="ghost"
             className="px-3 py-2 text-base font-medium"
