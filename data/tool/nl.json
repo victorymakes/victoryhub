@@ -1,0 +1,237 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "UUID Generator – Online unieke identifiers maken",
+    "description": "Genereer willekeurige UUID/GUID identifiers voor je applicaties, databases en systemen. Maak unieke of bulk UUID's met deze gratis online tool.",
+    "category": "development",
+    "keywords": [
+      "uuid generator",
+      "uuid aanmaken",
+      "uuid v4 online",
+      "guid generator",
+      "uuid creatie",
+      "willekeurige uuid",
+      "bulk uuid generator",
+      "uuid voor database",
+      "unieke identifier generator"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een UUID en waarom heb ik het nodig?",
+        "answer": "Een UUID (Universally Unique Identifier) is een 128-bit identifier die gegarandeerd uniek is over alle systemen en tijd. UUID's zijn essentieel voor moderne softwareontwikkeling omdat ze unieke identifiers creëren zonder een centrale autoriteit of database nodig te hebben. Ze worden vaak gebruikt voor database primaire sleutels, API-request identifiers, sessietokens en identifiers in gedistribueerde systemen. Lees meer over UUID's in de <a href='https://tools.ietf.org/html/rfc4122' target='_blank' rel='noopener'>RFC 4122 specificatie</a>."
+      },
+      {
+        "question": "Wat is een versie 4 UUID en hoe verschilt het van andere versies?",
+        "answer": "Versie 4 UUID is de meest gebruikte variant, gegenereerd met willekeurige of pseudo-willekeurige getallen. In tegenstelling tot andere versies die MAC-adressen (v1) of namespace hashing (v3/v5) bevatten, biedt UUID v4 maximale privacy en veiligheid omdat het geen identificeerbare informatie over het genererende systeem bevat. De kans op het creëren van dubbele UUID v4's is zo klein (1 op 5,3 x 10^36) dat het voor praktische doeleinden verwaarloosbaar is. Zie <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)' target='_blank' rel='noopener'>Wikipedia artikel over UUID v4</a> voor meer informatie."
+      },
+      {
+        "question": "Is deze UUID generator tool veilig en privé?",
+        "answer": "Ja, onze UUID generator is volledig veilig en privé. Alle UUID's worden lokaal gegenereerd in je browser met behulp van de cryptografisch veilige Web Crypto API random number generator. Er worden geen gegevens naar onze servers of derde partijen verzonden. De gegenereerde UUID's voldoen aan de willekeurigheidsvereisten gespecificeerd in RFC 4122 en zijn geschikt voor veiligheidsgevoelige toepassingen. Je kunt dit verifiëren door het netwerktabblad van je browser te bekijken - er worden geen verzoeken gedaan bij het genereren van UUID's."
+      },
+      {
+        "question": "Kan ik deze UUID's gebruiken voor commerciële applicaties en databases?",
+        "answer": "Absoluut! UUID's gegenereerd door deze tool zijn productie-klaar en geschikt voor elk commercieel of persoonlijk gebruik. Ze zijn ideaal voor database primaire sleutels, API-identifiers, bestandsnamen, sessie-ID's en elk scenario waar je gegarandeerd unieke identifiers nodig hebt. Grote bedrijven zoals Google, Amazon en Microsoft gebruiken UUID's uitgebreid in hun systemen. In tegenstelling tot sequentiële ID's onthullen UUID's geen informatie over de schaal of timing van je systeem, wat ze ideaal maakt voor publiek toegankelijke applicaties."
+      },
+      {
+        "question": "Hoe gebruik ik UUID's in verschillende programmeertalen?",
+        "answer": "UUID's worden ondersteund door vrijwel alle programmeertalen, hetzij native of via bibliotheken. In JavaScript gebruik je <code>crypto.randomUUID()</code>; in Python gebruik je de <code>uuid</code> module; in Java gebruik je <code>java.util.UUID</code>; in C# gebruik je <code>System.Guid</code>. De meeste databases hebben ook ingebouwde UUID-ondersteuning - PostgreSQL heeft een UUID-type, MySQL ondersteunt UUID's als CHAR(36), en MongoDB gebruikt UUID's voor document-ID's. Zie <a href='https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID' target='_blank' rel='noopener'>MDN Web Crypto documentatie</a> voor specifieke implementatierichtlijnen."
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "Timestamp Converter – Unix tijd naar leesbare datum",
+    "description": "Converteer tussen Unix timestamps en leesbare datums met tijdzone-ondersteuning. Ideaal voor ontwikkelaars die werken met API's, logs en database timestamps.",
+    "category": "development",
+    "keywords": [
+      "unix timestamp converter",
+      "epoch naar datum",
+      "timestamp naar datetime",
+      "unix tijd converteren",
+      "milliseconden naar datum",
+      "leesbare timestamp",
+      "datum naar unix tijd",
+      "online timestamp converter",
+      "tijdzone converter"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een Unix timestamp en waarom wordt het gebruikt?",
+        "answer": "Een Unix timestamp (ook bekend als Unix tijd of epoch) is het aantal seconden dat is verstreken sinds 1 januari 1970, 00:00:00 UTC (de Unix epoch). Het is een gestandaardiseerde tijdsweergave die universeel wordt gebruikt in computersystemen omdat het tijdzone-onafhankelijk, compact en gemakkelijk te berekenen is. Unix timestamps zijn essentieel voor databases, API's, logbestanden en elk systeem dat tijdgegevens betrouwbaar moet opslaan of verzenden. Lees meer over epoch tijd in het <a href='https://en.wikipedia.org/wiki/Unix_time' target='_blank' rel='noopener'>Wikipedia artikel</a>."
+      },
+      {
+        "question": "Kan ik converteren tussen verschillende timestamp-formaten en tijdzones?",
+        "answer": "Ja! Onze timestamp converter ondersteunt bidirectionele conversie tussen Unix timestamps en menselijk leesbare datums. Je kunt Unix timestamps converteren naar leesbare datums in elke tijdzone, of datums converteren naar Unix timestamps. De tool handelt automatisch tijdzone-conversies, zomertijdaanpassingen en verschillende datumformaten af. Dit is vooral handig voor ontwikkelaars die werken met internationale applicaties, loganalyse of systeemintegratie die verschillende tijdsweergaven gebruikt."
+      },
+      {
+        "question": "Wat is het verschil tussen timestamps in seconden en milliseconden?",
+        "answer": "Unix timestamps kunnen worden uitgedrukt in seconden (10 cijfers) of milliseconden (13 cijfers). Traditionele Unix-systemen gebruiken seconden sinds het begin van de epoch, terwijl moderne programmeertalen zoals JavaScript vaak milliseconden gebruiken voor grotere precisie. Bijvoorbeeld, timestamp 1640995200 (seconden) is equivalent aan 1640995200000 (milliseconden) - beide vertegenwoordigen 1 januari 2022. Onze tool detecteert en converteert automatisch beide formaten. Het begrijpen van dit verschil is cruciaal bij het werken met verschillende programmeertalen en API's."
+      },
+      {
+        "question": "Hoe werk je met timestamps in verschillende programmeertalen?",
+        "answer": "Elke programmeertaal heeft ingebouwde ondersteuning voor Unix timestamps. In JavaScript gebruik je <code>Date.now()</code> voor de huidige timestamp of <code>new Date(timestamp)</code> voor conversie. Python biedt <code>time.time()</code> en <code>datetime.fromtimestamp()</code>. PHP gebruikt <code>time()</code> en <code>date()</code> functies. Zie <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date' target='_blank' rel='noopener'>MDN Date documentatie</a> of de officiële documentatie van je taal voor gedetailleerde voorbeelden en best practices."
+      },
+      {
+        "question": "Wat zijn veelvoorkomende use cases voor timestamp conversie?",
+        "answer": "Timestamp conversie is essentieel voor: het analyseren van serverlogboeken en debuggen van problemen, het synchroniseren van gegevens tussen verschillende systemen en databases, het bouwen van API's die internationale gebruikers bedienen, het converteren van gegevens van legacy systemen, het plannen van taken en gebeurtenissen, en forensische analyse van systeemacties. Ontwikkelaars hebben dit vaak nodig bij database migraties, integratie van diensten van derden, of het oplossen van tijdzone-gerelateerde problemen in applicaties."
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "Wat is mijn IP – Controleer je publieke IP-adres en locatie",
+    "description": "Bekijk direct je publieke IPv4/IPv6 adres, geolocatie, internetprovider en verbindingsdetails. Handig voor netwerk troubleshooting en VPN-verificatie.",
+    "category": "security",
+    "keywords": [
+      "ip adres checker",
+      "mijn ip vinden",
+      "publiek ip",
+      "wat is mijn ip",
+      "ip lookup",
+      "mijn ip adres",
+      "ip geolocatie",
+      "ip locatie checker",
+      "ip adres zoeker"
+    ],
+    "faq": [
+      {
+        "question": "Welke informatie geeft deze IP checker tool?",
+        "answer": "Onze IP checker toont uitgebreide informatie over je publieke IP-adres, waaronder: je huidige publieke IPv4 of IPv6 adres, je geschatte geografische locatie (stad, regio, land), de naam van je internetprovider (ISP), organisatie-informatie, tijdzone-gegevens, en of je een proxy of VPN gebruikt. Deze informatie wordt verzameld uit openbaar beschikbare IP-geolocatie databases en compromitteert je privacy niet meer dan al zichtbaar is voor websites die je bezoekt."
+      },
+      {
+        "question": "Wat is het verschil tussen mijn publieke en privé IP-adres?",
+        "answer": "Je privé IP-adres (zoals 192.168.1.100 of 10.0.0.5) wordt toegewezen door je router voor communicatie binnen je lokale netwerk en is niet zichtbaar op internet. Je publieke IP-adres wordt toegewezen door je internetprovider en vertegenwoordigt je verbinding met het bredere internet - dit is wat websites zien wanneer je ze bezoekt. Zie je publieke IP als het adres van je gebouw, terwijl je privé IP het appartementnummer is. Het begrijpen van dit onderscheid is cruciaal voor netwerk troubleshooting en beveiliging. Lees meer over IP-adressering op <a href='https://en.wikipedia.org/wiki/IP_address' target='_blank' rel='noopener'>Wikipedia</a>."
+      },
+      {
+        "question": "Is mijn privacy beschermd bij het gebruik van deze IP checker tool?",
+        "answer": "Ja, je privacy is volledig beschermd. Deze tool toont alleen informatie die al openbaar beschikbaar is voor elke website die je bezoekt. We slaan je IP-adres of gerelateerde informatie niet op, loggen het niet, en delen het niet met derden. De lookup wordt in realtime uitgevoerd en er worden geen gegevens bewaard. Houd er echter rekening mee dat je IP-adres zelf bij benadering locatie- en ISP-informatie onthult aan elke website die je bezoekt - zo werkt het internet fundamenteel."
+      },
+      {
+        "question": "Waarom kan mijn IP-adres veranderen en hoe vaak gebeurt dit?",
+        "answer": "De meeste thuisinternetverbindingen gebruiken dynamische IP-adressen, wat betekent dat je internetprovider je IP-adres periodiek kan wijzigen - meestal elke paar dagen of weken, of wanneer je je modem herstart. Zakelijke verbindingen hebben vaak statische IP-adressen die niet veranderen. Je IP zal ook veranderen wanneer je: verbinding maakt met een ander netwerk (zoals overschakelen van thuis-wifi naar mobiele data), een VPN-service gebruikt, of naar een andere locatie reist. Het begrijpen van IP-adresgedrag is belangrijk voor het instellen van externe toegang en beveiligingsconfiguraties."
+      },
+      {
+        "question": "Hoe kan ik IP-adresinformatie gebruiken voor troubleshooting?",
+        "answer": "IP-adresinformatie is waardevol voor netwerk troubleshooting: controleer VPN-functionaliteit door te bevestigen dat je locatie anders wordt weergegeven, diagnosticeer verbindingsproblemen door je ISP en locatie te bevestigen, configureer externe toegang door je publieke IP te kennen voor port forwarding, identificeer netwerkproblemen door IP-wijzigingen bij te houden, en verbeter de beveiliging door ongeautoriseerde toegangspogingen te herkennen. Voor geavanceerde netwerkconcepts, bekijk bronnen zoals <a href='https://www.cloudflare.com/learning/network-layer/what-is-an-ip-address/' target='_blank' rel='noopener'>Cloudflare's netwerkgidsen</a>."
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "Wachtwoord Generator – Maak sterke en veilige wachtwoorden online",
+    "description": "Genereer cryptografisch veilige wachtwoorden met aanpasbare lengte en tekensets. Maak sterke en willekeurige wachtwoorden voor maximale accountbeveiliging.",
+    "category": "security",
+    "keywords": [
+      "wachtwoord generator",
+      "veilig wachtwoord",
+      "willekeurig wachtwoord",
+      "sterk wachtwoord",
+      "wachtwoord maker",
+      "veilig wachtwoord maken",
+      "wachtwoord generatie tool",
+      "complexe wachtwoord generator",
+      "online wachtwoord maker"
+    ],
+    "faq": [
+      {
+        "question": "Hoe veilig zijn de wachtwoorden die door deze tool worden gegenereerd?",
+        "answer": "Wachtwoorden gegenereerd door onze tool zijn cryptografisch veilig en geschikt voor het beveiligen van gevoelige accounts. We gebruiken de cryptografisch veilige Web Crypto API random number generator, die voldoet aan cryptografische standaarden voor onvoorspelbaarheid. Gegenereerde wachtwoorden worden nooit opgeslagen, verzonden of ergens gelogd - ze bestaan alleen in het geheugen van je browser. De entropie (willekeurigheid) van onze wachtwoorden overtreft ruimschoots de industriestandaard beveiligingsnormen, waardoor ze praktisch onmogelijk te kraken zijn via brute force wanneer ze correct zijn geconfigureerd."
+      },
+      {
+        "question": "Wat maakt een wachtwoord echt sterk en veilig?",
+        "answer": "Een sterk wachtwoord combineert verschillende kritieke factoren: lengte (minimaal 12 tekens, idealiter 16+), tekendiversiteit (een mix van hoofdletters, kleine letters, cijfers en speciale tekens), onvoorspelbaarheid (vermijden van woordenboekwoorden, persoonlijke informatie of patronen), en uniciteit (nooit wachtwoorden hergebruiken tussen accounts). De wiskundige sterkte van een wachtwoord wordt gemeten in bits entropie - onze 16-karakter gemengde wachtwoorden bieden meer dan 95 bits entropie, wat miljarden jaren zou vergen om te kraken met moderne technologie. Zie <a href='https://www.nist.gov/itl/applied-cybersecurity/iad/list-terms/password' target='_blank' rel='noopener'>NIST wachtwoordrichtlijnen</a> voor volledige beveiligingsaanbevelingen."
+      },
+      {
+        "question": "Kan ik de wachtwoordgeneratie-instellingen aanpassen voor specifieke vereisten?",
+        "answer": "Absoluut! Onze wachtwoordgenerator biedt uitgebreide aanpassingsmogelijkheden om aan verschillende beveiligingsbeleid en systeemvereisten te voldoen. Je kunt de wachtwoordlengte aanpassen van 4 tot 128 tekens, en het gebruik van hoofdletters, kleine letters, cijfers en speciale tekens onafhankelijk in- of uitschakelen. Sommige systemen hebben beperkingen op bepaalde speciale tekens - je kunt problematische tekens uitsluiten terwijl je de veiligheid behoudt. De tool biedt ook realtime entropieberekening, zodat je precies kunt zien hoe sterk je aangepaste wachtwoord zal zijn."
+      },
+      {
+        "question": "Hoe moet ik gegenereerde wachtwoorden opslaan en beheren?",
+        "answer": "Schrijf wachtwoorden nooit op of bewaar ze in onversleutelde tekstbestanden. Gebruik in plaats daarvan een betrouwbare wachtwoordmanager zoals Bitwarden, 1Password of LastPass om je wachtwoorden veilig op te slaan en te organiseren. Wachtwoordmanagers versleutelen je wachtwoorden met je hoofdwachtwoord en kunnen ze automatisch invullen op websites. Ze helpen ook bij het identificeren van zwakke, hergebruikte of gecompromitteerde wachtwoorden in je accounts. Overweeg voor gevoelige zakelijke accounts bedrijfswachtwoordbeheeroplossingen met extra beveiligingsfuncties zoals audittrails en teamtoegang."
+      },
+      {
+        "question": "Wat zijn de nieuwste best practices voor wachtwoordbeveiliging?",
+        "answer": "Moderne wachtwoordbeveiliging benadrukt: het gebruik van unieke willekeurig gegenereerde wachtwoorden voor elk account, het inschakelen van tweefactorauthenticatie (2FA) waar mogelijk, het gebruik van een wachtwoordmanager om complexe wachtwoorden te genereren en op te slaan, het regelmatig updaten van wachtwoorden voor kritieke accounts, het monitoren van datalekken via diensten zoals Have I Been Pwned, en het overwegen van wachtwoordzinnen als alternatief voor memorabele wachtwoorden (bijv. 'correct-horse-battery-staple'). Het tijdperk van korte maar complexe wachtwoorden is voorbij - lengte en uniciteit zijn belangrijker dan complexiteit. Blijf op de hoogte van beveiligingsbest practices via <a href='https://www.cisa.gov/secure-our-world/use-strong-passwords' target='_blank' rel='noopener'>CISA's cyberbeveiligingsgids</a>."
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "URL Encoder/Decoder – Converteer speciale tekens voor webgebruik",
+    "description": "Codeer URL's voor veilige overdracht of decodeer URL-gecodeerde strings. Essentieel voor webontwikkelaars die werken met queryparameters en speciale tekens.",
+    "category": "development",
+    "keywords": [
+      "url encoder",
+      "url decoder",
+      "percent encoding",
+      "uri coderen",
+      "uri decoderen",
+      "webontwikkeling",
+      "speciale tekens coderen",
+      "url parameters decoderen",
+      "url codering tool",
+      "querystring encoder"
+    ],
+    "faq": [
+      {
+        "question": "Wat is URL-codering en waarom is het noodzakelijk?",
+        "answer": "URL-codering (ook bekend als percent-encoding) is een mechanisme om tekens in URL's weer te geven die ofwel onveilig, gereserveerd of niet-ASCII zijn. URL's kunnen veilig alleen een beperkte set tekens bevatten (letters, cijfers en enkele symbolen). Wanneer je spaties, speciale tekens of niet-Engelse tekst in een URL moet opnemen, moeten deze worden gecodeerd. Bijvoorbeeld, een spatie wordt '%20' en '&' wordt '%26'. Dit zorgt ervoor dat URL's correct worden overgedragen via verschillende systemen en browsers. Zonder goede codering zullen URL's met speciale tekens breken of verkeerd worden geïnterpreteerd. Lees meer over URL-codering in de <a href='https://tools.ietf.org/html/rfc3986' target='_blank' rel='noopener'>RFC 3986 specificatie</a>."
+      },
+      {
+        "question": "Wanneer moet ik URL-codering gebruiken in webontwikkeling?",
+        "answer": "URL-codering is noodzakelijk in verschillende scenario's: het coderen van queryparameters die spaties of speciale tekens bevatten (zoals zoekopdrachten), het voorbereiden van formuliergegevens voor verzending via GET-requests, het coderen van bestandsnamen in URL's die niet-ASCII tekens bevatten, het programmatisch bouwen van dynamische URL's met gebruikersinvoer, het coderen van API-endpoints die variabele gegevens bevatten, en het omgaan met internationalisatie waar URL's niet-Engelse tekens bevatten. De meeste programmeertalen bieden ingebouwde URL-coderingsfuncties - gebruik deze wanneer je dynamisch URL's maakt met variabele inhoud."
+      },
+      {
+        "question": "Wat is het verschil tussen URL-codering en HTML-entiteitscodering?",
+        "answer": "URL-codering en HTML-entiteitscodering dienen verschillende doelen en gebruiken verschillende formaten. URL-codering gebruikt percentagetekens gevolgd door hexadecimale waarden (%20 voor een spatie), terwijl HTML-entiteiten ampersands en puntkomma's gebruiken (&lt; voor <). URL-codering wordt specifiek gebruikt voor URL's en formuliergegevensoverdracht, terwijl HTML-entiteiten worden gebruikt in HTML-inhoud om speciale tekens veilig weer te geven. Het begrijpen van dit onderscheid is cruciaal voor webontwikkelaars - het gebruik van de verkeerde coderingsmethode kan leiden tot beveiligingskwetsbaarheden of defecte functionaliteit."
+      },
+      {
+        "question": "Is deze URL encoder/decoder veilig voor gevoelige gegevens?",
+        "answer": "Ja, onze URL encoder/decoder is volledig veilig voor gevoelige gegevens. Alle coderings- en decoderingsoperaties worden lokaal uitgevoerd in je browser met JavaScript - er worden geen gegevens naar onze servers of externe diensten verzonden. Je kunt dit verifiëren door het netwerktabblad van je browser te bekijken tijdens gebruik. Onthoud echter dat URL-codering geen encryptie is, maar slechts een formaattransformatie. URL-gecodeerde strings kunnen gemakkelijk worden gelezen door iedereen, dus vertrouw nooit op URL-codering voor beveiligingsdoeleinden."
+      },
+      {
+        "question": "Hoe werk je met URL-codering in verschillende programmeertalen?",
+        "answer": "Elke grote programmeertaal biedt ingebouwde URL-coderingsfuncties. In JavaScript gebruik je <code>encodeURIComponent()</code> en <code>decodeURIComponent()</code>. Python biedt <code>urllib.parse.quote()</code> en <code>urllib.parse.unquote()</code>. PHP heeft <code>urlencode()</code> en <code>urldecode()</code>. Java biedt <code>URLEncoder.encode()</code> en <code>URLDecoder.decode()</code>. Gebruik altijd deze ingebouwde functies in plaats van handmatige codering om correcte afhandeling van randgevallen en tekensets te garanderen. Zie <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent' target='_blank' rel='noopener'>MDN documentatie over URL-codering</a> voor volledige voorbeelden."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Base64 Encoder/Decoder – Converteer tekst en binaire gegevens",
+    "description": "Converteer tekst of binaire gegevens naar Base64-formaat en terug. Ideaal voor het insluiten van afbeeldingen in CSS/HTML, gegevensoverdracht en het opslaan van binaire gegevens in tekstformaten.",
+    "category": "development",
+    "keywords": [
+      "base64 encoder",
+      "base64 decoder",
+      "tekst naar base64",
+      "base64 naar tekst",
+      "base64 converter",
+      "binaire gegevens naar base64",
+      "afbeelding naar base64",
+      "base64 string",
+      "online base64 tool"
+    ],
+    "faq": [
+      {
+        "question": "Wat is Base64-codering en waarvoor wordt het gebruikt?",
+        "answer": "Base64 is een coderingschema dat binaire gegevens omzet in een set ASCII-tekens die veilig kunnen worden overgedragen via tekstsystemen. Het wordt vaak gebruikt voor: het insluiten van binaire gegevens (zoals afbeeldingen) in HTML of CSS, het opslaan van binaire gegevens in JSON, het coderen van bijlagen in e-mailprotocollen, het verzenden van gegevens via API's die alleen tekst ondersteunen, en het opslaan van binaire gegevens in databases zonder binaire types. Base64 gebruikt 64 afdrukbare ASCII-tekens (A-Z, a-z, 0-9, + en /) en het gelijkheidsteken (=) voor opvulling. Belangrijk om op te merken is dat Base64 geen encryptie is, het biedt geen beveiliging, alleen compatibiliteit tussen verschillende systemen."
+      },
+      {
+        "question": "Hoe werkt Base64-codering technisch gezien?",
+        "answer": "Base64-codering zet 3 bytes (24 bits) binaire gegevens om in 4 Base64-tekens (6 bits per teken). Het proces omvat: het groeperen van binaire gegevens in blokken van 3 bytes, het omzetten van elk blok in 4 zes-bit getallen, het mappen van elk zes-bit getal naar een Base64-teken uit het 64-teken alfabet. Als de invoer niet deelbaar is door 3, wordt opvulling toegevoegd met het '=' teken. Dit resulteert in een grootte-toename van ongeveer 33% vergeleken met de originele gegevens, wat een compromis is voor verbeterde compatibiliteit. Zie <a href='https://datatracker.ietf.org/doc/html/rfc4648' target='_blank' rel='noopener'>RFC 4648</a> voor een gedetailleerde technische uitleg."
+      },
+      {
+        "question": "Is Base64 veilig voor gevoelige gegevens of wachtwoorden?",
+        "answer": "Nee, Base64 is GEEN encryptie en biedt absoluut geen beveiliging. Het is slechts een codering die gemakkelijk kan worden omgekeerd. Iedereen met toegang tot Base64-gecodeerde gegevens kan deze onmiddellijk decoderen. Gebruik Base64 nooit als een methode om gevoelige informatie, wachtwoorden of persoonlijke gegevens te beschermen. Voor beveiligingsdoeleinden moet je geschikte encryptie-algoritmen en beveiligingspraktijken gebruiken. Base64 is uitsluitend bedoeld voor gegevenscompatibiliteit, niet voor gegevensbeveiliging. Als je gevoelige gegevens moet beschermen, raadpleeg dan bronnen zoals <a href='https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html' target='_blank' rel='noopener'>OWASP beveiligingsrichtlijnen</a>."
+      },
+      {
+        "question": "Hoe kan ik Base64 gebruiken in webontwikkeling?",
+        "answer": "Base64 heeft verschillende praktische toepassingen in webontwikkeling: het direct insluiten van kleine afbeeldingen in HTML/CSS als data URI's om HTTP-verzoeken te verminderen, het coderen van binaire gegevens voor overdracht in JSON API's, het opslaan van binaire gegevens in localStorage of IndexedDB, het implementeren van eenvoudige bestandsuploads zonder serververzoeken, het doorgeven van niet-ASCII gegevens in URL-parameters, en het werken met Canvas-elementen en hun toDataURL() methode. Voor webontwikkelaars is het belangrijk om te weten dat Base64-gecodeerde gegevens ongeveer 33% groter zijn dan hun binaire tegenhangers, wat moet worden overwogen bij het beslissen wanneer ze te gebruiken."
+      },
+      {
+        "question": "Hoe gebruik je Base64 in verschillende programmeertalen?",
+        "answer": "De meeste programmeertalen bieden ingebouwde Base64-functies. In JavaScript gebruik je <code>btoa()</code> voor codering en <code>atob()</code> voor decodering van ASCII-strings, of de modernere <code>TextEncoder</code> en <code>TextDecoder</code> met <code>Uint8Array</code> voor Unicode. Python biedt de <code>base64</code> module. PHP heeft <code>base64_encode()</code> en <code>base64_decode()</code>. Java biedt <code>Base64.getEncoder()</code> en <code>Base64.getDecoder()</code>. Voor Unicode-tekst en binaire gegevens zijn er vaak speciale overwegingen - raadpleeg altijd de documentatie van je taal voor best practices en voorbeelden, zoals de <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN gids over Base64</a>."
+      }
+    ]
+  }
+]

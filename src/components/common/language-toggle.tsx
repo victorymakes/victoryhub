@@ -14,6 +14,17 @@ const languages = [
     { code: "zh", name: "中文", flag: "🇨🇳" },
     { code: "ja", name: "日本語", flag: "🇯🇵" },
     { code: "ko", name: "한국어", flag: "🇰🇷" },
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
+    { code: "fr", name: "Français", flag: "🇫🇷" },
+    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "ru", name: "Русский", flag: "🇷🇺" },
+    { code: "nl", name: "Nederlands", flag: "🇳🇱" },
+    { code: "no", name: "Norsk", flag: "🇳🇴" },
+    { code: "sv", name: "Svenska", flag: "🇸🇪" },
+    { code: "fi", name: "Suomi", flag: "🇫🇮" },
+    { code: "da", name: "Dansk", flag: "🇩🇰" },
+    { code: "pt", name: "Português", flag: "🇵🇹" },
+    { code: "it", name: "Italiano", flag: "🇮🇹" },
 ];
 
 export function LanguageToggle() {

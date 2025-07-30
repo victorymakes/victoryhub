@@ -81,7 +81,7 @@
     "slug": "whats-my-ip",
     "name": "我的IP地址 – 查看公共IP地址和位置信息",
     "description": "即时查看您的公共IPv4/IPv6地址、地理位置、ISP和连接详情。对网络故障排除和VPN验证非常有用。",
-    "category": "networking",
+    "category": "security",
     "keywords": [
       "ip地址查询",
       "公共ip",

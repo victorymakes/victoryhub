@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "",
+    "name": "Tous les outils",
+    "description": "Voir tous les outils disponibles dans toutes les catégories",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Développement",
+    "description": "Utilitaires pour développeurs comme générateur d'UUID, convertisseur d'horodatage, encodeur/décodeur d'URL et plus",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Sécurité",
+    "description": "Outils de sécurité et de confidentialité comme générateur de mot de passe et vérificateur d'IP",
+    "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Médias & Images",
+    "description": "Outils pour le traitement d'images, de médias et de fichiers",
+    "icon": "image"
+  }
+]

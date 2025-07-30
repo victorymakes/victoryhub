@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "",
+    "name": "Tutti gli strumenti",
+    "description": "Visualizza tutti gli strumenti disponibili in tutte le categorie",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Sviluppo",
+    "description": "Utilità per sviluppatori come generatore UUID, convertitore di timestamp, codificatore/decodificatore URL e altro",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Sicurezza",
+    "description": "Strumenti per la sicurezza e la privacy come generatore di password e controllo IP",
+    "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Media e Immagini",
+    "description": "Strumenti per l'elaborazione di immagini, media e file",
+    "icon": "image"
+  }
+]

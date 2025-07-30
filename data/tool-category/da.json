@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "",
+    "name": "Alle værktøjer",
+    "description": "Se alle tilgængelige værktøjer på tværs af alle kategorier",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Udvikling",
+    "description": "Udviklerværktøjer som UUID-generator, tidsstempelkonverter, URL-encoder/decoder og mere",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Sikkerhed",
+    "description": "Sikkerheds- og privatlivsværktøjer som adgangskodegenerator og IP-checker",
+    "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Medier & Billeder",
+    "description": "Værktøjer til behandling af billeder, medier og filer",
+    "icon": "image"
+  }
+]

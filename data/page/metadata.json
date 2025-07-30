@@ -1,4 +1,224 @@
 {
+  "da": [
+    {
+      "slug": "contact",
+      "title": "Kontakt os",
+      "description": "Kontakt os for spørgsmål, feedback eller support. Send os en e-mail eller kontakt os på Twitter, og vi svarer så hurtigt som muligt.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Kontakt"
+        },
+        {
+          "id": "support",
+          "name": "Support"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Privatlivspolitik",
+      "description": "Find ud af, hvordan vi beskytter dine personlige oplysninger og respekterer dit privatliv. Denne politik forklarer, hvilke oplysninger vi indsamler, hvordan vi bruger dem, og dine rettigheder vedrørende dine data.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privatliv"
+        },
+        {
+          "id": "policy",
+          "name": "Politik"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Brugsvilkår",
+      "description": "Gennemgå vores brugsvilkår for at forstå dine rettigheder og forpligtelser, når du bruger vores hjemmeside. Dette dokument dækker brug, begrænsninger og juridiske ansvarsfraskrivelser.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Vilkår"
+        },
+        {
+          "id": "legal",
+          "name": "Juridisk"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Velkommen til vores hjemmeside: Essentielle onlineværktøjer til alle nu tilgængelige",
+      "description": "Udforsk vores nyligt lancerede hjemmeside med essentielle onlineværktøjer til udviklere, designere og hverdagsbrugere. Fra UUID-generatorer til adgangskodeskabere, find det perfekte værktøj til enhver opgave. Lær om vores nuværende tilbud og spændende funktioner på vej.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Webværktøjer"
+        },
+        {
+          "id": "productivity",
+          "name": "Produktivitet"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "de": [
+    {
+      "slug": "contact",
+      "title": "Kontaktieren Sie uns",
+      "description": "Kontaktieren Sie uns für Fragen, Feedback oder Support. Schreiben Sie uns eine E-Mail oder kontaktieren Sie uns über Twitter, und wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Kontakt"
+        },
+        {
+          "id": "support",
+          "name": "Support"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allgemein"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Datenschutzrichtlinie",
+      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und Ihre Privatsphäre respektieren. Diese Richtlinie erklärt, welche Informationen wir sammeln, wie wir sie verwenden und welche Rechte Sie in Bezug auf Ihre Daten haben.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Datenschutz"
+        },
+        {
+          "id": "policy",
+          "name": "Richtlinie"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Rechtliches"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Nutzungsbedingungen",
+      "description": "Lesen Sie unsere Nutzungsbedingungen, um Ihre Rechte und Pflichten bei der Nutzung unserer Website zu verstehen. Dieses Dokument umfasst Nutzung, Einschränkungen und rechtliche Haftungsausschlüsse.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Bedingungen"
+        },
+        {
+          "id": "legal",
+          "name": "Rechtliches"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Rechtliches"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Willkommen auf unserer Website: Wesentliche Online-Tools für alle jetzt verfügbar",
+      "description": "Entdecken Sie unsere neu gestartete Website mit wesentlichen Online-Tools für Entwickler, Designer und alltägliche Benutzer. Von UUID-Generatoren bis zu Passwort-Erstellern, finden Sie das perfekte Tool für jede Aufgabe. Erfahren Sie mehr über unsere aktuellen Angebote und kommende spannende Funktionen.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Web-Tools"
+        },
+        {
+          "id": "productivity",
+          "name": "Produktivität"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allgemein"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
   "en": [
     {
       "slug": "contact",
@@ -105,6 +325,446 @@
       "draft": false,
       "locale": "en",
       "readingTime": 6,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "es": [
+    {
+      "slug": "contact",
+      "title": "Contáctenos",
+      "description": "Contáctenos para preguntas, comentarios o soporte. Envíenos un correo electrónico o contáctenos en Twitter, y le responderemos lo antes posible.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contacto"
+        },
+        {
+          "id": "support",
+          "name": "Soporte"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "General"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Política de Privacidad",
+      "description": "Descubra cómo protegemos sus datos personales y respetamos su privacidad. Esta política explica qué información recopilamos, cómo la usamos y sus derechos con respecto a sus datos.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacidad"
+        },
+        {
+          "id": "policy",
+          "name": "Política"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legal"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Términos de Servicio",
+      "description": "Revise nuestros términos de servicio para entender sus derechos y obligaciones al usar nuestro sitio web. Este documento cubre el uso, limitaciones y descargos de responsabilidad legales.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Términos"
+        },
+        {
+          "id": "legal",
+          "name": "Legal"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legal"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Bienvenido a nuestro sitio web: Herramientas en línea esenciales para todos ahora disponibles",
+      "description": "Descubra nuestro sitio web recién lanzado con herramientas en línea esenciales para desarrolladores, diseñadores y usuarios cotidianos. Desde generadores de UUID hasta creadores de contraseñas, encuentre la herramienta perfecta para cada tarea. Conozca nuestras ofertas actuales y las emocionantes funciones que están por venir.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Herramientas web"
+        },
+        {
+          "id": "productivity",
+          "name": "Productividad"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "General"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "fi": [
+    {
+      "slug": "contact",
+      "title": "Ota yhteyttä",
+      "description": "Ota yhteyttä kysymyksiä, palautetta tai tukea varten. Lähetä meille sähköpostia tai ota yhteyttä Twitterissä, ja vastaamme mahdollisimman pian.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Yhteystiedot"
+        },
+        {
+          "id": "support",
+          "name": "Tuki"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Yleinen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Tietosuojakäytäntö",
+      "description": "Ota selvää, miten suojaamme henkilötietojasi ja kunnioitamme yksityisyyttäsi. Tämä käytäntö selittää, mitä tietoja keräämme, miten käytämme niitä ja oikeutesi tietoihisi liittyen.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Yksityisyys"
+        },
+        {
+          "id": "policy",
+          "name": "Käytäntö"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Lakiasiat"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Käyttöehdot",
+      "description": "Tarkista käyttöehtomme ymmärtääksesi oikeutesi ja velvollisuutesi käyttäessäsi verkkosivustoamme. Tämä asiakirja kattaa käytön, rajoitukset ja oikeudelliset vastuuvapauslausekkeet.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Ehdot"
+        },
+        {
+          "id": "legal",
+          "name": "Lakiasiat"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Lakiasiat"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Tervetuloa verkkosivustollemme: Olennaiset verkkotyökalut kaikille nyt saatavilla",
+      "description": "Tutustu äskettäin julkaistuun verkkosivustoomme, joka tarjoaa olennaisia verkkotyökaluja kehittäjille, suunnittelijoille ja jokapäiväisille käyttäjille. UUID-generaattoreista salasanojen luojiin, löydä täydellinen työkalu jokaiseen tehtävään. Opi nykyisistä tarjouksistamme ja tulevista jännittävistä ominaisuuksista.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Verkkotyökalut"
+        },
+        {
+          "id": "productivity",
+          "name": "Tuottavuus"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Yleinen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "fr": [
+    {
+      "slug": "contact",
+      "title": "Contactez-nous",
+      "description": "Contactez-nous pour des questions, des commentaires ou du support. Envoyez-nous un email ou contactez-nous sur Twitter, et nous vous répondrons dès que possible.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contact"
+        },
+        {
+          "id": "support",
+          "name": "Support"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Général"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Politique de Confidentialité",
+      "description": "Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée. Cette politique explique quelles informations nous collectons, comment nous les utilisons et vos droits concernant vos données.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Confidentialité"
+        },
+        {
+          "id": "policy",
+          "name": "Politique"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridique"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Conditions d'Utilisation",
+      "description": "Consultez nos conditions d'utilisation pour comprendre vos droits et obligations lors de l'utilisation de notre site web. Ce document couvre l'utilisation, les limitations et les clauses de non-responsabilité légales.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Conditions"
+        },
+        {
+          "id": "legal",
+          "name": "Juridique"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridique"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Bienvenue sur notre site web : Des outils en ligne essentiels pour tous maintenant disponibles",
+      "description": "Découvrez notre site web récemment lancé avec des outils en ligne essentiels pour les développeurs, les designers et les utilisateurs quotidiens. Des générateurs d'UUID aux créateurs de mots de passe, trouvez l'outil parfait pour chaque tâche. Découvrez nos offres actuelles et les fonctionnalités passionnantes à venir.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Outils web"
+        },
+        {
+          "id": "productivity",
+          "name": "Productivité"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Général"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "it": [
+    {
+      "slug": "contact",
+      "title": "Contattaci",
+      "description": "Contattaci per domande, feedback o supporto. Inviaci un'email o contattaci su Twitter, e ti risponderemo il prima possibile.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contatto"
+        },
+        {
+          "id": "support",
+          "name": "Supporto"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Informativa sulla Privacy",
+      "description": "Scopri come proteggiamo le tue informazioni personali e rispettiamo la tua privacy. Questa informativa spiega quali informazioni raccogliamo, come le utilizziamo e i tuoi diritti riguardo ai tuoi dati.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "policy",
+          "name": "Informativa"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Termini di Servizio",
+      "description": "Rivedi i nostri termini di servizio per comprendere i tuoi diritti e obblighi quando utilizzi il nostro sito web. Questo documento copre utilizzo, limitazioni ed esoneri legali.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Termini"
+        },
+        {
+          "id": "legal",
+          "name": "Legale"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Benvenuto sul nostro sito web: Strumenti online essenziali per tutti ora disponibili",
+      "description": "Scopri il nostro sito web appena lanciato con strumenti online essenziali per sviluppatori, designer e utenti quotidiani. Dai generatori UUID ai creatori di password, trova lo strumento perfetto per ogni attività. Scopri le nostre offerte attuali e le entusiasmanti funzionalità in arrivo.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Strumenti Web"
+        },
+        {
+          "id": "productivity",
+          "name": "Produttività"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 3,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -326,6 +986,556 @@
       "locale": "ko",
       "readingTime": 5,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.pngp",
+      "type": "blog"
+    }
+  ],
+  "nl": [
+    {
+      "slug": "contact",
+      "title": "Neem contact met ons op",
+      "description": "Neem contact met ons op voor vragen, feedback of ondersteuning. Stuur ons een e-mail of neem contact op via Twitter, en we zullen zo snel mogelijk reageren.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contact"
+        },
+        {
+          "id": "support",
+          "name": "Ondersteuning"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Algemeen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacybeleid",
+      "description": "Ontdek hoe we uw persoonlijke gegevens beschermen en uw privacy respecteren. Dit beleid legt uit welke informatie we verzamelen, hoe we deze gebruiken en uw rechten met betrekking tot uw gegevens.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "policy",
+          "name": "Beleid"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisch"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Gebruiksvoorwaarden",
+      "description": "Bekijk onze gebruiksvoorwaarden om uw rechten en verplichtingen bij het gebruik van onze website te begrijpen. Dit document behandelt gebruik, beperkingen en juridische disclaimers.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Voorwaarden"
+        },
+        {
+          "id": "legal",
+          "name": "Juridisch"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisch"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Welkom op onze website: Essentiële online tools voor iedereen nu beschikbaar",
+      "description": "Ontdek onze nieuw gelanceerde website met essentiële online tools voor ontwikkelaars, ontwerpers en dagelijkse gebruikers. Van UUID-generators tot wachtwoordmakers, vind de perfecte tool voor elke taak. Leer over onze huidige aanbiedingen en spannende functies die eraan komen.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        },
+        {
+          "id": "productivity",
+          "name": "Productiviteit"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Algemeen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "no": [
+    {
+      "slug": "contact",
+      "title": "Kontakt oss",
+      "description": "Kontakt oss for spørsmål, tilbakemeldinger eller støtte. Send oss en e-post eller kontakt oss på Twitter, og vi vil svare så snart som mulig.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Kontakt"
+        },
+        {
+          "id": "support",
+          "name": "Støtte"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Personvernpolicy",
+      "description": "Finn ut hvordan vi beskytter dine personlige data og respekterer ditt personvern. Denne policyen forklarer hvilken informasjon vi samler inn, hvordan vi bruker den og dine rettigheter angående dine data.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Personvern"
+        },
+        {
+          "id": "policy",
+          "name": "Policy"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Vilkår for bruk",
+      "description": "Gjennomgå våre vilkår for bruk for å forstå dine rettigheter og forpliktelser ved bruk av vår nettside. Dette dokumentet dekker bruk, begrensninger og juridiske ansvarsfraskrivelser.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Vilkår"
+        },
+        {
+          "id": "legal",
+          "name": "Juridisk"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Velkommen til vår nettside: Essensielle online verktøy for alle nå tilgjengelig",
+      "description": "Oppdag vår nylig lanserte nettside med essensielle online verktøy for utviklere, designere og hverdagsbrukere. Fra UUID-generatorer til passordopprettere, finn det perfekte verktøyet for enhver oppgave. Lær om våre nåværende tilbud og spennende funksjoner som kommer.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Nettverktøy"
+        },
+        {
+          "id": "productivity",
+          "name": "Produktivitet"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "pt": [
+    {
+      "slug": "contact",
+      "title": "Contate-nos",
+      "description": "Entre em contato conosco para perguntas, feedback ou suporte. Envie-nos um e-mail ou contate-nos no Twitter, e responderemos o mais rápido possível.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contato"
+        },
+        {
+          "id": "support",
+          "name": "Suporte"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Geral"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Política de Privacidade",
+      "description": "Descubra como protegemos suas informações pessoais e respeitamos sua privacidade. Esta política explica quais informações coletamos, como as utilizamos e seus direitos em relação aos seus dados.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacidade"
+        },
+        {
+          "id": "policy",
+          "name": "Política"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Jurídico"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Termos de Serviço",
+      "description": "Revise nossos termos de serviço para entender seus direitos e obrigações ao usar nosso site. Este documento abrange uso, limitações e isenções legais.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Termos"
+        },
+        {
+          "id": "legal",
+          "name": "Jurídico"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Jurídico"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Bem-vindo ao nosso site: Ferramentas online essenciais para todos agora disponíveis",
+      "description": "Descubra nosso site recém-lançado com ferramentas online essenciais para desenvolvedores, designers e usuários do dia a dia. De geradores de UUID a criadores de senhas, encontre a ferramenta perfeita para qualquer tarefa. Saiba mais sobre nossas ofertas atuais e recursos emocionantes que estão por vir.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Ferramentas Web"
+        },
+        {
+          "id": "productivity",
+          "name": "Produtividade"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Geral"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "ru": [
+    {
+      "slug": "contact",
+      "title": "Свяжитесь с нами",
+      "description": "Свяжитесь с нами для вопросов, отзывов или поддержки. Напишите нам по электронной почте или в Twitter, и мы ответим как можно скорее.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Контакт"
+        },
+        {
+          "id": "support",
+          "name": "Поддержка"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Общее"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Политика конфиденциальности",
+      "description": "Узнайте, как мы защищаем ваши персональные данные и уважаем вашу конфиденциальность. Эта политика объясняет, какую информацию мы собираем, как мы ее используем и ваши права в отношении ваших данных.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Конфиденциальность"
+        },
+        {
+          "id": "policy",
+          "name": "Политика"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Юридическое"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Условия использования",
+      "description": "Ознакомьтесь с нашими условиями использования, чтобы понять свои права и обязанности при использовании нашего веб-сайта. Этот документ охватывает использование, ограничения и юридические отказы от ответственности.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Условия"
+        },
+        {
+          "id": "legal",
+          "name": "Юридическое"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Юридическое"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Добро пожаловать на наш сайт: Основные онлайн-инструменты для всех теперь доступны",
+      "description": "Откройте для себя наш недавно запущенный веб-сайт с основными онлайн-инструментами для разработчиков, дизайнеров и обычных пользователей. От генераторов UUID до создателей паролей, найдите идеальный инструмент для любой задачи. Узнайте о наших текущих предложениях и предстоящих интересных функциях.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Веб-инструменты"
+        },
+        {
+          "id": "productivity",
+          "name": "Продуктивность"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Общее"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "sv": [
+    {
+      "slug": "contact",
+      "title": "Kontakta oss",
+      "description": "Kontakta oss för frågor, feedback eller support. Skicka oss ett e-postmeddelande eller kontakta oss på Twitter, så svarar vi så snart som möjligt.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Kontakt"
+        },
+        {
+          "id": "support",
+          "name": "Support"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allmänt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Integritetspolicy",
+      "description": "Ta reda på hur vi skyddar dina personuppgifter och respekterar din integritet. Denna policy förklarar vilken information vi samlar in, hur vi använder den och dina rättigheter gällande dina uppgifter.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Integritet"
+        },
+        {
+          "id": "policy",
+          "name": "Policy"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridiskt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Användarvillkor",
+      "description": "Granska våra användarvillkor för att förstå dina rättigheter och skyldigheter när du använder vår webbplats. Detta dokument omfattar användning, begränsningar och juridiska friskrivningar.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Villkor"
+        },
+        {
+          "id": "legal",
+          "name": "Juridiskt"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridiskt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Välkommen till vår webbplats: Viktiga onlineverktyg för alla nu tillgängliga",
+      "description": "Upptäck vår nyligen lanserade webbplats med viktiga onlineverktyg för utvecklare, designers och vardagsanvändare. Från UUID-generatorer till lösenordsskapare, hitta det perfekta verktyget för varje uppgift. Lär dig om våra nuvarande erbjudanden och spännande funktioner som kommer.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Webbverktyg"
+        },
+        {
+          "id": "productivity",
+          "name": "Produktivitet"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allmänt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
   ],

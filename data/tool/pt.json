@@ -1,0 +1,237 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "Gerador de UUID – Crie identificadores únicos online",
+    "description": "Gere identificadores UUID/GUID aleatórios para suas aplicações, bancos de dados e sistemas. Crie UUIDs únicos ou em massa com esta ferramenta online gratuita.",
+    "category": "development",
+    "keywords": [
+      "gerador de uuid",
+      "criar uuid",
+      "uuid v4 online",
+      "gerador de guid",
+      "criação de uuid",
+      "uuid aleatório",
+      "gerador de uuid em massa",
+      "uuid para banco de dados",
+      "gerador de identificador único"
+    ],
+    "faq": [
+      {
+        "question": "O que é um UUID e por que eu preciso dele?",
+        "answer": "Um UUID (Identificador Único Universal) é um identificador de 128 bits garantido para ser único em todos os sistemas e ao longo do tempo. UUIDs são essenciais para o desenvolvimento de software moderno porque criam identificadores únicos sem necessidade de uma autoridade central ou banco de dados. Eles são frequentemente usados para chaves primárias em bancos de dados, identificadores de solicitações de API, tokens de sessão e identificadores em sistemas distribuídos. Leia mais sobre UUIDs na <a href='https://tools.ietf.org/html/rfc4122' target='_blank' rel='noopener'>especificação RFC 4122</a>."
+      },
+      {
+        "question": "O que é um UUID versão 4 e como ele difere de outras versões?",
+        "answer": "O UUID versão 4 é a variante mais comumente usada, gerada usando números aleatórios ou pseudoaleatórios. Diferente de outras versões que incluem endereços MAC (v1) ou hashing de namespace (v3/v5), o UUID v4 oferece máxima privacidade e segurança, pois não contém informações identificáveis sobre o sistema gerador. A probabilidade de criar UUIDs v4 duplicados é tão baixa (1 em 5,3 x 10^36) que é insignificante para fins práticos. Veja o <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)' target='_blank' rel='noopener'>artigo da Wikipedia sobre UUID v4</a> para mais informações."
+      },
+      {
+        "question": "Esta ferramenta geradora de UUID é segura e privada?",
+        "answer": "Sim, nosso gerador de UUID é completamente seguro e privado. Todos os UUIDs são gerados localmente em seu navegador usando o gerador de números aleatórios criptograficamente seguro da Web Crypto API. Nenhum dado é enviado para nossos servidores ou terceiros. Os UUIDs gerados atendem aos requisitos de aleatoriedade especificados no RFC 4122 e são adequados para aplicações sensíveis à segurança. Você pode verificar isso olhando a aba de rede do seu navegador - nenhuma solicitação é feita quando os UUIDs são gerados."
+      },
+      {
+        "question": "Posso usar esses UUIDs para aplicações comerciais e bancos de dados?",
+        "answer": "Absolutamente! Os UUIDs gerados por esta ferramenta estão prontos para produção e adequados para qualquer uso comercial ou pessoal. Eles são ideais para chaves primárias de banco de dados, identificadores de API, nomes de arquivos, IDs de sessão e qualquer cenário onde você precisa de identificadores garantidamente únicos. Grandes empresas como Google, Amazon e Microsoft usam UUIDs extensivamente em seus sistemas. Diferente de IDs sequenciais, UUIDs não revelam informações sobre a escala ou o timing do seu sistema, tornando-os ideais para aplicações acessíveis publicamente."
+      },
+      {
+        "question": "Como usar UUIDs em diferentes linguagens de programação?",
+        "answer": "UUIDs são suportados por praticamente todas as linguagens de programação, seja nativamente ou através de bibliotecas. Em JavaScript, você usa <code>crypto.randomUUID()</code>; em Python, você usa o módulo <code>uuid</code>; em Java, você usa <code>java.util.UUID</code>; em C#, você usa <code>System.Guid</code>. A maioria dos bancos de dados também tem suporte nativo a UUID - PostgreSQL tem um tipo UUID, MySQL suporta UUIDs como CHAR(36), e MongoDB usa UUIDs para IDs de documentos. Veja a <a href='https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID' target='_blank' rel='noopener'>documentação MDN Web Crypto</a> para diretrizes específicas de implementação."
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "Conversor de Timestamp – Unix time para data legível",
+    "description": "Converta entre timestamps Unix e datas legíveis com suporte a fuso horário. Ideal para desenvolvedores trabalhando com APIs, logs e timestamps de banco de dados.",
+    "category": "development",
+    "keywords": [
+      "conversor de timestamp unix",
+      "epoch para data",
+      "timestamp para datetime",
+      "converter unix time",
+      "milissegundos para data",
+      "timestamp legível",
+      "data para unix time",
+      "conversor de timestamp online",
+      "conversor de fuso horário"
+    ],
+    "faq": [
+      {
+        "question": "O que é um timestamp Unix e por que ele é usado?",
+        "answer": "Um timestamp Unix (também conhecido como Unix time ou epoch) é o número de segundos decorridos desde 1º de janeiro de 1970, 00:00:00 UTC (a época Unix). É uma representação de tempo padronizada usada universalmente em sistemas computacionais porque é independente de fuso horário, compacta e fácil de calcular. Timestamps Unix são essenciais para bancos de dados, APIs, arquivos de log e qualquer sistema que precise armazenar ou transferir dados de tempo de forma confiável. Leia mais sobre o tempo epoch no <a href='https://en.wikipedia.org/wiki/Unix_time' target='_blank' rel='noopener'>artigo da Wikipedia</a>."
+      },
+      {
+        "question": "Posso converter entre diferentes formatos de timestamp e fusos horários?",
+        "answer": "Sim! Nosso conversor de timestamp suporta conversão bidirecional entre timestamps Unix e datas legíveis por humanos. Você pode converter timestamps Unix para datas legíveis em qualquer fuso horário, ou converter datas para timestamps Unix. A ferramenta lida automaticamente com conversões de fuso horário, ajustes de horário de verão e vários formatos de data. Isso é particularmente útil para desenvolvedores trabalhando com aplicações internacionais, análise de logs ou integração de sistemas que usam diferentes representações de tempo."
+      },
+      {
+        "question": "Qual é a diferença entre timestamps em segundos e milissegundos?",
+        "answer": "Timestamps Unix podem ser expressos em segundos (10 dígitos) ou milissegundos (13 dígitos). Sistemas Unix tradicionais usam segundos desde o início da época, enquanto linguagens de programação modernas como JavaScript frequentemente usam milissegundos para maior precisão. Por exemplo, o timestamp 1640995200 (segundos) é equivalente a 1640995200000 (milissegundos) - ambos representam 1º de janeiro de 2022. Nossa ferramenta detecta e converte automaticamente ambos os formatos. Entender essa diferença é crucial ao trabalhar com diferentes linguagens de programação e APIs."
+      },
+      {
+        "question": "Como trabalhar com timestamps em diferentes linguagens de programação?",
+        "answer": "Cada linguagem de programação tem suporte nativo a timestamps Unix. Em JavaScript, você usa <code>Date.now()</code> para o timestamp atual ou <code>new Date(timestamp)</code> para conversão. Python oferece <code>time.time()</code> e <code>datetime.fromtimestamp()</code>. PHP usa funções <code>time()</code> e <code>date()</code>. Veja a <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date' target='_blank' rel='noopener'>documentação MDN Date</a> ou a documentação oficial da sua linguagem para exemplos detalhados e melhores práticas."
+      },
+      {
+        "question": "Quais são os casos de uso comuns para conversão de timestamp?",
+        "answer": "A conversão de timestamp é essencial para: analisar logs de servidor e solucionar problemas, sincronizar dados entre diferentes sistemas e bancos de dados, construir APIs que atendem usuários internacionais, converter dados de sistemas legados, agendar tarefas e eventos, e realizar análises forenses de ações do sistema. Desenvolvedores frequentemente precisam disso durante migrações de banco de dados, integração com serviços de terceiros ou depuração de problemas relacionados a fuso horário em aplicações."
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "Qual é meu IP – Verifique seu endereço IP público e localização",
+    "description": "Veja instantaneamente seu endereço IPv4/IPv6 público, geolocalização, provedor de internet e detalhes de conexão. Útil para solução de problemas de rede e verificação de VPN.",
+    "category": "security",
+    "keywords": [
+      "verificador de endereço ip",
+      "encontrar meu ip",
+      "ip público",
+      "qual é meu ip",
+      "consulta de ip",
+      "meu endereço ip",
+      "geolocalização ip",
+      "verificador de localização ip",
+      "buscador de endereço ip"
+    ],
+    "faq": [
+      {
+        "question": "Quais informações esta ferramenta de verificação de IP fornece?",
+        "answer": "Nosso verificador de IP mostra informações abrangentes sobre seu endereço IP público, incluindo: seu endereço IPv4 ou IPv6 público atual, sua localização geográfica aproximada (cidade, região, país), o nome do seu provedor de serviços de internet (ISP), informações da organização, dados de fuso horário, e se você está usando um proxy ou VPN. Essas informações são coletadas de bancos de dados de geolocalização IP publicamente disponíveis e não comprometem sua privacidade além do que já está visível para os sites que você visita."
+      },
+      {
+        "question": "Qual é a diferença entre meu endereço IP público e privado?",
+        "answer": "Seu endereço IP privado (como 192.168.1.100 ou 10.0.0.5) é atribuído pelo seu roteador para comunicação dentro da sua rede local e não é visível na internet. Seu endereço IP público é atribuído pelo seu provedor de internet e representa sua conexão com a internet mais ampla - é o que os sites veem quando você os visita. Pense no seu IP público como o endereço do seu prédio, enquanto seu IP privado é o número do apartamento. Entender essa diferença é crucial para solução de problemas de rede e segurança. Leia mais sobre endereçamento IP na <a href='https://en.wikipedia.org/wiki/IP_address' target='_blank' rel='noopener'>Wikipedia</a>."
+      },
+      {
+        "question": "Minha privacidade está protegida ao usar esta ferramenta de verificação de IP?",
+        "answer": "Sim, sua privacidade está totalmente protegida. Esta ferramenta apenas exibe informações que já estão publicamente disponíveis para qualquer site que você visita. Não armazenamos, não registramos e não compartilhamos seu endereço IP ou informações relacionadas com terceiros. A consulta é realizada em tempo real e nenhum dado é retido. No entanto, esteja ciente de que seu endereço IP em si revela localização aproximada e informações do ISP para qualquer site que você visita - é assim que a internet funciona fundamentalmente."
+      },
+      {
+        "question": "Por que meu endereço IP pode mudar e com que frequência isso acontece?",
+        "answer": "A maioria das conexões de internet residenciais usa endereços IP dinâmicos, o que significa que seu provedor de internet pode alterar seu IP periodicamente - tipicamente a cada poucos dias ou semanas, ou quando você reinicia seu modem. Conexões empresariais frequentemente têm IPs estáticos que não mudam. Seu IP também mudará quando você: conectar a uma rede diferente (como mudar do Wi-Fi de casa para dados móveis), usar um serviço VPN, ou viajar para um local diferente. Entender o comportamento do endereço IP é importante para configurar acesso remoto e configurações de segurança."
+      },
+      {
+        "question": "Como posso usar as informações de endereço IP para solução de problemas?",
+        "answer": "As informações de endereço IP são valiosas para solução de problemas de rede: verifique a funcionalidade da VPN confirmando que sua localização aparece diferente, diagnostique problemas de conexão confirmando seu ISP e localização, configure acesso remoto conhecendo seu IP público para encaminhamento de porta, identifique problemas de rede rastreando mudanças de IP, e melhore a segurança reconhecendo tentativas de acesso não autorizadas. Para conceitos avançados de rede, veja recursos como os <a href='https://www.cloudflare.com/learning/network-layer/what-is-an-ip-address/' target='_blank' rel='noopener'>guias de rede da Cloudflare</a>."
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "Gerador de Senhas – Crie senhas fortes e seguras online",
+    "description": "Gere senhas criptograficamente seguras com comprimento e conjunto de caracteres personalizáveis. Crie senhas fortes e aleatórias para máxima segurança de conta.",
+    "category": "security",
+    "keywords": [
+      "gerador de senhas",
+      "senha segura",
+      "senha aleatória",
+      "senha forte",
+      "armazenamento de senhas",
+      "criar senha segura",
+      "ferramenta de geração de senhas",
+      "gerador de senhas complexas",
+      "armazenamento de senhas online"
+    ],
+    "faq": [
+      {
+        "question": "Quão seguras são as senhas geradas por esta ferramenta?",
+        "answer": "As senhas geradas por nossa ferramenta são criptograficamente seguras e adequadas para proteger contas sensíveis. Usamos o gerador de números aleatórios criptograficamente seguro da Web Crypto API, que atende aos padrões criptográficos de imprevisibilidade. As senhas geradas nunca são armazenadas, nunca são transmitidas ou registradas em qualquer lugar - elas existem apenas na memória do navegador. A entropia (aleatoriedade) de nossas senhas excede em muito os padrões de segurança da indústria, tornando-as praticamente impossíveis de quebrar por força bruta quando configuradas adequadamente."
+      },
+      {
+        "question": "O que torna uma senha realmente forte e segura?",
+        "answer": "Uma senha forte combina vários fatores críticos: comprimento (mínimo de 12 caracteres, idealmente 16+), diversidade de caracteres (uma mistura de letras maiúsculas, minúsculas, números e caracteres especiais), imprevisibilidade (evitar palavras do dicionário, informações pessoais ou padrões), e singularidade (nunca reutilizar senhas entre contas). A força matemática de uma senha é medida em bits de entropia - nossas senhas mistas de 16 caracteres fornecem mais de 95 bits de entropia, o que levaria bilhões de anos para quebrar com a tecnologia moderna. Veja as <a href='https://www.nist.gov/itl/applied-cybersecurity/iad/list-terms/password' target='_blank' rel='noopener'>diretrizes de senha do NIST</a> para recomendações completas de segurança."
+      },
+      {
+        "question": "Posso personalizar as configurações de geração de senha para requisitos específicos?",
+        "answer": "Absolutamente! Nosso gerador de senhas oferece personalização abrangente para acomodar várias políticas de segurança e requisitos de sistema. Você pode ajustar o comprimento da senha de 4 a 128 caracteres, e ativar/desativar independentemente o uso de letras maiúsculas, minúsculas, números e caracteres especiais. Alguns sistemas têm limitações em certos caracteres especiais - você pode excluir caracteres problemáticos enquanto mantém a segurança. A ferramenta também fornece cálculo de entropia em tempo real, para que você possa ver exatamente quão forte sua senha personalizada será."
+      },
+      {
+        "question": "Como devo armazenar e gerenciar senhas geradas?",
+        "answer": "Nunca anote senhas ou as armazene em arquivos de texto não criptografados. Em vez disso, use um gerenciador de senhas confiável como Bitwarden, 1Password ou LastPass para armazenar e organizar suas senhas com segurança. Gerenciadores de senhas criptografam suas senhas com sua senha mestra e podem preenchê-las automaticamente em sites. Eles também ajudam a identificar senhas fracas, reutilizadas ou comprometidas em suas contas. Para contas corporativas sensíveis, considere soluções de gerenciamento de senhas empresariais com recursos de segurança adicionais como trilhas de auditoria e acesso em equipe."
+      },
+      {
+        "question": "Quais são as melhores práticas mais recentes para segurança de senhas?",
+        "answer": "A segurança moderna de senhas enfatiza: usar senhas únicas geradas aleatoriamente para cada conta, ativar autenticação de dois fatores (2FA) onde disponível, usar um gerenciador de senhas para gerar e armazenar senhas complexas, atualizar regularmente senhas para contas críticas, monitorar violações de dados através de serviços como Have I Been Pwned, e considerar frases-senha como alternativa a senhas memoráveis (ex: 'correct-horse-battery-staple'). A era de senhas curtas mas complexas acabou - comprimento e singularidade são mais importantes que complexidade. Mantenha-se atualizado sobre as melhores práticas de segurança através do <a href='https://www.cisa.gov/secure-our-world/use-strong-passwords' target='_blank' rel='noopener'>guia de cibersegurança da CISA</a>."
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "Codificador/Decodificador de URL – Converta caracteres especiais para uso na web",
+    "description": "Codifique URLs para transmissão segura ou decodifique strings codificadas em URL. Essencial para desenvolvedores web trabalhando com parâmetros de consulta e caracteres especiais.",
+    "category": "development",
+    "keywords": [
+      "codificador de url",
+      "decodificador de url",
+      "codificação percentual",
+      "codificação uri",
+      "decodificação uri",
+      "desenvolvimento web",
+      "codificação de caracteres especiais",
+      "decodificação de parâmetros url",
+      "ferramenta de codificação url",
+      "codificador de string de consulta"
+    ],
+    "faq": [
+      {
+        "question": "O que é codificação URL e por que é necessária?",
+        "answer": "A codificação URL (também conhecida como codificação percentual) é um mecanismo para representar caracteres em URLs que são inseguros, reservados ou não-ASCII. URLs só podem conter com segurança um conjunto limitado de caracteres (letras, números e alguns símbolos). Quando você precisa incluir espaços, caracteres especiais ou texto não-inglês em uma URL, estes precisam ser codificados. Por exemplo, um espaço se torna '%20' e '&' se torna '%26'. Isso garante que URLs sejam transmitidas corretamente através de diferentes sistemas e navegadores. Sem a codificação adequada, URLs com caracteres especiais quebrariam ou seriam mal interpretadas. Leia mais sobre codificação URL na <a href='https://tools.ietf.org/html/rfc3986' target='_blank' rel='noopener'>especificação RFC 3986</a>."
+      },
+      {
+        "question": "Quando devo usar codificação URL no desenvolvimento web?",
+        "answer": "A codificação URL é necessária em vários cenários: codificar parâmetros de consulta que contêm espaços ou caracteres especiais (como strings de busca), preparar dados de formulário para envio via solicitações GET, codificar nomes de arquivo em URLs que contêm caracteres não-ASCII, construir programaticamente URLs dinâmicas com entrada do usuário, codificar endpoints de API que contêm dados variáveis, e lidar com internacionalização onde URLs contêm caracteres não-ingleses. A maioria das linguagens de programação oferece funções de codificação URL integradas - use-as quando construir dinamicamente URLs com conteúdo variável."
+      },
+      {
+        "question": "Qual é a diferença entre codificação URL e codificação de entidades HTML?",
+        "answer": "A codificação URL e a codificação de entidades HTML servem a propósitos diferentes e usam formatos diferentes. A codificação URL usa o símbolo de porcentagem seguido por valores hexadecimais (%20 para um espaço), enquanto entidades HTML usam e comercial e ponto-e-vírgula (&lt; para <). A codificação URL é usada especificamente para URLs e transmissão de dados de formulário, enquanto entidades HTML são usadas em conteúdo HTML para exibir caracteres especiais com segurança. Entender esta diferença é crucial para desenvolvedores web - usar o método de codificação errado pode levar a vulnerabilidades de segurança ou funcionalidade quebrada."
+      },
+      {
+        "question": "Este codificador/decodificador de URL é seguro para dados sensíveis?",
+        "answer": "Sim, nosso codificador/decodificador de URL é completamente seguro para dados sensíveis. Todas as operações de codificação e decodificação são realizadas localmente em seu navegador usando JavaScript - nenhum dado é enviado para nossos servidores ou serviços externos. Você pode verificar isso olhando a aba de rede do seu navegador durante o uso. No entanto, lembre-se que a codificação URL não é criptografia, mas apenas uma transformação de formato. Strings codificadas em URL podem ser facilmente lidas por qualquer pessoa, então nunca confie na codificação URL para fins de segurança."
+      },
+      {
+        "question": "Como trabalhar com codificação URL em diferentes linguagens de programação?",
+        "answer": "Cada linguagem de programação principal oferece funções de codificação URL integradas. Em JavaScript, você usa <code>encodeURIComponent()</code> e <code>decodeURIComponent()</code>. Python oferece <code>urllib.parse.quote()</code> e <code>urllib.parse.unquote()</code>. PHP tem <code>urlencode()</code> e <code>urldecode()</code>. Java oferece <code>URLEncoder.encode()</code> e <code>URLDecoder.decode()</code>. Sempre use estas funções integradas em vez de codificação manual para garantir o tratamento adequado de casos extremos e conjuntos de caracteres. Veja a <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent' target='_blank' rel='noopener'>documentação MDN sobre codificação URL</a> para exemplos completos."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Codificador/Decodificador Base64 – Converta texto e dados binários",
+    "description": "Converta texto ou dados binários para o formato Base64 e vice-versa. Ideal para incorporar imagens em CSS/HTML, transferência de dados e armazenamento de dados binários em formatos de texto.",
+    "category": "development",
+    "keywords": [
+      "codificador base64",
+      "decodificador base64",
+      "texto para base64",
+      "base64 para texto",
+      "conversor base64",
+      "dados binários para base64",
+      "imagem para base64",
+      "string base64",
+      "ferramenta base64 online"
+    ],
+    "faq": [
+      {
+        "question": "O que é codificação Base64 e para que é usada?",
+        "answer": "Base64 é um esquema de codificação que converte dados binários em um conjunto de caracteres ASCII que podem ser transmitidos com segurança através de sistemas de texto. É frequentemente usado para: incorporar dados binários (como imagens) em HTML ou CSS, armazenar dados binários em JSON, codificar anexos em protocolos de email, transferir dados através de APIs que suportam apenas texto, e armazenar dados binários em bancos de dados sem tipos binários. Base64 usa 64 caracteres ASCII imprimíveis (A-Z, a-z, 0-9, + e /) e o sinal de igual (=) para preenchimento. É importante notar que Base64 não é criptografia, não fornece segurança, apenas compatibilidade entre diferentes sistemas."
+      },
+      {
+        "question": "Como a codificação Base64 funciona tecnicamente?",
+        "answer": "A codificação Base64 converte 3 bytes (24 bits) de dados binários em 4 caracteres Base64 (6 bits por caractere). O processo inclui: agrupar dados binários em blocos de 3 bytes, converter cada bloco em 4 números de seis bits, mapear cada número de seis bits para um caractere Base64 do alfabeto de 64 caracteres. Se a entrada não for divisível por 3, o preenchimento é adicionado com o caractere '='. Isso resulta em um aumento de tamanho de cerca de 33% em comparação com os dados originais, que é um compromisso para melhor compatibilidade. Veja <a href='https://datatracker.ietf.org/doc/html/rfc4648' target='_blank' rel='noopener'>RFC 4648</a> para uma explicação técnica detalhada."
+      },
+      {
+        "question": "O Base64 é seguro para dados sensíveis ou senhas?",
+        "answer": "Não, Base64 NÃO é criptografia e não fornece absolutamente nenhuma segurança. É apenas uma codificação que pode ser facilmente revertida. Qualquer pessoa com acesso aos dados codificados em Base64 pode instantaneamente decodificá-los. Nunca use Base64 como um método para proteger informações sensíveis, senhas ou dados pessoais. Para fins de segurança, você deve usar algoritmos de criptografia apropriados e práticas de segurança. Base64 é destinado exclusivamente à compatibilidade de dados, não à segurança de dados. Se você precisa proteger dados sensíveis, veja recursos como as <a href='https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html' target='_blank' rel='noopener'>diretrizes de segurança OWASP</a>."
+      },
+      {
+        "question": "Como posso usar Base64 no desenvolvimento web?",
+        "answer": "Base64 tem vários usos práticos no desenvolvimento web: incorporar pequenas imagens diretamente em HTML/CSS como URIs de dados para reduzir solicitações HTTP, codificar dados binários para transferência em APIs JSON, armazenar dados binários em localStorage ou IndexedDB, implementar uploads de arquivo simples sem solicitações de servidor, transferir dados não-ASCII em parâmetros de URL, e trabalhar com elementos Canvas e seu método toDataURL(). Para desenvolvedores web, é importante saber que dados codificados em Base64 são cerca de 33% maiores que suas contrapartes binárias, o que deve ser considerado ao decidir quando usá-los."
+      },
+      {
+        "question": "Como usar Base64 em diferentes linguagens de programação?",
+        "answer": "A maioria das linguagens de programação oferece funções Base64 integradas. Em JavaScript, você usa <code>btoa()</code> para codificação e <code>atob()</code> para decodificação de strings ASCII, ou os mais modernos <code>TextEncoder</code> e <code>TextDecoder</code> com <code>Uint8Array</code> para Unicode. Python oferece o módulo <code>base64</code>. PHP tem <code>base64_encode()</code> e <code>base64_decode()</code>. Java oferece <code>Base64.getEncoder()</code> e <code>Base64.getDecoder()</code>. Para texto Unicode e dados binários, frequentemente há considerações especiais - sempre veja a documentação da sua linguagem para melhores práticas e exemplos, como o <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>guia MDN sobre Base64</a>."
+      }
+    ]
+  }
+]

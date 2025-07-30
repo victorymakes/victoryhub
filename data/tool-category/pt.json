@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "",
+    "name": "Todas as ferramentas",
+    "description": "Ver todas as ferramentas disponíveis em todas as categorias",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Desenvolvimento",
+    "description": "Utilitários para desenvolvedores como gerador de UUID, conversor de timestamp, codificador/decodificador de URL e mais",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Segurança",
+    "description": "Ferramentas de segurança e privacidade como gerador de senhas e verificador de IP",
+    "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Mídia e Imagem",
+    "description": "Ferramentas para processamento de imagens, mídia e arquivos",
+    "icon": "image"
+  }
+]
