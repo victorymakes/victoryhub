@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "",
+    "name": "Todas las herramientas",
+    "description": "Ver todas las herramientas disponibles en todas las categorías",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Desarrollo",
+    "description": "Utilidades para desarrolladores como generador de UUID, convertidor de marca de tiempo, codificador/decodificador de URL y más",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Seguridad",
+    "description": "Herramientas de seguridad y privacidad como generador de contraseñas y verificador de IP",
+    "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Medios e imágenes",
+    "description": "Herramientas para procesamiento de imágenes, medios y archivos",
+    "icon": "image"
+  }
+]

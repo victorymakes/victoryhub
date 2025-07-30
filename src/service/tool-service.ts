@@ -63,8 +63,19 @@ export const getPopularTools = async (
     count: number = 6,
     locale: string = "en",
 ): Promise<Tool[]> => {
+    const popularTools = [
+        "password-generator",
+        "whats-my-ip",
+        "timestamp-converter",
+        "url-encoder-decoder",
+        "image-compressor",
+        "image-converter",
+    ];
     const tools = await getTools(locale);
-    return tools.slice(0, Math.min(count, tools.length));
+    const sortedPopular = popularTools
+        .map((slug) => tools.find((tool) => tool.slug === slug))
+        .filter(Boolean) as Tool[];
+    return sortedPopular.slice(0, Math.min(count, sortedPopular.length));
 };
 
 export const getTool = async (

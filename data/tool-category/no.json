@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "",
+    "name": "Alle verktøy",
+    "description": "Se alle tilgjengelige verktøy på tvers av alle kategorier",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Utvikling",
+    "description": "Utviklerverktøy som UUID-generator, tidsstempelkonverter, URL-koder/dekoder og mer",
+    "icon": "code"
+  },
+  {
+    "slug": "security",
+    "name": "Sikkerhet",
+    "description": "Sikkerhets- og personvernverktøy som passordgenerator og IP-sjekker",
+    "icon": "lock"
+  },
+  {
+    "slug": "media",
+    "name": "Media og bilder",
+    "description": "Verktøy for bilde-, medie- og filbehandling",
+    "icon": "image"
+  }
+]

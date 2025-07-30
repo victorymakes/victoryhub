@@ -1,0 +1,237 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "UUID-generaattori – Luo yksilöllisiä tunnisteita verkossa",
+    "description": "Generoi satunnaisia UUID/GUID-tunnisteita sovelluksillesi, tietokannoillesi ja järjestelmillesi. Luo yksilöllisiä tai useita UUID-tunnisteita tällä ilmaisella verkkotyökalulla.",
+    "category": "development",
+    "keywords": [
+      "uuid-generaattori",
+      "luo uuid",
+      "uuid v4 verkossa",
+      "guid-generaattori",
+      "uuid-luonti",
+      "satunnainen uuid",
+      "massa-uuid-generaattori",
+      "uuid tietokannalle",
+      "yksilöllinen tunnistegeneraattori"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on UUID ja miksi tarvitsen sitä?",
+        "answer": "UUID (Universally Unique Identifier) on 128-bittinen tunniste, jonka taataan olevan yksilöllinen kaikissa järjestelmissä ja kaikkina aikoina. UUID:t ovat välttämättömiä nykyaikaisessa ohjelmistokehityksessä, koska ne luovat yksilöllisiä tunnisteita ilman keskitettyä auktoriteettia tai tietokantaa. Niitä käytetään usein tietokantojen pääavaimina, API-pyyntötunnisteina, istuntotokeneina ja tunnisteina hajautetuissa järjestelmissä. Lue lisää UUID:istä <a href='https://tools.ietf.org/html/rfc4122' target='_blank' rel='noopener'>RFC 4122 -määrittelystä</a>."
+      },
+      {
+        "question": "Mikä on versio 4 UUID ja miten se eroaa muista versioista?",
+        "answer": "Versio 4 UUID on yleisimmin käytetty variantti, joka generoidaan satunnaisten tai pseudosatunnaisten lukujen avulla. Toisin kuin muut versiot, jotka sisältävät MAC-osoitteita (v1) tai nimiavaruushasheja (v3/v5), UUID v4 tarjoaa maksimaalisen yksityisyyden ja turvallisuuden, koska se ei sisällä tunnistettavaa tietoa generoivasta järjestelmästä. Todennäköisyys luoda kaksoiskappaleita UUID v4:iä on niin pieni (1 / 5,3 x 10^36), että se on käytännössä merkityksetön. Katso <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)' target='_blank' rel='noopener'>Wikipedia-artikkeli UUID v4:stä</a> saadaksesi lisätietoja."
+      },
+      {
+        "question": "Onko tämä UUID-generaattorityökalu turvallinen ja yksityinen?",
+        "answer": "Kyllä, UUID-generaattorimme on täysin turvallinen ja yksityinen. Kaikki UUID:t generoidaan paikallisesti selaimessasi käyttäen kryptografisesti turvallista Web Crypto API:n satunnaislukugeneraattoria. Mitään tietoja ei lähetetä palvelimillemme tai kolmansille osapuolille. Generoidut UUID:t täyttävät RFC 4122:ssa määritellyt satunnaisuusvaatimukset ja soveltuvat turvallisuuskriittisiin sovelluksiin. Voit vahvistaa tämän tarkastelemalla selaimesi verkkovälilehteä - mitään pyyntöjä ei tehdä, kun UUID:itä generoidaan."
+      },
+      {
+        "question": "Voinko käyttää näitä UUID:itä kaupallisissa sovelluksissa ja tietokannoissa?",
+        "answer": "Ehdottomasti! Tällä työkalulla generoidut UUID:t ovat tuotantovalmiita ja soveltuvat kaikkeen kaupalliseen tai henkilökohtaiseen käyttöön. Ne ovat ihanteellisia tietokantojen pääavaimiksi, API-tunnisteiksi, tiedostonimiksi, istuntotunnisteiksi ja mihin tahansa skenaarioon, jossa tarvitset taattuja yksilöllisiä tunnisteita. Suuret yritykset kuten Google, Amazon ja Microsoft käyttävät UUID:itä laajasti järjestelmissään. Toisin kuin peräkkäiset tunnisteet, UUID:t eivät paljasta tietoja järjestelmäsi mittakaavasta tai ajoituksesta, mikä tekee niistä ihanteellisia julkisesti saatavilla oleviin sovelluksiin."
+      },
+      {
+        "question": "Miten käytän UUID:itä eri ohjelmointikielissä?",
+        "answer": "UUID:itä tuetaan käytännössä kaikissa ohjelmointikielissä, joko sisäänrakennettuna tai kirjastojen kautta. JavaScriptissä käytät <code>crypto.randomUUID()</code>; Pythonissa käytät <code>uuid</code>-moduulia; Javassa käytät <code>java.util.UUID</code>; C#:ssa käytät <code>System.Guid</code>. Useimmissa tietokannoissa on myös sisäänrakennettu UUID-tuki - PostgreSQL:ssä on UUID-tyyppi, MySQL tukee UUID:itä CHAR(36)-muodossa, ja MongoDB käyttää UUID:itä dokumenttitunnisteina. Katso <a href='https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID' target='_blank' rel='noopener'>MDN Web Crypto -dokumentaatiosta</a> tarkat toteutusohjeet."
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "Aikaleiman muunnin – Unix-aika luettavaksi päivämääräksi",
+    "description": "Muunna Unix-aikaleimojen ja luettavien päivämäärien välillä aikavyöhyketuella. Ihanteellinen kehittäjille, jotka työskentelevät API:en, lokien ja tietokantojen aikaleimojen parissa.",
+    "category": "development",
+    "keywords": [
+      "unix-aikaleiman muunnin",
+      "epoch päivämääräksi",
+      "aikaleima datetime-muotoon",
+      "unix-ajan muunnos",
+      "millisekunnit päivämääräksi",
+      "luettava aikaleima",
+      "päivämäärä unix-ajaksi",
+      "verkkoaikaleiman muunnin",
+      "aikavyöhykkeen muunnin"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on Unix-aikaleima ja miksi sitä käytetään?",
+        "answer": "Unix-aikaleima (tunnetaan myös nimellä Unix-aika tai epoch) on sekuntien määrä, joka on kulunut 1. tammikuuta 1970 klo 00:00:00 UTC:stä (Unix-epookki). Se on standardoitu ajan esitystapa, jota käytetään universaalisti tietojärjestelmissä, koska se on aikavyöhykkeestä riippumaton, kompakti ja helppo laskea. Unix-aikaleimat ovat välttämättömiä tietokannoille, API:eille, lokitiedostoille ja mille tahansa järjestelmälle, jonka on tallennettava tai siirrettävä aikatietoja luotettavasti. Lue lisää epoch-ajasta <a href='https://en.wikipedia.org/wiki/Unix_time' target='_blank' rel='noopener'>Wikipedia-artikkelista</a>."
+      },
+      {
+        "question": "Voinko muuntaa eri aikaleiman muotojen ja aikavyöhykkeiden välillä?",
+        "answer": "Kyllä! Aikaleiman muuntimemme tukee kaksisuuntaista muunnosta Unix-aikaleimojen ja ihmisluettavien päivämäärien välillä. Voit muuntaa Unix-aikaleimat luettaviksi päivämääriksi missä tahansa aikavyöhykkeessä tai muuntaa päivämäärät Unix-aikaleimoiksi. Työkalu käsittelee automaattisesti aikavyöhykemuunnokset, kesäaikakorjaukset ja erilaiset päivämäärämuodot. Tämä on erityisen hyödyllistä kehittäjille, jotka työskentelevät kansainvälisten sovellusten, lokianalyysien tai järjestelmäintegraatioiden parissa, jotka käyttävät erilaisia ajan esitystapoja."
+      },
+      {
+        "question": "Mikä on ero sekunteina ja millisekunteina ilmaistujen aikaleimojen välillä?",
+        "answer": "Unix-aikaleimat voidaan ilmaista sekunteina (10 numeroa) tai millisekunteina (13 numeroa). Perinteiset Unix-järjestelmät käyttävät sekunteja epookin alusta, kun taas modernit ohjelmointikielet kuten JavaScript käyttävät usein millisekunteja suuremman tarkkuuden vuoksi. Esimerkiksi aikaleima 1640995200 (sekunteina) vastaa 1640995200000 (millisekunteina) - molemmat edustavat 1. tammikuuta 2022. Työkalumme tunnistaa ja muuntaa automaattisesti molemmat muodot. Tämän eron ymmärtäminen on ratkaisevan tärkeää, kun työskennellään eri ohjelmointikielten ja API:en kanssa."
+      },
+      {
+        "question": "Miten työskennellään aikaleimojen kanssa eri ohjelmointikielissä?",
+        "answer": "Jokaisessa ohjelmointikielessä on sisäänrakennettu tuki Unix-aikaleimoille. JavaScriptissä käytät <code>Date.now()</code> nykyiselle aikaleimalle tai <code>new Date(timestamp)</code> muuntamiseen. Python tarjoaa <code>time.time()</code> ja <code>datetime.fromtimestamp()</code>. PHP käyttää <code>time()</code> ja <code>date()</code>-funktioita. Katso <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date' target='_blank' rel='noopener'>MDN Date -dokumentaatiosta</a> tai kielesi virallisesta dokumentaatiosta yksityiskohtaiset esimerkit ja parhaat käytännöt."
+      },
+      {
+        "question": "Mitkä ovat yleisiä aikaleiman muuntamisen käyttötapauksia?",
+        "answer": "Aikaleiman muuntaminen on välttämätöntä: palvelinlokien analysoinnissa ja ongelmien vianmäärityksessä, tietojen synkronoinnissa eri järjestelmien ja tietokantojen välillä, kansainvälisiä käyttäjiä palvelevien API:en rakentamisessa, vanhempien järjestelmien tietojen muuntamisessa, tehtävien ja tapahtumien aikatauluttamisessa sekä järjestelmätoimien forensisissa analyyseissä. Kehittäjät tarvitsevat tätä usein tietokantamigraatioissa, kolmannen osapuolen palvelujen integroinnissa tai sovellusten aikavyöhykkeisiin liittyvien ongelmien vianmäärityksessä."
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "Mikä on IP-osoitteeni – Tarkista julkinen IP-osoitteesi ja sijaintisi",
+    "description": "Näe välittömästi julkinen IPv4/IPv6-osoitteesi, geolokaatiosi, internetpalveluntarjoajasi ja yhteystietosi. Hyödyllinen verkkovianmääritykseen ja VPN-vahvistukseen.",
+    "category": "security",
+    "keywords": [
+      "ip-osoitteen tarkistus",
+      "etsi ip-osoitteeni",
+      "julkinen ip",
+      "mikä on ip-osoitteeni",
+      "ip-haku",
+      "ip-osoitteeni",
+      "ip-geolokaatio",
+      "ip-sijainnin tarkistus",
+      "ip-osoitteen hakija"
+    ],
+    "faq": [
+      {
+        "question": "Mitä tietoja tämä IP-tarkistustyökalu tarjoaa?",
+        "answer": "IP-tarkistuksemme näyttää kattavat tiedot julkisesta IP-osoitteestasi, mukaan lukien: nykyinen julkinen IPv4- tai IPv6-osoitteesi, likimääräinen maantieteellinen sijaintisi (kaupunki, alue, maa), internetpalveluntarjoajasi (ISP) nimi, organisaatiotiedot, aikavyöhyketiedot ja käytätkö välityspalvelinta tai VPN:ää. Nämä tiedot kerätään julkisesti saatavilla olevista IP-geolokaatiotietokannoista eivätkä ne vaaranna yksityisyyttäsi enempää kuin mikä on jo näkyvissä verkkosivustoille, joita vierailet."
+      },
+      {
+        "question": "Mikä on julkisen ja yksityisen IP-osoitteen välinen ero?",
+        "answer": "Yksityinen IP-osoitteesi (kuten 192.168.1.100 tai 10.0.0.5) on reitittimesi määrittämä paikallisen verkkosi sisäistä viestintää varten, eikä se näy internetissä. Julkinen IP-osoitteesi on internetpalveluntarjoajasi määrittämä ja edustaa yhteyttäsi laajempaan internetiin - tämä on se, minkä verkkosivustot näkevät, kun vierailet niillä. Ajattele julkista IP-osoitettasi rakennuksesi osoitteena, kun taas yksityinen IP on huoneistonumerosi. Tämän eron ymmärtäminen on ratkaisevan tärkeää verkon vianmäärityksessä ja turvallisuudessa. Lue lisää IP-osoitteista <a href='https://en.wikipedia.org/wiki/IP_address' target='_blank' rel='noopener'>Wikipediasta</a>."
+      },
+      {
+        "question": "Onko yksityisyyteni suojattu, kun käytän tätä IP-tarkistustyökalua?",
+        "answer": "Kyllä, yksityisyytesi on täysin suojattu. Tämä työkalu näyttää vain tietoja, jotka ovat jo julkisesti saatavilla kaikille verkkosivustoille, joilla vierailet. Emme tallenna, kirjaa tai jaa IP-osoitettasi tai siihen liittyviä tietoja kolmansien osapuolten kanssa. Haku suoritetaan reaaliajassa, eikä mitään tietoja säilytetä. Huomaa kuitenkin, että IP-osoitteesi itsessään paljastaa likimääräisen sijainnin ja ISP-tiedot kaikille verkkosivustoille, joilla vierailet - tämä on internetin perustavanlaatuinen toimintatapa."
+      },
+      {
+        "question": "Miksi IP-osoitteeni voi muuttua ja kuinka usein tämä tapahtuu?",
+        "answer": "Useimmat kotien internet-yhteydet käyttävät dynaamisia IP-osoitteita, mikä tarkoittaa, että internetpalveluntarjoajasi voi muuttaa IP-osoitettasi ajoittain - yleensä muutaman päivän tai viikon välein, tai kun käynnistät modeemin uudelleen. Yritysten yhteyksillä on usein staattisia IP-osoitteita, jotka eivät muutu. IP-osoitteesi muuttuu myös, kun: yhdistät toiseen verkkoon (kuten vaihtamalla koti-wifistä mobiilitiedonsiirtoon), käytät VPN-palvelua tai matkustat toiseen sijaintiin. IP-osoitteiden käyttäytymisen ymmärtäminen on tärkeää etäyhteyksien ja turvallisuusasetusten määrittämisessä."
+      },
+      {
+        "question": "Miten voin käyttää IP-osoitetietoja vianmääritykseen?",
+        "answer": "IP-osoitetiedot ovat arvokkaita verkon vianmäärityksessä: tarkista VPN-toiminnallisuus varmistamalla, että sijaintisi näkyy eri paikkana, diagnosoi yhteysongelmia vahvistamalla ISP:si ja sijaintisi, määritä etäyhteys tuntemalla julkinen IP-osoitteesi porttien uudelleenohjausta varten, tunnista verkko-ongelmia seuraamalla IP-muutoksia ja paranna turvallisuutta tunnistamalla luvattomat yhteyspyynnöt. Katso lisätietoja edistyneistä verkkokäsitteistä resursseista kuten <a href='https://www.cloudflare.com/learning/network-layer/what-is-an-ip-address/' target='_blank' rel='noopener'>Cloudflaren verkko-oppaista</a>."
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "Salasanageneraattori – Luo vahvoja ja turvallisia salasanoja verkossa",
+    "description": "Generoi kryptografisesti turvallisia salasanoja mukautettavalla pituudella ja merkistöllä. Luo vahvoja ja satunnaisia salasanoja maksimaalista tiliturvallisuutta varten.",
+    "category": "security",
+    "keywords": [
+      "salasanageneraattori",
+      "turvallinen salasana",
+      "satunnainen salasana",
+      "vahva salasana",
+      "salasanan säilytys",
+      "luo turvallinen salasana",
+      "salasanan luontityökalu",
+      "monimutkainen salasanageneraattori",
+      "verkossa toimiva salasanan säilytys"
+    ],
+    "faq": [
+      {
+        "question": "Kuinka turvallisia tämän työkalun generoimat salasanat ovat?",
+        "answer": "Työkalumme generoimat salasanat ovat kryptografisesti turvallisia ja sopivia arkaluontoisten tilien suojaamiseen. Käytämme kryptografisesti turvallista Web Crypto API:n satunnaislukugeneraattoria, joka täyttää kryptografiset standardit ennustamattomuudesta. Generoituja salasanoja ei koskaan tallenneta, siirretä tai kirjata mihinkään - ne ovat olemassa vain selaimesi muistissa. Salasanojemme entropia (satunnaisuus) ylittää reilusti alan turvallisuusstandardit, mikä tekee niistä käytännössä mahdottomia murtaa brute force -menetelmällä, kun ne on oikein määritetty."
+      },
+      {
+        "question": "Mikä tekee salasanasta todella vahvan ja turvallisen?",
+        "answer": "Vahva salasana yhdistää useita kriittisiä tekijöitä: pituus (vähintään 12 merkkiä, ihanteellisesti 16+), merkkien monipuolisuus (sekoitus isoja kirjaimia, pieniä kirjaimia, numeroita ja erikoismerkkejä), ennustamattomuus (vältä sanakirjasanoja, henkilökohtaisia tietoja tai kaavoja) ja ainutlaatuisuus (älä koskaan käytä samaa salasanaa eri tileillä). Salasanan matemaattinen vahvuus mitataan entropiabitteinä - 16 merkin sekalainen salasanamme tarjoaa yli 95 bittiä entropiaa, jonka murtamiseen nykyteknologialla menisi miljardeja vuosia. Katso <a href='https://www.nist.gov/itl/applied-cybersecurity/iad/list-terms/password' target='_blank' rel='noopener'>NIST:n salasanaohjeista</a> täydelliset turvallisuussuositukset."
+      },
+      {
+        "question": "Voinko mukauttaa salasanan luontiasetuksia erityisvaatimuksia varten?",
+        "answer": "Ehdottomasti! Salasanageneraattorimme tarjoaa kattavat mukautusmahdollisuudet erilaisten turvallisuuskäytäntöjen ja järjestelmävaatimusten täyttämiseksi. Voit säätää salasanan pituutta 4:stä 128 merkkiin ja itsenäisesti ottaa käyttöön/poistaa käytöstä isojen kirjainten, pienten kirjainten, numeroiden ja erikoismerkkien käytön. Joillakin järjestelmillä on rajoituksia tietyille erikoismerkeille - voit sulkea pois ongelmallisia merkkejä säilyttäen silti turvallisuuden. Työkalu tarjoaa myös reaaliaikaisen entropialaskennan, joten näet tarkalleen, kuinka vahva mukautettu salasanasi tulee olemaan."
+      },
+      {
+        "question": "Miten minun pitäisi tallentaa ja hallita generoituja salasanoja?",
+        "answer": "Älä koskaan kirjoita salasanoja muistiin tai tallenna niitä salaamattomiin tekstitiedostoihin. Käytä sen sijaan luotettavaa salasanojen hallintaohjelmaa kuten Bitwarden, 1Password tai LastPass tallentaaksesi ja järjestääksesi salasanasi turvallisesti. Salasanojen hallintaohjelmat salaavat salasanasi pääsalasanallasi ja voivat täyttää ne automaattisesti verkkosivustoilla. Ne auttavat myös tunnistamaan heikkoja, uudelleenkäytettyjä tai vaarantuneita salasanoja tileissäsi. Arkaluontoisia yritystilejä varten harkitse yritystason salasanojen hallintaratkaisuja, joissa on lisäturvallisuusominaisuuksia kuten auditointijäljet ja tiimien käyttöoikeudet."
+      },
+      {
+        "question": "Mitkä ovat uusimmat salasanaturvallisuuden parhaat käytännöt?",
+        "answer": "Nykyaikainen salasanaturvallisuus korostaa: ainutlaatuisten satunnaisesti generoitujen salasanojen käyttöä jokaiselle tilille, kaksivaiheisen tunnistautumisen (2FA) käyttöönottoa mahdollisuuksien mukaan, salasanojen hallintaohjelman käyttöä monimutkaisten salasanojen luomiseen ja tallentamiseen, kriittisten tilien salasanojen säännöllistä päivittämistä, tietovuotojen seurantaa palveluiden kuten Have I Been Pwned kautta ja salasanalauseiden harkitsemista vaihtoehtona muistettaville salasanoille (esim. 'correct-horse-battery-staple'). Lyhyiden mutta monimutkaisten salasanojen aika on ohi - pituus ja ainutlaatuisuus ovat tärkeämpiä kuin monimutkaisuus. Pysy ajan tasalla turvallisuuden parhaista käytännöistä <a href='https://www.cisa.gov/secure-our-world/use-strong-passwords' target='_blank' rel='noopener'>CISAn kyberturvallisuusoppaan</a> avulla."
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "URL-koodaaja/dekoodaaja – Muunna erikoismerkit verkkokäyttöön",
+    "description": "Koodaa URL-osoitteet turvallista siirtoa varten tai dekoodaa URL-koodatut merkkijonot. Välttämätön web-kehittäjille, jotka työskentelevät kyselyparametrien ja erikoismerkkien parissa.",
+    "category": "development",
+    "keywords": [
+      "url-koodaaja",
+      "url-dekoodaaja",
+      "prosenttikoodaus",
+      "uri-koodaus",
+      "uri-dekoodaus",
+      "web-kehitys",
+      "erikoismerkkien koodaus",
+      "url-parametrien dekoodaus",
+      "url-koodaustyökalu",
+      "kyselymerkkijonon koodaaja"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on URL-koodaus ja miksi se on tarpeellista?",
+        "answer": "URL-koodaus (tunnetaan myös nimellä prosenttikoodaus) on mekanismi, jolla esitetään merkkejä URL-osoitteissa, jotka ovat joko turvattomia, varattuja tai ei-ASCII-merkkejä. URL-osoitteet voivat turvallisesti sisältää vain rajoitetun joukon merkkejä (kirjaimia, numeroita ja joitakin symboleja). Kun haluat sisällyttää välilyöntejä, erikoismerkkejä tai ei-englanninkielistä tekstiä URL-osoitteeseen, nämä on koodattava. Esimerkiksi välilyönnistä tulee '%20' ja '&'-merkistä tulee '%26'. Tämä varmistaa, että URL-osoitteet siirtyvät oikein eri järjestelmien ja selainten välillä. Ilman asianmukaista koodausta erikoismerkkejä sisältävät URL-osoitteet rikkoutuvat tai tulkitaan väärin. Lue lisää URL-koodauksesta <a href='https://tools.ietf.org/html/rfc3986' target='_blank' rel='noopener'>RFC 3986 -määrittelystä</a>."
+      },
+      {
+        "question": "Milloin minun pitäisi käyttää URL-koodausta web-kehityksessä?",
+        "answer": "URL-koodaus on välttämätöntä useissa skenaarioissa: välilyöntejä tai erikoismerkkejä sisältävien kyselyparametrien koodaamisessa (kuten hakumerkkijonot), lomakkeen tietojen valmistelussa GET-pyyntöjen lähettämistä varten, ei-ASCII-merkkejä sisältävien tiedostonimien koodaamisessa URL-osoitteissa, dynaamisten URL-osoitteiden ohjelmallisessa rakentamisessa käyttäjän syötteillä, muuttuvaa dataa sisältävien API-päätepisteiden koodaamisessa ja kansainvälistämisen käsittelyssä, jossa URL-osoitteet sisältävät ei-englanninkielisiä merkkejä. Useimmat ohjelmointikielet tarjoavat sisäänrakennettuja URL-koodausfunktioita - käytä näitä, kun rakennat dynaamisesti URL-osoitteita muuttuvalla sisällöllä."
+      },
+      {
+        "question": "Mikä on URL-koodauksen ja HTML-entiteettikoodauksen välinen ero?",
+        "answer": "URL-koodaus ja HTML-entiteettikoodaus palvelevat eri tarkoituksia ja käyttävät eri muotoja. URL-koodaus käyttää prosenttimerkkiä, jota seuraa heksadesimaaliarvo (%20 välilyönnille), kun taas HTML-entiteetit käyttävät et-merkkiä ja puolipistettä (&lt; merkille <). URL-koodausta käytetään erityisesti URL-osoitteisiin ja lomakkeen tietojen siirtoon, kun taas HTML-entiteettejä käytetään HTML-sisällössä erikoismerkkien turvalliseen näyttämiseen. Tämän eron ymmärtäminen on ratkaisevan tärkeää web-kehittäjille - väärän koodausmenetelmän käyttö voi johtaa tietoturva-aukkoihin tai virheelliseen toiminnallisuuteen."
+      },
+      {
+        "question": "Onko tämä URL-koodaaja/dekoodaaja turvallinen arkaluontoiselle datalle?",
+        "answer": "Kyllä, URL-koodaajamme/dekoodaajamme on täysin turvallinen arkaluontoiselle datalle. Kaikki koodaus- ja dekoodaustoimenpiteet suoritetaan paikallisesti selaimessasi JavaScriptin avulla - mitään tietoja ei lähetetä palvelimillemme tai ulkoisille palveluille. Voit vahvistaa tämän tarkastelemalla selaimesi verkkovälilehteä käytön aikana. Muista kuitenkin, että URL-koodaus ei ole salausta, vaan vain muodon muunnos. URL-koodatut merkkijonot voidaan helposti lukea kenen tahansa toimesta, joten älä koskaan luota URL-koodaukseen turvallisuustarkoituksissa."
+      },
+      {
+        "question": "Miten työskennellään URL-koodauksen kanssa eri ohjelmointikielissä?",
+        "answer": "Jokainen suurempi ohjelmointikieli tarjoaa sisäänrakennettuja URL-koodausfunktioita. JavaScriptissä käytät <code>encodeURIComponent()</code> ja <code>decodeURIComponent()</code>. Python tarjoaa <code>urllib.parse.quote()</code> ja <code>urllib.parse.unquote()</code>. PHP:lla on <code>urlencode()</code> ja <code>urldecode()</code>. Java tarjoaa <code>URLEncoder.encode()</code> ja <code>URLDecoder.decode()</code>. Käytä aina näitä sisäänrakennettuja funktioita manuaalisen koodauksen sijaan varmistaaksesi erikoistapausten ja merkistöjen oikean käsittelyn. Katso <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent' target='_blank' rel='noopener'>MDN-dokumentaatio URL-koodauksesta</a> täydellisiä esimerkkejä varten."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Base64-koodaaja/dekoodaaja – Muunna tekstiä ja binääridataa",
+    "description": "Muunna tekstiä tai binääridataa Base64-muotoon ja takaisin. Ihanteellinen kuvien upottamiseen CSS/HTML:ään, tiedonsiirtoon ja binääridatan tallentamiseen tekstimuodossa.",
+    "category": "development",
+    "keywords": [
+      "base64-koodaaja",
+      "base64-dekoodaaja",
+      "teksti base64-muotoon",
+      "base64 tekstiksi",
+      "base64-muunnin",
+      "binääridata base64-muotoon",
+      "kuva base64-muotoon",
+      "base64-merkkijono",
+      "verkossa toimiva base64-työkalu"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on Base64-koodaus ja mihin sitä käytetään?",
+        "answer": "Base64 on koodausjärjestelmä, joka muuntaa binääridatan ASCII-merkkien joukoksi, joka voidaan siirtää turvallisesti tekstijärjestelmien kautta. Sitä käytetään usein: binääridatan (kuten kuvien) upottamiseen HTML:ään tai CSS:ään, binääridatan tallentamiseen JSON-muodossa, liitteiden koodaamiseen sähköpostiprotokollissa, tietojen siirtämiseen API:en kautta, jotka tukevat vain tekstiä, ja binääridatan tallentamiseen tietokantoihin, joissa ei ole binäärityyppejä. Base64 käyttää 64 tulostettavaa ASCII-merkkiä (A-Z, a-z, 0-9, + ja /) ja yhtäläisyysmerkkiä (=) täytteenä. On tärkeää huomata, että Base64 ei ole salausta, se ei tarjoa turvallisuutta, vain yhteensopivuutta eri järjestelmien välillä."
+      },
+      {
+        "question": "Miten Base64-koodaus toimii teknisesti?",
+        "answer": "Base64-koodaus muuntaa 3 tavua (24 bittiä) binääridataa 4 Base64-merkiksi (6 bittiä per merkki). Prosessi sisältää: binääridatan ryhmittelyn 3 tavun lohkoihin, jokaisen lohkon muuntamisen 4 kuusibittiseksi luvuksi, jokaisen kuusibittisen luvun kartoittamisen Base64-merkiksi 64 merkin aakkostosta. Jos syöte ei ole jaollinen 3:lla, lisätään täytettä '=' -merkillä. Tämä johtaa noin 33% koon kasvuun verrattuna alkuperäiseen dataan, mikä on kompromissi paremman yhteensopivuuden vuoksi. Katso <a href='https://datatracker.ietf.org/doc/html/rfc4648' target='_blank' rel='noopener'>RFC 4648</a> yksityiskohtaista teknistä selitystä varten."
+      },
+      {
+        "question": "Onko Base64 turvallinen arkaluontoiselle datalle tai salasanoille?",
+        "answer": "Ei, Base64 EI OLE salausta ja se ei tarjoa minkäänlaista turvallisuutta. Se on vain koodaus, joka voidaan helposti kääntää takaisin. Kuka tahansa, jolla on pääsy Base64-koodattuun dataan, voi välittömästi dekoodata sen. Älä koskaan käytä Base64:ää menetelmänä arkaluontoisten tietojen, salasanojen tai henkilökohtaisten tietojen suojaamiseen. Turvallisuustarkoituksiin sinun tulisi käyttää asianmukaisia salausalgoritmeja ja turvallisuuskäytäntöjä. Base64 on tarkoitettu yksinomaan tietojen yhteensopivuuteen, ei tietoturvaan. Jos tarvitset suojata arkaluontoisia tietoja, katso resursseja kuten <a href='https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html' target='_blank' rel='noopener'>OWASP:n turvallisuusohjeita</a>."
+      },
+      {
+        "question": "Miten voin käyttää Base64:ää web-kehityksessä?",
+        "answer": "Base64:llä on useita käytännön sovelluksia web-kehityksessä: pienten kuvien upottaminen suoraan HTML/CSS:ään data URI:na HTTP-pyyntöjen vähentämiseksi, binääridatan koodaaminen siirtoa varten JSON API:eissa, binääridatan tallentaminen localStorageen tai IndexedDB:hen, yksinkertaisten tiedostolatausten toteuttaminen ilman palvelinpyyntöjä, ei-ASCII-datan siirtäminen URL-parametreissa ja Canvas-elementtien ja niiden toDataURL()-metodin kanssa työskentely. Web-kehittäjien on tärkeää tietää, että Base64-koodattu data on noin 33% suurempaa kuin sen binäärivastine, mikä tulisi ottaa huomioon päätettäessä, milloin sitä käytetään."
+      },
+      {
+        "question": "Miten Base64:ää käytetään eri ohjelmointikielissä?",
+        "answer": "Useimmat ohjelmointikielet tarjoavat sisäänrakennettuja Base64-funktioita. JavaScriptissä käytät <code>btoa()</code> koodaamiseen ja <code>atob()</code> ASCII-merkkijonojen dekoodaamiseen, tai modernimpia <code>TextEncoder</code> ja <code>TextDecoder</code> <code>Uint8Array</code>:n kanssa Unicodelle. Python tarjoaa <code>base64</code>-moduulin. PHP:lla on <code>base64_encode()</code> ja <code>base64_decode()</code>. Java tarjoaa <code>Base64.getEncoder()</code> ja <code>Base64.getDecoder()</code>. Unicode-tekstille ja binääridatalle on usein erityisiä huomioita - katso aina kielesi dokumentaatiosta parhaat käytännöt ja esimerkit, kuten <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN-opas Base64:stä</a>."
+      }
+    ]
+  }
+]

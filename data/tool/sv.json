@@ -1,0 +1,237 @@
+[
+  {
+    "slug": "uuid-generator",
+    "name": "UUID Generator – Skapa unika identifierare online",
+    "description": "Generera slumpmässiga UUID/GUID identifierare för dina applikationer, databaser och system. Skapa unika eller bulk UUID:er med detta kostnadsfria onlineverktyg.",
+    "category": "development",
+    "keywords": [
+      "uuid generator",
+      "skapa uuid",
+      "uuid v4 online",
+      "guid generator",
+      "uuid skapande",
+      "slumpmässig uuid",
+      "bulk uuid generator",
+      "uuid för databas",
+      "unik identifierare generator"
+    ],
+    "faq": [
+      {
+        "question": "Vad är en UUID och varför behöver jag det?",
+        "answer": "En UUID (Universally Unique Identifier) är en 128-bitars identifierare som garanteras vara unik över alla system och tid. UUID:er är essentiella för modern mjukvaruutveckling eftersom de skapar unika identifierare utan behov av en central auktoritet eller databas. De används ofta för primärnycklar i databaser, API-förfrågningsidentifierare, sessionstoken och identifierare i distribuerade system. Läs mer om UUID:er i <a href='https://tools.ietf.org/html/rfc4122' target='_blank' rel='noopener'>RFC 4122-specifikationen</a>."
+      },
+      {
+        "question": "Vad är en version 4 UUID och hur skiljer den sig från andra versioner?",
+        "answer": "Version 4 UUID är den mest använda varianten, genererad med hjälp av slumpmässiga eller pseudoslumpmässiga tal. Till skillnad från andra versioner som inkluderar MAC-adresser (v1) eller namnrymd-hashning (v3/v5), ger UUID v4 maximal integritet och säkerhet eftersom den inte innehåller identifierbar information om det genererande systemet. Sannolikheten att skapa duplicerade UUID v4:or är så låg (1 av 5,3 x 10^36) att det är försumbart för praktiska ändamål. Se <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)' target='_blank' rel='noopener'>Wikipedia-artikeln om UUID v4</a> för mer information."
+      },
+      {
+        "question": "Är detta UUID-generatorverktyg säkert och privat?",
+        "answer": "Ja, vår UUID-generator är helt säker och privat. Alla UUID:er genereras lokalt i din webbläsare med hjälp av den kryptografiskt säkra Web Crypto API slumptalsgeneratorn. Ingen data skickas till våra servrar eller tredje parter. De genererade UUID:erna uppfyller slumpmässighetskraven som specificeras i RFC 4122 och är lämpliga för säkerhetskänsliga applikationer. Du kan verifiera detta genom att titta på nätverksfliken i din webbläsare - inga förfrågningar görs när UUID:er genereras."
+      },
+      {
+        "question": "Kan jag använda dessa UUID:er för kommersiella applikationer och databaser?",
+        "answer": "Absolut! UUID:er genererade av detta verktyg är produktionsklara och lämpliga för all kommersiell eller personlig användning. De är idealiska för databas-primärnycklar, API-identifierare, filnamn, sessions-ID:n och alla scenarier där du behöver garanterat unika identifierare. Stora företag som Google, Amazon och Microsoft använder UUID:er omfattande i sina system. Till skillnad från sekventiella ID:n avslöjar UUID:er inte information om skalan eller timingen av ditt system, vilket gör dem idealiska för offentligt tillgängliga applikationer."
+      },
+      {
+        "question": "Hur använder jag UUID:er i olika programmeringsspråk?",
+        "answer": "UUID:er stöds av praktiskt taget alla programmeringsspråk, antingen inbyggt eller via bibliotek. I JavaScript använder du <code>crypto.randomUUID()</code>; i Python använder du <code>uuid</code>-modulen; i Java använder du <code>java.util.UUID</code>; i C# använder du <code>System.Guid</code>. De flesta databaser har också inbyggt UUID-stöd - PostgreSQL har en UUID-typ, MySQL stöder UUID:er som CHAR(36), och MongoDB använder UUID:er för dokument-ID:n. Se <a href='https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID' target='_blank' rel='noopener'>MDN Web Crypto-dokumentationen</a> för specifika implementeringsriktlinjer."
+      }
+    ]
+  },
+  {
+    "slug": "timestamp-converter",
+    "name": "Tidsstämpelkonverterare – Unix-tid till läsbart datum",
+    "description": "Konvertera mellan Unix-tidsstämplar och läsbara datum med tidszonsstöd. Perfekt för utvecklare som arbetar med API:er, loggar och databastidsstämplar.",
+    "category": "development",
+    "keywords": [
+      "unix tidsstämpel konverterare",
+      "epoch till datum",
+      "tidsstämpel till datetime",
+      "konvertera unix-tid",
+      "millisekunder till datum",
+      "läsbar tidsstämpel",
+      "datum till unix-tid",
+      "online tidsstämpel konverterare",
+      "tidszon konverterare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är en Unix-tidsstämpel och varför används den?",
+        "answer": "En Unix-tidsstämpel (även känd som Unix-tid eller epoch) är antalet sekunder som har gått sedan 1 januari 1970, 00:00:00 UTC (Unix-epoken). Det är en standardiserad tidsrepresentation som används universellt i datasystem eftersom den är tidszons-oberoende, kompakt och lätt att beräkna. Unix-tidsstämplar är essentiella för databaser, API:er, loggfiler och alla system som behöver lagra eller överföra tidsdata pålitligt. Läs mer om epoch-tid i <a href='https://en.wikipedia.org/wiki/Unix_time' target='_blank' rel='noopener'>Wikipedia-artikeln</a>."
+      },
+      {
+        "question": "Kan jag konvertera mellan olika tidsstämpelformat och tidszoner?",
+        "answer": "Ja! Vår tidsstämpelkonverterare stöder tvåvägskonvertering mellan Unix-tidsstämplar och mänskligt läsbara datum. Du kan konvertera Unix-tidsstämplar till läsbara datum i vilken tidszon som helst, eller konvertera datum till Unix-tidsstämplar. Verktyget hanterar automatiskt tidszonskonverteringar, sommartidsjusteringar och olika datumformat. Detta är särskilt användbart för utvecklare som arbetar med internationella applikationer, logganalys eller systemintegration som använder olika tidsrepresentationer."
+      },
+      {
+        "question": "Vad är skillnaden mellan tidsstämplar i sekunder och millisekunder?",
+        "answer": "Unix-tidsstämplar kan uttryckas i sekunder (10 siffror) eller millisekunder (13 siffror). Traditionella Unix-system använder sekunder sedan epokens början, medan moderna programmeringsspråk som JavaScript ofta använder millisekunder för större precision. Till exempel är tidsstämpeln 1640995200 (sekunder) ekvivalent med 1640995200000 (millisekunder) - båda representerar 1 januari 2022. Vårt verktyg upptäcker och konverterar automatiskt båda formaten. Att förstå denna skillnad är avgörande när man arbetar med olika programmeringsspråk och API:er."
+      },
+      {
+        "question": "Hur arbetar man med tidsstämplar i olika programmeringsspråk?",
+        "answer": "Varje programmeringsspråk har inbyggt stöd för Unix-tidsstämplar. I JavaScript använder du <code>Date.now()</code> för aktuell tidsstämpel eller <code>new Date(timestamp)</code> för konvertering. Python erbjuder <code>time.time()</code> och <code>datetime.fromtimestamp()</code>. PHP använder <code>time()</code> och <code>date()</code>-funktioner. Se <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date' target='_blank' rel='noopener'>MDN Date-dokumentationen</a> eller den officiella dokumentationen för ditt språk för detaljerade exempel och bästa praxis."
+      },
+      {
+        "question": "Vilka är vanliga användningsområden för tidsstämpelkonvertering?",
+        "answer": "Tidsstämpelkonvertering är essentiellt för: analys av serverloggar och felsökning av problem, synkronisering av data mellan olika system och databaser, byggande av API:er som betjänar internationella användare, konvertering av data från äldre system, schemaläggning av uppgifter och händelser, och forensiska analyser av systemåtgärder. Utvecklare behöver detta ofta vid databasmigrationer, integration av tredjepartstjänster, eller felsökning av tidszons-relaterade problem i applikationer."
+      }
+    ]
+  },
+  {
+    "slug": "whats-my-ip",
+    "name": "Vad är min IP – Kontrollera din offentliga IP-adress och plats",
+    "description": "Se omedelbart din offentliga IPv4/IPv6-adress, geolokalisering, internetleverantör och anslutningsdetaljer. Användbart för nätverksfelsökning och VPN-verifiering.",
+    "category": "security",
+    "keywords": [
+      "ip-adress kontroll",
+      "hitta min ip",
+      "offentlig ip",
+      "vad är min ip",
+      "ip-uppslag",
+      "min ip-adress",
+      "ip-geolokalisering",
+      "ip-plats kontroll",
+      "ip-adress sökare"
+    ],
+    "faq": [
+      {
+        "question": "Vilken information ger detta IP-kontrollverktyg?",
+        "answer": "Vår IP-kontroll visar omfattande information om din offentliga IP-adress, inklusive: din nuvarande offentliga IPv4- eller IPv6-adress, din ungefärliga geografiska plats (stad, region, land), namnet på din internetleverantör (ISP), organisationsinformation, tidszonsdata, och om du använder en proxy eller VPN. Denna information samlas från offentligt tillgängliga IP-geolokaliseringsdatabaser och komprometterar inte din integritet mer än vad som redan är synligt för webbplatser du besöker."
+      },
+      {
+        "question": "Vad är skillnaden mellan min offentliga och privata IP-adress?",
+        "answer": "Din privata IP-adress (som 192.168.1.100 eller 10.0.0.5) tilldelas av din router för kommunikation inom ditt lokala nätverk och är inte synlig på internet. Din offentliga IP-adress tilldelas av din internetleverantör och representerar din anslutning till det bredare internet - detta är vad webbplatser ser när du besöker dem. Tänk på din offentliga IP som adressen till din byggnad, medan din privata IP är lägenhetsnumret. Att förstå denna skillnad är avgörande för nätverksfelsökning och säkerhet. Läs mer om IP-adressering på <a href='https://en.wikipedia.org/wiki/IP_address' target='_blank' rel='noopener'>Wikipedia</a>."
+      },
+      {
+        "question": "Är min integritet skyddad när jag använder detta IP-kontrollverktyg?",
+        "answer": "Ja, din integritet är fullständigt skyddad. Detta verktyg visar endast information som redan är offentligt tillgänglig för alla webbplatser du besöker. Vi lagrar inte, loggar inte, och delar inte din IP-adress eller relaterad information med tredje parter. Uppslaget utförs i realtid, och ingen data behålls. Var dock medveten om att din IP-adress i sig avslöjar ungefärlig plats och ISP-information till alla webbplatser du besöker - detta är hur internet fungerar fundamentalt."
+      },
+      {
+        "question": "Varför kan min IP-adress ändras och hur ofta händer detta?",
+        "answer": "De flesta heminternetanslutningar använder dynamiska IP-adresser, vilket betyder att din internetleverantör kan ändra din IP-adress periodiskt - vanligtvis var några dagar eller veckor, eller när du startar om modemet. Företagsanslutningar har ofta statiska IP-adresser som inte ändras. Din IP kommer också att ändras när du: ansluter till ett annat nätverk (som att byta från hemma-wifi till mobildata), använder en VPN-tjänst, eller reser till en annan plats. Att förstå IP-adressbeteende är viktigt för att ställa in fjärråtkomst och säkerhetskonfigurationer."
+      },
+      {
+        "question": "Hur kan jag använda IP-adressinformation för felsökning?",
+        "answer": "IP-adressinformation är värdefull för nätverksfelsökning: kontrollera VPN-funktionalitet genom att bekräfta att din plats visas annorlunda, diagnostisera anslutningsproblem genom att bekräfta din ISP och plats, konfigurera fjärråtkomst genom att känna till din offentliga IP för port-vidarebefordran, identifiera nätverksproblem genom att spåra IP-ändringar, och förbättra säkerheten genom att känna igen obehöriga åtkomstförsök. För avancerade nätverkskoncept, se resurser som <a href='https://www.cloudflare.com/learning/network-layer/what-is-an-ip-address/' target='_blank' rel='noopener'>Cloudflares nätverksguider</a>."
+      }
+    ]
+  },
+  {
+    "slug": "password-generator",
+    "name": "Lösenordsgenerator – Skapa starka och säkra lösenord online",
+    "description": "Generera kryptografiskt säkra lösenord med anpassningsbar längd och teckenuppsättning. Skapa starka och slumpmässiga lösenord för maximal kontosäkerhet.",
+    "category": "security",
+    "keywords": [
+      "lösenordsgenerator",
+      "säkert lösenord",
+      "slumpmässigt lösenord",
+      "starkt lösenord",
+      "lösenordsförvaring",
+      "skapa säkert lösenord",
+      "lösenordsgenerering verktyg",
+      "komplex lösenordsgenerator",
+      "online lösenordsförvaring"
+    ],
+    "faq": [
+      {
+        "question": "Hur säkra är lösenorden som genereras av detta verktyg?",
+        "answer": "Lösenord genererade av vårt verktyg är kryptografiskt säkra och lämpliga för att säkra känsliga konton. Vi använder den kryptografiskt säkra Web Crypto API slumptalsgeneratorn, som uppfyller kryptografiska standarder för oförutsägbarhet. Genererade lösenord lagras aldrig, överförs aldrig, eller loggas någonstans - de existerar endast i webbläsarens minne. Entropin (slumpmässigheten) i våra lösenord överträffar långt industristandard säkerhetsnormer, vilket gör dem praktiskt taget omöjliga att knäcka via brute force när de är korrekt konfigurerade."
+      },
+      {
+        "question": "Vad gör ett lösenord verkligt starkt och säkert?",
+        "answer": "Ett starkt lösenord kombinerar flera kritiska faktorer: längd (minimum 12 tecken, idealt 16+), teckenmångfald (en blandning av stora bokstäver, små bokstäver, siffror och specialtecken), oförutsägbarhet (undvik ordlistord, personlig information eller mönster), och unikhet (återanvänd aldrig lösenord mellan konton). Den matematiska styrkan hos ett lösenord mäts i bits entropi - våra 16-teckens blandade lösenord ger mer än 95 bits entropi, vilket skulle ta miljarder år att knäcka med modern teknologi. Se <a href='https://www.nist.gov/itl/applied-cybersecurity/iad/list-terms/password' target='_blank' rel='noopener'>NIST lösenordsriktlinjer</a> för fullständiga säkerhetsrekommendationer."
+      },
+      {
+        "question": "Kan jag anpassa lösenordsgenererings-inställningarna för specifika krav?",
+        "answer": "Absolut! Vår lösenordsgenerator erbjuder omfattande anpassning för att möta olika säkerhetspolicyer och systemkrav. Du kan justera lösenordslängden från 4 till 128 tecken, och oberoende aktivera/inaktivera användning av stora bokstäver, små bokstäver, siffror och specialtecken. Vissa system har begränsningar på vissa specialtecken - du kan exkludera problematiska tecken medan du upprätthåller säkerheten. Verktyget ger också realtids entropiberäkning, så att du kan se exakt hur starkt ditt anpassade lösenord kommer att vara."
+      },
+      {
+        "question": "Hur bör jag lagra och hantera genererade lösenord?",
+        "answer": "Skriv aldrig ner lösenord eller lagra dem i okrypterade textfiler. Använd istället en pålitlig lösenordshanterare som Bitwarden, 1Password eller LastPass för att lagra och organisera dina lösenord säkert. Lösenordshanterare krypterar dina lösenord med ditt huvudlösenord och kan fylla i dem automatiskt på webbplatser. De hjälper också till att identifiera svaga, återanvända eller komprometterade lösenord i dina konton. För känsliga företagskonton, överväg företagslösenordshanteringslösningar med extra säkerhetsfunktioner som revisionsloggar och teamåtkomst."
+      },
+      {
+        "question": "Vilka är de senaste bästa metoderna för lösenordssäkerhet?",
+        "answer": "Modern lösenordssäkerhet betonar: användning av unika slumpmässigt genererade lösenord för varje konto, aktivering av tvåfaktorsautentisering (2FA) där det är möjligt, användning av en lösenordshanterare för att generera och lagra komplexa lösenord, regelbunden uppdatering av lösenord för kritiska konton, övervakning av dataintrång via tjänster som Have I Been Pwned, och övervägande av lösenordsfraser som ett alternativ för minnesvärda lösenord (t.ex. 'correct-horse-battery-staple'). Tiden för korta men komplexa lösenord är förbi - längd och unikhet är viktigare än komplexitet. Håll dig uppdaterad om säkerhetsbästa praxis via <a href='https://www.cisa.gov/secure-our-world/use-strong-passwords' target='_blank' rel='noopener'>CISAs cybersäkerhetsguide</a>."
+      }
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "URL-kodare/avkodare – Konvertera specialtecken för webbanvändning",
+    "description": "Koda URL:er för säker överföring eller avkoda URL-kodade strängar. Essentiellt för webbutvecklare som arbetar med frågeparametrar och specialtecken.",
+    "category": "development",
+    "keywords": [
+      "url-kodare",
+      "url-avkodare",
+      "procentkodning",
+      "uri-kodning",
+      "uri-avkodning",
+      "webbutveckling",
+      "kodning av specialtecken",
+      "avkodning av url-parametrar",
+      "url-kodningsverktyg",
+      "frågesträng-kodare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är URL-kodning och varför är det nödvändigt?",
+        "answer": "URL-kodning (även känd som procentkodning) är en mekanism för att representera tecken i URL:er som antingen är osäkra, reserverade eller icke-ASCII. URL:er kan säkert bara innehålla en begränsad uppsättning tecken (bokstäver, siffror och vissa symboler). När du behöver inkludera mellanslag, specialtecken eller icke-engelsk text i en URL, måste dessa kodas. Till exempel blir ett mellanslag '%20' och '&' blir '%26'. Detta säkerställer att URL:er överförs korrekt genom olika system och webbläsare. Utan korrekt kodning kommer URL:er med specialtecken att brytas eller misstolkas. Läs mer om URL-kodning i <a href='https://tools.ietf.org/html/rfc3986' target='_blank' rel='noopener'>RFC 3986-specifikationen</a>."
+      },
+      {
+        "question": "När bör jag använda URL-kodning i webbutveckling?",
+        "answer": "URL-kodning är nödvändigt i flera scenarier: kodning av frågeparametrar som innehåller mellanslag eller specialtecken (som söksträngar), förberedelse av formulärdata för sändning via GET-förfrågningar, kodning av filnamn i URL:er som innehåller icke-ASCII-tecken, programmatisk byggande av dynamiska URL:er med användarindata, kodning av API-slutpunkter som innehåller variabel data, och hantering av internationalisering där URL:er innehåller icke-engelska tecken. De flesta programmeringsspråk erbjuder inbyggda URL-kodningsfunktioner - använd dessa när du dynamiskt bygger URL:er med variabelt innehåll."
+      },
+      {
+        "question": "Vad är skillnaden mellan URL-kodning och HTML-entitetskodning?",
+        "answer": "URL-kodning och HTML-entitetskodning tjänar olika syften och använder olika format. URL-kodning använder procenttecken följt av hexadecimala värden (%20 för ett mellanslag), medan HTML-entiteter använder ampersand och semikolon (&lt; för <). URL-kodning används specifikt för URL:er och formulärdataöverföring, medan HTML-entiteter används i HTML-innehåll för att visa specialtecken säkert. Att förstå denna skillnad är avgörande för webbutvecklare - användning av fel kodningsmetod kan leda till säkerhetssårbarheter eller defekt funktionalitet."
+      },
+      {
+        "question": "Är denna URL-kodare/avkodare säker för känslig data?",
+        "answer": "Ja, vår URL-kodare/avkodare är helt säker för känslig data. Alla kodnings- och avkodningsoperationer utförs lokalt i din webbläsare med hjälp av JavaScript - ingen data skickas till våra servrar eller externa tjänster. Du kan verifiera detta genom att titta på nätverksfliken i din webbläsare under användning. Kom ihåg dock att URL-kodning inte är kryptering, utan bara en formattransformation. URL-kodade strängar kan lätt läsas av vem som helst, så förlita dig aldrig på URL-kodning för säkerhetsändamål."
+      },
+      {
+        "question": "Hur arbetar man med URL-kodning i olika programmeringsspråk?",
+        "answer": "Varje större programmeringsspråk erbjuder inbyggda URL-kodningsfunktioner. I JavaScript använder du <code>encodeURIComponent()</code> och <code>decodeURIComponent()</code>. Python erbjuder <code>urllib.parse.quote()</code> och <code>urllib.parse.unquote()</code>. PHP har <code>urlencode()</code> och <code>urldecode()</code>. Java erbjuder <code>URLEncoder.encode()</code> och <code>URLDecoder.decode()</code>. Använd alltid dessa inbyggda funktioner istället för manuell kodning för att säkerställa korrekt hantering av kantfall och teckenuppsättningar. Se <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent' target='_blank' rel='noopener'>MDN-dokumentation om URL-kodning</a> för fullständiga exempel."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder-decoder",
+    "name": "Base64 Kodare/Avkodare – Konvertera text och binär data",
+    "description": "Konvertera text eller binär data till Base64-format och tillbaka. Perfekt för inbäddning av bilder i CSS/HTML, dataöverföring och lagring av binär data i textformat.",
+    "category": "development",
+    "keywords": [
+      "base64 kodare",
+      "base64 avkodare",
+      "text till base64",
+      "base64 till text",
+      "base64 konverterare",
+      "binär data till base64",
+      "bild till base64",
+      "base64 sträng",
+      "online base64 verktyg"
+    ],
+    "faq": [
+      {
+        "question": "Vad är Base64-kodning och vad används det till?",
+        "answer": "Base64 är ett kodningsschema som konverterar binär data till en uppsättning ASCII-tecken som kan överföras säkert genom textsystem. Det används ofta för: inbäddning av binär data (som bilder) i HTML eller CSS, lagring av binär data i JSON, kodning av bilagor i e-postprotokoll, överföring av data via API:er som bara stöder text, och lagring av binär data i databaser utan binära typer. Base64 använder 64 skrivbara ASCII-tecken (A-Z, a-z, 0-9, + och /) och likhetstecknet (=) för utfyllnad. Det är viktigt att notera att Base64 inte är kryptering, det ger ingen säkerhet, bara kompatibilitet mellan olika system."
+      },
+      {
+        "question": "Hur fungerar Base64-kodning tekniskt sett?",
+        "answer": "Base64-kodning konverterar 3 bytes (24 bitar) binär data till 4 Base64-tecken (6 bitar per tecken). Processen inkluderar: gruppering av binär data i block på 3 bytes, konvertering av varje block till 4 sex-bitars tal, mappning av varje sex-bitars tal till ett Base64-tecken från 64-teckens alfabetet. Om indata inte är delbart med 3, läggs utfyllnad till med '=' tecknet. Detta resulterar i en storleksökning på ungefär 33% jämfört med den ursprungliga datan, vilket är en kompromiss för förbättrad kompatibilitet. Se <a href='https://datatracker.ietf.org/doc/html/rfc4648' target='_blank' rel='noopener'>RFC 4648</a> för en detaljerad teknisk förklaring."
+      },
+      {
+        "question": "Är Base64 säkert för känslig data eller lösenord?",
+        "answer": "Nej, Base64 är INTE kryptering och ger absolut ingen säkerhet. Det är bara en kodning som lätt kan reverseras. Alla med tillgång till Base64-kodad data kan omedelbart avkoda den. Använd aldrig Base64 som en metod för att skydda känslig information, lösenord eller personliga data. För säkerhetsändamål bör du använda lämpliga krypteringsalgoritmer och säkerhetspraxis. Base64 är uteslutande avsett för datakompatibilitet, inte datasäkerhet. Om du behöver skydda känslig data, se resurser som <a href='https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html' target='_blank' rel='noopener'>OWASP säkerhetsriktlinjer</a>."
+      },
+      {
+        "question": "Hur kan jag använda Base64 i webbutveckling?",
+        "answer": "Base64 har flera praktiska tillämpningar i webbutveckling: inbäddning av små bilder direkt i HTML/CSS som data URI:er för att minska HTTP-förfrågningar, kodning av binär data för överföring i JSON API:er, lagring av binär data i localStorage eller IndexedDB, implementering av enkla filuppladdningar utan serverförfrågningar, överföring av icke-ASCII-data i URL-parametrar, och arbete med Canvas-element och deras toDataURL()-metod. För webbutvecklare är det viktigt att veta att Base64-kodad data är ungefär 33% större än deras binära motsvarigheter, vilket bör övervägas när man bestämmer när de ska användas."
+      },
+      {
+        "question": "Hur använder man Base64 i olika programmeringsspråk?",
+        "answer": "De flesta programmeringsspråk erbjuder inbyggda Base64-funktioner. I JavaScript använder du <code>btoa()</code> för kodning och <code>atob()</code> för avkodning av ASCII-strängar, eller de mer moderna <code>TextEncoder</code> och <code>TextDecoder</code> med <code>Uint8Array</code> för Unicode. Python erbjuder <code>base64</code>-modulen. PHP har <code>base64_encode()</code> och <code>base64_decode()</code>. Java erbjuder <code>Base64.getEncoder()</code> och <code>Base64.getDecoder()</code>. För Unicode-text och binär data finns det ofta speciella hänsyn - se alltid dokumentationen för ditt språk för bästa praxis och exempel, som <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN-guiden om Base64</a>."
+      }
+    ]
+  }
+]
