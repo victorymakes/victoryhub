@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Générateur d'Expression Cron – Créer et Décoder les Planifications Cron",
+    "description": "Créez, décodez et comprenez les expressions cron avec des explications lisibles par l'homme dans plusieurs langues. Parfait pour planifier des tâches, des jobs et des processus automatisés.",
+    "category": "development",
+    "keywords": [
+      "générateur cron",
+      "expression cron",
+      "planification cron",
+      "analyseur cron",
+      "décodeur cron",
+      "syntaxe cron",
+      "planificateur de tâches cron",
+      "format cron",
+      "traducteur cron",
+      "constructeur d'expression cron"
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce qu'une expression cron et pourquoi est-elle utilisée ?",
+        "answer": "Une expression cron est une chaîne de caractères qui représente un planning pour des tâches automatisées dans les systèmes d'exploitation de type Unix. Elle se compose de cinq ou six champs qui spécifient quand une tâche doit s'exécuter : minute, heure, jour du mois, mois, jour de la semaine et (facultativement) année. Les expressions cron sont largement utilisées dans les planificateurs de tâches, les pipelines CI/CD, la maintenance des serveurs, le traitement des données et tout système nécessitant une planification de tâches basée sur le temps. Elles fournissent un moyen concis d'exprimer des planifications complexes comme 'chaque jour de la semaine à 15h' ou 'le premier jour de chaque mois à minuit' dans un format standardisé que les ordinateurs peuvent interpréter."
+      },
+      {
+        "question": "Comment lire et comprendre les expressions cron ?",
+        "answer": "Les expressions cron suivent un format spécifique avec 5-6 champs : <code>minute heure jour-du-mois mois jour-de-la-semaine [année]</code>. Chaque champ accepte des valeurs spécifiques ou des caractères spéciaux : minutes (0-59), heures (0-23), jour du mois (1-31), mois (1-12 ou JAN-DEC), jour de la semaine (0-6 ou DIM-SAM), et facultativement l'année. Les caractères spéciaux incluent : astérisque (*) pour 'n'importe quelle valeur', virgule (,) pour les listes de valeurs, trait d'union (-) pour les plages, barre oblique (/) pour les valeurs d'étape, et point d'interrogation (?) pour 'aucune valeur spécifique'. Par exemple, <code>0 12 * * 1-5</code> signifie 'à 12h00, du lundi au vendredi, chaque mois'. Notre outil traduit ces expressions en texte lisible par l'homme pour vous aider à comprendre exactement quand vos tâches planifiées s'exécuteront."
+      },
+      {
+        "question": "Quels sont quelques exemples courants d'expressions cron ?",
+        "answer": "Voici quelques expressions cron fréquemment utilisées : <code>* * * * *</code> (chaque minute), <code>0 * * * *</code> (chaque heure à la minute 0), <code>0 0 * * *</code> (quotidiennement à minuit), <code>0 0 * * 0</code> (hebdomadairement le dimanche à minuit), <code>0 0 1 * *</code> (mensuellement le 1er à minuit), <code>0 0 1 1 *</code> (annuellement le 1er janvier à minuit), <code>0 0 * * 1-5</code> (jours de semaine à minuit), <code>*/5 * * * *</code> (toutes les 5 minutes), <code>0 9-17 * * 1-5</code> (toutes les heures de 9h à 17h les jours de semaine). Ces modèles couvrent la plupart des besoins courants de planification pour les tâches automatisées, les sauvegardes, les rapports et les travaux de maintenance."
+      },
+      {
+        "question": "Comment les expressions cron diffèrent-elles entre les systèmes et les implémentations ?",
+        "answer": "Bien que le format cron à 5 champs soit standard, différents systèmes ont des variations : Unix/Linux cron utilise le format traditionnel à 5 champs. Quartz Scheduler ajoute un sixième champ pour les secondes et prend en charge l'année. AWS CloudWatch et Azure Functions prennent en charge une syntaxe supplémentaire pour une planification plus flexible. Certaines implémentations permettent des chaînes spéciales comme @daily, @weekly ou @monthly comme raccourcis. Le cron système peut avoir des limitations sur la fréquence d'exécution des tâches, tandis que les implémentations programmatiques peuvent permettre une précision au niveau des secondes. Notre outil se concentre sur le format standard à 5 champs compatible avec la plupart des systèmes, mais vous devriez toujours vérifier la compatibilité de la syntaxe avec votre implémentation spécifique de planificateur."
+      },
+      {
+        "question": "Comment puis-je utiliser cet outil pour créer des tâches planifiées fiables ?",
+        "answer": "Pour créer des tâches planifiées fiables : Tout d'abord, utilisez notre outil pour générer et vérifier votre expression cron - l'explication lisible par l'homme vous assure de comprendre exactement quand votre tâche s'exécutera. Testez votre expression avec plusieurs dates pour confirmer qu'elle s'exécute quand prévu. Tenez compte des implications de fuseau horaire - cron s'exécute généralement dans le fuseau horaire local du serveur. Pour les tâches critiques, incluez la gestion des erreurs et la surveillance. Évitez de planifier des tâches exactement au début de l'heure lorsque la charge système atteint souvent son pic ; décalez de quelques minutes (par exemple, utilisez 03 au lieu de 00 pour le champ des minutes). Pour les tâches très fréquentes, assurez-vous que votre système peut gérer la charge. Enfin, documentez vos expressions cron avec des commentaires expliquant leur objectif et leur comportement attendu pour référence future."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "Générateur d'UUID – Créer des identifiants uniques en ligne",
     "description": "Générez des identifiants UUID/GUID aléatoires pour vos applications, bases de données et systèmes. Créez des UUID uniques ou en masse avec cet outil en ligne gratuit.",

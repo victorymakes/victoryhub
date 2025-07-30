@@ -18,7 +18,7 @@ interface PasswordOptions {
 }
 
 export default function PasswordGenerator() {
-    const t = useTranslations("Tools.passwordGenerator");
+    const t = useTranslations("PasswordGenerator");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(true);
     const [warning, setWarning] = useState<string | null>(null);

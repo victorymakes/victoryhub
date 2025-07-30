@@ -90,7 +90,21 @@
     "retry": "Opnieuw proberen",
     "goHome": "Ga naar startpagina"
   },
-  "uuidGenerator": {
+  "Blog": {
+    "title": "Blog",
+    "description": "Artikelen en tutorials over onze tools",
+    "readMore": "Lees meer",
+    "backToBlog": "Terug naar Blog",
+    "publishedOn": "Gepubliceerd op",
+    "author": "Auteur",
+    "tags": "Tags",
+    "relatedPosts": "Gerelateerde berichten",
+    "noPostsFound": "Geen berichten gevonden",
+    "searchPlaceholder": "Zoek berichten...",
+    "categories": "Categorieën",
+    "allCategories": "Alle categorieën"
+  },
+  "UuidGenerator": {
     "title": "UUID Generator",
     "description": "Genereert universeel unieke identifiers (UUID) in verschillende formaten",
     "version": "Versie",
@@ -105,7 +119,7 @@
     "copied": "Gekopieerd!",
     "clear": "Wissen"
   },
-  "passwordGenerator": {
+  "PasswordGenerator": {
     "title": "Wachtwoord Generator",
     "description": "Genereert veilige en aanpasbare wachtwoorden",
     "length": "Lengte",
@@ -127,7 +141,7 @@
     "customCharacters": "Aangepaste tekens",
     "mustIncludeAtLeast": "Moet ten minste één type teken bevatten"
   },
-  "timestampConverter": {
+  "TimestampConverter": {
     "title": "Tijdstempel Converter",
     "description": "Converteert tussen Unix tijdstempels en leesbare datums",
     "currentTimestamp": "Huidige tijdstempel",
@@ -146,7 +160,7 @@
     "local": "Lokaal",
     "timezone": "Tijdzone"
   },
-  "whatsMyIp": {
+  "WhatsMyIp": {
     "title": "Wat is mijn IP",
     "description": "Ontdek uw openbare IP-adres en locatie-informatie",
     "loading": "Laden...",
@@ -165,7 +179,7 @@
     "copy": "Kopiëren",
     "copied": "Gekopieerd!"
   },
-  "urlEncoder": {
+  "UrlEncoder": {
     "title": "URL Encoder/Decoder",
     "description": "Codeert en decodeert URLs en URL-componenten",
     "input": "Voer tekst of URL in",
@@ -179,7 +193,7 @@
     "fullUrl": "Volledige URL",
     "component": "Component"
   },
-  "base64Encoder": {
+  "Base64Encoder": {
     "title": "Base64 Encoder/Decoder",
     "description": "Codeert en decodeert tekst naar Base64-formaat",
     "input": "Voer tekst in",
@@ -195,7 +209,7 @@
     "dragDropFile": "Sleep een bestand hierheen",
     "downloadDecoded": "Gedecodeerd downloaden"
   },
-  "imageCompressor": {
+  "ImageCompressor": {
     "title": "Afbeelding Compressor",
     "description": "Comprimeert afbeeldingen om bestandsgrootte te verkleinen met behoud van kwaliteit",
     "selectImage": "Afbeelding selecteren",
@@ -213,7 +227,7 @@
     "error": "Fout bij het comprimeren van afbeelding",
     "supportedFormats": "Ondersteunde formaten: JPEG, PNG, WebP"
   },
-  "imageResizer": {
+  "ImageResizer": {
     "title": "Afbeelding Resizer",
     "description": "Wijzigt afbeeldingsgrootte door breedte, hoogte of percentage op te geven",
     "selectImage": "Afbeelding selecteren",
@@ -234,7 +248,7 @@
     "invalidDimensions": "Ongeldige afmetingen",
     "supportedFormats": "Ondersteunde formaten: JPEG, PNG, WebP, GIF"
   },
-  "imageConverter": {
+  "ImageConverter": {
     "title": "Afbeelding Converter",
     "description": "Converteert afbeeldingen tussen verschillende formaten (JPEG, PNG, WebP, GIF)",
     "selectImage": "Afbeelding selecteren",
@@ -252,7 +266,7 @@
     "error": "Fout bij het converteren van afbeelding",
     "supportedFormats": "Ondersteunde formaten: JPEG, PNG, WebP, GIF, BMP, TIFF"
   },
-  "qrcodeGenerator": {
+  "QrcodeGenerator": {
     "title": "QR-code Generator",
     "description": "Genereert QR-codes voor tekst, URLs, e-mails en meer",
     "input": "Voer tekst of URL in",
@@ -275,18 +289,33 @@
     "error": "Fout bij het genereren van QR-code",
     "inputRequired": "Invoer vereist"
   },
-  "Blog": {
-    "title": "Blog",
-    "description": "Artikelen en tutorials over onze tools",
-    "readMore": "Lees meer",
-    "backToBlog": "Terug naar Blog",
-    "publishedOn": "Gepubliceerd op",
-    "author": "Auteur",
-    "tags": "Tags",
-    "relatedPosts": "Gerelateerde berichten",
-    "noPostsFound": "Geen berichten gevonden",
-    "searchPlaceholder": "Zoek berichten...",
-    "categories": "Categorieën",
-    "allCategories": "Alle categorieën"
+  "CronGenerator": {
+    "title": "Cron Expressie Generator",
+    "description": "Maak en decodeer cron expressies met menselijk leesbare uitleg",
+    "cronExpression": "Cron Expressie",
+    "humanReadable": "Menselijk Leesbaar",
+    "language": "Uitleg Taal",
+    "selectLanguage": "Selecteer taal",
+    "predefinedExpressions": "Voorgedefinieerde Expressies",
+    "selectExpression": "Selecteer een voorgedefinieerde expressie",
+    "enterCronExpression": "Voer cron expressie in...",
+    "outputPlaceholder": "Menselijk leesbare uitleg verschijnt hier...",
+    "generateRandom": "Genereer Willekeurig",
+    "reset": "Reset",
+    "copied": "Gekopieerd!",
+    "everyMinute": "Elke minuut",
+    "everyHour": "Elk uur",
+    "everyDay": "Elke dag om middernacht",
+    "everySunday": "Elke zondag om middernacht",
+    "everyMonth": "Eerste dag van elke maand",
+    "everyYear": "1 januari om middernacht",
+    "weekdays": "Weekdagen (maandag-vrijdag)",
+    "weekends": "Weekenden (zaterdag-zondag)",
+    "everyFiveMinutes": "Elke 5 minuten",
+    "everyTwoHours": "Elke 2 uur",
+    "formatInfo": "Formaat: minuut uur dag-van-maand maand dag-van-week (0-59 0-23 1-31 1-12 0-6)",
+    "errors": {
+      "invalidExpression": "Ongeldige cron expressie. Controleer uw invoer."
+    }
   }
 }

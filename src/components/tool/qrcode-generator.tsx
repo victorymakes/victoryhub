@@ -19,7 +19,7 @@
 // import { QRCode } from "react-qrcode-logo";
 //
 // const QRCodeGenerator: React.FC = () => {
-//     const t = useTranslations("Tools.qrcodeGenerator");
+//     const t = useTranslations("QrcodeGenerator");
 //     const [value, setValue] = useState<string>("");
 //     const [size, setSize] = useState<number>(300);
 //     const [fgColor, setFgColor] = useState<string>("#000000");

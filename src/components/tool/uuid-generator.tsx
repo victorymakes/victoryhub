@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 export const UuidGenerator = () => {
-    const t = useTranslations("Tools.uuidGenerator");
+    const t = useTranslations("UuidGenerator");
     const [uuids, setUuids] = useState<string[]>([]);
     const [count, setCount] = useState(1);
     const [warning, setWarning] = useState<string | null>(null);

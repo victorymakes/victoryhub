@@ -37,7 +37,7 @@
 // }
 //
 // const ImageResizer: React.FC = () => {
-//     const t = useTranslations("Tools.imageResizer");
+//     const t = useTranslations("ImageResizer");
 //     const [images, setImages] = useState<ImageItem[]>([]);
 //     const [width, setWidth] = useState<number>(800);
 //     const [height, setHeight] = useState<number>(600);

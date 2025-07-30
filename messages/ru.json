@@ -90,7 +90,21 @@
     "retry": "Попробовать снова",
     "goHome": "На главную"
   },
-  "uuidGenerator": {
+  "Blog": {
+    "title": "Блог",
+    "description": "Статьи и руководства по нашим инструментам",
+    "readMore": "Читать далее",
+    "backToBlog": "Вернуться к блогу",
+    "publishedOn": "Опубликовано",
+    "author": "Автор",
+    "tags": "Теги",
+    "relatedPosts": "Связанные посты",
+    "noPostsFound": "Посты не найдены",
+    "searchPlaceholder": "Поиск постов...",
+    "categories": "Категории",
+    "allCategories": "Все категории"
+  },
+  "UuidGenerator": {
     "title": "Генератор UUID",
     "description": "Генерирует универсально уникальные идентификаторы (UUID) в различных форматах",
     "version": "Версия",
@@ -105,7 +119,7 @@
     "copied": "Скопировано!",
     "clear": "Очистить"
   },
-  "passwordGenerator": {
+  "PasswordGenerator": {
     "title": "Генератор паролей",
     "description": "Генерирует безопасные и настраиваемые пароли",
     "length": "Длина",
@@ -127,7 +141,7 @@
     "customCharacters": "Пользовательские символы",
     "mustIncludeAtLeast": "Должен включать хотя бы один тип символов"
   },
-  "timestampConverter": {
+  "TimestampConverter": {
     "title": "Конвертер временных меток",
     "description": "Конвертирует между временными метками Unix и читаемыми датами",
     "currentTimestamp": "Текущая временная метка",
@@ -146,7 +160,7 @@
     "local": "Местное",
     "timezone": "Часовой пояс"
   },
-  "whatsMyIp": {
+  "WhatsMyIp": {
     "title": "Какой мой IP",
     "description": "Узнайте ваш публичный IP-адрес и информацию о местоположении",
     "loading": "Загрузка...",
@@ -165,7 +179,7 @@
     "copy": "Копировать",
     "copied": "Скопировано!"
   },
-  "urlEncoder": {
+  "UrlEncoder": {
     "title": "Кодировщик/Декодировщик URL",
     "description": "Кодирует и декодирует URL и компоненты URL",
     "input": "Введите текст или URL",
@@ -179,7 +193,7 @@
     "fullUrl": "Полный URL",
     "component": "Компонент"
   },
-  "base64Encoder": {
+  "Base64Encoder": {
     "title": "Кодировщик/Декодировщик Base64",
     "description": "Кодирует и декодирует текст в формат Base64",
     "input": "Введите текст",
@@ -195,7 +209,7 @@
     "dragDropFile": "Перетащите файл сюда",
     "downloadDecoded": "Скачать декодированный"
   },
-  "imageCompressor": {
+  "ImageCompressor": {
     "title": "Сжиматель изображений",
     "description": "Сжимает изображения для уменьшения размера файла с сохранением качества",
     "selectImage": "Выбрать изображение",
@@ -213,7 +227,7 @@
     "error": "Ошибка при сжатии изображения",
     "supportedFormats": "Поддерживаемые форматы: JPEG, PNG, WebP"
   },
-  "imageResizer": {
+  "ImageResizer": {
     "title": "Изменение размера изображений",
     "description": "Изменяет размер изображений, указывая ширину, высоту или процент",
     "selectImage": "Выбрать изображение",
@@ -234,7 +248,7 @@
     "invalidDimensions": "Недействительные размеры",
     "supportedFormats": "Поддерживаемые форматы: JPEG, PNG, WebP, GIF"
   },
-  "imageConverter": {
+  "ImageConverter": {
     "title": "Конвертер изображений",
     "description": "Конвертирует изображения между различными форматами (JPEG, PNG, WebP, GIF)",
     "selectImage": "Выбрать изображение",
@@ -252,7 +266,7 @@
     "error": "Ошибка при конвертации изображения",
     "supportedFormats": "Поддерживаемые форматы: JPEG, PNG, WebP, GIF, BMP, TIFF"
   },
-  "qrcodeGenerator": {
+  "QrcodeGenerator": {
     "title": "Генератор QR-кодов",
     "description": "Генерирует QR-коды для текста, URL, электронной почты и многого другого",
     "input": "Введите текст или URL",
@@ -275,18 +289,33 @@
     "error": "Ошибка при генерации QR-кода",
     "inputRequired": "Требуется ввод"
   },
-  "Blog": {
-    "title": "Блог",
-    "description": "Статьи и руководства по нашим инструментам",
-    "readMore": "Читать далее",
-    "backToBlog": "Вернуться к блогу",
-    "publishedOn": "Опубликовано",
-    "author": "Автор",
-    "tags": "Теги",
-    "relatedPosts": "Связанные посты",
-    "noPostsFound": "Посты не найдены",
-    "searchPlaceholder": "Поиск постов...",
-    "categories": "Категории",
-    "allCategories": "Все категории"
+  "CronGenerator": {
+    "title": "Генератор Cron-выражений",
+    "description": "Создавайте и декодируйте cron-выражения с понятными человеку объяснениями",
+    "cronExpression": "Cron-выражение",
+    "humanReadable": "Человекочитаемый формат",
+    "language": "Язык объяснения",
+    "selectLanguage": "Выберите язык",
+    "predefinedExpressions": "Предопределенные выражения",
+    "selectExpression": "Выберите предопределенное выражение",
+    "enterCronExpression": "Введите cron-выражение...",
+    "outputPlaceholder": "Здесь появится понятное человеку объяснение...",
+    "generateRandom": "Сгенерировать случайное",
+    "reset": "Сбросить",
+    "copied": "Скопировано!",
+    "everyMinute": "Каждую минуту",
+    "everyHour": "Каждый час",
+    "everyDay": "Каждый день в полночь",
+    "everySunday": "Каждое воскресенье в полночь",
+    "everyMonth": "Первый день каждого месяца",
+    "everyYear": "1 января в полночь",
+    "weekdays": "Будние дни (понедельник-пятница)",
+    "weekends": "Выходные (суббота-воскресенье)",
+    "everyFiveMinutes": "Каждые 5 минут",
+    "everyTwoHours": "Каждые 2 часа",
+    "formatInfo": "Формат: минута час день-месяца месяц день-недели (0-59 0-23 1-31 1-12 0-6)",
+    "errors": {
+      "invalidExpression": "Недействительное cron-выражение. Пожалуйста, проверьте ваш ввод."
+    }
   }
 }

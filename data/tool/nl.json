@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Cron Expressie Generator – Maak en Decodeer Cron Schema's",
+    "description": "Maak, decodeer en begrijp cron expressies met menselijk leesbare uitleg in meerdere talen. Perfect voor het plannen van taken, jobs en geautomatiseerde processen.",
+    "category": "development",
+    "keywords": [
+      "cron generator",
+      "cron expressie",
+      "cron schema",
+      "cron parser",
+      "cron decoder",
+      "cron syntax",
+      "cron job scheduler",
+      "cron formaat",
+      "cron vertaler",
+      "cron expressie bouwer"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een cron expressie en waarom wordt het gebruikt?",
+        "answer": "Een cron expressie is een reeks tekens die een schema voorstelt voor geautomatiseerde taken in Unix-achtige besturingssystemen. Het bestaat uit vijf of zes velden die aangeven wanneer een taak moet worden uitgevoerd: minuut, uur, dag van de maand, maand, dag van de week en (optioneel) jaar. Cron expressies worden veel gebruikt in taakplanners, CI/CD-pijplijnen, serveronderhoud, gegevensverwerking en elk systeem dat tijdgebaseerde taakplanning vereist. Ze bieden een beknopte manier om complexe schema's zoals 'elke werkdag om 15:00 uur' of 'eerste dag van elke maand om middernacht' uit te drukken in een gestandaardiseerd formaat dat computers kunnen interpreteren."
+      },
+      {
+        "question": "Hoe lees en begrijp ik cron expressies?",
+        "answer": "Cron expressies volgen een specifiek formaat met 5-6 velden: <code>minuut uur dag-van-maand maand dag-van-week [jaar]</code>. Elk veld accepteert specifieke waarden of speciale tekens: minuten (0-59), uren (0-23), dag van de maand (1-31), maand (1-12 of JAN-DEC), dag van de week (0-6 of ZON-ZAT), en optioneel jaar. Speciale tekens zijn onder andere: asterisk (*) voor 'elke waarde', komma (,) voor waardenlijsten, koppelteken (-) voor bereiken, schuine streep (/) voor stapwaarden en vraagteken (?) voor 'geen specifieke waarde'. Bijvoorbeeld, <code>0 12 * * 1-5</code> betekent 'om 12:00 uur, maandag tot en met vrijdag, elke maand'. Onze tool vertaalt deze expressies naar menselijk leesbare tekst om u precies te laten begrijpen wanneer uw geplande taken zullen worden uitgevoerd."
+      },
+      {
+        "question": "Wat zijn enkele veelvoorkomende cron expressie voorbeelden?",
+        "answer": "Hier zijn enkele veelgebruikte cron expressies: <code>* * * * *</code> (elke minuut), <code>0 * * * *</code> (elk uur op minuut 0), <code>0 0 * * *</code> (dagelijks om middernacht), <code>0 0 * * 0</code> (wekelijks op zondag om middernacht), <code>0 0 1 * *</code> (maandelijks op de 1e om middernacht), <code>0 0 1 1 *</code> (jaarlijks op 1 januari om middernacht), <code>0 0 * * 1-5</code> (werkdagen om middernacht), <code>*/5 * * * *</code> (elke 5 minuten), <code>0 9-17 * * 1-5</code> (elk uur van 9 tot 17 uur op werkdagen). Deze patronen dekken de meest voorkomende planningsbehoeften voor geautomatiseerde taken, back-ups, rapporten en onderhoudstaken."
+      },
+      {
+        "question": "Hoe verschillen cron expressies tussen systemen en implementaties?",
+        "answer": "Hoewel het basis 5-velden cron formaat standaard is, hebben verschillende systemen variaties: Unix/Linux cron gebruikt het traditionele 5-velden formaat. Quartz Scheduler voegt een zesde veld toe voor seconden en ondersteunt jaar. AWS CloudWatch en Azure Functions ondersteunen aanvullende syntaxis voor flexibelere planning. Sommige implementaties staan speciale strings toe zoals @daily, @weekly of @monthly als snelkoppelingen. Systeem cron kan beperkingen hebben op hoe vaak taken kunnen worden uitgevoerd, terwijl programmatische implementaties mogelijk seconde-niveau precisie toestaan. Onze tool richt zich op het standaard 5-velden formaat dat compatibel is met de meeste systemen, maar u moet altijd de syntaxiscompatibiliteit met uw specifieke scheduler-implementatie verifiëren."
+      },
+      {
+        "question": "Hoe kan ik deze tool gebruiken om betrouwbare geplande taken te maken?",
+        "answer": "Om betrouwbare geplande taken te maken: Gebruik eerst onze tool om uw cron expressie te genereren en te verifiëren - de menselijk leesbare uitleg zorgt ervoor dat u precies begrijpt wanneer uw taak zal worden uitgevoerd. Test uw expressie met meerdere datums om te bevestigen dat deze wordt uitgevoerd wanneer verwacht. Houd rekening met tijdzone-implicaties - cron wordt meestal uitgevoerd in de lokale tijdzone van de server. Neem voor kritieke taken foutafhandeling en monitoring op. Vermijd het plannen van taken precies aan het begin van het uur wanneer de systeembelasting vaak piekt; verschuif met een paar minuten (gebruik bijvoorbeeld 03 in plaats van 00 voor het minuutveld). Zorg voor zeer frequente taken dat uw systeem de belasting aankan. Documenteer ten slotte uw cron expressies met opmerkingen die hun doel en verwacht gedrag uitleggen voor toekomstige referentie."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "UUID Generator – Online unieke identifiers maken",
     "description": "Genereer willekeurige UUID/GUID identifiers voor je applicaties, databases en systemen. Maak unieke of bulk UUID's met deze gratis online tool.",

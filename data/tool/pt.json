@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Gerador de Expressão Cron – Crie e Decodifique Agendamentos Cron",
+    "description": "Crie, decodifique e entenda expressões cron com explicações legíveis por humanos em vários idiomas. Perfeito para agendar tarefas, trabalhos e processos automatizados.",
+    "category": "development",
+    "keywords": [
+      "gerador cron",
+      "expressão cron",
+      "agendamento cron",
+      "analisador cron",
+      "decodificador cron",
+      "sintaxe cron",
+      "agendador de tarefas cron",
+      "formato cron",
+      "tradutor cron",
+      "construtor de expressão cron"
+    ],
+    "faq": [
+      {
+        "question": "O que é uma expressão cron e por que ela é usada?",
+        "answer": "Uma expressão cron é uma string de caracteres que representa um agendamento para tarefas automatizadas em sistemas operacionais tipo Unix. Ela consiste em cinco ou seis campos que especificam quando uma tarefa deve ser executada: minuto, hora, dia do mês, mês, dia da semana e (opcionalmente) ano. Expressões cron são amplamente utilizadas em agendadores de tarefas, pipelines de CI/CD, manutenção de servidores, processamento de dados e qualquer sistema que requer agendamento de tarefas baseado em tempo. Elas fornecem uma maneira concisa de expressar agendamentos complexos como 'todos os dias úteis às 15h' ou 'primeiro dia de cada mês à meia-noite' em um formato padronizado que os computadores podem interpretar."
+      },
+      {
+        "question": "Como ler e entender expressões cron?",
+        "answer": "Expressões cron seguem um formato específico com 5-6 campos: <code>minuto hora dia-do-mês mês dia-da-semana [ano]</code>. Cada campo aceita valores específicos ou caracteres especiais: minutos (0-59), horas (0-23), dia do mês (1-31), mês (1-12 ou JAN-DEZ), dia da semana (0-6 ou DOM-SAB), e opcionalmente ano. Caracteres especiais incluem: asterisco (*) para 'qualquer valor', vírgula (,) para listas de valores, hífen (-) para intervalos, barra (/) para valores de passo, e ponto de interrogação (?) para 'nenhum valor específico'. Por exemplo, <code>0 12 * * 1-5</code> significa 'às 12:00, de segunda a sexta-feira, todos os meses'. Nossa ferramenta traduz essas expressões em texto legível por humanos para ajudar você a entender exatamente quando suas tarefas agendadas serão executadas."
+      },
+      {
+        "question": "Quais são alguns exemplos comuns de expressões cron?",
+        "answer": "Aqui estão algumas expressões cron frequentemente usadas: <code>* * * * *</code> (a cada minuto), <code>0 * * * *</code> (a cada hora no minuto 0), <code>0 0 * * *</code> (diariamente à meia-noite), <code>0 0 * * 0</code> (semanalmente aos domingos à meia-noite), <code>0 0 1 * *</code> (mensalmente no dia 1 à meia-noite), <code>0 0 1 1 *</code> (anualmente em 1º de janeiro à meia-noite), <code>0 0 * * 1-5</code> (dias úteis à meia-noite), <code>*/5 * * * *</code> (a cada 5 minutos), <code>0 9-17 * * 1-5</code> (de hora em hora das 9h às 17h em dias úteis). Esses padrões cobrem a maioria das necessidades comuns de agendamento para tarefas automatizadas, backups, relatórios e trabalhos de manutenção."
+      },
+      {
+        "question": "Como as expressões cron diferem entre sistemas e implementações?",
+        "answer": "Embora o formato cron básico de 5 campos seja padrão, diferentes sistemas têm variações: Unix/Linux cron usa o formato tradicional de 5 campos. Quartz Scheduler adiciona um sexto campo para segundos e suporta ano. AWS CloudWatch e Azure Functions suportam sintaxe adicional para agendamento mais flexível. Algumas implementações permitem strings especiais como @daily, @weekly ou @monthly como atalhos. O cron do sistema pode ter limitações sobre a frequência com que as tarefas podem ser executadas, enquanto implementações programáticas podem permitir precisão em nível de segundo. Nossa ferramenta se concentra no formato padrão de 5 campos compatível com a maioria dos sistemas, mas você deve sempre verificar a compatibilidade de sintaxe com sua implementação específica de agendador."
+      },
+      {
+        "question": "Como posso usar esta ferramenta para criar tarefas agendadas confiáveis?",
+        "answer": "Para criar tarefas agendadas confiáveis: Primeiro, use nossa ferramenta para gerar e verificar sua expressão cron - a explicação legível por humanos garante que você entenda exatamente quando sua tarefa será executada. Teste sua expressão com várias datas para confirmar que ela é executada quando esperado. Considere as implicações de fuso horário - cron normalmente é executado no fuso horário local do servidor. Para tarefas críticas, inclua tratamento de erros e monitoramento. Evite agendar tarefas exatamente no início da hora, quando a carga do sistema frequentemente atinge o pico; desloque alguns minutos (por exemplo, use 03 em vez de 00 para o campo de minutos). Para tarefas muito frequentes, certifique-se de que seu sistema pode lidar com a carga. Finalmente, documente suas expressões cron com comentários explicando seu propósito e comportamento esperado para referência futura."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "Gerador de UUID – Crie identificadores únicos online",
     "description": "Gere identificadores UUID/GUID aleatórios para suas aplicações, bancos de dados e sistemas. Crie UUIDs únicos ou em massa com esta ferramenta online gratuita.",

@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 export default function URLEncoderDecoder() {
-    const t = useTranslations("Tools.urlEncoder");
+    const t = useTranslations("UrlEncoder");
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [mode, setMode] = useState<"encode" | "decode">("encode");

@@ -90,7 +90,21 @@
     "retry": "Prøv igjen",
     "goHome": "Gå til hjem"
   },
-  "uuidGenerator": {
+  "Blog": {
+    "title": "Blogg",
+    "description": "Artikler og veiledninger om våre verktøy",
+    "readMore": "Les mer",
+    "backToBlog": "Tilbake til Blogg",
+    "publishedOn": "Publisert den",
+    "author": "Forfatter",
+    "tags": "Tagger",
+    "relatedPosts": "Relaterte innlegg",
+    "noPostsFound": "Ingen innlegg funnet",
+    "searchPlaceholder": "Søk innlegg...",
+    "categories": "Kategorier",
+    "allCategories": "Alle kategorier"
+  },
+  "UuidGenerator": {
     "title": "UUID Generator",
     "description": "Genererer universelt unike identifikatorer (UUID) i ulike formater",
     "version": "Versjon",
@@ -105,7 +119,7 @@
     "copied": "Kopiert!",
     "clear": "Tøm"
   },
-  "passwordGenerator": {
+  "PasswordGenerator": {
     "title": "Passord Generator",
     "description": "Genererer sikre og tilpassbare passord",
     "length": "Lengde",
@@ -127,7 +141,7 @@
     "customCharacters": "Tilpassede tegn",
     "mustIncludeAtLeast": "Må inkludere minst én type tegn"
   },
-  "timestampConverter": {
+  "TimestampConverter": {
     "title": "Tidsstempel Konverter",
     "description": "Konverterer mellom Unix tidsstempler og lesbare datoer",
     "currentTimestamp": "Nåværende tidsstempel",
@@ -146,7 +160,7 @@
     "local": "Lokal",
     "timezone": "Tidssone"
   },
-  "whatsMyIp": {
+  "WhatsMyIp": {
     "title": "Hva er min IP",
     "description": "Oppdag din offentlige IP-adresse og lokasjonsinformasjon",
     "loading": "Laster...",
@@ -165,7 +179,7 @@
     "copy": "Kopier",
     "copied": "Kopiert!"
   },
-  "urlEncoder": {
+  "UrlEncoder": {
     "title": "URL Koder/Dekoder",
     "description": "Koder og dekoder URLer og URL-komponenter",
     "input": "Skriv inn tekst eller URL",
@@ -179,7 +193,7 @@
     "fullUrl": "Full URL",
     "component": "Komponent"
   },
-  "base64Encoder": {
+  "Base64Encoder": {
     "title": "Base64 Koder/Dekoder",
     "description": "Koder og dekoder tekst til Base64-format",
     "input": "Skriv inn tekst",
@@ -195,7 +209,7 @@
     "dragDropFile": "Dra og slipp en fil her",
     "downloadDecoded": "Last ned dekodet"
   },
-  "imageCompressor": {
+  "ImageCompressor": {
     "title": "Bilde Kompressor",
     "description": "Komprimerer bilder for å redusere filstørrelse mens kvaliteten opprettholdes",
     "selectImage": "Velg bilde",
@@ -213,7 +227,7 @@
     "error": "Feil ved komprimering av bilde",
     "supportedFormats": "Støttede formater: JPEG, PNG, WebP"
   },
-  "imageResizer": {
+  "ImageResizer": {
     "title": "Bilde Størrelse Endrer",
     "description": "Endrer bildestørrelse ved å spesifisere bredde, høyde eller prosent",
     "selectImage": "Velg bilde",
@@ -234,7 +248,7 @@
     "invalidDimensions": "Ugyldige dimensjoner",
     "supportedFormats": "Støttede formater: JPEG, PNG, WebP, GIF"
   },
-  "imageConverter": {
+  "ImageConverter": {
     "title": "Bilde Konverter",
     "description": "Konverterer bilder mellom ulike formater (JPEG, PNG, WebP, GIF)",
     "selectImage": "Velg bilde",
@@ -252,7 +266,7 @@
     "error": "Feil ved konvertering av bilde",
     "supportedFormats": "Støttede formater: JPEG, PNG, WebP, GIF, BMP, TIFF"
   },
-  "qrcodeGenerator": {
+  "QrcodeGenerator": {
     "title": "QR-kode Generator",
     "description": "Genererer QR-koder for tekst, URLer, e-post og mer",
     "input": "Skriv inn tekst eller URL",
@@ -275,18 +289,33 @@
     "error": "Feil ved generering av QR-kode",
     "inputRequired": "Inndata kreves"
   },
-  "Blog": {
-    "title": "Blogg",
-    "description": "Artikler og veiledninger om våre verktøy",
-    "readMore": "Les mer",
-    "backToBlog": "Tilbake til Blogg",
-    "publishedOn": "Publisert den",
-    "author": "Forfatter",
-    "tags": "Tagger",
-    "relatedPosts": "Relaterte innlegg",
-    "noPostsFound": "Ingen innlegg funnet",
-    "searchPlaceholder": "Søk innlegg...",
-    "categories": "Kategorier",
-    "allCategories": "Alle kategorier"
+  "CronGenerator": {
+    "title": "Cron-uttrykk Generator",
+    "description": "Lag og dekod cron-uttrykk med menneskelig lesbare forklaringer",
+    "cronExpression": "Cron-uttrykk",
+    "humanReadable": "Menneskelig lesbart",
+    "language": "Forklaringsspråk",
+    "selectLanguage": "Velg språk",
+    "predefinedExpressions": "Forhåndsdefinerte uttrykk",
+    "selectExpression": "Velg et forhåndsdefinert uttrykk",
+    "enterCronExpression": "Skriv inn cron-uttrykk...",
+    "outputPlaceholder": "Menneskelig lesbar forklaring vil vises her...",
+    "generateRandom": "Generer tilfeldig",
+    "reset": "Tilbakestill",
+    "copied": "Kopiert!",
+    "everyMinute": "Hvert minutt",
+    "everyHour": "Hver time",
+    "everyDay": "Hver dag ved midnatt",
+    "everySunday": "Hver søndag ved midnatt",
+    "everyMonth": "Første dag i hver måned",
+    "everyYear": "1. januar ved midnatt",
+    "weekdays": "Ukedager (mandag-fredag)",
+    "weekends": "Helger (lørdag-søndag)",
+    "everyFiveMinutes": "Hvert 5. minutt",
+    "everyTwoHours": "Hver 2. time",
+    "formatInfo": "Format: minutt time dag-i-måned måned ukedag (0-59 0-23 1-31 1-12 0-6)",
+    "errors": {
+      "invalidExpression": "Ugyldig cron-uttrykk. Vennligst sjekk inndataene dine."
+    }
   }
 }

@@ -29,7 +29,7 @@ interface IPInfo {
 }
 
 export default function WhatsMyIP() {
-    const t = useTranslations("Tools.whatsMyIp");
+    const t = useTranslations("WhatsMyIp");
     const [ipInfo, setIpInfo] = useState<IPInfo>({
         ip: "",
         version: "",

@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Cron Expression Generator – Create and Decode Cron Schedules",
+    "description": "Create, decode, and understand cron expressions with human-readable explanations in multiple languages. Perfect for scheduling tasks, jobs, and automated processes.",
+    "category": "development",
+    "keywords": [
+      "cron generator",
+      "cron expression",
+      "cron schedule",
+      "cron parser",
+      "cron decoder",
+      "cron syntax",
+      "cron job scheduler",
+      "cron format",
+      "cron translator",
+      "cron expression builder"
+    ],
+    "faq": [
+      {
+        "question": "What is a cron expression and why is it used?",
+        "answer": "A cron expression is a string of characters that represents a schedule for automated tasks in Unix-like operating systems. It consists of five or six fields that specify when a task should run: minute, hour, day of month, month, day of week, and (optionally) year. Cron expressions are widely used in job schedulers, CI/CD pipelines, server maintenance, data processing, and any system that requires time-based job scheduling. They provide a concise way to express complex schedules like 'every weekday at 3 PM' or 'first day of each month at midnight' in a standardized format that computers can interpret."
+      },
+      {
+        "question": "How do I read and understand cron expressions?",
+        "answer": "Cron expressions follow a specific format with 5-6 fields: <code>minute hour day-of-month month day-of-week [year]</code>. Each field accepts specific values or special characters: minutes (0-59), hours (0-23), day of month (1-31), month (1-12 or JAN-DEC), day of week (0-6 or SUN-SAT), and optionally year. Special characters include: asterisk (*) for 'any value', comma (,) for value lists, hyphen (-) for ranges, slash (/) for step values, and question mark (?) for 'no specific value'. For example, <code>0 12 * * 1-5</code> means 'at 12:00 PM, Monday through Friday, every month'. Our tool translates these expressions into human-readable text to help you understand exactly when your scheduled tasks will run."
+      },
+      {
+        "question": "What are some common cron expression examples?",
+        "answer": "Here are some frequently used cron expressions: <code>* * * * *</code> (every minute), <code>0 * * * *</code> (every hour at minute 0), <code>0 0 * * *</code> (daily at midnight), <code>0 0 * * 0</code> (weekly on Sunday at midnight), <code>0 0 1 * *</code> (monthly on the 1st at midnight), <code>0 0 1 1 *</code> (yearly on January 1st at midnight), <code>0 0 * * 1-5</code> (weekdays at midnight), <code>*/5 * * * *</code> (every 5 minutes), <code>0 9-17 * * 1-5</code> (hourly from 9 AM to 5 PM on weekdays). These patterns cover most common scheduling needs for automated tasks, backups, reports, and maintenance jobs."
+      },
+      {
+        "question": "How do cron expressions differ across systems and implementations?",
+        "answer": "While the basic 5-field cron format is standard, different systems have variations: Unix/Linux cron uses the traditional 5-field format. Quartz Scheduler adds a sixth field for seconds and supports year. AWS CloudWatch and Azure Functions support additional syntax for more flexible scheduling. Some implementations allow special strings like @daily, @weekly, or @monthly as shortcuts. System cron may have limitations on how frequently jobs can run, while programmatic implementations might allow second-level precision. Our tool focuses on the standard 5-field format compatible with most systems, but you should always verify syntax compatibility with your specific scheduler implementation."
+      },
+      {
+        "question": "How can I use this tool to create reliable scheduled tasks?",
+        "answer": "To create reliable scheduled tasks: First, use our tool to generate and verify your cron expression - the human-readable explanation ensures you understand exactly when your task will run. Test your expression with multiple dates to confirm it runs when expected. Consider timezone implications - cron typically runs in the server's local timezone. For critical tasks, include error handling and monitoring. Avoid scheduling tasks at exactly the top of the hour when system load often peaks; offset by a few minutes (e.g., use 03 instead of 00 for the minute field). For very frequent tasks, ensure your system can handle the load. Finally, document your cron expressions with comments explaining their purpose and expected behavior for future reference."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "UUID Generator – Create Unique Identifiers Online",
     "description": "Generate random UUID/GUID identifiers for your applications, databases, and systems. Create single or bulk UUIDs with this free online tool.",
