@@ -35,7 +35,7 @@ interface ImageItem {
 }
 
 const ImageCompressor: React.FC = () => {
-    const t = useTranslations("Tools.imageCompressor");
+    const t = useTranslations("ImageCompressor");
     const [images, setImages] = useState<ImageItem[]>([]);
     const [quality, setQuality] = useState<number>(70);
     const [sliderValue, setSliderValue] = useState<number>(70);

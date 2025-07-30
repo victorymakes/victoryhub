@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Cron-uttrycksgenerator – Skapa och avkoda Cron-scheman",
+    "description": "Skapa, avkoda och förstå cron-uttryck med lättlästa förklaringar på flera språk. Perfekt för schemaläggning av uppgifter, jobb och automatiserade processer.",
+    "category": "development",
+    "keywords": [
+      "cron generator",
+      "cron uttryck",
+      "cron schema",
+      "cron parser",
+      "cron avkodare",
+      "cron syntax",
+      "cron jobbschemaläggare",
+      "cron format",
+      "cron översättare",
+      "cron uttrycksbyggare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är ett cron-uttryck och vad används det till?",
+        "answer": "Ett cron-uttryck är en teckensträng som representerar ett schema för automatiserade uppgifter i Unix-liknande operativsystem. Det består av fem eller sex fält som definierar när en uppgift ska köras: minut, timme, dag i månaden, månad, veckodag och (valfritt) år. Cron-uttryck används i stor utsträckning i jobbschemaläggare, CI/CD-pipelines, serverunderhåll, databehandling och alla system som kräver tidsbaserad schemaläggning. De ger ett koncist sätt att uttrycka komplexa scheman som 'varje vardag kl 15:00' eller 'första dagen i varje månad vid midnatt' i ett standardiserat format som datorer kan tolka."
+      },
+      {
+        "question": "Hur läser och förstår man cron-uttryck?",
+        "answer": "Cron-uttryck följer ett specifikt format med 5-6 fält: <code>minut timme dag-i-månad månad veckodag [år]</code>. Varje fält accepterar specifika värden eller specialtecken: minuter (0-59), timmar (0-23), dag i månaden (1-31), månad (1-12 eller JAN-DEC), veckodag (0-6 eller SUN-SAT) och valfritt år. Specialtecken inkluderar: asterisk (*) för 'alla värden', komma (,) för listor av värden, bindestreck (-) för intervall, snedstreck (/) för stegvärden och frågetecken (?) för 'inget specifikt värde'. Till exempel betyder <code>0 12 * * 1-5</code> 'kl 12:00, måndag till fredag, varje månad'. Vårt verktyg översätter dessa uttryck till lättläst text för att hjälpa dig förstå exakt när dina schemalagda uppgifter kommer att köras."
+      },
+      {
+        "question": "Vilka är några vanliga exempel på cron-uttryck?",
+        "answer": "Här är några vanligt använda cron-uttryck: <code>* * * * *</code> (varje minut), <code>0 * * * *</code> (varje timme vid minut 0), <code>0 0 * * *</code> (dagligen vid midnatt), <code>0 0 * * 0</code> (varje söndag vid midnatt), <code>0 0 1 * *</code> (första dagen i varje månad vid midnatt), <code>0 0 1 1 *</code> (varje år den 1 januari vid midnatt), <code>0 0 * * 1-5</code> (vardagar vid midnatt), <code>*/5 * * * *</code> (var 5:e minut), <code>0 9-17 * * 1-5</code> (varje timme från 9 till 17 på vardagar). Dessa mönster täcker de flesta vanliga schemaläggningsbehov för automatiserade uppgifter, säkerhetskopieringar, rapporter och underhållsuppgifter."
+      },
+      {
+        "question": "Hur skiljer sig cron-uttryck mellan olika system och implementeringar?",
+        "answer": "Medan det grundläggande 5-fältsformatet för cron är standard, har olika system variationer: Unix/Linux cron använder det traditionella 5-fältsformatet. Quartz Scheduler lägger till ett sjätte fält för sekunder och stöder år. AWS CloudWatch och Azure Functions stöder ytterligare syntax för mer flexibel schemaläggning. Vissa implementeringar tillåter specialsträngar som @daily, @weekly eller @monthly som genvägar. System-cron kan ha begränsningar för hur ofta jobb kan köras, medan programvaruimplementeringar kan ge sekundprecision. Vårt verktyg fokuserar på det standard 5-fältsformatet som är kompatibelt med de flesta system, men du bör alltid kontrollera syntaxkompatibilitet med din specifika schemaläggningsimplementering."
+      },
+      {
+        "question": "Hur kan jag använda detta verktyg för att skapa robusta schemalagda uppgifter?",
+        "answer": "För att skapa robusta schemalagda uppgifter: Använd först vårt verktyg för att generera och validera ditt cron-uttryck - den lättlästa förklaringen säkerställer att du förstår exakt när din uppgift kommer att köras. Testa ditt uttryck med flera datum för att bekräfta att det körs när det förväntas. Tänk på tidszonskonsekvenser - cron körs vanligtvis i serverns lokala tidszon. För kritiska uppgifter, inkludera felhantering och övervakning. Undvik att schemalägga uppgifter exakt vid timslag när systembelastningen ofta är som högst; förskjut med några minuter (t.ex. använd 03 istället för 00 för minutfältet). För mycket frekventa uppgifter, se till att ditt system kan hantera belastningen. Slutligen, dokumentera dina cron-uttryck med kommentarer som förklarar deras syfte och förväntade beteende för framtida referens."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "UUID Generator – Skapa unika identifierare online",
     "description": "Generera slumpmässiga UUID/GUID identifierare för dina applikationer, databaser och system. Skapa unika eller bulk UUID:er med detta kostnadsfria onlineverktyg.",

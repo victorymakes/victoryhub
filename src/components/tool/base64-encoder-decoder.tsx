@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 export default function Base64EncoderDecoder() {
-    const t = useTranslations("Tools.base64Encoder");
+    const t = useTranslations("Base64Encoder");
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [mode, setMode] = useState<"encode" | "decode">("encode");

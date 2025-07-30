@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-generator",
+    "name": "Cron-lausekkeen generaattori – Luo ja tulkitse Cron-aikatauluja",
+    "description": "Luo, tulkitse ja ymmärrä cron-lausekkeita ihmisluettavilla selityksillä useilla kielillä. Täydellinen tehtävien, töiden ja automatisoitujen prosessien aikatauluttamiseen.",
+    "category": "development",
+    "keywords": [
+      "cron-generaattori",
+      "cron-lauseke",
+      "cron-aikataulu",
+      "cron-jäsennin",
+      "cron-tulkki",
+      "cron-syntaksi",
+      "cron-työn ajastaja",
+      "cron-muoto",
+      "cron-kääntäjä",
+      "cron-lausekkeen rakentaja"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on cron-lauseke ja miksi sitä käytetään?",
+        "answer": "Cron-lauseke on merkkijono, joka edustaa automatisoitujen tehtävien aikataulua Unix-tyyppisissä käyttöjärjestelmissä. Se koostuu viidestä tai kuudesta kentästä, jotka määrittävät milloin tehtävän tulisi suorittaa: minuutti, tunti, kuukauden päivä, kuukausi, viikonpäivä ja (valinnaisesti) vuosi. Cron-lausekkeita käytetään laajasti työn ajastajissa, CI/CD-putkistoissa, palvelimen ylläpidossa, tietojen käsittelyssä ja missä tahansa järjestelmässä, joka vaatii aikaperusteista työn ajastusta. Ne tarjoavat tiiviin tavan ilmaista monimutkaisia aikatauluja kuten 'joka arkipäivä klo 15' tai 'jokaisen kuukauden ensimmäinen päivä keskiyöllä' standardoidussa muodossa, jota tietokoneet voivat tulkita."
+      },
+      {
+        "question": "Miten luen ja ymmärrän cron-lausekkeita?",
+        "answer": "Cron-lausekkeet noudattavat tiettyä muotoa, jossa on 5-6 kenttää: <code>minuutti tunti kuukauden-päivä kuukausi viikonpäivä [vuosi]</code>. Jokainen kenttä hyväksyy tiettyjä arvoja tai erikoismerkkejä: minuutit (0-59), tunnit (0-23), kuukauden päivä (1-31), kuukausi (1-12 tai TAM-JOU), viikonpäivä (0-6 tai SU-LA), ja valinnaisesti vuosi. Erikoismerkkejä ovat: asteriski (*) 'mikä tahansa arvo', pilkku (,) arvolistoille, yhdysmerkki (-) arvoalueille, kauttaviiva (/) askelarvot ja kysymysmerkki (?) 'ei tiettyä arvoa'. Esimerkiksi <code>0 12 * * 1-5</code> tarkoittaa 'klo 12:00, maanantaista perjantaihin, joka kuukausi'. Työkalumme kääntää nämä lausekkeet ihmisluettavaksi tekstiksi auttaakseen sinua ymmärtämään tarkalleen milloin ajastetut tehtäväsi suoritetaan."
+      },
+      {
+        "question": "Mitkä ovat joitain yleisiä cron-lauseke-esimerkkejä?",
+        "answer": "Tässä on joitain usein käytettyjä cron-lausekkeita: <code>* * * * *</code> (joka minuutti), <code>0 * * * *</code> (joka tunti minuutilla 0), <code>0 0 * * *</code> (päivittäin keskiyöllä), <code>0 0 * * 0</code> (viikoittain sunnuntaina keskiyöllä), <code>0 0 1 * *</code> (kuukausittain 1. päivänä keskiyöllä), <code>0 0 1 1 *</code> (vuosittain tammikuun 1. päivänä keskiyöllä), <code>0 0 * * 1-5</code> (arkipäivinä keskiyöllä), <code>*/5 * * * *</code> (joka 5 minuutti), <code>0 9-17 * * 1-5</code> (tunnin välein klo 9-17 arkipäivinä). Nämä mallit kattavat useimmat yleiset aikataulutustarpeet automatisoiduille tehtäville, varmuuskopioille, raporteille ja ylläpitotehtäville."
+      },
+      {
+        "question": "Miten cron-lausekkeet eroavat eri järjestelmissä ja toteutuksissa?",
+        "answer": "Vaikka perus 5-kenttäinen cron-muoto on standardi, eri järjestelmillä on variaatioita: Unix/Linux cron käyttää perinteistä 5-kenttäistä muotoa. Quartz Scheduler lisää kuudennen kentän sekunneille ja tukee vuotta. AWS CloudWatch ja Azure Functions tukevat lisäsyntaksia joustavampaan aikataulutukseen. Jotkin toteutukset sallivat erikoismerkkijonoja kuten @daily, @weekly tai @monthly oikoteinä. Järjestelmä-cron voi rajoittaa kuinka usein työt voivat suorittaa, kun taas ohjelmallisissa toteutuksissa voi olla sekuntitason tarkkuus. Työkalumme keskittyy standardiin 5-kenttäiseen muotoon, joka on yhteensopiva useimpien järjestelmien kanssa, mutta sinun tulisi aina varmistaa syntaksin yhteensopivuus tietyn ajastintoteutuksesi kanssa."
+      },
+      {
+        "question": "Miten voin käyttää tätä työkalua luotettavien ajastettujen tehtävien luomiseen?",
+        "answer": "Luotettavien ajastettujen tehtävien luomiseksi: Käytä ensin työkaluamme cron-lausekkeesi luomiseen ja vahvistamiseen - ihmisluettava selitys varmistaa, että ymmärrät tarkalleen milloin tehtäväsi suoritetaan. Testaa lausekettasi useilla päivämäärillä varmistaaksesi, että se suoritetaan odotetusti. Huomioi aikavyöhykevaikutukset - cron suoritetaan tyypillisesti palvelimen paikallisessa aikavyöhykkeessä. Kriittisille tehtäville sisällytä virheenkäsittely ja valvonta. Vältä tehtävien ajastamista tasan tunnin alussa, jolloin järjestelmän kuormitus usein huipentuu; siirrä muutamalla minuutilla (esim. käytä 03 eikä 00 minuuttikentässä). Erittäin tiheille tehtäville varmista, että järjestelmäsi voi käsitellä kuormituksen. Lopuksi dokumentoi cron-lausekkeesi kommenteilla, jotka selittävät niiden tarkoituksen ja odotetun käyttäytymisen tulevaa viitettä varten."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "UUID-generaattori – Luo yksilöllisiä tunnisteita verkossa",
     "description": "Generoi satunnaisia UUID/GUID-tunnisteita sovelluksillesi, tietokannoillesi ja järjestelmillesi. Luo yksilöllisiä tai useita UUID-tunnisteita tällä ilmaisella verkkotyökalulla.",

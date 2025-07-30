@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Cron-Ausdrucksgenerator – Erstellen und Dekodieren von Cron-Zeitplänen",
+    "description": "Erstellen, dekodieren und verstehen Sie Cron-Ausdrücke mit menschenlesbaren Erklärungen in mehreren Sprachen. Perfekt für die Planung von Aufgaben, Jobs und automatisierten Prozessen.",
+    "category": "development",
+    "keywords": [
+      "cron generator",
+      "cron ausdruck",
+      "cron zeitplan",
+      "cron parser",
+      "cron decoder",
+      "cron syntax",
+      "cron job scheduler",
+      "cron format",
+      "cron übersetzer",
+      "cron ausdrucksgenerator"
+    ],
+    "faq": [
+      {
+        "question": "Was ist ein Cron-Ausdruck und wofür wird er verwendet?",
+        "answer": "Ein Cron-Ausdruck ist eine Zeichenfolge, die einen Zeitplan für automatisierte Aufgaben in Unix-ähnlichen Betriebssystemen darstellt. Er besteht aus fünf oder sechs Feldern, die angeben, wann eine Aufgabe ausgeführt werden soll: Minute, Stunde, Tag des Monats, Monat, Wochentag und (optional) Jahr. Cron-Ausdrücke werden häufig in Job-Schedulern, CI/CD-Pipelines, Serverwartung, Datenverarbeitung und allen Systemen verwendet, die eine zeitbasierte Aufgabenplanung erfordern. Sie bieten eine präzise Möglichkeit, komplexe Zeitpläne wie 'jeden Wochentag um 15 Uhr' oder 'am ersten Tag jedes Monats um Mitternacht' in einem standardisierten Format auszudrücken, das Computer interpretieren können."
+      },
+      {
+        "question": "Wie lese und verstehe ich Cron-Ausdrücke?",
+        "answer": "Cron-Ausdrücke folgen einem bestimmten Format mit 5-6 Feldern: <code>Minute Stunde Tag-des-Monats Monat Wochentag [Jahr]</code>. Jedes Feld akzeptiert bestimmte Werte oder Sonderzeichen: Minuten (0-59), Stunden (0-23), Tag des Monats (1-31), Monat (1-12 oder JAN-DEZ), Wochentag (0-6 oder SON-SAM) und optional Jahr. Zu den Sonderzeichen gehören: Sternchen (*) für 'beliebigen Wert', Komma (,) für Wertelisten, Bindestrich (-) für Bereiche, Schrägstrich (/) für Schrittweiten und Fragezeichen (?) für 'keinen bestimmten Wert'. Zum Beispiel bedeutet <code>0 12 * * 1-5</code> 'um 12:00 Uhr, Montag bis Freitag, jeden Monat'. Unser Tool übersetzt diese Ausdrücke in menschenlesbaren Text, damit Sie genau verstehen, wann Ihre geplanten Aufgaben ausgeführt werden."
+      },
+      {
+        "question": "Was sind einige häufige Beispiele für Cron-Ausdrücke?",
+        "answer": "Hier sind einige häufig verwendete Cron-Ausdrücke: <code>* * * * *</code> (jede Minute), <code>0 * * * *</code> (jede Stunde zur Minute 0), <code>0 0 * * *</code> (täglich um Mitternacht), <code>0 0 * * 0</code> (wöchentlich am Sonntag um Mitternacht), <code>0 0 1 * *</code> (monatlich am 1. um Mitternacht), <code>0 0 1 1 *</code> (jährlich am 1. Januar um Mitternacht), <code>0 0 * * 1-5</code> (Wochentage um Mitternacht), <code>*/5 * * * *</code> (alle 5 Minuten), <code>0 9-17 * * 1-5</code> (stündlich von 9 bis 17 Uhr an Wochentagen). Diese Muster decken die meisten gängigen Planungsbedürfnisse für automatisierte Aufgaben, Backups, Berichte und Wartungsarbeiten ab."
+      },
+      {
+        "question": "Wie unterscheiden sich Cron-Ausdrücke zwischen verschiedenen Systemen und Implementierungen?",
+        "answer": "Während das grundlegende 5-Feld-Cron-Format Standard ist, gibt es bei verschiedenen Systemen Variationen: Unix/Linux-Cron verwendet das traditionelle 5-Feld-Format. Quartz Scheduler fügt ein sechstes Feld für Sekunden hinzu und unterstützt das Jahr. AWS CloudWatch und Azure Functions unterstützen zusätzliche Syntax für flexiblere Planung. Einige Implementierungen erlauben spezielle Zeichenfolgen wie @daily, @weekly oder @monthly als Abkürzungen. System-Cron kann Einschränkungen haben, wie häufig Jobs ausgeführt werden können, während programmatische Implementierungen möglicherweise eine sekundengenaue Präzision erlauben. Unser Tool konzentriert sich auf das Standard-5-Feld-Format, das mit den meisten Systemen kompatibel ist, aber Sie sollten immer die Syntaxkompatibilität mit Ihrer spezifischen Scheduler-Implementierung überprüfen."
+      },
+      {
+        "question": "Wie kann ich dieses Tool verwenden, um zuverlässige geplante Aufgaben zu erstellen?",
+        "answer": "Um zuverlässige geplante Aufgaben zu erstellen: Verwenden Sie zunächst unser Tool, um Ihren Cron-Ausdruck zu generieren und zu überprüfen - die menschenlesbare Erklärung stellt sicher, dass Sie genau verstehen, wann Ihre Aufgabe ausgeführt wird. Testen Sie Ihren Ausdruck mit mehreren Daten, um zu bestätigen, dass er wie erwartet ausgeführt wird. Berücksichtigen Sie Zeitzonen-Implikationen - Cron wird typischerweise in der lokalen Zeitzone des Servers ausgeführt. Für kritische Aufgaben sollten Sie Fehlerbehandlung und Überwachung einbeziehen. Vermeiden Sie die Planung von Aufgaben genau zur vollen Stunde, wenn die Systemlast oft am höchsten ist; verschieben Sie sie um einige Minuten (z.B. verwenden Sie 03 statt 00 für das Minutenfeld). Stellen Sie bei sehr häufigen Aufgaben sicher, dass Ihr System die Last bewältigen kann. Dokumentieren Sie schließlich Ihre Cron-Ausdrücke mit Kommentaren, die ihren Zweck und das erwartete Verhalten für zukünftige Referenz erklären."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "UUID Generator – Eindeutige Identifikatoren online erstellen",
     "description": "Generieren Sie zufällige UUID/GUID-Identifikatoren für Ihre Anwendungen, Datenbanken und Systeme. Erstellen Sie einzelne oder mehrere UUIDs mit diesem kostenlosen Online-Tool.",

@@ -1,5 +1,45 @@
 [
   {
+    "slug": "cron-expression-generator",
+    "name": "Cron-uttrykk Generator – Lag og Dekod Cron-planer",
+    "description": "Lag, dekod og forstå cron-uttrykk med menneskelig lesbare forklaringer på flere språk. Perfekt for planlegging av oppgaver, jobber og automatiserte prosesser.",
+    "category": "development",
+    "keywords": [
+      "cron generator",
+      "cron-uttrykk",
+      "cron-plan",
+      "cron parser",
+      "cron dekoder",
+      "cron syntaks",
+      "cron jobbplanlegger",
+      "cron format",
+      "cron oversetter",
+      "cron-uttrykk bygger"
+    ],
+    "faq": [
+      {
+        "question": "Hva er et cron-uttrykk og hvorfor brukes det?",
+        "answer": "Et cron-uttrykk er en streng av tegn som representerer en tidsplan for automatiserte oppgaver i Unix-lignende operativsystemer. Det består av fem eller seks felt som spesifiserer når en oppgave skal kjøre: minutt, time, dag i måneden, måned, ukedag og (valgfritt) år. Cron-uttrykk brukes mye i jobbplanleggere, CI/CD-pipelines, servervedlikehold, databehandling og ethvert system som krever tidsbasert jobbplanlegging. De gir en kortfattet måte å uttrykke komplekse tidsplaner som 'hver ukedag klokken 15:00' eller 'første dag i hver måned ved midnatt' i et standardisert format som datamaskiner kan tolke."
+      },
+      {
+        "question": "Hvordan leser og forstår jeg cron-uttrykk?",
+        "answer": "Cron-uttrykk følger et spesifikt format med 5-6 felt: <code>minutt time dag-i-måned måned ukedag [år]</code>. Hvert felt aksepterer spesifikke verdier eller spesialtegn: minutter (0-59), timer (0-23), dag i måneden (1-31), måned (1-12 eller JAN-DEC), ukedag (0-6 eller SUN-SAT), og valgfritt år. Spesialtegn inkluderer: asterisk (*) for 'enhver verdi', komma (,) for verdi-lister, bindestrek (-) for områder, skråstrek (/) for trinnverdier, og spørsmålstegn (?) for 'ingen spesifikk verdi'. For eksempel betyr <code>0 12 * * 1-5</code> 'klokken 12:00, mandag til fredag, hver måned'. Verktøyet vårt oversetter disse uttrykkene til menneskelig lesbar tekst for å hjelpe deg med å forstå nøyaktig når dine planlagte oppgaver vil kjøre."
+      },
+      {
+        "question": "Hva er noen vanlige cron-uttrykk eksempler?",
+        "answer": "Her er noen ofte brukte cron-uttrykk: <code>* * * * *</code> (hvert minutt), <code>0 * * * *</code> (hver time på minutt 0), <code>0 0 * * *</code> (daglig ved midnatt), <code>0 0 * * 0</code> (ukentlig på søndag ved midnatt), <code>0 0 1 * *</code> (månedlig den 1. ved midnatt), <code>0 0 1 1 *</code> (årlig den 1. januar ved midnatt), <code>0 0 * * 1-5</code> (ukedager ved midnatt), <code>*/5 * * * *</code> (hvert 5. minutt), <code>0 9-17 * * 1-5</code> (hver time fra 9 til 17 på ukedager). Disse mønstrene dekker de fleste vanlige planleggingsbehov for automatiserte oppgaver, sikkerhetskopier, rapporter og vedlikeholdsjobber."
+      },
+      {
+        "question": "Hvordan varierer cron-uttrykk på tvers av systemer og implementeringer?",
+        "answer": "Mens det grunnleggende 5-felts cron-formatet er standard, har forskjellige systemer variasjoner: Unix/Linux cron bruker det tradisjonelle 5-felts formatet. Quartz Scheduler legger til et sjette felt for sekunder og støtter år. AWS CloudWatch og Azure Functions støtter ytterligere syntaks for mer fleksibel planlegging. Noen implementeringer tillater spesielle strenger som @daily, @weekly eller @monthly som snarveier. System cron kan ha begrensninger på hvor ofte jobber kan kjøre, mens programmatiske implementeringer kan tillate sekund-nivå presisjon. Verktøyet vårt fokuserer på standard 5-felts format som er kompatibelt med de fleste systemer, men du bør alltid verifisere syntakskompatibilitet med din spesifikke planleggerimplementering."
+      },
+      {
+        "question": "Hvordan kan jeg bruke dette verktøyet til å lage pålitelige planlagte oppgaver?",
+        "answer": "For å lage pålitelige planlagte oppgaver: Bruk først verktøyet vårt til å generere og verifisere cron-uttrykket ditt - den menneskelig lesbare forklaringen sikrer at du forstår nøyaktig når oppgaven din vil kjøre. Test uttrykket ditt med flere datoer for å bekrefte at det kjører når forventet. Vurder tidssoneimplikasjoner - cron kjører vanligvis i serverens lokale tidssone. For kritiske oppgaver, inkluder feilhåndtering og overvåking. Unngå å planlegge oppgaver nøyaktig på toppen av timen når systembelastningen ofte topper seg; forskyv med noen minutter (bruk for eksempel 03 i stedet for 00 for minuttfeltet). For svært hyppige oppgaver, sørg for at systemet ditt kan håndtere belastningen. Til slutt, dokumenter cron-uttrykkene dine med kommentarer som forklarer formålet og forventet oppførsel for fremtidig referanse."
+      }
+    ]
+  },
+  {
     "slug": "uuid-generator",
     "name": "UUID Generator – Lag unike identifikatorer på nett",
     "description": "Generer tilfeldige UUID/GUID identifikatorer for dine applikasjoner, databaser og systemer. Lag unike eller bulk UUID-er med dette gratis nettverktøyet.",

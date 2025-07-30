@@ -48,7 +48,7 @@ interface ImageItem {
 type SupportedFormat = "jpeg" | "png" | "webp";
 
 const ImageConverter: React.FC = () => {
-    const t = useTranslations("Tools.imageConverter");
+    const t = useTranslations("ImageConverter");
     const [images, setImages] = useState<ImageItem[]>([]);
     const [outputFormat, setOutputFormat] = useState<SupportedFormat>("jpeg");
     const [isDragging, setIsDragging] = useState<boolean>(false);

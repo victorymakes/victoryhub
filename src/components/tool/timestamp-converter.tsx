@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 export const TimestampConverter = () => {
-    const t = useTranslations("Tools.timestampConverter");
+    const t = useTranslations("TimestampConverter");
     const [timestamp, setTimestamp] = useState<string>("");
     const [dateTime, setDateTime] = useState<string>("");
     const [currentTimestamp, setCurrentTimestamp] = useState<string>("");

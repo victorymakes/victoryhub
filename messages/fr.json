@@ -90,7 +90,21 @@
     "retry": "Réessayer",
     "goHome": "Aller à l'accueil"
   },
-  "uuidGenerator": {
+  "Blog": {
+    "title": "Blog",
+    "description": "Articles et tutoriels sur nos outils",
+    "readMore": "Lire la suite",
+    "backToBlog": "Retour au Blog",
+    "publishedOn": "Publié le",
+    "author": "Auteur",
+    "tags": "Tags",
+    "relatedPosts": "Articles connexes",
+    "noPostsFound": "Aucun article trouvé",
+    "searchPlaceholder": "Rechercher des articles...",
+    "categories": "Catégories",
+    "allCategories": "Toutes les catégories"
+  },
+  "UuidGenerator": {
     "title": "Générateur UUID",
     "description": "Génère des identifiants uniques universels (UUID) dans divers formats",
     "version": "Version",
@@ -105,7 +119,7 @@
     "copied": "Copié !",
     "clear": "Effacer"
   },
-  "passwordGenerator": {
+  "PasswordGenerator": {
     "title": "Générateur de Mots de Passe",
     "description": "Génère des mots de passe sécurisés et personnalisables",
     "length": "Longueur",
@@ -127,7 +141,7 @@
     "customCharacters": "Caractères personnalisés",
     "mustIncludeAtLeast": "Doit inclure au moins un type de caractère"
   },
-  "timestampConverter": {
+  "TimestampConverter": {
     "title": "Convertisseur d'Horodatage",
     "description": "Convertit entre les horodatages Unix et les dates lisibles",
     "currentTimestamp": "Horodatage actuel",
@@ -146,7 +160,7 @@
     "local": "Local",
     "timezone": "Fuseau horaire"
   },
-  "whatsMyIp": {
+  "WhatsMyIp": {
     "title": "Quelle est mon IP",
     "description": "Découvrez votre adresse IP publique et les informations de localisation",
     "loading": "Chargement...",
@@ -165,7 +179,7 @@
     "copy": "Copier",
     "copied": "Copié !"
   },
-  "urlEncoder": {
+  "UrlEncoder": {
     "title": "Encodeur/Décodeur d'URL",
     "description": "Encode et décode les URLs et les composants d'URL",
     "input": "Entrez le texte ou l'URL",
@@ -179,7 +193,7 @@
     "fullUrl": "URL complète",
     "component": "Composant"
   },
-  "base64Encoder": {
+  "Base64Encoder": {
     "title": "Encodeur/Décodeur Base64",
     "description": "Encode et décode le texte au format Base64",
     "input": "Entrez le texte",
@@ -195,7 +209,7 @@
     "dragDropFile": "Glissez et déposez un fichier ici",
     "downloadDecoded": "Télécharger décodé"
   },
-  "imageCompressor": {
+  "ImageCompressor": {
     "title": "Compresseur d'Images",
     "description": "Compresse les images pour réduire la taille du fichier tout en maintenant la qualité",
     "selectImage": "Sélectionner une image",
@@ -213,7 +227,7 @@
     "error": "Erreur lors de la compression de l'image",
     "supportedFormats": "Formats supportés : JPEG, PNG, WebP"
   },
-  "imageResizer": {
+  "ImageResizer": {
     "title": "Redimensionneur d'Images",
     "description": "Redimensionne les images en spécifiant la largeur, la hauteur ou le pourcentage",
     "selectImage": "Sélectionner une image",
@@ -234,7 +248,7 @@
     "invalidDimensions": "Dimensions invalides",
     "supportedFormats": "Formats supportés : JPEG, PNG, WebP, GIF"
   },
-  "imageConverter": {
+  "ImageConverter": {
     "title": "Convertisseur d'Images",
     "description": "Convertit les images entre différents formats (JPEG, PNG, WebP, GIF)",
     "selectImage": "Sélectionner une image",
@@ -252,7 +266,7 @@
     "error": "Erreur lors de la conversion de l'image",
     "supportedFormats": "Formats supportés : JPEG, PNG, WebP, GIF, BMP, TIFF"
   },
-  "qrcodeGenerator": {
+  "QrcodeGenerator": {
     "title": "Générateur de Code QR",
     "description": "Génère des codes QR pour le texte, les URLs, les e-mails et plus",
     "input": "Entrez le texte ou l'URL",
@@ -275,18 +289,33 @@
     "error": "Erreur lors de la génération du code QR",
     "inputRequired": "Saisie requise"
   },
-  "Blog": {
-    "title": "Blog",
-    "description": "Articles et tutoriels sur nos outils",
-    "readMore": "Lire la suite",
-    "backToBlog": "Retour au Blog",
-    "publishedOn": "Publié le",
-    "author": "Auteur",
-    "tags": "Tags",
-    "relatedPosts": "Articles connexes",
-    "noPostsFound": "Aucun article trouvé",
-    "searchPlaceholder": "Rechercher des articles...",
-    "categories": "Catégories",
-    "allCategories": "Toutes les catégories"
+  "CronGenerator": {
+    "title": "Générateur d'Expression Cron",
+    "description": "Créez et décodez des expressions cron avec des explications lisibles par l'homme",
+    "cronExpression": "Expression Cron",
+    "humanReadable": "Explication Lisible",
+    "language": "Langue d'Explication",
+    "selectLanguage": "Sélectionner la langue",
+    "predefinedExpressions": "Expressions Prédéfinies",
+    "selectExpression": "Sélectionner une expression prédéfinie",
+    "enterCronExpression": "Entrez l'expression cron...",
+    "outputPlaceholder": "L'explication lisible apparaîtra ici...",
+    "generateRandom": "Générer Aléatoire",
+    "reset": "Réinitialiser",
+    "copied": "Copié !",
+    "everyMinute": "Chaque minute",
+    "everyHour": "Chaque heure",
+    "everyDay": "Chaque jour à minuit",
+    "everySunday": "Chaque dimanche à minuit",
+    "everyMonth": "Premier jour de chaque mois",
+    "everyYear": "1er janvier à minuit",
+    "weekdays": "Jours de semaine (Lundi-Vendredi)",
+    "weekends": "Week-ends (Samedi-Dimanche)",
+    "everyFiveMinutes": "Toutes les 5 minutes",
+    "everyTwoHours": "Toutes les 2 heures",
+    "formatInfo": "Format: minute heure jour-du-mois mois jour-de-la-semaine (0-59 0-23 1-31 1-12 0-6)",
+    "errors": {
+      "invalidExpression": "Expression cron invalide. Veuillez vérifier votre saisie."
+    }
   }
 }
