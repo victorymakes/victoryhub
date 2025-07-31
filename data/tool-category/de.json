@@ -22,5 +22,11 @@
     "name": "Medien & Bilder",
     "description": "Tools für Bild-, Medien- und Dateiverarbeitung",
     "icon": "image"
+  },
+  {
+    "slug": "utilities",
+    "name": "Dienstprogramme",
+    "description": "Alltagswerkzeuge und Rechner für Produktivität und täglichen Gebrauch",
+    "icon": "activity"
   }
 ]

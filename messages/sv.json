@@ -416,5 +416,32 @@
     "errors": {
       "invalidExpression": "Ogiltigt cron-uttryck. Kontrollera din inmatning."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Måttenhet",
+    "metric": "Metrisk (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "heightCm": "Längd (cm)",
+    "heightIn": "Längd (in)",
+    "weightKg": "Vikt (kg)",
+    "weightLb": "Vikt (lb)",
+    "calculate": "Beräkna BMI",
+    "reset": "Återställ",
+    "results": "Resultat",
+    "yourBMI": "Ditt BMI",
+    "category": "Kategori",
+    "whatItMeans": "Vad detta betyder",
+    "bmiExplanation": "BMI är ett screeningverktyg som kan indikera om du kan ha undervikt, normalvikt, övervikt eller fetma. Det mäter dock inte kroppsfett direkt och tar inte hänsyn till faktorer som muskelmassa, bentäthet eller allmän kroppssammansättning.",
+    "categories": {
+      "underweight": "Undervikt",
+      "normal": "Normalvikt",
+      "overweight": "Övervikt",
+      "obese": "Fetma"
+    },
+    "errors": {
+      "emptyFields": "Ange både längd och vikt",
+      "invalidNumbers": "Ange giltiga nummer",
+      "positiveNumbers": "Längd och vikt måste vara positiva tal"
+    }
   }
 }

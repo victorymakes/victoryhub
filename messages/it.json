@@ -317,5 +317,32 @@
     "errors": {
       "invalidExpression": "Espressione cron non valida. Controlla il tuo input."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Sistema di unità",
+    "metric": "Metrico (cm, kg)",
+    "imperial": "Imperiale (in, lb)",
+    "heightCm": "Altezza (cm)",
+    "heightIn": "Altezza (in)",
+    "weightKg": "Peso (kg)",
+    "weightLb": "Peso (lb)",
+    "calculate": "Calcola BMI",
+    "reset": "Reimposta",
+    "results": "Risultati",
+    "yourBMI": "Il tuo BMI",
+    "category": "Categoria",
+    "whatItMeans": "Cosa significa",
+    "bmiExplanation": "L'Indice di Massa Corporea (BMI) è una misura che valuta lo stato del peso in base all'altezza e al peso. È uno strumento di screening comune che può indicare potenziali rischi per la salute, ma non misura direttamente la composizione corporea o la salute generale.",
+    "categories": {
+      "underweight": "Sottopeso",
+      "normal": "Normale",
+      "overweight": "Sovrappeso",
+      "obese": "Obeso"
+    },
+    "errors": {
+      "emptyFields": "Inserisci sia l'altezza che il peso",
+      "invalidNumbers": "Inserisci numeri validi",
+      "positiveNumbers": "L'altezza e il peso devono essere numeri positivi"
+    }
   }
 }

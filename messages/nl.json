@@ -317,5 +317,32 @@
     "errors": {
       "invalidExpression": "Ongeldige cron expressie. Controleer uw invoer."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Maateenheid",
+    "metric": "Metrisch (cm, kg)",
+    "imperial": "Imperiaal (in, lb)",
+    "heightCm": "Lengte (cm)",
+    "heightIn": "Lengte (in)",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "calculate": "Bereken BMI",
+    "reset": "Reset",
+    "results": "Resultaten",
+    "yourBMI": "Je BMI",
+    "category": "Categorie",
+    "whatItMeans": "Wat dit betekent",
+    "bmiExplanation": "BMI is een screeningsinstrument dat kan aangeven of je mogelijk ondergewicht, een gezond gewicht, overgewicht of obesitas hebt. Het meet echter niet direct lichaamsvet en houdt geen rekening met factoren zoals spiermassa, botdichtheid of algehele lichaamssamenstelling.",
+    "categories": {
+      "underweight": "Ondergewicht",
+      "normal": "Normaal gewicht",
+      "overweight": "Overgewicht",
+      "obese": "Obesitas"
+    },
+    "errors": {
+      "emptyFields": "Voer zowel lengte als gewicht in",
+      "invalidNumbers": "Voer geldige getallen in",
+      "positiveNumbers": "Lengte en gewicht moeten positieve getallen zijn"
+    }
   }
 }

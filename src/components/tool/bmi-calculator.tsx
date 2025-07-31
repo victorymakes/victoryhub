@@ -10,13 +10,21 @@ import { useTranslations } from "next-intl";
 import { AlertCircle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
+// BMI category enum
+export enum BMICategory {
+    UNDERWEIGHT = "UNDERWEIGHT",
+    NORMAL = "NORMAL",
+    OVERWEIGHT = "OVERWEIGHT",
+    OBESE = "OBESE",
+}
+
 export default function BMICalculator() {
     const t = useTranslations("BMICalculator");
     const [height, setHeight] = useState<string>("");
     const [weight, setWeight] = useState<string>("");
     const [unit, setUnit] = useState<"metric" | "imperial">("metric");
     const [bmi, setBMI] = useState<number | null>(null);
-    const [category, setCategory] = useState<string>("");
+    const [category, setCategory] = useState<BMICategory | null>(null);
     const [error, setError] = useState<string | null>(null);
 
     const calculateBMI = useCallback(() => {
@@ -58,13 +66,13 @@ export default function BMICalculator() {
 
         // Determine BMI category
         if (bmiValue < 18.5) {
-            setCategory(t("categories.underweight"));
+            setCategory(BMICategory.UNDERWEIGHT);
         } else if (bmiValue < 25) {
-            setCategory(t("categories.normal"));
+            setCategory(BMICategory.NORMAL);
         } else if (bmiValue < 30) {
-            setCategory(t("categories.overweight"));
+            setCategory(BMICategory.OVERWEIGHT);
         } else {
-            setCategory(t("categories.obese"));
+            setCategory(BMICategory.OBESE);
         }
     }, [height, weight, unit, t]);
 
@@ -72,8 +80,24 @@ export default function BMICalculator() {
         setHeight("");
         setWeight("");
         setBMI(null);
-        setCategory("");
+        setCategory(null);
         setError(null);
+    };
+
+    // Helper to get color class based on category
+    const getCategoryColor = (category: BMICategory | null) => {
+        switch (category) {
+            case BMICategory.UNDERWEIGHT:
+                return "text-blue-500";
+            case BMICategory.NORMAL:
+                return "text-green-500";
+            case BMICategory.OVERWEIGHT:
+                return "text-orange-500";
+            case BMICategory.OBESE:
+                return "text-red-500";
+            default:
+                return "text-gray-500";
+        }
     };
 
     return (
@@ -172,8 +196,8 @@ export default function BMICalculator() {
                 </CardContent>
             </Card>
 
-            {bmi !== null && (
-                <Card>
+            {bmi !== null && category !== null && (
+                <Card className="shadow-lg border-2 border-gray-100">
                     <CardContent className="pt-6">
                         <div className="space-y-4">
                             <div>
@@ -185,7 +209,9 @@ export default function BMICalculator() {
                                         <p className="text-sm text-muted-foreground">
                                             {t("yourBMI")}
                                         </p>
-                                        <p className="text-2xl font-bold">
+                                        <p
+                                            className={`text-2xl font-bold ${getCategoryColor(category)} transition-colors duration-300`}
+                                        >
                                             {bmi}
                                         </p>
                                     </div>
@@ -193,8 +219,12 @@ export default function BMICalculator() {
                                         <p className="text-sm text-muted-foreground">
                                             {t("category")}
                                         </p>
-                                        <p className="text-2xl font-bold">
-                                            {category}
+                                        <p
+                                            className={`text-2xl font-bold ${getCategoryColor(category)} transition-colors duration-300`}
+                                        >
+                                            {t(
+                                                `categories.${category.toLowerCase()}`,
+                                            )}
                                         </p>
                                     </div>
                                 </div>

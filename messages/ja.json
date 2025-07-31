@@ -133,7 +133,35 @@
     "copyAll": "すべてコピー",
     "warnings": {
       "largeBatch": "大量のUUID生成には時間がかかる場合があります。"
-    }
+    },
+  "BMICalculator": {
+    "unitSystem": "単位系",
+    "metric": "メートル法",
+    "imperial": "ヤード・ポンド法",
+    "height": "身長",
+    "weight": "体重",
+    "heightCm": "センチメートル",
+    "heightFtIn": "フィート/インチ",
+    "weightKg": "キログラム",
+    "weightLbs": "ポンド",
+    "calculate": "BMIを計算",
+    "reset": "リセット",
+    "result": "結果",
+    "yourBMI": "あなたのBMI",
+    "category": "カテゴリー",
+    "bmiExplanation": "体格指数（BMI）は、体重と身長に基づいて体重状態を評価する指標です。これは健康リスクの可能性を示す一般的なスクリーニングツールですが、体組成や全体的な健康状態を直接測定するものではありません。",
+    "underweight": "低体重",
+    "normal": "標準体重",
+    "overweight": "過体重",
+    "obese": "肥満",
+    "underweightDesc": "BMI 18.5未満は低体重を示しています。栄養不足のリスクがあるかもしれません。",
+    "normalDesc": "BMI 18.5～24.9は健康的な体重範囲を示しています。",
+    "overweightDesc": "BMI 25～29.9は過体重を示しています。健康リスクが高まる可能性があります。",
+    "obeseDesc": "BMI 30以上は肥満を示しています。健康リスクが大幅に高まります。",
+    "errorEmpty": "このフィールドは必須です",
+    "errorNumber": "有効な数値を入力してください",
+    "errorPositive": "正の数値を入力してください"
+  }
   },
   "PasswordGenerator": {
     "title": "パスワード生成器",
@@ -401,6 +429,33 @@
     "formatInfo": "形式: 分 時 日 月 曜日 (0-59 0-23 1-31 1-12 0-6)",
     "errors": {
       "invalidExpression": "無効なCron式です。入力を確認してください。"
+    }
+  },
+  "BMICalculator": {
+    "unitSystem": "単位系",
+    "metric": "メートル法 (cm, kg)",
+    "imperial": "ヤード・ポンド法 (in, lb)",
+    "heightCm": "身長 (cm)",
+    "heightIn": "身長 (in)",
+    "weightKg": "体重 (kg)",
+    "weightLb": "体重 (lb)",
+    "calculate": "BMI計算",
+    "reset": "リセット",
+    "results": "結果",
+    "yourBMI": "あなたのBMI",
+    "category": "カテゴリー",
+    "whatItMeans": "これが意味すること",
+    "bmiExplanation": "BMIは、あなたが低体重、健康的な体重、過体重、または肥満である可能性を示すスクリーニングツールです。ただし、体脂肪を直接測定するものではなく、筋肉量、骨密度、または全体的な体組成などの要因を考慮していません。",
+    "categories": {
+      "underweight": "低体重",
+      "normal": "標準体重",
+      "overweight": "過体重",
+      "obese": "肥満"
+    },
+    "errors": {
+      "emptyFields": "身長と体重の両方を入力してください",
+      "invalidNumbers": "有効な数値を入力してください",
+      "positiveNumbers": "身長と体重は正の数でなければなりません"
     }
   }
 }

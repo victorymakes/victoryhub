@@ -317,5 +317,32 @@
     "errors": {
       "invalidExpression": "Expresión cron inválida. Por favor verifique su entrada."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Sistema de unidades",
+    "metric": "Métrico (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "heightCm": "Altura (cm)",
+    "heightIn": "Altura (in)",
+    "weightKg": "Peso (kg)",
+    "weightLb": "Peso (lb)",
+    "calculate": "Calcular IMC",
+    "reset": "Reiniciar",
+    "results": "Resultados",
+    "yourBMI": "Tu IMC",
+    "category": "Categoría",
+    "whatItMeans": "Qué significa esto",
+    "bmiExplanation": "El IMC es una herramienta de detección que puede indicar si tienes bajo peso, peso normal, sobrepeso u obesidad. Sin embargo, no mide directamente la grasa corporal y no tiene en cuenta factores como la masa muscular, la densidad ósea o la composición corporal general.",
+    "categories": {
+      "underweight": "Bajo peso",
+      "normal": "Peso normal",
+      "overweight": "Sobrepeso",
+      "obese": "Obesidad"
+    },
+    "errors": {
+      "emptyFields": "Por favor, introduce tanto la altura como el peso",
+      "invalidNumbers": "Por favor, introduce números válidos",
+      "positiveNumbers": "La altura y el peso deben ser números positivos"
+    }
   }
 }

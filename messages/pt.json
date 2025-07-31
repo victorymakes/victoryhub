@@ -405,5 +405,32 @@
     "errors": {
       "invalidExpression": "Expressão cron inválida. Por favor, verifique sua entrada."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Sistema de unidades",
+    "metric": "Métrico (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "heightCm": "Altura (cm)",
+    "heightIn": "Altura (in)",
+    "weightKg": "Peso (kg)",
+    "weightLb": "Peso (lb)",
+    "calculate": "Calcular IMC",
+    "reset": "Redefinir",
+    "results": "Resultados",
+    "yourBMI": "Seu IMC",
+    "category": "Categoria",
+    "whatItMeans": "O que isso significa",
+    "bmiExplanation": "O Índice de Massa Corporal (IMC) é uma medida que avalia o estado do peso com base na altura e no peso. É uma ferramenta de triagem comum que pode indicar possíveis riscos à saúde, mas não mede diretamente a composição corporal ou a saúde geral.",
+    "categories": {
+      "underweight": "Abaixo do peso",
+      "normal": "Normal",
+      "overweight": "Sobrepeso",
+      "obese": "Obeso"
+    },
+    "errors": {
+      "emptyFields": "Por favor, insira altura e peso",
+      "invalidNumbers": "Por favor, insira números válidos",
+      "positiveNumbers": "Altura e peso devem ser números positivos"
+    }
   }
 }

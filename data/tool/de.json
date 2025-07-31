@@ -273,5 +273,49 @@
         "answer": "Die meisten Programmiersprachen bieten eingebaute Base64-Funktionen. In JavaScript verwenden Sie <code>btoa()</code> zum Kodieren und <code>atob()</code> zum Dekodieren für ASCII-Strings, oder die moderneren <code>TextEncoder</code> und <code>TextDecoder</code> mit <code>Uint8Array</code> für Unicode. Python bietet das <code>base64</code>-Modul. PHP hat <code>base64_encode()</code> und <code>base64_decode()</code>. Java bietet <code>Base64.getEncoder()</code> und <code>Base64.getDecoder()</code>. Für Unicode-Text und Binärdaten gibt es oft spezielle Überlegungen - konsultieren Sie immer die Dokumentation Ihrer Sprache für Best Practices und Beispiele, wie <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN's Base64-Leitfaden</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI-Rechner – Überprüfen Sie Ihren Body-Mass-Index sofort",
+    "description": "Berechnen Sie Ihren Body-Mass-Index (BMI) mit metrischen oder imperialen Einheiten. Erhalten Sie sofortige Ergebnisse mit Kategorisierung und Gesundheitseinblicken.",
+    "category": "utilities",
+    "keywords": [
+      "bmi rechner",
+      "body mass index",
+      "gewichtsrechner",
+      "gesundheitsrechner",
+      "fitness-tool",
+      "gewichtsgesundheit",
+      "bmi tabelle",
+      "bmi kategorien",
+      "gewichtsstatus",
+      "gesunder gewichtsrechner"
+    ],
+    "faq": [
+      {
+        "question": "Was ist der BMI und wie wird er berechnet?",
+        "answer": "Der Body-Mass-Index (BMI) ist ein numerischer Wert, der aus dem Gewicht und der Größe einer Person berechnet wird. Er ist ein Screening-Tool, um zu kategorisieren, ob eine Person untergewichtig, normalgewichtig, übergewichtig oder adipös ist. Die Formel für die BMI-Berechnung lautet: Gewicht (kg) geteilt durch Größe im Quadrat (m²) im metrischen System oder Gewicht (lb) multipliziert mit 703 geteilt durch Größe im Quadrat (in²) im imperialen System. Obwohl der BMI für die Bewertung auf Bevölkerungsebene nützlich ist, misst er nicht direkt Körperfett und berücksichtigt keine Faktoren wie Muskelmasse, Knochendichte oder allgemeine Körperzusammensetzung."
+      },
+      {
+        "question": "Was sind die BMI-Kategorien und was bedeuten sie?",
+        "answer": "BMI-Kategorien sind standardisierte Bereiche, die bei der Interpretation von BMI-Werten helfen: Untergewicht (BMI unter 18,5): Kann auf Mangelernährung, Essstörungen oder andere Gesundheitsprobleme hinweisen. Normalgewicht (BMI 18,5-24,9): Wird im Allgemeinen mit guten Gesundheitsergebnissen in Verbindung gebracht. Übergewicht (BMI 25-29,9): Kann das Risiko für bestimmte Gesundheitszustände erhöhen. Adipositas (BMI 30 oder höher): Wird mit einem höheren Risiko für verschiedene Gesundheitsprobleme wie Herzerkrankungen, Typ-2-Diabetes und bestimmte Krebsarten in Verbindung gebracht. Diese Kategorien sind allgemeine Richtlinien, und die individuelle Gesundheitsbewertung sollte andere Faktoren neben dem BMI allein berücksichtigen."
+      },
+      {
+        "question": "Ist der BMI für jeden genau?",
+        "answer": "Der BMI hat mehrere Einschränkungen und ist nicht für alle Personen gleich genau. Er kann bei Athleten und anderen mit muskulösem Körperbau den Körperfettanteil überschätzen, da er nicht zwischen Muskeln und Fett unterscheidet. Er kann den Körperfettanteil bei älteren Personen oder solchen, die Muskelmasse verloren haben, unterschätzen. Der BMI berücksichtigt keine Unterschiede in der Körperzusammensetzung zwischen ethnischen Gruppen. Er berücksichtigt nicht die Fettverteilung (wo Fett am Körper gespeichert wird), was wichtig ist, da Bauchfett höhere Gesundheitsrisiken birgt als Fett, das in anderen Bereichen gespeichert ist. Aus diesen Gründen sollte der BMI zusammen mit anderen Messungen wie Taillenumfang, Körperfettanteil und allgemeinen Gesundheitsbewertungen betrachtet werden."
+      },
+      {
+        "question": "Wie oft sollte ich meinen BMI berechnen?",
+        "answer": "Es gibt keine strenge Regel dafür, wie oft der BMI berechnet werden sollte, aber es kann nützlich sein, ihn regelmäßig als Teil der allgemeinen Gesundheitsüberwachung zu verfolgen. Für Erwachsene mit stabilem Gewicht ist eine jährliche Überprüfung während regelmäßiger Gesundheitschecks oft ausreichend. Wenn Sie aktiv versuchen, aus gesundheitlichen Gründen Gewicht zu verlieren oder zuzunehmen, könnten Sie häufiger (monatlich oder vierteljährlich) überprüfen, um den Fortschritt zu verfolgen. Konzentrieren Sie sich jedoch auf langfristige Trends statt auf kleine Schwankungen. Denken Sie daran, dass der BMI nur ein Gesundheitsindikator ist und zusammen mit anderen Faktoren wie Ihrem Wohlbefinden, Ihrem Energieniveau und anderen Gesundheitsmetriken, die Ihr Gesundheitsdienstleister empfehlen könnte, betrachtet werden sollte."
+      },
+      {
+        "question": "Was sollte ich tun, wenn mein BMI anzeigt, dass ich übergewichtig oder adipös bin?",
+        "answer": "Wenn Ihr BMI in die Kategorie übergewichtig oder adipös fällt, betrachten Sie es als eine Information über Ihre Gesundheit, nicht als Diagnose. Konsultieren Sie zunächst einen Gesundheitsdienstleister, der Ihre allgemeine Gesundheit unter Berücksichtigung von Faktoren jenseits des BMI bewerten kann. Sie könnten zusätzliche Bewertungen wie Bluttests oder Körperzusammensetzungsanalysen empfehlen. Konzentrieren Sie sich auf gesunde Lebensstiländerungen statt nur auf Gewichtsverlust: erhöhen Sie die körperliche Aktivität (streben Sie mindestens 150 Minuten moderate Aktivität pro Woche an), verbessern Sie die Ernährung, indem Sie mehr Obst, Gemüse und Vollwertkost essen und verarbeitete Lebensmittel und zuckerhaltige Getränke reduzieren, bekommen Sie ausreichend Schlaf und bewältigen Sie Stress. Denken Sie daran, dass selbst ein bescheidener Gewichtsverlust (5-10% des Körpergewichts) die Gesundheitsergebnisse erheblich verbessern kann, wenn nötig."
+      },
+      {
+        "question": "Sind meine Daten privat?",
+        "answer": "Ja. Alle BMI-Berechnungen werden lokal in Ihrem Browser durchgeführt. Es werden keine Daten hochgeladen oder gespeichert, wodurch Ihre Informationen privat bleiben."
+      }
+    ]
   }
 ]

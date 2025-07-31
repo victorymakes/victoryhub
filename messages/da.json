@@ -405,5 +405,32 @@
     "errors": {
       "invalidExpression": "Ugyldigt cron-udtryk. Kontroller venligst dit input."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Måleenhed",
+    "metric": "Metrisk (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "heightCm": "Højde (cm)",
+    "heightIn": "Højde (in)",
+    "weightKg": "Vægt (kg)",
+    "weightLb": "Vægt (lb)",
+    "calculate": "Beregn BMI",
+    "reset": "Nulstil",
+    "results": "Resultater",
+    "yourBMI": "Dit BMI",
+    "category": "Kategori",
+    "whatItMeans": "Hvad det betyder",
+    "bmiExplanation": "BMI er et screeningsværktøj, der kan indikere, om du muligvis er undervægtig, har en sund vægt, er overvægtig eller har fedme. Det måler dog ikke direkte kropsfedt og tager ikke højde for faktorer som muskelmasse, knogletæthed eller generel kropssammensætning.",
+    "categories": {
+      "underweight": "Undervægtig",
+      "normal": "Normal vægt",
+      "overweight": "Overvægtig",
+      "obese": "Fedme"
+    },
+    "errors": {
+      "emptyFields": "Indtast venligst både højde og vægt",
+      "invalidNumbers": "Indtast venligst gyldige tal",
+      "positiveNumbers": "Højde og vægt skal være positive tal"
+    }
   }
 }

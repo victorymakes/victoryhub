@@ -22,5 +22,11 @@
     "name": "Media & Bild",
     "description": "Verktyg för bild-, medie- och filbehandling",
     "icon": "image"
+  },
+  {
+    "slug": "utilities",
+    "name": "Verktyg",
+    "description": "Dagliga produktivitetsverktyg och kalkylatorer",
+    "icon": "activity"
   }
 ]
