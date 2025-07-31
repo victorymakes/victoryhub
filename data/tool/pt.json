@@ -273,5 +273,49 @@
         "answer": "A maioria das linguagens de programação oferece funções Base64 integradas. Em JavaScript, você usa <code>btoa()</code> para codificação e <code>atob()</code> para decodificação de strings ASCII, ou os mais modernos <code>TextEncoder</code> e <code>TextDecoder</code> com <code>Uint8Array</code> para Unicode. Python oferece o módulo <code>base64</code>. PHP tem <code>base64_encode()</code> e <code>base64_decode()</code>. Java oferece <code>Base64.getEncoder()</code> e <code>Base64.getDecoder()</code>. Para texto Unicode e dados binários, frequentemente há considerações especiais - sempre veja a documentação da sua linguagem para melhores práticas e exemplos, como o <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>guia MDN sobre Base64</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "Calculadora de IMC – Verifique seu índice de massa corporal",
+    "description": "Calcule seu índice de massa corporal (IMC) usando unidades métricas ou imperiais. Obtenha resultados instantâneos com classificação por categoria e informações de saúde.",
+    "category": "utilities",
+    "keywords": [
+      "calculadora imc",
+      "índice de massa corporal",
+      "calculadora de peso",
+      "calculadora de saúde",
+      "ferramenta de fitness",
+      "peso saúde",
+      "tabela imc",
+      "categorias imc",
+      "estado do peso",
+      "calculadora de peso saudável"
+    ],
+    "faq": [
+      {
+        "question": "O que é o IMC e como é calculado?",
+        "answer": "O Índice de Massa Corporal (IMC) é um número calculado a partir do peso e altura de uma pessoa. É uma ferramenta de triagem usada para classificar se uma pessoa está abaixo do peso, com peso normal, com sobrepeso ou obesa. A fórmula para o cálculo do IMC é: peso (kg) dividido pelo quadrado da altura (m²) no sistema métrico, ou peso (lb) multiplicado por 703 dividido pelo quadrado da altura (in²) no sistema imperial. O IMC é útil para avaliações em nível populacional, mas não mede diretamente a gordura corporal e não leva em conta fatores como massa muscular, densidade óssea ou composição corporal geral."
+      },
+      {
+        "question": "Quais são as categorias de IMC e o que elas significam?",
+        "answer": "As categorias de IMC são faixas padronizadas que ajudam a interpretar os valores de IMC: Abaixo do peso (IMC abaixo de 18,5): Pode indicar desnutrição, distúrbios alimentares ou outros problemas de saúde. Peso normal (IMC 18,5-24,9): Geralmente associado a bons resultados de saúde. Sobrepeso (IMC 25-29,9): Pode aumentar o risco de certas condições de saúde. Obesidade (IMC 30 ou mais): Aumenta o risco de vários problemas de saúde, incluindo doenças cardíacas, diabetes tipo 2 e certos tipos de câncer. Essas categorias são diretrizes gerais, e avaliações individuais de saúde devem considerar fatores além do IMC."
+      },
+      {
+        "question": "O IMC é preciso para todos?",
+        "answer": "O IMC tem várias limitações e não é igualmente preciso para todos os indivíduos. Não distingue entre músculo e gordura, então pode superestimar a gordura corporal em atletas e pessoas com físico musculoso. Pode subestimar a gordura corporal em idosos e aqueles que perderam massa muscular. Não leva em conta diferenças na composição corporal entre grupos étnicos. Não considera a distribuição da gordura corporal (onde a gordura se acumula no corpo), o que é importante porque a gordura abdominal apresenta maiores riscos à saúde do que a gordura acumulada em outras áreas. Por essas razões, o IMC deve ser considerado junto com outras medidas como circunferência da cintura, percentual de gordura corporal e uma avaliação geral de saúde."
+      },
+      {
+        "question": "Com que frequência devo calcular meu IMC?",
+        "answer": "Não há regras rígidas sobre a frequência com que calcular o IMC, mas pode ser útil acompanhá-lo regularmente como parte do monitoramento geral da saúde. Para adultos com peso estável, verificá-lo uma vez por ano durante check-ups de saúde regulares geralmente é suficiente. Se você está ativamente tentando perder ou ganhar peso por razões de saúde, pode verificá-lo com mais frequência (mensalmente ou trimestralmente) para acompanhar o progresso. No entanto, concentre-se em tendências de longo prazo em vez de pequenas flutuações. Lembre-se de que o IMC é apenas um indicador de saúde e deve ser considerado junto com outros fatores como como você se sente, seus níveis de energia e outros indicadores de saúde que seu provedor de cuidados de saúde pode recomendar."
+      },
+      {
+        "question": "O que devo fazer se meu IMC indicar que estou com sobrepeso ou obeso?",
+        "answer": "Se seu IMC cair nas categorias de sobrepeso ou obesidade, considere-o como uma informação sobre sua saúde, não um diagnóstico. Primeiro, consulte um profissional de saúde que possa avaliar sua saúde geral considerando fatores além do IMC. Eles podem recomendar avaliações adicionais como exames de sangue ou análise de composição corporal. Concentre-se em mudanças de estilo de vida saudáveis em vez de apenas perda de peso: aumente a atividade física (visando pelo menos 150 minutos de atividade moderada por semana), melhore a nutrição comendo mais frutas, vegetais e alimentos integrais e reduzindo alimentos processados e bebidas açucaradas, durma o suficiente e gerencie o estresse. Lembre-se de que mesmo uma modesta perda de peso (5-10% do peso corporal) pode melhorar significativamente os resultados de saúde, se necessário."
+      },
+      {
+        "question": "Meus dados são privados?",
+        "answer": "Sim. Todos os cálculos de IMC são realizados localmente em seu navegador. Os dados não são carregados ou salvos, garantindo a privacidade de suas informações."
+      }
+    ]
   }
 ]

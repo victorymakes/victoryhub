@@ -22,6 +22,11 @@
     "name": "メディア・画像",
     "description": "画像やメディア、ファイル処理のためのツール",
     "icon": "image"
+  },
+  {
+    "slug": "utilities",
+    "name": "ユーティリティ",
+    "description": "日常の生産性や計算機などの便利ツール",
+    "icon": "activity"
   }
 ]
-

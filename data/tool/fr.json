@@ -273,5 +273,49 @@
         "answer": "La plupart des langages de programmation offrent des fonctions Base64 intégrées. En JavaScript, utilisez <code>btoa()</code> pour encoder et <code>atob()</code> pour décoder pour les chaînes ASCII, ou les plus modernes <code>TextEncoder</code> et <code>TextDecoder</code> avec <code>Uint8Array</code> pour Unicode. Python fournit le module <code>base64</code>. PHP a <code>base64_encode()</code> et <code>base64_decode()</code>. Java fournit <code>Base64.getEncoder()</code> et <code>Base64.getDecoder()</code>. Pour le texte Unicode et les données binaires, il y a souvent des considérations spéciales - consultez toujours la documentation de votre langage pour les meilleures pratiques et exemples, comme le <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>guide Base64 de MDN</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "Calculateur d'IMC – Vérifiez votre indice de masse corporelle instantanément",
+    "description": "Calculez votre indice de masse corporelle (IMC) en utilisant des unités métriques ou impériales. Obtenez des résultats instantanés avec classification par catégorie et informations sur la santé.",
+    "category": "utilities",
+    "keywords": [
+      "calculateur imc",
+      "indice de masse corporelle",
+      "calculateur de poids",
+      "calculateur de santé",
+      "outil de fitness",
+      "santé du poids",
+      "tableau imc",
+      "catégories imc",
+      "statut de poids",
+      "calculateur de poids santé"
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce que l'IMC et comment est-il calculé ?",
+        "answer": "L'indice de masse corporelle (IMC) est une valeur numérique calculée à partir du poids et de la taille d'une personne. C'est un outil de dépistage utilisé pour catégoriser si une personne est en insuffisance pondérale, de poids normal, en surpoids ou obèse. La formule pour le calcul de l'IMC est : poids (kg) divisé par la taille au carré (m²) dans le système métrique, ou poids (lb) multiplié par 703 divisé par la taille au carré (po²) dans le système impérial. Bien que l'IMC soit utile pour l'évaluation au niveau de la population, il ne mesure pas directement la graisse corporelle et ne tient pas compte de facteurs comme la masse musculaire, la densité osseuse ou la composition corporelle globale."
+      },
+      {
+        "question": "Quelles sont les catégories d'IMC et que signifient-elles ?",
+        "answer": "Les catégories d'IMC sont des plages standardisées qui aident à interpréter les valeurs d'IMC : Insuffisance pondérale (IMC inférieur à 18,5) : Peut indiquer une malnutrition, des troubles alimentaires ou d'autres problèmes de santé. Poids normal (IMC 18,5-24,9) : Généralement associé à de bons résultats de santé. Surpoids (IMC 25-29,9) : Peut augmenter le risque de certaines conditions de santé. Obésité (IMC 30 ou plus) : Associée à un risque plus élevé de divers problèmes de santé, notamment les maladies cardiaques, le diabète de type 2 et certains cancers. Ces catégories sont des directives générales et l'évaluation de la santé individuelle devrait considérer d'autres facteurs au-delà de l'IMC seul."
+      },
+      {
+        "question": "L'IMC est-il précis pour tout le monde ?",
+        "answer": "L'IMC présente plusieurs limitations et n'est pas également précis pour tous les individus. Il peut surestimer la graisse corporelle chez les athlètes et autres personnes à la musculature développée, car il ne distingue pas entre muscle et graisse. Il peut sous-estimer la graisse corporelle chez les personnes âgées ou celles qui ont perdu de la masse musculaire. L'IMC ne tient pas compte des différences de composition corporelle entre les groupes ethniques. Il ne considère pas la distribution des graisses (où la graisse est stockée sur le corps), ce qui est important car la graisse abdominale comporte des risques pour la santé plus élevés que la graisse stockée dans d'autres zones. Pour ces raisons, l'IMC devrait être considéré avec d'autres mesures comme le tour de taille, le pourcentage de graisse corporelle et les évaluations de santé globales."
+      },
+      {
+        "question": "À quelle fréquence devrais-je calculer mon IMC ?",
+        "answer": "Il n'y a pas de règle stricte sur la fréquence de calcul de l'IMC, mais il peut être utile de le suivre périodiquement dans le cadre d'une surveillance globale de la santé. Pour les adultes avec un poids stable, une vérification annuelle lors des bilans de santé réguliers est souvent suffisante. Si vous essayez activement de perdre ou de prendre du poids pour des raisons de santé, vous pourriez vérifier plus fréquemment (mensuellement ou trimestriellement) pour suivre les progrès. Cependant, concentrez-vous sur les tendances à long terme plutôt que sur les petites fluctuations. N'oubliez pas que l'IMC n'est qu'un indicateur de santé parmi d'autres et devrait être considéré avec d'autres facteurs comme votre ressenti, vos niveaux d'énergie et d'autres métriques de santé que votre prestataire de soins pourrait recommander."
+      },
+      {
+        "question": "Que devrais-je faire si mon IMC indique que je suis en surpoids ou obèse ?",
+        "answer": "Si votre IMC se situe dans la catégorie surpoids ou obésité, considérez-le comme une information sur votre santé, pas comme un diagnostic. D'abord, consultez un professionnel de la santé qui peut évaluer votre santé globale, en tenant compte de facteurs au-delà de l'IMC. Ils peuvent recommander des évaluations supplémentaires comme des analyses de sang ou une analyse de composition corporelle. Concentrez-vous sur des changements de mode de vie sains plutôt que sur la simple perte de poids : augmentez l'activité physique (visez au moins 150 minutes d'activité modérée par semaine), améliorez votre nutrition en mangeant plus de fruits, légumes et aliments complets tout en réduisant les aliments transformés et les boissons sucrées, dormez suffisamment et gérez le stress. N'oubliez pas que même une perte de poids modeste (5-10% du poids corporel) peut améliorer significativement les résultats de santé si nécessaire."
+      },
+      {
+        "question": "Mes données sont-elles privées ?",
+        "answer": "Oui. Tous les calculs d'IMC sont effectués localement dans votre navigateur. Aucune donnée n'est téléchargée ou stockée, assurant la confidentialité de vos informations."
+      }
+    ]
   }
 ]

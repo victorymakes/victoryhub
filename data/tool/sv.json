@@ -273,5 +273,44 @@
         "answer": "De flesta programmeringsspråk erbjuder inbyggda Base64-funktioner. I JavaScript använder du <code>btoa()</code> för kodning och <code>atob()</code> för avkodning av ASCII-strängar, eller de mer moderna <code>TextEncoder</code> och <code>TextDecoder</code> med <code>Uint8Array</code> för Unicode. Python erbjuder <code>base64</code>-modulen. PHP har <code>base64_encode()</code> och <code>base64_decode()</code>. Java erbjuder <code>Base64.getEncoder()</code> och <code>Base64.getDecoder()</code>. För Unicode-text och binär data finns det ofta speciella hänsyn - se alltid dokumentationen för ditt språk för bästa praxis och exempel, som <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN-guiden om Base64</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI-kalkylator – Beräkna ditt Body Mass Index",
+    "description": "Beräkna ditt Body Mass Index (BMI) för att bestämma din viktkategori och få insikt om din hälsa.",
+    "category": "utilities",
+    "keywords": [
+      "bmi kalkylator",
+      "body mass index",
+      "viktkalkylator",
+      "hälsoindex",
+      "viktkategori",
+      "bmi beräkning",
+      "längd vikt förhållande",
+      "hälsokalkylator",
+      "viktmätare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är BMI och hur beräknas det?",
+        "answer": "BMI (Body Mass Index) är ett mått som används för att avgöra om en person har en hälsosam vikt i förhållande till sin längd. Det beräknas genom att dividera vikten (i kilogram) med kvadraten av längden (i meter). Formeln är: BMI = vikt (kg) / [längd (m)]²."
+      },
+      {
+        "question": "Vad betyder de olika BMI-kategorierna?",
+        "answer": "BMI-kategorier tolkas generellt enligt följande: Undervikt: BMI mindre än 18,5, Normalvikt: BMI mellan 18,5 och 24,9, Övervikt: BMI mellan 25 och 29,9, Fetma: BMI 30 eller högre. Dessa kategorier kan dock variera beroende på faktorer som ålder, kön och etnisk bakgrund."
+      },
+      {
+        "question": "Är BMI en exakt indikator för hälsa?",
+        "answer": "BMI är ett användbart verktyg för att bedöma viktkategorier på befolkningsnivå, men det har begränsningar på individuell nivå. Det tar inte hänsyn till faktorer som muskelmassa, bentäthet, allmän kroppsbyggnad och fettfördelning. Idrottare kan till exempel ha ett högt BMI på grund av sin muskelmassa, inte på grund av övervikt. BMI bör betraktas som en av många faktorer vid bedömning av allmän hälsa."
+      },
+      {
+        "question": "För vem är BMI-kalkylatorn lämplig?",
+        "answer": "BMI-kalkylatorn är lämplig för de flesta vuxna mellan 18 och 65 år. För barn, gravida kvinnor, mycket muskulösa personer, äldre och vissa etniska grupper kan andra mätmetoder vara mer lämpliga. Rådfråga alltid en sjukvårdspersonal för en fullständig hälsobedömning."
+      },
+      {
+        "question": "Hur kan jag förbättra mitt BMI om det inte ligger inom det hälsosamma intervallet?",
+        "answer": "För att uppnå ett hälsosamt BMI, fokusera på en kombination av balanserad kost och regelbunden motion. För viktminskning, skapa ett kaloriunderskott genom att äta mindre och röra dig mer. För viktökning, konsumera fler kalorier än du förbränner med fokus på näringsrik mat. Gör gradvisa, hållbara förändringar i din livsstil istället för drastiska dieter. Rådfråga en läkare eller dietist för personlig rådgivning som passar din specifika hälsosituation."
+      }
+    ]
   }
 ]

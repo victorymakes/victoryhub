@@ -317,5 +317,32 @@
     "errors": {
       "invalidExpression": "Ungültiger Cron-Ausdruck. Bitte überprüfen Sie Ihre Eingabe."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Einheitensystem",
+    "metric": "Metrisch (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "heightCm": "Größe (cm)",
+    "heightIn": "Größe (in)",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "calculate": "BMI berechnen",
+    "reset": "Zurücksetzen",
+    "results": "Ergebnisse",
+    "yourBMI": "Ihr BMI",
+    "category": "Kategorie",
+    "whatItMeans": "Was das bedeutet",
+    "bmiExplanation": "Der BMI ist ein Screening-Tool, das anzeigen kann, ob Sie untergewichtig, normalgewichtig, übergewichtig oder fettleibig sind. Er misst jedoch nicht direkt Körperfett und berücksichtigt keine Faktoren wie Muskelmasse, Knochendichte oder allgemeine Körperzusammensetzung.",
+    "categories": {
+      "underweight": "Untergewicht",
+      "normal": "Normalgewicht",
+      "overweight": "Übergewicht",
+      "obese": "Adipositas"
+    },
+    "errors": {
+      "emptyFields": "Bitte geben Sie sowohl Größe als auch Gewicht ein",
+      "invalidNumbers": "Bitte geben Sie gültige Zahlen ein",
+      "positiveNumbers": "Größe und Gewicht müssen positive Zahlen sein"
+    }
   }
 }

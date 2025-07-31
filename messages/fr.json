@@ -317,5 +317,32 @@
     "errors": {
       "invalidExpression": "Expression cron invalide. Veuillez vérifier votre saisie."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Système d'unités",
+    "metric": "Métrique (cm, kg)",
+    "imperial": "Impérial (po, lb)",
+    "heightCm": "Taille (cm)",
+    "heightIn": "Taille (po)",
+    "weightKg": "Poids (kg)",
+    "weightLb": "Poids (lb)",
+    "calculate": "Calculer l'IMC",
+    "reset": "Réinitialiser",
+    "results": "Résultats",
+    "yourBMI": "Votre IMC",
+    "category": "Catégorie",
+    "whatItMeans": "Ce que cela signifie",
+    "bmiExplanation": "L'IMC est un outil de dépistage qui peut indiquer si vous êtes en insuffisance pondérale, à un poids normal, en surpoids ou obèse. Cependant, il ne mesure pas directement la graisse corporelle et ne tient pas compte de facteurs tels que la masse musculaire, la densité osseuse ou la composition corporelle globale.",
+    "categories": {
+      "underweight": "Insuffisance pondérale",
+      "normal": "Poids normal",
+      "overweight": "Surpoids",
+      "obese": "Obésité"
+    },
+    "errors": {
+      "emptyFields": "Veuillez saisir à la fois la taille et le poids",
+      "invalidNumbers": "Veuillez saisir des nombres valides",
+      "positiveNumbers": "La taille et le poids doivent être des nombres positifs"
+    }
   }
 }

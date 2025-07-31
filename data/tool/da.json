@@ -273,5 +273,44 @@
         "answer": "De fleste programmeringssprog tilbyder indbyggede Base64-funktioner. I JavaScript bruger du <code>btoa()</code> til kodning og <code>atob()</code> til dekodning af ASCII-strenge, eller de mere moderne <code>TextEncoder</code> og <code>TextDecoder</code> med <code>Uint8Array</code> til Unicode. Python tilbyder <code>base64</code>-modulet. PHP har <code>base64_encode()</code> og <code>base64_decode()</code>. Java tilbyder <code>Base64.getEncoder()</code> og <code>Base64.getDecoder()</code>. For Unicode-tekst og binære data er der ofte særlige hensyn - se altid dokumentationen for dit sprog for bedste praksis og eksempler, som <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN-guiden om Base64</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI-beregner – Beregn dit Body Mass Index",
+    "description": "Beregn dit Body Mass Index (BMI) for at bestemme din vægtkategori og få indsigt i dit helbred.",
+    "category": "utilities",
+    "keywords": [
+      "bmi beregner",
+      "body mass index",
+      "vægtberegner",
+      "sundhedsberegner",
+      "idealvægt",
+      "vægtkategori",
+      "fedmeindeks",
+      "vægt-højde forhold",
+      "sundhedsvurdering"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er BMI, og hvordan beregnes det?",
+        "answer": "BMI (Body Mass Index) er et mål, der bruges til at bestemme, om en person har en sund vægt i forhold til sin højde. Det beregnes ved at dividere din vægt (i kilogram) med kvadratet af din højde (i meter). Formlen er: BMI = vægt (kg) / [højde (m)]². BMI er et internationalt anerkendt værktøj til at vurdere vægtrelaterede sundhedsrisici på befolkningsniveau."
+      },
+      {
+        "question": "Hvad betyder de forskellige BMI-kategorier?",
+        "answer": "BMI-kategorier fortolkes generelt som følger: Undervægt: BMI mindre end 18,5, Normal vægt: BMI mellem 18,5 og 24,9, Overvægt: BMI mellem 25 og 29,9, Fedme (klasse I): BMI mellem 30 og 34,9, Svær fedme (klasse II): BMI mellem 35 og 39,9, Ekstrem fedme (klasse III): BMI på 40 eller derover. Disse kategorier er baseret på data, der viser øget risiko for visse sygdomme ved højere BMI-værdier."
+      },
+      {
+        "question": "Er BMI en nøjagtig indikator for sundhed?",
+        "answer": "BMI er et nyttigt screeningsværktøj på befolkningsniveau, men har begrænsninger på individuelt niveau. Det tager ikke højde for faktorer som muskelmasse, knogletæthed, fedtfordeling eller etnisk baggrund. Atleter kan for eksempel have en høj BMI på grund af deres muskelmasse, ikke på grund af overvægt. BMI bør betragtes som ét af mange værktøjer ved vurdering af den generelle sundhed, sammen med målinger som talje-hofte-forhold, kropsfedtprocent og andre sundhedsmarkører."
+      },
+      {
+        "question": "Gælder de samme BMI-kategorier for børn og ældre?",
+        "answer": "Nej, standardkategorierne gælder primært for voksne mellem 20 og 65 år. For børn og unge (2-19 år) bruges alders- og kønsspecifikke BMI-percentiler i stedet for faste værdier. For ældre voksne kan en lidt højere BMI (23-27) faktisk være gavnlig. Forskellige etniske grupper kan også have forskellige optimale BMI-intervaller - for eksempel kan personer med asiatisk baggrund have øget sundhedsrisiko ved lavere BMI-værdier end dem med europæisk baggrund."
+      },
+      {
+        "question": "Hvordan kan jeg bruge BMI-resultatet til at forbedre mit helbred?",
+        "answer": "Brug dit BMI-resultat som et udgangspunkt for samtaler med sundhedspersonale, ikke som en definitiv sundhedsdom. Hvis dit BMI falder uden for normalområdet, overvej at konsultere en læge eller diætist for personlig rådgivning. Fokuser på sunde livsstilsændringer som regelmæssig motion, balanceret kost, tilstrækkelig søvn og stresshåndtering, snarere end kun vægttab eller vægtøgning. Husk, at sundhed er multidimensionel og ikke kan reduceres til et enkelt tal. Regelmæssige sundhedstjek og at lytte til din krop er lige så vigtige som at overvåge dit BMI."
+      }
+    ]
   }
 ]

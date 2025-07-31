@@ -326,5 +326,32 @@
     "errors": {
       "invalidExpression": "잘못된 cron 표현식입니다. 입력을 확인하세요."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "단위 시스템",
+    "metric": "미터법 (cm, kg)",
+    "imperial": "영국식 (in, lb)",
+    "heightCm": "키 (cm)",
+    "heightIn": "키 (in)",
+    "weightKg": "체중 (kg)",
+    "weightLb": "체중 (lb)",
+    "calculate": "BMI 계산",
+    "reset": "초기화",
+    "results": "결과",
+    "yourBMI": "당신의 BMI",
+    "category": "카테고리",
+    "whatItMeans": "의미",
+    "bmiExplanation": "체질량지수(BMI)는 키와 체중을 기반으로 체중 상태를 평가하는 측정값입니다. 이는 잠재적인 건강 위험을 나타낼 수 있는 일반적인 스크리닝 도구이지만, 체성분이나 전반적인 건강 상태를 직접 측정하지는 않습니다.",
+    "categories": {
+      "underweight": "저체중",
+      "normal": "정상",
+      "overweight": "과체중",
+      "obese": "비만"
+    },
+    "errors": {
+      "emptyFields": "키와 체중을 모두 입력하세요",
+      "invalidNumbers": "유효한 숫자를 입력하세요",
+      "positiveNumbers": "키와 체중은 양수여야 합니다"
+    }
   }
 }

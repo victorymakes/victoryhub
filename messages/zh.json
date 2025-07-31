@@ -406,5 +406,32 @@
     "errors": {
       "invalidExpression": "无效的cron表达式。请检查您的输入。"
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "单位制式",
+    "metric": "公制 (厘米, 千克)",
+    "imperial": "英制 (英寸, 磅)",
+    "heightCm": "身高 (厘米)",
+    "heightIn": "身高 (英寸)",
+    "weightKg": "体重 (千克)",
+    "weightLb": "体重 (磅)",
+    "calculate": "计算 BMI",
+    "reset": "重置",
+    "results": "结果",
+    "yourBMI": "您的 BMI",
+    "category": "类别",
+    "whatItMeans": "这意味着什么",
+    "bmiExplanation": "BMI 是一种筛查工具，可以指示您是否可能体重过轻、体重正常、超重或肥胖。然而，它不直接测量体脂，也不考虑肌肉质量、骨密度或整体身体成分等因素。",
+    "categories": {
+      "underweight": "体重过轻",
+      "normal": "体重正常",
+      "overweight": "超重",
+      "obese": "肥胖"
+    },
+    "errors": {
+      "emptyFields": "请输入身高和体重",
+      "invalidNumbers": "请输入有效的数字",
+      "positiveNumbers": "身高和体重必须是正数"
+    }
   }
 }

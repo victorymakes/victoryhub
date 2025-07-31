@@ -22,6 +22,11 @@
     "name": "媒体与图片",
     "description": "用于图片、媒体和文件处理的工具",
     "icon": "image"
+  },
+  {
+    "slug": "utilities",
+    "name": "实用工具",
+    "description": "日常生产力和常用计算器等工具",
+    "icon": "activity"
   }
 ]
-

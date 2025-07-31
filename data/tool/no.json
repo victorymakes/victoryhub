@@ -273,5 +273,44 @@
         "answer": "De fleste programmeringsspråk tilbyr innebygde Base64-funksjoner. I JavaScript bruker du <code>btoa()</code> for koding og <code>atob()</code> for dekoding av ASCII-strenger, eller de mer moderne <code>TextEncoder</code> og <code>TextDecoder</code> med <code>Uint8Array</code> for Unicode. Python tilbyr <code>base64</code>-modulen. PHP har <code>base64_encode()</code> og <code>base64_decode()</code>. Java tilbyr <code>Base64.getEncoder()</code> og <code>Base64.getDecoder()</code>. For Unicode-tekst og binære data er det ofte spesielle hensyn - se alltid dokumentasjonen for språket ditt for beste praksis og eksempler, som <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN-guiden om Base64</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI-kalkulator – Beregn din kroppsmasseindeks",
+    "description": "Beregn din kroppsmasseindeks (BMI) for å bestemme din vektkategori og få innsikt i helsen din.",
+    "category": "utilities",
+    "keywords": [
+      "bmi kalkulator",
+      "kroppsmasseindeks",
+      "vekt kalkulator",
+      "helse indeks",
+      "vektkategori",
+      "fedme kalkulator",
+      "sunn vekt",
+      "bmi beregning",
+      "kroppsindeks måler"
+    ],
+    "faq": [
+      {
+        "question": "Hva er BMI og hvordan beregnes det?",
+        "answer": "BMI (Body Mass Index) eller kroppsmasseindeks er et mål som brukes til å bestemme om en person har en sunn vekt i forhold til høyden. Det beregnes ved å dele vekten (i kilogram) på kvadratet av høyden (i meter). Formelen er: BMI = vekt (kg) / [høyde (m)]²."
+      },
+      {
+        "question": "Hva betyr de forskjellige BMI-kategoriene?",
+        "answer": "BMI-kategorier tolkes generelt som følger: Undervekt: BMI mindre enn 18,5, Normal vekt: BMI mellom 18,5 og 24,9, Overvekt: BMI mellom 25 og 29,9, Fedme: BMI 30 eller høyere. Disse kategoriene kan imidlertid variere avhengig av faktorer som alder, kjønn og etnisk bakgrunn."
+      },
+      {
+        "question": "Er BMI en nøyaktig indikator for helse?",
+        "answer": "BMI er et nyttig verktøy for å vurdere vektkategorier på befolkningsnivå, men det har begrensninger på individuelt nivå. Det tar ikke hensyn til faktorer som muskelmasse, bentetthet, generell kroppsbygning og fettfordeling. Idrettsutøvere kan for eksempel ha en høy BMI på grunn av muskelmasse, ikke på grunn av overvekt. BMI bør betraktes som én av mange faktorer ved vurdering av generell helse."
+      },
+      {
+        "question": "Hvordan kan jeg bruke BMI-resultatet mitt?",
+        "answer": "BMI-resultatet ditt kan gi en generell indikasjon på om vekten din er innenfor et sunt område. Hvis BMI-en din er utenfor normalområdet, kan det være lurt å konsultere med helsepersonell for en mer omfattende vurdering. De kan gi personlig veiledning basert på din spesifikke helsesituasjon, livsstil og andre faktorer som BMI-kalkulatoren ikke tar hensyn til."
+      },
+      {
+        "question": "Gjelder BMI-kategoriene for barn og ungdom?",
+        "answer": "Nei, standard BMI-kategorier gjelder ikke for barn og ungdom. For personer under 18 år brukes alders- og kjønnsspesifikke BMI-persentiler i stedet for faste kategorier, siden barn og ungdom fortsatt vokser og utvikler seg. Spesielle BMI-for-alder vekstkurver brukes for å vurdere vektstatus hos barn og ungdom."
+      }
+    ]
   }
 ]

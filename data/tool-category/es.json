@@ -22,5 +22,11 @@
     "name": "Medios e imágenes",
     "description": "Herramientas para procesamiento de imágenes, medios y archivos",
     "icon": "image"
+  },
+  {
+    "slug": "utilities",
+    "name": "Utilidades",
+    "description": "Herramientas cotidianas y calculadoras para la productividad y el uso diario",
+    "icon": "activity"
   }
 ]

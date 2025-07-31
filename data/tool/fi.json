@@ -273,5 +273,45 @@
         "answer": "Useimmat ohjelmointikielet tarjoavat sisäänrakennettuja Base64-funktioita. JavaScriptissä käytät <code>btoa()</code> koodaamiseen ja <code>atob()</code> ASCII-merkkijonojen dekoodaamiseen, tai modernimpia <code>TextEncoder</code> ja <code>TextDecoder</code> <code>Uint8Array</code>:n kanssa Unicodelle. Python tarjoaa <code>base64</code>-moduulin. PHP:lla on <code>base64_encode()</code> ja <code>base64_decode()</code>. Java tarjoaa <code>Base64.getEncoder()</code> ja <code>Base64.getDecoder()</code>. Unicode-tekstille ja binääridatalle on usein erityisiä huomioita - katso aina kielesi dokumentaatiosta parhaat käytännöt ja esimerkit, kuten <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN-opas Base64:stä</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI-laskuri – Laske painoindeksisi ja arvioi terveysriskejä",
+    "description": "Laske painoindeksisi (BMI) määrittääksesi painoluokkasi ja saadaksesi tietoa terveydestäsi. Yksinkertainen työkalu painon ja pituuden suhteen arviointiin.",
+    "category": "utilities",
+    "keywords": [
+      "bmi-laskuri",
+      "painoindeksi",
+      "paino",
+      "pituus",
+      "terveys",
+      "fitness",
+      "ruokavalio",
+      "painoluokka",
+      "kehon mittaus",
+      "painonhallinta"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on BMI ja miten se lasketaan?",
+        "answer": "BMI (Body Mass Index) eli painoindeksi on mittari, jota käytetään määrittämään, onko henkilöllä terve paino suhteessa pituuteensa. Se lasketaan jakamalla paino (kilogrammoissa) pituuden (metreissä) neliöllä. Kaava on: BMI = paino (kg) / [pituus (m)]². Esimerkiksi, jos painat 70 kg ja pituutesi on 1,75 m, BMI-arvosi on 70 / (1,75 × 1,75) = 22,9."
+      },
+      {
+        "question": "Mitä eri BMI-luokat tarkoittavat?",
+        "answer": "BMI-luokat tulkitaan yleensä seuraavasti: Alipaino: BMI alle 18,5, Normaali paino: BMI välillä 18,5-24,9, Ylipaino: BMI välillä 25-29,9, Liikalihavuus (luokka I): BMI välillä 30-34,9, Vaikea liikalihavuus (luokka II): BMI välillä 35-39,9, Sairaalloinen liikalihavuus (luokka III): BMI 40 tai enemmän. Nämä luokat voivat kuitenkin vaihdella riippuen tekijöistä kuten iästä, sukupuolesta ja etnisestä taustasta."
+      },
+      {
+        "question": "Onko BMI tarkka terveyden mittari?",
+        "answer": "BMI on hyödyllinen työkalu painoluokkien arvioimiseen väestötasolla, mutta sillä on rajoituksia yksilötasolla. Se ei ota huomioon tekijöitä kuten lihasmassaa, luuntiheyttä, yleistä kehonrakennetta ja rasvan jakautumista. Urheilijoilla voi esimerkiksi olla korkea BMI lihasmassan vuoksi, ei ylipainon takia. BMI tulisi nähdä yhtenä monista tekijöistä yleisen terveyden arvioinnissa, ei ainoana mittarina."
+      },
+      {
+        "question": "Miten BMI-arvoa tulisi käyttää terveysarvioinnissa?",
+        "answer": "BMI-arvoa tulisi käyttää alustavana seulontatyökaluna, jota täydennetään muilla mittauksilla ja arvioinneilla. Terveydenhuollon ammattilaiset käyttävät BMI:n lisäksi usein vyötärönympärysmittaa, kehon rasvaprosenttia, elintapatekijöitä ja laboratoriotuloksia kokonaisvaltaisemman terveysarvion tekemiseen. Jos BMI-arvosi on normaalialueen ulkopuolella, on suositeltavaa keskustella terveydenhuollon ammattilaisen kanssa, joka voi tarjota yksilöllistä neuvontaa."
+      },
+      {
+        "question": "Soveltuuko BMI-laskuri kaikille ikäryhmille?",
+        "answer": "Tavallinen BMI-laskuri on suunniteltu aikuisille (20-vuotiaille ja sitä vanhemmille). Lapsille ja nuorille (2-19-vuotiaille) käytetään erilaista BMI-laskentaa, joka ottaa huomioon iän ja sukupuolen, ja tulokset ilmaistaan persentiileinä. Ikääntyneille aikuisille (yli 65-vuotiaille) BMI-tulkinta voi olla erilainen, sillä hieman korkeampi BMI voi olla suojaava tekijä. Raskaana oleville naisille BMI lasketaan yleensä ennen raskautta olevan painon perusteella."
+      }
+    ]
   }
 ]

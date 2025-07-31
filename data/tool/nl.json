@@ -273,5 +273,45 @@
         "answer": "De meeste programmeertalen bieden ingebouwde Base64-functies. In JavaScript gebruik je <code>btoa()</code> voor codering en <code>atob()</code> voor decodering van ASCII-strings, of de modernere <code>TextEncoder</code> en <code>TextDecoder</code> met <code>Uint8Array</code> voor Unicode. Python biedt de <code>base64</code> module. PHP heeft <code>base64_encode()</code> en <code>base64_decode()</code>. Java biedt <code>Base64.getEncoder()</code> en <code>Base64.getDecoder()</code>. Voor Unicode-tekst en binaire gegevens zijn er vaak speciale overwegingen - raadpleeg altijd de documentatie van je taal voor best practices en voorbeelden, zoals de <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>MDN gids over Base64</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI Calculator – Bereken je Body Mass Index",
+    "description": "Bereken je Body Mass Index (BMI) om je gewichtscategorie te bepalen en krijg inzicht in je gezondheid.",
+    "category": "utilities",
+    "keywords": [
+      "bmi calculator",
+      "body mass index",
+      "gewicht calculator",
+      "gezondheid index",
+      "gewichtscategorie",
+      "bmi berekenen",
+      "lengte gewicht ratio",
+      "gezond gewicht",
+      "fitness calculator",
+      "gewicht checker"
+    ],
+    "faq": [
+      {
+        "question": "Wat is BMI en hoe wordt het berekend?",
+        "answer": "BMI (Body Mass Index) is een maatstaf die wordt gebruikt om te bepalen of iemand een gezond gewicht heeft in verhouding tot zijn lengte. Het wordt berekend door je gewicht (in kilogram) te delen door het kwadraat van je lengte (in meters). De formule is: BMI = gewicht (kg) / [lengte (m)]²."
+      },
+      {
+        "question": "Wat betekenen de verschillende BMI-categorieën?",
+        "answer": "BMI-categorieën worden algemeen als volgt geïnterpreteerd: Ondergewicht: BMI minder dan 18.5, Normaal gewicht: BMI tussen 18.5 en 24.9, Overgewicht: BMI tussen 25 en 29.9, Obesitas: BMI van 30 of hoger. Deze categorieën kunnen echter variëren afhankelijk van factoren zoals leeftijd, geslacht en etnische achtergrond."
+      },
+      {
+        "question": "Is BMI een nauwkeurige indicator van gezondheid?",
+        "answer": "BMI is een nuttig hulpmiddel voor het beoordelen van gewichtscategorieën op populatieniveau, maar het heeft beperkingen op individueel niveau. Het houdt geen rekening met factoren zoals spiermassa, botdichtheid, algehele lichaamsbouw en vetdistributie. Atleten kunnen bijvoorbeeld een hoge BMI hebben vanwege hun spiermassa, niet vanwege overgewicht. BMI moet worden beschouwd als één van de vele factoren bij het beoordelen van de algehele gezondheid."
+      },
+      {
+        "question": "Voor wie is de BMI-calculator geschikt?",
+        "answer": "De BMI-calculator is geschikt voor de meeste volwassenen tussen 18 en 65 jaar. Voor kinderen, zwangere vrouwen, zeer gespierde personen, ouderen en bepaalde etnische groepen kunnen andere meetmethoden meer geschikt zijn. Raadpleeg altijd een zorgprofessional voor een volledige gezondheidsbeoordeling."
+      },
+      {
+        "question": "Hoe kan ik mijn BMI verbeteren als deze niet in de gezonde categorie valt?",
+        "answer": "Om een gezonde BMI te bereiken, focus op een combinatie van evenwichtige voeding en regelmatige lichaamsbeweging. Voor gewichtsverlies, creëer een calorietekort door minder te eten en meer te bewegen. Voor gewichtstoename, consumeer meer calorieën dan je verbrandt met focus op voedzame voeding. Maak geleidelijke, duurzame veranderingen in je levensstijl in plaats van drastische diëten. Raadpleeg een arts of diëtist voor persoonlijk advies dat past bij jouw specifieke gezondheidssituatie."
+      }
+    ]
   }
 ]

@@ -405,5 +405,32 @@
     "errors": {
       "invalidExpression": "Virheellinen cron-lauseke. Tarkista syötteesi."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Mittajärjestelmä",
+    "metric": "Metrijärjestelmä (cm, kg)",
+    "imperial": "Brittiläinen järjestelmä (in, lb)",
+    "heightCm": "Pituus (cm)",
+    "heightIn": "Pituus (in)",
+    "weightKg": "Paino (kg)",
+    "weightLb": "Paino (lb)",
+    "calculate": "Laske BMI",
+    "reset": "Nollaa",
+    "results": "Tulokset",
+    "yourBMI": "Sinun BMI",
+    "category": "Luokka",
+    "whatItMeans": "Mitä tämä tarkoittaa",
+    "bmiExplanation": "BMI on seulontatyökalu, joka voi osoittaa, onko sinulla mahdollisesti alipaino, normaali paino, ylipaino tai liikalihavuus. Se ei kuitenkaan mittaa suoraan kehon rasvaa eikä ota huomioon tekijöitä kuten lihasmassaa, luuntiheyttä tai yleistä kehon koostumusta.",
+    "categories": {
+      "underweight": "Alipaino",
+      "normal": "Normaali paino",
+      "overweight": "Ylipaino",
+      "obese": "Liikalihavuus"
+    },
+    "errors": {
+      "emptyFields": "Syötä sekä pituus että paino",
+      "invalidNumbers": "Syötä kelvollisia numeroita",
+      "positiveNumbers": "Pituuden ja painon on oltava positiivisia lukuja"
+    }
   }
 }

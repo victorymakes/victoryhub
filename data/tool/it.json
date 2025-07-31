@@ -273,5 +273,49 @@
         "answer": "La maggior parte dei linguaggi di programmazione offre funzioni Base64 integrate. In JavaScript, usi <code>btoa()</code> per la codifica e <code>atob()</code> per la decodifica di stringhe ASCII, o i più moderni <code>TextEncoder</code> e <code>TextDecoder</code> con <code>Uint8Array</code> per Unicode. Python offre il modulo <code>base64</code>. PHP ha <code>base64_encode()</code> e <code>base64_decode()</code>. Java offre <code>Base64.getEncoder()</code> e <code>Base64.getDecoder()</code>. Per testo Unicode e dati binari, ci sono spesso considerazioni speciali - controlla sempre la documentazione del tuo linguaggio per best practice ed esempi, come la <a href='https://developer.mozilla.org/en-US/docs/Glossary/Base64' target='_blank' rel='noopener'>guida MDN su Base64</a>."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "Calcolatore BMI – Controlla il tuo indice di massa corporea",
+    "description": "Calcola il tuo indice di massa corporea (BMI) utilizzando unità metriche o imperiali. Ottieni risultati istantanei con classificazione per categoria e informazioni sulla salute.",
+    "category": "utilities",
+    "keywords": [
+      "calcolatore bmi",
+      "indice di massa corporea",
+      "calcolatore peso",
+      "calcolatore salute",
+      "strumento fitness",
+      "peso salute",
+      "tabella bmi",
+      "categorie bmi",
+      "stato peso",
+      "calcolatore peso salutare"
+    ],
+    "faq": [
+      {
+        "question": "Cos'è il BMI e come viene calcolato?",
+        "answer": "L'indice di massa corporea (BMI) è un numero calcolato dal peso e dall'altezza di una persona. È uno strumento di screening utilizzato per classificare se una persona è sottopeso, normopeso, sovrappeso o obesa. La formula per il calcolo del BMI è: peso (kg) diviso per il quadrato dell'altezza (m²) nel sistema metrico, o peso (lb) moltiplicato per 703 diviso per il quadrato dell'altezza (in²) nel sistema imperiale. Il BMI è utile per le valutazioni a livello di popolazione, ma non misura direttamente il grasso corporeo e non tiene conto di fattori come la massa muscolare, la densità ossea o la composizione corporea complessiva."
+      },
+      {
+        "question": "Quali sono le categorie BMI e cosa significano?",
+        "answer": "Le categorie BMI sono intervalli standardizzati che aiutano a interpretare i valori BMI: Sottopeso (BMI inferiore a 18.5): Può indicare malnutrizione, disturbi alimentari o altri problemi di salute. Normopeso (BMI 18.5-24.9): Generalmente associato a buoni risultati di salute. Sovrappeso (BMI 25-29.9): Può aumentare il rischio di alcune condizioni di salute. Obeso (BMI 30 o superiore): Aumenta il rischio di vari problemi di salute, tra cui malattie cardiache, diabete di tipo 2 e alcuni tipi di cancro. Queste categorie sono linee guida generali, e le valutazioni individuali della salute dovrebbero considerare fattori oltre al BMI."
+      },
+      {
+        "question": "Il BMI è accurato per tutti?",
+        "answer": "Il BMI ha diverse limitazioni e non è ugualmente accurato per tutti gli individui. Non distingue tra muscolo e grasso, quindi può sovrastimare il grasso corporeo negli atleti e nelle persone con corporatura muscolosa. Può sottostimare il grasso corporeo negli anziani e in coloro che hanno perso massa muscolare. Non tiene conto delle differenze nella composizione corporea tra gruppi etnici. Non considera la distribuzione del grasso corporeo (dove il grasso si accumula nel corpo), che è importante perché il grasso addominale comporta rischi per la salute maggiori rispetto al grasso accumulato in altre aree. Per questi motivi, il BMI dovrebbe essere considerato insieme ad altre misurazioni come la circonferenza della vita, la percentuale di grasso corporeo e una valutazione complessiva della salute."
+      },
+      {
+        "question": "Con quale frequenza dovrei calcolare il mio BMI?",
+        "answer": "Non ci sono regole rigide su quanto spesso calcolare il BMI, ma può essere utile monitorarlo regolarmente come parte del monitoraggio generale della salute. Per gli adulti con peso stabile, controllarlo una volta all'anno durante i normali controlli sanitari è generalmente sufficiente. Se stai attivamente cercando di perdere o guadagnare peso per motivi di salute, potresti controllarlo più frequentemente (mensilmente o trimestralmente) per monitorare i progressi. Tuttavia, concentrati sulle tendenze a lungo termine piuttosto che sulle piccole fluttuazioni. Ricorda che il BMI è solo un indicatore di salute e dovrebbe essere considerato insieme ad altri fattori come come ti senti, i tuoi livelli di energia e altri indicatori di salute che il tuo fornitore di assistenza sanitaria potrebbe raccomandare."
+      },
+      {
+        "question": "Cosa dovrei fare se il mio BMI indica che sono sovrappeso o obeso?",
+        "answer": "Se il tuo BMI rientra nelle categorie sovrappeso o obeso, consideralo come un'informazione sulla tua salute, non una diagnosi. Innanzitutto, consulta un operatore sanitario che può valutare la tua salute complessiva considerando fattori oltre al BMI. Potrebbero raccomandare valutazioni aggiuntive come analisi del sangue o analisi della composizione corporea. Concentrati su cambiamenti dello stile di vita salutari piuttosto che solo sulla perdita di peso: aumenta l'attività fisica (puntando ad almeno 150 minuti di attività moderata a settimana), migliora la nutrizione mangiando più frutta, verdura e cibi integrali e riducendo i cibi trasformati e le bevande zuccherate, dormi a sufficienza e gestisci lo stress. Ricorda che anche una modesta perdita di peso (5-10% del peso corporeo) può migliorare significativamente i risultati di salute se necessario."
+      },
+      {
+        "question": "I miei dati sono privati?",
+        "answer": "Sì. Tutti i calcoli BMI vengono eseguiti localmente nel tuo browser. I dati non vengono caricati o salvati, garantendo la privacy delle tue informazioni."
+      }
+    ]
   }
 ]
