@@ -409,5 +409,32 @@
     "errors": {
       "invalidExpression": "Invalid cron expression. Please check your input."
     }
+  },
+  "BMICalculator": {
+    "unitSystem": "Unit System",
+    "metric": "Metric (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "heightCm": "Height (cm)",
+    "heightIn": "Height (in)",
+    "weightKg": "Weight (kg)",
+    "weightLb": "Weight (lb)",
+    "calculate": "Calculate BMI",
+    "reset": "Reset",
+    "results": "Results",
+    "yourBMI": "Your BMI",
+    "category": "Category",
+    "whatItMeans": "What This Means",
+    "bmiExplanation": "BMI is a screening tool that can indicate whether you may be underweight, at a healthy weight, overweight, or obese. However, it does not directly measure body fat and doesn't account for factors like muscle mass, bone density, or overall body composition.",
+    "categories": {
+      "underweight": "Underweight",
+      "normal": "Normal Weight",
+      "overweight": "Overweight",
+      "obese": "Obese"
+    },
+    "errors": {
+      "emptyFields": "Please enter both height and weight",
+      "invalidNumbers": "Please enter valid numbers",
+      "positiveNumbers": "Height and weight must be positive numbers"
+    }
   }
 }
