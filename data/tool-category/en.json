@@ -22,5 +22,11 @@
     "name": "Media & Image",
     "description": "Tools for image, media, and file processing",
     "icon": "image"
+  },
+  {
+    "slug": "utilities",
+    "name": "Utilities",
+    "description": "Everyday tools and calculators for productivity and daily use",
+    "icon": "activity"
   }
 ]

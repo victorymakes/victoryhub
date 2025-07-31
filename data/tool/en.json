@@ -438,5 +438,49 @@
         "answer": "Yes. Once generated, you can download the QR code in high-resolution PNG or scalable SVG formats. These are ideal for both digital and print applications like flyers, posters, or packaging."
       }
     ]
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "BMI Calculator – Check Your Body Mass Index Instantly",
+    "description": "Calculate your Body Mass Index (BMI) using metric or imperial units. Get instant results with category classification and health insights.",
+    "category": "utilities",
+    "keywords": [
+      "bmi calculator",
+      "body mass index",
+      "weight calculator",
+      "health calculator",
+      "fitness tool",
+      "weight health",
+      "bmi chart",
+      "bmi categories",
+      "weight status",
+      "healthy weight calculator"
+    ],
+    "faq": [
+      {
+        "question": "What is BMI and how is it calculated?",
+        "answer": "Body Mass Index (BMI) is a numerical value calculated from a person's weight and height. It's a screening tool used to categorize whether a person is underweight, normal weight, overweight, or obese. The formula for BMI calculation is: weight (kg) divided by height squared (m²) in the metric system, or weight (lb) multiplied by 703 divided by height squared (in²) in the imperial system. While BMI is useful for population-level assessment, it doesn't directly measure body fat and doesn't account for factors like muscle mass, bone density, or overall body composition."
+      },
+      {
+        "question": "What are the BMI categories and what do they mean?",
+        "answer": "BMI categories are standardized ranges that help interpret BMI values: Underweight (BMI less than 18.5): May indicate malnutrition, eating disorders, or other health problems. Normal weight (BMI 18.5-24.9): Generally associated with good health outcomes. Overweight (BMI 25-29.9): May increase risk for certain health conditions. Obese (BMI 30 or higher): Associated with higher risk of various health issues including heart disease, type 2 diabetes, and certain cancers. These categories are general guidelines and individual health assessment should consider other factors beyond BMI alone."
+      },
+      {
+        "question": "Is BMI accurate for everyone?",
+        "answer": "BMI has several limitations and isn't equally accurate for all individuals. It may overestimate body fat in athletes and others with muscular builds, as it doesn't distinguish between muscle and fat. It may underestimate body fat in older persons or those who have lost muscle mass. BMI doesn't account for differences in body composition between ethnic groups. It doesn't consider fat distribution (where fat is stored on the body), which is important as abdominal fat carries higher health risks than fat stored in other areas. For these reasons, BMI should be considered alongside other measurements like waist circumference, body fat percentage, and overall health assessments."
+      },
+      {
+        "question": "How often should I calculate my BMI?",
+        "answer": "There's no strict rule for how often to calculate BMI, but it can be useful to track periodically as part of overall health monitoring. For adults with stable weight, checking once a year during regular health check-ups is often sufficient. If you're actively trying to lose or gain weight for health reasons, you might check more frequently (monthly or quarterly) to track progress. However, focus on long-term trends rather than small fluctuations. Remember that BMI is just one health indicator and should be considered alongside other factors like how you feel, your energy levels, and other health metrics your healthcare provider might recommend."
+      },
+      {
+        "question": "What should I do if my BMI indicates I'm overweight or obese?",
+        "answer": "If your BMI falls into the overweight or obese category, consider it as one piece of information about your health, not a diagnosis. First, consult with a healthcare provider who can evaluate your overall health, considering factors beyond BMI. They may recommend additional assessments like blood tests or body composition analysis. Focus on healthy lifestyle changes rather than just weight loss: increase physical activity (aim for at least 150 minutes of moderate activity weekly), improve nutrition by eating more fruits, vegetables, and whole foods while reducing processed foods and sugary drinks, get adequate sleep, and manage stress. Remember that even modest weight loss (5-10% of body weight) can significantly improve health outcomes if needed."
+      },
+      {
+        "question": "Is my data private?",
+        "answer": "Yes. All BMI calculations are done locally in your browser. No data is uploaded or stored, ensuring your information stays private."
+      }
+    ]
   }
 ]

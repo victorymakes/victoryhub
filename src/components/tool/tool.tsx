@@ -10,6 +10,7 @@ import ImageCompressor from "./image-compressor";
 import ImageConverter from "./image-converter";
 // import QRCodeGenerator from "./qrcode-generator";
 import CronExpressionGenerator from "./cron-expression-generator";
+import BMICalculator from "./bmi-calculator";
 
 interface ToolComponentProps {
     id: string;
@@ -43,6 +44,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
         //     return <QRCodeGenerator />;
         case "cron-expression-generator":
             return <CronExpressionGenerator />;
+        case "bmi-calculator":
+            return <BMICalculator />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">
