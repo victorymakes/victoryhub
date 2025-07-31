@@ -76,8 +76,8 @@ export default async function ToolPage({ params }: ToolPageProps) {
     );
 
     return (
-        <div className="min-h-screen bg-background">
-            <Container className="py-8">
+        <div className="bg-background">
+            <Container className="py-16">
                 <div className="flex items-start justify-between mb-6">
                     <div className="flex-1">
                         <h1 className="text-2xl font-bold mb-2">{tool.name}</h1>

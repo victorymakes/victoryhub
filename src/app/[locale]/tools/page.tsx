@@ -75,7 +75,7 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
 
     return (
         <div className="bg-background">
-            <Container className="py-8">
+            <Container className="py-16">
                 {/* Header */}
                 <div className="mb-8">
                     <h1 className="text-3xl font-bold text-foreground mb-4">
