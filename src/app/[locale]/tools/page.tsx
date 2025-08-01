@@ -29,17 +29,17 @@ export async function generateMetadata({
 
     // Create CollectionPage JSON-LD data
     const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'CollectionPage',
-        'name': t("seoTitle"),
-        'description': t("seoDescription"),
-        'url': `${config.baseUrl}${url}`,
-        'publisher': {
-            '@type': 'Organization',
-            'name': config.siteName,
-            'url': config.baseUrl
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: t("seoTitle"),
+        description: t("seoDescription"),
+        url: `${config.baseUrl}${url}`,
+        publisher: {
+            "@type": "Organization",
+            name: config.siteName,
+            url: config.baseUrl,
         },
-        'inLanguage': locale || config.defaultLocale,
+        inLanguage: locale || config.defaultLocale,
     };
 
     return {
@@ -64,8 +64,8 @@ export async function generateMetadata({
             languages: getLocalizedUrls("/tools"),
         },
         other: {
-            "script:ld+json": JSON.stringify(jsonLd)
-        }
+            "script:ld+json": JSON.stringify(jsonLd),
+        },
     };
 }
 
