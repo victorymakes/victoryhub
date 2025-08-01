@@ -344,5 +344,44 @@
       "invalidNumbers": "Inserisci numeri validi",
       "positiveNumbers": "L'altezza e il peso devono essere numeri positivi"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Sistema di unità",
+    "metric": "Metrico (cm, kg)",
+    "imperial": "Imperiale (in, lb)",
+    "gender": "Sesso",
+    "male": "Maschio",
+    "female": "Femmina",
+    "age": "Età (anni)",
+    "heightCm": "Altezza (cm)",
+    "heightIn": "Altezza (pollici)",
+    "weightKg": "Peso (kg)",
+    "weightLb": "Peso (lb)",
+    "activityLevel": "Livello di attività",
+    "selectActivity": "Seleziona il livello di attività",
+    "activityLevels": {
+      "sedentary": "Sedentario (poco o nessun esercizio)",
+      "light": "Leggermente attivo (esercizio leggero 1–3 giorni/settimana)",
+      "moderate": "Moderatamente attivo (esercizio 3–5 giorni/settimana)",
+      "active": "Molto attivo (allenamento intenso 6–7 giorni/settimana)",
+      "veryActive": "Estremamente attivo (esercizio intenso + lavoro fisico)"
+    },
+    "calculate": "Calcola BMR e TDEE",
+    "reset": "Reset",
+    "results": "Risultati",
+    "yourBMR": "Il tuo BMR",
+    "yourTDEE": "Il tuo TDEE",
+    "calories": "calorie",
+    "caloriesPerDay": "calorie al giorno",
+    "bmrExplanation": "Il BMR è il numero di calorie necessarie al tuo corpo in completo riposo.",
+    "tdeeExplanation": "Il TDEE è il totale delle calorie bruciate al giorno, incluse BMR e attività.",
+    "whatItMeans": "Cosa significa",
+    "bmrDetailedExplanation": "BMR = minimo. TDEE = mantenimento. Meno calorie = perdita peso. Più calorie = aumento peso. Sono stime.",
+    "errors": {
+      "emptyFields": "Compila tutti i campi",
+      "invalidNumbers": "Inserisci numeri validi",
+      "positiveNumbers": "Età, altezza e peso devono essere positivi",
+      "ageRange": "Età compresa tra 15 e 80 anni"
+    }
   }
 }

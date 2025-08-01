@@ -344,5 +344,44 @@
       "invalidNumbers": "Vennligst skriv inn gyldige tall",
       "positiveNumbers": "Høyde og vekt må være positive tall"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Enhetssystem",
+    "metric": "Metrisk (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "gender": "Kjønn",
+    "male": "Mann",
+    "female": "Kvinne",
+    "age": "Alder (år)",
+    "heightCm": "Høyde (cm)",
+    "heightIn": "Høyde (tommer)",
+    "weightKg": "Vekt (kg)",
+    "weightLb": "Vekt (lb)",
+    "activityLevel": "Aktivitetsnivå",
+    "selectActivity": "Velg aktivitetsnivå",
+    "activityLevels": {
+      "sedentary": "Stillesittende (lite eller ingen trening)",
+      "light": "Lett aktiv (1–3 dager lett trening/uke)",
+      "moderate": "Moderat aktiv (3–5 dager moderat trening/uke)",
+      "active": "Svært aktiv (6–7 dager hard trening/uke)",
+      "veryActive": "Ekstra aktiv (intens trening og fysisk jobb)"
+    },
+    "calculate": "Beregn BMR og TDEE",
+    "reset": "Tilbakestill",
+    "results": "Resultat",
+    "yourBMR": "Din BMR",
+    "yourTDEE": "Din TDEE",
+    "calories": "kalorier",
+    "caloriesPerDay": "kalorier per dag",
+    "bmrExplanation": "BMR er mengden kalorier kroppen trenger i hvile for å opprettholde vitale funksjoner.",
+    "tdeeExplanation": "TDEE er totalt kaloriforbruk inkludert BMR og aktivitet.",
+    "whatItMeans": "Hva dette betyr",
+    "bmrDetailedExplanation": "BMR = minimum. TDEE = vedlikehold. Mindre kalorier = vekttap. Mer = vektøkning. Estimater varierer.",
+    "errors": {
+      "emptyFields": "Fyll ut alle felt",
+      "invalidNumbers": "Oppgi gyldige tall",
+      "positiveNumbers": "Alder, høyde og vekt må være positive tall",
+      "ageRange": "Alder må være mellom 15 og 80 år"
+    }
   }
 }

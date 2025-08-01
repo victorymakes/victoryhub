@@ -313,5 +313,131 @@
         "answer": "Om een gezonde BMI te bereiken, focus op een combinatie van evenwichtige voeding en regelmatige lichaamsbeweging. Voor gewichtsverlies, creëer een calorietekort door minder te eten en meer te bewegen. Voor gewichtstoename, consumeer meer calorieën dan je verbrandt met focus op voedzame voeding. Maak geleidelijke, duurzame veranderingen in je levensstijl in plaats van drastische diëten. Raadpleeg een arts of diëtist voor persoonlijk advies dat past bij jouw specifieke gezondheidssituatie."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Afbeeldingsconverter – Converteer JPEG, PNG en WebP Online",
+    "description": "Converteer afbeeldingen tussen JPEG-, PNG- en WebP-indelingen rechtstreeks in je browser. Pas de kwaliteit aan en behoud de originele resolutie – geen uploads vereist.",
+    "category": "media",
+    "keywords": [
+      "afbeeldingsconverter",
+      "converteer jpeg naar png",
+      "converteer png naar jpeg",
+      "webp naar png",
+      "afbeelding online converteren",
+      "jpg naar webp converter",
+      "png naar webp",
+      "afbeeldingsformaat converter",
+      "verliesvrije afbeelding conversie"
+    ],
+    "faq": [
+      {
+        "question": "Wat doet de Afbeeldingsconverter en hoe werkt het?",
+        "answer": "De tool converteert afbeeldingen tussen JPEG, PNG en WebP met browsertechnologie. Upload een bestand, kies het formaat en pas indien nodig de kwaliteit aan. Alles gebeurt lokaal in de browser – zonder uploads."
+      },
+      {
+        "question": "Is de conversie veilig en offline?",
+        "answer": "Ja. Alles gebeurt lokaal in je browser. Jouw bestanden worden nooit verzonden of opgeslagen – ideaal voor vertrouwelijke afbeeldingen."
+      },
+      {
+        "question": "Welk formaat moet ik kiezen: JPEG, PNG of WebP?",
+        "answer": "JPEG voor foto's, PNG voor transparantie en scherpe randen, WebP voor kleine bestandsgrootte en goede kwaliteit op het web."
+      },
+      {
+        "question": "Verlies ik kwaliteit bij het converteren?",
+        "answer": "Alleen bij conversie naar een lossy formaat zoals JPEG of WebP. PNG is meestal verliesvrij. Je kunt de kwaliteit handmatig instellen."
+      },
+      {
+        "question": "Kan ik meerdere afbeeldingen tegelijk converteren?",
+        "answer": "Ja, batchverwerking wordt ondersteund. Meerdere bestanden kunnen tegelijk worden geconverteerd en als ZIP gedownload."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Afbeeldingscompressor – Verklein JPEG-, PNG- en WebP-bestanden Online",
+    "description": "Comprimeer JPEG-, PNG- en WebP-afbeeldingen online om bestandsgrootte te verkleinen zonder kwaliteitsverlies. Perfect voor websites, snellere uploads en e-mailbijlagen.",
+    "category": "media",
+    "keywords": [
+      "afbeeldingscompressor",
+      "jpeg comprimeren",
+      "png comprimeren",
+      "webp comprimeren",
+      "afbeeldingsgrootte verkleinen",
+      "afbeelding optimaliseren voor web",
+      "online afbeeldingscompressie",
+      "hulpmiddel voor beeldoptimalisatie",
+      "bulk afbeeldingscompressor"
+    ],
+    "faq": [
+      {
+        "question": "Hoe verkleint de compressor bestanden zonder kwaliteitsverlies?",
+        "answer": "Voor JPEG en WebP past hij de compressiekwaliteit aan (met verlies). Voor PNG optimaliseert hij zonder verlies via kleurreductie. Je kunt het niveau instellen met een schuifregelaar."
+      },
+      {
+        "question": "Blijft transparantie behouden bij PNG-compressie?",
+        "answer": "Ja, PNG-compressie is verliesvrij en behoudt transparantie. Voor kleinere bestanden kun je converteren naar JPEG als transparantie niet nodig is."
+      },
+      {
+        "question": "Is het veilig voor gevoelige afbeeldingen?",
+        "answer": "Ja. Alle verwerking gebeurt lokaal in de browser – geen upload of externe toegang. Ideaal voor privébestanden."
+      },
+      {
+        "question": "Kan ik meerdere bestanden tegelijk comprimeren?",
+        "answer": "Ja. Sleep meerdere afbeeldingen in het venster. Ze worden verwerkt en je ontvangt een ZIP-bestand voor download."
+      },
+      {
+        "question": "Wanneer moet ik WebP gebruiken in plaats van JPEG?",
+        "answer": "WebP is kleiner dan JPEG, maar JPEG heeft bredere ondersteuning. WebP is ideaal voor moderne websites."
+      },
+      {
+        "question": "Wat is het verschil tussen lossy en lossless compressie?",
+        "answer": "Lossy (JPEG/WebP) verwijdert gegevens; lossless (PNG) behoudt alles. Deze tool gebruikt standaard lossy voor beste verhouding."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "BMR Calculator – Bereken je Basaal Metabolisme",
+    "description": "Bereken je basaal metabolisme (BMR) en totale dagelijkse energieverbruik (TDEE) op basis van leeftijd, geslacht, lengte, gewicht en activiteitsniveau.",
+    "category": "utilities",
+    "keywords": [
+      "bmr calculator",
+      "basaal metabolisme",
+      "tdee calculator",
+      "calorie calculator",
+      "stofwisseling calculator",
+      "dagelijks energieverbruik",
+      "caloriebehoefte",
+      "fitness calculator",
+      "voedingshulpmiddel",
+      "gewichtsbeheer calculator"
+    ],
+    "faq": [
+      {
+        "question": "Wat is BMR en hoe wordt het berekend?",
+        "answer": "BMR is de hoeveelheid energie die je lichaam in rust nodig heeft. Berekening via Mifflin-St Jeor formule:<br/>Mannen: (10 × gewicht kg) + (6.25 × lengte cm) - (5 × leeftijd) + 5<br/>Vrouwen: zelfde maar -161 aan het eind."
+      },
+      {
+        "question": "Wat is TDEE en hoe verschilt dit van BMR?",
+        "answer": "TDEE is je totale calorieverbruik per dag. Je berekent dit door je BMR te vermenigvuldigen met een activiteitsfactor (bijv. 1.2 voor sedentair, 1.55 voor matig actief)."
+      },
+      {
+        "question": "Hoe gebruik ik mijn BMR en TDEE voor gewichtsbeheer?",
+        "answer": "Om af te vallen eet je ~500 kcal minder dan je TDEE. Voor aankomen eet je ~300–500 kcal meer. Pas aan op basis van je resultaten."
+      },
+      {
+        "question": "Waarom zijn de formules verschillend voor mannen en vrouwen?",
+        "answer": "Vanwege verschillen in spiermassa en metabolisme. Mannen verbranden doorgaans meer energie in rust dan vrouwen."
+      },
+      {
+        "question": "Hoe nauwkeurig is deze calculator?",
+        "answer": "Vrij accuraat volgens studies, maar blijft een schatting. Individuele verschillen zoals genen en hormonen tellen ook mee."
+      },
+      {
+        "question": "Worden mijn gegevens opgeslagen?",
+        "answer": "Nee. Alles gebeurt lokaal in je browser. Je data blijft privé."
+      }
+    ]
   }
 ]

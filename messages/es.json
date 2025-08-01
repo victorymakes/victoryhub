@@ -344,5 +344,44 @@
       "invalidNumbers": "Por favor, introduce números válidos",
       "positiveNumbers": "La altura y el peso deben ser números positivos"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Sistema de unidades",
+    "metric": "Métrico (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "gender": "Sexo",
+    "male": "Hombre",
+    "female": "Mujer",
+    "age": "Edad (años)",
+    "heightCm": "Altura (cm)",
+    "heightIn": "Altura (pulgadas)",
+    "weightKg": "Peso (kg)",
+    "weightLb": "Peso (lb)",
+    "activityLevel": "Nivel de actividad",
+    "selectActivity": "Selecciona nivel de actividad",
+    "activityLevels": {
+      "sedentary": "Sedentario (poco o ningún ejercicio)",
+      "light": "Ligeramente activo (ejercicio ligero 1–3 días/semana)",
+      "moderate": "Moderadamente activo (ejercicio moderado 3–5 días/semana)",
+      "active": "Muy activo (ejercicio fuerte 6–7 días/semana)",
+      "veryActive": "Extremadamente activo (ejercicio intenso y trabajo físico)"
+    },
+    "calculate": "Calcular BMR y TDEE",
+    "reset": "Reiniciar",
+    "results": "Resultados",
+    "yourBMR": "Tu BMR",
+    "yourTDEE": "Tu TDEE",
+    "calories": "calorías",
+    "caloriesPerDay": "calorías por día",
+    "bmrExplanation": "El BMR es la cantidad de calorías que necesitas en reposo para mantener funciones vitales.",
+    "tdeeExplanation": "El TDEE incluye tu BMR más la energía usada en actividad física y digestión.",
+    "whatItMeans": "Qué significa esto",
+    "bmrDetailedExplanation": "El BMR es tu mínimo. El TDEE mantiene tu peso. Para bajar de peso: consume menos que el TDEE. Para subir: consume más. Son estimaciones.",
+    "errors": {
+      "emptyFields": "Por favor completa todos los campos",
+      "invalidNumbers": "Introduce números válidos",
+      "positiveNumbers": "Edad, altura y peso deben ser números positivos",
+      "ageRange": "La edad debe estar entre 15 y 80 años"
+    }
   }
 }

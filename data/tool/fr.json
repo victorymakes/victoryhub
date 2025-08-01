@@ -317,5 +317,131 @@
         "answer": "Oui. Tous les calculs d'IMC sont effectués localement dans votre navigateur. Aucune donnée n'est téléchargée ou stockée, assurant la confidentialité de vos informations."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Convertisseur d’Images – Convertir les formats JPEG, PNG et WebP en ligne",
+    "description": "Convertissez des images entre les formats JPEG, PNG et WebP directement dans votre navigateur. Ajustez la qualité de sortie et conservez la résolution d'origine – aucun téléchargement requis.",
+    "category": "media",
+    "keywords": [
+      "convertisseur d’images",
+      "convertir jpeg en png",
+      "convertir png en jpeg",
+      "webp en png",
+      "convertir image en ligne",
+      "convertisseur jpg vers webp",
+      "png vers webp",
+      "convertisseur de format d’image",
+      "conversion d’image sans perte"
+    ],
+    "faq": [
+      {
+        "question": "Que fait le Convertisseur d’Images et comment fonctionne-t-il ?",
+        "answer": "Le Convertisseur d’Images transforme des fichiers entre les formats JPEG, PNG et WebP en utilisant des technologies directement dans votre navigateur. L'utilisateur peut charger une image, choisir le format de sortie et ajuster la qualité pour les formats avec perte comme JPEG et WebP. Aucune donnée n’est envoyée sur un serveur."
+      },
+      {
+        "question": "La conversion est-elle sécurisée et hors ligne ?",
+        "answer": "Oui. Toutes les opérations s’effectuent localement dans le navigateur. Vos fichiers ne quittent jamais votre appareil, ce qui garantit une confidentialité totale – parfait pour des contenus sensibles ou privés."
+      },
+      {
+        "question": "Quel format choisir : JPEG, PNG ou WebP ?",
+        "answer": "JPEG est idéal pour les photos, PNG pour les images nécessitant de la transparence, et WebP pour le web grâce à sa petite taille et sa qualité visuelle."
+      },
+      {
+        "question": "La conversion réduit-elle la qualité de l’image ?",
+        "answer": "Oui, légèrement si vous passez à un format avec perte comme JPEG ou WebP. La conversion vers ou entre PNG est généralement sans perte. La qualité peut être ajustée avant le téléchargement."
+      },
+      {
+        "question": "Puis-je convertir plusieurs images à la fois ?",
+        "answer": "Oui. Vous pouvez glisser-déposer plusieurs fichiers à la fois. Le système les traite tous, et vous pouvez les télécharger individuellement ou dans une archive ZIP."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Compresseur d’Images – Réduire la taille des fichiers JPEG, PNG et WebP en ligne",
+    "description": "Compressez des images JPEG, PNG et WebP en ligne pour réduire leur taille sans perte de qualité visible. Parfait pour optimiser les sites web, accélérer les téléversements ou envoyer par e-mail.",
+    "category": "media",
+    "keywords": [
+      "compresseur d’images",
+      "compresser jpeg",
+      "compresser png",
+      "compresser webp",
+      "réduire la taille d’image",
+      "optimiser image pour le web",
+      "compression d’image en ligne",
+      "outil d’optimisation d’image",
+      "compression d’images en lot"
+    ],
+    "faq": [
+      {
+        "question": "Comment le compresseur réduit-il la taille des fichiers sans perte visible de qualité ?",
+        "answer": "Il utilise les fonctionnalités de rendu canvas du navigateur. Pour JPEG/WebP, il applique une compression avec perte ajustable. Pour PNG, l’optimisation est sans perte. Vous pouvez définir le niveau via un curseur."
+      },
+      {
+        "question": "Puis-je compresser une image PNG sans perdre la transparence ?",
+        "answer": "Oui. La compression PNG ici est sans perte et préserve le canal alpha. Si vous n’avez pas besoin de transparence, vous pouvez opter pour une conversion en JPEG pour obtenir un fichier plus léger."
+      },
+      {
+        "question": "Est-ce sécurisé pour les images sensibles ?",
+        "answer": "Absolument. L’outil fonctionne uniquement en local dans votre navigateur. Vos images ne sont jamais téléchargées sur un serveur – parfait pour les documents confidentiels, photos personnelles ou scans d’identifiants."
+      },
+      {
+        "question": "Puis-je compresser plusieurs images à la fois ?",
+        "answer": "Oui. Il suffit de faire glisser plusieurs fichiers. Ils seront traités ensemble, et un fichier ZIP sera généré pour le téléchargement."
+      },
+      {
+        "question": "Quand choisir WebP plutôt que JPEG ?",
+        "answer": "WebP permet des fichiers 25 à 30 % plus petits que JPEG pour une qualité équivalente. C’est idéal pour le web. JPEG reste préférable pour une compatibilité maximale avec les anciens navigateurs."
+      },
+      {
+        "question": "Quelle est la différence entre compression avec perte et sans perte ?",
+        "answer": "La compression avec perte (JPEG, WebP) réduit la taille en supprimant des données – acceptable pour des photos. La compression sans perte (PNG) conserve toutes les données – idéale pour les logos et captures d’écran. L’outil utilise par défaut la compression avec perte tout en maintenant une qualité visuelle élevée."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "Calculateur de BMR – Calculez votre Métabolisme de Base",
+    "description": "Calculez votre BMR (métabolisme de base) et votre TDEE (dépense énergétique quotidienne totale) selon votre âge, sexe, taille, poids et niveau d’activité.",
+    "category": "utilities",
+    "keywords": [
+      "calculateur bmr",
+      "métabolisme basal",
+      "calculateur tdee",
+      "calculateur de calories",
+      "calcul métabolisme",
+      "dépense énergétique journalière",
+      "besoins caloriques",
+      "outil fitness",
+      "outil nutrition",
+      "calculateur de gestion du poids"
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce que le BMR et comment est-il calculé ?",
+        "answer": "Le BMR est le nombre de calories dont votre corps a besoin au repos complet. Il est calculé via la formule Mifflin-St Jeor :<br/>Homme : BMR = (10 × poids kg) + (6.25 × taille cm) - (5 × âge) + 5<br/>Femme : BMR = (10 × poids kg) + (6.25 × taille cm) - (5 × âge) - 161"
+      },
+      {
+        "question": "Qu’est-ce que le TDEE et en quoi est-ce différent du BMR ?",
+        "answer": "Le TDEE inclut toutes vos activités quotidiennes, en plus du BMR. Il est calculé comme suit :<br/>Sédentaire : BMR × 1.2<br/>Légèrement actif : ×1.375<br/>Modérément actif : ×1.55<br/>Très actif : ×1.725<br/>Extrêmement actif : ×1.9"
+      },
+      {
+        "question": "Comment utiliser BMR et TDEE pour gérer mon poids ?",
+        "answer": "Votre TDEE = calories pour maintenir votre poids. <br/>Perte : consommez 500 kcal de moins/jour. <br/>Prise : mangez 300–500 kcal de plus/jour. <br/>Ajustez selon vos résultats."
+      },
+      {
+        "question": "Pourquoi les formules sont-elles différentes pour les hommes et les femmes ?",
+        "answer": "En moyenne, les hommes ont plus de masse musculaire, ce qui augmente leur BMR. La formule reflète cette différence physiologique."
+      },
+      {
+        "question": "Ce calculateur est-il précis ?",
+        "answer": "La formule utilisée est parmi les plus fiables. Cela reste une estimation : génétique, hormones, etc. peuvent influer."
+      },
+      {
+        "question": "Mes données sont-elles confidentielles ?",
+        "answer": "Oui. Toutes les données restent dans votre navigateur. Rien n’est transmis ni stocké."
+      }
+    ]
   }
 ]

@@ -313,5 +313,131 @@
         "answer": "Tavallinen BMI-laskuri on suunniteltu aikuisille (20-vuotiaille ja sitä vanhemmille). Lapsille ja nuorille (2-19-vuotiaille) käytetään erilaista BMI-laskentaa, joka ottaa huomioon iän ja sukupuolen, ja tulokset ilmaistaan persentiileinä. Ikääntyneille aikuisille (yli 65-vuotiaille) BMI-tulkinta voi olla erilainen, sillä hieman korkeampi BMI voi olla suojaava tekijä. Raskaana oleville naisille BMI lasketaan yleensä ennen raskautta olevan painon perusteella."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Kuvamuunnin – Muunna JPEG-, PNG- ja WebP-muotoja verkossa",
+    "description": "Muunna kuvat JPEG-, PNG- ja WebP-muotojen välillä suoraan selaimessa. Säädä laatua ja säilytä alkuperäinen tarkkuus – ei tiedostojen lähettämistä.",
+    "category": "media",
+    "keywords": [
+      "kuvamuunnin",
+      "muunna jpeg png",
+      "muunna png jpeg",
+      "webp png",
+      "muunna kuva verkossa",
+      "jpg webp muunnin",
+      "png webp",
+      "kuvamuodon muunnin",
+      "häviötön kuvamuunnos"
+    ],
+    "faq": [
+      {
+        "question": "Mitä Kuvamuunnin tekee ja miten se toimii?",
+        "answer": "Kuvamuunnin muuntaa kuvia JPEG-, PNG- ja WebP-muotojen välillä selaimen avulla. Käyttäjä voi valita tiedoston, määrätä muodon ja säätää laatua. Kaikki tapahtuu selaimessa ilman latauksia."
+      },
+      {
+        "question": "Onko muuntaminen turvallista ja offline-tilassa?",
+        "answer": "Kyllä. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Tiedostoja ei koskaan lähetetä palvelimille. Soveltuu myös yksityisille kuville."
+      },
+      {
+        "question": "Minkä formaatin valitsen: JPEG, PNG vai WebP?",
+        "answer": "JPEG: valokuville, PNG: läpinäkyvyys, WebP: pieni koko ja hyvä laatu web-käyttöön."
+      },
+      {
+        "question": "Heikkeneekö kuvan laatu muunnoksessa?",
+        "answer": "Kyllä, jos käytät häviöllisiä muotoja kuten JPEG tai WebP. PNG-muunnokset ovat yleensä häviöttömiä."
+      },
+      {
+        "question": "Voinko muuntaa useita kuvia kerralla?",
+        "answer": "Kyllä. Voit vetää useita tiedostoja kerralla ja ladata ne erikseen tai ZIP-pakettina."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Kuvakompressori – Pienennä JPEG-, PNG- ja WebP-kuvia verkossa",
+    "description": "Pakkaa JPEG-, PNG- ja WebP-kuvia verkossa pienempään kokoon ilman näkyvää laadun heikkenemistä. Sopii verkkosivuille, sähköpostiin ja nopeisiin latauksiin.",
+    "category": "media",
+    "keywords": [
+      "kuvakompressori",
+      "pakkaa jpeg",
+      "pakkaa png",
+      "pakkaa webp",
+      "pienennä kuvan koko",
+      "kuvaoptimointi verkkoon",
+      "kuvien online-pakkaus",
+      "kuvaoptimointityökalu",
+      "eräpakkaus kuville"
+    ],
+    "faq": [
+      {
+        "question": "Miten kuvakompressori pienentää tiedostokokoa ilman näkyvää laadun heikkenemistä?",
+        "answer": "Se käyttää selaimen renderöinti- ja pakkausmenetelmiä. JPEG/WebP: säätää laatua (häviöllinen), PNG: häviötön optimointi. Laatu säädettävissä liukusäätimellä."
+      },
+      {
+        "question": "Säilyykö PNG-kuvan läpinäkyvyys pakkauksessa?",
+        "answer": "Kyllä. PNG-pakkaus on häviötön ja säilyttää läpinäkyvyyden. Halutessasi voit muuntaa JPEG-muotoon ilman läpinäkyvyyttä."
+      },
+      {
+        "question": "Onko turvallista pakata yksityisiä kuvia tällä työkalulla?",
+        "answer": "Ehdottomasti. Kaikki tapahtuu selaimessasi. Tiedostot eivät poistu laitteestasi."
+      },
+      {
+        "question": "Voinko pakata kuvia eräajona?",
+        "answer": "Kyllä. Voit käsitellä useita kuvia kerralla, ja ne ladataan ZIP-pakettina."
+      },
+      {
+        "question": "Milloin kannattaa käyttää WebP:tä JPEG:n sijasta?",
+        "answer": "WebP on tehokkaampi ja pienempi, mutta JPEG on yhteensopivampi vanhojen laitteiden kanssa."
+      },
+      {
+        "question": "Mikä ero on häviöllisellä ja häviöttömällä pakkauksella?",
+        "answer": "Häviöllinen: osa tiedoista katoaa (JPEG, WebP). Häviötön: kaikki säilyy (PNG). Tämä työkalu käyttää oletuksena häviöllistä pakkausta."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "BMR-laskin – Laske Perusaineenvaihduntasi",
+    "description": "Laske BMR ja TDEE iän, sukupuolen, pituuden, painon ja aktiivisuustason mukaan.",
+    "category": "utilities",
+    "keywords": [
+      "bmr laskin",
+      "perusaineenvaihdunta",
+      "tdee laskin",
+      "kalorilaskin",
+      "metabolialaskuri",
+      "päivittäinen energiankulutus",
+      "kaloritarve",
+      "kuntoilulaskuri",
+      "ravintotyökalu",
+      "painonhallintalaskuri"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on BMR ja miten se lasketaan?",
+        "answer": "BMR tarkoittaa perusaineenvaihduntaa – kaloreita joita kehosi tarvitsee lepotilassa. Mifflin-St Jeor -kaava:<br/>Miehet: (10 × paino) + (6.25 × pituus) - (5 × ikä) + 5<br/>Naiset: sama, mutta -161."
+      },
+      {
+        "question": "Miten TDEE eroaa BMR:stä?",
+        "answer": "TDEE = BMR × aktiivisuuskerroin (esim. 1.2 passiivinen, 1.55 kohtalainen aktiivisuus)."
+      },
+      {
+        "question": "Miten BMR ja TDEE auttavat painonhallinnassa?",
+        "answer": "Laihtuaksesi: syö 500 kcal vähemmän kuin TDEE.<br/>Lihoaksesi: syö 300–500 kcal enemmän. Säädä tarvittaessa."
+      },
+      {
+        "question": "Miksi kaavat eroavat miehillä ja naisilla?",
+        "answer": "Miehillä on keskimäärin enemmän lihasmassaa, mikä nostaa aineenvaihduntaa."
+      },
+      {
+        "question": "Kuinka tarkka tämä laskuri on?",
+        "answer": "Hyvin tarkka useimmille, mutta yksilölliset tekijät vaikuttavat aina."
+      },
+      {
+        "question": "Säilyvätkö tietoni yksityisinä?",
+        "answer": "Kyllä. Kaikki tapahtuu selaimessasi. Mitään ei tallenneta tai lähetetä."
+      }
+    ]
   }
 ]

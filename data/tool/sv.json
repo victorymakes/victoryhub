@@ -312,5 +312,131 @@
         "answer": "För att uppnå ett hälsosamt BMI, fokusera på en kombination av balanserad kost och regelbunden motion. För viktminskning, skapa ett kaloriunderskott genom att äta mindre och röra dig mer. För viktökning, konsumera fler kalorier än du förbränner med fokus på näringsrik mat. Gör gradvisa, hållbara förändringar i din livsstil istället för drastiska dieter. Rådfråga en läkare eller dietist för personlig rådgivning som passar din specifika hälsosituation."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Bildkonverterare – Konvertera JPEG, PNG och WebP Online",
+    "description": "Konvertera bilder mellan JPEG-, PNG- och WebP-format direkt i webbläsaren. Justera kvalitet och behåll upplösningen – inga uppladdningar krävs.",
+    "category": "media",
+    "keywords": [
+      "bildkonverterare",
+      "konvertera jpeg till png",
+      "konvertera png till jpeg",
+      "webp till png",
+      "konvertera bild online",
+      "jpg till webp konverterare",
+      "png till webp",
+      "bildformat konverterare",
+      "förlustfri bildkonvertering"
+    ],
+    "faq": [
+      {
+        "question": "Vad gör Bildkonverteraren och hur fungerar den?",
+        "answer": "Verktyget omvandlar bilder mellan JPEG, PNG och WebP helt i din webbläsare. Välj en bild, välj format och justera kvalitet. Ingen uppladdning krävs."
+      },
+      {
+        "question": "Är det säkert och offline?",
+        "answer": "Ja. Allt sker lokalt i webbläsaren. Dina filer lämnar aldrig din enhet. Passar för känsliga bilder."
+      },
+      {
+        "question": "Vilket format bör jag välja?",
+        "answer": "JPEG för foton, PNG för transparens, WebP för webben – liten storlek och bra kvalitet."
+      },
+      {
+        "question": "Förlorar jag bildkvalitet vid konvertering?",
+        "answer": "Endast vid övergång till förlustformat som JPEG eller WebP. PNG-konverteringar är oftast förlustfria."
+      },
+      {
+        "question": "Kan jag konvertera flera bilder samtidigt?",
+        "answer": "Ja, du kan dra och släppa flera filer och ladda ner dem individuellt eller som en ZIP-fil."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Bildkompressor – Minska JPEG-, PNG- och WebP-filstorlekar Online",
+    "description": "Komprimera JPEG-, PNG- och WebP-bilder online för att minska filstorleken utan synlig kvalitetsförlust. Perfekt för webbsidor, snabbare uppladdningar och e-post.",
+    "category": "media",
+    "keywords": [
+      "bildkompressor",
+      "komprimera jpeg",
+      "komprimera png",
+      "komprimera webp",
+      "minska bildstorlek",
+      "optimera bild för webben",
+      "online bildkomprimering",
+      "verktyg för bildoptimering",
+      "batchkomprimering bilder"
+    ],
+    "faq": [
+      {
+        "question": "Hur minskar verktyget filstorleken utan att förlora kvalitet?",
+        "answer": "För JPEG och WebP används justerbar förlustkomprimering. PNG komprimeras utan förlust genom optimering. Du ställer själv in nivån med en reglage."
+      },
+      {
+        "question": "Bevaras genomskinlighet i PNG-filer?",
+        "answer": "Ja. Verktyget bevarar alfakanalen. Om transparens inte behövs kan du konvertera till JPEG för mindre filstorlek."
+      },
+      {
+        "question": "Är det säkert att använda verktyget för privata bilder?",
+        "answer": "Ja. Allt sker lokalt i din webbläsare – inga bilder laddas upp. Det är säkert för känsligt innehåll."
+      },
+      {
+        "question": "Stöder verktyget batchkomprimering?",
+        "answer": "Ja. Du kan dra flera filer och få ett ZIP-arkiv med alla komprimerade bilder."
+      },
+      {
+        "question": "När bör jag använda WebP istället för JPEG?",
+        "answer": "WebP ger mindre filer med samma kvalitet, men JPEG är mer kompatibelt. Välj enligt behov."
+      },
+      {
+        "question": "Vad är skillnaden mellan förlustfri och förlustkomprimering?",
+        "answer": "Förlustkomprimering (JPEG, WebP) tar bort data. Förlustfri (PNG) behåller allt. Verktyget använder som standard förlustkomprimering med god balans."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "BMR-Kalkylator – Beräkna din Basala Metaboliska Hastighet",
+    "description": "Beräkna din BMR och TDEE baserat på din ålder, kön, längd, vikt och aktivitetsnivå.",
+    "category": "utilities",
+    "keywords": [
+      "bmr kalkylator",
+      "basal ämnesomsättning",
+      "tdee kalkylator",
+      "kalorikalkylator",
+      "metabolism kalkylator",
+      "daglig energiförbrukning",
+      "kaloribehov",
+      "fitnessverktyg",
+      "näringsverktyg",
+      "vikthantering kalkylator"
+    ],
+    "faq": [
+      {
+        "question": "Vad är BMR och hur beräknas det?",
+        "answer": "BMR är den mängd energi din kropp behöver i viloläge. Beräknas enligt Mifflin-St Jeor:<br/>Män: (10 × vikt) + (6.25 × längd) - (5 × ålder) + 5<br/>Kvinnor: samma men -161 istället för +5."
+      },
+      {
+        "question": "Vad är TDEE och hur skiljer det sig från BMR?",
+        "answer": "TDEE = BMR × aktivitetsfaktor (t.ex. 1.2 vid stillasittande livsstil, 1.55 vid måttlig aktivitet)."
+      },
+      {
+        "question": "Hur använder jag BMR och TDEE för att hantera min vikt?",
+        "answer": "Gå ner i vikt: ät 500 kcal mindre än TDEE.<br/>Gå upp i vikt: ät 300–500 kcal mer. Följ dina resultat och justera vid behov."
+      },
+      {
+        "question": "Varför skiljer sig beräkningarna mellan män och kvinnor?",
+        "answer": "Män har generellt mer muskelmassa och högre energibehov än kvinnor."
+      },
+      {
+        "question": "Hur exakt är denna kalkylator?",
+        "answer": "Mifflin-St Jeor är en av de mest tillförlitliga formlerna, men det är fortfarande en uppskattning."
+      },
+      {
+        "question": "Är mina uppgifter privata?",
+        "answer": "Ja. All beräkning sker lokalt i din webbläsare. Inga uppgifter skickas eller sparas."
+      }
+    ]
   }
 ]

@@ -344,5 +344,44 @@
       "invalidNumbers": "Bitte geben Sie gültige Zahlen ein",
       "positiveNumbers": "Größe und Gewicht müssen positive Zahlen sein"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Einheitensystem",
+    "metric": "Metrisch (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "gender": "Geschlecht",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "age": "Alter (Jahre)",
+    "heightCm": "Größe (cm)",
+    "heightIn": "Größe (in)",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "activityLevel": "Aktivitätsniveau",
+    "selectActivity": "Aktivitätsniveau auswählen",
+    "activityLevels": {
+      "sedentary": "Sitzend (kaum oder keine Bewegung)",
+      "light": "Leicht aktiv (leichte Bewegung 1–3 Tage/Woche)",
+      "moderate": "Mäßig aktiv (mäßige Bewegung 3–5 Tage/Woche)",
+      "active": "Sehr aktiv (intensives Training 6–7 Tage/Woche)",
+      "veryActive": "Extrem aktiv (sehr intensives Training & körperliche Arbeit)"
+    },
+    "calculate": "BMR & TDEE berechnen",
+    "reset": "Zurücksetzen",
+    "results": "Ergebnisse",
+    "yourBMR": "Dein BMR",
+    "yourTDEE": "Dein TDEE",
+    "calories": "Kalorien",
+    "caloriesPerDay": "Kalorien pro Tag",
+    "bmrExplanation": "Die Basale Stoffwechselrate (BMR) ist die Anzahl an Kalorien, die dein Körper in völliger Ruhe benötigt.",
+    "tdeeExplanation": "Der Gesamtenergieverbrauch (TDEE) ist die Gesamtzahl der Kalorien, die du täglich verbrennst, einschließlich BMR und Aktivität.",
+    "whatItMeans": "Was das bedeutet",
+    "bmrDetailedExplanation": "Dein BMR ist dein Mindestbedarf. TDEE ist dein Erhaltungsbedarf. Für Abnahme: weniger als TDEE essen. Für Zunahme: mehr essen. Werte sind geschätzt.",
+    "errors": {
+      "emptyFields": "Bitte alle Felder ausfüllen",
+      "invalidNumbers": "Bitte gültige Zahlen eingeben",
+      "positiveNumbers": "Alter, Größe und Gewicht müssen positiv sein",
+      "ageRange": "Alter muss zwischen 15 und 80 Jahren liegen"
+    }
   }
 }

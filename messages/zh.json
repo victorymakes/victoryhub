@@ -433,5 +433,44 @@
       "invalidNumbers": "请输入有效的数字",
       "positiveNumbers": "身高和体重必须是正数"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "单位制式",
+    "metric": "公制 (厘米, 千克)",
+    "imperial": "英制 (英寸, 磅)",
+    "gender": "性别",
+    "male": "男性",
+    "female": "女性",
+    "age": "年龄 (岁)",
+    "heightCm": "身高 (厘米)",
+    "heightIn": "身高 (英寸)",
+    "weightKg": "体重 (千克)",
+    "weightLb": "体重 (磅)",
+    "activityLevel": "活动水平",
+    "selectActivity": "选择活动水平",
+    "activityLevels": {
+      "sedentary": "久坐不动 (几乎不运动)",
+      "light": "轻度活动 (每周1-3天轻度运动)",
+      "moderate": "中度活动 (每周3-5天中度运动)",
+      "active": "非常活跃 (每周6-7天剧烈运动)",
+      "veryActive": "极度活跃 (非常剧烈的运动和体力工作)"
+    },
+    "calculate": "计算 BMR 和 TDEE",
+    "reset": "重置",
+    "results": "结果",
+    "yourBMR": "您的基础代谢率 (BMR)",
+    "yourTDEE": "您的每日总能量消耗 (TDEE)",
+    "calories": "卡路里",
+    "caloriesPerDay": "卡路里/天",
+    "bmrExplanation": "基础代谢率 (BMR) 是您的身体在完全休息状态下维持基本生理功能所需的卡路里数量。",
+    "tdeeExplanation": "每日总能量消耗 (TDEE) 是您一天内燃烧的总卡路里数，包括您的 BMR 加上通过身体活动和消化燃烧的额外卡路里。",
+    "whatItMeans": "这意味着什么",
+    "bmrDetailedExplanation": "您的BMR代表您的最低卡路里需求，而TDEE代表您的维持卡路里。要减轻体重，摄入少于TDEE的卡路里；要增加体重，摄入多于TDEE的卡路里。这些是估计值，可能因个体因素而异。",
+    "errors": {
+      "emptyFields": "请填写所有字段",
+      "invalidNumbers": "请输入有效的数字",
+      "positiveNumbers": "年龄、身高和体重必须是正数",
+      "ageRange": "年龄必须在15到80岁之间"
+    }
   }
 }

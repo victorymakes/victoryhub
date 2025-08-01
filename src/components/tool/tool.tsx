@@ -11,6 +11,7 @@ import ImageConverter from "./image-converter";
 // import QRCodeGenerator from "./qrcode-generator";
 import CronExpressionGenerator from "./cron-expression-generator";
 import BMICalculator from "./bmi-calculator";
+import BMRCalculator from "./bmr-calculator";
 
 interface ToolComponentProps {
     id: string;
@@ -46,6 +47,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <CronExpressionGenerator />;
         case "bmi-calculator":
             return <BMICalculator />;
+        case "bmr-calculator":
+            return <BMRCalculator />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

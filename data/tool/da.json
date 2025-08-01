@@ -312,5 +312,131 @@
         "answer": "Brug dit BMI-resultat som et udgangspunkt for samtaler med sundhedspersonale, ikke som en definitiv sundhedsdom. Hvis dit BMI falder uden for normalområdet, overvej at konsultere en læge eller diætist for personlig rådgivning. Fokuser på sunde livsstilsændringer som regelmæssig motion, balanceret kost, tilstrækkelig søvn og stresshåndtering, snarere end kun vægttab eller vægtøgning. Husk, at sundhed er multidimensionel og ikke kan reduceres til et enkelt tal. Regelmæssige sundhedstjek og at lytte til din krop er lige så vigtige som at overvåge dit BMI."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Billedkonverter – Konverter JPEG, PNG og WebP Formater Online",
+    "description": "Konverter billeder mellem JPEG-, PNG- og WebP-formater direkte i din browser. Juster outputkvalitet og bevar original opløsning – ingen upload nødvendig.",
+    "category": "media",
+    "keywords": [
+      "billedkonverter",
+      "konverter jpeg til png",
+      "konverter png til jpeg",
+      "webp til png",
+      "konverter billede online",
+      "jpg til webp konverter",
+      "png til webp",
+      "billedformat konverter",
+      "tabsfri billedkonvertering"
+    ],
+    "faq": [
+      {
+        "question": "Hvad gør Billedkonverteren, og hvordan virker den?",
+        "answer": "Billedkonverteren omdanner billedfiler mellem JPEG-, PNG- og WebP-formater ved hjælp af teknologi direkte i browseren. Du uploader et billede, vælger ønsket outputformat og kan justere kvaliteten for formater med tabsdata som JPEG og WebP. Al konvertering udføres med browserens API’er for øjeblikkelige resultater – ingen upload kræves."
+      },
+      {
+        "question": "Er billedkonverteringen sikker og offline?",
+        "answer": "Ja. Alle operationer udføres lokalt i din browser. Dine filer bliver på din enhed og sendes aldrig til nogen server. Dette gør værktøjet sikkert at bruge med følsomme eller private billeder."
+      },
+      {
+        "question": "Hvilket format skal jeg vælge: JPEG, PNG eller WebP?",
+        "answer": "Vælg JPEG til fotos og billeder med mange farver og nuancer. Brug PNG, når du har brug for gennemsigtighed eller skarpe kanter (som logoer og UI-elementer). WebP er bedst til webbrug – det giver mindre filstørrelse uden at gå på kompromis med kvalitet og understøttes af alle moderne browsere."
+      },
+      {
+        "question": "Reducerer konvertering mellem formater billedkvaliteten?",
+        "answer": "Konvertering til et format med tab som JPEG eller WebP kan mindske billedkvaliteten en smule, især ved lavere kvalitetsindstillinger. Konvertering til eller mellem PNG’er er typisk tabsfri. Du kan justere kvaliteten før download."
+      },
+      {
+        "question": "Kan jeg konvertere flere billeder på én gang (batch-konvertering)?",
+        "answer": "Ja. Værktøjet understøtter batch-konvertering. Træk og slip flere filer – hver vil blive behandlet og kan downloades enkeltvis eller samlet i en ZIP-fil."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Billedkompressor – Reducer JPEG-, PNG- og WebP-filstørrelser Online",
+    "description": "Komprimér JPEG-, PNG- og WebP-billeder online for at reducere filstørrelsen uden at miste kvalitet. Perfekt til weboptimering, hurtigere uploads og deling via e-mail.",
+    "category": "media",
+    "keywords": [
+      "billedkompressor",
+      "komprimer jpeg",
+      "komprimer png",
+      "komprimer webp",
+      "reducer billedstørrelse",
+      "optimer billede til web",
+      "online billedkomprimering",
+      "billedoptimeringsværktøj",
+      "batch billedkompressor"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan reducerer billedkompressoren filstørrelsen uden at miste synlig kvalitet?",
+        "answer": "Billedkompressoren bruger canvas-rendering og kodning direkte i browseren for at komprimere billeder, mens den bevarer visuel klarhed. For JPEG og WebP reduceres størrelsen ved at justere kvaliteten med tabsalgoritmer. For PNG’er bruges tabsfri optimering som farvedybde-reduktion og paletforfinelse. Du kan selv vælge komprimeringsniveauet via en skyder."
+      },
+      {
+        "question": "Kan jeg komprimere et PNG-billede uden at miste gennemsigtighed eller kvalitet?",
+        "answer": "Ja. Komprimering af PNG med dette værktøj er tabsfri – det reducerer størrelsen ved at optimere pixeldata og fjerne unødvendige metadata. Gennemsigtigheden (alpha-kanalen) bevares. Hvis du ikke har brug for gennemsigtighed og ønsker en mindre fil, kan du vælge at konvertere til JPEG."
+      },
+      {
+        "question": "Er det sikkert at bruge denne kompressor til følsomme billeder (f.eks. personlige fotos)?",
+        "answer": "Absolut. Dette er et fuldstændigt klientbaseret værktøj. Al behandling sker lokalt i din browser via JavaScript og HTML5 – dine billeder bliver aldrig uploadet til en server. Det gør det velegnet til private billeder, dokumenter og ID-scanninger."
+      },
+      {
+        "question": "Kan jeg komprimere billeder i batch (flere filer på én gang)?",
+        "answer": "Ja. Værktøjet understøtter batchkomprimering. Du kan trække og slippe flere JPEG-, PNG- eller WebP-filer i grænsefladen, og de bliver behandlet samtidigt eller i rækkefølge afhængigt af din browsers hukommelse. En ZIP-fil med alle komprimerede billeder genereres automatisk til download."
+      },
+      {
+        "question": "Hvornår bør jeg vælge WebP frem for JPEG til komprimering?",
+        "answer": "WebP giver typisk 25–30% mindre filstørrelser sammenlignet med JPEG ved samme visuelle kvalitet. Det er ideelt til weboptimering, især til mobilbrug. JPEG er dog mere kompatibelt med ældre browsere og billedvisere. Dette værktøj lader dig vælge mellem JPEG og WebP, afhængigt af dine behov."
+      },
+      {
+        "question": "Hvad er forskellen på tabsfri og tabsgivende billedkomprimering?",
+        "answer": "Tabsgivende komprimering (JPEG, WebP) fjerner billeddata for at reducere filstørrelsen – bedst til fotos eller store billeder, hvor mindre kvalitetstab er acceptabelt. Tabsfri komprimering (PNG) bevarer alle data og er ideel til logoer, illustrationer og skærmbilleder. Værktøjet bruger som standard tabsgivende komprimering med fokus på balanceret kvalitet og størrelse."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "BMR-Beregner – Beregn din Basale Stofskifte",
+    "description": "Beregn din BMR og TDEE ud fra alder, køn, højde, vægt og aktivitetsniveau.",
+    "category": "utilities",
+    "keywords": [
+      "bmr beregner",
+      "basalstofskifte",
+      "tdee beregner",
+      "kalorieberegner",
+      "stofskifte beregner",
+      "dagligt energiforbrug",
+      "kaloriebehov",
+      "fitnessværktøj",
+      "ernæringsværktøj",
+      "vægtstyring beregner"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er BMR og hvordan beregnes det?",
+        "answer": "BMR er antallet af kalorier kroppen bruger i hvile. Beregnes med Mifflin-St Jeor:<br/>Mænd: (10 × vægt) + (6.25 × højde) - (5 × alder) + 5<br/>Kvinder: samme, men -161."
+      },
+      {
+        "question": "Hvordan adskiller TDEE sig fra BMR?",
+        "answer": "TDEE er BMR ganget med en aktivitetsfaktor (f.eks. 1.2 hvis du er inaktiv, 1.55 for moderat aktiv)."
+      },
+      {
+        "question": "Hvordan bruger jeg BMR og TDEE til vægtstyring?",
+        "answer": "Vægttab: spis ~500 kcal mindre end TDEE. Vægtøgning: spis 300–500 kcal ekstra."
+      },
+      {
+        "question": "Hvorfor er formlerne forskellige for mænd og kvinder?",
+        "answer": "Mænd har oftest mere muskelmasse, som kræver mere energi."
+      },
+      {
+        "question": "Er beregneren præcis?",
+        "answer": "Ja, men den er stadig et estimat – faktorer som genetik og helbred spiller ind."
+      },
+      {
+        "question": "Er mine data private?",
+        "answer": "Ja. Alle beregninger foregår i din browser – ingen data sendes eller gemmes."
+      }
+    ]
   }
 ]

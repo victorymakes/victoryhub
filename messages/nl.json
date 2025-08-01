@@ -344,5 +344,44 @@
       "invalidNumbers": "Voer geldige getallen in",
       "positiveNumbers": "Lengte en gewicht moeten positieve getallen zijn"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Eenheidssysteem",
+    "metric": "Metrisch (cm, kg)",
+    "imperial": "Imperiaal (in, lb)",
+    "gender": "Geslacht",
+    "male": "Man",
+    "female": "Vrouw",
+    "age": "Leeftijd (jaren)",
+    "heightCm": "Lengte (cm)",
+    "heightIn": "Lengte (in)",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "activityLevel": "Activiteitsniveau",
+    "selectActivity": "Selecteer activiteitsniveau",
+    "activityLevels": {
+      "sedentary": "Zittend (weinig of geen beweging)",
+      "light": "Licht actief (lichte training 1–3 dagen/week)",
+      "moderate": "Gemiddeld actief (3–5 dagen/week matige training)",
+      "active": "Zeer actief (intensieve training 6–7 dagen/week)",
+      "veryActive": "Extreem actief (zware training en fysiek werk)"
+    },
+    "calculate": "Bereken BMR & TDEE",
+    "reset": "Reset",
+    "results": "Resultaten",
+    "yourBMR": "Jouw BMR",
+    "yourTDEE": "Jouw TDEE",
+    "calories": "calorieën",
+    "caloriesPerDay": "calorieën per dag",
+    "bmrExplanation": "Basale metabolisme (BMR) is het aantal calorieën dat je lichaam nodig heeft in volledige rust.",
+    "tdeeExplanation": "Totale dagelijkse energieverbruik (TDEE) omvat BMR plus energieverbruik door activiteit en spijsvertering.",
+    "whatItMeans": "Wat dit betekent",
+    "bmrDetailedExplanation": "Je BMR is je minimumbehoefte. TDEE is voor gewichtsbehoud. Minder eten = afvallen, meer eten = aankomen. Geschatte waarden.",
+    "errors": {
+      "emptyFields": "Vul alle velden in",
+      "invalidNumbers": "Voer geldige cijfers in",
+      "positiveNumbers": "Leeftijd, lengte en gewicht moeten positief zijn",
+      "ageRange": "Leeftijd moet tussen 15 en 80 jaar liggen"
+    }
   }
 }

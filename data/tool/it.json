@@ -317,5 +317,131 @@
         "answer": "Sì. Tutti i calcoli BMI vengono eseguiti localmente nel tuo browser. I dati non vengono caricati o salvati, garantendo la privacy delle tue informazioni."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Convertitore di Immagini – Converti Formati JPEG, PNG e WebP Online",
+    "description": "Converti immagini tra formati JPEG, PNG e WebP direttamente nel tuo browser. Regola la qualità di output e mantieni la risoluzione originale senza bisogno di upload.",
+    "category": "media",
+    "keywords": [
+      "convertitore di immagini",
+      "converti jpeg in png",
+      "converti png in jpeg",
+      "webp in png",
+      "converti immagine online",
+      "convertitore jpg in webp",
+      "png in webp",
+      "convertitore formato immagine",
+      "conversione immagine senza perdita"
+    ],
+    "faq": [
+      {
+        "question": "Cosa fa il Convertitore di Immagini e come funziona?",
+        "answer": "Il Convertitore di Immagini trasforma file immagine tra formati JPEG, PNG e WebP utilizzando la tecnologia del browser. Permette agli utenti di caricare un'immagine, selezionare il formato di output desiderato e, facoltativamente, regolare la qualità per formati con perdita come JPEG e WebP. Tutte le conversioni vengono eseguite tramite API del browser per risultati istantanei, senza bisogno di upload."
+      },
+      {
+        "question": "La conversione delle immagini è sicura e offline?",
+        "answer": "Sì. Tutte le operazioni avvengono interamente all'interno del tuo browser. I tuoi file rimangono locali e non vengono mai trasmessi, memorizzati o accessibili da alcun server. Questo rende lo strumento adatto per immagini riservate o sensibili."
+      },
+      {
+        "question": "Quale formato dovrei scegliere: JPEG, PNG o WebP?",
+        "answer": "Scegli JPEG per foto o immagini con molti colori e gradienti. Usa PNG quando hai bisogno di trasparenza o bordi ad alta fedeltà (come loghi o asset UI). WebP è ideale per l'uso sul web: combina dimensioni di file ridotte con buona qualità visiva, ed è supportato da tutti i browser moderni."
+      },
+      {
+        "question": "La conversione tra formati riduce la qualità dell'immagine?",
+        "answer": "La conversione in un formato con perdita come JPEG o WebP può degradare leggermente la qualità dell'immagine, specialmente a impostazioni di qualità più basse. La conversione tra PNG o da JPEG a PNG è generalmente senza perdita. Puoi controllare i livelli di qualità prima del download."
+      },
+      {
+        "question": "Posso convertire molte immagini contemporaneamente (conversione batch)?",
+        "answer": "Sì. Lo strumento supporta la conversione batch dei formati. Trascina e rilascia più file, e ciascuno sarà elaborato e reso disponibile per il download individualmente o in un file ZIP."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Compressore di Immagini – Riduci le Dimensioni di JPEG, PNG e WebP Online",
+    "description": "Comprimi immagini JPEG, PNG e WebP online per ridurre la dimensione del file senza perdere qualità. Perfetto per l'ottimizzazione web, caricamenti più rapidi e condivisione via email.",
+    "category": "media",
+    "keywords": [
+      "compressore di immagini",
+      "comprimi jpeg",
+      "comprimi png",
+      "comprimi webp",
+      "riduci dimensione immagine",
+      "ottimizza immagine per il web",
+      "compressione immagine online",
+      "strumento di ottimizzazione immagini",
+      "compressore immagini in blocco"
+    ],
+    "faq": [
+      {
+        "question": "Come fa il Compressore di Immagini a ridurre la dimensione del file senza perdere qualità visibile?",
+        "answer": "Il Compressore di Immagini utilizza rendering canvas nativi del browser e tecniche di codifica per comprimere le immagini mantenendo la chiarezza visiva. Per JPEG e WebP, riduce la dimensione regolando la qualità di compressione tramite codifica con perdita. Per i PNG, sfrutta ottimizzazioni senza perdita come la riduzione della profondità di colore e il perfezionamento della tavolozza. Puoi impostare manualmente il livello di compressione tramite uno slider per bilanciare qualità e dimensioni."
+      },
+      {
+        "question": "Posso comprimere un'immagine PNG senza perdere trasparenza o qualità?",
+        "answer": "Sì. La compressione PNG in questo strumento è senza perdita—riduce la dimensione ottimizzando i dati dei pixel e rimuovendo metadati inutili, senza ricodificare i pixel. Il canale alpha (trasparenza) viene preservato. Tuttavia, per un output più leggero, puoi scegliere di convertire il PNG in JPEG se non hai bisogno della trasparenza."
+      },
+      {
+        "question": "È sicuro usare questo compressore per immagini sensibili (es. foto personali)?",
+        "answer": "Assolutamente. Questo è uno strumento di compressione completamente lato client. Tutto l'elaborazione avviene localmente nel tuo browser usando JavaScript e le API HTML5—le immagini non vengono mai caricate né inviate a nessun server. È quindi una soluzione sicura per contenuti sensibili, come scansioni di documenti, ID o foto private."
+      },
+      {
+        "question": "Posso comprimere immagini in blocco (più file contemporaneamente)?",
+        "answer": "Sì. Lo strumento supporta la compressione batch delle immagini. Trascina e rilascia più file JPEG, PNG o WebP nell'interfaccia, e verranno elaborati in parallelo o in sequenza a seconda della memoria disponibile del browser. Verrà automaticamente generato un file ZIP contenente tutte le immagini compresse."
+      },
+      {
+        "question": "Quando dovrei scegliere WebP invece di JPEG per la compressione?",
+        "answer": "WebP offre solitamente file più piccoli del 25–30% rispetto a JPEG a parità di qualità visiva. È ideale per sviluppatori web che vogliono ottimizzare le performance, specialmente su mobile. Tuttavia, JPEG è più compatibile con browser e visualizzatori più vecchi. Questo strumento consente di comprimere in JPEG per la massima compatibilità, oppure puoi usare un convertitore separato per generare WebP se necessario."
+      },
+      {
+        "question": "Qual è la differenza tra compressione con perdita e senza perdita?",
+        "answer": "La compressione con perdita (usata in JPEG, WebP) rimuove alcuni dati dall'immagine per ridurre la dimensione—ideale per foto o immagini grandi dove sono accettabili lievi perdite di qualità. La compressione senza perdita (usata in PNG) mantiene tutti i dati originali, ed è ideale per loghi, illustrazioni e screenshot. Il nostro strumento usa la compressione con perdita per impostazione predefinita per il miglior rapporto qualità/dimensione, mantenendo una qualità visiva elevata salvo impostazioni estreme."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "Calcolatore BMR – Calcola il Tuo Metabolismo Basale",
+    "description": "Calcola il tuo BMR e il TDEE in base a età, sesso, altezza, peso e livello di attività.",
+    "category": "utilities",
+    "keywords": [
+      "calcolatore bmr",
+      "metabolismo basale",
+      "calcolatore tdee",
+      "calcolatore calorie",
+      "calcolatore metabolismo",
+      "dispendio energetico giornaliero",
+      "fabbisogno calorico",
+      "calcolatore fitness",
+      "strumento nutrizione",
+      "calcolatore peso"
+    ],
+    "faq": [
+      {
+        "question": "Cos'è il BMR e come si calcola?",
+        "answer": "Il BMR è l’energia minima per mantenere le funzioni vitali. Formula Mifflin-St Jeor:<br/>Uomini: (10 × peso) + (6.25 × altezza) - (5 × età) + 5<br/>Donne: stessa formula, ma -161."
+      },
+      {
+        "question": "Cos'è il TDEE e come differisce dal BMR?",
+        "answer": "TDEE = BMR × fattore attività (es. 1.2 sedentario, 1.55 attivo moderato)."
+      },
+      {
+        "question": "Come usare BMR e TDEE per gestire il peso?",
+        "answer": "Per dimagrire: -500 kcal/giorno. Per aumentare peso: +300–500 kcal/giorno."
+      },
+      {
+        "question": "Perché uomini e donne hanno formule diverse?",
+        "answer": "Differenze ormonali e muscolari influenzano il metabolismo. Le formule riflettono ciò."
+      },
+      {
+        "question": "È preciso questo calcolatore?",
+        "answer": "Molto, ma è sempre una stima. Vanno considerati fattori individuali."
+      },
+      {
+        "question": "I miei dati sono privati?",
+        "answer": "Sì. Tutto viene calcolato nel browser. Nessun dato viene salvato o trasmesso."
+      }
+    ]
   }
 ]

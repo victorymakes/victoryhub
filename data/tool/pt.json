@@ -317,5 +317,131 @@
         "answer": "Sim. Todos os cálculos de IMC são realizados localmente em seu navegador. Os dados não são carregados ou salvos, garantindo a privacidade de suas informações."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Conversor de Imagens – Converta Formatos JPEG, PNG e WebP Online",
+    "description": "Converta imagens entre os formatos JPEG, PNG e WebP diretamente no navegador. Ajuste a qualidade de saída e mantenha a resolução original, sem necessidade de upload.",
+    "category": "media",
+    "keywords": [
+      "conversor de imagens",
+      "converter jpeg para png",
+      "converter png para jpeg",
+      "webp para png",
+      "converter imagem online",
+      "conversor de jpg para webp",
+      "png para webp",
+      "conversor de formato de imagem",
+      "conversão de imagem sem perda"
+    ],
+    "faq": [
+      {
+        "question": "O que o Conversor de Imagens faz e como funciona?",
+        "answer": "O Conversor de Imagens transforma arquivos entre os formatos JPEG, PNG e WebP usando tecnologia baseada no navegador. Permite fazer upload da imagem, escolher o formato de saída desejado e ajustar a qualidade para formatos com perda como JPEG e WebP. Toda a conversão é feita via APIs do navegador para resultados instantâneos, sem uploads."
+      },
+      {
+        "question": "A conversão de imagens é segura e offline?",
+        "answer": "Sim. Todas as operações acontecem inteiramente no seu navegador. Seus arquivos permanecem locais e nunca são transmitidos, armazenados ou acessados por nenhum servidor. Isso torna a ferramenta adequada para imagens confidenciais ou sensíveis."
+      },
+      {
+        "question": "Qual formato devo escolher: JPEG, PNG ou WebP?",
+        "answer": "Escolha JPEG para fotos ou imagens com muitos detalhes e cores. Use PNG quando precisar de transparência ou bordas nítidas (como logotipos e interfaces). WebP é ideal para uso na web—combina arquivos menores com boa qualidade visual, e é compatível com todos os navegadores modernos."
+      },
+      {
+        "question": "Converter entre formatos reduz a qualidade da imagem?",
+        "answer": "Converter para um formato com perda como JPEG ou WebP pode degradar levemente a qualidade, especialmente em configurações mais baixas. Converter de JPEG para PNG ou entre PNGs é geralmente sem perda. Você pode controlar os níveis de qualidade antes de baixar."
+      },
+      {
+        "question": "Posso converter várias imagens ao mesmo tempo (conversão em lote)?",
+        "answer": "Sim. A ferramenta suporta conversão em lote. Basta arrastar e soltar múltiplos arquivos, e cada um será processado e disponibilizado para download individual ou agrupado em um arquivo ZIP."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Compressor de Imagens – Reduza o Tamanho de Arquivos JPEG, PNG e WebP Online",
+    "description": "Comprimir imagens JPEG, PNG e WebP online para reduzir o tamanho dos arquivos sem perder qualidade. Ideal para otimização na web, uploads mais rápidos e compartilhamento por e-mail.",
+    "category": "media",
+    "keywords": [
+      "compressor de imagens",
+      "comprimir jpeg",
+      "comprimir png",
+      "comprimir webp",
+      "reduzir tamanho da imagem",
+      "otimizar imagem para web",
+      "compressão de imagem online",
+      "ferramenta de otimização de imagem",
+      "compressor de imagens em lote"
+    ],
+    "faq": [
+      {
+        "question": "Como o Compressor de Imagens reduz o tamanho dos arquivos sem perder qualidade visual?",
+        "answer": "O Compressor de Imagens utiliza renderização via canvas e técnicas de codificação nativas do navegador para comprimir as imagens mantendo sua aparência. Para JPEG e WebP, ele ajusta a taxa de compressão com codificação com perda. Para PNG, utiliza otimizações sem perda, como redução de profundidade de cor e paleta refinada. Você pode definir o nível de compressão manualmente com um controle deslizante."
+      },
+      {
+        "question": "Posso comprimir uma imagem PNG sem perder transparência ou qualidade?",
+        "answer": "Sim. A compressão de PNG nesta ferramenta é sem perda—ela reduz o tamanho otimizando os dados de pixels e removendo metadados desnecessários, sem alterar os pixels. A transparência (canal alfa) é preservada. Se quiser um arquivo ainda menor e não precisa de transparência, você pode converter para JPEG."
+      },
+      {
+        "question": "É seguro usar este compressor para imagens sensíveis (como fotos pessoais)?",
+        "answer": "Com certeza. Esta ferramenta funciona inteiramente no lado do cliente. Todo o processamento ocorre no seu navegador usando JavaScript e APIs HTML5—nenhuma imagem é enviada para servidores. Isso torna o uso seguro para conteúdos confidenciais como documentos, digitalizações de identidade ou fotos privadas."
+      },
+      {
+        "question": "Posso comprimir imagens em lote (vários arquivos ao mesmo tempo)?",
+        "answer": "Sim. A ferramenta permite compressão em lote. Basta arrastar e soltar múltiplos arquivos JPEG, PNG ou WebP na interface, e eles serão processados em paralelo ou sequência, dependendo da memória do navegador. Um arquivo ZIP com todas as imagens comprimidas será gerado automaticamente para download."
+      },
+      {
+        "question": "Quando devo escolher WebP em vez de JPEG para compressão?",
+        "answer": "O WebP geralmente oferece arquivos 25–30% menores que o JPEG para a mesma qualidade visual. É ideal para desenvolvedores web que desejam melhorar o desempenho, especialmente em dispositivos móveis. No entanto, o JPEG ainda é mais compatível com navegadores e visualizadores antigos. Esta ferramenta permite compressão em JPEG para compatibilidade máxima, ou você pode usar um conversor para gerar WebP."
+      },
+      {
+        "question": "Qual é a diferença entre compressão com perda e sem perda?",
+        "answer": "A compressão com perda (JPEG, WebP) descarta alguns dados da imagem para reduzir o tamanho—ideal para fotos ou imagens grandes onde uma leve perda de qualidade é aceitável. A compressão sem perda (PNG) mantém todos os dados originais, sendo ideal para logotipos, ilustrações e capturas de tela. Nossa ferramenta usa compressão com perda por padrão, com qualidade visual mantida exceto em níveis extremamente baixos."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "Calculadora BMR – Calcule sua Taxa Metabólica Basal",
+    "description": "Calcule sua BMR e TDEE com base na idade, sexo, altura, peso e nível de atividade física.",
+    "category": "utilities",
+    "keywords": [
+      "calculadora bmr",
+      "taxa metabólica basal",
+      "calculadora tdee",
+      "calculadora de calorias",
+      "calculadora de metabolismo",
+      "gasto energético diário",
+      "necessidade calórica",
+      "calculadora fitness",
+      "ferramenta de nutrição",
+      "controle de peso"
+    ],
+    "faq": [
+      {
+        "question": "O que é BMR e como é calculado?",
+        "answer": "BMR é a energia mínima para manter funções vitais. Fórmula Mifflin-St Jeor:<br/>Homens: (10 × peso) + (6.25 × altura) - (5 × idade) + 5<br/>Mulheres: mesma fórmula, mas -161."
+      },
+      {
+        "question": "O que é TDEE e como ele difere do BMR?",
+        "answer": "TDEE é BMR multiplicado por um fator de atividade (ex: 1.2 para sedentário, 1.55 para moderado)."
+      },
+      {
+        "question": "Como usar o BMR e TDEE para gerenciar peso?",
+        "answer": "Para emagrecer: coma 500 kcal a menos. Para engordar: adicione 300–500 kcal por dia."
+      },
+      {
+        "question": "Por que homens e mulheres têm cálculos diferentes?",
+        "answer": "Homens têm mais massa muscular. A fórmula reflete essa diferença fisiológica."
+      },
+      {
+        "question": "A calculadora é precisa?",
+        "answer": "Sim, mas ainda é uma estimativa. Fatores individuais contam."
+      },
+      {
+        "question": "Meus dados são privados?",
+        "answer": "Sim. Tudo é feito no seu navegador. Nada é enviado."
+      }
+    ]
   }
 ]
