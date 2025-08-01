@@ -27,6 +27,21 @@ export async function generateMetadata({
     const t = await getTranslations("Homepage");
     const url = getLocalizedUrl(locale, "");
 
+    // Create JSON-LD structured data for website
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": config.siteName,
+        "url": `${config.baseUrl}${url}`,
+        "description": t("seoDescription"),
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${config.baseUrl}${getLocalizedUrl(locale, "tools")}?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+        },
+        "inLanguage": locale
+    };
+
     return {
         title: generateTitle(t("seoTitle")),
         description: t("seoDescription"),
@@ -48,6 +63,9 @@ export async function generateMetadata({
             canonical: url,
             languages: getLocalizedUrls(""),
         },
+        other: {
+            "script:ld+json": JSON.stringify(jsonLd)
+        }
     };
 }
 
@@ -57,6 +75,8 @@ export default async function Home({ params }: HomeProps) {
     const popularTools = await getPopularTools(6, locale);
     const recentPosts = await getRecentBlogs(3, locale);
 
+    const homeUrl = getLocalizedUrl(locale, "");
+    
     return (
         <div className="bg-background">
             {/* Hero Section */}

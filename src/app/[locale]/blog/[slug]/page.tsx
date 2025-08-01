@@ -43,6 +43,35 @@ export async function generateMetadata({
 
     const url = getLocalizedUrl(locale, post.slug);
 
+    // Create JSON-LD structured data for blog post
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.description,
+        "image": post.cover,
+        "datePublished": post.date,
+        "author": {
+            "@type": "Person",
+            "name": post.author
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": config.siteName,
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${config.baseUrl}/logo.png`
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": url
+        },
+        "keywords": post.tags.map(tag => tag.name).join(","),
+        "articleSection": post.category.name,
+        "inLanguage": locale
+    };
+
     return {
         title: generateTitle(post.title),
         description: post.description,
@@ -78,6 +107,7 @@ export async function generateMetadata({
             "article:published_time": post.date,
             "article:section": post.category.name,
             "article:tag": post.tags.join(","),
+            "script:ld+json": JSON.stringify(jsonLd)
         },
     };
 }
