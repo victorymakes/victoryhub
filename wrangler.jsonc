@@ -8,5 +8,13 @@
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    "NEXT_PUBLIC_BASE_URL": "https://victoryhub.cc",
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "G-QRRSV51BF3"
   }
 }

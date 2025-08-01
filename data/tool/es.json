@@ -317,5 +317,131 @@
         "answer": "Sí. Todos los cálculos de IMC se realizan localmente en tu navegador. No se suben ni almacenan datos, asegurando que tu información permanezca privada."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Convertidor de Imágenes – Convierte JPEG, PNG y WebP Online",
+    "description": "Convierte imágenes entre formatos JPEG, PNG y WebP directamente en tu navegador. Ajusta la calidad de salida y conserva la resolución original sin necesidad de subir archivos.",
+    "category": "media",
+    "keywords": [
+      "convertidor de imágenes",
+      "convertir jpeg a png",
+      "convertir png a jpeg",
+      "webp a png",
+      "convertir imagen online",
+      "convertidor jpg a webp",
+      "png a webp",
+      "convertidor de formato de imagen",
+      "conversión de imagen sin pérdida"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué hace el Convertidor de Imágenes y cómo funciona?",
+        "answer": "El Convertidor de Imágenes transforma archivos entre formatos JPEG, PNG y WebP usando tecnología del navegador. Permite cargar una imagen, seleccionar el formato de salida y ajustar la calidad en formatos con pérdida como JPEG y WebP. Todo se realiza localmente sin subir archivos."
+      },
+      {
+        "question": "¿La conversión es segura y offline?",
+        "answer": "Sí. Todas las operaciones ocurren dentro del navegador. Tus archivos no se envían ni se almacenan en ningún servidor. Es ideal para contenido sensible o privado."
+      },
+      {
+        "question": "¿Qué formato debería elegir: JPEG, PNG o WebP?",
+        "answer": "Usa JPEG para fotos y gradientes complejos, PNG para transparencias y bordes definidos, y WebP para buena calidad con menor tamaño para uso web moderno."
+      },
+      {
+        "question": "¿Convertir entre formatos reduce la calidad?",
+        "answer": "Convertir a JPEG o WebP puede degradar ligeramente la imagen. Convertir a PNG o entre PNGs es sin pérdida. Puedes controlar la calidad antes de descargar."
+      },
+      {
+        "question": "¿Puedo convertir varias imágenes a la vez?",
+        "answer": "Sí. Puedes arrastrar múltiples archivos, y cada uno se procesará individualmente. Luego puedes descargar todo como archivos separados o en ZIP."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Compresor de Imágenes – Reduce Tamaños JPEG, PNG y WebP Online",
+    "description": "Comprime imágenes JPEG, PNG y WebP online para reducir el tamaño sin perder calidad. Ideal para sitios web, cargas más rápidas y correos electrónicos.",
+    "category": "media",
+    "keywords": [
+      "compresor de imágenes",
+      "comprimir jpeg",
+      "comprimir png",
+      "comprimir webp",
+      "reducir tamaño de imagen",
+      "optimizar imagen para web",
+      "compresión de imagen online",
+      "herramienta de optimización de imágenes",
+      "compresor de imágenes en lote"
+    ],
+    "faq": [
+      {
+        "question": "¿Cómo reduce el Compresor el tamaño sin perder calidad?",
+        "answer": "Usa técnicas de renderizado y codificación nativas del navegador. Para JPEG/WebP ajusta calidad (con pérdida). PNG se optimiza sin pérdida. Puedes controlar la compresión con un deslizador."
+      },
+      {
+        "question": "¿Puedo comprimir un PNG sin perder transparencia?",
+        "answer": "Sí. La transparencia se mantiene. Para tamaños menores, puedes convertir a JPEG si no necesitas fondo transparente."
+      },
+      {
+        "question": "¿Es seguro usarlo con imágenes sensibles?",
+        "answer": "Sí. Todo ocurre en el navegador, sin subir datos. Es seguro para fotos privadas, documentos o escaneos de ID."
+      },
+      {
+        "question": "¿Puedo comprimir imágenes en lote?",
+        "answer": "Sí. Puedes arrastrar múltiples archivos. Se procesarán y se generará un archivo ZIP con los resultados."
+      },
+      {
+        "question": "¿WebP o JPEG: cuál elegir?",
+        "answer": "WebP es más eficiente, pero JPEG es más compatible. Puedes elegir según tus necesidades."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre compresión con y sin pérdida?",
+        "answer": "Con pérdida elimina datos (JPEG, WebP), sin pérdida los conserva (PNG). Este compresor usa por defecto compresión con pérdida para mejor balance tamaño/calidad."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "Calculadora BMR – Calcula tu Tasa Metabólica Basal",
+    "description": "Calcula tu Tasa Metabólica Basal (BMR) y Gasto Energético Diario Total (TDEE) según edad, sexo, altura, peso y nivel de actividad.",
+    "category": "utilities",
+    "keywords": [
+      "calculadora bmr",
+      "tasa metabólica basal",
+      "calculadora tdee",
+      "calculadora de calorías",
+      "calculadora de metabolismo",
+      "gasto energético diario",
+      "necesidades calóricas",
+      "herramienta fitness",
+      "herramienta de nutrición",
+      "calculadora para el peso"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es el BMR y cómo se calcula?",
+        "answer": "Es la energía mínima que tu cuerpo necesita en reposo completo. Fórmula Mifflin-St Jeor:<br/>Hombres: (10 × peso kg) + (6.25 × altura cm) - (5 × edad) + 5<br/>Mujeres: (10 × peso kg) + (6.25 × altura cm) - (5 × edad) - 161"
+      },
+      {
+        "question": "¿Qué es el TDEE y cómo se diferencia del BMR?",
+        "answer": "El TDEE incluye tu actividad diaria. Se calcula multiplicando el BMR por un factor de actividad:<br/>Sedentario: ×1.2 / Ligero: ×1.375 / Moderado: ×1.55 / Intenso: ×1.725 / Muy intenso: ×1.9"
+      },
+      {
+        "question": "¿Cómo uso BMR y TDEE para controlar mi peso?",
+        "answer": "Para bajar de peso: come 500 kcal menos que tu TDEE.<br/>Para subir de peso: añade 300–500 kcal por día. Ajusta según tu evolución."
+      },
+      {
+        "question": "¿Por qué hombres y mujeres tienen fórmulas diferentes?",
+        "answer": "Los hombres suelen tener más masa muscular. La fórmula ajusta estas diferencias fisiológicas."
+      },
+      {
+        "question": "¿Qué tan precisa es esta calculadora?",
+        "answer": "Muy precisa para la mayoría de personas. Pero sigue siendo una estimación. Factores personales afectan tu necesidad real."
+      },
+      {
+        "question": "¿Mis datos son privados?",
+        "answer": "Sí. Todo se calcula en tu navegador, sin subir información."
+      }
+    ]
   }
 ]

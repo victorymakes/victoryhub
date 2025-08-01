@@ -344,5 +344,44 @@
       "invalidNumbers": "Veuillez saisir des nombres valides",
       "positiveNumbers": "La taille et le poids doivent être des nombres positifs"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Système d’unités",
+    "metric": "Métrique (cm, kg)",
+    "imperial": "Impérial (in, lb)",
+    "gender": "Sexe",
+    "male": "Homme",
+    "female": "Femme",
+    "age": "Âge (années)",
+    "heightCm": "Taille (cm)",
+    "heightIn": "Taille (in)",
+    "weightKg": "Poids (kg)",
+    "weightLb": "Poids (lb)",
+    "activityLevel": "Niveau d'activité",
+    "selectActivity": "Sélectionnez le niveau d'activité",
+    "activityLevels": {
+      "sedentary": "Sédentaire (peu ou pas d’exercice)",
+      "light": "Légèrement actif (exercice léger 1–3 jours/semaine)",
+      "moderate": "Modérément actif (exercice modéré 3–5 jours/semaine)",
+      "active": "Très actif (exercice intense 6–7 jours/semaine)",
+      "veryActive": "Extrêmement actif (exercice intense + travail physique)"
+    },
+    "calculate": "Calculer BMR & TDEE",
+    "reset": "Réinitialiser",
+    "results": "Résultats",
+    "yourBMR": "Votre BMR",
+    "yourTDEE": "Votre TDEE",
+    "calories": "calories",
+    "caloriesPerDay": "calories par jour",
+    "bmrExplanation": "Le BMR est la quantité de calories nécessaire à votre corps au repos complet.",
+    "tdeeExplanation": "Le TDEE est la somme des calories brûlées chaque jour, incluant le BMR, l’activité physique et la digestion.",
+    "whatItMeans": "Ce que cela signifie",
+    "bmrDetailedExplanation": "Le BMR est votre minimum. Le TDEE maintient votre poids. Pour perdre du poids, mangez moins. Pour en prendre, mangez plus. Ce sont des estimations.",
+    "errors": {
+      "emptyFields": "Veuillez remplir tous les champs",
+      "invalidNumbers": "Veuillez entrer des nombres valides",
+      "positiveNumbers": "L'âge, la taille et le poids doivent être positifs",
+      "ageRange": "L’âge doit être entre 15 et 80 ans"
+    }
   }
 }

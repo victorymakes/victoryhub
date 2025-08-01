@@ -432,5 +432,83 @@
       "invalidNumbers": "Syötä kelvollisia numeroita",
       "positiveNumbers": "Pituuden ja painon on oltava positiivisia lukuja"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Yksikköjärjestelmä",
+    "metric": "Metrinen (cm, kg)",
+    "imperial": "Imperiaalinen (tuumaa, paunaa)",
+    "gender": "Sukupuoli",
+    "male": "Mies",
+    "female": "Nainen",
+    "age": "Ikä (vuotta)",
+    "heightCm": "Pituus (cm)",
+    "heightIn": "Pituus (tuumaa)",
+    "weightKg": "Paino (kg)",
+    "weightLb": "Paino (paunaa)",
+    "activityLevel": "Aktiivisuustaso",
+    "selectActivity": "Valitse aktiivisuustaso",
+    "activityLevels": {
+      "sedentary": "Paikallaan (vähän tai ei liikuntaa)",
+      "light": "Kevyt aktiivisuus (kevyt liikunta 1–3 kertaa/viikossa)",
+      "moderate": "Kohtalainen aktiivisuus (3–5 kertaa/viikossa)",
+      "active": "Hyvin aktiivinen (6–7 kertaa/viikossa raskasta liikuntaa)",
+      "veryActive": "Erittäin aktiivinen (raskas liikunta ja fyysinen työ)"
+    },
+    "calculate": "Laske BMR & TDEE",
+    "reset": "Tyhjennä",
+    "results": "Tulokset",
+    "yourBMR": "BMR-arvosi",
+    "yourTDEE": "TDEE-arvosi",
+    "calories": "kaloria",
+    "caloriesPerDay": "kaloria päivässä",
+    "bmrExplanation": "BMR on määrä kaloreita, joita kehosi tarvitsee lepotilassa elintoimintojen ylläpitämiseen.",
+    "tdeeExplanation": "TDEE = BMR + kulutus liikunnasta ja ruoansulatuksesta.",
+    "whatItMeans": "Mitä tämä tarkoittaa",
+    "bmrDetailedExplanation": "BMR = minimi. TDEE = ylläpito. Syö vähemmän -> laihdut. Syö enemmän -> lihot. Arviot voivat vaihdella.",
+    "errors": {
+      "emptyFields": "Täytä kaikki kentät",
+      "invalidNumbers": "Anna kelvolliset numerot",
+      "positiveNumbers": "Ikä, pituus ja paino on oltava positiivisia",
+      "ageRange": "Iän tulee olla 15–80 vuotta"
+    }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Enhedssystem",
+    "metric": "Metrisk (cm, kg)",
+    "imperial": "Imperial (in, lb)",
+    "gender": "Køn",
+    "male": "Mand",
+    "female": "Kvinde",
+    "age": "Alder (år)",
+    "heightCm": "Højde (cm)",
+    "heightIn": "Højde (tommer)",
+    "weightKg": "Vægt (kg)",
+    "weightLb": "Vægt (lb)",
+    "activityLevel": "Aktivitetsniveau",
+    "selectActivity": "Vælg aktivitetsniveau",
+    "activityLevels": {
+      "sedentary": "Stillesiddende (lidt eller ingen motion)",
+      "light": "Let aktiv (let motion 1–3 dage/uge)",
+      "moderate": "Moderat aktiv (3–5 dage/uge)",
+      "active": "Meget aktiv (hård motion 6–7 dage/uge)",
+      "veryActive": "Ekstra aktiv (meget hård motion og fysisk arbejde)"
+    },
+    "calculate": "Beregn BMR & TDEE",
+    "reset": "Nulstil",
+    "results": "Resultater",
+    "yourBMR": "Din BMR",
+    "yourTDEE": "Din TDEE",
+    "calories": "kalorier",
+    "caloriesPerDay": "kalorier per dag",
+    "bmrExplanation": "BMR er mængden af kalorier kroppen har brug for i hvile.",
+    "tdeeExplanation": "TDEE er den samlede mængde kalorier, du forbrænder dagligt inklusive BMR og aktivitet.",
+    "whatItMeans": "Hvad det betyder",
+    "bmrDetailedExplanation": "BMR er minimum. TDEE er vedligehold. Spis mindre = tab dig, mere = tag på. Estimat.",
+    "errors": {
+      "emptyFields": "Udfyld alle felter",
+      "invalidNumbers": "Indtast gyldige tal",
+      "positiveNumbers": "Alder, højde og vægt skal være positive tal",
+      "ageRange": "Alderen skal være mellem 15 og 80 år"
+    }
   }
 }

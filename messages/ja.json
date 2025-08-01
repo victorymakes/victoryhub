@@ -457,5 +457,44 @@
       "invalidNumbers": "有効な数値を入力してください",
       "positiveNumbers": "身長と体重は正の数でなければなりません"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "単位系",
+    "metric": "メートル法（cm、kg）",
+    "imperial": "ヤード・ポンド法（in、lb）",
+    "gender": "性別",
+    "male": "男性",
+    "female": "女性",
+    "age": "年齢（歳）",
+    "heightCm": "身長（cm）",
+    "heightIn": "身長（インチ）",
+    "weightKg": "体重（kg）",
+    "weightLb": "体重（ポンド）",
+    "activityLevel": "活動レベル",
+    "selectActivity": "活動レベルを選択",
+    "activityLevels": {
+      "sedentary": "座りがち（ほとんど運動しない）",
+      "light": "軽い活動（週1〜3日の軽い運動）",
+      "moderate": "中程度の活動（週3〜5日の中程度の運動）",
+      "active": "活発（週6〜7日の激しい運動）",
+      "veryActive": "非常に活発（非常に激しい運動または肉体労働）"
+    },
+    "calculate": "BMRとTDEEを計算する",
+    "reset": "リセット",
+    "results": "結果",
+    "yourBMR": "あなたのBMR",
+    "yourTDEE": "あなたのTDEE",
+    "calories": "カロリー",
+    "caloriesPerDay": "1日あたりのカロリー",
+    "bmrExplanation": "基礎代謝量（BMR）は、安静時に体が基本的な機能を維持するために必要なカロリー量です。",
+    "tdeeExplanation": "総消費カロリー（TDEE）は、BMRに加え、活動や消化によるカロリーを含む、1日あたりの総消費エネルギーです。",
+    "whatItMeans": "この結果の意味",
+    "bmrDetailedExplanation": "BMRは最低限必要なカロリー、TDEEは現在の体重維持に必要なカロリーです。減量にはTDEEより少なく、増量には多く摂取します。これらは目安であり、個人差があります。",
+    "errors": {
+      "emptyFields": "すべての項目を入力してください",
+      "invalidNumbers": "有効な数字を入力してください",
+      "positiveNumbers": "年齢、身長、体重は正の数である必要があります",
+      "ageRange": "年齢は15歳から80歳の間で入力してください"
+    }
   }
 }

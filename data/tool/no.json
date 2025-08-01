@@ -312,5 +312,131 @@
         "answer": "Nei, standard BMI-kategorier gjelder ikke for barn og ungdom. For personer under 18 år brukes alders- og kjønnsspesifikke BMI-persentiler i stedet for faste kategorier, siden barn og ungdom fortsatt vokser og utvikler seg. Spesielle BMI-for-alder vekstkurver brukes for å vurdere vektstatus hos barn og ungdom."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Bildekonverterer – Konverter JPEG, PNG og WebP Online",
+    "description": "Konverter bilder mellom JPEG-, PNG- og WebP-formater direkte i nettleseren. Juster kvalitet og behold oppløsning – ingen opplasting nødvendig.",
+    "category": "media",
+    "keywords": [
+      "bildekonverterer",
+      "konverter jpeg til png",
+      "konverter png til jpeg",
+      "webp til png",
+      "konverter bilde online",
+      "jpg til webp konverterer",
+      "png til webp",
+      "bildeformat konverter",
+      "tapløs bildekonvertering"
+    ],
+    "faq": [
+      {
+        "question": "Hva gjør Bildekonvertereren og hvordan fungerer den?",
+        "answer": "Bildekonvertereren endrer formatet mellom JPEG, PNG og WebP helt lokalt i nettleseren din. Du kan laste opp et bilde, velge ønsket format og justere kvaliteten. Alt skjer offline."
+      },
+      {
+        "question": "Er det sikkert og offline?",
+        "answer": "Ja. Alt skjer på din enhet, og ingen bilder lastes opp. Den passer godt til sensitive filer som dokumenter og personlige bilder."
+      },
+      {
+        "question": "Hvilket format bør jeg velge?",
+        "answer": "JPEG for bilder, PNG for gjennomsiktighet og skarpe kanter, WebP for god kvalitet og lav filstørrelse på nett."
+      },
+      {
+        "question": "Mister jeg bildekvalitet ved konvertering?",
+        "answer": "Bare når du konverterer til JPEG eller WebP med lav kvalitet. PNG er vanligvis uten tap."
+      },
+      {
+        "question": "Kan jeg konvertere flere bilder samtidig?",
+        "answer": "Ja. Du kan dra og slippe flere filer for batch-konvertering og laste dem ned samlet i en ZIP-fil."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Bildekompressor – Reduser JPEG-, PNG- og WebP-filstørrelser Online",
+    "description": "Komprimer JPEG-, PNG- og WebP-bilder online for å redusere filstørrelsen uten synlig kvalitetstap. Perfekt for nettsider, raskere opplasting og e-postvedlegg.",
+    "category": "media",
+    "keywords": [
+      "bildekompressor",
+      "komprimer jpeg",
+      "komprimer png",
+      "komprimer webp",
+      "reduser bildestørrelse",
+      "optimaliser bilde for web",
+      "online bildekomprimering",
+      "verktøy for bildeoptimalisering",
+      "batch bildekomprimering"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan reduserer verktøyet filstørrelsen uten å miste kvalitet?",
+        "answer": "JPEG og WebP bruker justerbar kompresjon med tap. PNG bruker tapløs optimalisering. Du kan kontrollere kompresjonsnivået med en skyveknapp."
+      },
+      {
+        "question": "Bevares gjennomsiktighet i PNG-filer?",
+        "answer": "Ja. Verktøyet bevarer alfa-kanalen i PNG. Du kan også konvertere til JPEG for mindre filstørrelse hvis du ikke trenger gjennomsiktighet."
+      },
+      {
+        "question": "Er det trygt å bruke med sensitive bilder?",
+        "answer": "Ja. All behandling skjer i nettleseren – ingen opplasting eller eksterne servere er involvert."
+      },
+      {
+        "question": "Støtter verktøyet batch-komprimering?",
+        "answer": "Ja. Du kan dra og slippe flere bilder og laste ned resultatene som ZIP-fil."
+      },
+      {
+        "question": "Når bør jeg bruke WebP i stedet for JPEG?",
+        "answer": "WebP gir mindre filer enn JPEG med lignende kvalitet. Bruk WebP for web, JPEG for maksimal kompatibilitet."
+      },
+      {
+        "question": "Hva er forskjellen mellom komprimering med og uten tap?",
+        "answer": "Med tap (JPEG, WebP) reduseres kvaliteten litt. Tapløs (PNG) bevarer alle data. Standard er med tap for bedre balanse."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "BMR-kalkulator – Beregn din Basale Metabolske Rate",
+    "description": "Beregn din BMR og totale daglige energiforbruk (TDEE) basert på alder, kjønn, høyde, vekt og aktivitetsnivå.",
+    "category": "utilities",
+    "keywords": [
+      "bmr kalkulator",
+      "basalmetabolisme",
+      "tdee kalkulator",
+      "kalorikalkulator",
+      "stoffskifte kalkulator",
+      "daglig energiforbruk",
+      "kaloribehov",
+      "treningskalkulator",
+      "kostholdsverktøy",
+      "vektkontroll kalkulator"
+    ],
+    "faq": [
+      {
+        "question": "Hva er BMR og hvordan beregnes det?",
+        "answer": "BMR er mengden energi kroppen trenger i hvile. Beregnes med Mifflin-St Jeor formel:<br/>Menn: (10 × vekt kg) + (6.25 × høyde cm) - (5 × alder) + 5<br/>Kvinner: samme formel, men -161 i stedet for +5."
+      },
+      {
+        "question": "Hva er TDEE og hvordan skiller det seg fra BMR?",
+        "answer": "TDEE er BMR pluss kalorier du bruker på aktivitet. Gang BMR med aktivitetsfaktor som 1.2 (stillesittende), 1.55 (moderat aktiv), osv."
+      },
+      {
+        "question": "Hvordan bruker jeg BMR og TDEE for å styre vekt?",
+        "answer": "For vektnedgang: spis ~500 kcal under TDEE. For vektøkning: legg til 300–500 kcal. Juster etter resultatene dine."
+      },
+      {
+        "question": "Hvorfor er beregningene ulike for menn og kvinner?",
+        "answer": "Fordi menn i gjennomsnitt har mer muskelmasse og høyere forbrenning enn kvinner."
+      },
+      {
+        "question": "Er denne kalkulatoren nøyaktig?",
+        "answer": "Ja, generelt. Mifflin-St Jeor er en av de mest pålitelige formler. Husk at individuelle faktorer også spiller inn."
+      },
+      {
+        "question": "Er dataene mine trygge?",
+        "answer": "Ja. All beregning skjer lokalt i nettleseren din. Ingenting lagres eller sendes."
+      }
+    ]
   }
 ]

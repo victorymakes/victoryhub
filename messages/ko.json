@@ -353,5 +353,44 @@
       "invalidNumbers": "유효한 숫자를 입력하세요",
       "positiveNumbers": "키와 체중은 양수여야 합니다"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "단위 체계",
+    "metric": "미터법 (cm, kg)",
+    "imperial": "야드파운드법 (in, lb)",
+    "gender": "성별",
+    "male": "남성",
+    "female": "여성",
+    "age": "나이 (세)",
+    "heightCm": "신장 (cm)",
+    "heightIn": "신장 (인치)",
+    "weightKg": "체중 (kg)",
+    "weightLb": "체중 (파운드)",
+    "activityLevel": "활동 수준",
+    "selectActivity": "활동 수준 선택",
+    "activityLevels": {
+      "sedentary": "앉아서 생활함 (운동 거의 없음)",
+      "light": "가벼운 활동 (주 1~3일 가벼운 운동)",
+      "moderate": "중간 활동 (주 3~5일 보통 운동)",
+      "active": "활발한 활동 (주 6~7일 격렬한 운동)",
+      "veryActive": "매우 활동적 (매우 격렬한 운동 또는 육체 노동)"
+    },
+    "calculate": "BMR 및 TDEE 계산",
+    "reset": "초기화",
+    "results": "결과",
+    "yourBMR": "당신의 BMR",
+    "yourTDEE": "당신의 TDEE",
+    "calories": "칼로리",
+    "caloriesPerDay": "하루 칼로리",
+    "bmrExplanation": "BMR은 신체가 완전한 안정 상태에서 생리 기능을 유지하는 데 필요한 최소 칼로리입니다.",
+    "tdeeExplanation": "TDEE는 BMR에 신체 활동과 소화로 소비되는 칼로리를 더한 하루 총 칼로리 소비량입니다.",
+    "whatItMeans": "이것이 의미하는 것",
+    "bmrDetailedExplanation": "BMR은 최소 필요 칼로리이고, TDEE는 유지 칼로리입니다. 감량을 원하면 TDEE보다 적게, 증량을 원하면 더 섭취하세요. 이는 추정치이며 개인에 따라 다를 수 있습니다.",
+    "errors": {
+      "emptyFields": "모든 항목을 입력해주세요",
+      "invalidNumbers": "유효한 숫자를 입력해주세요",
+      "positiveNumbers": "나이, 키, 체중은 양수여야 합니다",
+      "ageRange": "나이는 15세에서 80세 사이여야 합니다"
+    }
   }
 }

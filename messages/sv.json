@@ -443,5 +443,44 @@
       "invalidNumbers": "Ange giltiga nummer",
       "positiveNumbers": "Längd och vikt måste vara positiva tal"
     }
+  },
+  "BMRCalculator": {
+    "unitSystem": "Enhetssystem",
+    "metric": "Metriskt (cm, kg)",
+    "imperial": "Imperial (tum, lb)",
+    "gender": "Kön",
+    "male": "Man",
+    "female": "Kvinna",
+    "age": "Ålder (år)",
+    "heightCm": "Längd (cm)",
+    "heightIn": "Längd (tum)",
+    "weightKg": "Vikt (kg)",
+    "weightLb": "Vikt (lb)",
+    "activityLevel": "Aktivitetsnivå",
+    "selectActivity": "Välj aktivitetsnivå",
+    "activityLevels": {
+      "sedentary": "Stillasittande (ingen eller mycket lite träning)",
+      "light": "Lätt aktiv (lätt träning 1–3 dagar/vecka)",
+      "moderate": "Måttligt aktiv (3–5 dagar måttlig träning/vecka)",
+      "active": "Mycket aktiv (intens träning 6–7 dagar/vecka)",
+      "veryActive": "Extremt aktiv (hård träning och fysiskt arbete)"
+    },
+    "calculate": "Beräkna BMR & TDEE",
+    "reset": "Återställ",
+    "results": "Resultat",
+    "yourBMR": "Ditt BMR",
+    "yourTDEE": "Ditt TDEE",
+    "calories": "kalorier",
+    "caloriesPerDay": "kalorier per dag",
+    "bmrExplanation": "BMR är de kalorier din kropp behöver i total vila för att fungera.",
+    "tdeeExplanation": "TDEE inkluderar BMR + kalorier från aktivitet och matsmältning.",
+    "whatItMeans": "Vad detta betyder",
+    "bmrDetailedExplanation": "BMR är miniminivån. TDEE är underhåll. Ät mindre för att gå ner, mer för att gå upp. Individuella skillnader förekommer.",
+    "errors": {
+      "emptyFields": "Fyll i alla fält",
+      "invalidNumbers": "Ange giltiga nummer",
+      "positiveNumbers": "Ålder, längd och vikt måste vara positiva",
+      "ageRange": "Ålder måste vara mellan 15 och 80 år"
+    }
   }
 }

@@ -317,5 +317,131 @@
         "answer": "Ja. Alle BMI-Berechnungen werden lokal in Ihrem Browser durchgeführt. Es werden keine Daten hochgeladen oder gespeichert, wodurch Ihre Informationen privat bleiben."
       }
     ]
+  },
+  {
+    "slug": "image-converter",
+    "name": "Bildkonverter – JPEG, PNG und WebP Formate Online Konvertieren",
+    "description": "Konvertieren Sie Bilder zwischen JPEG-, PNG- und WebP-Formaten direkt in Ihrem Browser. Passen Sie die Ausgabequalität an und behalten Sie die Originalauflösung – ganz ohne Upload.",
+    "category": "media",
+    "keywords": [
+      "bildkonverter",
+      "jpeg in png konvertieren",
+      "png in jpeg konvertieren",
+      "webp in png",
+      "bilder online konvertieren",
+      "jpg zu webp konverter",
+      "png zu webp",
+      "bildformat konverter",
+      "verlustfreie bildkonvertierung"
+    ],
+    "faq": [
+      {
+        "question": "Was macht der Bildkonverter und wie funktioniert er?",
+        "answer": "Der Bildkonverter wandelt Bilddateien zwischen den Formaten JPEG, PNG und WebP mithilfe browserbasierter Technologie um. Sie können ein Bild hochladen, das gewünschte Zielformat auswählen und bei verlustbehafteten Formaten wie JPEG und WebP optional die Qualität anpassen. Die gesamte Konvertierung erfolgt über Browser-APIs – ohne Upload und mit sofortigen Ergebnissen."
+      },
+      {
+        "question": "Ist die Bildkonvertierung sicher und offline?",
+        "answer": "Ja. Alle Vorgänge finden vollständig in Ihrem Browser statt. Ihre Dateien bleiben lokal und werden niemals übertragen, gespeichert oder auf Server hochgeladen. Das macht das Tool ideal für vertrauliche oder sensible Bilder."
+      },
+      {
+        "question": "Welches Format sollte ich wählen: JPEG, PNG oder WebP?",
+        "answer": "JPEG eignet sich für Fotos und Bilder mit vielen Farben und Farbverläufen. PNG ist ideal, wenn Transparenz oder gestochen scharfe Kanten (z. B. bei Logos oder UI-Elementen) benötigt werden. WebP bietet kleine Dateigrößen bei guter Qualität und eignet sich perfekt für den Einsatz im Web – unterstützt von allen modernen Browsern."
+      },
+      {
+        "question": "Verringert das Konvertieren zwischen Formaten die Bildqualität?",
+        "answer": "Die Konvertierung in verlustbehaftete Formate wie JPEG oder WebP kann die Qualität leicht beeinträchtigen, besonders bei niedrigen Qualitätseinstellungen. Die Konvertierung von JPEG zu PNG oder zwischen PNGs ist in der Regel verlustfrei. Sie können die Qualitätsstufe vor dem Download manuell einstellen."
+      },
+      {
+        "question": "Kann ich mehrere Bilder gleichzeitig konvertieren (Batch-Konvertierung)?",
+        "answer": "Ja. Das Tool unterstützt die Batch-Konvertierung. Ziehen Sie mehrere Dateien per Drag-and-Drop hinein – jede Datei wird einzeln verarbeitet und steht separat oder als ZIP-Archiv zum Herunterladen bereit."
+      }
+    ]
+  },
+  {
+    "slug": "image-compressor",
+    "name": "Bildkomprimierer – Reduzieren Sie JPEG-, PNG- und WebP-Dateigrößen Online",
+    "description": "Komprimieren Sie JPEG-, PNG- und WebP-Bilder online, um die Dateigröße zu verringern, ohne sichtbare Qualitätsverluste. Ideal zur Weboptimierung, für schnellere Uploads und das Versenden per E-Mail.",
+    "category": "media",
+    "keywords": [
+      "bildkomprimierer",
+      "jpeg komprimieren",
+      "png komprimieren",
+      "webp komprimieren",
+      "bildgröße reduzieren",
+      "bild für web optimieren",
+      "online bildkomprimierung",
+      "bildoptimierungswerkzeug",
+      "bilder in stapel komprimieren"
+    ],
+    "faq": [
+      {
+        "question": "Wie reduziert der Bildkomprimierer die Dateigröße ohne sichtbaren Qualitätsverlust?",
+        "answer": "Der Bildkomprimierer nutzt browserbasierte Canvas-Darstellung und Kodierung, um Bilder zu komprimieren und dabei die visuelle Qualität zu erhalten. Für JPEG und WebP wird die Komprimierung durch Anpassung der Qualität erreicht (verlustbehaftet). Für PNGs erfolgt eine verlustfreie Optimierung durch Reduktion der Farbtiefe und Optimierung der Palette. Die Komprimierungsstärke kann über einen Schieberegler individuell eingestellt werden."
+      },
+      {
+        "question": "Kann ich ein PNG-Bild komprimieren, ohne Transparenz oder Qualität zu verlieren?",
+        "answer": "Ja. Die PNG-Komprimierung dieses Tools ist verlustfrei – die Dateigröße wird durch Pixeloptimierung und Entfernen unnötiger Metadaten reduziert. Die Transparenz (Alpha-Kanal) bleibt erhalten. Für kleinere Dateien ohne Transparenz können Sie das PNG auch in JPEG konvertieren."
+      },
+      {
+        "question": "Ist es sicher, dieses Tool für sensible Bilder (z. B. persönliche Fotos) zu verwenden?",
+        "answer": "Absolut. Dieses Tool arbeitet vollständig clientseitig – alle Prozesse finden lokal im Browser statt, ohne dass Daten an Server gesendet oder gespeichert werden. Es ist daher sicher für private Bilder, Ausweisdokumente und sensible Inhalte geeignet."
+      },
+      {
+        "question": "Kann ich Bilder stapelweise komprimieren (mehrere Dateien gleichzeitig)?",
+        "answer": "Ja. Das Tool unterstützt die Stapelverarbeitung. Ziehen Sie mehrere JPEG-, PNG- oder WebP-Dateien in die Oberfläche, und sie werden je nach verfügbarer Browser-Ressource parallel oder nacheinander verarbeitet. Ein ZIP-Archiv mit allen komprimierten Bildern wird automatisch erstellt."
+      },
+      {
+        "question": "Wann sollte ich WebP statt JPEG zur Komprimierung wählen?",
+        "answer": "WebP bietet in der Regel 25–30 % kleinere Dateigrößen im Vergleich zu JPEG bei gleicher visueller Qualität. Ideal für Webentwickler, die Ladezeiten optimieren möchten, insbesondere auf Mobilgeräten. JPEG bietet jedoch eine höhere Kompatibilität mit älteren Browsern und Bildbetrachtern. Dieses Tool erlaubt Komprimierung in JPEG oder – bei Bedarf – Konvertierung in WebP."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen verlustfreier und verlustbehafteter Bildkomprimierung?",
+        "answer": "Verlustbehaftete Komprimierung (z. B. bei JPEG, WebP) entfernt bestimmte Bildinformationen zur Reduktion der Dateigröße – gut geeignet für Fotos, bei denen leichte Qualitätseinbußen akzeptabel sind. Verlustfreie Komprimierung (PNG) bewahrt alle Originaldaten – ideal für Logos, Illustrationen und Screenshots. Unser Tool verwendet standardmäßig verlustbehaftete Komprimierung, wobei die visuelle Qualität erhalten bleibt, solange keine extrem niedrigen Qualitätswerte gewählt werden."
+      }
+    ]
+  },
+  {
+    "slug": "bmr-calculator",
+    "name": "BMR-Rechner – Berechne deinen Grundumsatz",
+    "description": "Berechne deinen Grundumsatz (BMR) und deinen Gesamtenergieverbrauch (TDEE) basierend auf Alter, Geschlecht, Größe, Gewicht und Aktivitätsniveau.",
+    "category": "utilities",
+    "keywords": [
+      "bmr rechner",
+      "grundumsatz",
+      "tdee rechner",
+      "kalorienrechner",
+      "stoffwechselrechner",
+      "täglicher energieverbrauch",
+      "kalorienbedarf",
+      "fitness rechner",
+      "ernährungswerkzeug",
+      "gewichtsmanagement rechner"
+    ],
+    "faq": [
+      {
+        "question": "Was ist der BMR und wie wird er berechnet?",
+        "answer": "Der Grundumsatz (BMR) ist die Kalorienmenge, die dein Körper in völliger Ruhe zur Aufrechterhaltung lebenswichtiger Funktionen benötigt. Die Berechnung erfolgt über die Mifflin-St Jeor-Formel:<br/>Männer: BMR = (10 × Gewicht in kg) + (6.25 × Größe in cm) - (5 × Alter) + 5<br/>Frauen: BMR = (10 × Gewicht in kg) + (6.25 × Größe in cm) - (5 × Alter) - 161"
+      },
+      {
+        "question": "Was ist TDEE und wie unterscheidet es sich vom BMR?",
+        "answer": "TDEE (Total Daily Energy Expenditure) ist der Gesamtenergieverbrauch pro Tag. Er setzt sich aus deinem BMR plus Kalorien durch Aktivitäten zusammen. Er wird wie folgt berechnet:<br/>Sitzend: BMR × 1.2<br/>Leicht aktiv: ×1.375<br/>Mittel aktiv: ×1.55<br/>Sehr aktiv: ×1.725<br/>Extrem aktiv: ×1.9"
+      },
+      {
+        "question": "Wie kann ich BMR und TDEE zur Gewichtskontrolle nutzen?",
+        "answer": "TDEE ist dein Erhaltungsbedarf. <br/>Zum Abnehmen: Tägliches Defizit von etwa 500 kcal (ca. 0,5 kg/Woche Gewichtsverlust). <br/>Zum Zunehmen: Kalorienüberschuss von 300–500 kcal pro Tag."
+      },
+      {
+        "question": "Warum sind die Formeln für Männer und Frauen unterschiedlich?",
+        "answer": "Wegen Unterschieden in Körperzusammensetzung – Männer haben meist mehr Muskelmasse. Die Formel berücksichtigt diese Differenz durch einen konstanten Zuschlag bzw. Abzug."
+      },
+      {
+        "question": "Wie genau ist der BMR-Rechner?",
+        "answer": "Die Mifflin-St Jeor-Formel gilt als sehr genau, aber es bleibt eine Schätzung. Persönliche Faktoren wie Hormone und Genetik beeinflussen deinen tatsächlichen Kalorienbedarf."
+      },
+      {
+        "question": "Ist meine Eingabe vertraulich?",
+        "answer": "Ja. Alle Berechnungen erfolgen lokal im Browser. Es werden keine Daten gespeichert oder gesendet."
+      }
+    ]
   }
 ]
