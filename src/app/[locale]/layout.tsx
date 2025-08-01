@@ -38,7 +38,14 @@ export default async function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <title>{config.siteName}</title>
+                <meta
+                    name="description"
+                    content="Free online tools for developers, designers, and professionals"
+                />
                 <link rel="icon" href="/favicon.png" sizes="any" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+                <link rel="manifest" href="/manifest.json" />
+                <meta name="theme-color" content="#000000" />
             </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
