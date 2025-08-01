@@ -31,15 +31,15 @@ export async function generateMetadata({
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": config.siteName,
-        "url": `${config.baseUrl}${url}`,
-        "description": t("seoDescription"),
-        "potentialAction": {
+        name: config.siteName,
+        url: `${config.baseUrl}${url}`,
+        description: t("seoDescription"),
+        potentialAction: {
             "@type": "SearchAction",
-            "target": `${config.baseUrl}${getLocalizedUrl(locale, "tools")}?q={search_term_string}`,
-            "query-input": "required name=search_term_string"
+            target: `${config.baseUrl}${getLocalizedUrl(locale, "tools")}?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
         },
-        "inLanguage": locale
+        inLanguage: locale,
     };
 
     return {
@@ -64,8 +64,8 @@ export async function generateMetadata({
             languages: getLocalizedUrls(""),
         },
         other: {
-            "script:ld+json": JSON.stringify(jsonLd)
-        }
+            "script:ld+json": JSON.stringify(jsonLd),
+        },
     };
 }
 
@@ -75,8 +75,6 @@ export default async function Home({ params }: HomeProps) {
     const popularTools = await getPopularTools(6, locale);
     const recentPosts = await getRecentBlogs(3, locale);
 
-    const homeUrl = getLocalizedUrl(locale, "");
-    
     return (
         <div className="bg-background">
             {/* Hero Section */}

@@ -47,29 +47,29 @@ export async function generateMetadata({
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": post.title,
-        "description": post.description,
-        "image": post.cover,
-        "datePublished": post.date,
-        "author": {
+        headline: post.title,
+        description: post.description,
+        image: post.cover,
+        datePublished: post.date,
+        author: {
             "@type": "Person",
-            "name": post.author
+            name: post.author,
         },
-        "publisher": {
+        publisher: {
             "@type": "Organization",
-            "name": config.siteName,
-            "logo": {
+            name: config.siteName,
+            logo: {
                 "@type": "ImageObject",
-                "url": `${config.baseUrl}/logo.png`
-            }
+                url: `${config.baseUrl}/logo.png`,
+            },
         },
-        "mainEntityOfPage": {
+        mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": url
+            "@id": url,
         },
-        "keywords": post.tags.map(tag => tag.name).join(","),
-        "articleSection": post.category.name,
-        "inLanguage": locale
+        keywords: post.tags.map((tag) => tag.name).join(","),
+        articleSection: post.category.name,
+        inLanguage: locale,
     };
 
     return {
@@ -107,7 +107,7 @@ export async function generateMetadata({
             "article:published_time": post.date,
             "article:section": post.category.name,
             "article:tag": post.tags.join(","),
-            "script:ld+json": JSON.stringify(jsonLd)
+            "script:ld+json": JSON.stringify(jsonLd),
         },
     };
 }
