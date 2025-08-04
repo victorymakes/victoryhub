@@ -1,0 +1,197 @@
+export const metadata = {
+    title: "Hoe ik in één week een meertalige SEO-vriendelijke tools-website bouwde en lanceerde met AI",
+    date: "2024-07-01",
+    cover: "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+    description:
+        "Leer hoe een indie-hacker in slechts één week een meertalige, SEO-geoptimaliseerde tools-website bouwde en lanceerde met behulp van AI. Ontdek de tech stack, workflow en lessen voor snelle, effectieve solo-ontwikkeling.",
+    tags: [
+        { id: "indie-hacking", name: "Indie Hacking" },
+        { id: "ai", name: "AI" },
+        { id: "seo", name: "SEO" },
+        { id: "multi-language", name: "Meertalig" },
+        { id: "web-tools", name: "Webtools" },
+    ],
+    category: {
+        id: "development",
+        name: "Ontwikkeling",
+    },
+};
+
+> _"Geen verkeer. Geen gebruikers. Alleen code. Ik lanceerde toch."_
+
+## 🧠 Context: Waarom ik dit bouwde
+
+Ik ben een indie-hacker.
+Ik hou van tools.
+Ik hou ook van experimenten.
+
+Ik heb dit idee vaak voorbij zien komen:
+
+> **"Tools bouwen + SEO + AdSense = 💰"**
+
+Dus gaf ik mezelf 7 dagen om het serieus te testen — en bouwde [VictoryHub.cc](https://victoryhub.cc), een volledig responsieve, SEO-geoptimaliseerde, meertalige toolsite met 10+ utilities, solo gelanceerd met hulp van **AI**.
+
+Maar hier is het eerlijke deel:
+**Ik lanceerde in stilte. 0 verkeer. 0 volgers.**
+
+Toch is dit waarschijnlijk de meest productieve en repliceerbare build die ik ooit heb gedaan.
+Hier is de volledige uitsplitsing 👇
+
+---
+
+## ⚙️ Stack: Gebouwd voor snelheid & SEO
+
+- **Framework:** Next.js 15 (App Router)
+- **Hosting:** Cloudflare Pages
+- **CSS:** Tailwind
+- **UI:** Shadcn
+- **AI:** GitHub Copilot + Claude
+- **CI/CD:** GitHub → Cloudflare Adapter (`opennextjs-cloudflare`)
+
+Waarom deze combinatie?
+
+- App Router = ingebouwde layouts, metadata, routing per taal
+- Cloudflare = edge-deployed, geen kosten, snel
+
+Geen backend, geen DB, geen serverkosten. Alleen pure utility-levering.
+
+---
+
+## ✨ AI hielp me 10x: Zo werkte het
+
+> "AI vervangt jou niet, het vervangt de saaie delen."
+
+Ik gebruikte **GitHub Copilot** in VS Code voor autoaanvulling van:
+
+- Formulierinvoer en statushandlers
+- Utilityfuncties (UUID's, encoders, etc.)
+- Boilerplate paginacomponenten
+- Blogpost templates
+
+Daarna gebruikte ik **Claude** (agent-stijl) voor:
+
+- "Hoe comprimeer ik een afbeelding client-side in de browser?"
+- "Wat is de beste manier om cron-strings te parsen naar leesbare tekst?"
+- "Kun je dit i18n-bestand vertalen naar Japans en Koreaans?"
+
+Ik liet Claude zelfs schrijven:
+
+- FAQ's
+- Blogpost intro's
+- `meta` tag templates voor 15 talen
+- JSON-LD schema's voor SEO
+
+Copilot = code generator
+Claude = prompt-gebaseerde assistent
+Samen? Een cheatcode voor solo-ontwikkelaars.
+
+---
+
+## 🌍 Meertalig: AI + Handmatige review
+
+> "Vertalen is eenvoudig met AI. Kwaliteitsvertaling kost nog steeds moeite."
+
+VictoryHub ondersteunt **15 talen**:
+🇬🇧 🇨🇳 🇯🇵 🇰🇷 🇩🇪 🇫🇷 🇪🇸 🇷🇺 🇳🇱 🇮🇹 🇵🇹 🇳🇴 🇸🇪 🇫🇮 🇩🇰
+
+Mijn workflow:
+
+1. Alle tekst in `en.json`
+2. Claude gebruiken om naar elke doeltaal te vertalen
+3. Handmatig contextgevoelige woorden reviewen
+4. Automatisch controleren op ontbrekende sleutels via een script
+
+App Router's `i18n` routing + dynamische imports maakten gelokaliseerde paden netjes.
+
+SEO bonus: Ik voegde `hreflang` + `alternate` tags toe voor elke route.
+
+---
+
+## 🔍 SEO vanaf dag 1: Structuur vóór content
+
+Als je een toolsite bouwt en **niet aan SEO denkt**, verspil je het potentieel.
+
+Dingen die ik vroeg lanceerde:
+
+- ✅ `sitemap.xml` via `next-sitemap`
+- ✅ `robots.txt`
+- ✅ JSON-LD gestructureerde data voor tools + FAQ
+- ✅ Per-pagina meta titels/beschrijvingen in 15 talen (AI-geschreven)
+- ✅ Canonical + `hreflang` tags
+
+> "Je denkt dat SEO traag is? Probeer het eens _na_ de lancering te doen."
+
+### Waardevolle tip:
+
+Prompt voor AI:
+
+> "Schrijf een SEO meta beschrijving voor een \[tool\] pagina in \[taal\] onder 155 tekens."
+
+Werkt verrassend goed. Ik pas nog steeds aan, maar het is 10x sneller.
+
+---
+
+## 📅 Mijn 7-daagse bouwplan
+
+- **Dag 1:** project scaffold + routing + Cloudflare setup
+- **Dag 2-4:** 10 tools bouwen (Copilot handelde 60-70% van basis UI)
+- **Dag 5:** i18n setup + AI vertaling + layout fixes
+- **Dag 6:** SEO config (sitemap, meta, JSON-LD)
+- **Dag 7:** testen + polijsten + lanceren + posten
+
+Tijdblokken elke dag (1-2 uur). Dagelijks shippen.
+
+---
+
+## 😩 Eerlijk verhaal: Verkeer? Niet-bestaand (voorlopig)
+
+Laten we eerlijk zijn:
+
+- Geen backlinks
+- Nieuw domein
+
+Dus:
+
+- Geen verkeer.
+- Geen feedback.
+- Maar... ik heb **structuur**, **content** en **momentum**.
+
+> SEO beloont geen ruis. Het beloont _consistentie_.
+
+---
+
+## 🧠 Lessen voor indie-hackers
+
+- **AI zal je visie niet bouwen, maar het zal het versnellen**
+- **Wacht niet op perfectie — lanceer met 80%**
+- **Meertaligheid is de moeite waard voor SEO long-tail**
+- **Structuur wint van polijsten in vroege SEO-fasen**
+- **Threads en blogs > "Ik heb iets gelanceerd" tweets**
+
+Als je een toolsite bouwt:
+
+- Plan eerst voor zoeken
+- Gebruik AI om herhalend werk te versnellen
+- Lanceer snel, verbeter daarna
+
+---
+
+## 🤔 Denk je nog steeds dat sitemap niet belangrijk is?
+
+GoogleBot kan niet indexeren wat het niet kan vinden.
+Je tools = onzichtbaar als:
+
+- Geen sitemap
+- Geen links
+- Geen interne routing
+
+Dit oplossen is 1 uur werk. Sla het niet over.
+
+---
+
+## ✅ Wil je het zien?
+
+🛠 [VictoryHub.cc](https://victoryhub.cc)
+
+10+ AI-ondersteunde tools, meertalig, volledig client-side.
+Nog steeds groeiend. Nog steeds lerend.

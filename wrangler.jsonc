@@ -1,7 +1,7 @@
 {
   "main": ".open-next/worker.js",
   "name": "tools",
-  "compatibility_date": "2025-03-25",
+  "compatibility_date": "2025-07-29",
   "compatibility_flags": [
     "nodejs_compat"
   ],
