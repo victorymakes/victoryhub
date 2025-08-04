@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     const relatedPosts = await getRelatedBlogs(post, locale);
 
     // Generate the full URL for sharing
-    const shareUrl = `${config.baseUrl}${getLocalizedUrl(locale, post.slug)}`;
+    const shareUrl = getLocalizedUrl(locale, `/blog/${slug}`);
 
     return (
         <div className="bg-background">

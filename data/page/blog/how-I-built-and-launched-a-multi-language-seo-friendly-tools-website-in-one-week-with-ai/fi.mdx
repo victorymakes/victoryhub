@@ -1,0 +1,197 @@
+export const metadata = {
+    title: "Kuinka rakensin ja julkaisin monikielisen SEO-ystävällisen työkalusivuston viikossa tekoälyn avulla",
+    date: "2024-07-01",
+    cover: "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+    description:
+        "Opi kuinka indie-hakkeri rakensi ja julkaisi monikielisen, SEO-optimoidun työkalusivuston vain viikossa tekoälyn avulla. Tutustu teknologiapinoon, työnkulkuun ja oppeihin nopeaa, tehokasta yksilökehitystä varten.",
+    tags: [
+        { id: "indie-hacking", name: "Indie-hakkerointi" },
+        { id: "ai", name: "Tekoäly" },
+        { id: "seo", name: "SEO" },
+        { id: "multi-language", name: "Monikielisyys" },
+        { id: "web-tools", name: "Verkkotyökalut" },
+    ],
+    category: {
+        id: "development",
+        name: "Kehitys",
+    },
+};
+
+> _"Ei liikennettä. Ei käyttäjiä. Vain koodia. Julkaisin silti."_
+
+## 🧠 Konteksti: Miksi rakensin tämän
+
+Olen indie-hakkeri.
+Pidän työkaluista.
+Pidän myös kokeista.
+
+Olen nähnyt tätä ideaa paljon:
+
+> **"Rakenna työkaluja + SEO + AdSense = 💰"**
+
+Joten annoin itselleni 7 päivää testata sitä vakavasti — ja rakensin [VictoryHub.cc](https://victoryhub.cc), täysin responsiivisen, SEO-optimoidun, monikielisen työkalusivuston, jossa on 10+ hyötyohjelmaa, julkaistu yksin **tekoälyn** avulla.
+
+Mutta tässä rehellinen osa:
+**Julkaisin hiljaisuuteen. 0 liikennettä. 0 seuraajaa.**
+
+Silti tämä on luultavasti tuottavin ja toistettavin rakennusprojekti, jonka olen tehnyt.
+Tässä täydellinen erittely 👇
+
+---
+
+## ⚙️ Teknologiapino: Rakennettu nopeutta ja SEO:ta varten
+
+- **Kehys:** Next.js 15 (App Router)
+- **Hosting:** Cloudflare Pages
+- **CSS:** Tailwind
+- **UI:** Shadcn
+- **Tekoäly:** GitHub Copilot + Claude
+- **CI/CD:** GitHub → Cloudflare Adapter (`opennextjs-cloudflare`)
+
+Miksi tämä yhdistelmä?
+
+- App Router = sisäänrakennetut layoutit, metatiedot, reititys kielen mukaan
+- Cloudflare = edge-toimitettu, nollakustannus, nopea
+
+Ei backendiä, ei tietokantaa, ei palvelinkustannuksia. Vain puhdasta hyötyohjelmien toimitusta.
+
+---
+
+## ✨ Tekoäly auttoi minua 10x: Näin se tapahtui
+
+> "Tekoäly ei korvaa sinua, se korvaa tylsät osat."
+
+Käytin **GitHub Copilotia** VS Codessa automaattiseen täydennykseen:
+
+- Lomakkeiden syöttö ja tilanhallinta
+- Hyötyfunktiot (UUID:t, koodaajat jne.)
+- Boilerplate-sivukomponentit
+- Blogikirjoitusmallit
+
+Sitten käytin **Claudea** (agenttityyliin) kysymyksiin:
+
+- "Kuinka pakata kuva asiakaspuolella selaimessa?"
+- "Mikä on paras tapa jäsentää cron-merkkijonot luettavaksi tekstiksi?"
+- "Voitko kääntää tämän i18n-tiedoston japaniksi ja koreaksi?"
+
+Laitoin Clauden jopa kirjoittamaan:
+
+- UKK:t
+- Blogikirjoitusten introt
+- `meta`-tagimallit 15 kielelle
+- JSON-LD-skeemat SEO:ta varten
+
+Copilot = koodin tuottaja
+Claude = promptipohjainen avustaja
+Yhdessä? Solo-kehittäjän huijauskoodi.
+
+---
+
+## 🌍 Monikielisyys: Tekoäly + Manuaalinen tarkistus
+
+> "Kääntäminen on helppoa tekoälyn avulla. Laadukas kääntäminen vaatii silti vaivaa."
+
+VictoryHub tukee **15 kieltä**:
+🇬🇧 🇨🇳 🇯🇵 🇰🇷 🇩🇪 🇫🇷 🇪🇸 🇷🇺 🇳🇱 🇮🇹 🇵🇹 🇳🇴 🇸🇪 🇫🇮 🇩🇰
+
+Työnkulkuni:
+
+1. Kaikki teksti `en.json`-tiedostossa
+2. Clauden käyttö kääntämiseen jokaiselle kohdekielelle
+3. Kontekstisidonnaisten sanojen manuaalinen tarkistus
+4. Puuttuvien avainten automaattinen tarkistus skriptin avulla
+
+App Routerin `i18n`-reititys + dynaamiset tuonnit tekivät lokalisoiduista poluista siistejä.
+
+SEO-bonus: Lisäsin `hreflang` + `alternate`-tagit jokaiselle reitille.
+
+---
+
+## 🔍 SEO päivästä 1: Rakenne ennen sisältöä
+
+Jos rakennat työkalusivustoa ja **et ajattele SEO:ta**, tuhlaat sen potentiaalia.
+
+Asioita, jotka julkaisin aikaisin:
+
+- ✅ `sitemap.xml` `next-sitemap`:n kautta
+- ✅ `robots.txt`
+- ✅ JSON-LD rakenteellinen data työkaluille + UKK
+- ✅ Sivukohtaiset metatittelit/kuvaukset 15 kielellä (tekoälyn kirjoittamat)
+- ✅ Kanoninen + `hreflang`-tagit
+
+> "Luuletko SEO:n olevan hidasta? Kokeile tehdä se _julkaisun jälkeen_."
+
+### Arvokas vinkki:
+
+Prompt tekoälylle:
+
+> "Kirjoita SEO-metakuvaus \[työkalu\]-sivulle \[kielellä\] alle 155 merkkiä."
+
+Toimii yllättävän hyvin. Hienosäädän edelleen, mutta se on 10x nopeampaa.
+
+---
+
+## 📅 7 päivän rakennussuunnitelmani
+
+- **Päivä 1:** projektin runko + reititys + Cloudflare-asetukset
+- **Päivät 2-4:** 10 työkalun rakentaminen (Copilot käsitteli 60-70% perus-UI:sta)
+- **Päivä 5:** i18n-asetukset + tekoälykäännös + layoutkorjaukset
+- **Päivä 6:** SEO-konfiguraatio (sivukartta, meta, JSON-LD)
+- **Päivä 7:** testaus + kiillotus + julkaisu + postaus
+
+Aikapalkit joka päivä (1-2 tuntia). Julkaisin joka päivä.
+
+---
+
+## 😩 Rehellistä puhetta: Liikenne? Olematonta (toistaiseksi)
+
+Ollaan rehellisiä:
+
+- Ei takaisinlinkkejä
+- Uusi verkkotunnus
+
+Joten:
+
+- Ei liikennettä.
+- Ei palautetta.
+- Mutta... minulla on **rakenne**, **sisältö** ja **liikevoima**.
+
+> SEO ei palkitse melua. Se palkitsee _johdonmukaisuuden_.
+
+---
+
+## 🧠 Oppeja indie-hakkereille
+
+- **Tekoäly ei rakenna visiotasi, mutta se nopeuttaa sitä**
+- **Älä odota täydellisyyttä — julkaise 80%:lla**
+- **Monikielisyys kannattaa SEO-pitkähännän vuoksi**
+- **Rakenne voittaa kiillotuksen varhaisessa SEO-vaiheessa**
+- **Ketjut ja blogit > "Julkaisin jotain"-twiitit**
+
+Jos rakennat työkalusivustoa:
+
+- Suunnittele hakua varten ensin
+- Käytä tekoälyä nopeuttamaan toistuvaa työtä
+- Julkaise nopeasti, paranna sitten
+
+---
+
+## 🤔 Luuletko edelleen, ettei sivukartta ole tärkeä?
+
+GoogleBot ei voi indeksoida sitä, mitä se ei löydä.
+Työkalusi = näkymättömiä, jos:
+
+- Ei sivukarttaa
+- Ei linkkejä
+- Ei sisäistä reititystä
+
+Tämän korjaaminen on 1 tunnin työ. Älä ohita sitä.
+
+---
+
+## ✅ Haluatko nähdä sen?
+
+🛠 [VictoryHub.cc](https://victoryhub.cc)
+
+10+ tekoälyavusteista työkalua, monikielinen, täysin asiakaspuolella.
+Kasvaa edelleen. Oppii edelleen.
