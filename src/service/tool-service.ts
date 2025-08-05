@@ -38,7 +38,7 @@ export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
     const tools = await loadTools(locale);
 
     const validTools: Tool[] = [];
-    const notPublishedTools = ["image-resizer", "qrcode-generator"];
+    const notPublishedTools = ["image-resizer"];
 
     for (const tool of tools) {
         if (notPublishedTools.includes(tool.slug)) {

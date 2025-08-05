@@ -475,5 +475,65 @@
       "positiveNumbers": "Age, height, and weight must be positive numbers",
       "ageRange": "Age must be between 15 and 80 years"
     }
+  },
+  "CarbonFootprintCalculator": {
+    "transportationType": "Transportation Type",
+    "selectTransportation": "Select transportation type",
+    "transportationTypes": {
+      "car": "Car (gasoline/diesel)",
+      "publicTransport": "Public Transportation",
+      "bikeWalk": "Bicycle/Walking",
+      "mixed": "Mixed (combination of methods)"
+    },
+    "transportationDistance": "Daily Transportation Distance (km)",
+    "flightsPerYear": "Flights Per Year (round trips)",
+    "dietType": "Diet Type",
+    "selectDiet": "Select diet type",
+    "dietTypes": {
+      "meatHeavy": "Meat Heavy (daily meat consumption)",
+      "average": "Average (meat several times per week)",
+      "vegetarian": "Vegetarian (no meat, but dairy/eggs)",
+      "vegan": "Vegan (plant-based only)"
+    },
+    "energyEfficiency": "Home Energy Efficiency",
+    "selectEnergyEfficiency": "Select energy efficiency",
+    "energyEfficiencyLevels": {
+      "low": "Low (older home, inefficient appliances)",
+      "average": "Average (standard insulation and appliances)",
+      "high": "High (well-insulated, energy-efficient appliances)",
+      "renewable": "Renewable (solar panels, green energy sources)"
+    },
+    "householdSize": "Household Size (number of people)",
+    "consumptionLevel": "Consumption Level",
+    "consumptionLevelDesc": "Higher values indicate more frequent purchases of goods and services",
+    "recyclingLevel": "Recycling Level",
+    "recyclingLevelDesc": "Higher values indicate more consistent recycling habits",
+    "calculate": "Calculate Carbon Footprint",
+    "reset": "Reset",
+    "results": "Results",
+    "yourCarbonFootprint": "Your Carbon Footprint",
+    "tonsPerYear": "tons CO₂e per year",
+    "category": "Category",
+    "categories": {
+      "low": "Low Impact",
+      "moderate": "Moderate Impact",
+      "high": "High Impact",
+      "veryHigh": "Very High Impact"
+    },
+    "footprintExplanation": "Your carbon footprint is the total amount of greenhouse gases (primarily CO₂) released into the atmosphere as a result of your activities.",
+    "whatItMeans": "What This Means",
+    "footprintDetailedExplanation": "The global average carbon footprint is about 4 tons per person per year. In developed countries, the average is typically 10-20 tons. To limit global warming to 1.5°C, the global average needs to drop to about 2 tons per person by 2050.",
+    "reductionTips": "How to Reduce Your Carbon Footprint",
+    "tips": {
+      "transportation": "Transportation: Use public transit, walk or bike when possible, consider an electric vehicle, or reduce air travel.",
+      "diet": "Diet: Reduce meat consumption (especially beef), minimize food waste, and choose local and seasonal foods.",
+      "energy": "Energy: Improve home insulation, use energy-efficient appliances, switch to renewable energy sources, and be mindful of heating/cooling usage.",
+      "consumption": "Consumption: Buy less, choose durable products, repair items instead of replacing them, and recycle properly."
+    },
+    "errors": {
+      "emptyFields": "Please fill in all fields",
+      "invalidNumbers": "Please enter valid numbers",
+      "positiveNumbers": "All values must be positive numbers"
+    }
   }
 }

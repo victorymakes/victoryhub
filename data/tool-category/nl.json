@@ -1,32 +1,32 @@
 [
-  {
-    "slug": "",
-    "name": "Alle tools",
-    "description": "Bekijk alle beschikbare tools in alle categorieën",
-    "icon": "grid"
-  },
-  {
-    "slug": "development",
-    "name": "Ontwikkeling",
-    "description": "Ontwikkelaarstools zoals UUID-generator, tijdstempelconverter, URL-encoder/decoder en meer",
-    "icon": "code"
-  },
-  {
-    "slug": "security",
-    "name": "Beveiliging",
-    "description": "Beveiligings- en privacytools zoals wachtwoordgenerator en IP-checker",
-    "icon": "lock"
-  },
-  {
-    "slug": "media",
-    "name": "Media & Afbeeldingen",
-    "description": "Tools voor het verwerken van afbeeldingen, media en bestanden",
-    "icon": "image"
-  },
-  {
-    "slug": "utilities",
-    "name": "Hulpprogramma's",
-    "description": "Dagelijkse productiviteitstools en rekenmachines",
-    "icon": "activity"
-  }
+    {
+        "slug": "",
+        "name": "Alle tools",
+        "description": "Bekijk alle beschikbare tools in alle categorieën",
+        "icon": "grid"
+    },
+    {
+        "slug": "development",
+        "name": "Ontwikkeling",
+        "description": "Ontwikkelaarstools zoals UUID-generator, tijdstempelconverter, URL-encoder/decoder en meer",
+        "icon": "code"
+    },
+    {
+        "slug": "security",
+        "name": "Beveiliging",
+        "description": "Beveiligings- en privacytools zoals wachtwoordgenerator en IP-checker",
+        "icon": "lock"
+    },
+    {
+        "slug": "media",
+        "name": "Media & Afbeeldingen",
+        "description": "Tools voor het verwerken van afbeeldingen, media en bestanden",
+        "icon": "image"
+    },
+    {
+        "slug": "utilities",
+        "name": "Hulpprogramma's",
+        "description": "Dagelijkse productiviteitstools en rekenmachines",
+        "icon": "activity"
+    }
 ]

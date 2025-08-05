@@ -443,5 +443,88 @@
         "answer": "Ja. Alle Berechnungen erfolgen lokal im Browser. Es werden keine Daten gespeichert oder gesendet."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "CO2-Fußabdruck-Rechner – Messen Sie Ihre Umweltauswirkungen",
+    "description": "Berechnen Sie Ihren persönlichen oder Haushalt-CO2-Fußabdruck basierend auf Lebensstilfaktoren wie Verkehr, Energieverbrauch, Ernährung und Konsumgewohnheiten.",
+    "category": "utilities",
+    "keywords": [
+      "CO2-Fußabdruck-Rechner",
+      "CO2-Emissionsrechner",
+      "Kohlenstoffemissionsschätzer",
+      "Umweltauswirkungsrechner",
+      "Treibhausgasrechner",
+      "persönlicher CO2-Fußabdruck",
+      "Haushaltsemissionsrechner",
+      "Klimaauswirkungsbewertung",
+      "Kohlendioxidrechner",
+      "ökologischer Fußabdruck-Tool"
+    ],
+    "faq": [
+      {
+        "question": "Was ist ein CO2-Fußabdruck und warum sollte ich ihn messen?",
+        "answer": "Ein CO2-Fußabdruck ist die Gesamtmenge an Treibhausgasen (hauptsächlich Kohlendioxid), die durch Ihre Aktivitäten in die Atmosphäre freigesetzt werden. Die Messung Ihres CO2-Fußabdrucks hilft Ihnen, Ihre persönlichen Auswirkungen auf den Klimawandel zu verstehen, Bereiche zu identifizieren, in denen Sie sinnvolle Reduzierungen vornehmen können, und Ihren Fortschritt im Laufe der Zeit zu verfolgen. Durch das Verständnis Ihres CO2-Fußabdrucks können Sie fundiertere Entscheidungen über Verkehr, Energienutzung, Ernährung und Konsum treffen, die mit Umweltnachhaltigkeitszielen übereinstimmen."
+      },
+      {
+        "question": "Wie wird mein CO2-Fußabdruck berechnet?",
+        "answer": "Dieser Rechner schätzt Ihren CO2-Fußabdruck, indem er wichtige Lebensstilfaktoren analysiert, darunter: Verkehr (Autotyp und -nutzung, Flüge, öffentliche Verkehrsmittel), Energieverbrauch im Haushalt (Strom, Heizung, Kühlung), Ernährung (Fleischkonsum, Lebensmittelabfälle) und Konsumgewohnheiten (Einkaufen, Recycling). Jede Aktivität wird mithilfe wissenschaftlich etablierter Umrechnungsfaktoren in eine äquivalente Menge an CO2-Emissionen umgerechnet. Die Berechnung liefert eher eine Schätzung als eine genaue Messung, da einige indirekte Emissionen von Produkten und Dienstleistungen schwer genau zu quantifizieren sind."
+      },
+      {
+        "question": "Was gilt als niedriger oder hoher CO2-Fußabdruck?",
+        "answer": "Der weltweite durchschnittliche CO2-Fußabdruck beträgt etwa 4 Tonnen CO2 pro Person jährlich, variiert jedoch je nach Land und Lebensstil erheblich. In Industrieländern liegt der Durchschnitt oft bei 10-20 Tonnen pro Person. Um die globale Erwärmung auf 1,5°C zu begrenzen, wie von Klimawissenschaftlern empfohlen, muss der weltweite Durchschnitt bis 2050 auf etwa 2 Tonnen pro Person sinken. Für Industrieländer gilt ein Fußabdruck unter 6 Tonnen als relativ niedrig, während alles über 16 Tonnen als hoch angesehen wird. Diese Richtwerte entwickeln sich jedoch weiter, während unser Verständnis der Klimawissenschaft voranschreitet."
+      },
+      {
+        "question": "Wie kann ich meinen CO2-Fußabdruck reduzieren?",
+        "answer": "Effektive Wege zur Reduzierung Ihres CO2-Fußabdrucks umfassen: Verkehr - zu Fuß gehen, Fahrrad fahren, öffentliche Verkehrsmittel nutzen, auf ein Elektrofahrzeug umsteigen oder Flugreisen reduzieren. Energie - Hausdämmung verbessern, energieeffiziente Geräte verwenden, auf erneuerbare Energiequellen umsteigen und auf Heizungs-/Kühlungsnutzung achten. Ernährung - Fleischkonsum reduzieren (besonders Rindfleisch), Lebensmittelabfälle minimieren und lokale, saisonale Lebensmittel wählen. Konsum - weniger kaufen, langlebige Produkte wählen, Gegenstände reparieren statt ersetzen und ordnungsgemäß recyceln. Jede kleine Änderung summiert sich, beginnen Sie also mit Änderungen, die zu Ihrem Lebensstil passen, und integrieren Sie nach und nach mehr."
+      },
+      {
+        "question": "Sind meine Daten bei der Verwendung dieses Rechners privat?",
+        "answer": "Ja, Ihre Privatsphäre ist vollständig geschützt. Alle Berechnungen werden lokal in Ihrem Browser durchgeführt, und es werden keine persönlichen Daten an einen Server übertragen oder dort gespeichert. Die von Ihnen eingegebenen Informationen werden ausschließlich zur Berechnung Ihres CO2-Fußabdrucks verwendet und werden nicht gespeichert, nachdem Sie die Seite verlassen oder Ihren Browser schließen. Sie können dieses Tool mit der vollständigen Gewissheit nutzen, dass Ihre persönlichen Informationen privat bleiben."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR-Code-Generator – Erstellen Sie individuelle QR-Codes mit Logo, Farbe und Rahmen",
+    "description": "Erstellen Sie professionelle QR-Codes mit individueller Markenoptik, Logos, Farben und Rahmen. Ideal für Websites, WLAN-Freigabe, Visitenkarten und Veranstaltungswerbung.",
+    "category": "media",
+    "keywords": [
+      "qr code generator",
+      "individueller qr code",
+      "qr code mit logo erstellen",
+      "qr code mit farbe",
+      "kostenloser qr code ersteller",
+      "qr code herunterladen",
+      "qr code mit rahmen",
+      "qr code für website",
+      "qr code für wlan"
+    ],
+    "faq": [
+      {
+        "question": "Was kann ich mit diesem QR-Code-Generator erstellen?",
+        "answer": "Sie können QR-Codes für Websites, Klartext, Kontaktdaten (vCards), E-Mails, Telefonnummern, Standorte, Ereignisse oder WLAN-Zugangsdaten erstellen. Das Tool unterstützt die Erstellung statischer QR-Codes und bietet Anpassungsmöglichkeiten wie das Einfügen von Logos, Farbanpassungen und gestaltete Rahmen für Marketingzwecke."
+      },
+      {
+        "question": "Wie füge ich ein Logo oder Marken-Symbol zu einem QR-Code hinzu?",
+        "answer": "Sie können Ihr Logo über die Schaltfläche „Logo auswählen“ hochladen oder es per Drag & Drop in den Upload-Bereich ziehen. Das Logo wird zentriert im QR-Code platziert, wobei eine entsprechende Fehlerkorrektur dafür sorgt, dass der Code weiterhin scanbar bleibt. Verwenden Sie für optimale Ergebnisse ein PNG mit transparentem Hintergrund und moderater Größe."
+      },
+      {
+        "question": "Kann ich die Farbe und den Hintergrund des QR-Codes ändern?",
+        "answer": "Ja. Sie können jede beliebige Farbkombination für Vorder- und Hintergrund des QR-Codes wählen. Für eine zuverlässige Scanbarkeit empfehlen wir dunkle Farben für den Code und helle Hintergründe. Vermeiden Sie kontrastarme Kombinationen wie Rot auf Schwarz."
+      },
+      {
+        "question": "Was ist Fehlerkorrektur und welchen Level sollte ich wählen?",
+        "answer": "Die Fehlerkorrektur sorgt dafür, dass Ihr QR-Code auch dann scanbar bleibt, wenn er teilweise beschädigt oder verdeckt ist. Die Stufen reichen von L (7 %) bis H (30 %) Fehlertoleranz. Wenn Sie ein Logo einfügen oder den QR-Code drucken, empfehlen wir Stufe Q oder H für eine hohe Scanverlässlichkeit."
+      },
+      {
+        "question": "Ist die QR-Code-Erstellung sicher und offline?",
+        "answer": "Ja. Die gesamte QR-Code-Erstellung erfolgt lokal in Ihrem Browser mittels JavaScript. Es werden keine Daten hochgeladen oder gespeichert. Sie können QR-Codes sicher für private oder sensible Zwecke wie Passwörter, Zahlungslinks oder Geschäftskontakte erstellen."
+      },
+      {
+        "question": "Kann ich den QR-Code als SVG oder PNG herunterladen?",
+        "answer": "Ja. Nach der Erstellung können Sie den QR-Code als hochauflösendes PNG oder skalierbares SVG herunterladen. Diese Formate eignen sich ideal für digitale und gedruckte Anwendungen wie Flyer, Poster oder Verpackungen."
+      }
+    ]
   }
 ]

@@ -438,5 +438,88 @@
         "answer": "Ja. All beregning skjer lokalt i nettleseren din. Ingenting lagres eller sendes."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Karbonfotavtrykk-kalkulator – Mål din miljøpåvirkning",
+    "description": "Beregn ditt personlige eller families karbonavtrykk basert på livsstilsfaktorer inkludert transport, energibruk, kosthold og forbruksvaner.",
+    "category": "utilities",
+    "keywords": [
+      "karbonfotavtrykk-kalkulator",
+      "CO2-utslippskalkulator",
+      "karbonutslippsestimator",
+      "miljøpåvirkningskalkulator",
+      "drivhusgasskalkulator",
+      "personlig karbonavtrykk",
+      "husholdningsutslippskalkulator",
+      "klimapåvirkningsvurdering",
+      "karbondioksidkalkulator",
+      "økologisk fotavtrykksverktøy"
+    ],
+    "faq": [
+      {
+        "question": "Hva er et karbonfotavtrykk og hvorfor bør jeg måle det?",
+        "answer": "Et karbonfotavtrykk er den totale mengden klimagasser (hovedsakelig karbondioksid) som slippes ut i atmosfæren som et resultat av dine aktiviteter. Å måle ditt karbonfotavtrykk hjelper deg å forstå din personlige innvirkning på klimaendringene, identifisere områder hvor du kan gjøre betydelige reduksjoner, og spore fremgangen din over tid. Ved å forstå ditt karbonfotavtrykk kan du ta mer informerte beslutninger om transport, energibruk, kosthold og forbruk som er i tråd med mål for miljømessig bærekraft."
+      },
+      {
+        "question": "Hvordan beregnes mitt karbonfotavtrykk?",
+        "answer": "Denne kalkulatoren estimerer ditt karbonfotavtrykk ved å analysere nøkkelfaktorer i livsstilen din, inkludert: transport (biltype og bruk, flyreiser, offentlig transport), husholdningens energiforbruk (elektrisitet, oppvarming, kjøling), kosthold (kjøttforbruk, matavfall) og forbruksvaner (shopping, resirkulering). Hver aktivitet konverteres til en ekvivalent mengde CO2-utslipp ved hjelp av vitenskapelig etablerte konverteringsfaktorer. Beregningen gir et estimat i stedet for en nøyaktig måling, siden noen indirekte utslipp fra produkter og tjenester er vanskelige å kvantifisere nøyaktig."
+      },
+      {
+        "question": "Hva regnes som et lavt eller høyt karbonfotavtrykk?",
+        "answer": "Det gjennomsnittlige globale karbonfotavtrykket er omtrent 4 tonn CO2 per person årlig, men dette varierer betydelig etter land og livsstil. I utviklede land er gjennomsnittet vanligvis 10-20 tonn per person. For å begrense global oppvarming til 1,5°C som anbefalt av klimaforskere, må det globale gjennomsnittet reduseres til omtrent 2 tonn per person innen 2050. Et fotavtrykk under 6 tonn anses som relativt lavt for utviklede land, mens alt over 16 tonn ville bli ansett som høyt. Disse referansepunktene fortsetter imidlertid å utvikle seg etter hvert som vår forståelse av klimavitenskap går fremover."
+      },
+      {
+        "question": "Hvordan kan jeg redusere mitt karbonfotavtrykk?",
+        "answer": "Effektive måter å redusere ditt karbonfotavtrykk på inkluderer: Transport - gå, sykle, bruke offentlig transport, bytte til elektrisk kjøretøy eller redusere flyreiser. Energi - forbedre hjemmeisolasjon, bruke energieffektive apparater, bytte til fornybare energikilder og være bevisst på oppvarming/kjøling. Kosthold - redusere kjøttforbruk (spesielt storfekjøtt), minimere matavfall og velge lokale og sesongbaserte matvarer. Forbruk - kjøpe mindre, velge holdbare produkter, reparere gjenstander i stedet for å erstatte dem og resirkulere riktig. Hver liten endring teller, så begynn med endringer som passer din livsstil og implementer gradvis flere."
+      },
+      {
+        "question": "Er dataene mine private når jeg bruker denne kalkulatoren?",
+        "answer": "Ja, personvernet ditt er fullstendig beskyttet. Alle beregninger utføres lokalt i nettleseren din, og ingen personlige data overføres eller lagres på noen servere. Informasjonen du legger inn brukes kun til å beregne ditt karbonfotavtrykk og lagres ikke etter at du forlater siden eller lukker nettleseren. Du kan bruke dette verktøyet med full tillit til at din personlige informasjon forblir privat."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR-kodegenerator – Lag tilpassede QR-koder med logo, farger og rammer",
+    "description": "Lag profesjonelle QR-koder med tilpasset merkevare, logoer, farger og rammer. Perfekt for nettsteder, Wi-Fi-deling, visittkort og arrangementspromotering.",
+    "category": "media",
+    "keywords": [
+      "qr kodegenerator",
+      "tilpasset qr kode",
+      "lag qr kode med logo",
+      "qr kode med farge",
+      "gratis qr kodegenerator",
+      "last ned qr kode",
+      "qr kode med ramme",
+      "qr kode for nettside",
+      "qr kode for Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "Hva kan jeg lage med denne QR-kodegeneratoren?",
+        "answer": "Du kan lage QR-koder for nettsteder, ren tekst, kontaktkort (vCard), e-poster, telefonnumre, posisjoner, arrangementer eller Wi-Fi-nettverk. Verktøyet støtter statiske QR-koder og tilbyr tilpasning som å legge til logo, fargevalg og stiliserte rammer for markedsføring."
+      },
+      {
+        "question": "Hvordan legger jeg til en logo eller merkevareikon i QR-koden?",
+        "answer": "Du kan laste opp logoen din ved å klikke på \"Velg logo\" eller dra og slippe bildet i opplastingsområdet. Logoen blir plassert midt i QR-koden, med feilkorrigering for å sikre at den fortsatt kan skannes. Bruk helst en PNG med gjennomsiktig bakgrunn og moderat størrelse for best resultat."
+      },
+      {
+        "question": "Kan jeg endre fargen og bakgrunnen på QR-koden?",
+        "answer": "Ja. Du kan velge hvilke farger som helst for forgrunn og bakgrunn. For best lesbarhet anbefales mørke farger for selve koden og lys bakgrunn. Unngå lav kontrast, som rød på svart."
+      },
+      {
+        "question": "Hva er feilkorrigering, og hvilket nivå bør jeg velge?",
+        "answer": "Feilkorrigering gjør QR-koden lesbar selv om den er delvis skadet. Nivåene går fra L (7%) til H (30%) feilmargin. Hvis du legger til logo eller skal skrive ut koden, anbefales nivå Q eller H for best skannbarhet."
+      },
+      {
+        "question": "Er det trygt og offline å generere QR-koder?",
+        "answer": "Ja. All generering skjer lokalt i nettleseren din med JavaScript. Ingen data lastes opp eller lagres. Du kan trygt lage QR-koder for private eller sensitive formål som passord, betalingslenker eller kontaktinfo."
+      },
+      {
+        "question": "Kan jeg laste ned QR-koden som SVG eller PNG?",
+        "answer": "Ja. Når QR-koden er generert, kan du laste den ned som PNG i høy oppløsning eller som skalerbar SVG. Begge formater egner seg for digital bruk og utskrift, som brosjyrer, plakater eller emballasje."
+      }
+    ]
   }
 ]

@@ -439,5 +439,88 @@
         "answer": "Nee. Alles gebeurt lokaal in je browser. Je data blijft privé."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "CO2-voetafdruk Calculator – Meet Uw Milieu-impact",
+    "description": "Bereken uw persoonlijke of gezins-koolstofvoetafdruk op basis van levensstijlfactoren, waaronder transport, energiegebruik, dieet en consumptiegewoonten.",
+    "category": "utilities",
+    "keywords": [
+      "CO2-voetafdruk calculator",
+      "koolstofvoetafdruk berekenen",
+      "CO2-uitstoot calculator",
+      "milieu-impact calculator",
+      "broeikasgassen calculator",
+      "persoonlijke koolstofvoetafdruk",
+      "huishoudelijke emissie calculator",
+      "klimaatimpact beoordeling",
+      "kooldioxide calculator",
+      "ecologische voetafdruk tool"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een koolstofvoetafdruk en waarom zou ik deze meten?",
+        "answer": "Een koolstofvoetafdruk is de totale hoeveelheid broeikasgassen (voornamelijk kooldioxide) die in de atmosfeer wordt uitgestoten als gevolg van uw activiteiten. Het meten van uw koolstofvoetafdruk helpt u uw persoonlijke impact op klimaatverandering te begrijpen, gebieden te identificeren waar u significante reducties kunt maken, en uw voortgang in de loop van de tijd bij te houden. Door uw koolstofvoetafdruk te begrijpen, kunt u beter geïnformeerde beslissingen nemen over transport, energiegebruik, dieet en consumptie die in lijn zijn met doelen voor ecologische duurzaamheid."
+      },
+      {
+        "question": "Hoe wordt mijn koolstofvoetafdruk berekend?",
+        "answer": "Deze calculator schat uw koolstofvoetafdruk door belangrijke levensstijlfactoren te analyseren, waaronder: transport (autotype en -gebruik, vliegreizen, openbaar vervoer), huishoudelijk energieverbruik (elektriciteit, verwarming, koeling), dieet (vleesconsumptie, voedselverspilling) en consumptiegewoonten (aankopen, recycling). Elke activiteit wordt omgezet in een equivalente hoeveelheid CO2-uitstoot met behulp van wetenschappelijk vastgestelde conversiefactoren. De berekening geeft een schatting in plaats van een exacte meting, aangezien sommige indirecte emissies van producten en diensten moeilijk nauwkeurig te kwantificeren zijn."
+      },
+      {
+        "question": "Wat wordt beschouwd als een lage of hoge koolstofvoetafdruk?",
+        "answer": "De gemiddelde wereldwijde koolstofvoetafdruk is ongeveer 4 ton CO2 per persoon per jaar, maar dit varieert aanzienlijk per land en levensstijl. In ontwikkelde landen ligt het gemiddelde meestal tussen 10-20 ton per persoon. Om de opwarming van de aarde te beperken tot 1,5°C, zoals aanbevolen door klimaatwetenschappers, moet het wereldwijde gemiddelde worden teruggebracht tot ongeveer 2 ton per persoon tegen 2050. Een voetafdruk onder 6 ton wordt als relatief laag beschouwd voor ontwikkelde landen, terwijl alles boven 16 ton als hoog zou worden beschouwd. Deze benchmarks blijven echter evolueren naarmate ons begrip van klimaatwetenschap vordert."
+      },
+      {
+        "question": "Hoe kan ik mijn koolstofvoetafdruk verkleinen?",
+        "answer": "Effectieve manieren om uw koolstofvoetafdruk te verkleinen zijn onder andere: Transport - lopen, fietsen, openbaar vervoer gebruiken, overstappen op een elektrisch voertuig of minder vliegen. Energie - huisisolatie verbeteren, energiezuinige apparaten gebruiken, overstappen op hernieuwbare energiebronnen en bewust zijn van verwarming/koeling. Dieet - minder vlees eten (vooral rundvlees), voedselverspilling minimaliseren en kiezen voor lokale en seizoensgebonden voedingsmiddelen. Consumptie - minder kopen, duurzame producten kiezen, items repareren in plaats van vervangen en correct recyclen. Elke kleine verandering telt, dus begin met veranderingen die bij uw levensstijl passen en voer geleidelijk meer door."
+      },
+      {
+        "question": "Zijn mijn gegevens privé bij het gebruik van deze calculator?",
+        "answer": "Ja, uw privacy is volledig beschermd. Alle berekeningen worden lokaal in uw browser uitgevoerd, en er worden geen persoonlijke gegevens verzonden naar of opgeslagen op servers. De informatie die u invoert, wordt alleen gebruikt om uw koolstofvoetafdruk te berekenen en wordt niet bewaard nadat u de pagina verlaat of uw browser sluit. U kunt deze tool met volledige vertrouwen gebruiken dat uw persoonlijke informatie privé blijft."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR-codegenerator – Maak Aangepaste QR-codes met Logo, Kleuren en Kaders",
+    "description": "Genereer professionele QR-codes met aangepaste branding, logo's, kleuren en kaders. Perfect voor websites, Wi-Fi-deling, visitekaartjes en evenementenpromotie.",
+    "category": "media",
+    "keywords": [
+      "qr code generator",
+      "aangepaste qr code",
+      "qr code maken met logo",
+      "qr code met kleur",
+      "gratis qr code maker",
+      "qr code downloaden",
+      "qr code met kader",
+      "qr code voor website",
+      "qr code voor Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "Wat kan ik genereren met deze QR-codegenerator?",
+        "answer": "Je kunt QR-codes maken voor websites, platte tekst, contactkaarten (vCards), e-mails, telefoonnummers, locaties, evenementen of Wi-Fi-netwerken. De tool ondersteunt statische QR-codes en biedt personalisatieopties zoals logo's, kleuren en gestileerde kaders voor marketingdoeleinden."
+      },
+      {
+        "question": "Hoe voeg ik een logo of merkicoon toe aan een QR-code?",
+        "answer": "Upload je logo met de knop \"Logo kiezen\" of sleep het naar het uploadgebied. Het logo wordt gecentreerd in de QR-code geplaatst, met foutcorrectie om scanbaarheid te behouden. Gebruik bij voorkeur een PNG met transparante achtergrond en een bescheiden formaat."
+      },
+      {
+        "question": "Kan ik de kleur en achtergrond van de QR-code wijzigen?",
+        "answer": "Ja. Je kunt elke gewenste kleur kiezen voor de voor- en achtergrond. Voor de beste scanresultaten adviseren we donkere kleuren voor de code en een lichte achtergrond. Vermijd combinaties met weinig contrast zoals rood op zwart."
+      },
+      {
+        "question": "Wat is foutcorrectie en welk niveau moet ik kiezen?",
+        "answer": "Foutcorrectie zorgt ervoor dat de QR-code leesbaar blijft, zelfs als deze deels beschadigd is. De niveaus variëren van L (7%) tot H (30%). Voeg je een logo toe of druk je de code af, kies dan niveau Q of H voor maximale betrouwbaarheid."
+      },
+      {
+        "question": "Is het veilig en offline om QR-codes te genereren?",
+        "answer": "Ja. Alle QR-codes worden lokaal in je browser gegenereerd met JavaScript. Er wordt niets geüpload of opgeslagen. Je kunt ze veilig gebruiken voor gevoelige toepassingen zoals wachtwoorden of betalingslinks."
+      },
+      {
+        "question": "Kan ik de QR-code downloaden als SVG of PNG?",
+        "answer": "Ja. Na het genereren kun je de QR-code downloaden als PNG met hoge resolutie of schaalbare SVG. Ideaal voor digitaal gebruik of print zoals flyers of verpakkingen."
+      }
+    ]
   }
 ]

@@ -443,5 +443,88 @@
         "answer": "Sim. Tudo é feito no seu navegador. Nada é enviado."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Calculadora de Pegada de Carbono – Meça Seu Impacto Ambiental",
+    "description": "Calcule sua pegada de carbono pessoal ou familiar com base em fatores de estilo de vida, incluindo transporte, uso de energia, dieta e hábitos de consumo.",
+    "category": "utilities",
+    "keywords": [
+      "calculadora de pegada de carbono",
+      "calculadora de emissões de CO2",
+      "estimador de emissões de carbono",
+      "calculadora de impacto ambiental",
+      "calculadora de gases de efeito estufa",
+      "pegada de carbono pessoal",
+      "calculadora de emissões domésticas",
+      "avaliação de impacto climático",
+      "calculadora de dióxido de carbono",
+      "ferramenta de pegada ecológica"
+    ],
+    "faq": [
+      {
+        "question": "O que é uma pegada de carbono e por que devo medi-la?",
+        "answer": "Uma pegada de carbono é a quantidade total de gases de efeito estufa (principalmente dióxido de carbono) liberados na atmosfera como resultado de suas atividades. Medir sua pegada de carbono ajuda você a entender seu impacto pessoal nas mudanças climáticas, identificar áreas onde pode fazer reduções significativas e acompanhar seu progresso ao longo do tempo. Ao compreender sua pegada de carbono, você pode tomar decisões mais informadas sobre transporte, uso de energia, dieta e consumo que estejam alinhadas com os objetivos de sustentabilidade ambiental."
+      },
+      {
+        "question": "Como minha pegada de carbono é calculada?",
+        "answer": "Esta calculadora estima sua pegada de carbono analisando fatores-chave do estilo de vida, incluindo: transporte (tipo e uso de carro, voos, transporte público), consumo de energia doméstica (eletricidade, aquecimento, refrigeração), dieta (consumo de carne, desperdício de alimentos) e hábitos de consumo (compras, reciclagem). Cada atividade é convertida em uma quantidade equivalente de emissões de CO2 usando fatores de conversão cientificamente estabelecidos. O cálculo fornece uma estimativa em vez de uma medição exata, já que algumas emissões indiretas de produtos e serviços são difíceis de quantificar com precisão."
+      },
+      {
+        "question": "O que é considerado uma pegada de carbono baixa ou alta?",
+        "answer": "A pegada de carbono média global é de aproximadamente 4 toneladas de CO2 por pessoa anualmente, mas isso varia significativamente por país e estilo de vida. Em países desenvolvidos, a média geralmente é de 10-20 toneladas por pessoa. Para limitar o aquecimento global a 1,5°C, conforme recomendado pelos cientistas do clima, a média global deve ser reduzida para aproximadamente 2 toneladas por pessoa até 2050. Uma pegada abaixo de 6 toneladas é considerada relativamente baixa para países desenvolvidos, enquanto qualquer coisa acima de 16 toneladas seria considerada alta. No entanto, esses benchmarks continuam evoluindo à medida que nossa compreensão da ciência climática avança."
+      },
+      {
+        "question": "Como posso reduzir minha pegada de carbono?",
+        "answer": "Maneiras eficazes de reduzir sua pegada de carbono incluem: Transporte - caminhar, andar de bicicleta, usar transporte público, mudar para um veículo elétrico ou reduzir viagens aéreas. Energia - melhorar o isolamento da casa, usar aparelhos energeticamente eficientes, mudar para fontes de energia renovável e ser consciente do uso de aquecimento/refrigeração. Dieta - reduzir o consumo de carne (especialmente bovina), minimizar o desperdício de alimentos e escolher alimentos locais e sazonais. Consumo - comprar menos, escolher produtos duráveis, reparar itens em vez de substituí-los e reciclar adequadamente. Cada pequena mudança conta, então comece com mudanças que se adequem ao seu estilo de vida e incorpore gradualmente mais."
+      },
+      {
+        "question": "Meus dados são privados ao usar esta calculadora?",
+        "answer": "Sim, sua privacidade está completamente protegida. Todos os cálculos são realizados localmente em seu navegador, e nenhum dado pessoal é transmitido ou armazenado em quaisquer servidores. As informações que você insere são usadas apenas para calcular sua pegada de carbono e não são salvas depois que você sai da página ou fecha seu navegador. Você pode usar esta ferramenta com total confiança de que suas informações pessoais permanecem privadas."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "Gerador de Código QR – Crie Códigos QR Personalizados com Logotipo, Cores e Molduras",
+    "description": "Gere códigos QR profissionais com personalização de marca, logotipos, cores e molduras. Perfeito para sites, compartilhamento de Wi-Fi, cartões de visita e promoções de eventos.",
+    "category": "media",
+    "keywords": [
+      "gerador de código qr",
+      "código qr personalizado",
+      "criar código qr com logotipo",
+      "código qr colorido",
+      "gerador de qr gratuito",
+      "baixar código qr",
+      "código qr com moldura",
+      "código qr para site",
+      "código qr para Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "O que posso gerar com este gerador de código QR?",
+        "answer": "Você pode gerar códigos QR para sites, texto simples, cartões de contato (vCards), e-mails, números de telefone, localizações, eventos ou redes Wi-Fi. A ferramenta suporta criação de códigos QR estáticos com recursos de personalização como inserção de logotipo, ajuste de cores e molduras estilizadas para fins promocionais."
+      },
+      {
+        "question": "Como adicionar um logotipo ou ícone de marca a um código QR?",
+        "answer": "Você pode enviar seu logotipo clicando no botão \"Escolher logotipo\" ou arrastando-o para a área de upload. O logotipo será colocado no centro do código QR com correção de erro para garantir a leitura. Para melhores resultados, use PNG com fundo transparente e tamanho moderado."
+      },
+      {
+        "question": "Posso alterar as cores e o fundo do código QR?",
+        "answer": "Sim. Você pode escolher qualquer combinação de cores para o código e o fundo. Para melhor legibilidade, use cores escuras no código e fundo claro. Evite combinações com pouco contraste como vermelho sobre preto."
+      },
+      {
+        "question": "O que é correção de erro e qual nível devo escolher?",
+        "answer": "A correção de erro permite que o código QR seja lido mesmo se estiver danificado. Os níveis vão de L (7%) a H (30%). Ao adicionar logotipo ou imprimir o código, use nível Q ou H para maior confiabilidade."
+      },
+      {
+        "question": "A geração do código QR é segura e offline?",
+        "answer": "Sim. Todo o processo é realizado localmente no navegador via JavaScript. Nenhum dado é enviado ou armazenado. É seguro usar mesmo para informações privadas como senhas ou links de pagamento."
+      },
+      {
+        "question": "Posso baixar o código QR como SVG ou PNG?",
+        "answer": "Sim. Após a geração, você pode baixá-lo em formato PNG de alta resolução ou SVG escalável. Ideal para uso digital ou impressão como panfletos e embalagens."
+      }
+    ]
   }
 ]

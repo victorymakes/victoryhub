@@ -1,32 +1,32 @@
 [
-  {
-    "slug": "",
-    "name": "Alle Tools",
-    "description": "Alle verfügbaren Tools aus allen Kategorien anzeigen",
-    "icon": "grid"
-  },
-  {
-    "slug": "development",
-    "name": "Entwicklung",
-    "description": "Entwickler-Dienstprogramme wie UUID-Generator, Zeitstempel-Konverter, URL-Encoder/Decoder und mehr",
-    "icon": "code"
-  },
-  {
-    "slug": "security",
-    "name": "Sicherheit",
-    "description": "Sicherheits- und Datenschutztools wie Passwortgenerator und IP-Prüfer",
-    "icon": "lock"
-  },
-  {
-    "slug": "media",
-    "name": "Medien & Bilder",
-    "description": "Tools für Bild-, Medien- und Dateiverarbeitung",
-    "icon": "image"
-  },
-  {
-    "slug": "utilities",
-    "name": "Dienstprogramme",
-    "description": "Alltagswerkzeuge und Rechner für Produktivität und täglichen Gebrauch",
-    "icon": "activity"
-  }
+    {
+        "slug": "",
+        "name": "Alle Tools",
+        "description": "Alle verfügbaren Tools aus allen Kategorien anzeigen",
+        "icon": "grid"
+    },
+    {
+        "slug": "development",
+        "name": "Entwicklung",
+        "description": "Entwickler-Dienstprogramme wie UUID-Generator, Zeitstempel-Konverter, URL-Encoder/Decoder und mehr",
+        "icon": "code"
+    },
+    {
+        "slug": "security",
+        "name": "Sicherheit",
+        "description": "Sicherheits- und Datenschutztools wie Passwortgenerator und IP-Prüfer",
+        "icon": "lock"
+    },
+    {
+        "slug": "media",
+        "name": "Medien & Bilder",
+        "description": "Tools für Bild-, Medien- und Dateiverarbeitung",
+        "icon": "image"
+    },
+    {
+        "slug": "utilities",
+        "name": "Dienstprogramme",
+        "description": "Alltagswerkzeuge und Rechner für Produktivität und täglichen Gebrauch",
+        "icon": "activity"
+    }
 ]

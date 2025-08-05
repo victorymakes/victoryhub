@@ -1,32 +1,32 @@
 [
-  {
-    "slug": "all",
-    "name": "全ツール",
-    "description": "すべてのカテゴリのツールを表示",
-    "icon": "grid"
-  },
-  {
-    "slug": "development",
-    "name": "開発",
-    "description": "UUID生成器、タイムスタンプ変換器、URLエンコーダー/デコーダーなどの開発者向けユーティリティ",
-    "icon": "code"
-  },
-  {
-    "slug": "security",
-    "name": "セキュリティ",
-    "description": "パスワード生成器やIPチェッカーなどのセキュリティとプライバシーツール",
-    "icon": "lock"
-  },
-  {
-    "slug": "media",
-    "name": "メディア・画像",
-    "description": "画像やメディア、ファイル処理のためのツール",
-    "icon": "image"
-  },
-  {
-    "slug": "utilities",
-    "name": "ユーティリティ",
-    "description": "日常の生産性や計算機などの便利ツール",
-    "icon": "activity"
-  }
+    {
+        "slug": "all",
+        "name": "全ツール",
+        "description": "すべてのカテゴリのツールを表示",
+        "icon": "grid"
+    },
+    {
+        "slug": "development",
+        "name": "開発",
+        "description": "UUID生成器、タイムスタンプ変換器、URLエンコーダー/デコーダーなどの開発者向けユーティリティ",
+        "icon": "code"
+    },
+    {
+        "slug": "security",
+        "name": "セキュリティ",
+        "description": "パスワード生成器やIPチェッカーなどのセキュリティとプライバシーツール",
+        "icon": "lock"
+    },
+    {
+        "slug": "media",
+        "name": "メディア・画像",
+        "description": "画像やメディア、ファイル処理のためのツール",
+        "icon": "image"
+    },
+    {
+        "slug": "utilities",
+        "name": "ユーティリティ",
+        "description": "日常の生産性や計算機などの便利ツール",
+        "icon": "activity"
+    }
 ]

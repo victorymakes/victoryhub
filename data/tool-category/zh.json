@@ -1,32 +1,32 @@
 [
-  {
-    "slug": "all",
-    "name": "所有工具",
-    "description": "查看所有类别的工具",
-    "icon": "grid"
-  },
-  {
-    "slug": "development",
-    "name": "开发",
-    "description": "UUID 生成器、时间戳转换器、URL 编码器/解码器等开发者实用工具",
-    "icon": "code"
-  },
-  {
-    "slug": "security",
-    "name": "安全",
-    "description": "密码生成器和 IP 检查器等安全和隐私工具",
-    "icon": "lock"
-  },
-  {
-    "slug": "media",
-    "name": "媒体与图片",
-    "description": "用于图片、媒体和文件处理的工具",
-    "icon": "image"
-  },
-  {
-    "slug": "utilities",
-    "name": "实用工具",
-    "description": "日常生产力和常用计算器等工具",
-    "icon": "activity"
-  }
+    {
+        "slug": "all",
+        "name": "所有工具",
+        "description": "查看所有类别的工具",
+        "icon": "grid"
+    },
+    {
+        "slug": "development",
+        "name": "开发",
+        "description": "UUID 生成器、时间戳转换器、URL 编码器/解码器等开发者实用工具",
+        "icon": "code"
+    },
+    {
+        "slug": "security",
+        "name": "安全",
+        "description": "密码生成器和 IP 检查器等安全和隐私工具",
+        "icon": "lock"
+    },
+    {
+        "slug": "media",
+        "name": "媒体与图片",
+        "description": "用于图片、媒体和文件处理的工具",
+        "icon": "image"
+    },
+    {
+        "slug": "utilities",
+        "name": "实用工具",
+        "description": "日常生产力和常用计算器等工具",
+        "icon": "activity"
+    }
 ]
