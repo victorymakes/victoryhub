@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
     Select,
     SelectContent,
@@ -127,7 +126,7 @@ export default function CarbonFootprintCalculator() {
 
         // Calculate consumption and waste emissions based on sliders (0-100%)
         // Base consumption emissions: 1 ton per year at 50%
-        const consumptionEmissions = (consumptionLevel / 50) * 1.0;
+        const consumptionEmissions = consumptionLevel / 50;
 
         // Recycling reduces waste emissions (base: 0.5 ton per year at 50% recycling)
         const wasteEmissions = (1 - recyclingLevel / 100) * 0.5;
@@ -153,6 +152,9 @@ export default function CarbonFootprintCalculator() {
         consumptionLevel,
         recyclingLevel,
         t,
+        dietFactors,
+        energyFactors,
+        transportationFactors,
     ]);
 
     const resetCalculator = () => {
