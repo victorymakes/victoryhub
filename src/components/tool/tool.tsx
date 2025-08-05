@@ -8,10 +8,11 @@ import Base64EncoderDecoder from "./base64-encoder-decoder";
 import ImageCompressor from "./image-compressor";
 // import ImageResizer from "./image-resizer";
 import ImageConverter from "./image-converter";
-// import QRCodeGenerator from "./qrcode-generator";
+import QRCodeGenerator from "./qrcode-generator";
 import CronExpressionGenerator from "./cron-expression-generator";
 import BMICalculator from "./bmi-calculator";
 import BMRCalculator from "./bmr-calculator";
+import CarbonFootprintCalculator from "./carbon-footprint-calculator";
 
 interface ToolComponentProps {
     id: string;
@@ -41,14 +42,16 @@ export const ToolComponent: FC<ToolComponentProps> = ({
         //     return <ImageResizer />;
         case "image-converter":
             return <ImageConverter />;
-        // case "qrcode-generator":
-        //     return <QRCodeGenerator />;
+        case "qrcode-generator":
+            return <QRCodeGenerator />;
         case "cron-expression-generator":
             return <CronExpressionGenerator />;
         case "bmi-calculator":
             return <BMICalculator />;
         case "bmr-calculator":
             return <BMRCalculator />;
+        case "carbon-footprint-calculator":
+            return <CarbonFootprintCalculator />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

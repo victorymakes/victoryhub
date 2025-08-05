@@ -438,5 +438,88 @@
         "answer": "Ja. All beräkning sker lokalt i din webbläsare. Inga uppgifter skickas eller sparas."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Koldioxidavtrycksräknare – Mät din miljöpåverkan",
+    "description": "Beräkna ditt personliga eller familjens koldioxidavtryck baserat på livsstilsfaktorer inklusive transport, energianvändning, kost och konsumtionsvanor.",
+    "category": "utilities",
+    "keywords": [
+      "koldioxidavtrycksräknare",
+      "CO2-utsläppsräknare",
+      "kolutsläppsberäkning",
+      "miljöpåverkansräknare",
+      "växthusgasräknare",
+      "personligt koldioxidavtryck",
+      "hushållsutsläppsräknare",
+      "klimatpåverkansbedömning",
+      "koldioxidräknare",
+      "ekologiskt fotavtrycksverktyg"
+    ],
+    "faq": [
+      {
+        "question": "Vad är ett koldioxidavtryck och varför bör jag mäta det?",
+        "answer": "Ett koldioxidavtryck är den totala mängden växthusgaser (främst koldioxid) som släpps ut i atmosfären som ett resultat av dina aktiviteter. Att mäta ditt koldioxidavtryck hjälper dig att förstå din personliga påverkan på klimatförändringarna, identifiera områden där du kan göra betydande minskningar och spåra dina framsteg över tid. Genom att förstå ditt koldioxidavtryck kan du fatta mer informerade beslut om transport, energianvändning, kost och konsumtion som är i linje med målen för miljömässig hållbarhet."
+      },
+      {
+        "question": "Hur beräknas mitt koldioxidavtryck?",
+        "answer": "Denna räknare uppskattar ditt koldioxidavtryck genom att analysera viktiga livsstilsfaktorer inklusive: transport (biltyp och användning, flygresor, kollektivtrafik), hushållets energiförbrukning (el, uppvärmning, kylning), kost (köttkonsumtion, matsvinn) och konsumtionsvanor (shopping, återvinning). Varje aktivitet omvandlas till en motsvarande mängd CO2-utsläpp med hjälp av vetenskapligt etablerade omvandlingsfaktorer. Beräkningen ger en uppskattning snarare än en exakt mätning, eftersom vissa indirekta utsläpp från produkter och tjänster är svåra att kvantifiera exakt."
+      },
+      {
+        "question": "Vad anses vara ett lågt eller högt koldioxidavtryck?",
+        "answer": "Det genomsnittliga globala koldioxidavtrycket är ungefär 4 ton CO2 per person årligen, men detta varierar avsevärt beroende på land och livsstil. I utvecklade länder ligger genomsnittet vanligtvis på 10-20 ton per person. För att begränsa den globala uppvärmningen till 1,5°C som rekommenderas av klimatforskare, måste det globala genomsnittet minskas till ungefär 2 ton per person till 2050. Ett avtryck under 6 ton anses vara relativt lågt för utvecklade länder, medan allt över 16 ton skulle anses vara högt. Dessa riktmärken fortsätter dock att utvecklas i takt med att vår förståelse för klimatvetenskap går framåt."
+      },
+      {
+        "question": "Hur kan jag minska mitt koldioxidavtryck?",
+        "answer": "Effektiva sätt att minska ditt koldioxidavtryck inkluderar: Transport - gå, cykla, använda kollektivtrafik, byta till elfordon eller minska flygresor. Energi - förbättra hemmets isolering, använda energieffektiva apparater, byta till förnybara energikällor och vara medveten om uppvärmning/kylning. Kost - minska köttkonsumtionen (särskilt nötkött), minimera matsvinn och välja lokala och säsongsbetonade livsmedel. Konsumtion - köpa mindre, välja hållbara produkter, reparera föremål istället för att ersätta dem och återvinna korrekt. Varje liten förändring räknas, så börja med förändringar som passar din livsstil och implementera gradvis fler."
+      },
+      {
+        "question": "Är mina data privata när jag använder denna räknare?",
+        "answer": "Ja, din integritet är fullständigt skyddad. Alla beräkningar utförs lokalt i din webbläsare, och inga personuppgifter överförs eller lagras på några servrar. Informationen du anger används endast för att beräkna ditt koldioxidavtryck och sparas inte efter att du lämnar sidan eller stänger din webbläsare. Du kan använda detta verktyg med full tillit att din personliga information förblir privat."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR-kodgenerator – Skapa anpassade QR-koder med logotyp, färger och ramar",
+    "description": "Skapa professionella QR-koder med anpassat varumärke, logotyper, färger och ramar. Perfekt för webbplatser, Wi-Fi-delning, visitkort och evenemangsmarknadsföring.",
+    "category": "media",
+    "keywords": [
+      "qr kodgenerator",
+      "anpassad qr kod",
+      "skapa qr kod med logotyp",
+      "qr kod med färg",
+      "gratis qr kodskapare",
+      "ladda ner qr kod",
+      "qr kod med ram",
+      "qr kod för webbplats",
+      "qr kod för Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "Vad kan jag skapa med den här QR-kodgeneratorn?",
+        "answer": "Du kan skapa QR-koder för webbplatser, vanlig text, kontaktkort (vCards), e-post, telefonnummer, platser, evenemang eller Wi-Fi-nätverk. Verktyget stöder statiska QR-koder och har funktioner för att lägga till logotyp, färgval och designade ramar för marknadsföringssyften."
+      },
+      {
+        "question": "Hur lägger jag till en logotyp eller varumärkesikon i en QR-kod?",
+        "answer": "Du kan ladda upp din logotyp via knappen \"Välj logotyp\" eller dra och släpp den i uppladdningsområdet. Logotypen placeras i mitten av QR-koden och felkorrigering säkerställer att den förblir läsbar. För bästa resultat, använd en PNG med transparent bakgrund och måttlig storlek."
+      },
+      {
+        "question": "Kan jag ändra färg och bakgrund för QR-koden?",
+        "answer": "Ja. Du kan välja vilken färgkombination du vill för förgrund och bakgrund. För bästa skanningsresultat rekommenderas mörka färger för koden och ljus bakgrund. Undvik låga kontraster som rött på svart."
+      },
+      {
+        "question": "Vad är felkorrigering och vilken nivå ska jag välja?",
+        "answer": "Felkorrigering gör det möjligt att skanna QR-koden även om den är delvis skadad. Nivåerna sträcker sig från L (7 %) till H (30 %) tolerans. Om du lägger till en logotyp eller skriver ut QR-koden, välj nivå Q eller H för högre tillförlitlighet."
+      },
+      {
+        "question": "Är det säkert och offline att generera QR-koder?",
+        "answer": "Ja. Alla QR-koder genereras lokalt i din webbläsare med JavaScript. Ingen data laddas upp eller sparas. Du kan använda verktyget säkert även för privat eller känslig information som lösenord eller betalningslänkar."
+      },
+      {
+        "question": "Kan jag ladda ner QR-koden som SVG eller PNG?",
+        "answer": "Ja. När QR-koden har skapats kan du ladda ner den som en högupplöst PNG eller skalbar SVG. Perfekt för både digital och tryckt användning – som affischer, flyers eller förpackningar."
+      }
+    ]
   }
 ]

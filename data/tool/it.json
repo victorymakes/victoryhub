@@ -443,5 +443,88 @@
         "answer": "Sì. Tutto viene calcolato nel browser. Nessun dato viene salvato o trasmesso."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Calcolatore di Impronta di Carbonio – Misura il Tuo Impatto Ambientale",
+    "description": "Calcola la tua impronta di carbonio personale o familiare basata su fattori dello stile di vita, inclusi trasporti, uso di energia, dieta e abitudini di consumo.",
+    "category": "utilities",
+    "keywords": [
+      "calcolatore di impronta di carbonio",
+      "calcolatore di emissioni di CO2",
+      "stimatore di emissioni di carbonio",
+      "calcolatore di impatto ambientale",
+      "calcolatore di gas serra",
+      "impronta di carbonio personale",
+      "calcolatore di emissioni domestiche",
+      "valutazione dell'impatto climatico",
+      "calcolatore di anidride carbonica",
+      "strumento di impronta ecologica"
+    ],
+    "faq": [
+      {
+        "question": "Cos'è un'impronta di carbonio e perché dovrei misurarla?",
+        "answer": "Un'impronta di carbonio è la quantità totale di gas serra (principalmente anidride carbonica) rilasciati nell'atmosfera come risultato delle tue attività. Misurare la tua impronta di carbonio ti aiuta a comprendere il tuo impatto personale sul cambiamento climatico, identificare aree in cui puoi apportare riduzioni significative e monitorare i tuoi progressi nel tempo. Comprendendo la tua impronta di carbonio, puoi prendere decisioni più informate su trasporti, uso di energia, dieta e consumo che siano in linea con gli obiettivi di sostenibilità ambientale."
+      },
+      {
+        "question": "Come viene calcolata la mia impronta di carbonio?",
+        "answer": "Questo calcolatore stima la tua impronta di carbonio analizzando fattori chiave dello stile di vita, tra cui: trasporti (tipo di auto e utilizzo, voli aerei, trasporto pubblico), consumo energetico domestico (elettricità, riscaldamento, raffreddamento), dieta (consumo di carne, spreco alimentare) e abitudini di consumo (acquisti, riciclaggio). Ogni attività viene convertita in una quantità equivalente di emissioni di CO2 utilizzando fattori di conversione scientificamente stabiliti. Il calcolo fornisce una stima piuttosto che una misurazione esatta, poiché alcune emissioni indirette da prodotti e servizi sono difficili da quantificare con precisione."
+      },
+      {
+        "question": "Cosa si considera un'impronta di carbonio bassa o alta?",
+        "answer": "L'impronta di carbonio media globale è di circa 4 tonnellate di CO2 per persona all'anno, ma questo varia significativamente in base al paese e allo stile di vita. Nei paesi sviluppati, la media è tipicamente di 10-20 tonnellate per persona. Per limitare il riscaldamento globale a 1,5°C, come raccomandato dagli scienziati del clima, la media globale deve essere ridotta a circa 2 tonnellate per persona entro il 2050. Un'impronta inferiore a 6 tonnellate è considerata relativamente bassa per i paesi sviluppati, mentre qualsiasi cosa superiore a 16 tonnellate sarebbe considerata alta. Tuttavia, questi parametri di riferimento continuano a evolversi man mano che la nostra comprensione della scienza del clima progredisce."
+      },
+      {
+        "question": "Come posso ridurre la mia impronta di carbonio?",
+        "answer": "Modi efficaci per ridurre la tua impronta di carbonio includono: Trasporti - camminare, andare in bicicletta, utilizzare i trasporti pubblici, passare a un veicolo elettrico o ridurre i viaggi aerei. Energia - migliorare l'isolamento della casa, utilizzare elettrodomestici a basso consumo energetico, passare a fonti di energia rinnovabile ed essere consapevoli dell'uso di riscaldamento/raffreddamento. Dieta - ridurre il consumo di carne (specialmente manzo), minimizzare lo spreco alimentare e scegliere alimenti locali e stagionali. Consumo - acquistare meno, scegliere prodotti durevoli, riparare oggetti invece di sostituirli e riciclare correttamente. Ogni piccolo cambiamento conta, quindi inizia con modifiche che si adattano al tuo stile di vita e incorpora gradualmente altre."
+      },
+      {
+        "question": "I miei dati sono privati quando uso questo calcolatore?",
+        "answer": "Sì, la tua privacy è completamente protetta. Tutti i calcoli vengono eseguiti localmente nel tuo browser e nessun dato personale viene trasmesso o memorizzato su alcun server. Le informazioni che inserisci vengono utilizzate solo per calcolare la tua impronta di carbonio e non vengono salvate dopo che hai lasciato la pagina o chiuso il browser. Puoi utilizzare questo strumento con la piena fiducia che le tue informazioni personali rimangano private."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "Generatore di Codici QR – Crea Codici QR Personalizzati con Logo, Colori e Cornici",
+    "description": "Genera codici QR professionali con branding personalizzato, loghi, colori e cornici. Perfetto per siti web, condivisione Wi-Fi, biglietti da visita e promozioni di eventi.",
+    "category": "media",
+    "keywords": [
+      "generatore di codice qr",
+      "codice qr personalizzato",
+      "crea codice qr con logo",
+      "codice qr colorato",
+      "generatore qr gratuito",
+      "scarica codice qr",
+      "codice qr con cornice",
+      "codice qr per sito web",
+      "codice qr per Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "Cosa posso generare con questo generatore di codici QR?",
+        "answer": "Puoi generare codici QR per siti web, testo semplice, biglietti da visita (vCard), e-mail, numeri di telefono, posizioni, eventi o credenziali Wi-Fi. Lo strumento supporta la creazione di codici QR statici con opzioni di personalizzazione come logo, colori e cornici stilizzate per scopi promozionali."
+      },
+      {
+        "question": "Come posso aggiungere un logo o un'icona del marchio al codice QR?",
+        "answer": "Puoi caricare il tuo logo utilizzando il pulsante \"Scegli logo\" oppure trascinarlo nell'area di caricamento. Il logo verrà posizionato al centro del codice QR con correzione d’errore per garantire la leggibilità. Per risultati ottimali, utilizza un PNG con sfondo trasparente e dimensioni moderate."
+      },
+      {
+        "question": "Posso modificare il colore e lo sfondo del codice QR?",
+        "answer": "Sì. Puoi scegliere qualsiasi combinazione di colori per il primo piano e lo sfondo. Per una migliore leggibilità, si consiglia un colore scuro per il codice e uno sfondo chiaro. Evita combinazioni a basso contrasto come rosso su nero."
+      },
+      {
+        "question": "Cos'è la correzione d’errore e quale livello devo scegliere?",
+        "answer": "La correzione d’errore permette la scansione anche se il codice è parzialmente danneggiato. I livelli vanno da L (7%) a H (30%). Se aggiungi un logo o stampi il codice, si consiglia il livello Q o H per una maggiore affidabilità."
+      },
+      {
+        "question": "La generazione del codice QR è sicura e offline?",
+        "answer": "Sì. Tutto avviene localmente nel browser con JavaScript. Nessun dato viene caricato o salvato. Puoi generare codici in sicurezza anche per informazioni private o sensibili."
+      },
+      {
+        "question": "Posso scaricare il codice QR in formato SVG o PNG?",
+        "answer": "Sì. Una volta generato, puoi scaricare il codice come PNG ad alta risoluzione o SVG scalabile. Ideale per usi digitali o stampa su volantini, manifesti o confezioni."
+      }
+    ]
   }
 ]

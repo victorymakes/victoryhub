@@ -439,5 +439,88 @@
         "answer": "Kyllä. Kaikki tapahtuu selaimessasi. Mitään ei tallenneta tai lähetetä."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Hiilijalanjälkilaskuri – Mittaa ympäristövaikutuksesi",
+    "description": "Laske henkilökohtainen tai perheesi hiilijalanjälki elämäntapatekijöiden perusteella, mukaan lukien liikenne, energiankäyttö, ruokavalio ja kulutustottumukset.",
+    "category": "utilities",
+    "keywords": [
+      "hiilijalanjälkilaskuri",
+      "CO2-päästölaskuri",
+      "hiilipäästöarviointi",
+      "ympäristövaikutuslaskuri",
+      "kasvihuonekaasulaskuri",
+      "henkilökohtainen hiilijalanjälki",
+      "kotitalouspäästölaskuri",
+      "ilmastovaikutusarviointi",
+      "hiilidioksidilaskuri",
+      "ekologinen jalanjälkityökalu"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on hiilijalanjälki ja miksi minun pitäisi mitata sitä?",
+        "answer": "Hiilijalanjälki on toiminnastasi aiheutuvien kasvihuonekaasujen (pääasiassa hiilidioksidin) kokonaismäärä, joka vapautuu ilmakehään. Hiilijalanjälkesi mittaaminen auttaa sinua ymmärtämään henkilökohtaisen vaikutuksesi ilmastonmuutokseen, tunnistamaan alueet, joilla voit tehdä merkittäviä vähennyksiä, ja seuraamaan edistymistäsi ajan myötä. Ymmärtämällä hiilijalanjälkesi voit tehdä tietoisempia päätöksiä liikenteestä, energiankäytöstä, ruokavaliosta ja kulutuksesta, jotka ovat linjassa ympäristön kestävyystavoitteiden kanssa."
+      },
+      {
+        "question": "Miten hiilijalanjälkeni lasketaan?",
+        "answer": "Tämä laskuri arvioi hiilijalanjälkesi analysoimalla keskeisiä elämäntapatekijöitä, mukaan lukien: liikenne (auton tyyppi ja käyttö, lentomatkat, julkinen liikenne), kotitalouden energiankulutus (sähkö, lämmitys, jäähdytys), ruokavalio (lihankulutus, ruokahävikki) ja kulutustottumukset (ostokset, kierrätys). Jokainen toiminta muunnetaan vastaavaksi CO2-päästömääräksi käyttäen tieteellisesti vahvistettuja muuntokertoimia. Laskelma antaa arvion tarkan mittauksen sijaan, koska joitakin tuotteiden ja palveluiden epäsuoria päästöjä on vaikea määrittää tarkasti."
+      },
+      {
+        "question": "Mitä pidetään matalana tai korkeana hiilijalanjälkenä?",
+        "answer": "Keskimääräinen maailmanlaajuinen hiilijalanjälki on noin 4 tonnia CO2:ta henkilöä kohti vuodessa, mutta tämä vaihtelee merkittävästi maan ja elämäntavan mukaan. Kehittyneissä maissa keskiarvo on yleensä 10-20 tonnia henkilöä kohti. Rajoittaaksemme ilmaston lämpenemisen 1,5°C:seen, kuten ilmastotutkijat suosittelevat, maailmanlaajuinen keskiarvo on vähennettävä noin 2 tonniin henkilöä kohti vuoteen 2050 mennessä. Alle 6 tonnin jalanjälkeä pidetään suhteellisen matalana kehittyneissä maissa, kun taas yli 16 tonnin jalanjälkeä pidettäisiin korkeana. Nämä vertailuarvot kuitenkin kehittyvät jatkuvasti ilmastotieteen ymmärryksemme edistyessä."
+      },
+      {
+        "question": "Miten voin pienentää hiilijalanjälkeäni?",
+        "answer": "Tehokkaita tapoja pienentää hiilijalanjälkeäsi ovat: Liikenne - kävely, pyöräily, julkisen liikenteen käyttö, sähköautoon vaihtaminen tai lentomatkojen vähentäminen. Energia - kodin eristyksen parantaminen, energiatehokkaiden laitteiden käyttö, uusiutuviin energialähteisiin siirtyminen ja tietoinen lämmityksen/jäähdytyksen käyttö. Ruokavalio - lihankulutuksen vähentäminen (erityisesti naudanlihan), ruokahävikin minimointi ja paikallisten sekä sesonkituotteiden valitseminen. Kulutus - vähemmän ostaminen, kestävien tuotteiden valitseminen, tavaroiden korjaaminen niiden korvaamisen sijaan ja asianmukainen kierrätys. Jokainen pieni muutos merkitsee, joten aloita muutoksista, jotka sopivat elämäntyyliisi ja ota vähitellen käyttöön lisää."
+      },
+      {
+        "question": "Ovatko tietoni yksityisiä käyttäessäni tätä laskuria?",
+        "answer": "Kyllä, yksityisyytesi on täysin suojattu. Kaikki laskelmat suoritetaan paikallisesti selaimessasi, eikä henkilökohtaisia tietoja siirretä tai tallenneta millekään palvelimelle. Syöttämiäsi tietoja käytetään vain hiilijalanjälkesi laskemiseen, eikä niitä tallenneta sen jälkeen, kun poistut sivulta tai suljet selaimesi. Voit käyttää tätä työkalua täysin luottavaisin mielin siitä, että henkilökohtaiset tietosi pysyvät yksityisinä."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR-koodigeneraattori – Luo mukautettuja QR-koodeja logolla, väreillä ja kehyksillä",
+    "description": "Luo ammattimaisia QR-koodeja mukautetulla brändäyksellä, logoilla, väreillä ja kehyksillä. Täydellinen verkkosivustoille, Wi-Fi-jakamiseen, käyntikorteille ja tapahtumien mainontaan.",
+    "category": "media",
+    "keywords": [
+      "qr-koodigeneraattori",
+      "mukautettu qr-koodi",
+      "luo qr-koodi logolla",
+      "qr-koodi väreillä",
+      "ilmainen qr-koodin luonti",
+      "lataa qr-koodi",
+      "qr-koodi kehyksellä",
+      "qr-koodi verkkosivulle",
+      "qr-koodi Wi-Fi:lle"
+    ],
+    "faq": [
+      {
+        "question": "Mitä voin luoda tällä QR-koodigeneraattorilla?",
+        "answer": "Voit luoda QR-koodeja verkkosivuille, pelkkään tekstiin, yhteystietoihin (vCard), sähköposteihin, puhelinnumeroihin, sijainteihin, tapahtumiin tai Wi-Fi-verkon tunnistetietoihin. Työkalu tukee staattisia QR-koodeja ja tarjoaa mukautusominaisuuksia, kuten logon lisäämisen, väriasetukset ja tyylitellyt kehykset markkinointikäyttöön."
+      },
+      {
+        "question": "Miten lisään logon tai brändikuvakkeen QR-koodiin?",
+        "answer": "Voit ladata logon painamalla \"Valitse logo\" tai vetämällä sen latausalueelle. Logo sijoitetaan QR-koodin keskelle, ja virheenkorjaus varmistaa, että se on edelleen luettavissa. Käytä läpinäkyvää PNG-tiedostoa ja kohtuullista kokoa parhaan lopputuloksen saavuttamiseksi."
+      },
+      {
+        "question": "Voinko muuttaa QR-koodin värejä ja taustaa?",
+        "answer": "Kyllä. Voit valita haluamasi värit koodin etu- ja taustapuolelle. Parhaan skannattavuuden varmistamiseksi suosittelemme tummia värejä koodille ja vaaleaa taustaa. Vältä huonon kontrastin yhdistelmiä, kuten punainen mustalla."
+      },
+      {
+        "question": "Mikä on virheenkorjaus ja mikä taso kannattaa valita?",
+        "answer": "Virheenkorjaus mahdollistaa QR-koodin lukemisen myös silloin, kun se on osittain vaurioitunut tai peitetty. Tasot vaihtelevat L (7 %) -tasosta H (30 %) -tasoon. Jos lisäät logon tai tulostat koodin, suosittelemme tasoa Q tai H varmistaaksesi luotettavan skannauksen."
+      },
+      {
+        "question": "Onko QR-koodin luominen turvallista ja offline-tilassa?",
+        "answer": "Kyllä. Kaikki QR-koodin luominen tapahtuu paikallisesti selaimessasi JavaScriptin avulla. Tietoja ei lähetetä tai tallenneta. Voit luoda koodeja turvallisesti yksityiseen tai arkaluonteiseen käyttöön, kuten salasanoihin tai maksulinkkeihin."
+      },
+      {
+        "question": "Voinko ladata QR-koodin SVG- tai PNG-muodossa?",
+        "answer": "Kyllä. Kun koodi on luotu, voit ladata sen korkearesoluutioisena PNG- tai skaalautuvana SVG-muodossa. Nämä sopivat sekä digitaaliseen että painettuun käyttöön, kuten esitteisiin tai pakkauksiin."
+      }
+    ]
   }
 ]

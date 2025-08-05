@@ -443,5 +443,88 @@
         "answer": "Oui. Toutes les données restent dans votre navigateur. Rien n’est transmis ni stocké."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Calculateur d'Empreinte Carbone – Mesurez Votre Impact Environnemental",
+    "description": "Calculez votre empreinte carbone personnelle ou familiale en fonction de facteurs liés au mode de vie, notamment les transports, la consommation d'énergie, l'alimentation et les habitudes de consommation.",
+    "category": "utilities",
+    "keywords": [
+      "calculateur d'empreinte carbone",
+      "calculateur d'émissions de CO2",
+      "estimateur d'émissions de carbone",
+      "calculateur d'impact environnemental",
+      "calculateur de gaz à effet de serre",
+      "empreinte carbone personnelle",
+      "calculateur d'émissions domestiques",
+      "évaluation de l'impact climatique",
+      "calculateur de dioxyde de carbone",
+      "outil d'empreinte écologique"
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce qu'une empreinte carbone et pourquoi devrais-je la mesurer ?",
+        "answer": "Une empreinte carbone est la quantité totale de gaz à effet de serre (principalement du dioxyde de carbone) libérée dans l'atmosphère à la suite de vos activités. Mesurer votre empreinte carbone vous aide à comprendre votre impact personnel sur le changement climatique, à identifier les domaines où vous pouvez réaliser des réductions significatives et à suivre vos progrès au fil du temps. En comprenant votre empreinte carbone, vous pouvez prendre des décisions plus éclairées concernant les transports, l'utilisation de l'énergie, l'alimentation et la consommation qui s'alignent sur les objectifs de durabilité environnementale."
+      },
+      {
+        "question": "Comment mon empreinte carbone est-elle calculée ?",
+        "answer": "Ce calculateur estime votre empreinte carbone en analysant des facteurs clés liés au mode de vie, notamment : les transports (type et utilisation de voiture, vols, transports en commun), la consommation d'énergie domestique (électricité, chauffage, climatisation), l'alimentation (consommation de viande, gaspillage alimentaire) et les habitudes de consommation (achats, recyclage). Chaque activité est convertie en une quantité équivalente d'émissions de CO2 à l'aide de facteurs de conversion scientifiquement établis. Le calcul fournit une estimation plutôt qu'une mesure exacte, car certaines émissions indirectes provenant de produits et services sont difficiles à quantifier avec précision."
+      },
+      {
+        "question": "Qu'est-ce qui est considéré comme une empreinte carbone faible ou élevée ?",
+        "answer": "L'empreinte carbone moyenne mondiale est d'environ 4 tonnes de CO2 par personne et par an, mais cela varie considérablement selon les pays et les modes de vie. Dans les pays développés, la moyenne est souvent de 10 à 20 tonnes par personne. Pour limiter le réchauffement climatique à 1,5°C, comme le recommandent les scientifiques du climat, la moyenne mondiale doit descendre à environ 2 tonnes par personne d'ici 2050. Une empreinte inférieure à 6 tonnes est considérée comme relativement faible pour les pays développés, tandis que tout ce qui dépasse 16 tonnes serait considéré comme élevé. Cependant, ces références continuent d'évoluer à mesure que notre compréhension de la science du climat progresse."
+      },
+      {
+        "question": "Comment puis-je réduire mon empreinte carbone ?",
+        "answer": "Les moyens efficaces de réduire votre empreinte carbone comprennent : Transports - marcher, faire du vélo, utiliser les transports en commun, passer à un véhicule électrique ou réduire les voyages en avion. Énergie - améliorer l'isolation de votre maison, utiliser des appareils économes en énergie, passer à des sources d'énergie renouvelables et être attentif à l'utilisation du chauffage/climatisation. Alimentation - réduire la consommation de viande (surtout le bœuf), minimiser le gaspillage alimentaire et choisir des aliments locaux et de saison. Consommation - acheter moins, choisir des produits durables, réparer les objets au lieu de les remplacer et recycler correctement. Chaque petit changement s'additionne, alors commencez par des changements qui correspondent à votre mode de vie et incorporez-en progressivement davantage."
+      },
+      {
+        "question": "Mes données sont-elles privées lorsque j'utilise ce calculateur ?",
+        "answer": "Oui, votre vie privée est entièrement protégée. Tous les calculs sont effectués localement dans votre navigateur, et aucune donnée personnelle n'est transmise ou stockée sur un serveur. Les informations que vous saisissez sont utilisées uniquement pour calculer votre empreinte carbone et ne sont pas sauvegardées après avoir quitté la page ou fermé votre navigateur. Vous pouvez utiliser cet outil en toute confiance, sachant que vos informations personnelles restent privées."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "Générateur de QR Code – Créez des QR Codes personnalisés avec logo, couleurs et cadres",
+    "description": "Générez des QR codes professionnels avec image de marque, logos, couleurs et cadres personnalisés. Parfait pour les sites web, le partage Wi-Fi, les cartes de visite et la promotion d’événements.",
+    "category": "media",
+    "keywords": [
+      "générateur de qr code",
+      "qr code personnalisé",
+      "créer qr code avec logo",
+      "qr code avec couleur",
+      "créateur de qr code gratuit",
+      "télécharger qr code",
+      "qr code avec cadre",
+      "qr code pour site web",
+      "qr code pour Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "Que puis-je générer avec ce générateur de QR Code ?",
+        "answer": "Vous pouvez générer des QR codes pour des sites web, du texte brut, des cartes de contact (vCards), des e-mails, des numéros de téléphone, des emplacements, des événements ou des identifiants Wi-Fi. L'outil permet de créer des QR codes statiques avec des options de personnalisation comme l'ajout de logo, le réglage des couleurs et des cadres stylisés pour un usage marketing."
+      },
+      {
+        "question": "Comment ajouter un logo ou une icône de marque à un QR code ?",
+        "answer": "Vous pouvez téléverser votre logo via le bouton « Choisir un logo » ou le glisser-déposer dans la zone de téléchargement. Le logo sera placé au centre du QR code, avec une correction d'erreur adéquate pour garantir sa lisibilité. Pour un meilleur résultat, utilisez un PNG avec fond transparent et une taille modérée."
+      },
+      {
+        "question": "Puis-je changer la couleur et l’arrière-plan du QR code ?",
+        "answer": "Oui. Vous pouvez choisir n’importe quelle combinaison de couleurs pour l’avant-plan et l’arrière-plan du QR code. Pour une meilleure lisibilité, nous recommandons une couleur sombre pour le code et un fond clair. Évitez les combinaisons à faible contraste comme le rouge sur noir."
+      },
+      {
+        "question": "Qu’est-ce que la correction d’erreur et quel niveau choisir ?",
+        "answer": "La correction d’erreur permet de rendre le QR code lisible même s’il est partiellement endommagé ou masqué. Les niveaux vont de L (7 %) à H (30 %) de tolérance. Si vous ajoutez un logo ou imprimez le code, nous recommandons les niveaux Q ou H pour garantir une bonne fiabilité de lecture."
+      },
+      {
+        "question": "La génération de QR code est-elle sécurisée et hors ligne ?",
+        "answer": "Oui. La génération du QR code est entièrement effectuée localement dans votre navigateur grâce à JavaScript. Aucune donnée n’est transmise ni stockée. Vous pouvez donc générer des codes en toute sécurité, même pour des informations privées comme des mots de passe, des liens de paiement ou des contacts professionnels."
+      },
+      {
+        "question": "Puis-je télécharger le QR code au format SVG ou PNG ?",
+        "answer": "Oui. Une fois généré, vous pouvez télécharger le QR code en PNG haute résolution ou au format SVG vectoriel. Ces formats conviennent aussi bien pour des usages numériques qu’imprimés comme les flyers, affiches ou emballages."
+      }
+    ]
   }
 ]

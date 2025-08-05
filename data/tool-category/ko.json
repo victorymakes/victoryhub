@@ -1,32 +1,32 @@
 [
-  {
-    "slug": "all",
-    "name": "모든 도구",
-    "description": "모든 카테고리의 도구 보기",
-    "icon": "grid"
-  },
-  {
-    "slug": "development",
-    "name": "개발",
-    "description": "UUID 생성기, 타임스탬프 변환기, URL 인코더/디코더 등 개발자 유틸리티",
-    "icon": "code"
-  },
-  {
-    "slug": "security",
-    "name": "보안",
-    "description": "비밀번호 생성기 및 IP 확인기와 같은 보안 및 개인정보 보호 도구",
-    "icon": "lock"
-  },
-  {
-    "slug": "media",
-    "name": "미디어/이미지",
-    "description": "이미지, 미디어, 파일 처리를 위한 도구",
-    "icon": "image"
-  },
-  {
-    "slug": "utilities",
-    "name": "유틸리티",
-    "description": "일상 생산성과 계산기 등 실용 도구",
-    "icon": "activity"
-  }
+    {
+        "slug": "all",
+        "name": "모든 도구",
+        "description": "모든 카테고리의 도구 보기",
+        "icon": "grid"
+    },
+    {
+        "slug": "development",
+        "name": "개발",
+        "description": "UUID 생성기, 타임스탬프 변환기, URL 인코더/디코더 등 개발자 유틸리티",
+        "icon": "code"
+    },
+    {
+        "slug": "security",
+        "name": "보안",
+        "description": "비밀번호 생성기 및 IP 확인기와 같은 보안 및 개인정보 보호 도구",
+        "icon": "lock"
+    },
+    {
+        "slug": "media",
+        "name": "미디어/이미지",
+        "description": "이미지, 미디어, 파일 처리를 위한 도구",
+        "icon": "image"
+    },
+    {
+        "slug": "utilities",
+        "name": "유틸리티",
+        "description": "일상 생산성과 계산기 등 실용 도구",
+        "icon": "activity"
+    }
 ]

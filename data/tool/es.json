@@ -443,5 +443,88 @@
         "answer": "Sí. Todo se calcula en tu navegador, sin subir información."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Calculadora de Huella de Carbono – Mide Tu Impacto Ambiental",
+    "description": "Calcula tu huella de carbono personal o familiar basada en factores de estilo de vida incluyendo transporte, uso de energía, dieta y hábitos de consumo.",
+    "category": "utilities",
+    "keywords": [
+      "calculadora de huella de carbono",
+      "calculadora de emisiones de CO2",
+      "estimador de emisiones de carbono",
+      "calculadora de impacto ambiental",
+      "calculadora de gases de efecto invernadero",
+      "huella de carbono personal",
+      "calculadora de emisiones domésticas",
+      "evaluación de impacto climático",
+      "calculadora de dióxido de carbono",
+      "herramienta de huella ecológica"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es una huella de carbono y por qué debería medirla?",
+        "answer": "Una huella de carbono es la cantidad total de gases de efecto invernadero (principalmente dióxido de carbono) liberados a la atmósfera como resultado de tus actividades. Medir tu huella de carbono te ayuda a entender tu impacto personal en el cambio climático, identificar áreas donde puedes hacer reducciones significativas y seguir tu progreso a lo largo del tiempo. Al comprender tu huella de carbono, puedes tomar decisiones más informadas sobre transporte, uso de energía, dieta y consumo que se alineen con los objetivos de sostenibilidad ambiental."
+      },
+      {
+        "question": "¿Cómo se calcula mi huella de carbono?",
+        "answer": "Esta calculadora estima tu huella de carbono analizando factores clave del estilo de vida incluyendo: transporte (tipo de coche y uso, vuelos, transporte público), consumo de energía doméstica (electricidad, calefacción, refrigeración), dieta (consumo de carne, desperdicio de alimentos) y hábitos de consumo (compras, reciclaje). Cada actividad se convierte en una cantidad equivalente de emisiones de CO2 utilizando factores de conversión científicamente establecidos. El cálculo proporciona una estimación en lugar de una medición exacta, ya que algunas emisiones indirectas de productos y servicios son difíciles de cuantificar con precisión."
+      },
+      {
+        "question": "¿Qué se considera una huella de carbono baja o alta?",
+        "answer": "La huella de carbono promedio mundial es aproximadamente de 4 toneladas de CO2 por persona anualmente, pero esto varía significativamente según el país y el estilo de vida. En países desarrollados, el promedio suele ser de 10-20 toneladas por persona. Para limitar el calentamiento global a 1.5°C como recomiendan los científicos del clima, el promedio mundial debe reducirse a aproximadamente 2 toneladas por persona para 2050. Una huella por debajo de 6 toneladas se considera relativamente baja para países desarrollados, mientras que cualquier cosa por encima de 16 toneladas se consideraría alta. Sin embargo, estos puntos de referencia continúan evolucionando a medida que avanza nuestra comprensión de la ciencia climática."
+      },
+      {
+        "question": "¿Cómo puedo reducir mi huella de carbono?",
+        "answer": "Formas efectivas de reducir tu huella de carbono incluyen: Transporte - caminar, andar en bicicleta, usar transporte público, cambiar a un vehículo eléctrico o reducir los viajes en avión. Energía - mejorar el aislamiento del hogar, usar electrodomésticos energéticamente eficientes, cambiar a fuentes de energía renovable y ser consciente del uso de calefacción/refrigeración. Dieta - reducir el consumo de carne (especialmente de res), minimizar el desperdicio de alimentos y elegir alimentos locales y de temporada. Consumo - comprar menos, elegir productos duraderos, reparar artículos en lugar de reemplazarlos y reciclar adecuadamente. Cada pequeño cambio suma, así que comienza con cambios que se adapten a tu estilo de vida e incorpora gradualmente más."
+      },
+      {
+        "question": "¿Mis datos son privados al usar esta calculadora?",
+        "answer": "Sí, tu privacidad está completamente protegida. Todos los cálculos se realizan localmente en tu navegador, y no se transmiten ni almacenan datos personales en ningún servidor. La información que ingresas se utiliza únicamente para calcular tu huella de carbono y no se guarda después de que abandones la página o cierres tu navegador. Puedes usar esta herramienta con total confianza de que tu información personal permanece privada."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "Generador de Códigos QR – Crea Códigos QR Personalizados con Logo, Colores y Marcos",
+    "description": "Genera códigos QR profesionales con personalización de marca, logotipos, colores y marcos. Perfecto para sitios web, compartir Wi-Fi, tarjetas de presentación y promoción de eventos.",
+    "category": "media",
+    "keywords": [
+      "generador de código qr",
+      "código qr personalizado",
+      "crear código qr con logo",
+      "código qr con color",
+      "creador de código qr gratis",
+      "descargar código qr",
+      "código qr con marco",
+      "código qr para sitio web",
+      "código qr para Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué puedo generar con este generador de códigos QR?",
+        "answer": "Puedes generar códigos QR para sitios web, texto plano, tarjetas de contacto (vCards), correos electrónicos, números de teléfono, ubicaciones, eventos o credenciales de redes Wi-Fi. La herramienta permite crear códigos QR estáticos y ofrece funciones de personalización como inserción de logotipo, ajuste de colores y marcos con estilo para uso comercial."
+      },
+      {
+        "question": "¿Cómo agrego un logotipo o icono de marca a un código QR?",
+        "answer": "Puedes subir tu logotipo utilizando el botón \"Elegir logo\" o arrastrarlo al área de carga. El logotipo se colocará en el centro del código QR, con corrección de errores para asegurar que siga siendo escaneable. Para mejores resultados, usa una imagen PNG con fondo transparente y tamaño moderado."
+      },
+      {
+        "question": "¿Puedo cambiar el color y el fondo del código QR?",
+        "answer": "Sí. Puedes elegir cualquier combinación de colores para el fondo y el frente del código QR. Para una lectura óptima, se recomienda usar colores oscuros para el código y fondos claros. Evita combinaciones con poco contraste como rojo sobre negro."
+      },
+      {
+        "question": "¿Qué es la corrección de errores y qué nivel debo elegir?",
+        "answer": "La corrección de errores permite que tu código QR sea legible incluso si está dañado o parcialmente cubierto. Los niveles van desde L (7 %) hasta H (30 %) de tolerancia. Si vas a agregar un logotipo o imprimir el código, se recomienda usar nivel Q o H para mayor fiabilidad de escaneo."
+      },
+      {
+        "question": "¿La generación de códigos QR es segura y funciona sin conexión?",
+        "answer": "Sí. Toda la generación de códigos QR se realiza localmente en tu navegador usando JavaScript. No se suben ni almacenan datos. Puedes generar códigos de forma segura incluso para información privada o sensible como contraseñas, enlaces de pago o datos de contacto profesional."
+      },
+      {
+        "question": "¿Puedo descargar el código QR como SVG o PNG?",
+        "answer": "Sí. Una vez generado, puedes descargar el código QR en formato PNG de alta resolución o SVG escalable. Ambos formatos son ideales tanto para uso digital como para impresión en volantes, carteles o empaques."
+      }
+    ]
   }
 ]

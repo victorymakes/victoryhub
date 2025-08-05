@@ -1,32 +1,32 @@
 [
-  {
-    "slug": "",
-    "name": "Kaikki työkalut",
-    "description": "Näytä kaikki saatavilla olevat työkalut kaikissa kategorioissa",
-    "icon": "grid"
-  },
-  {
-    "slug": "development",
-    "name": "Kehitys",
-    "description": "Kehittäjätyökalut kuten UUID-generaattori, aikaleiman muunnin, URL-kooderi/dekooderi ja muut",
-    "icon": "code"
-  },
-  {
-    "slug": "security",
-    "name": "Turvallisuus",
-    "description": "Turvallisuus- ja yksityisyystyökalut kuten salasanageneraattori ja IP-tarkistaja",
-    "icon": "lock"
-  },
-  {
-    "slug": "media",
-    "name": "Media & Kuvat",
-    "description": "Työkalut kuvien, median ja tiedostojen käsittelyyn",
-    "icon": "image"
-  },
-  {
-    "slug": "utilities",
-    "name": "Hyötyohjelmat",
-    "description": "Päivittäiset tuottavuustyökalut ja laskimet",
-    "icon": "activity"
-  }
+    {
+        "slug": "",
+        "name": "Kaikki työkalut",
+        "description": "Näytä kaikki saatavilla olevat työkalut kaikissa kategorioissa",
+        "icon": "grid"
+    },
+    {
+        "slug": "development",
+        "name": "Kehitys",
+        "description": "Kehittäjätyökalut kuten UUID-generaattori, aikaleiman muunnin, URL-kooderi/dekooderi ja muut",
+        "icon": "code"
+    },
+    {
+        "slug": "security",
+        "name": "Turvallisuus",
+        "description": "Turvallisuus- ja yksityisyystyökalut kuten salasanageneraattori ja IP-tarkistaja",
+        "icon": "lock"
+    },
+    {
+        "slug": "media",
+        "name": "Media & Kuvat",
+        "description": "Työkalut kuvien, median ja tiedostojen käsittelyyn",
+        "icon": "image"
+    },
+    {
+        "slug": "utilities",
+        "name": "Hyötyohjelmat",
+        "description": "Päivittäiset tuottavuustyökalut ja laskimet",
+        "icon": "activity"
+    }
 ]

@@ -526,5 +526,45 @@
         "answer": "Yes. All BMR calculations are performed locally in your browser. No personal data is uploaded or stored on any server, ensuring your information remains completely private."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "Carbon Footprint Calculator – Measure Your Environmental Impact",
+    "description": "Calculate your personal or household carbon footprint based on lifestyle factors including transportation, energy usage, diet, and consumption habits.",
+    "category": "utilities",
+    "keywords": [
+      "carbon footprint calculator",
+      "co2 emissions calculator",
+      "carbon emissions estimator",
+      "environmental impact calculator",
+      "greenhouse gas calculator",
+      "personal carbon footprint",
+      "household emissions calculator",
+      "climate impact assessment",
+      "carbon dioxide calculator",
+      "ecological footprint tool"
+    ],
+    "faq": [
+      {
+        "question": "What is a carbon footprint and why should I measure it?",
+        "answer": "A carbon footprint is the total amount of greenhouse gases (primarily carbon dioxide) released into the atmosphere as a result of your activities. Measuring your carbon footprint helps you understand your personal impact on climate change, identify areas where you can make meaningful reductions, and track your progress over time. By understanding your carbon footprint, you can make more informed choices about transportation, energy use, diet, and consumption that align with environmental sustainability goals."
+      },
+      {
+        "question": "How is my carbon footprint calculated?",
+        "answer": "This calculator estimates your carbon footprint by analyzing key lifestyle factors including: transportation (car type and usage, flights, public transit), home energy consumption (electricity, heating, cooling), diet (meat consumption, food waste), and consumption habits (shopping, recycling). Each activity is converted to an equivalent amount of CO2 emissions using scientifically established conversion factors. The calculation provides an estimate rather than an exact measurement, as some indirect emissions from products and services are difficult to precisely quantify."
+      },
+      {
+        "question": "What's considered a low or high carbon footprint?",
+        "answer": "The global average carbon footprint is approximately 4 tons of CO2 per person annually, but this varies significantly by country and lifestyle. In developed countries, the average is often 10-20 tons per person. For context, to limit global warming to 1.5°C as recommended by climate scientists, the global average needs to drop to about 2 tons per person by 2050. A footprint below 6 tons is considered relatively low for developed countries, while anything above 16 tons would be considered high. However, these benchmarks continue to evolve as our understanding of climate science advances."
+      },
+      {
+        "question": "How can I reduce my carbon footprint?",
+        "answer": "Effective ways to reduce your carbon footprint include: Transportation - walk, cycle, use public transit, switch to an electric vehicle, or reduce air travel. Energy - improve home insulation, use energy-efficient appliances, switch to renewable energy sources, and be mindful of heating/cooling usage. Diet - reduce meat consumption (especially beef), minimize food waste, and choose local, seasonal foods. Consumption - buy less, choose durable products, repair items instead of replacing them, and recycle properly. Every small change adds up, so start with changes that fit your lifestyle and gradually incorporate more as you can."
+      },
+      {
+        "question": "Is my data private when using this calculator?",
+        "answer": "Yes, your privacy is fully protected. All calculations are performed locally in your browser, and no personal data is transmitted to or stored on any server. The information you enter is used solely to calculate your carbon footprint and is not saved after you leave the page or close your browser. You can use this tool with complete confidence that your personal information remains private."
+      }
+    ]
   }
 ]

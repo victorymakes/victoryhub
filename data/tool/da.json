@@ -438,5 +438,88 @@
         "answer": "Ja. Alle beregninger foregår i din browser – ingen data sendes eller gemmes."
       }
     ]
+  },
+  {
+    "slug": "carbon-footprint-calculator",
+    "name": "CO2-fodaftryksberegner – Mål din miljøpåvirkning",
+    "description": "Beregn dit personlige eller families CO2-fodaftryk baseret på livsstilsfaktorer, herunder transport, energiforbrug, kost og forbrugsvaner.",
+    "category": "utilities",
+    "keywords": [
+      "CO2-fodaftryksberegner",
+      "kulstofaftryksberegner",
+      "CO2-udledningsberegner",
+      "miljøpåvirkningsberegner",
+      "drivhusgasberegner",
+      "personligt CO2-fodaftryk",
+      "husholdningsudledningsberegner",
+      "klimapåvirkningsvurdering",
+      "kuldioxidberegner",
+      "økologisk fodaftryksværktøj"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er et CO2-fodaftryk, og hvorfor bør jeg måle det?",
+        "answer": "Et CO2-fodaftryk er den samlede mængde drivhusgasser (primært kuldioxid), der udledes til atmosfæren som følge af dine aktiviteter. At måle dit CO2-fodaftryk hjælper dig med at forstå din personlige indvirkning på klimaforandringerne, identificere områder, hvor du kan foretage betydelige reduktioner, og spore dine fremskridt over tid. Ved at forstå dit CO2-fodaftryk kan du træffe mere informerede beslutninger om transport, energiforbrug, kost og forbrug, der er i overensstemmelse med målene for miljømæssig bæredygtighed."
+      },
+      {
+        "question": "Hvordan beregnes mit CO2-fodaftryk?",
+        "answer": "Denne beregner estimerer dit CO2-fodaftryk ved at analysere nøglefaktorer i din livsstil, herunder: transport (biltype og -brug, flyrejser, offentlig transport), husholdningens energiforbrug (elektricitet, opvarmning, køling), kost (kødforbrug, madspild) og forbrugsvaner (indkøb, genbrug). Hver aktivitet konverteres til en tilsvarende mængde CO2-udledning ved hjælp af videnskabeligt etablerede konverteringsfaktorer. Beregningen giver et estimat i stedet for en nøjagtig måling, da nogle indirekte udledninger fra produkter og tjenester er vanskelige at kvantificere præcist."
+      },
+      {
+        "question": "Hvad betragtes som et lavt eller højt CO2-fodaftryk?",
+        "answer": "Det gennemsnitlige globale CO2-fodaftryk er cirka 4 tons CO2 pr. person årligt, men dette varierer betydeligt efter land og livsstil. I udviklede lande ligger gennemsnittet typisk på 10-20 tons pr. person. For at begrænse den globale opvarmning til 1,5°C, som anbefalet af klimaforskere, skal det globale gennemsnit reduceres til omkring 2 tons pr. person inden 2050. Et fodaftryk under 6 tons betragtes som relativt lavt for udviklede lande, mens alt over 16 tons ville blive betragtet som højt. Disse benchmarks fortsætter dog med at udvikle sig, efterhånden som vores forståelse af klimavidenskab skrider frem."
+      },
+      {
+        "question": "Hvordan kan jeg reducere mit CO2-fodaftryk?",
+        "answer": "Effektive måder at reducere dit CO2-fodaftryk på omfatter: Transport - gå, cykle, bruge offentlig transport, skifte til elektrisk køretøj eller reducere flyrejser. Energi - forbedre hjemmets isolering, bruge energieffektive apparater, skifte til vedvarende energikilder og være bevidst om opvarmning/køling. Kost - reducere kødforbruget (især oksekød), minimere madspild og vælge lokale og sæsonbestemte fødevarer. Forbrug - købe mindre, vælge holdbare produkter, reparere genstande i stedet for at erstatte dem og genbruge korrekt. Hver lille ændring tæller, så begynd med ændringer, der passer til din livsstil, og implementer gradvist flere."
+      },
+      {
+        "question": "Er mine data private, når jeg bruger denne beregner?",
+        "answer": "Ja, dit privatliv er fuldt beskyttet. Alle beregninger udføres lokalt i din browser, og ingen personlige data overføres eller gemmes på nogen servere. De oplysninger, du indtaster, bruges kun til at beregne dit CO2-fodaftryk og gemmes ikke, efter du forlader siden eller lukker din browser. Du kan bruge dette værktøj med fuld tillid til, at dine personlige oplysninger forbliver private."
+      }
+    ]
+  },
+  {
+    "slug": "qrcode-generator",
+    "name": "QR-kodegenerator – Opret tilpassede QR-koder med logo, farver og rammer",
+    "description": "Generér professionelle QR-koder med tilpasset branding, logoer, farver og rammer. Perfekt til websites, Wi-Fi-deling, visitkort og markedsføring af events.",
+    "category": "media",
+    "keywords": [
+      "qr kodegenerator",
+      "tilpasset qr kode",
+      "opret qr kode med logo",
+      "qr kode med farve",
+      "gratis qr kodeværktøj",
+      "download qr kode",
+      "qr kode med ramme",
+      "qr kode til website",
+      "qr kode til Wi-Fi"
+    ],
+    "faq": [
+      {
+        "question": "Hvad kan jeg generere med denne QR-kodegenerator?",
+        "answer": "Du kan generere QR-koder til websites, almindelig tekst, kontaktkort (vCards), e-mails, telefonnumre, placeringer, begivenheder eller Wi-Fi-netværksoplysninger. Værktøjet understøtter oprettelse af statiske QR-koder og tilbyder tilpasningsfunktioner som indsættelse af logo, farvevalg og stilfulde rammer til markedsføringsbrug."
+      },
+      {
+        "question": "Hvordan tilføjer jeg et logo eller ikon til en QR-kode?",
+        "answer": "Du kan uploade dit logo ved at klikke på knappen \"Vælg logo\" eller trække og slippe det i uploadområdet. Logoet placeres i midten af QR-koden med passende fejlkorrigering, så det stadig kan scannes. Brug en PNG med gennemsigtig baggrund og moderat størrelse for det bedste resultat."
+      },
+      {
+        "question": "Kan jeg ændre farven og baggrunden på QR-koden?",
+        "answer": "Ja. Du kan vælge enhver farvekombination til forgrund og baggrund. For optimal læsbarhed anbefales mørke farver til koden og lyse baggrunde. Undgå lavkontrastpar som rød på sort."
+      },
+      {
+        "question": "Hvad er fejlkorrigering, og hvilket niveau skal jeg vælge?",
+        "answer": "Fejlkorrigering gør det muligt at scanne QR-koden, selv hvis en del af den er beskadiget eller dækket. Niveauerne går fra L (7 %) til H (30 %) fejltolerance. Hvis du tilføjer et logo eller udskriver koden, anbefaler vi niveau Q eller H for at sikre pålidelig scanning."
+      },
+      {
+        "question": "Er det sikkert og offline at generere QR-koder?",
+        "answer": "Ja. Al generering af QR-koder udføres lokalt i din browser ved hjælp af JavaScript. Ingen data uploades eller gemmes. Du kan sikkert generere koder til privat eller følsomt brug såsom adgangskoder, betalingslinks eller forretningskontaktoplysninger."
+      },
+      {
+        "question": "Kan jeg downloade QR-koden som SVG eller PNG?",
+        "answer": "Ja. Når QR-koden er genereret, kan du downloade den som PNG i høj opløsning eller skalerbar SVG. Disse formater egner sig godt til både digital og trykt brug som flyers, plakater eller emballage."
+      }
+    ]
   }
 ]
