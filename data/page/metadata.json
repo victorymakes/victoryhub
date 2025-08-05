@@ -1,2237 +1,2237 @@
 {
-    "da": [
+  "da": [
+    {
+      "slug": "contact",
+      "title": "Kontakt os",
+      "description": "Kontakt os for spørgsmål, feedback eller support. Send os en e-mail eller kontakt os på Twitter, og vi svarer så hurtigt som muligt.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Kontakt os",
-            "description": "Kontakt os for spørgsmål, feedback eller support. Send os en e-mail eller kontakt os på Twitter, og vi svarer så hurtigt som muligt.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Kontakt"
-                },
-                {
-                    "id": "support",
-                    "name": "Support"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Generelt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "da",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "contact",
+          "name": "Kontakt"
         },
         {
-            "slug": "privacy",
-            "title": "Privatlivspolitik",
-            "description": "Find ud af, hvordan vi beskytter dine personlige oplysninger og respekterer dit privatliv. Denne politik forklarer, hvilke oplysninger vi indsamler, hvordan vi bruger dem, og dine rettigheder vedrørende dine data.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Privatliv"
-                },
-                {
-                    "id": "policy",
-                    "name": "Politik"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridisk"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "da",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Brugsvilkår",
-            "description": "Gennemgå vores brugsvilkår for at forstå dine rettigheder og forpligtelser, når du bruger vores hjemmeside. Dette dokument dækker brug, begrænsninger og juridiske ansvarsfraskrivelser.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Vilkår"
-                },
-                {
-                    "id": "legal",
-                    "name": "Juridisk"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridisk"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "da",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Velkommen til vores hjemmeside: Essentielle onlineværktøjer til alle nu tilgængelige",
-            "description": "Udforsk vores nyligt lancerede hjemmeside med essentielle onlineværktøjer til udviklere, designere og hverdagsbrugere. Fra UUID-generatorer til adgangskodeskabere, find det perfekte værktøj til enhver opgave. Lær om vores nuværende tilbud og spændende funktioner på vej.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Webværktøjer"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Produktivitet"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Generelt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "da",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Hvordan jeg byggede og lancerede et flersproget SEO-venligt værktøjswebsite på en uge med AI",
-            "description": "Lær hvordan en indie-hacker byggede og lancerede et flersproget, SEO-optimeret værktøjswebsite på kun en uge ved hjælp af AI. Opdag tech-stacken, arbejdsgangen og lektionerne for hurtig, effektiv solo-udvikling.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie-hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Flersproget"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Webværktøjer"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Udvikling"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "da",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "support",
+          "name": "Support"
         }
-    ],
-    "de": [
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Privatlivspolitik",
+      "description": "Find ud af, hvordan vi beskytter dine personlige oplysninger og respekterer dit privatliv. Denne politik forklarer, hvilke oplysninger vi indsamler, hvordan vi bruger dem, og dine rettigheder vedrørende dine data.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Kontaktieren Sie uns",
-            "description": "Kontaktieren Sie uns für Fragen, Feedback oder Support. Schreiben Sie uns eine E-Mail oder kontaktieren Sie uns über Twitter, und wir werden uns so schnell wie möglich bei Ihnen melden.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Kontakt"
-                },
-                {
-                    "id": "support",
-                    "name": "Support"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Allgemein"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "de",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "privacy",
+          "name": "Privatliv"
         },
         {
-            "slug": "privacy",
-            "title": "Datenschutzrichtlinie",
-            "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und Ihre Privatsphäre respektieren. Diese Richtlinie erklärt, welche Informationen wir sammeln, wie wir sie verwenden und welche Rechte Sie in Bezug auf Ihre Daten haben.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Datenschutz"
-                },
-                {
-                    "id": "policy",
-                    "name": "Richtlinie"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Rechtliches"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "de",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Nutzungsbedingungen",
-            "description": "Lesen Sie unsere Nutzungsbedingungen, um Ihre Rechte und Pflichten bei der Nutzung unserer Website zu verstehen. Dieses Dokument umfasst Nutzung, Einschränkungen und rechtliche Haftungsausschlüsse.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Bedingungen"
-                },
-                {
-                    "id": "legal",
-                    "name": "Rechtliches"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Rechtliches"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "de",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Willkommen auf unserer Website: Wesentliche Online-Tools für alle jetzt verfügbar",
-            "description": "Entdecken Sie unsere neu gestartete Website mit wesentlichen Online-Tools für Entwickler, Designer und alltägliche Benutzer. Von UUID-Generatoren bis zu Passwort-Erstellern, finden Sie das perfekte Tool für jede Aufgabe. Erfahren Sie mehr über unsere aktuellen Angebote und kommende spannende Funktionen.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Web-Tools"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Produktivität"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Allgemein"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "de",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Wie ich in einer Woche mit KI eine mehrsprachige, SEO-freundliche Tools-Website aufgebaut und gestartet habe",
-            "description": "Erfahren Sie, wie ein Indie-Hacker in nur einer Woche mit KI eine mehrsprachige, SEO-optimierte Tools-Website aufgebaut und gestartet hat. Entdecken Sie den Tech-Stack, Workflow und Lektionen für schnelle, effektive Solo-Entwicklung.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie-Hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "KI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Mehrsprachigkeit"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Web-Tools"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Entwicklung"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "de",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "policy",
+          "name": "Politik"
         }
-    ],
-    "en": [
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Brugsvilkår",
+      "description": "Gennemgå vores brugsvilkår for at forstå dine rettigheder og forpligtelser, når du bruger vores hjemmeside. Dette dokument dækker brug, begrænsninger og juridiske ansvarsfraskrivelser.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Contact Us",
-            "description": "Get in touch with us for questions, feedback, or support. Reach out via email or Twitter and we'll respond as soon as possible.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Contact"
-                },
-                {
-                    "id": "support",
-                    "name": "Support"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "General"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "en",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "terms",
+          "name": "Vilkår"
         },
         {
-            "slug": "privacy",
-            "title": "Privacy Policy",
-            "description": "Learn how we protect your personal data and respect your privacy. This policy explains what information we collect, how we use it, and your rights regarding your data.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Privacy"
-                },
-                {
-                    "id": "policy",
-                    "name": "Policy"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Legal"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "en",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Terms of Service",
-            "description": "Read our terms of service to understand your rights and responsibilities when using our website. This document covers usage, limitations, and legal disclaimers.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Terms"
-                },
-                {
-                    "id": "legal",
-                    "name": "Legal"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Legal"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "en",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Welcome to Our Website: Essential Online Tools for Everyone Now Live",
-            "description": "Discover our newly launched website featuring essential online tools for developers, designers, and everyday users. From UUID generators to password creators, find the perfect tool for any task. Learn about our current offerings and exciting upcoming features.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Web Tools"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Productivity"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "General"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "en",
-            "readingTime": 6,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "How I Built and Launched a Multi-Language SEO-Friendly Tools Website in One Week with AI",
-            "description": "Learn how an indie hacker built and launched a multi-language, SEO-optimized tools website in just one week using AI. Discover the tech stack, workflow, and lessons for fast, effective solo development.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie Hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Multi-Language"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Web Tools"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Development"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "en",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "legal",
+          "name": "Juridisk"
         }
-    ],
-    "es": [
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Velkommen til vores hjemmeside: Essentielle onlineværktøjer til alle nu tilgængelige",
+      "description": "Udforsk vores nyligt lancerede hjemmeside med essentielle onlineværktøjer til udviklere, designere og hverdagsbrugere. Fra UUID-generatorer til adgangskodeskabere, find det perfekte værktøj til enhver opgave. Lær om vores nuværende tilbud og spændende funktioner på vej.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Contáctenos",
-            "description": "Contáctenos para preguntas, comentarios o soporte. Envíenos un correo electrónico o contáctenos en Twitter, y le responderemos lo antes posible.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Contacto"
-                },
-                {
-                    "id": "support",
-                    "name": "Soporte"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "General"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "es",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "web-tools",
+          "name": "Webværktøjer"
         },
         {
-            "slug": "privacy",
-            "title": "Política de Privacidad",
-            "description": "Descubra cómo protegemos sus datos personales y respetamos su privacidad. Esta política explica qué información recopilamos, cómo la usamos y sus derechos con respecto a sus datos.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Privacidad"
-                },
-                {
-                    "id": "policy",
-                    "name": "Política"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Legal"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "es",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Términos de Servicio",
-            "description": "Revise nuestros términos de servicio para entender sus derechos y obligaciones al usar nuestro sitio web. Este documento cubre el uso, limitaciones y descargos de responsabilidad legales.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Términos"
-                },
-                {
-                    "id": "legal",
-                    "name": "Legal"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Legal"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "es",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Bienvenido a nuestro sitio web: Herramientas en línea esenciales para todos ahora disponibles",
-            "description": "Descubra nuestro sitio web recién lanzado con herramientas en línea esenciales para desarrolladores, diseñadores y usuarios cotidianos. Desde generadores de UUID hasta creadores de contraseñas, encuentre la herramienta perfecta para cada tarea. Conozca nuestras ofertas actuales y las emocionantes funciones que están por venir.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Herramientas web"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Productividad"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "General"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "es",
-            "readingTime": 3,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Cómo construí y lancé un sitio web de herramientas multilingüe optimizado para SEO en una semana con IA",
-            "description": "Aprende cómo un desarrollador independiente construyó y lanzó un sitio web de herramientas multilingüe optimizado para SEO en solo una semana usando IA. Descubre el stack tecnológico, el flujo de trabajo y las lecciones para un desarrollo individual rápido y efectivo.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Desarrollo independiente"
-                },
-                {
-                    "id": "ai",
-                    "name": "IA"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Multilingüe"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Herramientas web"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Desarrollo"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "es",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "productivity",
+          "name": "Produktivitet"
         }
-    ],
-    "fi": [
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Hvordan jeg byggede og lancerede et flersproget SEO-venligt værktøjswebsite på en uge med AI",
+      "description": "Lær hvordan en indie-hacker byggede og lancerede et flersproget, SEO-optimeret værktøjswebsite på kun en uge ved hjælp af AI. Opdag tech-stacken, arbejdsgangen og lektionerne for hurtig, effektiv solo-udvikling.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Ota yhteyttä",
-            "description": "Ota yhteyttä kysymyksiä, palautetta tai tukea varten. Lähetä meille sähköpostia tai ota yhteyttä Twitterissä, ja vastaamme mahdollisimman pian.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Yhteystiedot"
-                },
-                {
-                    "id": "support",
-                    "name": "Tuki"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Yleinen"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fi",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "indie-hacking",
+          "name": "Indie-hacking"
         },
         {
-            "slug": "privacy",
-            "title": "Tietosuojakäytäntö",
-            "description": "Ota selvää, miten suojaamme henkilötietojasi ja kunnioitamme yksityisyyttäsi. Tämä käytäntö selittää, mitä tietoja keräämme, miten käytämme niitä ja oikeutesi tietoihisi liittyen.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Yksityisyys"
-                },
-                {
-                    "id": "policy",
-                    "name": "Käytäntö"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Lakiasiat"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fi",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "ai",
+          "name": "AI"
         },
         {
-            "slug": "terms",
-            "title": "Käyttöehdot",
-            "description": "Tarkista käyttöehtomme ymmärtääksesi oikeutesi ja velvollisuutesi käyttäessäsi verkkosivustoamme. Tämä asiakirja kattaa käytön, rajoitukset ja oikeudelliset vastuuvapauslausekkeet.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Ehdot"
-                },
-                {
-                    "id": "legal",
-                    "name": "Lakiasiat"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Lakiasiat"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fi",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "seo",
+          "name": "SEO"
         },
         {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Tervetuloa verkkosivustollemme: Olennaiset verkkotyökalut kaikille nyt saatavilla",
-            "description": "Tutustu äskettäin julkaistuun verkkosivustoomme, joka tarjoaa olennaisia verkkotyökaluja kehittäjille, suunnittelijoille ja jokapäiväisille käyttäjille. UUID-generaattoreista salasanojen luojiin, löydä täydellinen työkalu jokaiseen tehtävään. Opi nykyisistä tarjouksistamme ja tulevista jännittävistä ominaisuuksista.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Verkkotyökalut"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Tuottavuus"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Yleinen"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fi",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
+          "id": "multi-language",
+          "name": "Flersproget"
         },
         {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Kuinka rakensin ja julkaisin monikielisen SEO-ystävällisen työkalusivuston viikossa tekoälyn avulla",
-            "description": "Opi kuinka indie-hakkeri rakensi ja julkaisi monikielisen, SEO-optimoidun työkalusivuston vain viikossa tekoälyn avulla. Tutustu teknologiapinoon, työnkulkuun ja oppeihin nopeaa, tehokasta yksilökehitystä varten.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie-hakkerointi"
-                },
-                {
-                    "id": "ai",
-                    "name": "Tekoäly"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Monikielisyys"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Verkkotyökalut"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Kehitys"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fi",
-            "readingTime": 4,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "web-tools",
+          "name": "Webværktøjer"
         }
-    ],
-    "fr": [
+      ],
+      "category": {
+        "id": "development",
+        "name": "Udvikling"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "de": [
+    {
+      "slug": "contact",
+      "title": "Kontaktieren Sie uns",
+      "description": "Kontaktieren Sie uns für Fragen, Feedback oder Support. Schreiben Sie uns eine E-Mail oder kontaktieren Sie uns über Twitter, und wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Contactez-nous",
-            "description": "Contactez-nous pour des questions, des commentaires ou du support. Envoyez-nous un email ou contactez-nous sur Twitter, et nous vous répondrons dès que possible.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Contact"
-                },
-                {
-                    "id": "support",
-                    "name": "Support"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Général"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fr",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "contact",
+          "name": "Kontakt"
         },
         {
-            "slug": "privacy",
-            "title": "Politique de Confidentialité",
-            "description": "Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée. Cette politique explique quelles informations nous collectons, comment nous les utilisons et vos droits concernant vos données.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Confidentialité"
-                },
-                {
-                    "id": "policy",
-                    "name": "Politique"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridique"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fr",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Conditions d'Utilisation",
-            "description": "Consultez nos conditions d'utilisation pour comprendre vos droits et obligations lors de l'utilisation de notre site web. Ce document couvre l'utilisation, les limitations et les clauses de non-responsabilité légales.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Conditions"
-                },
-                {
-                    "id": "legal",
-                    "name": "Juridique"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridique"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fr",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Bienvenue sur notre site web : Des outils en ligne essentiels pour tous maintenant disponibles",
-            "description": "Découvrez notre site web récemment lancé avec des outils en ligne essentiels pour les développeurs, les designers et les utilisateurs quotidiens. Des générateurs d'UUID aux créateurs de mots de passe, trouvez l'outil parfait pour chaque tâche. Découvrez nos offres actuelles et les fonctionnalités passionnantes à venir.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Outils web"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Productivité"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Général"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fr",
-            "readingTime": 3,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Comment j'ai construit et lancé un site d'outils multilingue optimisé pour le SEO en une semaine avec l'IA",
-            "description": "Découvrez comment un développeur indépendant a construit et lancé un site d'outils multilingue optimisé pour le SEO en seulement une semaine grâce à l'IA. Explorez la stack technique, le workflow et les leçons pour un développement solo rapide et efficace.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Développement indépendant"
-                },
-                {
-                    "id": "ai",
-                    "name": "IA"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Multilingue"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Outils web"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Développement"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "fr",
-            "readingTime": 6,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "support",
+          "name": "Support"
         }
-    ],
-    "it": [
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allgemein"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Datenschutzrichtlinie",
+      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und Ihre Privatsphäre respektieren. Diese Richtlinie erklärt, welche Informationen wir sammeln, wie wir sie verwenden und welche Rechte Sie in Bezug auf Ihre Daten haben.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Contattaci",
-            "description": "Contattaci per domande, feedback o supporto. Inviaci un'email o contattaci su Twitter, e ti risponderemo il prima possibile.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Contatto"
-                },
-                {
-                    "id": "support",
-                    "name": "Supporto"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Generale"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "it",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "privacy",
+          "name": "Datenschutz"
         },
         {
-            "slug": "privacy",
-            "title": "Informativa sulla Privacy",
-            "description": "Scopri come proteggiamo le tue informazioni personali e rispettiamo la tua privacy. Questa informativa spiega quali informazioni raccogliamo, come le utilizziamo e i tuoi diritti riguardo ai tuoi dati.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Privacy"
-                },
-                {
-                    "id": "policy",
-                    "name": "Informativa"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Legale"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "it",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Termini di Servizio",
-            "description": "Rivedi i nostri termini di servizio per comprendere i tuoi diritti e obblighi quando utilizzi il nostro sito web. Questo documento copre utilizzo, limitazioni ed esoneri legali.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Termini"
-                },
-                {
-                    "id": "legal",
-                    "name": "Legale"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Legale"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "it",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Benvenuto sul nostro sito web: Strumenti online essenziali per tutti ora disponibili",
-            "description": "Scopri il nostro sito web appena lanciato con strumenti online essenziali per sviluppatori, designer e utenti quotidiani. Dai generatori UUID ai creatori di password, trova lo strumento perfetto per ogni attività. Scopri le nostre offerte attuali e le entusiasmanti funzionalità in arrivo.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Strumenti Web"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Produttività"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Generale"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "it",
-            "readingTime": 3,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Come ho costruito e lanciato un sito web di strumenti multilingue ottimizzato per SEO in una settimana con l'IA",
-            "description": "Scopri come uno sviluppatore indipendente ha costruito e lanciato un sito web di strumenti multilingue ottimizzato per SEO in una sola settimana utilizzando l'IA. Esplora lo stack tecnologico, il flusso di lavoro e le lezioni per uno sviluppo rapido ed efficace in solitaria.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie Hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "IA"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Multilingue"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Strumenti Web"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Sviluppo"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "it",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "policy",
+          "name": "Richtlinie"
         }
-    ],
-    "ja": [
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Rechtliches"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Nutzungsbedingungen",
+      "description": "Lesen Sie unsere Nutzungsbedingungen, um Ihre Rechte und Pflichten bei der Nutzung unserer Website zu verstehen. Dieses Dokument umfasst Nutzung, Einschränkungen und rechtliche Haftungsausschlüsse.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "お問い合わせ",
-            "description": "ご質問、ご意見、サポートのご連絡はこちらから。メールまたはTwitterでお気軽にご連絡ください。",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "お問い合わせ"
-                },
-                {
-                    "id": "support",
-                    "name": "サポート"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "一般"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ja",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "terms",
+          "name": "Bedingungen"
         },
         {
-            "slug": "privacy",
-            "title": "プライバシーポリシー",
-            "description": "個人データの保護とプライバシーの尊重についてご説明します。本ポリシーでは、収集する情報、利用方法、データに関する権利について記載しています。",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "プライバシー"
-                },
-                {
-                    "id": "policy",
-                    "name": "ポリシー"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "法務"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ja",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "利用規約",
-            "description": "当ウェブサイトの利用に関する権利と責任についてご確認ください。本規約では利用方法、制限事項、法的免責事項などを記載しています。",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "利用規約"
-                },
-                {
-                    "id": "legal",
-                    "name": "法務"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "法務"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ja",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "ウェブサイトへようこそ：誰でも使える必須オンラインツールが正式公開",
-            "description": "開発者、デザイナー、一般ユーザー向けの必須オンラインツールを特集した新しく公開されたウェブサイトをご紹介します。UUIDジェネレーターからパスワード作成ツールまで、あらゆるタスクに最適なツールを見つけてください。現在の機能と今後の予定についてもご紹介します。",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "ウェブツール"
-                },
-                {
-                    "id": "productivity",
-                    "name": "生産性"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "一般"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ja",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "AIを活用して1週間でマルチ言語SEOフレンドリーなツールウェブサイトを構築・公開した方法",
-            "description": "インディーハッカーがAIを活用して、わずか1週間でマルチ言語対応、SEO最適化されたツールウェブサイトを構築・公開した方法を学びましょう。迅速で効果的なソロ開発のための技術スタック、ワークフロー、教訓を発見してください。",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "インディーハッキング"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "多言語"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "ウェブツール"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "開発"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ja",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "legal",
+          "name": "Rechtliches"
         }
-    ],
-    "ko": [
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Rechtliches"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Willkommen auf unserer Website: Wesentliche Online-Tools für alle jetzt verfügbar",
+      "description": "Entdecken Sie unsere neu gestartete Website mit wesentlichen Online-Tools für Entwickler, Designer und alltägliche Benutzer. Von UUID-Generatoren bis zu Passwort-Erstellern, finden Sie das perfekte Tool für jede Aufgabe. Erfahren Sie mehr über unsere aktuellen Angebote und kommende spannende Funktionen.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "문의하기",
-            "description": "질문, 피드백, 지원이 필요하신 경우 언제든지 이메일 또는 트위터로 연락해 주세요.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "문의"
-                },
-                {
-                    "id": "support",
-                    "name": "지원"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "일반"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ko",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "web-tools",
+          "name": "Web-Tools"
         },
         {
-            "slug": "privacy",
-            "title": "개인정보 처리방침",
-            "description": "귀하의 개인정보 보호와 프라이버시를 존중합니다. 본 정책은 수집하는 정보, 사용 방법, 데이터에 대한 귀하의 권리를 설명합니다.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "프라이버시"
-                },
-                {
-                    "id": "policy",
-                    "name": "정책"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "법률"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ko",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "이용약관",
-            "description": "웹사이트 이용 시 권리와 책임을 확인하세요. 본 문서는 이용 방법, 제한 사항, 법적 면책 조항을 포함합니다.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "이용약관"
-                },
-                {
-                    "id": "legal",
-                    "name": "법률"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "법률"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ko",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "웹사이트에 오신 것을 환영합니다: 모든 사람을 위한 필수 온라인 도구가 공식 출시되었습니다",
-            "description": "개발자, 디자이너, 일반 사용자를 위한 필수 온라인 도구를 제공하는 새로 출시된 웹사이트를 소개합니다. UUID 생성기부터 비밀번호 생성기까지, 모든 작업에 완벽한 도구를 찾아보세요. 현재 제공되는 기능과 향후 계획에 대해 알아보세요.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "웹 도구"
-                },
-                {
-                    "id": "productivity",
-                    "name": "생산성"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "일반"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ko",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.pngp",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "AI를 활용하여 일주일 만에 다국어 SEO 친화적인 도구 웹사이트를 구축하고 출시한 방법",
-            "description": "인디 해커가 AI를 활용하여 단 일주일 만에 다국어, SEO 최적화된 도구 웹사이트를 구축하고 출시한 방법을 알아보세요. 빠르고 효과적인 솔로 개발을 위한 기술 스택, 워크플로우 및 교훈을 발견하세요.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "인디 해킹"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "다국어"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "웹 도구"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "개발"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ko",
-            "readingTime": 4,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "productivity",
+          "name": "Produktivität"
         }
-    ],
-    "nl": [
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allgemein"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Wie ich in einer Woche mit KI eine mehrsprachige, SEO-freundliche Tools-Website aufgebaut und gestartet habe",
+      "description": "Erfahren Sie, wie ein Indie-Hacker in nur einer Woche mit KI eine mehrsprachige, SEO-optimierte Tools-Website aufgebaut und gestartet hat. Entdecken Sie den Tech-Stack, Workflow und Lektionen für schnelle, effektive Solo-Entwicklung.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Neem contact met ons op",
-            "description": "Neem contact met ons op voor vragen, feedback of ondersteuning. Stuur ons een e-mail of neem contact op via Twitter, en we zullen zo snel mogelijk reageren.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Contact"
-                },
-                {
-                    "id": "support",
-                    "name": "Ondersteuning"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Algemeen"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "nl",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "indie-hacking",
+          "name": "Indie-Hacking"
         },
         {
-            "slug": "privacy",
-            "title": "Privacybeleid",
-            "description": "Ontdek hoe we uw persoonlijke gegevens beschermen en uw privacy respecteren. Dit beleid legt uit welke informatie we verzamelen, hoe we deze gebruiken en uw rechten met betrekking tot uw gegevens.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Privacy"
-                },
-                {
-                    "id": "policy",
-                    "name": "Beleid"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridisch"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "nl",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "ai",
+          "name": "KI"
         },
         {
-            "slug": "terms",
-            "title": "Gebruiksvoorwaarden",
-            "description": "Bekijk onze gebruiksvoorwaarden om uw rechten en verplichtingen bij het gebruik van onze website te begrijpen. Dit document behandelt gebruik, beperkingen en juridische disclaimers.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Voorwaarden"
-                },
-                {
-                    "id": "legal",
-                    "name": "Juridisch"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridisch"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "nl",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "seo",
+          "name": "SEO"
         },
         {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Welkom op onze website: Essentiële online tools voor iedereen nu beschikbaar",
-            "description": "Ontdek onze nieuw gelanceerde website met essentiële online tools voor ontwikkelaars, ontwerpers en dagelijkse gebruikers. Van UUID-generators tot wachtwoordmakers, vind de perfecte tool voor elke taak. Leer over onze huidige aanbiedingen en spannende functies die eraan komen.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Webtools"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Productiviteit"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Algemeen"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "nl",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
+          "id": "multi-language",
+          "name": "Mehrsprachigkeit"
         },
         {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Hoe ik in één week een meertalige SEO-vriendelijke tools-website bouwde en lanceerde met AI",
-            "description": "Leer hoe een indie-hacker in slechts één week een meertalige, SEO-geoptimaliseerde tools-website bouwde en lanceerde met behulp van AI. Ontdek de tech stack, workflow en lessen voor snelle, effectieve solo-ontwikkeling.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie Hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Meertalig"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Webtools"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Ontwikkeling"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "nl",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "web-tools",
+          "name": "Web-Tools"
         }
-    ],
-    "no": [
+      ],
+      "category": {
+        "id": "development",
+        "name": "Entwicklung"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "en": [
+    {
+      "slug": "contact",
+      "title": "Contact Us",
+      "description": "Get in touch with us for questions, feedback, or support. Reach out via email or Twitter and we'll respond as soon as possible.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Kontakt oss",
-            "description": "Kontakt oss for spørsmål, tilbakemeldinger eller støtte. Send oss en e-post eller kontakt oss på Twitter, og vi vil svare så snart som mulig.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Kontakt"
-                },
-                {
-                    "id": "support",
-                    "name": "Støtte"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Generelt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "no",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "contact",
+          "name": "Contact"
         },
         {
-            "slug": "privacy",
-            "title": "Personvernpolicy",
-            "description": "Finn ut hvordan vi beskytter dine personlige data og respekterer ditt personvern. Denne policyen forklarer hvilken informasjon vi samler inn, hvordan vi bruker den og dine rettigheter angående dine data.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Personvern"
-                },
-                {
-                    "id": "policy",
-                    "name": "Policy"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridisk"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "no",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Vilkår for bruk",
-            "description": "Gjennomgå våre vilkår for bruk for å forstå dine rettigheter og forpliktelser ved bruk av vår nettside. Dette dokumentet dekker bruk, begrensninger og juridiske ansvarsfraskrivelser.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Vilkår"
-                },
-                {
-                    "id": "legal",
-                    "name": "Juridisk"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridisk"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "no",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Velkommen til vår nettside: Essensielle online verktøy for alle nå tilgjengelig",
-            "description": "Oppdag vår nylig lanserte nettside med essensielle online verktøy for utviklere, designere og hverdagsbrukere. Fra UUID-generatorer til passordopprettere, finn det perfekte verktøyet for enhver oppgave. Lær om våre nåværende tilbud og spennende funksjoner som kommer.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Nettverktøy"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Produktivitet"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Generelt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "no",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Hvordan jeg bygget og lanserte et flerspråklig SEO-vennlig verktøynettsted på én uke med AI",
-            "description": "Lær hvordan en indie-hacker bygget og lanserte et flerspråklig, SEO-optimalisert verktøynettsted på bare én uke ved hjelp av AI. Oppdag teknologistacken, arbeidsflyten og lærdommene for rask, effektiv solo-utvikling.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie-hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Flerspråklig"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Nettverktøy"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Utvikling"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "no",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "support",
+          "name": "Support"
         }
-    ],
-    "pt": [
+      ],
+      "category": {
+        "id": "general",
+        "name": "General"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacy Policy",
+      "description": "Learn how we protect your personal data and respect your privacy. This policy explains what information we collect, how we use it, and your rights regarding your data.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Contate-nos",
-            "description": "Entre em contato conosco para perguntas, feedback ou suporte. Envie-nos um e-mail ou contate-nos no Twitter, e responderemos o mais rápido possível.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Contato"
-                },
-                {
-                    "id": "support",
-                    "name": "Suporte"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Geral"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "pt",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "privacy",
+          "name": "Privacy"
         },
         {
-            "slug": "privacy",
-            "title": "Política de Privacidade",
-            "description": "Descubra como protegemos suas informações pessoais e respeitamos sua privacidade. Esta política explica quais informações coletamos, como as utilizamos e seus direitos em relação aos seus dados.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Privacidade"
-                },
-                {
-                    "id": "policy",
-                    "name": "Política"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Jurídico"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "pt",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Termos de Serviço",
-            "description": "Revise nossos termos de serviço para entender seus direitos e obrigações ao usar nosso site. Este documento abrange uso, limitações e isenções legais.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Termos"
-                },
-                {
-                    "id": "legal",
-                    "name": "Jurídico"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Jurídico"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "pt",
-            "readingTime": 3,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Bem-vindo ao nosso site: Ferramentas online essenciais para todos agora disponíveis",
-            "description": "Descubra nosso site recém-lançado com ferramentas online essenciais para desenvolvedores, designers e usuários do dia a dia. De geradores de UUID a criadores de senhas, encontre a ferramenta perfeita para qualquer tarefa. Saiba mais sobre nossas ofertas atuais e recursos emocionantes que estão por vir.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Ferramentas Web"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Produtividade"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Geral"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "pt",
-            "readingTime": 3,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Como construí e lancei um site de ferramentas multilíngue otimizado para SEO em uma semana com IA",
-            "description": "Aprenda como um desenvolvedor independente construiu e lançou um site de ferramentas multilíngue otimizado para SEO em apenas uma semana usando IA. Descubra a stack tecnológica, o fluxo de trabalho e as lições para um desenvolvimento solo rápido e eficaz.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Desenvolvimento Independente"
-                },
-                {
-                    "id": "ai",
-                    "name": "IA"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Multilíngue"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Ferramentas Web"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Desenvolvimento"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "pt",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "policy",
+          "name": "Policy"
         }
-    ],
-    "ru": [
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legal"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Terms of Service",
+      "description": "Read our terms of service to understand your rights and responsibilities when using our website. This document covers usage, limitations, and legal disclaimers.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Свяжитесь с нами",
-            "description": "Свяжитесь с нами для вопросов, отзывов или поддержки. Напишите нам по электронной почте или в Twitter, и мы ответим как можно скорее.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Контакт"
-                },
-                {
-                    "id": "support",
-                    "name": "Поддержка"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Общее"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ru",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "terms",
+          "name": "Terms"
         },
         {
-            "slug": "privacy",
-            "title": "Политика конфиденциальности",
-            "description": "Узнайте, как мы защищаем ваши персональные данные и уважаем вашу конфиденциальность. Эта политика объясняет, какую информацию мы собираем, как мы ее используем и ваши права в отношении ваших данных.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Конфиденциальность"
-                },
-                {
-                    "id": "policy",
-                    "name": "Политика"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Юридическое"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ru",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Условия использования",
-            "description": "Ознакомьтесь с нашими условиями использования, чтобы понять свои права и обязанности при использовании нашего веб-сайта. Этот документ охватывает использование, ограничения и юридические отказы от ответственности.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Условия"
-                },
-                {
-                    "id": "legal",
-                    "name": "Юридическое"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Юридическое"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ru",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Добро пожаловать на наш сайт: Основные онлайн-инструменты для всех теперь доступны",
-            "description": "Откройте для себя наш недавно запущенный веб-сайт с основными онлайн-инструментами для разработчиков, дизайнеров и обычных пользователей. От генераторов UUID до создателей паролей, найдите идеальный инструмент для любой задачи. Узнайте о наших текущих предложениях и предстоящих интересных функциях.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Веб-инструменты"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Продуктивность"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Общее"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ru",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Как я создал и запустил многоязычный SEO-оптимизированный сайт с инструментами за одну неделю с помощью ИИ",
-            "description": "Узнайте, как инди-разработчик создал и запустил многоязычный, SEO-оптимизированный сайт с инструментами всего за одну неделю с помощью ИИ. Откройте для себя технический стек, рабочий процесс и уроки для быстрой и эффективной разработки в одиночку.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Инди-разработка"
-                },
-                {
-                    "id": "ai",
-                    "name": "ИИ"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Многоязычность"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Веб-инструменты"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Разработка"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "ru",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "legal",
+          "name": "Legal"
         }
-    ],
-    "sv": [
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legal"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Welcome to Our Website: Essential Online Tools for Everyone Now Live",
+      "description": "Discover our newly launched website featuring essential online tools for developers, designers, and everyday users. From UUID generators to password creators, find the perfect tool for any task. Learn about our current offerings and exciting upcoming features.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "Kontakta oss",
-            "description": "Kontakta oss för frågor, feedback eller support. Skicka oss ett e-postmeddelande eller kontakta oss på Twitter, så svarar vi så snart som möjligt.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "Kontakt"
-                },
-                {
-                    "id": "support",
-                    "name": "Support"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Allmänt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "sv",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "web-tools",
+          "name": "Web Tools"
         },
         {
-            "slug": "privacy",
-            "title": "Integritetspolicy",
-            "description": "Ta reda på hur vi skyddar dina personuppgifter och respekterar din integritet. Denna policy förklarar vilken information vi samlar in, hur vi använder den och dina rättigheter gällande dina uppgifter.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "Integritet"
-                },
-                {
-                    "id": "policy",
-                    "name": "Policy"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridiskt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "sv",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "terms",
-            "title": "Användarvillkor",
-            "description": "Granska våra användarvillkor för att förstå dina rättigheter och skyldigheter när du använder vår webbplats. Detta dokument omfattar användning, begränsningar och juridiska friskrivningar.",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "Villkor"
-                },
-                {
-                    "id": "legal",
-                    "name": "Juridiskt"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "Juridiskt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "sv",
-            "readingTime": 2,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
-        },
-        {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "Välkommen till vår webbplats: Viktiga onlineverktyg för alla nu tillgängliga",
-            "description": "Upptäck vår nyligen lanserade webbplats med viktiga onlineverktyg för utvecklare, designers och vardagsanvändare. Från UUID-generatorer till lösenordsskapare, hitta det perfekta verktyget för varje uppgift. Lär dig om våra nuvarande erbjudanden och spännande funktioner som kommer.",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "Webbverktyg"
-                },
-                {
-                    "id": "productivity",
-                    "name": "Produktivitet"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "Allmänt"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "sv",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
-        },
-        {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "Hur jag byggde och lanserade en flerspråkig SEO-vänlig verktygswebbplats på en vecka med AI",
-            "description": "Lär dig hur en indie-hackare byggde och lanserade en flerspråkig, SEO-optimerad verktygswebbplats på bara en vecka med hjälp av AI. Upptäck teknikstacken, arbetsflödet och lärdomarna för snabb, effektiv solo-utveckling.",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "Indie-hacking"
-                },
-                {
-                    "id": "ai",
-                    "name": "AI"
-                },
-                {
-                    "id": "seo",
-                    "name": "SEO"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "Flerspråkig"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "Webbverktyg"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "Utveckling"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "sv",
-            "readingTime": 5,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "productivity",
+          "name": "Productivity"
         }
-    ],
-    "zh": [
+      ],
+      "category": {
+        "id": "general",
+        "name": "General"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 6,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "How I Built and Launched a Multi-Language SEO-Friendly Tools Website in One Week with AI",
+      "description": "Learn how an indie hacker built and launched a multi-language, SEO-optimized tools website in just one week using AI. Discover the tech stack, workflow, and lessons for fast, effective solo development.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
         {
-            "slug": "contact",
-            "title": "联系我们",
-            "description": "如有问题、反馈或需要支持，请通过电子邮件或推特联系我们。我们会尽快回复。",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "contact",
-                    "name": "联系"
-                },
-                {
-                    "id": "support",
-                    "name": "支持"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "常规"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "zh",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "indie-hacking",
+          "name": "Indie Hacking"
         },
         {
-            "slug": "privacy",
-            "title": "隐私政策",
-            "description": "了解我们如何保护您的个人数据并尊重您的隐私。本政策说明我们收集哪些信息、如何使用这些信息，以及您对数据的权利。",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "privacy",
-                    "name": "隐私"
-                },
-                {
-                    "id": "policy",
-                    "name": "政策"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "法律"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "zh",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "ai",
+          "name": "AI"
         },
         {
-            "slug": "terms",
-            "title": "服务条款",
-            "description": "请阅读我们的服务条款，了解您在使用本网站时的权利和责任。本文档涵盖使用规则、限制和法律免责声明。",
-            "date": "2025-07-25",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "terms",
-                    "name": "条款"
-                },
-                {
-                    "id": "legal",
-                    "name": "法律"
-                }
-            ],
-            "category": {
-                "id": "legal",
-                "name": "法律"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "zh",
-            "readingTime": 1,
-            "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
-            "type": "page"
+          "id": "seo",
+          "name": "SEO"
         },
         {
-            "slug": "blog/website-launch-and-tools-overview",
-            "title": "欢迎访问我们的网站：面向所有人的必备在线工具正式上线",
-            "description": "探索我们新推出的网站，为开发者、设计师和日常用户提供必备的在线工具。从UUID生成器到密码创建工具，为任何任务找到完美的工具。了解我们当前的产品和即将推出的精彩功能。",
-            "date": "2025-07-23",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "web-tools",
-                    "name": "网络工具"
-                },
-                {
-                    "id": "productivity",
-                    "name": "生产力"
-                }
-            ],
-            "category": {
-                "id": "general",
-                "name": "综合"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "zh",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
-            "type": "blog"
+          "id": "multi-language",
+          "name": "Multi-Language"
         },
         {
-            "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
-            "title": "我如何在一周内用AI构建并发布了一个多语言SEO友好的工具网站",
-            "description": "了解一位独立开发者如何在短短一周内使用AI构建并发布了一个多语言、SEO优化的工具网站。探索快速、高效的独立开发技术栈、工作流程和经验教训。",
-            "date": "2024-07-01",
-            "author": "Victory",
-            "tags": [
-                {
-                    "id": "indie-hacking",
-                    "name": "独立开发"
-                },
-                {
-                    "id": "ai",
-                    "name": "人工智能"
-                },
-                {
-                    "id": "seo",
-                    "name": "搜索引擎优化"
-                },
-                {
-                    "id": "multi-language",
-                    "name": "多语言"
-                },
-                {
-                    "id": "web-tools",
-                    "name": "网络工具"
-                }
-            ],
-            "category": {
-                "id": "development",
-                "name": "开发"
-            },
-            "featured": false,
-            "draft": false,
-            "locale": "zh",
-            "readingTime": 2,
-            "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
-            "type": "blog"
+          "id": "web-tools",
+          "name": "Web Tools"
         }
-    ]
+      ],
+      "category": {
+        "id": "development",
+        "name": "Development"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "es": [
+    {
+      "slug": "contact",
+      "title": "Contáctenos",
+      "description": "Contáctenos para preguntas, comentarios o soporte. Envíenos un correo electrónico o contáctenos en Twitter, y le responderemos lo antes posible.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contacto"
+        },
+        {
+          "id": "support",
+          "name": "Soporte"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "General"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Política de Privacidad",
+      "description": "Descubra cómo protegemos sus datos personales y respetamos su privacidad. Esta política explica qué información recopilamos, cómo la usamos y sus derechos con respecto a sus datos.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacidad"
+        },
+        {
+          "id": "policy",
+          "name": "Política"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legal"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Términos de Servicio",
+      "description": "Revise nuestros términos de servicio para entender sus derechos y obligaciones al usar nuestro sitio web. Este documento cubre el uso, limitaciones y descargos de responsabilidad legales.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Términos"
+        },
+        {
+          "id": "legal",
+          "name": "Legal"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legal"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Bienvenido a nuestro sitio web: Herramientas en línea esenciales para todos ahora disponibles",
+      "description": "Descubra nuestro sitio web recién lanzado con herramientas en línea esenciales para desarrolladores, diseñadores y usuarios cotidianos. Desde generadores de UUID hasta creadores de contraseñas, encuentre la herramienta perfecta para cada tarea. Conozca nuestras ofertas actuales y las emocionantes funciones que están por venir.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Herramientas web"
+        },
+        {
+          "id": "productivity",
+          "name": "Productividad"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "General"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Cómo construí y lancé un sitio web de herramientas multilingüe optimizado para SEO en una semana con IA",
+      "description": "Aprende cómo un desarrollador independiente construyó y lanzó un sitio web de herramientas multilingüe optimizado para SEO en solo una semana usando IA. Descubre el stack tecnológico, el flujo de trabajo y las lecciones para un desarrollo individual rápido y efectivo.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Desarrollo independiente"
+        },
+        {
+          "id": "ai",
+          "name": "IA"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multilingüe"
+        },
+        {
+          "id": "web-tools",
+          "name": "Herramientas web"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Desarrollo"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "fi": [
+    {
+      "slug": "contact",
+      "title": "Ota yhteyttä",
+      "description": "Ota yhteyttä kysymyksiä, palautetta tai tukea varten. Lähetä meille sähköpostia tai ota yhteyttä Twitterissä, ja vastaamme mahdollisimman pian.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Yhteystiedot"
+        },
+        {
+          "id": "support",
+          "name": "Tuki"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Yleinen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Tietosuojakäytäntö",
+      "description": "Ota selvää, miten suojaamme henkilötietojasi ja kunnioitamme yksityisyyttäsi. Tämä käytäntö selittää, mitä tietoja keräämme, miten käytämme niitä ja oikeutesi tietoihisi liittyen.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Yksityisyys"
+        },
+        {
+          "id": "policy",
+          "name": "Käytäntö"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Lakiasiat"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Käyttöehdot",
+      "description": "Tarkista käyttöehtomme ymmärtääksesi oikeutesi ja velvollisuutesi käyttäessäsi verkkosivustoamme. Tämä asiakirja kattaa käytön, rajoitukset ja oikeudelliset vastuuvapauslausekkeet.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Ehdot"
+        },
+        {
+          "id": "legal",
+          "name": "Lakiasiat"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Lakiasiat"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Tervetuloa verkkosivustollemme: Olennaiset verkkotyökalut kaikille nyt saatavilla",
+      "description": "Tutustu äskettäin julkaistuun verkkosivustoomme, joka tarjoaa olennaisia verkkotyökaluja kehittäjille, suunnittelijoille ja jokapäiväisille käyttäjille. UUID-generaattoreista salasanojen luojiin, löydä täydellinen työkalu jokaiseen tehtävään. Opi nykyisistä tarjouksistamme ja tulevista jännittävistä ominaisuuksista.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Verkkotyökalut"
+        },
+        {
+          "id": "productivity",
+          "name": "Tuottavuus"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Yleinen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Kuinka rakensin ja julkaisin monikielisen SEO-ystävällisen työkalusivuston viikossa tekoälyn avulla",
+      "description": "Opi kuinka indie-hakkeri rakensi ja julkaisi monikielisen, SEO-optimoidun työkalusivuston vain viikossa tekoälyn avulla. Tutustu teknologiapinoon, työnkulkuun ja oppeihin nopeaa, tehokasta yksilökehitystä varten.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Indie-hakkerointi"
+        },
+        {
+          "id": "ai",
+          "name": "Tekoäly"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Monikielisyys"
+        },
+        {
+          "id": "web-tools",
+          "name": "Verkkotyökalut"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Kehitys"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "fr": [
+    {
+      "slug": "contact",
+      "title": "Contactez-nous",
+      "description": "Contactez-nous pour des questions, des commentaires ou du support. Envoyez-nous un email ou contactez-nous sur Twitter, et nous vous répondrons dès que possible.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contact"
+        },
+        {
+          "id": "support",
+          "name": "Support"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Général"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Politique de Confidentialité",
+      "description": "Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée. Cette politique explique quelles informations nous collectons, comment nous les utilisons et vos droits concernant vos données.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Confidentialité"
+        },
+        {
+          "id": "policy",
+          "name": "Politique"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridique"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Conditions d'Utilisation",
+      "description": "Consultez nos conditions d'utilisation pour comprendre vos droits et obligations lors de l'utilisation de notre site web. Ce document couvre l'utilisation, les limitations et les clauses de non-responsabilité légales.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Conditions"
+        },
+        {
+          "id": "legal",
+          "name": "Juridique"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridique"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Bienvenue sur notre site web : Des outils en ligne essentiels pour tous maintenant disponibles",
+      "description": "Découvrez notre site web récemment lancé avec des outils en ligne essentiels pour les développeurs, les designers et les utilisateurs quotidiens. Des générateurs d'UUID aux créateurs de mots de passe, trouvez l'outil parfait pour chaque tâche. Découvrez nos offres actuelles et les fonctionnalités passionnantes à venir.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Outils web"
+        },
+        {
+          "id": "productivity",
+          "name": "Productivité"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Général"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Comment j'ai construit et lancé un site d'outils multilingue optimisé pour le SEO en une semaine avec l'IA",
+      "description": "Découvrez comment un développeur indépendant a construit et lancé un site d'outils multilingue optimisé pour le SEO en seulement une semaine grâce à l'IA. Explorez la stack technique, le workflow et les leçons pour un développement solo rapide et efficace.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Développement indépendant"
+        },
+        {
+          "id": "ai",
+          "name": "IA"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multilingue"
+        },
+        {
+          "id": "web-tools",
+          "name": "Outils web"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Développement"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 6,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "it": [
+    {
+      "slug": "contact",
+      "title": "Contattaci",
+      "description": "Contattaci per domande, feedback o supporto. Inviaci un'email o contattaci su Twitter, e ti risponderemo il prima possibile.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contatto"
+        },
+        {
+          "id": "support",
+          "name": "Supporto"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Informativa sulla Privacy",
+      "description": "Scopri come proteggiamo le tue informazioni personali e rispettiamo la tua privacy. Questa informativa spiega quali informazioni raccogliamo, come le utilizziamo e i tuoi diritti riguardo ai tuoi dati.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "policy",
+          "name": "Informativa"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Termini di Servizio",
+      "description": "Rivedi i nostri termini di servizio per comprendere i tuoi diritti e obblighi quando utilizzi il nostro sito web. Questo documento copre utilizzo, limitazioni ed esoneri legali.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Termini"
+        },
+        {
+          "id": "legal",
+          "name": "Legale"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Legale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Benvenuto sul nostro sito web: Strumenti online essenziali per tutti ora disponibili",
+      "description": "Scopri il nostro sito web appena lanciato con strumenti online essenziali per sviluppatori, designer e utenti quotidiani. Dai generatori UUID ai creatori di password, trova lo strumento perfetto per ogni attività. Scopri le nostre offerte attuali e le entusiasmanti funzionalità in arrivo.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Strumenti Web"
+        },
+        {
+          "id": "productivity",
+          "name": "Produttività"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generale"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Come ho costruito e lanciato un sito web di strumenti multilingue ottimizzato per SEO in una settimana con l'IA",
+      "description": "Scopri come uno sviluppatore indipendente ha costruito e lanciato un sito web di strumenti multilingue ottimizzato per SEO in una sola settimana utilizzando l'IA. Esplora lo stack tecnologico, il flusso di lavoro e le lezioni per uno sviluppo rapido ed efficace in solitaria.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Indie Hacking"
+        },
+        {
+          "id": "ai",
+          "name": "IA"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multilingue"
+        },
+        {
+          "id": "web-tools",
+          "name": "Strumenti Web"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Sviluppo"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "ja": [
+    {
+      "slug": "contact",
+      "title": "お問い合わせ",
+      "description": "ご質問、ご意見、サポートのご連絡はこちらから。メールまたはTwitterでお気軽にご連絡ください。",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "お問い合わせ"
+        },
+        {
+          "id": "support",
+          "name": "サポート"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "一般"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "プライバシーポリシー",
+      "description": "個人データの保護とプライバシーの尊重についてご説明します。本ポリシーでは、収集する情報、利用方法、データに関する権利について記載しています。",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "プライバシー"
+        },
+        {
+          "id": "policy",
+          "name": "ポリシー"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "法務"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "利用規約",
+      "description": "当ウェブサイトの利用に関する権利と責任についてご確認ください。本規約では利用方法、制限事項、法的免責事項などを記載しています。",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "利用規約"
+        },
+        {
+          "id": "legal",
+          "name": "法務"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "法務"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "ウェブサイトへようこそ：誰でも使える必須オンラインツールが正式公開",
+      "description": "開発者、デザイナー、一般ユーザー向けの必須オンラインツールを特集した新しく公開されたウェブサイトをご紹介します。UUIDジェネレーターからパスワード作成ツールまで、あらゆるタスクに最適なツールを見つけてください。現在の機能と今後の予定についてもご紹介します。",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "ウェブツール"
+        },
+        {
+          "id": "productivity",
+          "name": "生産性"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "一般"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "AIを活用して1週間でマルチ言語SEOフレンドリーなツールウェブサイトを構築・公開した方法",
+      "description": "インディーハッカーがAIを活用して、わずか1週間でマルチ言語対応、SEO最適化されたツールウェブサイトを構築・公開した方法を学びましょう。迅速で効果的なソロ開発のための技術スタック、ワークフロー、教訓を発見してください。",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "インディーハッキング"
+        },
+        {
+          "id": "ai",
+          "name": "AI"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "多言語"
+        },
+        {
+          "id": "web-tools",
+          "name": "ウェブツール"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "開発"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "ko": [
+    {
+      "slug": "contact",
+      "title": "문의하기",
+      "description": "질문, 피드백, 지원이 필요하신 경우 언제든지 이메일 또는 트위터로 연락해 주세요.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "문의"
+        },
+        {
+          "id": "support",
+          "name": "지원"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "일반"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "개인정보 처리방침",
+      "description": "귀하의 개인정보 보호와 프라이버시를 존중합니다. 본 정책은 수집하는 정보, 사용 방법, 데이터에 대한 귀하의 권리를 설명합니다.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "프라이버시"
+        },
+        {
+          "id": "policy",
+          "name": "정책"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "법률"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "이용약관",
+      "description": "웹사이트 이용 시 권리와 책임을 확인하세요. 본 문서는 이용 방법, 제한 사항, 법적 면책 조항을 포함합니다.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "이용약관"
+        },
+        {
+          "id": "legal",
+          "name": "법률"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "법률"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "웹사이트에 오신 것을 환영합니다: 모든 사람을 위한 필수 온라인 도구가 공식 출시되었습니다",
+      "description": "개발자, 디자이너, 일반 사용자를 위한 필수 온라인 도구를 제공하는 새로 출시된 웹사이트를 소개합니다. UUID 생성기부터 비밀번호 생성기까지, 모든 작업에 완벽한 도구를 찾아보세요. 현재 제공되는 기능과 향후 계획에 대해 알아보세요.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "웹 도구"
+        },
+        {
+          "id": "productivity",
+          "name": "생산성"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "일반"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.pngp",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "AI를 활용하여 일주일 만에 다국어 SEO 친화적인 도구 웹사이트를 구축하고 출시한 방법",
+      "description": "인디 해커가 AI를 활용하여 단 일주일 만에 다국어, SEO 최적화된 도구 웹사이트를 구축하고 출시한 방법을 알아보세요. 빠르고 효과적인 솔로 개발을 위한 기술 스택, 워크플로우 및 교훈을 발견하세요.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "인디 해킹"
+        },
+        {
+          "id": "ai",
+          "name": "AI"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "다국어"
+        },
+        {
+          "id": "web-tools",
+          "name": "웹 도구"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "개발"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "nl": [
+    {
+      "slug": "contact",
+      "title": "Neem contact met ons op",
+      "description": "Neem contact met ons op voor vragen, feedback of ondersteuning. Stuur ons een e-mail of neem contact op via Twitter, en we zullen zo snel mogelijk reageren.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contact"
+        },
+        {
+          "id": "support",
+          "name": "Ondersteuning"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Algemeen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacybeleid",
+      "description": "Ontdek hoe we uw persoonlijke gegevens beschermen en uw privacy respecteren. Dit beleid legt uit welke informatie we verzamelen, hoe we deze gebruiken en uw rechten met betrekking tot uw gegevens.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "policy",
+          "name": "Beleid"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisch"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Gebruiksvoorwaarden",
+      "description": "Bekijk onze gebruiksvoorwaarden om uw rechten en verplichtingen bij het gebruik van onze website te begrijpen. Dit document behandelt gebruik, beperkingen en juridische disclaimers.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Voorwaarden"
+        },
+        {
+          "id": "legal",
+          "name": "Juridisch"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisch"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Welkom op onze website: Essentiële online tools voor iedereen nu beschikbaar",
+      "description": "Ontdek onze nieuw gelanceerde website met essentiële online tools voor ontwikkelaars, ontwerpers en dagelijkse gebruikers. Van UUID-generators tot wachtwoordmakers, vind de perfecte tool voor elke taak. Leer over onze huidige aanbiedingen en spannende functies die eraan komen.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        },
+        {
+          "id": "productivity",
+          "name": "Productiviteit"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Algemeen"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Hoe ik in één week een meertalige SEO-vriendelijke tools-website bouwde en lanceerde met AI",
+      "description": "Leer hoe een indie-hacker in slechts één week een meertalige, SEO-geoptimaliseerde tools-website bouwde en lanceerde met behulp van AI. Ontdek de tech stack, workflow en lessen voor snelle, effectieve solo-ontwikkeling.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Indie Hacking"
+        },
+        {
+          "id": "ai",
+          "name": "AI"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Meertalig"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Ontwikkeling"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "no": [
+    {
+      "slug": "contact",
+      "title": "Kontakt oss",
+      "description": "Kontakt oss for spørsmål, tilbakemeldinger eller støtte. Send oss en e-post eller kontakt oss på Twitter, og vi vil svare så snart som mulig.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Kontakt"
+        },
+        {
+          "id": "support",
+          "name": "Støtte"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Personvernpolicy",
+      "description": "Finn ut hvordan vi beskytter dine personlige data og respekterer ditt personvern. Denne policyen forklarer hvilken informasjon vi samler inn, hvordan vi bruker den og dine rettigheter angående dine data.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Personvern"
+        },
+        {
+          "id": "policy",
+          "name": "Policy"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Vilkår for bruk",
+      "description": "Gjennomgå våre vilkår for bruk for å forstå dine rettigheter og forpliktelser ved bruk av vår nettside. Dette dokumentet dekker bruk, begrensninger og juridiske ansvarsfraskrivelser.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Vilkår"
+        },
+        {
+          "id": "legal",
+          "name": "Juridisk"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridisk"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Velkommen til vår nettside: Essensielle online verktøy for alle nå tilgjengelig",
+      "description": "Oppdag vår nylig lanserte nettside med essensielle online verktøy for utviklere, designere og hverdagsbrukere. Fra UUID-generatorer til passordopprettere, finn det perfekte verktøyet for enhver oppgave. Lær om våre nåværende tilbud og spennende funksjoner som kommer.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Nettverktøy"
+        },
+        {
+          "id": "productivity",
+          "name": "Produktivitet"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Generelt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Hvordan jeg bygget og lanserte et flerspråklig SEO-vennlig verktøynettsted på én uke med AI",
+      "description": "Lær hvordan en indie-hacker bygget og lanserte et flerspråklig, SEO-optimalisert verktøynettsted på bare én uke ved hjelp av AI. Oppdag teknologistacken, arbeidsflyten og lærdommene for rask, effektiv solo-utvikling.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Indie-hacking"
+        },
+        {
+          "id": "ai",
+          "name": "AI"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Flerspråklig"
+        },
+        {
+          "id": "web-tools",
+          "name": "Nettverktøy"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Utvikling"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "pt": [
+    {
+      "slug": "contact",
+      "title": "Contate-nos",
+      "description": "Entre em contato conosco para perguntas, feedback ou suporte. Envie-nos um e-mail ou contate-nos no Twitter, e responderemos o mais rápido possível.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Contato"
+        },
+        {
+          "id": "support",
+          "name": "Suporte"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Geral"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Política de Privacidade",
+      "description": "Descubra como protegemos suas informações pessoais e respeitamos sua privacidade. Esta política explica quais informações coletamos, como as utilizamos e seus direitos em relação aos seus dados.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacidade"
+        },
+        {
+          "id": "policy",
+          "name": "Política"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Jurídico"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Termos de Serviço",
+      "description": "Revise nossos termos de serviço para entender seus direitos e obrigações ao usar nosso site. Este documento abrange uso, limitações e isenções legais.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Termos"
+        },
+        {
+          "id": "legal",
+          "name": "Jurídico"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Jurídico"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 3,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Bem-vindo ao nosso site: Ferramentas online essenciais para todos agora disponíveis",
+      "description": "Descubra nosso site recém-lançado com ferramentas online essenciais para desenvolvedores, designers e usuários do dia a dia. De geradores de UUID a criadores de senhas, encontre a ferramenta perfeita para qualquer tarefa. Saiba mais sobre nossas ofertas atuais e recursos emocionantes que estão por vir.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Ferramentas Web"
+        },
+        {
+          "id": "productivity",
+          "name": "Produtividade"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Geral"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Como construí e lancei um site de ferramentas multilíngue otimizado para SEO em uma semana com IA",
+      "description": "Aprenda como um desenvolvedor independente construiu e lançou um site de ferramentas multilíngue otimizado para SEO em apenas uma semana usando IA. Descubra a stack tecnológica, o fluxo de trabalho e as lições para um desenvolvimento solo rápido e eficaz.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Desenvolvimento Independente"
+        },
+        {
+          "id": "ai",
+          "name": "IA"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multilíngue"
+        },
+        {
+          "id": "web-tools",
+          "name": "Ferramentas Web"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Desenvolvimento"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "ru": [
+    {
+      "slug": "contact",
+      "title": "Свяжитесь с нами",
+      "description": "Свяжитесь с нами для вопросов, отзывов или поддержки. Напишите нам по электронной почте или в Twitter, и мы ответим как можно скорее.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Контакт"
+        },
+        {
+          "id": "support",
+          "name": "Поддержка"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Общее"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Политика конфиденциальности",
+      "description": "Узнайте, как мы защищаем ваши персональные данные и уважаем вашу конфиденциальность. Эта политика объясняет, какую информацию мы собираем, как мы ее используем и ваши права в отношении ваших данных.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Конфиденциальность"
+        },
+        {
+          "id": "policy",
+          "name": "Политика"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Юридическое"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Условия использования",
+      "description": "Ознакомьтесь с нашими условиями использования, чтобы понять свои права и обязанности при использовании нашего веб-сайта. Этот документ охватывает использование, ограничения и юридические отказы от ответственности.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Условия"
+        },
+        {
+          "id": "legal",
+          "name": "Юридическое"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Юридическое"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Добро пожаловать на наш сайт: Основные онлайн-инструменты для всех теперь доступны",
+      "description": "Откройте для себя наш недавно запущенный веб-сайт с основными онлайн-инструментами для разработчиков, дизайнеров и обычных пользователей. От генераторов UUID до создателей паролей, найдите идеальный инструмент для любой задачи. Узнайте о наших текущих предложениях и предстоящих интересных функциях.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Веб-инструменты"
+        },
+        {
+          "id": "productivity",
+          "name": "Продуктивность"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Общее"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Как я создал и запустил многоязычный SEO-оптимизированный сайт с инструментами за одну неделю с помощью ИИ",
+      "description": "Узнайте, как инди-разработчик создал и запустил многоязычный, SEO-оптимизированный сайт с инструментами всего за одну неделю с помощью ИИ. Откройте для себя технический стек, рабочий процесс и уроки для быстрой и эффективной разработки в одиночку.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Инди-разработка"
+        },
+        {
+          "id": "ai",
+          "name": "ИИ"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Многоязычность"
+        },
+        {
+          "id": "web-tools",
+          "name": "Веб-инструменты"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Разработка"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "sv": [
+    {
+      "slug": "contact",
+      "title": "Kontakta oss",
+      "description": "Kontakta oss för frågor, feedback eller support. Skicka oss ett e-postmeddelande eller kontakta oss på Twitter, så svarar vi så snart som möjligt.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "Kontakt"
+        },
+        {
+          "id": "support",
+          "name": "Support"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allmänt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "Integritetspolicy",
+      "description": "Ta reda på hur vi skyddar dina personuppgifter och respekterar din integritet. Denna policy förklarar vilken information vi samlar in, hur vi använder den och dina rättigheter gällande dina uppgifter.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Integritet"
+        },
+        {
+          "id": "policy",
+          "name": "Policy"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridiskt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "Användarvillkor",
+      "description": "Granska våra användarvillkor för att förstå dina rättigheter och skyldigheter när du använder vår webbplats. Detta dokument omfattar användning, begränsningar och juridiska friskrivningar.",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "Villkor"
+        },
+        {
+          "id": "legal",
+          "name": "Juridiskt"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "Juridiskt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 2,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "Välkommen till vår webbplats: Viktiga onlineverktyg för alla nu tillgängliga",
+      "description": "Upptäck vår nyligen lanserade webbplats med viktiga onlineverktyg för utvecklare, designers och vardagsanvändare. Från UUID-generatorer till lösenordsskapare, hitta det perfekta verktyget för varje uppgift. Lär dig om våra nuvarande erbjudanden och spännande funktioner som kommer.",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "Webbverktyg"
+        },
+        {
+          "id": "productivity",
+          "name": "Produktivitet"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "Allmänt"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "Hur jag byggde och lanserade en flerspråkig SEO-vänlig verktygswebbplats på en vecka med AI",
+      "description": "Lär dig hur en indie-hackare byggde och lanserade en flerspråkig, SEO-optimerad verktygswebbplats på bara en vecka med hjälp av AI. Upptäck teknikstacken, arbetsflödet och lärdomarna för snabb, effektiv solo-utveckling.",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "Indie-hacking"
+        },
+        {
+          "id": "ai",
+          "name": "AI"
+        },
+        {
+          "id": "seo",
+          "name": "SEO"
+        },
+        {
+          "id": "multi-language",
+          "name": "Flerspråkig"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webbverktyg"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "Utveckling"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ],
+  "zh": [
+    {
+      "slug": "contact",
+      "title": "联系我们",
+      "description": "如有问题、反馈或需要支持，请通过电子邮件或推特联系我们。我们会尽快回复。",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "contact",
+          "name": "联系"
+        },
+        {
+          "id": "support",
+          "name": "支持"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "常规"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "privacy",
+      "title": "隐私政策",
+      "description": "了解我们如何保护您的个人数据并尊重您的隐私。本政策说明我们收集哪些信息、如何使用这些信息，以及您对数据的权利。",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "隐私"
+        },
+        {
+          "id": "policy",
+          "name": "政策"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "法律"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "terms",
+      "title": "服务条款",
+      "description": "请阅读我们的服务条款，了解您在使用本网站时的权利和责任。本文档涵盖使用规则、限制和法律免责声明。",
+      "date": "2025-07-25",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "terms",
+          "name": "条款"
+        },
+        {
+          "id": "legal",
+          "name": "法律"
+        }
+      ],
+      "category": {
+        "id": "legal",
+        "name": "法律"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 1,
+      "cover": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&h=400&fit=crop",
+      "type": "page"
+    },
+    {
+      "slug": "blog/website-launch-and-tools-overview",
+      "title": "欢迎访问我们的网站：面向所有人的必备在线工具正式上线",
+      "description": "探索我们新推出的网站，为开发者、设计师和日常用户提供必备的在线工具。从UUID生成器到密码创建工具，为任何任务找到完美的工具。了解我们当前的产品和即将推出的精彩功能。",
+      "date": "2025-07-23",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "web-tools",
+          "name": "网络工具"
+        },
+        {
+          "id": "productivity",
+          "name": "生产力"
+        }
+      ],
+      "category": {
+        "id": "general",
+        "name": "综合"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
+      "slug": "blog/how-I-built-and-launched-a-multi-language-seo-friendly-tools-website-in-one-week-with-ai",
+      "title": "我如何在一周内用AI构建并发布了一个多语言SEO友好的工具网站",
+      "description": "了解一位独立开发者如何在短短一周内使用AI构建并发布了一个多语言、SEO优化的工具网站。探索快速、高效的独立开发技术栈、工作流程和经验教训。",
+      "date": "2024-07-01",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "indie-hacking",
+          "name": "独立开发"
+        },
+        {
+          "id": "ai",
+          "name": "人工智能"
+        },
+        {
+          "id": "seo",
+          "name": "搜索引擎优化"
+        },
+        {
+          "id": "multi-language",
+          "name": "多语言"
+        },
+        {
+          "id": "web-tools",
+          "name": "网络工具"
+        }
+      ],
+      "category": {
+        "id": "development",
+        "name": "开发"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/Y2xTncgk/wmremove-transformed.png",
+      "type": "blog"
+    }
+  ]
 }
