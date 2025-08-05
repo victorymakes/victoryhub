@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { QRCode } from "react-qrcode-logo";
-import Image from "next/image";
 
 const QRCodeGenerator: React.FC = () => {
     const t = useTranslations("QrcodeGenerator");
