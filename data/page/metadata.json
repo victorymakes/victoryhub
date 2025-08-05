@@ -1,6 +1,45 @@
 {
   "da": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Sundheds- og velværeværktøjer du kan bruge direkte i din browser",
+      "description": "Udforsk gratis, privatlivsvenlige sundheds- og velværeværktøjer som BMI, BMR og CO2-fodaftryksberegnere — alle brugbare øjeblikkeligt i din browser. Ingen downloads, ingen konti, kun indsigt.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Sundhed"
+        },
+        {
+          "id": "wellness",
+          "name": "Velvære"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webværktøjer"
+        },
+        {
+          "id": "privacy",
+          "name": "Privatliv"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Livsstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Kontakt os",
       "description": "Kontakt os for spørgsmål, feedback eller support. Send os en e-mail eller kontakt os på Twitter, og vi svarer så hurtigt som muligt.",
@@ -149,6 +188,45 @@
     }
   ],
   "de": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Gesundheits- und Wellness-Tools, die Sie direkt in Ihrem Browser nutzen können",
+      "description": "Entdecken Sie kostenlose, datenschutzfreundliche Gesundheits- und Wellness-Tools wie BMI-, BMR- und CO2-Fußabdruck-Rechner — alle sofort in Ihrem Browser nutzbar. Keine Downloads, keine Konten, nur Erkenntnisse.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Gesundheit"
+        },
+        {
+          "id": "wellness",
+          "name": "Wellness"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web-Tools"
+        },
+        {
+          "id": "privacy",
+          "name": "Datenschutz"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Lifestyle"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "Kontaktieren Sie uns",
@@ -299,6 +377,45 @@
   ],
   "en": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Health & Wellness Tools You Can Use Right in Your Browser",
+      "description": "Explore free, privacy-friendly health and wellness tools like BMI, BMR, and carbon footprint calculators — all usable instantly in your browser. No downloads, no accounts, just insights.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Health"
+        },
+        {
+          "id": "wellness",
+          "name": "Wellness"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web Tools"
+        },
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Lifestyle"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Contact Us",
       "description": "Get in touch with us for questions, feedback, or support. Reach out via email or Twitter and we'll respond as soon as possible.",
@@ -447,6 +564,45 @@
     }
   ],
   "es": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Herramientas de salud y bienestar que puedes usar directamente en tu navegador",
+      "description": "Explora herramientas gratuitas y respetuosas con la privacidad para la salud y el bienestar, como calculadoras de IMC, TMB y huella de carbono — todas utilizables al instante en tu navegador. Sin descargas, sin cuentas, solo información útil.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Salud"
+        },
+        {
+          "id": "wellness",
+          "name": "Bienestar"
+        },
+        {
+          "id": "web-tools",
+          "name": "Herramientas web"
+        },
+        {
+          "id": "privacy",
+          "name": "Privacidad"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "IMC y TMB"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Estilo de vida"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "Contáctenos",
@@ -597,6 +753,45 @@
   ],
   "fi": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Terveys- ja hyvinvointityökalut, joita voit käyttää suoraan selaimessasi",
+      "description": "Tutustu ilmaisiin, yksityisyyttä kunnioittaviin terveys- ja hyvinvointityökaluihin, kuten BMI-, BMR- ja hiilijalanjälkilaskureihin — kaikki käytettävissä välittömästi selaimessasi. Ei latauksia, ei tilejä, vain oivalluksia.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Terveys"
+        },
+        {
+          "id": "wellness",
+          "name": "Hyvinvointi"
+        },
+        {
+          "id": "web-tools",
+          "name": "Verkkotyökalut"
+        },
+        {
+          "id": "privacy",
+          "name": "Yksityisyys"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Elämäntapa"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Ota yhteyttä",
       "description": "Ota yhteyttä kysymyksiä, palautetta tai tukea varten. Lähetä meille sähköpostia tai ota yhteyttä Twitterissä, ja vastaamme mahdollisimman pian.",
@@ -745,6 +940,45 @@
     }
   ],
   "fr": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Outils de santé et de bien-être que vous pouvez utiliser directement dans votre navigateur",
+      "description": "Explorez des outils gratuits et respectueux de la vie privée pour la santé et le bien-être, comme les calculateurs d'IMC, de MB et d'empreinte carbone — tous utilisables instantanément dans votre navigateur. Pas de téléchargements, pas de comptes, juste des informations utiles.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Santé"
+        },
+        {
+          "id": "wellness",
+          "name": "Bien-être"
+        },
+        {
+          "id": "web-tools",
+          "name": "Outils web"
+        },
+        {
+          "id": "privacy",
+          "name": "Confidentialité"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "IMC & MB"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Style de vie"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "Contactez-nous",
@@ -895,6 +1129,45 @@
   ],
   "it": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Strumenti per la salute e il benessere che puoi usare direttamente nel tuo browser",
+      "description": "Esplora strumenti gratuiti e rispettosi della privacy per la salute e il benessere come calcolatori di BMI, BMR e impronta di carbonio — tutti utilizzabili istantaneamente nel tuo browser. Nessun download, nessun account, solo informazioni utili.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Salute"
+        },
+        {
+          "id": "wellness",
+          "name": "Benessere"
+        },
+        {
+          "id": "web-tools",
+          "name": "Strumenti web"
+        },
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Stile di vita"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Contattaci",
       "description": "Contattaci per domande, feedback o supporto. Inviaci un'email o contattaci su Twitter, e ti risponderemo il prima possibile.",
@@ -1043,6 +1316,45 @@
     }
   ],
   "ja": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "ブラウザ上ですぐに使える健康・ウェルネスツール",
+      "description": "BMI、BMR、カーボンフットプリント計算機など、無料でプライバシーに配慮した健康・ウェルネスツールをブラウザ上ですぐに利用できます。ダウンロード不要、アカウント不要、必要なのは洞察だけです。",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "健康"
+        },
+        {
+          "id": "wellness",
+          "name": "ウェルネス"
+        },
+        {
+          "id": "web-tools",
+          "name": "ウェブツール"
+        },
+        {
+          "id": "privacy",
+          "name": "プライバシー"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "ライフスタイル"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 1,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "お問い合わせ",
@@ -1193,6 +1505,45 @@
   ],
   "ko": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "브라우저에서 바로 사용할 수 있는 건강 및 웰니스 도구",
+      "description": "BMI, BMR 및 탄소 발자국 계산기와 같은 무료이며 개인 정보 보호에 친화적인 건강 및 웰니스 도구를 브라우저에서 즉시 사용해 보세요. 다운로드 없음, 계정 없음, 단지 통찰력만 있습니다.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "건강"
+        },
+        {
+          "id": "wellness",
+          "name": "웰니스"
+        },
+        {
+          "id": "web-tools",
+          "name": "웹 도구"
+        },
+        {
+          "id": "privacy",
+          "name": "개인 정보 보호"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "라이프스타일"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 3,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "문의하기",
       "description": "질문, 피드백, 지원이 필요하신 경우 언제든지 이메일 또는 트위터로 연락해 주세요.",
@@ -1341,6 +1692,45 @@
     }
   ],
   "nl": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Gezondheids- en welzijnstools die je direct in je browser kunt gebruiken",
+      "description": "Ontdek gratis, privacyvriendelijke gezondheids- en welzijnstools zoals BMI-, BMR- en CO2-voetafdrukberekenaars — allemaal direct te gebruiken in je browser. Geen downloads, geen accounts, alleen inzichten.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Gezondheid"
+        },
+        {
+          "id": "wellness",
+          "name": "Welzijn"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        },
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Levensstijl"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "Neem contact met ons op",
@@ -1491,6 +1881,45 @@
   ],
   "no": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Helse- og velværeverktøy du kan bruke direkte i nettleseren din",
+      "description": "Utforsk gratis, personvernvennlige helse- og velværeverktøy som BMI, BMR og karbonfotavtrykkskalkulatorer — alle brukbare umiddelbart i nettleseren din. Ingen nedlastinger, ingen kontoer, bare innsikt.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Helse"
+        },
+        {
+          "id": "wellness",
+          "name": "Velvære"
+        },
+        {
+          "id": "web-tools",
+          "name": "Nettverktøy"
+        },
+        {
+          "id": "privacy",
+          "name": "Personvern"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Livsstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Kontakt oss",
       "description": "Kontakt oss for spørsmål, tilbakemeldinger eller støtte. Send oss en e-post eller kontakt oss på Twitter, og vi vil svare så snart som mulig.",
@@ -1639,6 +2068,45 @@
     }
   ],
   "pt": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Ferramentas de Saúde e Bem-estar que Você Pode Usar Diretamente no Seu Navegador",
+      "description": "Explore ferramentas gratuitas e respeitosas com a privacidade para saúde e bem-estar, como calculadoras de IMC, TMB e pegada de carbono — todas utilizáveis instantaneamente no seu navegador. Sem downloads, sem contas, apenas insights.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Saúde"
+        },
+        {
+          "id": "wellness",
+          "name": "Bem-estar"
+        },
+        {
+          "id": "web-tools",
+          "name": "Ferramentas Web"
+        },
+        {
+          "id": "privacy",
+          "name": "Privacidade"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "IMC & TMB"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Estilo de Vida"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "Contate-nos",
@@ -1789,6 +2257,45 @@
   ],
   "ru": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Инструменты для здоровья и благополучия, которые можно использовать прямо в браузере",
+      "description": "Исследуйте бесплатные, уважающие конфиденциальность инструменты для здоровья и благополучия, такие как калькуляторы ИМТ, BMR и углеродного следа — все они мгновенно доступны в вашем браузере. Без загрузок, без аккаунтов, только полезная информация.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Здоровье"
+        },
+        {
+          "id": "wellness",
+          "name": "Благополучие"
+        },
+        {
+          "id": "web-tools",
+          "name": "Веб-инструменты"
+        },
+        {
+          "id": "privacy",
+          "name": "Конфиденциальность"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "ИМТ и BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Образ жизни"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Свяжитесь с нами",
       "description": "Свяжитесь с нами для вопросов, отзывов или поддержки. Напишите нам по электронной почте или в Twitter, и мы ответим как можно скорее.",
@@ -1938,6 +2445,45 @@
   ],
   "sv": [
     {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "Hälso- och välmåendeverktyg du kan använda direkt i din webbläsare",
+      "description": "Utforska gratis, integritetsvänliga hälso- och välmåendeverktyg som BMI, BMR och koldioxidavtryckskalkylatorer — alla användbara direkt i din webbläsare. Inga nedladdningar, inga konton, bara insikter.",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "Hälsa"
+        },
+        {
+          "id": "wellness",
+          "name": "Välmående"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webbverktyg"
+        },
+        {
+          "id": "privacy",
+          "name": "Integritet"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI & BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Livsstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
+    {
       "slug": "contact",
       "title": "Kontakta oss",
       "description": "Kontakta oss för frågor, feedback eller support. Skicka oss ett e-postmeddelande eller kontakta oss på Twitter, så svarar vi så snart som möjligt.",
@@ -2086,6 +2632,45 @@
     }
   ],
   "zh": [
+    {
+      "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
+      "title": "可直接在浏览器中使用的健康与养生工具",
+      "description": "探索免费、注重隐私的健康与养生工具，如BMI、BMR和碳足迹计算器——所有工具都可以在浏览器中即时使用。无需下载，无需账户，只需洞察。",
+      "date": "2025-08-05",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "health",
+          "name": "健康"
+        },
+        {
+          "id": "wellness",
+          "name": "养生"
+        },
+        {
+          "id": "web-tools",
+          "name": "网页工具"
+        },
+        {
+          "id": "privacy",
+          "name": "隐私"
+        },
+        {
+          "id": "bmi-bmr",
+          "name": "BMI与BMR"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "生活方式"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 1,
+      "cover": "https://i.postimg.cc/Fz16vL4v/health-and-wellness-tools-you-can-use-right-in-your-browser.png",
+      "type": "blog"
+    },
     {
       "slug": "contact",
       "title": "联系我们",
