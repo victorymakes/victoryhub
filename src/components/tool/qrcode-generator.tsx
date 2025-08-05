@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { QRCode } from "react-qrcode-logo";
+import Image from "next/image";
 
 const QRCodeGenerator: React.FC = () => {
     const t = useTranslations("QrcodeGenerator");
@@ -37,7 +38,7 @@ const QRCodeGenerator: React.FC = () => {
     const [ecLevel, setEcLevel] = useState<"L" | "M" | "Q" | "H">("M");
 
     const fileInputRef = useRef<HTMLInputElement | null>(null);
-    const qrCodeRef = useRef<any>(null);
+    const qrCodeRef = useRef<QRCode>(null);
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
