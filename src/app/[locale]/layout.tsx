@@ -44,7 +44,7 @@ export default async function LocaleLayout({
                 />
                 <link rel="icon" href="/favicon.png" sizes="any" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-                <link rel="manifest" href="/manifest.json" />
+                <link rel="manifest" href="/manifest.webmanifest" />
                 <meta name="theme-color" content="#000000" />
             </head>
             <body
