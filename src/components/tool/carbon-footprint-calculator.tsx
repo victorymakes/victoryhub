@@ -152,9 +152,6 @@ export default function CarbonFootprintCalculator() {
         consumptionLevel,
         recyclingLevel,
         t,
-        dietFactors,
-        energyFactors,
-        transportationFactors,
     ]);
 
     const resetCalculator = () => {
