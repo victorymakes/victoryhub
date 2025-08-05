@@ -471,5 +471,65 @@
       "positiveNumbers": "Alder, højde og vægt skal være positive tal",
       "ageRange": "Alderen skal være mellem 15 og 80 år"
     }
+  },
+  "CarbonFootprintCalculator": {
+    "transportationType": "Transporttype",
+    "selectTransportation": "Vælg transporttype",
+    "transportationTypes": {
+      "car": "Bil (benzin/diesel)",
+      "publicTransport": "Offentlig transport",
+      "bikeWalk": "Cykel/Gang",
+      "mixed": "Blandet (kombination af metoder)"
+    },
+    "transportationDistance": "Daglig transportafstand (km)",
+    "flightsPerYear": "Flyrejser pr. år (tur-retur)",
+    "dietType": "Kosttype",
+    "selectDiet": "Vælg kosttype",
+    "dietTypes": {
+      "meatHeavy": "Kødrig (dagligt kødforbrug)",
+      "average": "Gennemsnitlig (kød flere gange om ugen)",
+      "vegetarian": "Vegetarisk (intet kød, men mejeriprodukter/æg)",
+      "vegan": "Vegansk (kun plantebaseret)"
+    },
+    "energyEfficiency": "Hjemmets energieffektivitet",
+    "selectEnergyEfficiency": "Vælg energieffektivitet",
+    "energyEfficiencyLevels": {
+      "low": "Lav (ældre hjem, ineffektive apparater)",
+      "average": "Gennemsnitlig (standard isolering og apparater)",
+      "high": "Høj (velisoleret, energieffektive apparater)",
+      "renewable": "Vedvarende (solpaneler, grønne energikilder)"
+    },
+    "householdSize": "Husstandsstørrelse (antal personer)",
+    "consumptionLevel": "Forbrugsniveau",
+    "consumptionLevelDesc": "Højere værdier indikerer hyppigere køb af varer og tjenester",
+    "recyclingLevel": "Genbrugsniveau",
+    "recyclingLevelDesc": "Højere værdier indikerer mere konsekvente genbrugsvaner",
+    "calculate": "Beregn CO₂-fodaftryk",
+    "reset": "Nulstil",
+    "results": "Resultater",
+    "yourCarbonFootprint": "Dit CO₂-fodaftryk",
+    "tonsPerYear": "ton CO₂e pr. år",
+    "category": "Kategori",
+    "categories": {
+      "low": "Lav påvirkning",
+      "moderate": "Moderat påvirkning",
+      "high": "Høj påvirkning",
+      "veryHigh": "Meget høj påvirkning"
+    },
+    "footprintExplanation": "Dit CO₂-fodaftryk er den samlede mængde drivhusgasser (primært CO₂), der udledes til atmosfæren som følge af dine aktiviteter.",
+    "whatItMeans": "Hvad det betyder",
+    "footprintDetailedExplanation": "Det globale gennemsnitlige CO₂-fodaftryk er omkring 4 ton pr. person pr. år. I udviklede lande er gennemsnittet typisk 10-20 ton. For at begrænse den globale opvarmning til 1,5°C skal det globale gennemsnit falde til omkring 2 ton pr. person inden 2050.",
+    "reductionTips": "Sådan reducerer du dit CO₂-fodaftryk",
+    "tips": {
+      "transportation": "Transport: Brug offentlig transport, gå eller cykl når det er muligt, overvej en elbil, eller reducer flyrejser.",
+      "diet": "Kost: Reducer kødforbruget (især oksekød), minimer madspild, og vælg lokale og sæsonbestemte fødevarer.",
+      "energy": "Energi: Forbedre hjemmets isolering, brug energieffektive apparater, skift til vedvarende energikilder, og vær opmærksom på opvarmning/køling.",
+      "consumption": "Forbrug: Køb mindre, vælg holdbare produkter, reparer ting i stedet for at udskifte dem, og genbrug korrekt."
+    },
+    "errors": {
+      "emptyFields": "Udfyld venligst alle felter",
+      "invalidNumbers": "Indtast venligst gyldige tal",
+      "positiveNumbers": "Alle værdier skal være positive tal"
+    }
   }
 }
