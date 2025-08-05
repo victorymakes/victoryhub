@@ -383,5 +383,65 @@
       "positiveNumbers": "Alter, Größe und Gewicht müssen positiv sein",
       "ageRange": "Alter muss zwischen 15 und 80 Jahren liegen"
     }
+  },
+  "CarbonFootprintCalculator": {
+    "transportationType": "Transportmittel",
+    "selectTransportation": "Transportmittel auswählen",
+    "transportationTypes": {
+      "car": "Auto (Benzin/Diesel)",
+      "publicTransport": "Öffentliche Verkehrsmittel",
+      "bikeWalk": "Fahrrad/zu Fuß",
+      "mixed": "Gemischt (Kombination verschiedener Methoden)"
+    },
+    "transportationDistance": "Tägliche Transportdistanz (km)",
+    "flightsPerYear": "Flüge pro Jahr (Hin- und Rückflug)",
+    "dietType": "Ernährungstyp",
+    "selectDiet": "Ernährungstyp auswählen",
+    "dietTypes": {
+      "meatHeavy": "Fleischbetont (täglicher Fleischkonsum)",
+      "average": "Durchschnittlich (Fleisch mehrmals pro Woche)",
+      "vegetarian": "Vegetarisch (kein Fleisch, aber Milchprodukte/Eier)",
+      "vegan": "Vegan (nur pflanzliche Produkte)"
+    },
+    "energyEfficiency": "Energieeffizienz des Haushalts",
+    "selectEnergyEfficiency": "Energieeffizienz auswählen",
+    "energyEfficiencyLevels": {
+      "low": "Niedrig (älteres Haus, ineffiziente Geräte)",
+      "average": "Durchschnittlich (Standardisolierung und -geräte)",
+      "high": "Hoch (gut isoliert, energieeffiziente Geräte)",
+      "renewable": "Erneuerbar (Solaranlagen, grüne Energiequellen)"
+    },
+    "householdSize": "Haushaltsgröße (Anzahl der Personen)",
+    "consumptionLevel": "Konsumniveau",
+    "consumptionLevelDesc": "Höhere Werte zeigen häufigere Käufe von Waren und Dienstleistungen an",
+    "recyclingLevel": "Recyclingniveau",
+    "recyclingLevelDesc": "Höhere Werte zeigen konsequentere Recyclinggewohnheiten an",
+    "calculate": "CO₂-Fußabdruck berechnen",
+    "reset": "Zurücksetzen",
+    "results": "Ergebnisse",
+    "yourCarbonFootprint": "Dein CO₂-Fußabdruck",
+    "tonsPerYear": "Tonnen CO₂e pro Jahr",
+    "category": "Kategorie",
+    "categories": {
+      "low": "Geringe Auswirkung",
+      "moderate": "Moderate Auswirkung",
+      "high": "Hohe Auswirkung",
+      "veryHigh": "Sehr hohe Auswirkung"
+    },
+    "footprintExplanation": "Dein CO₂-Fußabdruck ist die Gesamtmenge an Treibhausgasen (hauptsächlich CO₂), die durch deine Aktivitäten in die Atmosphäre freigesetzt werden.",
+    "whatItMeans": "Was das bedeutet",
+    "footprintDetailedExplanation": "Der weltweite Durchschnitt des CO₂-Fußabdrucks liegt bei etwa 4 Tonnen pro Person und Jahr. In Industrieländern liegt der Durchschnitt typischerweise bei 10-20 Tonnen. Um die globale Erwärmung auf 1,5°C zu begrenzen, muss der weltweite Durchschnitt bis 2050 auf etwa 2 Tonnen pro Person sinken.",
+    "reductionTips": "Wie du deinen CO₂-Fußabdruck reduzieren kannst",
+    "tips": {
+      "transportation": "Transport: Nutze öffentliche Verkehrsmittel, gehe zu Fuß oder fahre Fahrrad wenn möglich, erwäge ein Elektrofahrzeug oder reduziere Flugreisen.",
+      "diet": "Ernährung: Reduziere den Fleischkonsum (besonders Rindfleisch), minimiere Lebensmittelabfälle und wähle lokale und saisonale Lebensmittel.",
+      "energy": "Energie: Verbessere die Hausisolierung, nutze energieeffiziente Geräte, wechsle zu erneuerbaren Energiequellen und achte auf den Heiz-/Kühlverbrauch.",
+      "consumption": "Konsum: Kaufe weniger, wähle langlebige Produkte, repariere Gegenstände anstatt sie zu ersetzen und recycle ordnungsgemäß."
+    },
+    "errors": {
+      "emptyFields": "Bitte alle Felder ausfüllen",
+      "invalidNumbers": "Bitte gültige Zahlen eingeben",
+      "positiveNumbers": "Alle Werte müssen positive Zahlen sein"
+    }
   }
 }
