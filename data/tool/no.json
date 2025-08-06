@@ -521,5 +521,45 @@
         "answer": "Ja. Når QR-koden er generert, kan du laste den ned som PNG i høy oppløsning eller som skalerbar SVG. Begge formater egner seg for digital bruk og utskrift, som brosjyrer, plakater eller emballasje."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Tilfeldig Velger – Velg Elementer Tilfeldig med Animasjon",
+    "description": "Velg tilfeldige elementer fra listen din med en morsom animasjonseffekt. Perfekt for å ta avgjørelser, trekke vinnere eller velge mellom alternativer.",
+    "category": "utilities",
+    "keywords": [
+      "tilfeldig velger",
+      "tilfeldig valg",
+      "tilfeldig element",
+      "beslutningstaker",
+      "navnevelger",
+      "tilfeldig trekning",
+      "lotteriverktøy",
+      "tilfeldig generator",
+      "valgverktøy",
+      "tilfeldig utvalg"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan fungerer Tilfeldig Velger-verktøyet?",
+        "answer": "Tilfeldig Velger lar deg lage en liste over elementer (navn, alternativer, valg osv.) og deretter velge ett element tilfeldig fra listen. Valget vises med en jevn animasjon som blar gjennom ulike alternativer før det stopper på det endelige valget. Verktøyet bruker en kryptografisk sikker tilfeldig tallgenerator for å sikre rettferdige og upartiske resultater."
+      },
+      {
+        "question": "Hva kan jeg bruke Tilfeldig Velger til?",
+        "answer": "Tilfeldig Velger har mange praktiske bruksområder: ta avgjørelser når du står mellom flere valg; trekke vinnere i konkurranser, giveaways eller lotterier; fordele oppgaver eller ansvar tilfeldig i et team; velge en tilfeldig elev i klassen; finne en film, restaurant eller aktivitet; skape rettferdige og tilfeldige valg i enhver situasjon der tilfeldighet er ønskelig."
+      },
+      {
+        "question": "Er Tilfeldig Velger virkelig tilfeldig?",
+        "answer": "Ja, verktøyet bruker nettleserens kryptografisk sikre tilfeldig tallgenerator (crypto.getRandomValues) for å sikre ekte tilfeldighet. Det er samme nivå av tilfeldighet som brukes i sikkerhetsapplikasjoner. Hvert element i listen har like stor sjanse for å bli valgt."
+      },
+      {
+        "question": "Kan jeg lagre listen min for fremtidig bruk?",
+        "answer": "Per nå har ikke Tilfeldig Velger en innebygd lagringsfunksjon. Du kan imidlertid enkelt kopiere listen din før du lukker nettleseren og lime den inn igjen ved neste bruk via 'Bulk Add'-funksjonen. Hvis du bruker samme liste ofte, anbefaler vi å lagre den i en tekstfil for rask kopiering og liming."
+      },
+      {
+        "question": "Hvor mange elementer kan jeg legge til i Tilfeldig Velger?",
+        "answer": "Verktøyet håndterer et stort antall elementer, men for best ytelse og brukervennlighet anbefaler vi å holde listen under 1000 elementer. Ved svært store lister kan animasjonen bli litt tregere, men selve utvalget vil fortsatt fungere korrekt uansett listeens størrelse."
+      }
+    ]
   }
 ]

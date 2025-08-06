@@ -556,5 +556,29 @@
       "invalidNumbers": "有効な数値を入力してください",
       "positiveNumbers": "すべての値は正の数でなければなりません"
     }
+  },
+  "RandomPicker": {
+    "title": "ランダムピッカー",
+    "description": "楽しいアニメーション効果でリストからアイテムをランダムに選択します。",
+    "addItems": "アイテムを追加",
+    "itemPlaceholder": "アイテムを入力...",
+    "add": "追加",
+    "bulkAdd": "一括追加",
+    "bulkPlaceholder": "複数のアイテムを一行ずつ入力...",
+    "addAll": "すべて追加",
+    "cancel": "キャンセル",
+    "bulkInstructions": "Ctrl+Enterを押して一度にすべてのアイテムを追加",
+    "itemsList": "アイテムリスト",
+    "noItems": "まだアイテムがありません。いくつかのアイテムを追加して始めましょう。",
+    "clearAll": "すべてクリア",
+    "pickRandom": "ランダムにアイテムを選択",
+    "picking": "選択中...",
+    "result": "結果",
+    "close": "閉じる",
+    "remove": "削除",
+    "errors": {
+      "noItems": "最低1つのアイテムを追加してください"
+    },
+    "copied": "クリップボードにコピーしました！"
   }
 }

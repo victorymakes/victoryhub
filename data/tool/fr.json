@@ -526,5 +526,45 @@
         "answer": "Oui. Une fois généré, vous pouvez télécharger le QR code en PNG haute résolution ou au format SVG vectoriel. Ces formats conviennent aussi bien pour des usages numériques qu’imprimés comme les flyers, affiches ou emballages."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Sélecteur Aléatoire – Choisissez au hasard avec des effets d'animation",
+    "description": "Sélectionnez aléatoirement à partir d'une liste avec des effets d'animation amusants. Parfait pour prendre des décisions, choisir des gagnants ou sélectionner parmi plusieurs options.",
+    "category": "utilities",
+    "keywords": [
+      "sélecteur aléatoire",
+      "choix aléatoire",
+      "tirage au sort",
+      "éléments aléatoires",
+      "outil de décision",
+      "sélecteur de noms aléatoire",
+      "tirage au sort",
+      "outil de tirage",
+      "générateur aléatoire",
+      "outil de sélection aléatoire"
+    ],
+    "faq": [
+      {
+        "question": "Comment fonctionne l'outil Sélecteur Aléatoire ?",
+        "answer": "L'outil Sélecteur Aléatoire vous permet de créer une liste d'éléments (noms, options, choix, etc.) et sélectionne ensuite aléatoirement un élément de cette liste. Le processus de sélection est accompagné d'une animation fluide qui parcourt différentes options avant d'arriver à la sélection aléatoire finale. L'outil utilise un générateur de nombres aléatoires cryptographiquement sécurisé pour garantir des résultats équitables et impartiaux."
+      },
+      {
+        "question": "À quoi puis-je utiliser l'outil Sélecteur Aléatoire ?",
+        "answer": "Le Sélecteur Aléatoire peut être utilisé dans une variété de scénarios pratiques : Prise de décision lorsqu'il est difficile de choisir entre plusieurs options ; Sélection de gagnants pour des concours, tirages au sort ou cadeaux ; Attribution aléatoire de tâches ou de responsabilités parmi les membres d'une équipe ; Sélection aléatoire d'étudiants en classe ; Sélection aléatoire de films, restaurants ou activités de divertissement ; Génération de choix équitables et impartiaux dans toute situation nécessitant de l'aléatoire."
+      },
+      {
+        "question": "Le Sélecteur Aléatoire est-il vraiment aléatoire ?",
+        "answer": "Oui, notre Sélecteur Aléatoire utilise le générateur de nombres aléatoires cryptographiquement sécurisé du navigateur (crypto.getRandomValues) pour assurer une véritable aléatoire dans le processus de sélection. C'est le même niveau d'aléatoire utilisé dans les applications de sécurité, ce qui le rend adapté aux situations où des choix équitables et impartiaux sont importants. Chaque élément de votre liste a la même probabilité d'être sélectionné."
+      },
+      {
+        "question": "Puis-je sauvegarder ma liste d'éléments pour une utilisation ultérieure ?",
+        "answer": "Actuellement, l'outil Sélecteur Aléatoire ne dispose pas d'une fonction de sauvegarde intégrée. Cependant, vous pouvez facilement copier votre liste d'éléments avant de fermer le navigateur, puis les coller à nouveau la prochaine fois en utilisant la fonction 'Ajout en masse'. Si vous utilisez fréquemment la même liste, nous vous recommandons de conserver les éléments dans un fichier texte pour pouvoir les copier et les coller rapidement dans l'outil."
+      },
+      {
+        "question": "Combien d'éléments puis-je ajouter au Sélecteur Aléatoire ?",
+        "answer": "L'outil Sélecteur Aléatoire peut gérer un grand nombre d'éléments, mais pour des performances et une convivialité optimales, nous recommandons de garder votre liste en dessous de 1000 éléments. Pour les listes très volumineuses, il peut y avoir un léger impact sur les performances pendant la phase d'animation, mais la sélection aléatoire elle-même fonctionnera correctement quelle que soit la taille de la liste."
+      }
+    ]
   }
 ]

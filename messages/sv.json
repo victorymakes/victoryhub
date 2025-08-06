@@ -542,5 +542,29 @@
       "invalidNumbers": "Ange giltiga nummer",
       "positiveNumbers": "Alla värden måste vara positiva tal"
     }
+  },
+  "RandomPicker": {
+    "title": "Slumpmässig Väljare",
+    "description": "Välj ett objekt slumpmässigt från din lista med en rolig animation.",
+    "addItems": "Lägg till objekt",
+    "itemPlaceholder": "Ange ett objekt...",
+    "add": "Lägg till",
+    "bulkAdd": "Lägg till flera",
+    "bulkPlaceholder": "Ange flera objekt, ett per rad...",
+    "addAll": "Lägg till alla",
+    "cancel": "Avbryt",
+    "bulkInstructions": "Tryck Ctrl+Enter för att lägga till alla objekt samtidigt",
+    "itemsList": "Objektlista",
+    "noItems": "Inga objekt har lagts till ännu. Lägg till några för att komma igång.",
+    "clearAll": "Rensa alla",
+    "pickRandom": "Välj slumpmässigt objekt",
+    "picking": "Väljer...",
+    "result": "Resultat",
+    "close": "Stäng",
+    "remove": "Ta bort",
+    "errors": {
+      "noItems": "Vänligen lägg till minst ett objekt först"
+    },
+    "copied": "Kopierat till urklipp!"
   }
 }

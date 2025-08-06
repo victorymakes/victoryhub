@@ -532,5 +532,29 @@
       "invalidNumbers": "请输入有效数字",
       "positiveNumbers": "所有数值必须为正数"
     }
+  },
+  "RandomPicker": {
+    "title": "随机选择器",
+    "description": "通过有趣的动画效果从您的列表中随机选择一个项目。",
+    "addItems": "添加项目",
+    "itemPlaceholder": "输入一个项目...",
+    "add": "添加",
+    "bulkAdd": "批量添加",
+    "bulkPlaceholder": "输入多个项目，每行一个...",
+    "addAll": "全部添加",
+    "cancel": "取消",
+    "bulkInstructions": "按Ctrl+Enter一次添加所有项目",
+    "itemsList": "项目列表",
+    "noItems": "尚未添加项目。添加一些项目以开始使用。",
+    "clearAll": "清除全部",
+    "pickRandom": "随机选择项目",
+    "picking": "选择中...",
+    "result": "结果",
+    "close": "关闭",
+    "remove": "移除",
+    "errors": {
+      "noItems": "请先添加至少一个项目"
+    },
+    "copied": "已复制到剪贴板！"
   }
 }

@@ -526,5 +526,45 @@
         "answer": "Sim. Após a geração, você pode baixá-lo em formato PNG de alta resolução ou SVG escalável. Ideal para uso digital ou impressão como panfletos e embalagens."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Seletor Aleatório – Escolha Itens Aleatoriamente com Animação",
+    "description": "Escolha itens aleatórios da sua lista com um efeito de animação divertido. Perfeito para tomar decisões, sortear vencedores ou escolher entre opções.",
+    "category": "utilities",
+    "keywords": [
+      "seletor aleatório",
+      "escolha aleatória",
+      "item aleatório",
+      "tomador de decisão",
+      "sorteador de nomes",
+      "sorteio aleatório",
+      "seletor de loteria",
+      "gerador aleatório",
+      "ferramenta de seleção aleatória",
+      "seletor de opções"
+    ],
+    "faq": [
+      {
+        "question": "Como funciona a ferramenta Seletor Aleatório?",
+        "answer": "A ferramenta Seletor Aleatório permite que você crie uma lista de itens (nomes, opções, escolhas, etc.) e selecione aleatoriamente um deles. O processo de seleção é acompanhado por uma animação suave que percorre os diferentes itens antes de chegar à escolha final. A ferramenta utiliza um gerador de números aleatórios criptograficamente seguro para garantir resultados justos e imparciais."
+      },
+      {
+        "question": "Para que posso usar o Seletor Aleatório?",
+        "answer": "O Seletor Aleatório tem várias aplicações práticas: tomar decisões quando estiver em dúvida entre várias opções; escolher vencedores em concursos, sorteios ou rifas; atribuir tarefas ou responsabilidades aleatoriamente entre membros da equipe; selecionar um aluno aleatório em sala de aula; escolher um filme, restaurante ou atividade para lazer; ou qualquer situação que exija uma escolha justa e aleatória."
+      },
+      {
+        "question": "O Seletor Aleatório é realmente aleatório?",
+        "answer": "Sim, nossa ferramenta utiliza o gerador de números aleatórios criptograficamente seguro do navegador (crypto.getRandomValues), garantindo verdadeira aleatoriedade. Esse é o mesmo nível de aleatoriedade utilizado em aplicações de segurança. Cada item da lista possui a mesma probabilidade de ser selecionado."
+      },
+      {
+        "question": "Posso salvar minha lista de itens para usar depois?",
+        "answer": "Atualmente, o Seletor Aleatório não possui uma função de salvamento integrada. No entanto, você pode copiar facilmente sua lista antes de fechar o navegador e colá-la novamente usando o recurso 'Adicionar em Massa' da próxima vez. Para uso frequente com a mesma lista, recomendamos mantê-la em um arquivo de texto para copiar e colar rapidamente."
+      },
+      {
+        "question": "Quantos itens posso adicionar ao Seletor Aleatório?",
+        "answer": "A ferramenta pode lidar com um grande número de itens, mas para melhor desempenho e usabilidade, recomendamos manter a lista com menos de 1000 itens. Para listas muito grandes, a animação pode apresentar uma leve lentidão, mas a seleção aleatória continuará funcionando corretamente independentemente do tamanho da lista."
+      }
+    ]
   }
 ]

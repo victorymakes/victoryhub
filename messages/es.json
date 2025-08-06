@@ -443,5 +443,29 @@
       "invalidNumbers": "Introduce números válidos",
       "positiveNumbers": "Todos los valores deben ser números positivos"
     }
+  },
+  "RandomPicker": {
+    "title": "Selector Aleatorio",
+    "description": "Selecciona aleatoriamente un elemento de tu lista con un divertido efecto de animación.",
+    "addItems": "Añadir Elementos",
+    "itemPlaceholder": "Introduce un elemento...",
+    "add": "Añadir",
+    "bulkAdd": "Añadir en Masa",
+    "bulkPlaceholder": "Introduce múltiples elementos, uno por línea...",
+    "addAll": "Añadir Todos",
+    "cancel": "Cancelar",
+    "bulkInstructions": "Presiona Ctrl+Enter para añadir todos los elementos a la vez",
+    "itemsList": "Lista de Elementos",
+    "noItems": "Aún no hay elementos añadidos. Añade algunos elementos para comenzar.",
+    "clearAll": "Borrar Todo",
+    "pickRandom": "Seleccionar Elemento Aleatorio",
+    "picking": "Seleccionando...",
+    "result": "Resultado",
+    "close": "Cerrar",
+    "remove": "Eliminar",
+    "errors": {
+      "noItems": "Por favor añade al menos un elemento primero"
+    },
+    "copied": "¡Copiado al portapapeles!"
   }
 }

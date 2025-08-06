@@ -531,5 +531,29 @@
       "invalidNumbers": "Anna kelvolliset numerot",
       "positiveNumbers": "Kaikkien arvojen on oltava positiivisia lukuja"
     }
+  },
+  "RandomPicker": {
+    "title": "Satunnainen Valitsin",
+    "description": "Valitse satunnainen kohde listastasi hauskalla animaatiolla.",
+    "addItems": "Lisää kohteita",
+    "itemPlaceholder": "Kirjoita kohde...",
+    "add": "Lisää",
+    "bulkAdd": "Lisää useita",
+    "bulkPlaceholder": "Syötä useita kohteita, yksi per rivi...",
+    "addAll": "Lisää kaikki",
+    "cancel": "Peruuta",
+    "bulkInstructions": "Paina Ctrl+Enter lisätäksesi kaikki kerralla",
+    "itemsList": "Kohdelista",
+    "noItems": "Ei kohteita lisätty. Lisää muutama kohde aloittaaksesi.",
+    "clearAll": "Tyhjennä kaikki",
+    "pickRandom": "Valitse satunnainen",
+    "picking": "Valitaan...",
+    "result": "Tulos",
+    "close": "Sulje",
+    "remove": "Poista",
+    "errors": {
+      "noItems": "Lisää ensin vähintään yksi kohde"
+    },
+    "copied": "Kopioitu leikepöydälle!"
   }
 }

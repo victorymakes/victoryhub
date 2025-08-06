@@ -138,7 +138,11 @@ export const Navbar = async ({}: NavbarProps) => {
                             <ThemeToggle />
                             <Sheet>
                                 <SheetTrigger asChild>
-                                    <Button variant="outline" size="icon">
+                                    <Button
+                                        variant="outline"
+                                        size="icon"
+                                        name={t("menu")}
+                                    >
                                         <Menu className="size-4" />
                                     </Button>
                                 </SheetTrigger>

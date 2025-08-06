@@ -443,5 +443,29 @@
       "invalidNumbers": "Voer geldige cijfers in",
       "positiveNumbers": "Alle waarden moeten positieve getallen zijn"
     }
+  },
+  "RandomPicker": {
+    "title": "Willekeurige Keuze",
+    "description": "Selecteer willekeurig een item uit je lijst met een leuke animatie.",
+    "addItems": "Items toevoegen",
+    "itemPlaceholder": "Voer een item in...",
+    "add": "Toevoegen",
+    "bulkAdd": "Meerdere toevoegen",
+    "bulkPlaceholder": "Voer meerdere items in, één per regel...",
+    "addAll": "Alles toevoegen",
+    "cancel": "Annuleren",
+    "bulkInstructions": "Druk op Ctrl+Enter om alle items tegelijk toe te voegen",
+    "itemsList": "Itemlijst",
+    "noItems": "Nog geen items toegevoegd. Voeg enkele items toe om te beginnen.",
+    "clearAll": "Alles wissen",
+    "pickRandom": "Kies willekeurig item",
+    "picking": "Kiezen...",
+    "result": "Resultaat",
+    "close": "Sluiten",
+    "remove": "Verwijderen",
+    "errors": {
+      "noItems": "Voeg eerst ten minste één item toe"
+    },
+    "copied": "Gekopieerd naar klembord!"
   }
 }

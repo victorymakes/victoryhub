@@ -526,5 +526,45 @@
         "answer": "Ja. Nach der Erstellung können Sie den QR-Code als hochauflösendes PNG oder skalierbares SVG herunterladen. Diese Formate eignen sich ideal für digitale und gedruckte Anwendungen wie Flyer, Poster oder Verpackungen."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Zufallsauswahl – Wähle zufällig mit Animationseffekten",
+    "description": "Wähle zufällig aus einer Liste mit unterhaltsamen Animationseffekten. Perfekt für Entscheidungsfindung, Gewinner auswählen oder zwischen mehreren Optionen wählen.",
+    "category": "utilities",
+    "keywords": [
+      "zufallsauswahl",
+      "zufällige auswahl",
+      "zufallsgenerator",
+      "zufällige elemente",
+      "entscheidungswerkzeug",
+      "zufälliger namenswähler",
+      "zufallsziehung",
+      "auslosungswerkzeug",
+      "zufallsgenerator",
+      "werkzeug für zufällige auswahl"
+    ],
+    "faq": [
+      {
+        "question": "Wie funktioniert das Zufallsauswahl-Tool?",
+        "answer": "Das Zufallsauswahl-Tool ermöglicht es Ihnen, eine Liste von Elementen (Namen, Optionen, Auswahlmöglichkeiten usw.) zu erstellen und wählt dann zufällig ein Element aus dieser Liste aus. Der Auswahlprozess wird von einer flüssigen Animation begleitet, die durch verschiedene Optionen zykliert, bevor sie zur endgültigen zufälligen Auswahl gelangt. Das Tool verwendet einen kryptografisch sicheren Zufallszahlengenerator, um faire und unvoreingenommene Ergebnisse zu gewährleisten."
+      },
+      {
+        "question": "Wofür kann ich das Zufallsauswahl-Tool verwenden?",
+        "answer": "Die Zufallsauswahl kann in einer Vielzahl praktischer Szenarien eingesetzt werden: Entscheidungsfindung, wenn es schwierig ist, zwischen mehreren Optionen zu wählen; Auswahl von Gewinnern für Wettbewerbe, Verlosungen oder Gewinnspiele; Zufällige Zuweisung von Aufgaben oder Verantwortlichkeiten unter Teammitgliedern; Zufällige Auswahl von Schülern im Klassenzimmer; Zufällige Auswahl von Filmen, Restaurants oder Unterhaltungsaktivitäten; Erzeugung fairer und unvoreingenommener Entscheidungen in jeder Situation, die Zufälligkeit erfordert."
+      },
+      {
+        "question": "Ist die Zufallsauswahl wirklich zufällig?",
+        "answer": "Ja, unsere Zufallsauswahl verwendet den kryptografisch sicheren Zufallszahlengenerator des Browsers (crypto.getRandomValues), um echte Zufälligkeit im Auswahlprozess zu gewährleisten. Dies ist das gleiche Maß an Zufälligkeit, das in Sicherheitsanwendungen verwendet wird, was es für Situationen geeignet macht, in denen faire und unvoreingenommene Entscheidungen wichtig sind. Jedes Element in Ihrer Liste hat die gleiche Wahrscheinlichkeit, ausgewählt zu werden."
+      },
+      {
+        "question": "Kann ich meine Elementliste für die spätere Verwendung speichern?",
+        "answer": "Derzeit verfügt das Zufallsauswahl-Tool nicht über eine integrierte Speicherfunktion. Sie können jedoch Ihre Elementliste einfach kopieren, bevor Sie den Browser schließen, und sie dann beim nächsten Mal mit der Funktion 'Massenhinzufügung' wieder einfügen. Wenn Sie häufig die gleiche Liste verwenden, empfehlen wir, die Elemente in einer Textdatei aufzubewahren, damit Sie sie schnell in das Tool kopieren und einfügen können."
+      },
+      {
+        "question": "Wie viele Elemente kann ich zur Zufallsauswahl hinzufügen?",
+        "answer": "Das Zufallsauswahl-Tool kann eine große Anzahl von Elementen verarbeiten, aber für optimale Leistung und Benutzerfreundlichkeit empfehlen wir, Ihre Liste unter 1000 Elementen zu halten. Bei sehr großen Listen kann es während der Animationsphase zu geringfügigen Leistungseinbußen kommen, aber die zufällige Auswahl selbst funktioniert unabhängig von der Listengröße korrekt."
+      }
+    ]
   }
 ]
