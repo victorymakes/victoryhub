@@ -521,5 +521,45 @@
         "answer": "Ja. Når QR-koden er genereret, kan du downloade den som PNG i høj opløsning eller skalerbar SVG. Disse formater egner sig godt til både digital og trykt brug som flyers, plakater eller emballage."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Tilfældig Vælger – Vælg tilfældigt med animationseffekter",
+    "description": "Vælg tilfældigt fra en liste med sjove animationseffekter. Perfekt til at træffe beslutninger, vælge vindere eller vælge mellem flere muligheder.",
+    "category": "utilities",
+    "keywords": [
+      "tilfældig vælger",
+      "tilfældig udvælgelse",
+      "tilfældig lodtrækning",
+      "tilfældige elementer",
+      "beslutningsværktøj",
+      "tilfældig navnevælger",
+      "tilfældig lodtrækning",
+      "lodtrækningsværktøj",
+      "tilfældig generator",
+      "tilfældigt valg værktøj"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan fungerer værktøjet Tilfældig Vælger?",
+        "answer": "Værktøjet Tilfældig Vælger lader dig oprette en liste med elementer (navne, muligheder, valg osv.) og vælger derefter tilfældigt ét element fra denne liste. Udvælgelsesprocessen ledsages af en glat animation, der cykler gennem forskellige muligheder, før den når frem til det endelige tilfældige valg. Værktøjet bruger en kryptografisk sikker tilfældig talgenerator for at sikre retfærdige og upartiske resultater."
+      },
+      {
+        "question": "Hvad kan jeg bruge værktøjet Tilfældig Vælger til?",
+        "answer": "Tilfældig Vælger kan bruges i en række praktiske scenarier: Beslutningstagning, når det er svært at vælge mellem flere muligheder; Udvælgelse af vindere til konkurrencer, lodtrækninger eller giveaways; Tilfældig tildeling af opgaver eller ansvar blandt teammedlemmer; Tilfældig udvælgelse af studerende i klasseværelset; Tilfældig udvælgelse af film, restauranter eller underholdningsaktiviteter; Generering af retfærdige og upartiske valg i enhver situation, der kræver tilfældighed."
+      },
+      {
+        "question": "Er Tilfældig Vælger virkelig tilfældig?",
+        "answer": "Ja, vores Tilfældig Vælger bruger browserens kryptografisk sikre tilfældige talgenerator (crypto.getRandomValues) for at sikre ægte tilfældighed i udvælgelsesprocessen. Dette er samme niveau af tilfældighed, der bruges i sikkerhedsapplikationer, hvilket gør det velegnet til situationer, hvor retfærdige og upartiske valg er vigtige. Hvert element på din liste har samme sandsynlighed for at blive valgt."
+      },
+      {
+        "question": "Kan jeg gemme min liste med elementer til senere brug?",
+        "answer": "I øjeblikket har værktøjet Tilfældig Vælger ikke en indbygget lagringsfunktion. Du kan dog nemt kopiere din liste med elementer, før du lukker browseren, og derefter indsætte dem igen næste gang ved hjælp af funktionen 'Massetilføjelse'. Hvis du ofte bruger den samme liste, anbefaler vi at opbevare elementerne i en tekstfil, så du hurtigt kan kopiere og indsætte dem i værktøjet."
+      },
+      {
+        "question": "Hvor mange elementer kan jeg tilføje til Tilfældig Vælger?",
+        "answer": "Værktøjet Tilfældig Vælger kan håndtere et stort antal elementer, men for optimal ydeevne og brugervenlighed anbefaler vi at holde din liste under 1000 elementer. For meget store lister kan der være en lille indvirkning på ydeevnen under animationsfasen, men selve den tilfældige udvælgelse vil fungere korrekt uanset listens størrelse."
+      }
+    ]
   }
 ]

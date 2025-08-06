@@ -531,5 +531,29 @@
       "invalidNumbers": "Indtast venligst gyldige tal",
       "positiveNumbers": "Alle værdier skal være positive tal"
     }
+  },
+  "RandomPicker": {
+    "title": "Tilfældig Vælger",
+    "description": "Vælg tilfældigt et element fra din liste med en sjov animationseffekt.",
+    "addItems": "Tilføj elementer",
+    "itemPlaceholder": "Indtast et element...",
+    "add": "Tilføj",
+    "bulkAdd": "Massetilføjelse",
+    "bulkPlaceholder": "Indtast flere elementer, et pr. linje...",
+    "addAll": "Tilføj alle",
+    "cancel": "Annuller",
+    "bulkInstructions": "Tryk på Ctrl+Enter for at tilføje alle elementer på én gang",
+    "itemsList": "Elementliste",
+    "noItems": "Ingen elementer tilføjet endnu. Tilføj nogle elementer for at komme i gang.",
+    "clearAll": "Ryd alle",
+    "pickRandom": "Vælg tilfældigt element",
+    "picking": "Vælger...",
+    "result": "Resultat",
+    "close": "Luk",
+    "remove": "Fjern",
+    "errors": {
+      "noItems": "Tilføj venligst mindst ét element først"
+    },
+    "copied": "Kopieret til udklipsholder!"
   }
 }

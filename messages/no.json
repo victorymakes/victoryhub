@@ -443,5 +443,29 @@
       "invalidNumbers": "Vennligst skriv inn gyldige tall",
       "positiveNumbers": "Alle verdier må være positive tall"
     }
+  },
+  "RandomPicker": {
+    "title": "Tilfeldig Velger",
+    "description": "Velg et element tilfeldig fra listen din med en morsom animasjon.",
+    "addItems": "Legg til elementer",
+    "itemPlaceholder": "Skriv inn et element...",
+    "add": "Legg til",
+    "bulkAdd": "Legg til flere",
+    "bulkPlaceholder": "Skriv inn flere elementer, ett per linje...",
+    "addAll": "Legg til alle",
+    "cancel": "Avbryt",
+    "bulkInstructions": "Trykk Ctrl+Enter for å legge til alle elementer samtidig",
+    "itemsList": "Elementliste",
+    "noItems": "Ingen elementer lagt til ennå. Legg til noen for å komme i gang.",
+    "clearAll": "Tøm alle",
+    "pickRandom": "Velg tilfeldig element",
+    "picking": "Velger...",
+    "result": "Resultat",
+    "close": "Lukk",
+    "remove": "Fjern",
+    "errors": {
+      "noItems": "Vennligst legg til minst ett element først"
+    },
+    "copied": "Kopiert til utklippstavlen!"
   }
 }

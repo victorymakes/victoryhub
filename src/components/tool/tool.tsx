@@ -6,13 +6,13 @@ import PasswordGenerator from "./password-generator";
 import URLEncoderDecoder from "./url-encoder-decoder";
 import Base64EncoderDecoder from "./base64-encoder-decoder";
 import ImageCompressor from "./image-compressor";
-// import ImageResizer from "./image-resizer";
 import ImageConverter from "./image-converter";
 import QRCodeGenerator from "./qrcode-generator";
 import CronExpressionGenerator from "./cron-expression-generator";
 import BMICalculator from "./bmi-calculator";
 import BMRCalculator from "./bmr-calculator";
 import CarbonFootprintCalculator from "./carbon-footprint-calculator";
+import RandomPicker from "./random-picker";
 
 interface ToolComponentProps {
     id: string;
@@ -34,12 +34,12 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <PasswordGenerator />;
         case "url-encoder-decoder":
             return <URLEncoderDecoder />;
+        case "random-picker":
+            return <RandomPicker />;
         case "base64-encoder-decoder":
             return <Base64EncoderDecoder />;
         case "image-compressor":
             return <ImageCompressor />;
-        // case "image-resizer":
-        //     return <ImageResizer />;
         case "image-converter":
             return <ImageConverter />;
         case "qrcode-generator":

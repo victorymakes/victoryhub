@@ -526,5 +526,45 @@
         "answer": "Sì. Una volta generato, puoi scaricare il codice come PNG ad alta risoluzione o SVG scalabile. Ideale per usi digitali o stampa su volantini, manifesti o confezioni."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Selettore Casuale – Seleziona Elementi Casualmente con Animazione",
+    "description": "Seleziona casualmente elementi dalla tua lista con un divertente effetto di animazione. Perfetto per prendere decisioni, estrarre vincitori o scegliere tra opzioni.",
+    "category": "utilities",
+    "keywords": [
+      "selettore casuale",
+      "selezione casuale",
+      "scelta casuale",
+      "elemento casuale",
+      "decisore",
+      "selettore casuale di nomi",
+      "estrazione casuale",
+      "selettore per lotteria",
+      "generatore casuale",
+      "strumento di selezione casuale"
+    ],
+    "faq": [
+      {
+        "question": "Come funziona lo strumento Selettore Casuale?",
+        "answer": "Lo strumento Selettore Casuale ti permette di creare una lista di elementi (nomi, opzioni, scelte, ecc.) e poi seleziona casualmente un elemento da quella lista. Il processo di selezione è accompagnato da un'animazione fluida che scorre tra diverse opzioni prima di fermarsi sulla selezione casuale finale. Lo strumento utilizza un generatore di numeri casuali crittograficamente sicuro per garantire risultati equi e imparziali."
+      },
+      {
+        "question": "Per cosa posso utilizzare lo strumento Selettore Casuale?",
+        "answer": "Il Selettore Casuale ha molte applicazioni pratiche: Prendere decisioni quando sei indeciso tra più opzioni; Selezionare vincitori per concorsi, omaggi o estrazioni; Assegnare compiti o responsabilità casualmente tra i membri del team; Scegliere uno studente casuale in classe per la partecipazione; Selezionare casualmente un film, un ristorante o un'attività per l'intrattenimento; Creare selezioni eque e imparziali per qualsiasi situazione in cui è desiderata la casualità."
+      },
+      {
+        "question": "Il Selettore Casuale è veramente casuale?",
+        "answer": "Sì, il nostro Selettore Casuale utilizza il generatore di numeri casuali crittograficamente sicuro del browser (crypto.getRandomValues) per garantire una vera casualità nel processo di selezione. Questo è lo stesso livello di casualità utilizzato per le applicazioni di sicurezza, rendendolo adatto a situazioni in cui è importante una selezione equa e imparziale. Ogni elemento nella tua lista ha una probabilità uguale di essere selezionato."
+      },
+      {
+        "question": "Posso salvare la mia lista di elementi per un uso futuro?",
+        "answer": "Attualmente, lo strumento Selettore Casuale non ha una funzione di salvataggio integrata. Tuttavia, puoi facilmente copiare la tua lista di elementi prima di chiudere il browser e incollarli nuovamente utilizzando la funzione 'Aggiungi in Blocco' la prossima volta. Per un uso frequente con la stessa lista, ti consigliamo di conservare i tuoi elementi in un file di testo che puoi rapidamente copiare e incollare nello strumento."
+      },
+      {
+        "question": "Quanti elementi posso aggiungere al Selettore Casuale?",
+        "answer": "Lo strumento Selettore Casuale può gestire un gran numero di elementi, ma per prestazioni e usabilità ottimali, consigliamo di mantenere la tua lista sotto i 1000 elementi. Per liste molto grandi, potresti riscontrare leggeri impatti sulle prestazioni durante la fase di animazione, ma la selezione casuale stessa funzionerà comunque correttamente indipendentemente dalla dimensione della lista."
+      }
+    ]
   }
 ]

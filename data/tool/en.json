@@ -566,5 +566,45 @@
         "answer": "Yes, your privacy is fully protected. All calculations are performed locally in your browser, and no personal data is transmitted to or stored on any server. The information you enter is used solely to calculate your carbon footprint and is not saved after you leave the page or close your browser. You can use this tool with complete confidence that your personal information remains private."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Random Picker – Select Items Randomly with Animation",
+    "description": "Randomly select items from your list with a fun animation effect. Perfect for making decisions, drawing winners, or choosing between options.",
+    "category": "utilities",
+    "keywords": [
+      "random picker",
+      "random selector",
+      "random choice",
+      "random item",
+      "decision maker",
+      "random name picker",
+      "random draw",
+      "lottery picker",
+      "random generator",
+      "random selection tool"
+    ],
+    "faq": [
+      {
+        "question": "How does the Random Picker tool work?",
+        "answer": "The Random Picker tool allows you to create a list of items (names, options, choices, etc.) and then randomly selects one item from that list. The selection process is accompanied by a smooth animation that cycles through different options before landing on the final random selection. The tool uses a cryptographically secure random number generator to ensure fair and unbiased results."
+      },
+      {
+        "question": "What can I use the Random Picker tool for?",
+        "answer": "The Random Picker has many practical applications: Decision making when you're stuck between multiple options; Selecting winners for contests, giveaways, or raffles; Assigning tasks or responsibilities randomly among team members; Choosing a random student in class for participation; Picking a random movie, restaurant, or activity for entertainment; Creating fair and unbiased selections for any situation where randomness is desired."
+      },
+      {
+        "question": "Is the Random Picker truly random?",
+        "answer": "Yes, our Random Picker uses the browser's cryptographically secure random number generator (crypto.getRandomValues) to ensure true randomness in the selection process. This is the same level of randomness used for security applications, making it suitable for situations where fair and unbiased selection is important. Each item in your list has an equal probability of being selected."
+      },
+      {
+        "question": "Can I save my list of items for future use?",
+        "answer": "Currently, the Random Picker tool doesn't have a built-in save feature. However, you can easily copy your list of items before closing the browser and paste them back using the 'Bulk Add' feature next time. For frequent use with the same list, we recommend keeping your items in a text file that you can quickly copy and paste into the tool."
+      },
+      {
+        "question": "How many items can I add to the Random Picker?",
+        "answer": "The Random Picker tool can handle a large number of items, but for optimal performance and usability, we recommend keeping your list under 1000 items. For very large lists, you may experience slight performance impacts during the animation phase, but the random selection itself will still work correctly regardless of list size."
+      }
+    ]
   }
 ]

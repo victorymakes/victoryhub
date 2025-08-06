@@ -521,5 +521,45 @@
         "answer": "Ja. När QR-koden har skapats kan du ladda ner den som en högupplöst PNG eller skalbar SVG. Perfekt för både digital och tryckt användning – som affischer, flyers eller förpackningar."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Slumpmässig Väljare – Välj Objekt Slumpvis med Animation",
+    "description": "Välj slumpmässigt objekt från din lista med en rolig animation. Perfekt för beslutsfattande, utlottningar eller att välja mellan alternativ.",
+    "category": "utilities",
+    "keywords": [
+      "slumpmässig väljare",
+      "slumpmässigt val",
+      "slumpvis objekt",
+      "beslutsfattare",
+      "namnväljare",
+      "slumpmässig dragning",
+      "lotteriväljare",
+      "slumptalsgenerator",
+      "valverktyg",
+      "slumpvalsverktyg"
+    ],
+    "faq": [
+      {
+        "question": "Hur fungerar Slumpmässig Väljare?",
+        "answer": "Verktyget låter dig skapa en lista med objekt (namn, alternativ osv.) och väljer sedan slumpmässigt ett objekt. En mjuk animation visar valprocessen genom att bläddra mellan alternativen innan det slutliga valet görs. Verktyget använder en kryptografiskt säker slumptalsgenerator för att säkerställa rättvisa och opartiska resultat."
+      },
+      {
+        "question": "Vad kan jag använda verktyget till?",
+        "answer": "Du kan använda det till många praktiska saker: fatta beslut mellan alternativ; dra vinnare i tävlingar eller utlottningar; slumpmässigt tilldela uppgifter i team; välja en elev i klassrummet; välja en film eller aktivitet; eller vilket scenario som helst där rättvisa och slumpmässighet behövs."
+      },
+      {
+        "question": "Är det verkligen slumpmässigt?",
+        "answer": "Ja, verktyget använder webbläsarens kryptografiskt säkra slumptalsgenerator (crypto.getRandomValues) för sann slumpmässighet. Det är samma teknik som används i säkerhetsapplikationer. Alla objekt har lika stor chans att väljas."
+      },
+      {
+        "question": "Kan jag spara min lista för framtida användning?",
+        "answer": "För närvarande finns ingen inbyggd spara-funktion. Du kan dock enkelt kopiera din lista innan du stänger webbläsaren och klistra in den nästa gång via 'Bulk Add'-funktionen. För frekvent användning rekommenderar vi att du sparar listan i en textfil."
+      },
+      {
+        "question": "Hur många objekt kan jag lägga till?",
+        "answer": "Verktyget hanterar många objekt, men för bästa prestanda och användarupplevelse rekommenderar vi att hålla listan under 1000 objekt. Vid större listor kan animationen bli långsammare, men urvalet fungerar ändå korrekt."
+      }
+    ]
   }
 ]

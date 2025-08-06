@@ -522,5 +522,45 @@
         "answer": "Ja. Na het genereren kun je de QR-code downloaden als PNG met hoge resolutie of schaalbare SVG. Ideaal voor digitaal gebruik of print zoals flyers of verpakkingen."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Willekeurige Keuzemachine – Selecteer Items Willekeurig met Animatie",
+    "description": "Selecteer willekeurig items uit je lijst met een leuke animatie. Perfect voor beslissingen nemen, winnaars trekken of kiezen tussen opties.",
+    "category": "utilities",
+    "keywords": [
+      "willekeurige keuzemachine",
+      "willekeurige selector",
+      "willekeurige keuze",
+      "willekeurig item",
+      "beslissingsmaker",
+      "willekeurige naamkeuze",
+      "willekeurige trekking",
+      "loterijtrekker",
+      "willekeurige generator",
+      "selectietool"
+    ],
+    "faq": [
+      {
+        "question": "Hoe werkt de Willekeurige Keuzemachine?",
+        "answer": "Met de Willekeurige Keuzemachine kun je een lijst maken van items (namen, opties, keuzes, enz.) en vervolgens willekeurig één item uit die lijst laten selecteren. De selectie wordt begeleid door een soepele animatie die verschillende opties doorloopt voordat de uiteindelijke keuze wordt gemaakt. De tool gebruikt een cryptografisch veilige willekeurige getalgenerator om eerlijke en onbevooroordeelde resultaten te garanderen."
+      },
+      {
+        "question": "Waarvoor kan ik de Willekeurige Keuzemachine gebruiken?",
+        "answer": "Deze tool heeft veel praktische toepassingen: beslissingen nemen als je twijfelt tussen meerdere opties; winnaars trekken voor wedstrijden, weggeefacties of loterijen; taken of verantwoordelijkheden willekeurig toewijzen aan teamleden; een willekeurige student kiezen in de klas; een film, restaurant of activiteit kiezen; eerlijke en onbevooroordeelde selecties maken in elke situatie waar willekeur gewenst is."
+      },
+      {
+        "question": "Is de Willekeurige Keuzemachine echt willekeurig?",
+        "answer": "Ja, onze tool gebruikt de cryptografisch veilige willekeurige generator van je browser (crypto.getRandomValues) voor echte willekeur. Dit is hetzelfde niveau van willekeur als gebruikt in beveiligingstoepassingen. Elk item in de lijst heeft een gelijke kans om geselecteerd te worden."
+      },
+      {
+        "question": "Kan ik mijn lijst opslaan voor later gebruik?",
+        "answer": "Op dit moment biedt de tool geen ingebouwde opslaanfunctie. Je kunt echter gemakkelijk je lijst kopiëren voordat je de browser sluit en deze later weer plakken met de functie 'Bulk Add'. Als je vaak dezelfde lijst gebruikt, raden we aan deze in een tekstbestand op te slaan om snel te kunnen kopiëren en plakken."
+      },
+      {
+        "question": "Hoeveel items kan ik toevoegen aan de Willekeurige Keuzemachine?",
+        "answer": "De tool kan een groot aantal items verwerken, maar voor optimale prestaties en gebruiksgemak raden we aan de lijst onder de 1000 items te houden. Bij zeer grote lijsten kan de animatie iets trager worden, maar de selectie blijft correct werken, ongeacht de grootte van de lijst."
+      }
+    ]
   }
 ]

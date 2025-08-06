@@ -522,5 +522,45 @@
         "answer": "Kyllä. Kun koodi on luotu, voit ladata sen korkearesoluutioisena PNG- tai skaalautuvana SVG-muodossa. Nämä sopivat sekä digitaaliseen että painettuun käyttöön, kuten esitteisiin tai pakkauksiin."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Satunnainen Valitsin – Valitse kohteita satunnaisesti animaatiolla",
+    "description": "Valitse satunnaisesti kohteita listaltasi hauskan animaatioefektin avulla. Täydellinen päätöksentekoon, voittajien arpomiseen tai vaihtoehtojen valintaan.",
+    "category": "utilities",
+    "keywords": [
+      "satunnainen valitsin",
+      "satunnainen valinta",
+      "satunnainen kohde",
+      "päätöksentekijä",
+      "nimivalitsin",
+      "arvontatyökalu",
+      "lottoarvonta",
+      "satunnainen generaattori",
+      "valintatyökalu",
+      "satunnainen valintatyökalu"
+    ],
+    "faq": [
+      {
+        "question": "Miten Satunnainen Valitsin toimii?",
+        "answer": "Satunnainen Valitsin -työkalun avulla voit luoda listan kohteista (nimiä, vaihtoehtoja, valintoja jne.) ja työkalu valitsee niistä satunnaisesti yhden. Valintaan liittyy sujuva animaatio, joka selaa vaihtoehtoja ennen lopullista satunnaista valintaa. Työkalu käyttää kryptografisesti turvallista satunnaislukugeneraattoria varmistaakseen oikeudenmukaiset ja puolueettomat tulokset."
+      },
+      {
+        "question": "Mihin voin käyttää Satunnaista Valitsinta?",
+        "answer": "Satunnaisella Valitsimella on monia käytännön käyttötarkoituksia: päätöksentekoon, kun et osaa valita vaihtoehtojen välillä; voittajien arpomiseen kilpailuissa, lahjoituksissa tai arvonnoissa; tehtävien tai vastuiden jakamiseen satunnaisesti tiimin kesken; satunnaisen opiskelijan valintaan luokassa; elokuvan, ravintolan tai aktiviteetin valintaan; reiluun ja puolueettomaan valintaan missä tahansa tilanteessa, jossa satunnaisuus on toivottavaa."
+      },
+      {
+        "question": "Onko Satunnainen Valitsin todella satunnainen?",
+        "answer": "Kyllä, työkalumme käyttää selaimen kryptografisesti turvallista satunnaislukugeneraattoria (crypto.getRandomValues), joka takaa aidon satunnaisuuden. Tätä samaa menetelmää käytetään myös turvallisuussovelluksissa. Jokaisella listasi kohteella on yhtäläinen todennäköisyys tulla valituksi."
+      },
+      {
+        "question": "Voinko tallentaa listani myöhempää käyttöä varten?",
+        "answer": "Tällä hetkellä Satunnaisessa Valitsimessa ei ole sisäänrakennettua tallennustoimintoa. Voit kuitenkin helposti kopioida listasi ennen selaimen sulkemista ja liittää sen takaisin käyttämällä 'Bulk Add' -toimintoa seuraavalla käyttökerralla. Jos käytät samaa listaa usein, suosittelemme tallentamaan sen tekstitiedostoon, josta voit helposti kopioida ja liittää sen työkalun käyttöön."
+      },
+      {
+        "question": "Kuinka monta kohdetta voin lisätä Satunnaiseen Valitsimeen?",
+        "answer": "Satunnainen Valitsin pystyy käsittelemään suuren määrän kohteita, mutta optimaalisen suorituskyvyn ja käytettävyyden vuoksi suosittelemme pitämään listan alle 1000 kohteessa. Erittäin suurilla listoilla animaatio voi vaikuttaa suorituskykyyn, mutta itse valinta toimii oikein listan koosta riippumatta."
+      }
+    ]
   }
 ]

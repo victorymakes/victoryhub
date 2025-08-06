@@ -526,5 +526,45 @@
         "answer": "Sí. Una vez generado, puedes descargar el código QR en formato PNG de alta resolución o SVG escalable. Ambos formatos son ideales tanto para uso digital como para impresión en volantes, carteles o empaques."
       }
     ]
+  },
+  {
+    "slug": "random-picker",
+    "name": "Selector Aleatorio – Selecciona Elementos Aleatoriamente con Animación",
+    "description": "Selecciona elementos aleatoriamente de tu lista con un divertido efecto de animación. Perfecto para tomar decisiones, sortear ganadores o elegir entre opciones.",
+    "category": "utilities",
+    "keywords": [
+      "selector aleatorio",
+      "selección aleatoria",
+      "elección aleatoria",
+      "elemento aleatorio",
+      "tomador de decisiones",
+      "selector aleatorio de nombres",
+      "sorteo aleatorio",
+      "selector de lotería",
+      "generador aleatorio",
+      "herramienta de selección aleatoria"
+    ],
+    "faq": [
+      {
+        "question": "¿Cómo funciona la herramienta Selector Aleatorio?",
+        "answer": "La herramienta Selector Aleatorio te permite crear una lista de elementos (nombres, opciones, elecciones, etc.) y luego selecciona aleatoriamente un elemento de esa lista. El proceso de selección está acompañado por una animación fluida que recorre diferentes opciones antes de detenerse en la selección aleatoria final. La herramienta utiliza un generador de números aleatorios criptográficamente seguro para garantizar resultados justos e imparciales."
+      },
+      {
+        "question": "¿Para qué puedo usar la herramienta Selector Aleatorio?",
+        "answer": "El Selector Aleatorio tiene muchas aplicaciones prácticas: Toma de decisiones cuando estás indeciso entre múltiples opciones; Selección de ganadores para concursos, sorteos o rifas; Asignación de tareas o responsabilidades aleatoriamente entre miembros de un equipo; Elección de un estudiante aleatorio en clase para participación; Selección aleatoria de una película, restaurante o actividad para entretenimiento; Creación de selecciones justas e imparciales para cualquier situación donde se desee aleatoriedad."
+      },
+      {
+        "question": "¿El Selector Aleatorio es verdaderamente aleatorio?",
+        "answer": "Sí, nuestro Selector Aleatorio utiliza el generador de números aleatorios criptográficamente seguro del navegador (crypto.getRandomValues) para garantizar una verdadera aleatoriedad en el proceso de selección. Este es el mismo nivel de aleatoriedad utilizado para aplicaciones de seguridad, lo que lo hace adecuado para situaciones donde una selección justa e imparcial es importante. Cada elemento en tu lista tiene una probabilidad igual de ser seleccionado."
+      },
+      {
+        "question": "¿Puedo guardar mi lista de elementos para uso futuro?",
+        "answer": "Actualmente, la herramienta Selector Aleatorio no tiene una función de guardado integrada. Sin embargo, puedes fácilmente copiar tu lista de elementos antes de cerrar el navegador y pegarlos nuevamente usando la función 'Añadir en Masa' la próxima vez. Para uso frecuente con la misma lista, recomendamos mantener tus elementos en un archivo de texto que puedas copiar y pegar rápidamente en la herramienta."
+      },
+      {
+        "question": "¿Cuántos elementos puedo añadir al Selector Aleatorio?",
+        "answer": "La herramienta Selector Aleatorio puede manejar un gran número de elementos, pero para un rendimiento y usabilidad óptimos, recomendamos mantener tu lista por debajo de 1000 elementos. Para listas muy grandes, podrías experimentar ligeros impactos en el rendimiento durante la fase de animación, pero la selección aleatoria en sí seguirá funcionando correctamente independientemente del tamaño de la lista."
+      }
+    ]
   }
 ]

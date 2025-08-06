@@ -16,7 +16,8 @@
     "productivity": "Productivity",
     "productivityDesc": "Task management, note-taking, and workflow optimization tools",
     "allCategories": "All Categories",
-    "allCategoriesDesc": "Browse all tool categories"
+    "allCategoriesDesc": "Browse all tool categories",
+    "menu": "menu"
   },
   "Homepage": {
     "title": "Free Online Tools",
@@ -438,6 +439,9 @@
     }
   },
   "BMRCalculator": {
+    "title": "BMR Calculator",
+    "description": "Calculate your Basal Metabolic Rate (BMR) and daily calorie needs.",
+    "personalInfo": "Personal Information",
     "unitSystem": "Unit System",
     "metric": "Metric (cm, kg)",
     "imperial": "Imperial (in, lb)",
@@ -477,6 +481,9 @@
     }
   },
   "CarbonFootprintCalculator": {
+    "title": "Carbon Footprint Calculator",
+    "description": "Calculate your carbon footprint based on your lifestyle and consumption habits.",
+    "transportationTitle": "Transportation",
     "transportationType": "Transportation Type",
     "selectTransportation": "Select transportation type",
     "transportationTypes": {
@@ -535,5 +542,29 @@
       "invalidNumbers": "Please enter valid numbers",
       "positiveNumbers": "All values must be positive numbers"
     }
+  },
+  "RandomPicker": {
+    "title": "Random Picker",
+    "description": "Randomly select an item from your list with a fun animation effect.",
+    "addItems": "Add Items",
+    "itemPlaceholder": "Enter an item...",
+    "add": "Add",
+    "bulkAdd": "Bulk Add",
+    "bulkPlaceholder": "Enter multiple items, one per line...",
+    "addAll": "Add All",
+    "cancel": "Cancel",
+    "bulkInstructions": "Press Ctrl+Enter to add all items at once",
+    "itemsList": "Items List",
+    "noItems": "No items added yet. Add some items to get started.",
+    "clearAll": "Clear All",
+    "pickRandom": "Pick Random Item",
+    "picking": "Picking...",
+    "result": "Result",
+    "close": "Close",
+    "remove": "Remove",
+    "errors": {
+      "noItems": "Please add at least one item first"
+    },
+    "copied": "Copied to clipboard!"
   }
 }

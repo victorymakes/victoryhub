@@ -452,5 +452,29 @@
       "invalidNumbers": "유효한 숫자를 입력해주세요",
       "positiveNumbers": "모든 값은 양수여야 합니다"
     }
+  },
+  "RandomPicker": {
+    "title": "랜덤 선택기",
+    "description": "재미있는 애니메이션 효과로 목록에서 항목을 무작위로 선택합니다.",
+    "addItems": "항목 추가",
+    "itemPlaceholder": "항목 입력...",
+    "add": "추가",
+    "bulkAdd": "대량 추가",
+    "bulkPlaceholder": "여러 항목을 한 줄에 하나씩 입력...",
+    "addAll": "모두 추가",
+    "cancel": "취소",
+    "bulkInstructions": "Ctrl+Enter를 눌러 모든 항목을 한 번에 추가",
+    "itemsList": "항목 목록",
+    "noItems": "아직 추가된 항목이 없습니다. 시작하려면 몇 가지 항목을 추가하세요.",
+    "clearAll": "모두 지우기",
+    "pickRandom": "무작위 항목 선택",
+    "picking": "선택 중...",
+    "result": "결과",
+    "close": "닫기",
+    "remove": "제거",
+    "errors": {
+      "noItems": "먼저 최소 하나의 항목을 추가해주세요"
+    },
+    "copied": "클립보드에 복사되었습니다!"
   }
 }

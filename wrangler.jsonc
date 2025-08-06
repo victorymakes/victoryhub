@@ -1,6 +1,8 @@
 {
   "main": ".open-next/worker.js",
   "name": "tools",
+  // https://opennext.js.org/cloudflare/howtos/keep_names
+  "keep_names": false,
   "compatibility_date": "2025-07-29",
   "compatibility_flags": [
     "nodejs_compat"
