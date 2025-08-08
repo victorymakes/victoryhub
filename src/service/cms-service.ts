@@ -1,4 +1,4 @@
-import * as pageData from "../../data/page/metadata.json";
+import * as pageData from "../../data/cms/metadata.json";
 import React from "react";
 import { Page } from "@/types/page";
 
@@ -31,7 +31,7 @@ export const getPageContent = async (
 ): Promise<React.ComponentType | null> => {
     try {
         // Try to import MDX file for the specified locale
-        const content = await import(`../../data/page/${slug}/${locale}.mdx`);
+        const content = await import(`../../data/cms/${slug}/${locale}.mdx`);
         return content.default;
     } catch (error) {
         console.warn(
@@ -40,7 +40,7 @@ export const getPageContent = async (
         );
         try {
             // Fallback to English if locale-specific file doesn't exist
-            const content = await import(`../../data/${slug}/en.mdx`);
+            const content = await import(`../../data/cms/${slug}/en.mdx`);
             return content.default;
         } catch (fallbackError) {
             console.error(

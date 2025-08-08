@@ -36,7 +36,7 @@ export async function generateMetadata({
 
     const url = getLocalizedUrl(
         resolvedParams.locale,
-        `/tool/${resolvedParams.slug}`,
+        `/tools/${resolvedParams.slug}`,
     );
 
     const jsonLdSchemas = [];
@@ -98,7 +98,7 @@ export async function generateMetadata({
         },
         alternates: {
             canonical: url,
-            languages: getLocalizedUrls(`/tool/${resolvedParams.slug}`),
+            languages: getLocalizedUrls(`/tools/${resolvedParams.slug}`),
         },
         other: {
             "script:ld+json": JSON.stringify(
@@ -117,7 +117,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
     const currentUrl = getLocalizedUrl(
         resolvedParams.locale,
-        `/tool/${resolvedParams.slug}`,
+        `/tools/${resolvedParams.slug}`,
     );
 
     return (

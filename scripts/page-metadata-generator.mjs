@@ -3,13 +3,13 @@
 // It reads all MDX files in each locale directory, extracts metadata from export statements,
 // and generates locale-specific JSON files and a merged metadata file.
 // Usage: node scripts/page-metadata-generator.mjs
-// Directory structure: data/page/{slug}/{locale}.mdx
+// Directory structure: data/cms/{slug}/{locale}.mdx
 
 import fs from "fs";
 import path from "path";
 
-const pagePath = "./data/page";
-const outputPath = "./data/page/metadata.json";
+const pagePath = "./data/cms";
+const outputPath = "./data/cms/metadata.json";
 
 // Helper function to estimate reading time
 const estimateReadingTime = (content) => {
@@ -59,7 +59,7 @@ const findAllMarkdownFiles = (dir) => {
     return results;
 };
 
-// Extract slug and locale from file path: data/page/{slug}/{locale}.mdx (or deeper)
+// Extract slug and locale from file path: data/cms/{slug}/{locale}.mdx (or deeper)
 const extractSlugAndLocale = (filePath) => {
     const relPath = path.relative(pagePath, filePath);
     const parts = relPath.split(path.sep);

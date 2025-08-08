@@ -30,7 +30,7 @@ export default async function ToolGrid({
             {tools.map((tool) => (
                 <Link
                     key={tool.slug}
-                    href={`/tool/${tool.slug}`}
+                    href={`/tools/${tool.slug}`}
                     className="bg-card text-card-foreground p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border space-y-3 group"
                 >
                     <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">

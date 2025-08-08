@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getTools } from "@/service/tool-service";
 import { getBlogs } from "@/service/blog-service";
-import { getPages } from "@/service/page-service";
+import { getPages } from "@/service/cms-service";
 import { config } from "@/lib/config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -31,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         const tools = await getTools(locale);
         tools.forEach((tool) => {
             sitemapEntries.push({
-                url: `${baseUrl}/${locale}/tool/${tool.slug}`,
+                url: `${baseUrl}/${locale}/tools/${tool.slug}`,
                 lastModified: new Date(),
                 changeFrequency: "monthly",
                 priority: 0.8,
