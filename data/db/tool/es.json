@@ -610,5 +610,45 @@
         "answer": "Los favicons se generan en formato PNG (Portable Network Graphics), que ofrece buena calidad con soporte para transparencia y es ampliamente compatible con todos los navegadores modernos. Aunque tradicionalmente se usaban archivos ICO, los navegadores actuales admiten completamente PNG, que es más fácil de manejar y mantiene la calidad a diferentes tamaños."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Convertidor de Modelos de Color – Convierte entre HEX, RGB, HSL, HSV, OKLCH y OKLAB",
+    "description": "Convierte colores entre los formatos HEX, RGB, HSL, HSV, OKLCH y OKLAB. Herramienta interactiva con conversión y visualización en tiempo real.",
+    "category": "development",
+    "keywords": [
+      "convertidor de color",
+      "hex a rgb",
+      "rgb a hex",
+      "convertidor hsl",
+      "convertidor hsv",
+      "color oklch",
+      "color oklab",
+      "convertidor de formatos de color",
+      "herramienta de color web",
+      "conversión de modelo de color"
+    ],
+    "faq": [
+      {
+        "question": "¿Cuáles son los diferentes modelos de color y cuándo debo usar cada uno?",
+        "answer": "Cada modelo de color tiene su propósito: <strong>HEX</strong> se usa ampliamente en desarrollo web y CSS (#RRGGBB). <strong>RGB</strong> es el estándar para pantallas. <strong>HSL</strong> es intuitivo para generar variaciones de color. <strong>HSV/HSB</strong> es popular en software de diseño. <strong>OKLCH</strong> y <strong>OKLAB</strong> son espacios de color perceptualmente uniformes, ideales para crear paletas accesibles y gradientes suaves. Usa RGB/HEX para compatibilidad web, HSL/HSV para edición intuitiva y OKLCH/OKLAB para precisión perceptual."
+      },
+      {
+        "question": "¿Cómo convierto colores entre diferentes formatos?",
+        "answer": "Con nuestro convertidor solo tienes que introducir un color en cualquiera de los formatos soportados (HEX, RGB, HSL, HSV, OKLCH, OKLAB) y se convertirá automáticamente a los demás en tiempo real. Manualmente: para pasar de HEX a RGB divide el código en tres pares y convierte de base 16 a decimal. Para RGB a HEX haz lo inverso. HSL/HSV requieren fórmulas más complejas. OKLCH/OKLAB usan matrices y funciones no lineales. Nuestra herramienta lo hace todo por ti con precisión."
+      },
+      {
+        "question": "¿Qué son los modelos de color OKLCH y OKLAB y por qué son importantes?",
+        "answer": "OKLCH y OKLAB son modelos modernos diseñados para reflejar cómo percibimos los colores. <strong>OKLAB</strong> usa L (luminosidad), a (verde-rojo), b (azul-amarillo). <strong>OKLCH</strong> es su forma polar: L (luminosidad), C (croma), H (tono). Son importantes para: mantener contraste, crear gradientes suaves, generar paletas balanceadas, y garantizar accesibilidad visual. Cada vez más navegadores los soportan, haciéndolos esenciales en el diseño web moderno."
+      },
+      {
+        "question": "¿Cómo puedo usar esta herramienta en diseño y desarrollo web?",
+        "answer": "Esta herramienta es útil en múltiples aspectos: <strong>Integración CSS</strong> – cambia entre formatos según el caso (HEX para legado, RGB/HSL para opacidad, OKLCH para navegadores nuevos). <strong>Accesibilidad</strong> – verifica contraste y crea combinaciones accesibles. <strong>Sistemas de diseño</strong> – genera paletas consistentes y exportables. <strong>Gradientes</strong> – usa HSL/OKLCH para transiciones suaves. <strong>Modo oscuro</strong> – ajusta solo luminosidad para invertir sin perder color. <strong>Compatibilidad</strong> – prueba cómo se ve el color en distintos formatos y navegadores."
+      },
+      {
+        "question": "¿Es suficientemente precisa esta herramienta para trabajo profesional?",
+        "answer": "Sí. Usamos algoritmos estándar para todas las conversiones (HEX, RGB, HSL, HSV). OKLCH/OKLAB se basan en la especificación oficial del CSS Color Module Level 4, con soporte para gestión de gamut. Todas las operaciones se hacen con alta precisión numérica. Pero recuerda: los colores pueden variar según pantalla, perfil de color o calibración. No es un error del convertidor, sino una limitación digital. Para trabajos sensibles al color, recomendamos usar también una pantalla calibrada y software profesional."
+      }
+    ]
   }
 ]

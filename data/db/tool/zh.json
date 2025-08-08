@@ -652,5 +652,45 @@
         "answer": "生成的图标为 PNG 格式（支持透明背景、画质清晰），兼容所有现代浏览器。虽然早期多使用 ICO 格式，但现代浏览器对 PNG 的支持更好，且操作更方便。"
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "颜色模型转换器 – 在 HEX、RGB、HSL、HSV、OKLCH、OKLAB 之间转换",
+    "description": "一个支持 HEX、RGB、HSL、HSV、OKLCH、OKLAB 多种格式实时转换与可视化的交互式工具。",
+    "category": "development",
+    "keywords": [
+      "颜色转换器",
+      "hex 转 rgb",
+      "rgb 转 hex",
+      "hsl 转换",
+      "hsv 转换",
+      "oklch 颜色",
+      "oklab 颜色",
+      "颜色格式转换器",
+      "网页颜色工具",
+      "颜色模型转换"
+    ],
+    "faq": [
+      {
+        "question": "不同颜色模型的用途是什么？我应该什么时候使用它们？",
+        "answer": "不同颜色模型适用于设计和开发中的不同场景：<strong>HEX</strong> 是网页开发和 CSS 中常用的十六进制格式；<strong>RGB</strong> 是数字显示和屏幕设计的标准；<strong>HSL</strong>（色相、饱和度、亮度）更易于人类理解，适合调整色彩变化；<strong>HSV</strong> 在图形设计软件中用于直观地选择颜色；<strong>OKLCH</strong> 和 <strong>OKLAB</strong> 是感知均匀的颜色空间，更符合人眼感知，适合制作可访问配色和渐变。网页兼容性建议用 RGB/HEX，编辑便利性建议用 HSL/HSV，精准视觉呈现建议用 OKLCH/OKLAB。"
+      },
+      {
+        "question": "我该如何在不同格式之间转换颜色？",
+        "answer": "使用我们的颜色模型转换器非常简单：只需输入任意支持格式（HEX、RGB、HSL、HSV、OKLCH、OKLAB）的颜色值，工具将实时转换为所有其他格式。手动转换示例：HEX 转 RGB 需要将 6 位 hex 拆分为三组，每组从 16 进制转换为 10 进制。RGB 转 HEX 则是将每个 0–255 的分量转换为 2 位 16 进制数。HSL 和 HSV 涉及色相旋转和明度/饱和度的计算。OKLCH 和 OKLAB 需要矩阵变换和非线性映射。本工具自动处理这些复杂计算，确保转换结果准确可靠。"
+      },
+      {
+        "question": "OKLCH 和 OKLAB 是什么？为什么重要？",
+        "answer": "OKLCH 和 OKLAB 是现代的、感知均匀的颜色空间，它们比传统的 RGB 和 HSL 更符合人眼的视觉感知。<strong>OKLAB</strong> 包括 L（亮度）、a（红绿）、b（黄蓝）三维；<strong>OKLCH</strong> 是其极坐标形式，使用 L（亮度）、C（色度/饱和度）、H（色相）。这些模型适用于：确保颜色对比的可访问性设计；创建明暗过渡平滑的渐变；在不同亮度下保持配色协调；生成对人眼感知友好的色板。随着浏览器支持的增强，这些模型正成为现代 Web 设计与数字无障碍的重要工具。"
+      },
+      {
+        "question": "这个工具在网页设计和开发中有什么用？",
+        "answer": "它非常适合以下场景：<strong>CSS集成</strong> - 可轻松在不同 CSS 场景中使用转换格式（如 HEX 用于旧代码，RGB/HSL 用于透明度，OKLCH 用于现代浏览器）；<strong>可访问性</strong> - 确保颜色对比合适并创建辅助视力友好配色；<strong>设计系统</strong> - 跨模型生成一致配色并用于文档输出；<strong>渐变创建</strong> - 使用 HSL 或 OKLCH 调整参数制作自然渐变；<strong>暗色模式适配</strong> - 通过调整 HSL 或 OKLCH 的亮度创建暗色版本；<strong>浏览器兼容性检查</strong> - 比较多种格式在不同环境下的表现。"
+      },
+      {
+        "question": "这个工具转换结果足够专业吗？",
+        "answer": "是的。我们采用行业标准算法来确保 HEX、RGB、HSL、HSV 之间的准确转换。对于更复杂的 OKLCH 和 OKLAB，我们遵循 CSS Color Module Level 4 的规范，包括色域映射和超出范围处理。所有计算均为高精度，避免舍入误差。但请注意，不同设备的色彩显示可能因校准、色彩配置文件、色域等产生偏差，这不是转换错误，而是数字色彩的自然限制。如对色彩精度要求极高，建议搭配专业显示器和色彩管理工具使用本工具。"
+      }
+    ]
   }
 ]

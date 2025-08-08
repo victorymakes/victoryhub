@@ -605,5 +605,45 @@
         "answer": "Faviconene genereres som PNG-filer (med støtte for gjennomsiktighet og høy kvalitet), som støttes av alle moderne nettlesere. Selv om ICO-filer tidligere var vanlig, støtter nåværende nettlesere PNG fullt ut – og det er enklere å håndtere og gir bedre kvalitet på tvers av størrelser."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Fargemodellkonverter – Konverter mellom HEX, RGB, HSL, HSV, OKLCH og OKLAB",
+    "description": "Konverter farger mellom HEX, RGB, HSL, HSV, OKLCH og OKLAB. Interaktivt verktøy med sanntidskonvertering og visualisering.",
+    "category": "development",
+    "keywords": [
+      "fargekonverterer",
+      "hex til rgb",
+      "rgb til hex",
+      "hsl-konverterer",
+      "hsv-konverterer",
+      "oklch-farge",
+      "oklab-farge",
+      "fargeformatkonverter",
+      "webfargeverktøy",
+      "fargemodellkonvertering"
+    ],
+    "faq": [
+      {
+        "question": "Hva er de ulike fargemodellene og når bør jeg bruke dem?",
+        "answer": "Ulike fargemodeller har forskjellige bruksområder: <strong>HEX</strong> brukes mye i webutvikling med #RRGGBB-formatet. <strong>RGB</strong> er standard for digitale skjermer. <strong>HSL</strong> er intuitivt for å lage fargevariasjoner. <strong>HSV/HSB</strong> er populære i grafisk design. <strong>OKLCH</strong> og <strong>OKLAB</strong> er moderne, perseptuelt jevne modeller som bedre samsvarer med menneskelig syn – ideelle for tilgjengelige fargepaletter og jevne overganger. Bruk RGB/HEX for kompatibilitet, HSL/HSV for enkel redigering, og OKLCH/OKLAB for presis fargestyring."
+      },
+      {
+        "question": "Hvordan konverterer jeg farger mellom formater?",
+        "answer": "Bare skriv inn en farge i et støttet format (HEX, RGB, HSL, HSV, OKLCH, OKLAB), og verktøyet konverterer automatisk til de andre i sanntid. Eksempel: HEX til RGB krever å splitte koden i tre deler og konvertere fra hex til desimal. RGB til HEX gjøres ved å konvertere hver komponent til to-sifrede hex-verdier. HSL/HSV involverer mer kompleks matte. OKLCH/OKLAB bruker matriser og ikke-lineære transformasjoner. Verktøyet håndterer alt for deg nøyaktig og effektivt."
+      },
+      {
+        "question": "Hva er OKLCH og OKLAB, og hvorfor er de viktige?",
+        "answer": "OKLCH og OKLAB er nye fargerom designet for å være perseptuelt jevne. I motsetning til RGB og HSL gir like store avstander i disse rommene samme visuelle forskjell. <strong>OKLAB</strong> bruker L (lysstyrke), a (grønn–rød) og b (blå–gul). <strong>OKLCH</strong> er en polær versjon med L (lysstyrke), C (metning) og H (fargetone). De er nyttige for: sikre kontrast, lage myke graderinger, bygge balanserte paletter og forbedre tilgjengelighet. Med økende nettleserstøtte blir de viktige i moderne webdesign."
+      },
+      {
+        "question": "Hvordan kan jeg bruke dette verktøyet i webdesign og utvikling?",
+        "answer": "<strong>CSS-integrasjon</strong> – bytt mellom formater for forskjellige brukstilfeller (HEX for eldre kode, RGB/HSL for gjennomsiktighet, OKLCH for nye nettlesere). <strong>Tilgjengelighet</strong> – sjekk kontrastforhold og lag tilgjengelige fargekombinasjoner. <strong>Designsystemer</strong> – generer konsistente paletter på tvers av modeller. <strong>Overganger</strong> – bruk HSL/OKLCH for jevne graderinger. <strong>Mørk modus</strong> – juster lysstyrke uten å endre fargetone. <strong>Nettleserstøtte</strong> – sammenlign visning på tvers av formater og miljøer."
+      },
+      {
+        "question": "Er konverteringene nøyaktige nok for profesjonell bruk?",
+        "answer": "Ja. HEX, RGB, HSL og HSV bruker veletablerte matematiske formler. OKLCH og OKLAB følger CSS Color Module Level 4, inkludert gamuthåndtering. Beregningene gjøres med høy presisjon. Vær imidlertid oppmerksom på at farger kan vises forskjellig avhengig av skjerm, fargeprofil og kalibrering – dette er en digital begrensning, ikke en feil. For fargenøyaktige prosjekter anbefales kalibrert skjerm og profesjonelt verktøy i tillegg."
+      }
+    ]
   }
 ]

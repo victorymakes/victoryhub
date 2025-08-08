@@ -605,5 +605,45 @@
         "answer": "Favicons bliver genereret i PNG-format, som understøtter gennemsigtighed og høj kvalitet, og som er kompatibelt med alle moderne browsere. Selvom ICO-filer tidligere var standard, understøtter moderne browsere PNG fuldt ud – det er lettere at bruge og bevarer billedkvaliteten."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Farvemodelkonverter – Konverter mellem HEX, RGB, HSL, HSV, OKLCH, OKLAB",
+    "description": "Konverter farver mellem flere formater, herunder HEX, RGB, HSL, HSV, OKLCH og OKLAB. Interaktivt værktøj med realtidskonvertering og visualisering.",
+    "category": "development",
+    "keywords": [
+      "farvekonverter",
+      "hex til rgb",
+      "rgb til hex",
+      "hsl konverter",
+      "hsv konverter",
+      "oklch farve",
+      "oklab farve",
+      "farveformat konverter",
+      "webfarveværktøj",
+      "farvemodel konvertering"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er de forskellige farvemodeller, og hvornår skal jeg bruge hver enkelt?",
+        "answer": "Forskellige farvemodeller tjener forskellige formål i design og udvikling: <strong>HEX</strong> (hexadecimal) bruges bredt i webudvikling og CSS med sit #RRGGBB-format. <strong>RGB</strong> (Rød, Grøn, Blå) er standarden for digitale skærme og skærmbaseret design. <strong>HSL</strong> (Hue, Saturation, Lightness) er intuitiv for mennesker at forstå og manipulere, hvilket gør den fremragende til at skabe farvevariationer. <strong>HSV/HSB</strong> (Hue, Saturation, Value/Brightness) er populær i grafisk designsoftware for sin intuitive farvevalgstilgang. <strong>OKLCH</strong> og <strong>OKLAB</strong> er perceptuelt ensartede farverum, der bedre matcher menneskets syn, hvilket gør dem ideelle til at skabe tilgængelige farvepaletter og jævne farveovergange. Brug RGB/HEX for webkompatibilitet, HSL/HSV for intuitiv redigering og OKLCH/OKLAB for perceptuelt nøjagtigt farvearbejde."
+      },
+      {
+        "question": "Hvordan konverterer jeg farver mellem forskellige formater?",
+        "answer": "Vores Farvemodelkonverter gør konvertering enkel: Indtast blot en farveværdi i et understøttet format (HEX, RGB, HSL, HSV, OKLCH eller OKLAB), og værktøjet konverterer den automatisk til alle andre formater i realtid. For manuel konvertering: For at konvertere HEX til RGB opdeles den 6-cifrede hex-kode i tre 2-cifrede værdier og konverteres hver fra base-16 til decimal. For RGB til HEX konverteres hver RGB-komponent (0-255) til en 2-cifret hexadecimal værdi og kombineres. HSL- og HSV-konverteringer involverer mere komplekse algoritmer med hue-rotation og beregninger af mætning/lysstyrke/værdi. OKLCH- og OKLAB-konverteringer kræver matrixtransformationer og ikke-lineære kortlægningsfunktioner. Vores værktøj håndterer al denne kompleksitet for dig og sikrer præcise konverteringer på tværs af alle farvemodeller."
+      },
+      {
+        "question": "Hvad er OKLCH- og OKLAB-farvemodeller, og hvorfor er de vigtige?",
+        "answer": "OKLCH og OKLAB er moderne, perceptuelt ensartede farverum, designet til bedre at matche menneskelig visuel opfattelse. I modsætning til traditionelle RGB- eller HSL-modeller sikrer disse, at lige store skridt i farverummet svarer til lige store oplevede farveforskelle. <strong>OKLAB</strong> bruger tre dimensioner: L (lysstyrke), a (grøn–rød) og b (blå–gul). <strong>OKLCH</strong> er den polære form af OKLAB og bruger L (lysstyrke), C (kroma/mætning) og H (farvetone). Disse modeller er i stigende grad vigtige for: at skabe tilgængelige designs med forudsigelige kontrastforhold; generere jævne overgange uden uventede lysstyrkeforskelle; sikre farveharmoni på tværs af lysstyrkeniveauer; og skabe farvepaletter, der opleves balancerede for det menneskelige øje. Efterhånden som browserunderstøttelsen vokser, bliver disse formater essentielle værktøjer for moderne webdesign og digital tilgængelighed."
+      },
+      {
+        "question": "Hvordan kan jeg bruge dette værktøj til webdesign og -udvikling?",
+        "answer": "Vores Farvemodelkonverter er uvurderlig til webdesign og -udvikling på flere måder: <strong>CSS-integration</strong> – konverter nemt mellem formater til brug i forskellige CSS-sammenhænge (HEX til ældre kode, RGB/HSL til gennemsigtighed, OKLCH til moderne browsere). <strong>Tilgængelighed</strong> – sørg for, at dine farver opretholder korrekte kontrastforhold på tværs af formater, og skab tilgængelige variationer. <strong>Designsystemer</strong> – generer konsistente farvepaletter på tværs af modeller og eksporter værdier til din designsystemdokumentation. <strong>Gradientoprettelse</strong> – brug HSL eller OKLCH til at skabe perceptuelt jævne overgange ved at justere hue, mætning og lysstyrke. <strong>Dark mode-tilpasning</strong> – konverter farver til HSL eller OKLCH for nemt at skabe mørke tilstande ved at justere lysstyrken, mens farvetonen bevares. <strong>Browserkompatibilitet</strong> – tjek hvordan dine farver vises i forskellige formater for understøttelse på tværs af browsere. Indtast blot din basisfarve og få alle konverteringer øjeblikkeligt til brug i dine webprojekter."
+      },
+      {
+        "question": "Er farvekonverteringerne i dette værktøj nøjagtige nok til professionel brug?",
+        "answer": "Ja, vores Farvemodelkonverter implementerer branchestandardalgoritmer for alle farvekonverteringer og er dermed velegnet til professionelt design- og udviklingsarbejde. For HEX-, RGB-, HSL- og HSV-konverteringer bruger vi veletablerede matematiske formler, der sikrer nøjagtighed over hele farvespektret. For de mere komplekse OKLCH- og OKLAB-konverteringer implementerer vi de officielle specifikationer fra CSS Color Module Level 4, herunder korrekt håndtering af gamutmapping og farver uden for gamut. Alle beregninger udføres med høj numerisk præcision for at minimere afrundingsfejl. Det er dog vigtigt at bemærke, at nogle farver kan se en smule anderledes ud på forskellige enheder på grund af skærmkalibrering, farveprofiler og gamutbegrænsninger—dette er en grundlæggende begrænsning i digital farvegengivelse og ikke et konverteringsproblem. Til farvekritisk professionelt arbejde, der kræver præcis farvestyring, anbefaler vi at bruge dette værktøj sammen med en korrekt kalibreret skærm og professionel farvestyringssoftware."
+      }
+    ]
   }
 ]

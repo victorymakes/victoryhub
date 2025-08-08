@@ -610,5 +610,45 @@
         "answer": "Les favicons sont générés au format PNG (Portable Network Graphics), qui prend en charge la transparence et offre une bonne qualité tout en étant compatible avec tous les navigateurs modernes. Bien que les fichiers ICO aient été utilisés traditionnellement, les navigateurs modernes prennent pleinement en charge les PNG, qui sont plus simples à utiliser et conservent mieux la qualité."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Convertisseur de Modèles de Couleurs – Convertir entre HEX, RGB, HSL, HSV, OKLCH, OKLAB",
+    "description": "Convertissez les couleurs entre les formats HEX, RGB, HSL, HSV, OKLCH et OKLAB. Outil interactif avec conversion et visualisation en temps réel.",
+    "category": "development",
+    "keywords": [
+      "convertisseur de couleurs",
+      "hex vers rgb",
+      "rgb vers hex",
+      "convertisseur hsl",
+      "convertisseur hsv",
+      "couleur oklch",
+      "couleur oklab",
+      "convertisseur de format de couleur",
+      "outil couleur web",
+      "conversion de modèle de couleur"
+    ],
+    "faq": [
+      {
+        "question": "Quels sont les différents modèles de couleur et quand les utiliser ?",
+        "answer": "Chaque modèle de couleur a ses usages : <strong>HEX</strong> est couramment utilisé en développement web avec le format #RRGGBB. <strong>RGB</strong> est standard pour les écrans numériques. <strong>HSL</strong> est intuitif pour créer des variations de couleurs. <strong>HSV/HSB</strong> est apprécié dans les logiciels de design graphique. <strong>OKLCH</strong> et <strong>OKLAB</strong> sont des espaces colorimétriques perceptuellement uniformes, plus proches de la vision humaine, idéals pour créer des palettes accessibles et des dégradés doux. Utilisez RGB/HEX pour la compatibilité web, HSL/HSV pour l’édition intuitive et OKLCH/OKLAB pour un rendu visuel précis."
+      },
+      {
+        "question": "Comment convertir les couleurs entre différents formats ?",
+        "answer": "Avec notre outil, il suffit d’entrer une couleur dans un des formats (HEX, RGB, HSL, HSV, OKLCH, OKLAB) pour obtenir automatiquement les autres en temps réel. Exemple manuel : pour convertir HEX en RGB, découpez le code HEX en 3 paires de chiffres et convertissez-les du base 16 au base 10. Pour RGB en HEX, convertissez chaque composant (0–255) en hexadécimal. Les conversions HSL/HSV sont plus complexes (calculs d’angle, saturation, lumière). OKLCH/OKLAB nécessitent des transformations matricielles. Notre outil gère tout cela automatiquement et précisément."
+      },
+      {
+        "question": "Qu'est-ce que OKLCH et OKLAB et pourquoi sont-ils importants ?",
+        "answer": "OKLCH et OKLAB sont des espaces colorimétriques modernes et perceptuellement uniformes. Contrairement au RGB ou HSL, une même distance dans l’espace correspond à la même perception visuelle. <strong>OKLAB</strong> utilise L (luminosité), a (vert-rouge), b (bleu-jaune). <strong>OKLCH</strong> est la forme polaire de OKLAB avec L (luminosité), C (chroma), H (teinte). Ces modèles sont parfaits pour créer des palettes équilibrées, des dégradés sans sauts de luminosité, et garantir l’accessibilité. Leur adoption croît avec le support des navigateurs modernes."
+      },
+      {
+        "question": "Comment utiliser cet outil pour le web design et le développement ?",
+        "answer": "Voici comment l’utiliser : <strong>Intégration CSS</strong> – passez facilement entre formats selon le contexte (HEX pour l’existant, RGB/HSL pour l’opacité, OKLCH pour les navigateurs modernes). <strong>Accessibilité</strong> – vérifiez les contrastes et créez des variantes accessibles. <strong>Systèmes de design</strong> – générez des palettes cohérentes multi-formats pour vos documentations. <strong>Dégradés</strong> – ajustez teinte/luminosité avec HSL ou OKLCH pour des transitions douces. <strong>Mode sombre</strong> – modifiez la luminosité pour créer des versions sombres cohérentes. <strong>Compatibilité navigateurs</strong> – vérifiez le rendu selon le format."
+      },
+      {
+        "question": "Les conversions sont-elles précises pour un usage professionnel ?",
+        "answer": "Oui. Toutes les conversions suivent des algorithmes standards fiables. HEX, RGB, HSL, HSV utilisent des formules reconnues. OKLCH/OKLAB sont basés sur le CSS Color Module Level 4, avec gestion du gamut et haute précision numérique. Notez que l’affichage peut varier selon l’écran, les profils de couleur et la calibration. Ce n’est pas dû à une erreur de conversion, mais aux limites naturelles du numérique. Pour un usage critique, utilisez aussi un écran calibré et un logiciel de gestion des couleurs."
+      }
+    ]
   }
 ]

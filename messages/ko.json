@@ -522,5 +522,42 @@
       "generationFailed": "파비콘 생성에 실패했습니다",
       "copyFailed": "클립보드에 복사하지 못했습니다"
     }
+  },
+  "ColorModelConverter": {
+    "title": "색상 모델 변환기",
+    "description": "HEX, RGB, HSL, HSV, OKLCH, OKLAB 형식 간 색상을 변환합니다",
+    "hexColor": "HEX 색상",
+    "rgbColor": "RGB 색상",
+    "hslColor": "HSL 색상",
+    "hsvColor": "HSV 색상",
+    "oklchColor": "OKLCH 색상",
+    "oklabColor": "OKLAB 색상",
+    "enterHex": "HEX 색상을 입력하세요...",
+    "enterRgb": "RGB 값을 입력하세요...",
+    "enterHsl": "HSL 값을 입력하세요...",
+    "enterHsv": "HSV 값을 입력하세요...",
+    "enterOklch": "OKLCH 값을 입력하세요...",
+    "enterOklab": "OKLAB 값을 입력하세요...",
+    "red": "빨강",
+    "green": "초록",
+    "blue": "파랑",
+    "hue": "색상",
+    "saturation": "채도",
+    "lightness": "명도",
+    "value": "값",
+    "brightness": "밝기",
+    "chroma": "채도",
+    "colorPreview": "색상 미리보기",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "reset": "초기화",
+    "errors": {
+      "invalidHex": "잘못된 HEX 색상입니다. #RRGGBB 또는 #RGB 형식을 사용하세요.",
+      "invalidRgb": "잘못된 RGB 값입니다. 각 구성 요소는 0~255여야 합니다.",
+      "invalidHsl": "잘못된 HSL 값입니다. H: 0-360, S/L: 0-100%.",
+      "invalidHsv": "잘못된 HSV 값입니다. H: 0-360, S/V: 0-100%.",
+      "invalidOklch": "잘못된 OKLCH 값입니다. 입력을 확인하세요.",
+      "invalidOklab": "잘못된 OKLAB 값입니다. 입력을 확인하세요."
+    }
   }
 }

@@ -569,45 +569,85 @@
   },
   {
     "slug": "text-favicon-generator",
-    "name": "Generador de Favicon de Texto – Crea favicons personalizados a partir de texto",
-    "description": "Crea favicons personalizados a partir de texto con diferentes estilos, colores y formas. Incluye modo por lotes para generar múltiples favicons a la vez.",
+    "name": "Генератор фавиконов из текста – Создание пользовательских иконок из текста",
+    "description": "Создавайте пользовательские фавиконы из текста с различными стилями, цветами и формами. Поддерживается пакетный режим для одновременной генерации нескольких иконок.",
     "category": "media",
     "keywords": [
-      "generador de favicon",
-      "favicon de texto",
-      "favicon personalizado",
-      "icono de sitio web",
-      "icono de navegador",
-      "icono de pestaña",
-      "icono de sitio",
-      "favicon por lotes",
-      "creador de favicon",
-      "texto a icono"
+      "генератор фавиконов",
+      "текстовый фавикон",
+      "пользовательский фавикон",
+      "иконка сайта",
+      "иконка браузера",
+      "иконка вкладки",
+      "иконка ресурса",
+      "пакетный фавикон",
+      "создатель фавиконов",
+      "текст в иконку"
     ],
     "faq": [
       {
-        "question": "¿Qué es un favicon y por qué lo necesito?",
-        "answer": "Un favicon es un pequeño icono asociado a un sitio web que aparece en las pestañas del navegador, los marcadores y otras áreas. Ayuda a los usuarios a identificar visualmente tu sitio entre múltiples pestañas abiertas y marcadores. Un favicon distintivo refuerza tu identidad de marca, mejora la experiencia del usuario y aporta un toque profesional a tu sitio web."
+        "question": "Что такое фавикон и зачем он нужен?",
+        "answer": "Фавикон — это небольшая иконка, связанная с сайтом, которая отображается во вкладках браузера, закладках и других местах. Он помогает пользователю визуально распознать ваш сайт среди множества открытых вкладок и закладок. Яркий и уникальный фавикон усиливает узнаваемость бренда, улучшает пользовательский опыт и придаёт сайту профессиональный вид."
       },
       {
-        "question": "¿Cómo uso el Generador de Favicon de Texto?",
-        "answer": "Simplemente ingresa el texto que quieres que aparezca en tu favicon (de 1 a 4 caracteres funciona mejor), elige el color de fondo, el color del texto, la forma, la familia tipográfica y el tamaño de fuente. Haz clic en 'Generar Favicon' para crear tu icono personalizado. Luego puedes descargarlo o copiarlo directamente. Para generar múltiples favicons, activa el modo por lotes e ingresa un texto por línea."
+        "question": "Как пользоваться генератором текстовых фавиконов?",
+        "answer": "Введите текст, который вы хотите видеть на фавиконе (лучше всего подходят 1–4 символа), выберите цвет фона, цвет текста, форму, шрифт и размер шрифта. Нажмите «Создать фавикон», чтобы получить свою иконку. Вы можете её скачать или скопировать. Для массового создания включите пакетный режим и введите каждый текст с новой строки."
       },
       {
-        "question": "¿Qué es el modo por lotes y cómo funciona?",
-        "answer": "El modo por lotes te permite generar múltiples favicons a la vez con la misma configuración de estilo pero con textos diferentes. Activa el interruptor de 'Modo por lotes', luego escribe cada texto en una línea separada. Al hacer clic en 'Generar Favicons', la herramienta creará un favicon independiente para cada texto. Puedes descargarlos individualmente o usar 'Descargar todo' para obtenerlos en un archivo zip."
+        "question": "Что такое пакетный режим и как он работает?",
+        "answer": "Пакетный режим позволяет сгенерировать несколько фавиконов одновременно с одинаковыми настройками, но разным текстом. Включите переключатель «Пакетный режим», затем введите каждый текст в отдельной строке. При нажатии кнопки «Создать фавиконы» инструмент создаст отдельный фавикон для каждой строки. Можно скачать фавиконы по одному или все сразу в ZIP-архиве."
       },
       {
-        "question": "¿Cómo agrego el favicon a mi sitio web?",
-        "answer": "Después de generar tu favicon, descárgalo y súbelo al directorio raíz de tu sitio web o a una carpeta específica. Luego añade el código HTML correspondiente en la sección <head> de tu sitio. Puedes obtener este código haciendo clic en el botón 'Descargar código HTML'. Para la mayoría de los sitios, colocar el archivo favicon.ico en el directorio raíz es suficiente."
+        "question": "Как добавить фавикон на сайт?",
+        "answer": "После генерации фавикона скачайте его и разместите в корневом каталоге вашего сайта или в нужной папке. Затем вставьте соответствующий HTML-код в раздел <head> страницы. Вы можете получить этот код, нажав кнопку «Скачать HTML-код». Для большинства сайтов достаточно разместить файл favicon.ico в корневом каталоге."
       },
       {
-        "question": "¿Qué longitud de texto funciona mejor para favicons?",
-        "answer": "Para una visibilidad óptima, recomendamos usar 1 o 2 caracteres en tu favicon. Como los favicons se muestran en tamaños pequeños (normalmente de 16x16 a 32x32 píxeles), los textos cortos son más legibles. Puedes usar hasta 4 caracteres, pero el texto se reducirá para encajar. Para textos largos, considera usar iniciales o abreviaturas."
+        "question": "Какой длины текст лучше всего подходит для фавикона?",
+        "answer": "Оптимально использовать 1–2 символа, так как фавиконы отображаются в небольшом размере (обычно 16x16 или 32x32 пикселя), и короткий текст читается лучше. Разрешено использовать до 4 символов, но текст будет уменьшен. При более длинном тексте лучше использовать аббревиатуру или инициалы."
       },
       {
-        "question": "¿En qué formato se generan los favicons?",
-        "answer": "Los favicons se generan en formato PNG (Portable Network Graphics), que ofrece buena calidad con soporte para transparencia y es ampliamente compatible con todos los navegadores modernos. Aunque tradicionalmente se usaban archivos ICO, los navegadores actuales admiten completamente PNG, que es más fácil de manejar y mantiene la calidad a diferentes tamaños."
+        "question": "В каком формате сохраняются фавиконы?",
+        "answer": "Фавиконы сохраняются в формате PNG (с прозрачностью и высоким качеством). Хотя раньше чаще использовались ICO-файлы, современные браузеры полностью поддерживают PNG, который проще в использовании и сохраняет качество при разных размерах."
+      }
+    ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Конвертер Цветовых Моделей – Перевод между HEX, RGB, HSL, HSV, OKLCH, OKLAB",
+    "description": "Интерактивный инструмент для конвертации цветов между HEX, RGB, HSL, HSV, OKLCH и OKLAB с мгновенным отображением результата.",
+    "category": "development",
+    "keywords": [
+      "конвертер цвета",
+      "hex в rgb",
+      "rgb в hex",
+      "конвертер hsl",
+      "конвертер hsv",
+      "цвет oklch",
+      "цвет oklab",
+      "конвертер форматов цвета",
+      "инструмент цвета для веба",
+      "конвертация цветовых моделей"
+    ],
+    "faq": [
+      {
+        "question": "Какие существуют цветовые модели и когда какую использовать?",
+        "answer": "Разные цветовые модели подходят для разных задач. <strong>HEX</strong> — формат #RRGGBB, широко используемый в вебе и CSS. <strong>RGB</strong> — стандарт для экранов. <strong>HSL</strong> — удобен для создания цветовых вариаций. <strong>HSV/HSB</strong> популярен в графических редакторах. <strong>OKLCH</strong> и <strong>OKLAB</strong> — современные, равномерные для восприятия модели, позволяющие создавать доступные палитры и плавные градиенты. HEX/RGB — для совместимости с вебом, HSL/HSV — для редактирования, OKLCH/OKLAB — для точной передачи цвета."
+      },
+      {
+        "question": "Как перевести цвет из одного формата в другой?",
+        "answer": "Просто введите цвет в одном из поддерживаемых форматов (HEX, RGB, HSL, HSV, OKLCH, OKLAB), и инструмент мгновенно выдаст эквиваленты. Пример вручную: HEX → RGB — разделите код на 3 части и переведите из 16-ричной в 10-ричную. RGB → HEX — наоборот. HSL/HSV требуют расчётов с углами, яркостью и насыщенностью. OKLCH/OKLAB используют матричные преобразования и нелинейные функции. Всё это делает наш инструмент за вас, точно и быстро."
+      },
+      {
+        "question": "Что такое OKLCH и OKLAB и почему это важно?",
+        "answer": "OKLCH и OKLAB — современные цветовые модели, основанные на восприятии человека. В отличие от RGB/HSL, равные шаги в модели дают одинаковые визуальные различия. <strong>OKLAB</strong> включает яркость (L), красно-зелёную (a) и сине-жёлтую (b) компоненты. <strong>OKLCH</strong> — полярная форма OKLAB: L (яркость), C (насыщенность), H (оттенок). Эти модели полезны для создания доступных интерфейсов, плавных градиентов и гармоничных палитр. С ростом поддержки в браузерах они становятся стандартом."
+      },
+      {
+        "question": "Как этот инструмент поможет в веб-дизайне и разработке?",
+        "answer": "Очень просто: <strong>CSS</strong> — быстро переключайтесь между форматами (HEX — для старого кода, RGB/HSL — для прозрачности, OKLCH — для новых браузеров). <strong>Доступность</strong> — проверяйте контраст и делайте адаптивные цвета. <strong>Дизайн-системы</strong> — создавайте и документируйте палитры в разных форматах. <strong>Градиенты</strong> — HSL/OKLCH дают плавные переходы. <strong>Тёмная тема</strong> — меняйте яркость без изменения оттенка. <strong>Поддержка браузеров</strong> — сравнивайте визуализацию между форматами. Просто введите цвет и получите все значения."
+      },
+      {
+        "question": "Можно ли использовать этот инструмент в профессиональной работе?",
+        "answer": "Да. Все алгоритмы соответствуют отраслевым стандартам. Для HEX, RGB, HSL, HSV используются проверенные формулы. OKLCH/OKLAB — по спецификации CSS Color Module Level 4 с учетом цветового охвата. Вычисления высокоточные, с минимальной ошибкой округления. Но учтите: отображение может отличаться в зависимости от экрана, профиля и калибровки — это ограничение цифрового цвета, а не ошибка инструмента. Для критичных задач — используйте калиброванный монитор и софт для управления цветом."
       }
     ]
   }

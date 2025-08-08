@@ -610,5 +610,45 @@
         "answer": "Os favicons são gerados em formato PNG (Portable Network Graphics), que oferece boa qualidade, suporte à transparência e ampla compatibilidade com todos os navegadores modernos. Embora arquivos ICO fossem usados anteriormente, os navegadores atuais suportam plenamente PNG, que é mais fácil de usar e mantém boa qualidade em diferentes tamanhos."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Conversor de Modelo de Cor – Converta entre HEX, RGB, HSL, HSV, OKLCH e OKLAB",
+    "description": "Converta cores entre os formatos HEX, RGB, HSL, HSV, OKLCH e OKLAB. Ferramenta interativa com conversão e visualização em tempo real.",
+    "category": "development",
+    "keywords": [
+      "conversor de cores",
+      "hex para rgb",
+      "rgb para hex",
+      "conversor hsl",
+      "conversor hsv",
+      "cor oklch",
+      "cor oklab",
+      "conversor de formato de cor",
+      "ferramenta de cor para web",
+      "conversão de modelo de cor"
+    ],
+    "faq": [
+      {
+        "question": "Quais são os diferentes modelos de cor e quando devo usar cada um?",
+        "answer": "Modelos de cor servem a diferentes propósitos: <strong>HEX</strong> é comum em desenvolvimento web (formato #RRGGBB). <strong>RGB</strong> é o padrão para telas digitais. <strong>HSL</strong> é mais intuitivo para criar variações de cor. <strong>HSV/HSB</strong> é usado em softwares gráficos. <strong>OKLCH</strong> e <strong>OKLAB</strong> são modelos modernos e perceptualmente uniformes, ideais para criar paletas acessíveis e gradientes suaves. Use RGB/HEX para compatibilidade, HSL/HSV para edição intuitiva e OKLCH/OKLAB para fidelidade visual."
+      },
+      {
+        "question": "Como converter cores entre diferentes formatos?",
+        "answer": "Insira uma cor em qualquer formato suportado (HEX, RGB, HSL, HSV, OKLCH ou OKLAB) e o conversor exibirá automaticamente os valores equivalentes. Exemplo: HEX → RGB divide o código em três pares e converte de hexadecimal para decimal. RGB → HEX converte cada componente (0–255) para hexadecimal. HSL/HSV exigem cálculos com saturação e matiz. OKLCH/OKLAB usam transformações matriciais. Esta ferramenta realiza tudo com precisão automaticamente."
+      },
+      {
+        "question": "O que são OKLCH e OKLAB e por que são importantes?",
+        "answer": "OKLCH e OKLAB são espaços de cor modernos que refletem melhor a percepção humana. <strong>OKLAB</strong> usa L (luminosidade), a (verde-vermelho), b (azul-amarelo). <strong>OKLCH</strong> é sua forma polar: L (luminosidade), C (croma), H (matiz). Esses modelos facilitam contrastes consistentes, gradientes suaves e paletas harmoniosas. Com mais navegadores oferecendo suporte, eles se tornam essenciais no design web moderno."
+      },
+      {
+        "question": "Como usar esta ferramenta no design e desenvolvimento web?",
+        "answer": "<strong>Integração com CSS</strong> – alterne entre formatos conforme necessário (HEX para legado, RGB/HSL para transparência, OKLCH para navegadores modernos). <strong>Acessibilidade</strong> – verifique contraste e crie cores acessíveis. <strong>Sistemas de design</strong> – gere paletas consistentes em múltiplos modelos. <strong>Gradientes</strong> – use HSL/OKLCH para transições suaves. <strong>Modo escuro</strong> – ajuste apenas a luminosidade mantendo a tonalidade. <strong>Compatibilidade</strong> – compare como a cor aparece em diferentes formatos e navegadores."
+      },
+      {
+        "question": "As conversões são precisas o suficiente para uso profissional?",
+        "answer": "Sim. HEX, RGB, HSL e HSV usam fórmulas estabelecidas. OKLCH e OKLAB seguem as especificações do CSS Color Module Level 4 com mapeamento de gamut. Os cálculos são altamente precisos. No entanto, lembre-se de que cores podem variar entre dispositivos devido a perfis de cor e calibração – isso é uma limitação digital, não do conversor. Para trabalhos sensíveis à cor, use um monitor calibrado e ferramentas de gestão de cor profissionais."
+      }
+    ]
   }
 ]

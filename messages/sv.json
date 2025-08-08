@@ -612,5 +612,42 @@
       "generationFailed": "Kunde inte generera favicon",
       "copyFailed": "Misslyckades med att kopiera till urklipp"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Färgmodellkonverterare",
+    "description": "Konvertera färger mellan HEX-, RGB-, HSL-, HSV-, OKLCH- och OKLAB-format",
+    "hexColor": "HEX-färg",
+    "rgbColor": "RGB-färg",
+    "hslColor": "HSL-färg",
+    "hsvColor": "HSV-färg",
+    "oklchColor": "OKLCH-färg",
+    "oklabColor": "OKLAB-färg",
+    "enterHex": "Ange HEX-färg...",
+    "enterRgb": "Ange RGB-värden...",
+    "enterHsl": "Ange HSL-värden...",
+    "enterHsv": "Ange HSV-värden...",
+    "enterOklch": "Ange OKLCH-värden...",
+    "enterOklab": "Ange OKLAB-värden...",
+    "red": "Röd",
+    "green": "Grön",
+    "blue": "Blå",
+    "hue": "Nyans",
+    "saturation": "Mättnad",
+    "lightness": "Ljushet",
+    "value": "Värde",
+    "brightness": "Ljusstyrka",
+    "chroma": "Kroma",
+    "colorPreview": "Färgförhandsvisning",
+    "copy": "Kopiera",
+    "copied": "Kopierad!",
+    "reset": "Återställ",
+    "errors": {
+      "invalidHex": "Ogiltig HEX-färg. Använd formatet #RRGGBB eller #RGB.",
+      "invalidRgb": "Ogiltiga RGB-värden. Varje komponent ska vara mellan 0–255.",
+      "invalidHsl": "Ogiltiga HSL-värden. H: 0–360, S/L: 0–100%.",
+      "invalidHsv": "Ogiltiga HSV-värden. H: 0–360, S/V: 0–100%.",
+      "invalidOklch": "Ogiltiga OKLCH-värden. Kontrollera din inmatning.",
+      "invalidOklab": "Ogiltiga OKLAB-värden. Kontrollera din inmatning."
+    }
   }
 }

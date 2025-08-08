@@ -612,5 +612,42 @@
       "generationFailed": "Failed to generate favicon",
       "copyFailed": "Failed to copy to clipboard"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Color Model Converter",
+    "description": "Convert colors between HEX, RGB, HSL, HSV, OKLCH, and OKLAB formats",
+    "hexColor": "HEX Color",
+    "rgbColor": "RGB Color",
+    "hslColor": "HSL Color",
+    "hsvColor": "HSV Color",
+    "oklchColor": "OKLCH Color",
+    "oklabColor": "OKLAB Color",
+    "enterHex": "Enter HEX color...",
+    "enterRgb": "Enter RGB values...",
+    "enterHsl": "Enter HSL values...",
+    "enterHsv": "Enter HSV values...",
+    "enterOklch": "Enter OKLCH values...",
+    "enterOklab": "Enter OKLAB values...",
+    "red": "Red",
+    "green": "Green",
+    "blue": "Blue",
+    "hue": "Hue",
+    "saturation": "Saturation",
+    "lightness": "Lightness",
+    "value": "Value",
+    "brightness": "Brightness",
+    "chroma": "Chroma",
+    "colorPreview": "Color Preview",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "reset": "Reset",
+    "errors": {
+      "invalidHex": "Invalid HEX color. Please use format #RRGGBB or #RGB.",
+      "invalidRgb": "Invalid RGB values. Each component should be 0-255.",
+      "invalidHsl": "Invalid HSL values. H: 0-360, S/L: 0-100%.",
+      "invalidHsv": "Invalid HSV values. H: 0-360, S/V: 0-100%.",
+      "invalidOklch": "Invalid OKLCH values. Please check your input.",
+      "invalidOklab": "Invalid OKLAB values. Please check your input."
+    }
   }
 }
