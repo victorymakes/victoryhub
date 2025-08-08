@@ -562,5 +562,49 @@
         "answer": "De tool kan een groot aantal items verwerken, maar voor optimale prestaties en gebruiksgemak raden we aan de lijst onder de 1000 items te houden. Bij zeer grote lijsten kan de animatie iets trager worden, maar de selectie blijft correct werken, ongeacht de grootte van de lijst."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Tekst Favicon Generator – Maak aangepaste favicons van tekst",
+    "description": "Maak aangepaste favicons van tekst met verschillende stijlen, kleuren en vormen. Inclusief batchmodus om meerdere favicons tegelijk te genereren.",
+    "category": "media",
+    "keywords": [
+      "favicon generator",
+      "tekst favicon",
+      "aangepaste favicon",
+      "website icoon",
+      "browser icoon",
+      "tabblad icoon",
+      "site icoon",
+      "batch favicon",
+      "favicon maker",
+      "tekst naar icoon"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een favicon en waarom heb ik er een nodig?",
+        "answer": "Een favicon is een klein pictogram dat is gekoppeld aan een website en wordt weergegeven in browser-tabbladen, bladwijzers en andere locaties. Het helpt gebruikers om jouw site visueel te herkennen tussen meerdere geopende tabbladen en opgeslagen pagina’s. Een opvallende favicon versterkt je merkidentiteit, verbetert de gebruikerservaring en geeft je website een professionele uitstraling."
+      },
+      {
+        "question": "Hoe gebruik ik de Tekst Favicon Generator?",
+        "answer": "Voer de tekst in die je in de favicon wilt weergeven (1–4 tekens werken het beste), kies een achtergrondkleur, tekstkleur, vorm, lettertype en lettergrootte. Klik op ‘Genereer favicon’ om je aangepaste pictogram te maken. Je kunt het favicon daarna downloaden of kopiëren. Voor meerdere favicons schakel je de batchmodus in en voer je op elke regel een andere tekst in."
+      },
+      {
+        "question": "Wat is batchmodus en hoe werkt het?",
+        "answer": "Met batchmodus kun je meerdere favicons tegelijk genereren met dezelfde stijlinstellingen maar verschillende teksten. Zet de batchmodus aan en voer in het tekstvak op elke regel een andere tekst in. Klik op ‘Genereer favicons’ om voor elke tekst een afzonderlijk pictogram te maken. Je kunt ze afzonderlijk downloaden of allemaal tegelijk als ZIP-bestand."
+      },
+      {
+        "question": "Hoe voeg ik de favicon toe aan mijn website?",
+        "answer": "Download de gegenereerde favicon en upload deze naar de hoofdmap van je website of een specifieke map. Voeg vervolgens de bijbehorende HTML-code toe aan het <head>-gedeelte van je website. Deze code kun je downloaden via de knop ‘Download HTML-code’. Voor de meeste websites is het voldoende om een bestand met de naam favicon.ico in de hoofdmap te plaatsen."
+      },
+      {
+        "question": "Wat is de ideale lengte van tekst voor een favicon?",
+        "answer": "Voor optimale zichtbaarheid raden we aan om 1–2 tekens te gebruiken. Favicons worden meestal weergegeven in kleine formaten (16x16 tot 32x32 pixels), dus kortere tekst is duidelijker en beter leesbaar. Tot 4 tekens is mogelijk, maar het tekstformaat wordt dan automatisch verkleind. Voor langere woorden kun je beter initialen of een afkorting gebruiken."
+      },
+      {
+        "question": "In welk bestandsformaat worden de favicons gegenereerd?",
+        "answer": "De favicons worden gegenereerd als PNG-bestanden (met ondersteuning voor transparantie en hoge kwaliteit). Hoewel vroeger ICO-bestanden werden gebruikt, ondersteunen moderne browsers PNG volledig. PNG-bestanden zijn eenvoudiger te gebruiken en behouden een betere kwaliteit bij verschillende afmetingen."
+      }
+    ]
   }
 ]
