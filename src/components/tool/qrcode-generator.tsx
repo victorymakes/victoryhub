@@ -198,7 +198,7 @@ const QRCodeGenerator: React.FC = () => {
                                         <Label htmlFor="qr-fg-color">
                                             {t("foregroundColor")}
                                         </Label>
-                                        <div className="flex">
+                                        <div className="flex gap-2">
                                             <Input
                                                 id="qr-fg-color"
                                                 type="color"
@@ -206,7 +206,7 @@ const QRCodeGenerator: React.FC = () => {
                                                 onChange={(e) =>
                                                     setFgColor(e.target.value)
                                                 }
-                                                className="w-12 p-1 h-10"
+                                                className="w-12"
                                             />
                                             <Input
                                                 type="text"
@@ -214,7 +214,7 @@ const QRCodeGenerator: React.FC = () => {
                                                 onChange={(e) =>
                                                     setFgColor(e.target.value)
                                                 }
-                                                className="flex-1 ml-2"
+                                                className="flex-1"
                                             />
                                         </div>
                                     </div>
@@ -223,7 +223,7 @@ const QRCodeGenerator: React.FC = () => {
                                         <Label htmlFor="qr-bg-color">
                                             {t("backgroundColor")}
                                         </Label>
-                                        <div className="flex">
+                                        <div className="flex gap-2">
                                             <Input
                                                 id="qr-bg-color"
                                                 type="color"
@@ -231,7 +231,7 @@ const QRCodeGenerator: React.FC = () => {
                                                 onChange={(e) =>
                                                     setBgColor(e.target.value)
                                                 }
-                                                className="w-12 p-1 h-10"
+                                                className="w-12"
                                             />
                                             <Input
                                                 type="text"
@@ -239,7 +239,7 @@ const QRCodeGenerator: React.FC = () => {
                                                 onChange={(e) =>
                                                     setBgColor(e.target.value)
                                                 }
-                                                className="flex-1 ml-2"
+                                                className="flex-1"
                                             />
                                         </div>
                                     </div>

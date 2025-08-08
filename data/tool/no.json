@@ -561,5 +561,49 @@
         "answer": "Verktøyet håndterer et stort antall elementer, men for best ytelse og brukervennlighet anbefaler vi å holde listen under 1000 elementer. Ved svært store lister kan animasjonen bli litt tregere, men selve utvalget vil fortsatt fungere korrekt uansett listeens størrelse."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Tekst Favicon Generator – Lag egendefinerte favicons fra tekst",
+    "description": "Lag egendefinerte favicons fra tekst med ulike stiler, farger og former. Inkluderer batch-modus for å generere flere favicons samtidig.",
+    "category": "media",
+    "keywords": [
+      "favicon-generator",
+      "tekstfavicon",
+      "egendefinert favicon",
+      "nettstedsikon",
+      "nettleserikon",
+      "fanekortikon",
+      "sideikon",
+      "batch favicon",
+      "favicon-skaper",
+      "tekst til ikon"
+    ],
+    "faq": [
+      {
+        "question": "Hva er en favicon, og hvorfor trenger jeg en?",
+        "answer": "En favicon er et lite ikon som er knyttet til et nettsted, og som vises i nettleserfaner, bokmerker og andre steder. Det hjelper brukere med å identifisere nettstedet ditt visuelt blant mange åpne faner eller lagrede sider. Et unikt favicon styrker merkevaren din, forbedrer brukeropplevelsen og gir nettstedet ditt et profesjonelt uttrykk."
+      },
+      {
+        "question": "Hvordan bruker jeg Tekst Favicon Generator?",
+        "answer": "Skriv inn teksten du vil vise i faviconet (1–4 tegn fungerer best), velg bakgrunnsfarge, tekstfarge, form, skrifttype og skriftstørrelse. Klikk på ‘Generer favicon’ for å lage det tilpassede ikonet ditt. Du kan deretter laste det ned eller kopiere det. For å lage flere favicons samtidig, aktiver batch-modus og skriv inn én tekst per linje."
+      },
+      {
+        "question": "Hva er batch-modus og hvordan fungerer det?",
+        "answer": "Batch-modus lar deg generere flere favicons samtidig med samme stilinnstillinger, men med forskjellig tekst. Slå på batch-modus og skriv inn en tekst per linje. Når du klikker på ‘Generer favicons’, lager verktøyet et eget favicon for hver linje. Du kan laste ned ikonene enkeltvis eller bruke ‘Last ned alle’ for å få dem samlet i en zip-fil."
+      },
+      {
+        "question": "Hvordan legger jeg til favicon på nettstedet mitt?",
+        "answer": "Når du har generert faviconet ditt, laster du det ned og laster det opp til rotmappen på nettstedet ditt eller en valgt undermappe. Deretter legger du til passende HTML-kode i <head>-seksjonen på siden. Du kan få denne koden ved å klikke på knappen ‘Last ned HTML-kode’. For de fleste nettsteder holder det å plassere favicon.ico i rotmappen."
+      },
+      {
+        "question": "Hvor mange tegn bør et favicon ha?",
+        "answer": "Vi anbefaler 1–2 tegn for best lesbarhet. Favicons vises ofte i små størrelser (f.eks. 16x16 eller 32x32 piksler), og kort tekst gir best resultat. Du kan bruke opptil 4 tegn, men da blir teksten mindre. Vurder å bruke initialer eller forkortelser hvis teksten er for lang."
+      },
+      {
+        "question": "Hvilket filformat genereres faviconene i?",
+        "answer": "Faviconene genereres som PNG-filer (med støtte for gjennomsiktighet og høy kvalitet), som støttes av alle moderne nettlesere. Selv om ICO-filer tidligere var vanlig, støtter nåværende nettlesere PNG fullt ut – og det er enklere å håndtere og gir bedre kvalitet på tvers av størrelser."
+      }
+    ]
   }
 ]
