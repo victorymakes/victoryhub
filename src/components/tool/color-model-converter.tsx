@@ -864,7 +864,7 @@ export const ColorModelConverter = () => {
                             <Label>{t("oklabColor")}</Label>
                             <div className="grid grid-cols-3 gap-4">
                                 <div className="space-y-2">
-                                    <Label htmlFor="oklab-l">{t("l")}</Label>
+                                    <Label htmlFor="oklab-l">L</Label>
                                     <Input
                                         id="oklab-l"
                                         type="number"
