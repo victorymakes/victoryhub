@@ -566,5 +566,49 @@
         "answer": "Lo strumento Selettore Casuale può gestire un gran numero di elementi, ma per prestazioni e usabilità ottimali, consigliamo di mantenere la tua lista sotto i 1000 elementi. Per liste molto grandi, potresti riscontrare leggeri impatti sulle prestazioni durante la fase di animazione, ma la selezione casuale stessa funzionerà comunque correttamente indipendentemente dalla dimensione della lista."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Generatore di Favicon da Testo – Crea favicon personalizzati dal testo",
+    "description": "Crea favicon personalizzati da testo con vari stili, colori e forme. Include la modalità batch per generare più favicon contemporaneamente.",
+    "category": "media",
+    "keywords": [
+      "generatore di favicon",
+      "favicon da testo",
+      "favicon personalizzato",
+      "icona del sito web",
+      "icona del browser",
+      "icona della scheda",
+      "icona del sito",
+      "favicon batch",
+      "creatore di favicon",
+      "testo in icona"
+    ],
+    "faq": [
+      {
+        "question": "Cos'è un favicon e perché ne ho bisogno?",
+        "answer": "Un favicon è una piccola icona associata a un sito web che appare nelle schede del browser, nei segnalibri e in altre aree. Aiuta gli utenti a identificare visivamente il tuo sito tra più schede aperte o preferiti salvati. Un favicon distintivo rafforza l'identità del marchio, migliora l'esperienza utente e conferisce un tocco professionale al tuo sito."
+      },
+      {
+        "question": "Come si usa il Generatore di Favicon da Testo?",
+        "answer": "Inserisci semplicemente il testo che desideri visualizzare nel favicon (da 1 a 4 caratteri è l'ideale), scegli il colore di sfondo, il colore del testo, la forma, la famiglia del font e la dimensione del font. Clicca su 'Genera Favicon' per creare la tua icona personalizzata. Puoi quindi scaricare il favicon o copiarlo direttamente. Per creare più favicon, attiva la modalità batch e inserisci un testo per riga."
+      },
+      {
+        "question": "Cos'è la modalità batch e come funziona?",
+        "answer": "La modalità batch ti consente di generare più favicon contemporaneamente utilizzando le stesse impostazioni di stile ma testi diversi. Attiva la modalità batch e inserisci ogni testo su una nuova riga. Cliccando su 'Genera Favicon', lo strumento creerà un'icona separata per ogni testo. Puoi scaricarle singolarmente o tutte insieme in un file zip."
+      },
+      {
+        "question": "Come aggiungo il favicon al mio sito web?",
+        "answer": "Dopo aver generato il tuo favicon, scaricalo e caricalo nella directory principale del tuo sito o in una cartella specifica. Poi aggiungi il codice HTML appropriato nella sezione <head> della tua pagina. Puoi ottenere questo codice cliccando su 'Scarica codice HTML'. Nella maggior parte dei casi, è sufficiente inserire il file favicon.ico nella directory principale del sito."
+      },
+      {
+        "question": "Qual è la lunghezza di testo consigliata per i favicon?",
+        "answer": "Per una visibilità ottimale, consigliamo di usare 1 o 2 caratteri. I favicon vengono visualizzati in piccole dimensioni (di solito 16x16 o 32x32 pixel), quindi testi più brevi sono più leggibili. Puoi usare fino a 4 caratteri, ma il testo apparirà più piccolo. Per testi più lunghi, considera di usare iniziali o abbreviazioni."
+      },
+      {
+        "question": "In quale formato vengono generati i favicon?",
+        "answer": "I favicon vengono generati in formato PNG (Portable Network Graphics), che supporta la trasparenza, garantisce alta qualità ed è ampiamente compatibile con tutti i browser moderni. Sebbene i file ICO siano stati utilizzati in passato, i browser odierni supportano pienamente i PNG, che sono più facili da gestire e mantengono una buona qualità a diverse dimensioni."
+      }
+    ]
   }
 ]

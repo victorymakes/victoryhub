@@ -566,5 +566,49 @@
         "answer": "Инструмент может обрабатывать большие списки, но для лучшей производительности и удобства использования рекомендуется не превышать 1000 элементов. При очень длинных списках возможна небольшая задержка в анимации, но выбор останется корректным."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Generador de Favicon de Texto – Crea favicons personalizados a partir de texto",
+    "description": "Crea favicons personalizados a partir de texto con diferentes estilos, colores y formas. Incluye modo por lotes para generar múltiples favicons a la vez.",
+    "category": "media",
+    "keywords": [
+      "generador de favicon",
+      "favicon de texto",
+      "favicon personalizado",
+      "icono de sitio web",
+      "icono de navegador",
+      "icono de pestaña",
+      "icono de sitio",
+      "favicon por lotes",
+      "creador de favicon",
+      "texto a icono"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es un favicon y por qué lo necesito?",
+        "answer": "Un favicon es un pequeño icono asociado a un sitio web que aparece en las pestañas del navegador, los marcadores y otras áreas. Ayuda a los usuarios a identificar visualmente tu sitio entre múltiples pestañas abiertas y marcadores. Un favicon distintivo refuerza tu identidad de marca, mejora la experiencia del usuario y aporta un toque profesional a tu sitio web."
+      },
+      {
+        "question": "¿Cómo uso el Generador de Favicon de Texto?",
+        "answer": "Simplemente ingresa el texto que quieres que aparezca en tu favicon (de 1 a 4 caracteres funciona mejor), elige el color de fondo, el color del texto, la forma, la familia tipográfica y el tamaño de fuente. Haz clic en 'Generar Favicon' para crear tu icono personalizado. Luego puedes descargarlo o copiarlo directamente. Para generar múltiples favicons, activa el modo por lotes e ingresa un texto por línea."
+      },
+      {
+        "question": "¿Qué es el modo por lotes y cómo funciona?",
+        "answer": "El modo por lotes te permite generar múltiples favicons a la vez con la misma configuración de estilo pero con textos diferentes. Activa el interruptor de 'Modo por lotes', luego escribe cada texto en una línea separada. Al hacer clic en 'Generar Favicons', la herramienta creará un favicon independiente para cada texto. Puedes descargarlos individualmente o usar 'Descargar todo' para obtenerlos en un archivo zip."
+      },
+      {
+        "question": "¿Cómo agrego el favicon a mi sitio web?",
+        "answer": "Después de generar tu favicon, descárgalo y súbelo al directorio raíz de tu sitio web o a una carpeta específica. Luego añade el código HTML correspondiente en la sección <head> de tu sitio. Puedes obtener este código haciendo clic en el botón 'Descargar código HTML'. Para la mayoría de los sitios, colocar el archivo favicon.ico en el directorio raíz es suficiente."
+      },
+      {
+        "question": "¿Qué longitud de texto funciona mejor para favicons?",
+        "answer": "Para una visibilidad óptima, recomendamos usar 1 o 2 caracteres en tu favicon. Como los favicons se muestran en tamaños pequeños (normalmente de 16x16 a 32x32 píxeles), los textos cortos son más legibles. Puedes usar hasta 4 caracteres, pero el texto se reducirá para encajar. Para textos largos, considera usar iniciales o abreviaturas."
+      },
+      {
+        "question": "¿En qué formato se generan los favicons?",
+        "answer": "Los favicons se generan en formato PNG (Portable Network Graphics), que ofrece buena calidad con soporte para transparencia y es ampliamente compatible con todos los navegadores modernos. Aunque tradicionalmente se usaban archivos ICO, los navegadores actuales admiten completamente PNG, que es más fácil de manejar y mantiene la calidad a diferentes tamaños."
+      }
+    ]
   }
 ]

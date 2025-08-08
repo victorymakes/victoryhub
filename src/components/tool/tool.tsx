@@ -13,6 +13,7 @@ import BMICalculator from "./bmi-calculator";
 import BMRCalculator from "./bmr-calculator";
 import CarbonFootprintCalculator from "./carbon-footprint-calculator";
 import RandomPicker from "./random-picker";
+import TextFaviconGenerator from "./text-favicon-generator";
 
 interface ToolComponentProps {
     id: string;
@@ -52,6 +53,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <BMRCalculator />;
         case "carbon-footprint-calculator":
             return <CarbonFootprintCalculator />;
+        case "text-favicon-generator":
+            return <TextFaviconGenerator />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

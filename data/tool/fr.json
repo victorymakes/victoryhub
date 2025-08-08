@@ -566,5 +566,49 @@
         "answer": "L'outil Sélecteur Aléatoire peut gérer un grand nombre d'éléments, mais pour des performances et une convivialité optimales, nous recommandons de garder votre liste en dessous de 1000 éléments. Pour les listes très volumineuses, il peut y avoir un léger impact sur les performances pendant la phase d'animation, mais la sélection aléatoire elle-même fonctionnera correctement quelle que soit la taille de la liste."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Générateur de Favicon Texte – Créez des favicons personnalisés à partir de texte",
+    "description": "Créez des favicons personnalisés à partir de texte avec différents styles, couleurs et formes. Inclut un mode batch pour générer plusieurs favicons en une fois.",
+    "category": "media",
+    "keywords": [
+      "générateur de favicon",
+      "favicon texte",
+      "favicon personnalisé",
+      "icône de site web",
+      "icône de navigateur",
+      "icône d’onglet",
+      "icône de site",
+      "favicon en lot",
+      "créateur de favicon",
+      "texte en icône"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce qu’un favicon et pourquoi en ai-je besoin ?",
+        "answer": "Un favicon est une petite icône associée à un site web, qui apparaît dans les onglets du navigateur, les favoris et d'autres emplacements. Il aide les utilisateurs à identifier visuellement votre site parmi plusieurs onglets ouverts ou dans leurs signets. Un favicon distinctif renforce l’identité visuelle de votre marque, améliore l’expérience utilisateur et donne un aspect professionnel à votre site."
+      },
+      {
+        "question": "Comment utiliser le générateur de favicon texte ?",
+        "answer": "Saisissez simplement le texte que vous souhaitez voir apparaître sur votre favicon (1 à 4 caractères sont idéaux), choisissez la couleur d’arrière-plan, la couleur du texte, la forme, la police et la taille. Cliquez sur « Générer le favicon » pour créer votre icône. Vous pouvez ensuite la télécharger ou la copier. Pour créer plusieurs favicons, activez le mode batch et saisissez un texte par ligne."
+      },
+      {
+        "question": "Qu’est-ce que le mode batch et comment fonctionne-t-il ?",
+        "answer": "Le mode batch vous permet de générer plusieurs favicons en une seule fois avec les mêmes réglages de style mais des textes différents. Activez le mode batch, entrez chaque texte sur une nouvelle ligne, puis cliquez sur « Générer les favicons ». L’outil créera un favicon distinct pour chaque texte. Vous pouvez télécharger chaque favicon individuellement ou tous en un fichier ZIP."
+      },
+      {
+        "question": "Comment ajouter le favicon à mon site web ?",
+        "answer": "Après avoir généré votre favicon, téléchargez-le puis placez-le dans le répertoire racine de votre site ou un dossier spécifique. Ensuite, ajoutez le code HTML correspondant dans la balise <head> de votre site. Ce code est disponible en cliquant sur le bouton « Télécharger le code HTML ». Dans la plupart des cas, il suffit de placer un fichier favicon.ico à la racine pour que cela fonctionne."
+      },
+      {
+        "question": "Quelle est la meilleure longueur de texte pour un favicon ?",
+        "answer": "Pour une lisibilité optimale, nous recommandons d’utiliser 1 à 2 caractères. Étant donné que les favicons sont affichés dans des tailles réduites (généralement 16x16 à 32x32 pixels), les textes plus courts sont plus nets et lisibles. Vous pouvez utiliser jusqu’à 4 caractères, mais le texte apparaîtra plus petit. Pour des textes plus longs, privilégiez les initiales ou une abréviation."
+      },
+      {
+        "question": "Dans quel format les favicons sont-ils générés ?",
+        "answer": "Les favicons sont générés au format PNG (Portable Network Graphics), qui prend en charge la transparence et offre une bonne qualité tout en étant compatible avec tous les navigateurs modernes. Bien que les fichiers ICO aient été utilisés traditionnellement, les navigateurs modernes prennent pleinement en charge les PNG, qui sont plus simples à utiliser et conservent mieux la qualité."
+      }
+    ]
   }
 ]
