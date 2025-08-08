@@ -895,7 +895,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="oklab-a">a</Label>
+                                    <Label htmlFor="oklab-a">A</Label>
                                     <Input
                                         id="oklab-a"
                                         type="number"
@@ -926,7 +926,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="oklab-b">b</Label>
+                                    <Label htmlFor="oklab-b">B</Label>
                                     <Input
                                         id="oklab-b"
                                         type="number"
