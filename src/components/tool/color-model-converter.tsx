@@ -519,7 +519,7 @@ export const ColorModelConverter = () => {
                             <Label>{t("rgbColor")}</Label>
                             <div className="grid grid-cols-3 gap-4">
                                 <div className="space-y-2">
-                                    <Label htmlFor="rgb-r">{t("red")}</Label>
+                                    <Label htmlFor="rgb-r">R(Red)</Label>
                                     <Input
                                         id="rgb-r"
                                         type="number"
@@ -549,7 +549,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="rgb-g">{t("green")}</Label>
+                                    <Label htmlFor="rgb-g">G(Green)</Label>
                                     <Input
                                         id="rgb-g"
                                         type="number"
@@ -579,7 +579,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="rgb-b">{t("blue")}</Label>
+                                    <Label htmlFor="rgb-b">B(Blue)</Label>
                                     <Input
                                         id="rgb-b"
                                         type="number"
@@ -632,7 +632,7 @@ export const ColorModelConverter = () => {
                             <Label>{t("hslColor")}</Label>
                             <div className="grid grid-cols-3 gap-4">
                                 <div className="space-y-2">
-                                    <Label htmlFor="hsl-h">{t("hue")}</Label>
+                                    <Label htmlFor="hsl-h">H</Label>
                                     <Input
                                         id="hsl-h"
                                         type="number"
@@ -662,9 +662,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="hsl-s">
-                                        {t("saturation")}
-                                    </Label>
+                                    <Label htmlFor="hsl-s">S</Label>
                                     <Input
                                         id="hsl-s"
                                         type="number"
@@ -694,9 +692,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="hsl-l">
-                                        {t("lightness")}
-                                    </Label>
+                                    <Label htmlFor="hsl-l">L</Label>
                                     <Input
                                         id="hsl-l"
                                         type="number"
@@ -749,7 +745,7 @@ export const ColorModelConverter = () => {
                             <Label>{t("hsvColor")}</Label>
                             <div className="grid grid-cols-3 gap-4">
                                 <div className="space-y-2">
-                                    <Label htmlFor="hsv-h">{t("hue")}</Label>
+                                    <Label htmlFor="hsv-h">H</Label>
                                     <Input
                                         id="hsv-h"
                                         type="number"
@@ -779,9 +775,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="hsv-s">
-                                        {t("saturation")}
-                                    </Label>
+                                    <Label htmlFor="hsv-s">S</Label>
                                     <Input
                                         id="hsv-s"
                                         type="number"
@@ -811,7 +805,7 @@ export const ColorModelConverter = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="hsv-v">{t("value")}</Label>
+                                    <Label htmlFor="hsv-v">V</Label>
                                     <Input
                                         id="hsv-v"
                                         type="number"
