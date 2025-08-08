@@ -14,6 +14,13 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import JSZip from "jszip";
 import { FontPicker } from "@/components/ui/font-picker";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
 
 type FaviconShape = "square" | "circle" | "rounded";
 type FontWeight = "normal" | "bold";
@@ -568,24 +575,30 @@ const TextFaviconGenerator = () => {
                         {/* Shape */}
                         <div className="space-y-2">
                             <Label htmlFor="shape">{t("shape")}</Label>
-                            <select
-                                id="shape"
-                                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            <Select
                                 value={shape}
-                                onChange={(e) =>
-                                    setShape(e.target.value as FaviconShape)
+                                onValueChange={(value) =>
+                                    setShape(value as FaviconShape)
                                 }
                             >
-                                <option value="square">
-                                    {t("shapeSquare")}
-                                </option>
-                                <option value="circle">
-                                    {t("shapeCircle")}
-                                </option>
-                                <option value="rounded">
-                                    {t("shapeRounded")}
-                                </option>
-                            </select>
+                                <SelectTrigger id="shape" className="w-full">
+                                    <SelectValue placeholder={t("shape")} />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectItem value="square">
+                                        {" "}
+                                        {t("shapeSquare")}
+                                    </SelectItem>
+                                    <SelectItem value="circle">
+                                        {" "}
+                                        {t("shapeCircle")}
+                                    </SelectItem>
+                                    <SelectItem value="rounded">
+                                        {" "}
+                                        {t("shapeRounded")}
+                                    </SelectItem>
+                                </SelectContent>
+                            </Select>
                         </div>
 
                         {/* Font Size */}
@@ -609,7 +622,7 @@ const TextFaviconGenerator = () => {
                                 {t("fontFamily")}
                             </Label>
                             <FontPicker
-                                // id="font-family"
+                                className={"w-full"}
                                 onChange={(font) => setFontFamily(font)}
                                 value={fontFamily}
                             />
@@ -620,21 +633,29 @@ const TextFaviconGenerator = () => {
                             <Label htmlFor="font-weight">
                                 {t("fontWeight")}
                             </Label>
-                            <select
-                                id="font-weight"
-                                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            <Select
                                 value={fontWeight}
-                                onChange={(e) =>
-                                    setFontWeight(e.target.value as FontWeight)
+                                onValueChange={(value) =>
+                                    setFontWeight(value as FontWeight)
                                 }
                             >
-                                <option value="normal">
-                                    {t("fontWeightNormal")}
-                                </option>
-                                <option value="bold">
-                                    {t("fontWeightBold")}
-                                </option>
-                            </select>
+                                <SelectTrigger
+                                    id="font-weight"
+                                    className="w-full"
+                                >
+                                    <SelectValue
+                                        placeholder={t("fontWeight")}
+                                    />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectItem value="normal">
+                                        {t("fontWeightNormal")}
+                                    </SelectItem>
+                                    <SelectItem value="bold">
+                                        {t("fontWeightBold")}
+                                    </SelectItem>
+                                </SelectContent>
+                            </Select>
                         </div>
                     </div>
 

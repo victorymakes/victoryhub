@@ -83,7 +83,6 @@ function FontListItem({
 interface FontPickerProps {
   onChange?: (font: GoogleFont["family"]) => void;
   value?: string;
-  width?: number;
   height?: number;
   className?: string;
   showFilters?: boolean;
@@ -92,7 +91,6 @@ interface FontPickerProps {
 export function FontPicker({
   onChange,
   value,
-  width = 300,
   height = 300,
   className,
   showFilters = true,
@@ -181,7 +179,7 @@ export function FontPicker({
 
   return (
     <Popover open={isOpen} onOpenChange={handleOpenChange}>
-      <PopoverTrigger asChild>
+      <PopoverTrigger id="font-family" asChild>
         <Button
           ref={buttonRef}
           variant="outline"
@@ -189,10 +187,12 @@ export function FontPicker({
           aria-expanded={isOpen}
           aria-haspopup="listbox"
           aria-label="Select font"
-          className={cn("group relative justify-between", className)}
-          style={{ width }}
+          className={cn(
+              "border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex w-fit items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+              className
+          )}
         >
-          <span className="truncate">
+          <span className={cn("truncate", !selectedFont && "text-muted-foreground")}>
             {selectedFont
               ? filteredFonts.find(
                   (font) => font.family === selectedFont.family,
@@ -202,7 +202,7 @@ export function FontPicker({
           <ChevronsUpDown className="h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="p-0" style={{ width, height }} align="start">
+      <PopoverContent className="p-0" style={{ width: "var(--radix-popover-trigger-width)", height }} align="start">
         <Command>
           <CommandInput
             placeholder="Search fonts..."
