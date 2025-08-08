@@ -513,5 +513,42 @@
       "generationFailed": "Kunne ikke generere favicon",
       "copyFailed": "Kunne ikke kopiere til utklippstavlen"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Fargemodellkonverter",
+    "description": "Konverter farger mellom HEX-, RGB-, HSL-, HSV-, OKLCH- og OKLAB-formater",
+    "hexColor": "HEX-farge",
+    "rgbColor": "RGB-farge",
+    "hslColor": "HSL-farge",
+    "hsvColor": "HSV-farge",
+    "oklchColor": "OKLCH-farge",
+    "oklabColor": "OKLAB-farge",
+    "enterHex": "Skriv inn HEX-farge...",
+    "enterRgb": "Skriv inn RGB-verdier...",
+    "enterHsl": "Skriv inn HSL-verdier...",
+    "enterHsv": "Skriv inn HSV-verdier...",
+    "enterOklch": "Skriv inn OKLCH-verdier...",
+    "enterOklab": "Skriv inn OKLAB-verdier...",
+    "red": "Rød",
+    "green": "Grønn",
+    "blue": "Blå",
+    "hue": "Fargetone",
+    "saturation": "Metning",
+    "lightness": "Lysstyrke",
+    "value": "Verdi",
+    "brightness": "Lyshet",
+    "chroma": "Kromisitet",
+    "colorPreview": "Fargeforhåndsvisning",
+    "copy": "Kopier",
+    "copied": "Kopiert!",
+    "reset": "Tilbakestill",
+    "errors": {
+      "invalidHex": "Ugyldig HEX-farge. Bruk formatet #RRGGBB eller #RGB.",
+      "invalidRgb": "Ugyldige RGB-verdier. Hver komponent må være mellom 0–255.",
+      "invalidHsl": "Ugyldige HSL-verdier. H: 0–360, S/L: 0–100%.",
+      "invalidHsv": "Ugyldige HSV-verdier. H: 0–360, S/V: 0–100%.",
+      "invalidOklch": "Ugyldige OKLCH-verdier. Vennligst sjekk inndataene.",
+      "invalidOklab": "Ugyldige OKLAB-verdier. Vennligst sjekk inndataene."
+    }
   }
 }

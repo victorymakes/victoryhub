@@ -610,5 +610,45 @@
         "answer": "Die Favicons werden im PNG-Format (Portable Network Graphics) erstellt, das Transparenz unterstützt und in allen modernen Browsern gut funktioniert. Während früher meist ICO-Dateien verwendet wurden, unterstützen heutige Browser PNG vollständig – bei besserer Qualität und einfacherer Handhabung."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Farbmodell-Konverter – Konvertiere zwischen HEX, RGB, HSL, HSV, OKLCH, OKLAB",
+    "description": "Konvertiere Farben zwischen HEX, RGB, HSL, HSV, OKLCH und OKLAB mit einem interaktiven Tool in Echtzeit mit Vorschau.",
+    "category": "development",
+    "keywords": [
+      "farbkonverter",
+      "hex zu rgb",
+      "rgb zu hex",
+      "hsl konverter",
+      "hsv konverter",
+      "oklch farbe",
+      "oklab farbe",
+      "farbformat konverter",
+      "web farbtool",
+      "farbmodell konvertierung"
+    ],
+    "faq": [
+      {
+        "question": "Welche Farbmodelle gibt es und wann sollte ich welches verwenden?",
+        "answer": "Unterschiedliche Farbmodelle dienen verschiedenen Zwecken in Design und Entwicklung: <strong>HEX</strong> (hexadezimal) wird häufig in Webentwicklung und CSS mit dem Format #RRGGBB verwendet. <strong>RGB</strong> (Rot, Grün, Blau) ist der Standard für digitale Displays. <strong>HSL</strong> (Farbton, Sättigung, Helligkeit) ist für Menschen intuitiv verständlich und eignet sich gut zur Erzeugung von Farbvariationen. <strong>HSV/HSB</strong> wird oft in Grafiksoftware verwendet. <strong>OKLCH</strong> und <strong>OKLAB</strong> sind neue, visuell einheitliche Farbmodelle, die menschlicher Wahrnehmung besser entsprechen – ideal für zugängliche Paletten und weiche Farbverläufe. Verwende RGB/HEX für Web-Kompatibilität, HSL/HSV für einfache Bearbeitung und OKLCH/OKLAB für präzise visuelle Kontrolle."
+      },
+      {
+        "question": "Wie konvertiere ich Farben zwischen verschiedenen Formaten?",
+        "answer": "Unser Farbmodell-Konverter macht es einfach: Gib einen Farbwert in einem unterstützten Format (HEX, RGB, HSL, HSV, OKLCH, OKLAB) ein und das Tool wandelt ihn in Echtzeit in alle anderen Formate um. Manuell: Um HEX in RGB zu konvertieren, teile den HEX-Code in drei 2-stellige Teile und wandle diese von Hexadezimal in Dezimal um. Umgekehrt wird RGB in 2-stellige HEX-Werte umgewandelt. HSL/HSV erfordern komplexere Berechnungen mit Farbrad, Helligkeit und Sättigung. OKLCH/OKLAB basieren auf Matrizen und nichtlinearen Funktionen. Unser Tool übernimmt die komplexen Berechnungen und liefert präzise Ergebnisse."
+      },
+      {
+        "question": "Was sind OKLCH und OKLAB und warum sind sie wichtig?",
+        "answer": "OKLCH und OKLAB sind moderne, wahrnehmungseinheitliche Farbräume, die menschlicher Farbwahrnehmung besser entsprechen. Im Gegensatz zu RGB oder HSL bedeuten gleiche Abstände im Raum auch gleiche visuelle Unterschiede. <strong>OKLAB</strong> nutzt L (Helligkeit), a (grün–rot) und b (blau–gelb). <strong>OKLCH</strong> ist die polare Variante mit L (Helligkeit), C (Sättigung), H (Farbton). Sie sind wichtig für: zugängliches Design mit kontrolliertem Kontrast; gleichmäßige Farbverläufe ohne Helligkeitssprünge; harmonische Farbschemata. Mit wachsender Browser-Unterstützung werden sie zu einem Standard in der modernen Webgestaltung."
+      },
+      {
+        "question": "Wie kann ich dieses Tool im Webdesign und in der Entwicklung einsetzen?",
+        "answer": "Unser Konverter ist auf viele Arten nützlich: <strong>CSS-Integration</strong> – konvertiere zwischen Formaten für verschiedene CSS-Anwendungen (HEX für Legacy, RGB/HSL für Transparenz, OKLCH für moderne Browser). <strong>Barrierefreiheit</strong> – prüfe Kontrastverhältnisse und erstelle barrierefreie Farbvarianten. <strong>Designsysteme</strong> – erzeuge konsistente Farbpaletten über verschiedene Modelle hinweg. <strong>Farbverläufe</strong> – nutze HSL/OKLCH für visuell gleichmäßige Übergänge. <strong>Dark-Mode</strong> – passe Helligkeit mit HSL/OKLCH an, um dunkle Varianten zu erstellen. <strong>Browser-Kompatibilität</strong> – überprüfe, wie Farben in unterschiedlichen Formaten dargestellt werden. Einfach Farbe eingeben und alle Konvertierungen sofort erhalten."
+      },
+      {
+        "question": "Sind die Farbkonvertierungen dieses Tools für den professionellen Einsatz geeignet?",
+        "answer": "Ja. Unser Tool verwendet präzise, standardisierte Algorithmen für alle Konvertierungen – ideal für Design und Entwicklung. HEX, RGB, HSL und HSV nutzen etablierte mathematische Formeln. OKLCH/OKLAB beruhen auf offiziellen Spezifikationen des CSS Color Module Level 4 inklusive Gamut-Mapping und Genauigkeit für außerhalb des Farbraums liegende Farben. Alle Berechnungen erfolgen mit hoher numerischer Präzision. Bitte beachte: Farben können auf verschiedenen Geräten abweichen, je nach Kalibrierung und Farbraum – dies liegt an digitalen Grenzen, nicht am Tool selbst. Für farbkritische Arbeit empfehlen wir zusätzlich kalibrierte Monitore und professionelle Farbtools."
+      }
+    ]
   }
 ]

@@ -601,5 +601,42 @@
       "generationFailed": "Faviconin luonti epäonnistui",
       "copyFailed": "Kopiointi leikepöydälle epäonnistui"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Värimallimuunnin",
+    "description": "Muunna värejä HEX-, RGB-, HSL-, HSV-, OKLCH- ja OKLAB-muotojen välillä",
+    "hexColor": "HEX-väri",
+    "rgbColor": "RGB-väri",
+    "hslColor": "HSL-väri",
+    "hsvColor": "HSV-väri",
+    "oklchColor": "OKLCH-väri",
+    "oklabColor": "OKLAB-väri",
+    "enterHex": "Anna HEX-väri...",
+    "enterRgb": "Anna RGB-arvot...",
+    "enterHsl": "Anna HSL-arvot...",
+    "enterHsv": "Anna HSV-arvot...",
+    "enterOklch": "Anna OKLCH-arvot...",
+    "enterOklab": "Anna OKLAB-arvot...",
+    "red": "Punainen",
+    "green": "Vihreä",
+    "blue": "Sininen",
+    "hue": "Sävy",
+    "saturation": "Kylläisyys",
+    "lightness": "Vaaleus",
+    "value": "Arvo",
+    "brightness": "Kirkkaus",
+    "chroma": "Kroma",
+    "colorPreview": "Värin esikatselu",
+    "copy": "Kopioi",
+    "copied": "Kopioitu!",
+    "reset": "Nollaa",
+    "errors": {
+      "invalidHex": "Virheellinen HEX-väri. Käytä muotoa #RRGGBB tai #RGB.",
+      "invalidRgb": "Virheelliset RGB-arvot. Jokaisen arvon tulee olla välillä 0–255.",
+      "invalidHsl": "Virheelliset HSL-arvot. H: 0–360, S/L: 0–100%.",
+      "invalidHsv": "Virheelliset HSV-arvot. H: 0–360, S/V: 0–100%.",
+      "invalidOklch": "Virheelliset OKLCH-arvot. Tarkista syöte.",
+      "invalidOklab": "Virheelliset OKLAB-arvot. Tarkista syöte."
+    }
   }
 }

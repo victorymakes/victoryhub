@@ -513,5 +513,42 @@
       "generationFailed": "Не удалось создать фавикон",
       "copyFailed": "Не удалось скопировать в буфер обмена"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Конвертер цветовых моделей",
+    "description": "Преобразование цветов между форматами HEX, RGB, HSL, HSV, OKLCH и OKLAB",
+    "hexColor": "Цвет HEX",
+    "rgbColor": "Цвет RGB",
+    "hslColor": "Цвет HSL",
+    "hsvColor": "Цвет HSV",
+    "oklchColor": "Цвет OKLCH",
+    "oklabColor": "Цвет OKLAB",
+    "enterHex": "Введите HEX-цвет...",
+    "enterRgb": "Введите значения RGB...",
+    "enterHsl": "Введите значения HSL...",
+    "enterHsv": "Введите значения HSV...",
+    "enterOklch": "Введите значения OKLCH...",
+    "enterOklab": "Введите значения OKLAB...",
+    "red": "Красный",
+    "green": "Зелёный",
+    "blue": "Синий",
+    "hue": "Оттенок",
+    "saturation": "Насыщенность",
+    "lightness": "Яркость",
+    "value": "Значение",
+    "brightness": "Светимость",
+    "chroma": "Хрома",
+    "colorPreview": "Предпросмотр цвета",
+    "copy": "Копировать",
+    "copied": "Скопировано!",
+    "reset": "Сбросить",
+    "errors": {
+      "invalidHex": "Недопустимый HEX-цвет. Используйте формат #RRGGBB или #RGB.",
+      "invalidRgb": "Недопустимые значения RGB. Каждый компонент должен быть от 0 до 255.",
+      "invalidHsl": "Недопустимые значения HSL. H: 0-360, S/L: 0-100%.",
+      "invalidHsv": "Недопустимые значения HSV. H: 0-360, S/V: 0-100%.",
+      "invalidOklch": "Недопустимые значения OKLCH. Проверьте ввод.",
+      "invalidOklab": "Недопустимые значения OKLAB. Проверьте ввод."
+    }
   }
 }

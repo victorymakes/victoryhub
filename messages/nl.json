@@ -513,5 +513,42 @@
       "generationFailed": "Favicon genereren mislukt",
       "copyFailed": "Kopiëren naar klembord mislukt"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Kleurmodel Converter",
+    "description": "Converteer kleuren tussen HEX-, RGB-, HSL-, HSV-, OKLCH- en OKLAB-indelingen",
+    "hexColor": "HEX-kleur",
+    "rgbColor": "RGB-kleur",
+    "hslColor": "HSL-kleur",
+    "hsvColor": "HSV-kleur",
+    "oklchColor": "OKLCH-kleur",
+    "oklabColor": "OKLAB-kleur",
+    "enterHex": "Voer een HEX-kleur in...",
+    "enterRgb": "Voer RGB-waarden in...",
+    "enterHsl": "Voer HSL-waarden in...",
+    "enterHsv": "Voer HSV-waarden in...",
+    "enterOklch": "Voer OKLCH-waarden in...",
+    "enterOklab": "Voer OKLAB-waarden in...",
+    "red": "Rood",
+    "green": "Groen",
+    "blue": "Blauw",
+    "hue": "Tint",
+    "saturation": "Verzadiging",
+    "lightness": "Lichtheid",
+    "value": "Waarde",
+    "brightness": "Helderheid",
+    "chroma": "Chroma",
+    "colorPreview": "Kleurvoorbeeld",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd!",
+    "reset": "Resetten",
+    "errors": {
+      "invalidHex": "Ongeldige HEX-kleur. Gebruik het formaat #RRGGBB of #RGB.",
+      "invalidRgb": "Ongeldige RGB-waarden. Elke component moet tussen 0-255 zijn.",
+      "invalidHsl": "Ongeldige HSL-waarden. H: 0-360, S/L: 0-100%.",
+      "invalidHsv": "Ongeldige HSV-waarden. H: 0-360, S/V: 0-100%.",
+      "invalidOklch": "Ongeldige OKLCH-waarden. Controleer je invoer.",
+      "invalidOklab": "Ongeldige OKLAB-waarden. Controleer je invoer."
+    }
   }
 }

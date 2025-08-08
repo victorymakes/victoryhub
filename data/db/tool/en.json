@@ -650,5 +650,45 @@
         "answer": "The favicons are generated as PNG (Portable Network Graphics) files, which provide good quality with transparency support and are widely compatible with all modern browsers. While ICO files were traditionally used for favicons, modern browsers fully support PNG files, which are easier to work with and maintain quality at different sizes."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Color Model Converter – Convert Between HEX, RGB, HSL, HSV, OKLCH, OKLAB",
+    "description": "Convert colors between multiple formats including HEX, RGB, HSL, HSV, OKLCH, and OKLAB. Interactive tool with real-time conversion and visualization.",
+    "category": "development",
+    "keywords": [
+      "color converter",
+      "hex to rgb",
+      "rgb to hex",
+      "hsl converter",
+      "hsv converter",
+      "oklch color",
+      "oklab color",
+      "color format converter",
+      "web color tool",
+      "color model conversion"
+    ],
+    "faq": [
+      {
+        "question": "What are the different color models and when should I use each one?",
+        "answer": "Different color models serve various purposes in design and development: <strong>HEX</strong> (hexadecimal) is widely used in web development and CSS with its #RRGGBB format. <strong>RGB</strong> (Red, Green, Blue) is the standard for digital displays and screen-based design. <strong>HSL</strong> (Hue, Saturation, Lightness) is intuitive for humans to understand and manipulate, making it excellent for creating color variations. <strong>HSV/HSB</strong> (Hue, Saturation, Value/Brightness) is popular in graphic design software for its intuitive color selection. <strong>OKLCH</strong> and <strong>OKLAB</strong> are perceptually uniform color spaces that better match human vision, making them ideal for creating accessible color palettes and smooth gradients. Choose RGB/HEX for web compatibility, HSL/HSV for intuitive editing, and OKLCH/OKLAB for perceptually accurate color work."
+      },
+      {
+        "question": "How do I convert colors between different formats?",
+        "answer": "Our Color Model Converter makes conversion simple: just enter a color value in any supported format (HEX, RGB, HSL, HSV, OKLCH, or OKLAB), and the tool automatically converts it to all other formats in real-time. For manual conversion: To convert HEX to RGB, split the 6-digit hex code into three 2-digit values and convert each from base-16 to decimal. For RGB to HEX, convert each RGB component (0-255) to a 2-digit hexadecimal value and combine them. HSL and HSV conversions involve more complex algorithms with hue rotation and saturation/lightness/value calculations. OKLCH and OKLAB conversions require matrix transformations and non-linear mapping functions. Our tool handles all this complexity for you, ensuring accurate conversions across all color models."
+      },
+      {
+        "question": "What are OKLCH and OKLAB color models and why are they important?",
+        "answer": "OKLCH and OKLAB are modern, perceptually uniform color spaces designed to better match human visual perception. Unlike traditional RGB or HSL, these models ensure that equal steps in the color space correspond to equal perceived color differences. <strong>OKLAB</strong> uses three dimensions: L (lightness), a (green-red), and b (blue-yellow). <strong>OKLCH</strong> is the polar form of OKLAB, using L (lightness), C (chroma/saturation), and H (hue). These models are increasingly important for: creating accessible designs with predictable contrast ratios; generating perceptually smooth gradients without unexpected brightness shifts; ensuring color harmony across different brightness levels; and creating color palettes that appear balanced to human vision. As browser support increases, these formats are becoming essential tools for modern web design and digital accessibility."
+      },
+      {
+        "question": "How can I use this tool for web design and development?",
+        "answer": "Our Color Model Converter is invaluable for web design and development in several ways: <strong>CSS Integration</strong> - easily convert between formats to use in different CSS contexts (HEX for legacy code, RGB/HSL for transparency, OKLCH for modern browsers). <strong>Accessibility</strong> - ensure your colors maintain proper contrast ratios across different formats and create accessible variations. <strong>Design Systems</strong> - generate consistent color palettes across different models and export values for your design system documentation. <strong>Gradient Creation</strong> - use HSL or OKLCH to create perceptually smooth gradients by adjusting hue, saturation, and lightness values. <strong>Dark Mode Adaptation</strong> - convert colors to HSL or OKLCH to easily create dark mode variants by adjusting lightness while maintaining hue. <strong>Browser Compatibility</strong> - check how your colors appear in different formats for cross-browser support. Simply input your base color and get all conversions instantly for use in your web projects."
+      },
+      {
+        "question": "Are the color conversions in this tool accurate for professional use?",
+        "answer": "Yes, our Color Model Converter implements industry-standard algorithms for all color conversions, making it suitable for professional design and development work. For HEX, RGB, HSL, and HSV conversions, we use well-established mathematical formulas that ensure accuracy across the entire color spectrum. For the more complex OKLCH and OKLAB conversions, we implement the official specifications from the CSS Color Module Level 4, including proper handling of gamut mapping and out-of-gamut colors. All calculations are performed with high numerical precision to minimize rounding errors. However, it's important to note that some colors may appear slightly different across devices due to display calibration, color profiles, and gamut limitations—this is a fundamental limitation of digital color representation, not a conversion issue. For color-critical professional work requiring precise color management, we recommend using this tool alongside a properly calibrated display and professional color management software."
+      }
+    ]
   }
 ]

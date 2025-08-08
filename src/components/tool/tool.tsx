@@ -14,6 +14,7 @@ import BMRCalculator from "./bmr-calculator";
 import CarbonFootprintCalculator from "./carbon-footprint-calculator";
 import RandomPicker from "./random-picker";
 import TextFaviconGenerator from "./text-favicon-generator";
+import { ColorModelConverter } from "./color-model-converter";
 
 interface ToolComponentProps {
     id: string;
@@ -55,6 +56,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <CarbonFootprintCalculator />;
         case "text-favicon-generator":
             return <TextFaviconGenerator />;
+        case "color-model-converter":
+            return <ColorModelConverter />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

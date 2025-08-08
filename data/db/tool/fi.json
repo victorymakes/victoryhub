@@ -606,5 +606,45 @@
         "answer": "Faviconit luodaan PNG-muodossa (tukee läpinäkyvyyttä ja korkeaa laatua), ja se toimii hyvin kaikissa nykyaikaisissa selaimissa. Vaikka ennen käytettiin ICO-muotoa, nykyiset selaimet tukevat PNG:tä täysin – se on helpompi ja laadukkaampi ratkaisu."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Värimallimuunnin – Muunna HEX, RGB, HSL, HSV, OKLCH ja OKLAB välillä",
+    "description": "Muunna värejä eri muotojen välillä: HEX, RGB, HSL, HSV, OKLCH ja OKLAB. Interaktiivinen työkalu reaaliaikaisella muunnoksella ja esikatselulla.",
+    "category": "development",
+    "keywords": [
+      "värimuunnin",
+      "hex rgb:ksi",
+      "rgb hex:ksi",
+      "hsl-muunnin",
+      "hsv-muunnin",
+      "oklch-väri",
+      "oklab-väri",
+      "väriformaattimuunnin",
+      "verkkovärityökalu",
+      "värimallin muunnos"
+    ],
+    "faq": [
+      {
+        "question": "Mitä värimalleja on olemassa ja milloin käyttää mitäkin?",
+        "answer": "Eri värimallit palvelevat eri tarkoituksia: <strong>HEX</strong> on yleinen verkkokehityksessä (#RRGGBB). <strong>RGB</strong> on näyttöjen standardi. <strong>HSL</strong> on intuitiivinen ihmisille, hyvä sävyjen säätämiseen. <strong>HSV/HSB</strong> on suosittu graafisessa suunnittelussa. <strong>OKLCH</strong> ja <strong>OKLAB</strong> ovat uusimpia, visuaalisesti tasapainoisia malleja, jotka soveltuvat saavutettaviin paletteihin ja tasaisiin liukuihin. Käytä RGB/HEX:iä yhteensopivuuteen, HSL/HSV:tä helppoon muokkaukseen ja OKLCH/OKLAB:ia tarkkaan värihallintaan."
+      },
+      {
+        "question": "Kuinka värit muunnetaan eri muotojen välillä?",
+        "answer": "Syötä väri mihin tahansa tuettuun muotoon (HEX, RGB, HSL, HSV, OKLCH, OKLAB) ja työkalu muuntaa sen automaattisesti muihin reaaliajassa. Esimerkiksi HEX → RGB: jaa 6 merkkiä kolmeen osaan ja muuta heksadesimaali desimaaleiksi. RGB → HEX: muunna 0–255 arvot kahden merkin heksaksi. HSL/HSV tarvitsevat väripyörän laskentaa. OKLCH/OKLAB käyttävät matriiseja ja epälineaarisia funktioita. Työkalu hoitaa tämän kaiken puolestasi tarkasti."
+      },
+      {
+        "question": "Mitä OKLCH ja OKLAB ovat ja miksi ne ovat tärkeitä?",
+        "answer": "OKLCH ja OKLAB ovat moderneja, havaintoperusteisia väriavaruuksia. Niissä saman suuruinen etäisyys tarkoittaa yhtä suurta visuaalista eroa. <strong>OKLAB</strong>: L (valoisuus), a (vihreä–punainen), b (sininen–keltainen). <strong>OKLCH</strong>: L (valoisuus), C (kromaattisuus), H (sävy). Ne ovat hyviä kontrastin säilyttämiseen, sujuvien liukujen luomiseen ja harmonisten palettien rakentamiseen. Selaintuki kasvaa jatkuvasti, tehden niistä hyödyllisiä nykyaikaisessa verkkosuunnittelussa."
+      },
+      {
+        "question": "Kuinka tätä työkalua käytetään web-suunnittelussa ja kehityksessä?",
+        "answer": "<strong>CSS-integraatio</strong> – muunna formaattien välillä eri käyttöön (HEX perinteiseen, RGB/HSL läpinäkyvyyteen, OKLCH moderneille selaimille). <strong>Saavutettavuus</strong> – tarkista kontrastit ja luo saavutettavia vaihtoehtoja. <strong>Design-järjestelmät</strong> – luo yhtenäiset paletit eri malleihin. <strong>Liukuvärit</strong> – tee tasaisia siirtymiä HSL:llä tai OKLCH:lla. <strong>Tumma tila</strong> – muuta valoisuutta menettämättä sävyä. <strong>Selaintuki</strong> – vertaa esitystapoja eri muodoissa ja selaimissa."
+      },
+      {
+        "question": "Onko muunnostarkkuus riittävä ammattikäyttöön?",
+        "answer": "Kyllä. HEX, RGB, HSL, HSV käyttävät tunnettuja laskentakaavoja. OKLCH/OKLAB perustuvat CSS Color Module Level 4 -määrittelyihin. Laskennat ovat erittäin tarkkoja. Huomaa kuitenkin: värit voivat näyttää erilaisilta eri näytöillä, profiileilla ja kalibroinneilla – tämä on digitaalisen värin rajoite, ei virhe. Väritarkkaan työhön suosittelemme kalibroitua näyttöä ja ammattitason värihallintaa."
+      }
+    ]
   }
 ]

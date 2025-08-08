@@ -626,5 +626,42 @@
       "generationFailed": "ファビコンの生成に失敗しました",
       "copyFailed": "クリップボードへのコピーに失敗しました"
     }
+  },
+  "ColorModelConverter": {
+    "title": "カラーモデル変換ツール",
+    "description": "HEX、RGB、HSL、HSV、OKLCH、OKLAB形式間で色を変換します",
+    "hexColor": "HEXカラー",
+    "rgbColor": "RGBカラー",
+    "hslColor": "HSLカラー",
+    "hsvColor": "HSVカラー",
+    "oklchColor": "OKLCHカラー",
+    "oklabColor": "OKLABカラー",
+    "enterHex": "HEXカラーを入力してください...",
+    "enterRgb": "RGB値を入力してください...",
+    "enterHsl": "HSL値を入力してください...",
+    "enterHsv": "HSV値を入力してください...",
+    "enterOklch": "OKLCH値を入力してください...",
+    "enterOklab": "OKLAB値を入力してください...",
+    "red": "赤",
+    "green": "緑",
+    "blue": "青",
+    "hue": "色相",
+    "saturation": "彩度",
+    "lightness": "明度",
+    "value": "値",
+    "brightness": "輝度",
+    "chroma": "クロマ",
+    "colorPreview": "色プレビュー",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "reset": "リセット",
+    "errors": {
+      "invalidHex": "無効なHEXカラーです。形式は #RRGGBB または #RGB を使用してください。",
+      "invalidRgb": "無効なRGB値です。各成分は0～255である必要があります。",
+      "invalidHsl": "無効なHSL値です。H: 0〜360、S/L: 0〜100%。",
+      "invalidHsv": "無効なHSV値です。H: 0〜360、S/V: 0〜100%。",
+      "invalidOklch": "無効なOKLCH値です。入力を確認してください。",
+      "invalidOklab": "無効なOKLAB値です。入力を確認してください。"
+    }
   }
 }

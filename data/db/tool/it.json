@@ -610,5 +610,45 @@
         "answer": "I favicon vengono generati in formato PNG (Portable Network Graphics), che supporta la trasparenza, garantisce alta qualità ed è ampiamente compatibile con tutti i browser moderni. Sebbene i file ICO siano stati utilizzati in passato, i browser odierni supportano pienamente i PNG, che sono più facili da gestire e mantengono una buona qualità a diverse dimensioni."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Convertitore di Modelli di Colore – Converti tra HEX, RGB, HSL, HSV, OKLCH, OKLAB",
+    "description": "Converti i colori tra più formati tra cui HEX, RGB, HSL, HSV, OKLCH e OKLAB. Strumento interattivo con conversione e visualizzazione in tempo reale.",
+    "category": "development",
+    "keywords": [
+      "convertitore colore",
+      "hex a rgb",
+      "rgb a hex",
+      "convertitore hsl",
+      "convertitore hsv",
+      "colore oklch",
+      "colore oklab",
+      "convertitore formato colore",
+      "strumento colore web",
+      "conversione modello colore"
+    ],
+    "faq": [
+      {
+        "question": "Quali sono i diversi modelli di colore e quando dovrei usare ciascuno?",
+        "answer": "I diversi modelli di colore servono a scopi diversi nel design e nello sviluppo: <strong>HEX</strong> (esadecimale) è ampiamente utilizzato nello sviluppo web e nei CSS con il suo formato #RRGGBB. <strong>RGB</strong> (Rosso, Verde, Blu) è lo standard per gli schermi digitali e il design su display. <strong>HSL</strong> (Hue, Saturation, Lightness) è intuitivo da comprendere e manipolare per gli esseri umani, ed è ottimo per creare variazioni cromatiche. <strong>HSV/HSB</strong> (Hue, Saturation, Value/Brightness) è popolare nei software di grafica per la sua selezione dei colori intuitiva. <strong>OKLCH</strong> e <strong>OKLAB</strong> sono spazi colore percettivamente uniformi che rispecchiano meglio la visione umana, ideali per palette accessibili e gradienti uniformi. Usa RGB/HEX per la compatibilità web, HSL/HSV per modifiche intuitive, e OKLCH/OKLAB per un lavoro cromatico accurato percettivamente."
+      },
+      {
+        "question": "Come posso convertire i colori tra diversi formati?",
+        "answer": "Il nostro Convertitore di Modelli di Colore rende la conversione semplice: inserisci un valore colore in uno qualsiasi dei formati supportati (HEX, RGB, HSL, HSV, OKLCH o OKLAB) e lo strumento lo convertirà automaticamente in tutti gli altri formati in tempo reale. Per la conversione manuale: Per convertire da HEX a RGB, dividi il codice esadecimale a 6 cifre in tre gruppi da 2 cifre e converti ciascuno da base 16 a decimale. Per RGB a HEX, converti ogni componente RGB (0–255) in un valore esadecimale a 2 cifre e combinateli. Le conversioni HSL e HSV richiedono algoritmi più complessi con rotazione della tonalità e calcoli di saturazione/luminosità/valore. Le conversioni OKLCH e OKLAB richiedono trasformazioni di matrici e funzioni di mappatura non lineari. Il nostro strumento gestisce tutta questa complessità per te, garantendo conversioni precise tra tutti i modelli."
+      },
+      {
+        "question": "Cosa sono i modelli di colore OKLCH e OKLAB e perché sono importanti?",
+        "answer": "OKLCH e OKLAB sono spazi colore moderni e percettivamente uniformi progettati per rispecchiare meglio la percezione visiva umana. A differenza dei modelli tradizionali come RGB o HSL, questi garantiscono che passi uguali nello spazio colore corrispondano a differenze visive percepite come uguali. <strong>OKLAB</strong> utilizza tre dimensioni: L (luminosità), a (verde–rosso) e b (blu–giallo). <strong>OKLCH</strong> è la forma polare di OKLAB e utilizza L (luminosità), C (cromaticità/saturazione) e H (tonalità). Questi modelli stanno diventando sempre più importanti per: creare design accessibili con rapporti di contrasto prevedibili; generare gradienti uniformi senza variazioni improvvise di luminosità; garantire armonia cromatica a diversi livelli di luce; e creare palette che risultino bilanciate all’occhio umano. Con il crescente supporto dei browser, questi formati stanno diventando strumenti essenziali per il web design moderno e l’accessibilità digitale."
+      },
+      {
+        "question": "Come posso utilizzare questo strumento per il web design e lo sviluppo?",
+        "answer": "Il nostro Convertitore di Modelli di Colore è estremamente utile per il web design e lo sviluppo in vari modi: <strong>Integrazione CSS</strong> – converti facilmente tra i formati per l’utilizzo in diversi contesti CSS (HEX per codice legacy, RGB/HSL per trasparenza, OKLCH per browser moderni). <strong>Accessibilità</strong> – assicurati che i tuoi colori mantengano rapporti di contrasto adeguati tra i formati e crea variazioni accessibili. <strong>Sistemi di design</strong> – genera palette consistenti attraverso diversi modelli e esporta i valori per la documentazione dei sistemi di design. <strong>Creazione di gradienti</strong> – utilizza HSL o OKLCH per creare gradienti percettivamente uniformi regolando tonalità, saturazione e luminosità. <strong>Adattamento alla modalità scura</strong> – converti i colori in HSL o OKLCH per creare facilmente varianti scure regolando la luminosità mantenendo la tonalità. <strong>Compatibilità browser</strong> – verifica come appaiono i tuoi colori in diversi formati per garantire la compatibilità tra browser. Inserisci semplicemente il tuo colore di base e ottieni tutte le conversioni pronte per l’uso nei tuoi progetti web."
+      },
+      {
+        "question": "Le conversioni di colore in questo strumento sono accurate per un uso professionale?",
+        "answer": "Sì, il nostro Convertitore di Modelli di Colore implementa algoritmi standard del settore per tutte le conversioni, rendendolo adatto all’uso professionale in ambito design e sviluppo. Per HEX, RGB, HSL e HSV utilizziamo formule matematiche consolidate che garantiscono accuratezza su tutto lo spettro cromatico. Per OKLCH e OKLAB, implementiamo le specifiche ufficiali del CSS Color Module Level 4, includendo la gestione della gamma e dei colori fuori gamma. Tutti i calcoli sono eseguiti con alta precisione numerica per minimizzare gli errori di arrotondamento. È importante notare, tuttavia, che alcuni colori possono apparire leggermente diversi tra i dispositivi a causa della calibrazione del display, dei profili colore e delle limitazioni della gamma—si tratta di una limitazione intrinseca della rappresentazione digitale del colore, non di un errore di conversione. Per lavori critici in ambito colore, si consiglia di utilizzare questo strumento insieme a uno schermo calibrato e a un software professionale di gestione del colore."
+      }
+    ]
   }
 ]

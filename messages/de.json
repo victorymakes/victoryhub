@@ -513,5 +513,42 @@
       "generationFailed": "Favicon konnte nicht generiert werden",
       "copyFailed": "Kopieren in die Zwischenablage fehlgeschlagen"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Farbmodell-Konverter",
+    "description": "Farben zwischen HEX-, RGB-, HSL-, HSV-, OKLCH- und OKLAB-Formaten umwandeln",
+    "hexColor": "HEX-Farbe",
+    "rgbColor": "RGB-Farbe",
+    "hslColor": "HSL-Farbe",
+    "hsvColor": "HSV-Farbe",
+    "oklchColor": "OKLCH-Farbe",
+    "oklabColor": "OKLAB-Farbe",
+    "enterHex": "HEX-Farbe eingeben...",
+    "enterRgb": "RGB-Werte eingeben...",
+    "enterHsl": "HSL-Werte eingeben...",
+    "enterHsv": "HSV-Werte eingeben...",
+    "enterOklch": "OKLCH-Werte eingeben...",
+    "enterOklab": "OKLAB-Werte eingeben...",
+    "red": "Rot",
+    "green": "Grün",
+    "blue": "Blau",
+    "hue": "Farbton",
+    "saturation": "Sättigung",
+    "lightness": "Helligkeit",
+    "value": "Wert",
+    "brightness": "Helligkeit",
+    "chroma": "Chroma",
+    "colorPreview": "Farbvorschau",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "reset": "Zurücksetzen",
+    "errors": {
+      "invalidHex": "Ungültige HEX-Farbe. Bitte verwenden Sie das Format #RRGGBB oder #RGB.",
+      "invalidRgb": "Ungültige RGB-Werte. Jede Komponente sollte zwischen 0 und 255 liegen.",
+      "invalidHsl": "Ungültige HSL-Werte. H: 0–360, S/L: 0–100%.",
+      "invalidHsv": "Ungültige HSV-Werte. H: 0–360, S/V: 0–100%.",
+      "invalidOklch": "Ungültige OKLCH-Werte. Bitte überprüfen Sie Ihre Eingabe.",
+      "invalidOklab": "Ungültige OKLAB-Werte. Bitte überprüfen Sie Ihre Eingabe."
+    }
   }
 }

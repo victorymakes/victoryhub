@@ -602,5 +602,42 @@
       "generationFailed": "Favicon 生成失败",
       "copyFailed": "复制到剪贴板失败"
     }
+  },
+  "ColorModelConverter": {
+    "title": "颜色模型转换器",
+    "description": "在 HEX、RGB、HSL、HSV、OKLCH 和 OKLAB 格式之间转换颜色",
+    "hexColor": "HEX 颜色",
+    "rgbColor": "RGB 颜色",
+    "hslColor": "HSL 颜色",
+    "hsvColor": "HSV 颜色",
+    "oklchColor": "OKLCH 颜色",
+    "oklabColor": "OKLAB 颜色",
+    "enterHex": "请输入 HEX 颜色...",
+    "enterRgb": "请输入 RGB 数值...",
+    "enterHsl": "请输入 HSL 数值...",
+    "enterHsv": "请输入 HSV 数值...",
+    "enterOklch": "请输入 OKLCH 数值...",
+    "enterOklab": "请输入 OKLAB 数值...",
+    "red": "红",
+    "green": "绿",
+    "blue": "蓝",
+    "hue": "色相",
+    "saturation": "饱和度",
+    "lightness": "亮度",
+    "value": "明度",
+    "brightness": "亮度",
+    "chroma": "色度",
+    "colorPreview": "颜色预览",
+    "copy": "复制",
+    "copied": "已复制！",
+    "reset": "重置",
+    "errors": {
+      "invalidHex": "无效的 HEX 颜色。请使用 #RRGGBB 或 #RGB 格式。",
+      "invalidRgb": "无效的 RGB 值。每个分量应在 0-255 之间。",
+      "invalidHsl": "无效的 HSL 值。H: 0-360，S/L: 0-100%。",
+      "invalidHsv": "无效的 HSV 值。H: 0-360，S/V: 0-100%。",
+      "invalidOklch": "无效的 OKLCH 值。请检查输入。",
+      "invalidOklab": "无效的 OKLAB 值。请检查输入。"
+    }
   }
 }

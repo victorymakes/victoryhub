@@ -513,5 +513,42 @@
       "generationFailed": "Impossibile generare il favicon",
       "copyFailed": "Copia negli appunti non riuscita"
     }
+  },
+  "ColorModelConverter": {
+    "title": "Convertitore di Modelli di Colore",
+    "description": "Converti colori tra i formati HEX, RGB, HSL, HSV, OKLCH e OKLAB",
+    "hexColor": "Colore HEX",
+    "rgbColor": "Colore RGB",
+    "hslColor": "Colore HSL",
+    "hsvColor": "Colore HSV",
+    "oklchColor": "Colore OKLCH",
+    "oklabColor": "Colore OKLAB",
+    "enterHex": "Inserisci il colore HEX...",
+    "enterRgb": "Inserisci i valori RGB...",
+    "enterHsl": "Inserisci i valori HSL...",
+    "enterHsv": "Inserisci i valori HSV...",
+    "enterOklch": "Inserisci i valori OKLCH...",
+    "enterOklab": "Inserisci i valori OKLAB...",
+    "red": "Rosso",
+    "green": "Verde",
+    "blue": "Blu",
+    "hue": "Tonalità",
+    "saturation": "Saturazione",
+    "lightness": "Chiarezza",
+    "value": "Valore",
+    "brightness": "Luminosità",
+    "chroma": "Croma",
+    "colorPreview": "Anteprima Colore",
+    "copy": "Copia",
+    "copied": "Copiato!",
+    "reset": "Reimposta",
+    "errors": {
+      "invalidHex": "Colore HEX non valido. Usa il formato #RRGGBB o #RGB.",
+      "invalidRgb": "Valori RGB non validi. Ogni componente deve essere tra 0 e 255.",
+      "invalidHsl": "Valori HSL non validi. H: 0–360, S/L: 0–100%.",
+      "invalidHsv": "Valori HSV non validi. H: 0–360, S/V: 0–100%.",
+      "invalidOklch": "Valori OKLCH non validi. Controlla l’input.",
+      "invalidOklab": "Valori OKLAB non validi. Controlla l’input."
+    }
   }
 }

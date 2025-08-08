@@ -606,5 +606,45 @@
         "answer": "De favicons worden gegenereerd als PNG-bestanden (met ondersteuning voor transparantie en hoge kwaliteit). Hoewel vroeger ICO-bestanden werden gebruikt, ondersteunen moderne browsers PNG volledig. PNG-bestanden zijn eenvoudiger te gebruiken en behouden een betere kwaliteit bij verschillende afmetingen."
       }
     ]
+  },
+  {
+    "slug": "color-model-converter",
+    "name": "Kleurmodelconverter – Converteer tussen HEX, RGB, HSL, HSV, OKLCH en OKLAB",
+    "description": "Converteer kleuren tussen HEX, RGB, HSL, HSV, OKLCH en OKLAB. Interactieve tool met realtime conversie en visualisatie.",
+    "category": "development",
+    "keywords": [
+      "kleurconverter",
+      "hex naar rgb",
+      "rgb naar hex",
+      "hsl converter",
+      "hsv converter",
+      "oklch kleur",
+      "oklab kleur",
+      "kleurformaat converter",
+      "webkleurentool",
+      "kleurmodelconversie"
+    ],
+    "faq": [
+      {
+        "question": "Wat zijn de verschillende kleurmodellen en wanneer gebruik je welke?",
+        "answer": "Verschillende kleurmodellen dienen verschillende doelen: <strong>HEX</strong> wordt veel gebruikt in webontwikkeling (zoals #RRGGBB). <strong>RGB</strong> is standaard voor schermweergave. <strong>HSL</strong> is intuïtief voor het maken van kleurvariaties. <strong>HSV/HSB</strong> is populair in grafische software. <strong>OKLCH</strong> en <strong>OKLAB</strong> zijn perceptueel uniforme modellen die beter aansluiten bij menselijke kleurwaarneming – ideaal voor toegankelijke paletten en vloeiende gradaties. Gebruik RGB/HEX voor compatibiliteit, HSL/HSV voor eenvoud en OKLCH/OKLAB voor nauwkeurige controle."
+      },
+      {
+        "question": "Hoe converteer ik kleuren tussen verschillende formaten?",
+        "answer": "Voer een kleur in in een ondersteund formaat (HEX, RGB, HSL, HSV, OKLCH of OKLAB) en de tool converteert deze direct naar alle andere. Voor handmatige conversie: HEX → RGB vereist het splitsen van de code in 3 delen en omzetting naar decimaal. RGB → HEX vereist omzetting naar hexadecimaal. HSL/HSV gebruiken complexere formules, OKLCH/OKLAB vereisen matrixtransformaties. Onze tool regelt dit allemaal nauwkeurig en automatisch."
+      },
+      {
+        "question": "Wat zijn OKLCH en OKLAB en waarom zijn ze belangrijk?",
+        "answer": "OKLCH en OKLAB zijn moderne kleurmodellen die perceptueel consistent zijn. In tegenstelling tot RGB of HSL zijn stappen in deze ruimte visueel even groot. <strong>OKLAB</strong> gebruikt L (lichtheid), a (groen-rood), b (blauw-geel). <strong>OKLCH</strong> is de polaire vorm: L (lichtheid), C (chroma), H (tint). Deze modellen helpen bij toegankelijke ontwerpen, vloeiende overgangen en gebalanceerde paletten. Steeds meer browsers ondersteunen ze, waardoor ze belangrijk worden in webdesign."
+      },
+      {
+        "question": "Hoe gebruik ik deze tool voor webdesign en ontwikkeling?",
+        "answer": "<strong>CSS-integratie</strong>: converteer tussen formaten voor verschillende toepassingen (HEX voor legacy, RGB/HSL voor transparantie, OKLCH voor moderne browsers). <strong>Toegankelijkheid</strong>: controleer contrastverhoudingen en maak toegankelijke kleurencombinaties. <strong>Designsystemen</strong>: genereer consistente paletten in meerdere modellen. <strong>Gradients</strong>: creëer vloeiende overgangen met HSL of OKLCH. <strong>Donkere modus</strong>: pas lichtheid aan zonder de kleurtoon te verliezen. <strong>Compatibiliteit</strong>: vergelijk de weergave in verschillende formaten."
+      },
+      {
+        "question": "Is deze tool nauwkeurig genoeg voor professioneel gebruik?",
+        "answer": "Ja. HEX, RGB, HSL, HSV gebruiken gevestigde wiskundige methodes. OKLCH/OKLAB volgen CSS Color Module Level 4-specificaties, inclusief gamutmapping. Alle berekeningen zijn zeer nauwkeurig. Houd er rekening mee dat kleuren kunnen verschillen per scherm of kleurprofiel – dit is een beperking van digitale weergave, geen fout van de tool. Voor kleurkritisch werk wordt een gekalibreerd scherm aanbevolen."
+      }
+    ]
   }
 ]
