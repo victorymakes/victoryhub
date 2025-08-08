@@ -562,5 +562,49 @@
         "answer": "Satunnainen Valitsin pystyy käsittelemään suuren määrän kohteita, mutta optimaalisen suorituskyvyn ja käytettävyyden vuoksi suosittelemme pitämään listan alle 1000 kohteessa. Erittäin suurilla listoilla animaatio voi vaikuttaa suorituskykyyn, mutta itse valinta toimii oikein listan koosta riippumatta."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Tekstifaviconin generaattori – Luo mukautettuja faviconeja tekstistä",
+    "description": "Luo mukautettuja faviconeja tekstistä eri tyyleillä, väreillä ja muodoilla. Sisältää erätilan useiden faviconien luomiseen kerralla.",
+    "category": "media",
+    "keywords": [
+      "favicon generaattori",
+      "tekstifavicon",
+      "mukautettu favicon",
+      "verkkosivun ikoni",
+      "selaimen ikoni",
+      "välilehden ikoni",
+      "sivuston ikoni",
+      "batch favicon",
+      "favicon-työkalu",
+      "teksti ikoniksi"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on favicon ja miksi tarvitsen sellaisen?",
+        "answer": "Favicon on pieni ikoni, joka liittyy verkkosivustoon ja näkyy selaimen välilehdissä, kirjanmerkeissä ja muissa paikoissa. Se auttaa käyttäjiä tunnistamaan sivustosi visuaalisesti monien avointen välilehtien ja kirjanmerkkien joukosta. Erottuva favicon vahvistaa brändiäsi, parantaa käyttökokemusta ja antaa ammattimaisen vaikutelman."
+      },
+      {
+        "question": "Kuinka käytän tekstifaviconin generaattoria?",
+        "answer": "Syötä teksti, jonka haluat faviconiin (1–4 merkkiä toimii parhaiten), valitse taustaväri, tekstiväri, muoto, fontti ja fonttikoko. Napsauta 'Luo favicon' ja oma kuvake luodaan. Voit ladata sen tai kopioida suoraan. Useiden faviconien luontia varten ota erätila käyttöön ja syötä jokainen teksti omalle rivilleen."
+      },
+      {
+        "question": "Mikä on erätila ja miten se toimii?",
+        "answer": "Erätila mahdollistaa useiden faviconien luomisen kerralla samoilla tyylivalinnoilla mutta eri teksteillä. Aktivoi erätila ja syötä tekstialueelle yksi teksti per rivi. Kun napsautat 'Luo faviconit', työkalu luo jokaiselle riville oman faviconin. Voit ladata yksittäin tai kaikki kerralla zip-tiedostona."
+      },
+      {
+        "question": "Kuinka lisään faviconin verkkosivulleni?",
+        "answer": "Kun olet luonut faviconin, lataa se ja siirrä verkkosivustosi juurihakemistoon tai tiettyyn kansioon. Lisää sitten HTML-koodi <head>-osioon. Koodin voi hakea 'Lataa HTML-koodi' -painikkeella. Yleensä riittää, että favicon.ico sijoitetaan juureen, jotta selain tunnistaa sen."
+      },
+      {
+        "question": "Mikä tekstin pituus toimii parhaiten faviconeissa?",
+        "answer": "Suosittelemme käyttämään 1–2 merkkiä, koska faviconit näkyvät pieninä (yleensä 16x16 tai 32x32 pikseliä), ja lyhyt teksti näkyy selkeämmin. Voit käyttää jopa 4 merkkiä, mutta teksti pienennetään automaattisesti. Pidemmissä teksteissä kannattaa käyttää lyhennettä tai alkukirjaimia."
+      },
+      {
+        "question": "Missä tiedostomuodossa faviconit luodaan?",
+        "answer": "Faviconit luodaan PNG-muodossa (tukee läpinäkyvyyttä ja korkeaa laatua), ja se toimii hyvin kaikissa nykyaikaisissa selaimissa. Vaikka ennen käytettiin ICO-muotoa, nykyiset selaimet tukevat PNG:tä täysin – se on helpompi ja laadukkaampi ratkaisu."
+      }
+    ]
   }
 ]

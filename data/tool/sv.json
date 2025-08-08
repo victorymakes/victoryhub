@@ -561,5 +561,49 @@
         "answer": "Verktyget hanterar många objekt, men för bästa prestanda och användarupplevelse rekommenderar vi att hålla listan under 1000 objekt. Vid större listor kan animationen bli långsammare, men urvalet fungerar ändå korrekt."
       }
     ]
+  },
+  {
+    "slug": "text-favicon-generator",
+    "name": "Text Favicon Generator – Skapa anpassade favicons från text",
+    "description": "Skapa anpassade favicons från text med olika stilar, färger och former. Inkluderar batchläge för att generera flera favicons samtidigt.",
+    "category": "media",
+    "keywords": [
+      "favicongenerator",
+      "textfavicon",
+      "anpassad favicon",
+      "webbplatsikon",
+      "webbläsarikon",
+      "flikikon",
+      "sajtikon",
+      "batchfavicon",
+      "faviconskapare",
+      "text till ikon"
+    ],
+    "faq": [
+      {
+        "question": "Vad är en favicon och varför behöver jag en?",
+        "answer": "En favicon är en liten ikon som är kopplad till en webbplats och visas i webbläsarens flikar, bokmärken och andra områden. Den hjälper användare att visuellt identifiera din webbplats bland flera öppna flikar och bokmärken. En tydlig och unik favicon stärker ditt varumärke, förbättrar användarupplevelsen och ger ett professionellt intryck."
+      },
+      {
+        "question": "Hur använder jag Text Favicon Generator?",
+        "answer": "Ange texten du vill visa i din favicon (1–4 tecken fungerar bäst), välj bakgrundsfärg, textfärg, form, teckensnitt och teckenstorlek. Klicka på 'Generera favicon' för att skapa din anpassade ikon. Du kan sedan ladda ner eller kopiera den. För att skapa flera favicons, aktivera batchläge och skriv in en text per rad."
+      },
+      {
+        "question": "Vad är batchläge och hur fungerar det?",
+        "answer": "Batchläge låter dig generera flera favicons samtidigt med samma stilinställningar men med olika texter. Aktivera batchläget och skriv varje text på en ny rad. När du klickar på 'Generera favicons' kommer verktyget att skapa en separat favicon för varje rad. Du kan ladda ner dem individuellt eller som en zip-fil."
+      },
+      {
+        "question": "Hur lägger jag till favicon på min webbplats?",
+        "answer": "När du har genererat din favicon, ladda ner den och ladda upp den till webbplatsens rotmapp eller en vald mapp. Lägg sedan till den nödvändiga HTML-koden i <head>-sektionen på din webbplats. Du kan få koden genom att klicka på 'Ladda ner HTML-kod'. För de flesta webbplatser räcker det att placera favicon.ico i rotmappen."
+      },
+      {
+        "question": "Vilken textlängd fungerar bäst för favicons?",
+        "answer": "För bästa synlighet rekommenderar vi 1–2 tecken. Eftersom favicons visas i små storlekar (vanligtvis 16x16 till 32x32 pixlar), blir kortare text tydligare och mer läsbar. Du kan använda upp till 4 tecken, men texten blir då mindre. För längre texter rekommenderas initialer eller förkortningar."
+      },
+      {
+        "question": "Vilket filformat genereras favicons i?",
+        "answer": "Favicons genereras som PNG-filer (Portable Network Graphics), som har stöd för transparens och hög kvalitet, och är kompatibla med alla moderna webbläsare. Även om ICO-filer traditionellt har använts, stöder moderna webbläsare PNG fullt ut, vilket gör dem enklare att använda och bevarar kvaliteten bättre i olika storlekar."
+      }
+    ]
   }
 ]
