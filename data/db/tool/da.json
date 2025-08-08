@@ -1,6 +1,6 @@
 [
   {
-    "slug": "cron-generator",
+    "slug": "cron-expression-generator",
     "name": "Cron-udtryk Generator – Opret og afkod cron-planlægning",
     "description": "Opret, afkod og forstå cron-udtryk med menneskeligt læsbare forklaringer på flere sprog. Perfekt til planlægning af opgaver, jobs og automatiserede processer.",
     "category": "development",

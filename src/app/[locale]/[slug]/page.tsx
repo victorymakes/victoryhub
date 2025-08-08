@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getPage, getPageContent } from "@/service/page-service";
+import { getPage, getPageContent } from "@/service/cms-service";
 import Container from "@/components/common/container";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";

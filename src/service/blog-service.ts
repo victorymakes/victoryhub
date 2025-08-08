@@ -1,7 +1,7 @@
 import React from "react";
 import { Page, Category } from "@/types/page";
 import { Pagination } from "@/types/pagination";
-import { getPageContent, getPagesByType } from "@/service/page-service";
+import { getPageContent, getPagesByType } from "@/service/cms-service";
 
 const getSlug = (slug: string) => {
     return slug.startsWith("blog/") ? slug : `blog/${slug}`;

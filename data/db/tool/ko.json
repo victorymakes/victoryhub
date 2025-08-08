@@ -1,6 +1,6 @@
 [
   {
-    "slug": "cron-generator",
+    "slug": "cron-expression-generator",
     "name": "Cron 표현식 생성기 – 스케줄링 표현식 생성 및 해석",
     "description": "사람이 읽을 수 있는 설명으로 cron 표현식을 생성하고 해석합니다. 작업 스케줄링, 자동화 및 시스템 유지 관리를 위한 완벽한 도구입니다.",
     "category": "development",

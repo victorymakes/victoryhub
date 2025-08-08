@@ -1,6 +1,6 @@
 [
   {
-    "slug": "cron-generator",
+    "slug": "cron-expression-generator",
     "name": "Cron-lausekkeen generaattori – Luo ja tulkitse Cron-aikatauluja",
     "description": "Luo, tulkitse ja ymmärrä cron-lausekkeita ihmisluettavilla selityksillä useilla kielillä. Täydellinen tehtävien, töiden ja automatisoitujen prosessien aikatauluttamiseen.",
     "category": "development",
