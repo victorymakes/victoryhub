@@ -690,5 +690,45 @@
         "answer": "Yes, our Color Model Converter implements industry-standard algorithms for all color conversions, making it suitable for professional design and development work. For HEX, RGB, HSL, and HSV conversions, we use well-established mathematical formulas that ensure accuracy across the entire color spectrum. For the more complex OKLCH and OKLAB conversions, we implement the official specifications from the CSS Color Module Level 4, including proper handling of gamut mapping and out-of-gamut colors. All calculations are performed with high numerical precision to minimize rounding errors. However, it's important to note that some colors may appear slightly different across devices due to display calibration, color profiles, and gamut limitations—this is a fundamental limitation of digital color representation, not a conversion issue. For color-critical professional work requiring precise color management, we recommend using this tool alongside a properly calibrated display and professional color management software."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "SLO Burn Simulator – Visualize Service Level Objective Budget Burn",
+    "description": "Visualize SLO budget burn rates and estimate time to exhaustion based on error rates and throughput. Perfect for SRE and DevOps professionals monitoring service reliability.",
+    "category": "development",
+    "keywords": [
+      "slo burn chart",
+      "error budget",
+      "service level objective",
+      "sre tool",
+      "reliability calculator",
+      "error budget calculator",
+      "slo visualization",
+      "error rate calculator",
+      "service reliability",
+      "devops tool"
+    ],
+    "faq": [
+      {
+        "question": "What is an SLO and error budget?",
+        "answer": "A Service Level Objective (SLO) is a target reliability level for a service, typically expressed as a percentage (e.g., 99.9% availability). The error budget is the mathematical complement of your SLO - if your SLO is 99.9%, your error budget is 0.1% of total requests. This budget represents the acceptable amount of errors or downtime within a specified time window. Error budgets provide a quantitative framework for balancing reliability with innovation speed, allowing teams to take calculated risks as long as they stay within budget."
+      },
+      {
+        "question": "How do I interpret the SLO Burn Chart?",
+        "answer": "The SLO Burn Chart visualizes how quickly your error budget depletes at different error rates. The x-axis shows time, while the y-axis shows the percentage of error budget remaining. Each line represents a different error rate scenario. Steeper slopes indicate faster budget consumption. The chart helps you understand: <br/>(1) How long your error budget will last at current or projected error rates, <br/>(2) The impact of incident severity on your reliability targets, and <br/>(3) When you might need to prioritize reliability work over new features. <br/>Use this visualization to make data-driven decisions about service reliability."
+      },
+      {
+        "question": "How is the error budget calculated?",
+        "answer": "The error budget is calculated using the formula: Error Budget = Total Requests × (100% - SLO%). <br/>For example, if your SLO is 99.9% and you expect 1,000,000 requests in a 30-day window, your error budget would be 1,000,000 × 0.1% = 1,000 errors. <br/>This means you can have up to 1,000 failed requests within that time window while still meeting your SLO. The simulator calculates this automatically based on your inputs for SLO target, time window, and throughput."
+      },
+      {
+        "question": "What's the difference between average and maximum throughput modes?",
+        "answer": "The throughput mode affects how the error budget is calculated: <br/>Average Throughput mode uses your specified average request rate to calculate the total requests and error budget. This is suitable for services with relatively stable traffic patterns. <br/>Maximum Throughput mode uses the peak request rate, resulting in a larger error budget. This is more appropriate for services with highly variable traffic where you want to account for peak conditions. Switching between modes helps you understand how traffic patterns impact your error budget and can inform capacity planning decisions."
+      },
+      {
+        "question": "How can I use this tool to improve service reliability?",
+        "answer": "This tool helps improve service reliability in several ways: <br/>(1) Proactive planning - visualize how different error rates affect your SLO compliance and plan accordingly, <br/>(2) Incident response - during an ongoing incident, estimate how long you can sustain current error rates before breaching your SLO, <br/>(3) Prioritization - use remaining error budget to decide whether to focus on new features or reliability improvements, <br/>(4) SLO refinement - experiment with different SLO targets to find the right balance between reliability and development velocity, and <br/>(5) Communication - share visualizations with stakeholders to explain reliability concepts and trade-offs in an accessible way."
+      }
+    ]
   }
 ]

@@ -15,6 +15,7 @@ import CarbonFootprintCalculator from "./carbon-footprint-calculator";
 import RandomPicker from "./random-picker";
 import TextFaviconGenerator from "./text-favicon-generator";
 import { ColorModelConverter } from "./color-model-converter";
+import SLOBurnSimulator from "./slo-burn-simulator";
 
 interface ToolComponentProps {
     id: string;
@@ -58,6 +59,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <TextFaviconGenerator />;
         case "color-model-converter":
             return <ColorModelConverter />;
+        case "slo-burn-simulator":
+            return <SLOBurnSimulator />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

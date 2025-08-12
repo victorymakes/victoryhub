@@ -641,5 +641,24 @@
       "invalidOklch": "Invalid OKLCH values. Please check your input.",
       "invalidOklab": "Invalid OKLAB values. Please check your input."
     }
+  },
+  "SLOBurnSimulator": {
+    "sloTarget": "SLO Target",
+    "sloWindow": "SLO Window",
+    "days": "Days",
+    "throughputMode": "Throughput Mode",
+    "avg": "Avg",
+    "max": "Max",
+    "avgThroughput": "Average Throughput",
+    "maxThroughput": "Maximum Throughput",
+    "perMinute": "per minute",
+    "errorRates": "Error Rates",
+    "addErrorRate": "Add rate",
+    "invalidErrorRate": "Invalid error rate. Please enter a positive number.",
+    "exhaustionTime": "Time to Exhaustion",
+    "burnChart": "Budget Burn Chart",
+    "timeToBreakSLO": "Time to Break SLO",
+    "budgetRemaining": "Budget Remaining (%)",
+    "formulas": "Formulas"
   }
 }
