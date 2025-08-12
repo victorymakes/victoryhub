@@ -651,14 +651,11 @@
     "max": "Max",
     "avgThroughput": "Average Throughput",
     "maxThroughput": "Maximum Throughput",
-    "perMinute": "per minute",
+    "perMinute": "Per Minute",
     "errorRates": "Error Rates",
     "addErrorRate": "Add rate",
     "invalidErrorRate": "Invalid error rate. Please enter a positive number.",
-    "exhaustionTime": "Time to Exhaustion",
     "burnChart": "Budget Burn Chart",
-    "timeToBreakSLO": "Time to Break SLO",
-    "budgetRemaining": "Budget Remaining (%)",
     "formulas": "Formulas"
   }
 }

@@ -645,5 +645,45 @@
         "answer": "Ja, vores Farvemodelkonverter implementerer branchestandardalgoritmer for alle farvekonverteringer og er dermed velegnet til professionelt design- og udviklingsarbejde. For HEX-, RGB-, HSL- og HSV-konverteringer bruger vi veletablerede matematiske formler, der sikrer nøjagtighed over hele farvespektret. For de mere komplekse OKLCH- og OKLAB-konverteringer implementerer vi de officielle specifikationer fra CSS Color Module Level 4, herunder korrekt håndtering af gamutmapping og farver uden for gamut. Alle beregninger udføres med høj numerisk præcision for at minimere afrundingsfejl. Det er dog vigtigt at bemærke, at nogle farver kan se en smule anderledes ud på forskellige enheder på grund af skærmkalibrering, farveprofiler og gamutbegrænsninger—dette er en grundlæggende begrænsning i digital farvegengivelse og ikke et konverteringsproblem. Til farvekritisk professionelt arbejde, der kræver præcis farvestyring, anbefaler vi at bruge dette værktøj sammen med en korrekt kalibreret skærm og professionel farvestyringssoftware."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "SLO-forbrugssimulator – Visualisér forbrug af Service Level Objective-budget",
+    "description": "Visualiser SLO-budgetforbrug og estimer tid til udtømning baseret på fejlrate og gennemstrømning. Ideel til SRE- og DevOps-professionelle, der overvåger tjenesters pålidelighed.",
+    "category": "development",
+    "keywords": [
+      "slo burn diagram",
+      "fejlbudget",
+      "serviceniveau mål",
+      "sre værktøj",
+      "pålidelighedsberegner",
+      "fejlbudgetberegner",
+      "slo visualisering",
+      "fejlrater beregner",
+      "servicepålidelighed",
+      "devops værktøj"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er et SLO og fejlbudget?",
+        "answer": "Et Service Level Objective (SLO) er et mål for tjenestens pålidelighed, normalt udtrykt i procent (f.eks. 99,9 % oppetid). Fejlbudgettet er det modsatte: Hvis SLO er 99,9 %, er fejlbudgettet 0,1 % af anmodningerne. Det viser, hvor mange fejl/nedetid der accepteres. Fejlbudgettet hjælper med at balancere pålidelighed og udviklingshastighed."
+      },
+      {
+        "question": "Hvordan læser jeg SLO Burn-diagrammet?",
+        "answer": "Diagrammet viser, hvor hurtigt fejlbudgettet bruges ved forskellige fejlrater. X-aksen viser tid, Y-aksen viser resterende budget. Hver linje er et scenarie – stejlere linjer = hurtigere forbrug. Du lærer: (1) Hvor længe dit budget varer, (2) Hvordan alvoren påvirker dine mål, (3) Hvornår stabilitet bør prioriteres."
+      },
+      {
+        "question": "Hvordan beregnes fejlbudgettet?",
+        "answer": "Fejlbudget = Total antal anmodninger × (100 % – SLO %). F.eks. 1.000.000 anmodninger og SLO 99,9 % = 1.000 fejl. Værktøjet beregner dette automatisk."
+      },
+      {
+        "question": "Hvad er forskellen på gennemsnitlig og maksimal gennemstrømning?",
+        "answer": "Gennemsnitlig bruger dit angivne snit – god til stabil trafik. Maksimal bruger peak-værdien – giver større fejlbudget. Du kan skifte for at se forskellen."
+      },
+      {
+        "question": "Hvordan hjælper dette værktøj med pålidelighed?",
+        "answer": "Det hjælper dig med at: (1) Planlægge fremad, (2) Reagere på hændelser, (3) Vælge mellem features og stabilitet, (4) Justere mål, (5) Kommunikere med interessenter via visualisering."
+      }
+    ]
   }
 ]

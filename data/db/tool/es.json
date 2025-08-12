@@ -650,5 +650,45 @@
         "answer": "Sí. Usamos algoritmos estándar para todas las conversiones (HEX, RGB, HSL, HSV). OKLCH/OKLAB se basan en la especificación oficial del CSS Color Module Level 4, con soporte para gestión de gamut. Todas las operaciones se hacen con alta precisión numérica. Pero recuerda: los colores pueden variar según pantalla, perfil de color o calibración. No es un error del convertidor, sino una limitación digital. Para trabajos sensibles al color, recomendamos usar también una pantalla calibrada y software profesional."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "Simulador de consumo de presupuesto SLO – Visualiza la quema del presupuesto del objetivo de nivel de servicio",
+    "description": "Visualiza las tasas de consumo del presupuesto SLO y estima el tiempo hasta agotarlo según la tasa de errores y el rendimiento. Perfecto para profesionales de SRE y DevOps que monitorean la fiabilidad del servicio.",
+    "category": "development",
+    "keywords": [
+      "gráfico de quema SLO",
+      "presupuesto de errores",
+      "objetivo de nivel de servicio",
+      "herramienta SRE",
+      "calculadora de fiabilidad",
+      "calculadora de presupuesto de errores",
+      "visualización SLO",
+      "calculadora de tasa de error",
+      "fiabilidad del servicio",
+      "herramienta DevOps"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es un SLO y un presupuesto de errores?",
+        "answer": "Un Service Level Objective (SLO) es un nivel de fiabilidad objetivo para un servicio, generalmente expresado como un porcentaje (por ejemplo, 99,9 % de disponibilidad). El presupuesto de errores es el complemento matemático del SLO: si el SLO es 99,9 %, el presupuesto de errores representa el 0,1 % de las solicitudes totales. Este presupuesto indica la cantidad aceptable de errores o tiempo de inactividad dentro de una ventana de tiempo determinada. Los presupuestos de errores proporcionan un marco cuantitativo para equilibrar la fiabilidad con la velocidad de innovación, permitiendo que los equipos asuman riesgos siempre que se mantengan dentro del presupuesto."
+      },
+      {
+        "question": "¿Cómo interpreto el gráfico de quema SLO?",
+        "answer": "El gráfico de quema SLO visualiza cuán rápido se agota tu presupuesto de errores bajo diferentes tasas de error. El eje x representa el tiempo, mientras que el eje y muestra el porcentaje de presupuesto restante. Cada línea representa un escenario diferente de tasa de error; pendientes más pronunciadas indican un consumo más rápido. Este gráfico te ayuda a entender: (1) cuánto durará tu presupuesto de errores según las tasas actuales o previstas; (2) el impacto de la gravedad del incidente en tus objetivos de fiabilidad; y (3) cuándo deberías priorizar el trabajo de fiabilidad sobre las nuevas características."
+      },
+      {
+        "question": "¿Cómo se calcula el presupuesto de errores?",
+        "answer": "El presupuesto de errores se calcula con la fórmula: Presupuesto de errores = Total de solicitudes × (100 % – SLO %). Por ejemplo, si tu SLO es del 99,9 % y estimas 1 000 000 solicitudes en un período de 30 días, el presupuesto sería de 1 000 000 × 0,1 % = 1 000 errores. Esto significa que puedes tener hasta 1 000 solicitudes fallidas durante ese período y aún cumplir con tu SLO. El simulador calcula automáticamente esto según tus entradas de objetivo SLO, ventana de tiempo y rendimiento."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre los modos de rendimiento promedio y máximo?",
+        "answer": "El modo de rendimiento afecta cómo se calcula el presupuesto de errores: el modo promedio usa la tasa de solicitud promedio especificada para calcular el total y el presupuesto, ideal para servicios con tráfico relativamente estable. El modo máximo usa la tasa de pico, resultando en un presupuesto de errores mayor; es más apropiado para servicios con tráfico altamente variable. Cambiar entre modos te ayuda a comprender cómo los patrones de tráfico afectan el presupuesto de errores y puede informar la planificación de capacidad."
+      },
+      {
+        "question": "¿Cómo puedo usar esta herramienta para mejorar la fiabilidad del servicio?",
+        "answer": "Esta herramienta mejora la fiabilidad del servicio de varias maneras: (1) Planificación proactiva: visualiza cómo diferentes tasas de error afectan el cumplimiento del SLO; (2) Respuesta a incidentes: durante un incidente, estima cuánto tiempo puedes mantener tu SLO con la tasa de errores actual; (3) Priorización: usa el presupuesto restante para decidir entre nuevas funciones o mejoras de fiabilidad; (4) Refinamiento del SLO: experimenta con diferentes objetivos de SLO para equilibrar fiabilidad y velocidad de desarrollo; (5) Comunicación: comparte visualizaciones con los interesados para explicar los conceptos y compensaciones de fiabilidad de forma accesible."
+      }
+    ]
   }
 ]

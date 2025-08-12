@@ -646,5 +646,45 @@
         "answer": "Ja. HEX, RGB, HSL, HSV gebruiken gevestigde wiskundige methodes. OKLCH/OKLAB volgen CSS Color Module Level 4-specificaties, inclusief gamutmapping. Alle berekeningen zijn zeer nauwkeurig. Houd er rekening mee dat kleuren kunnen verschillen per scherm of kleurprofiel – dit is een beperking van digitale weergave, geen fout van de tool. Voor kleurkritisch werk wordt een gekalibreerd scherm aanbevolen."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "SLO Burn Simulator – Visualiseer verbruik van Service Level Objective-budget",
+    "description": "Visualiseer het verbruik van het SLO-budget en schat de uitputtingstijd in op basis van foutpercentages en throughput. Perfect voor SRE- en DevOps-professionals die de betrouwbaarheid van services bewaken.",
+    "category": "development",
+    "keywords": [
+      "slo burn chart",
+      "foutbudget",
+      "service level objective",
+      "sre tool",
+      "betrouwbaarheidscalculator",
+      "foutbudget calculator",
+      "slo visualisatie",
+      "foutpercentage calculator",
+      "servicebetrouwbaarheid",
+      "devops tool"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een SLO en foutbudget?",
+        "answer": "Een Service Level Objective (SLO) is een betrouwbaarheidsdoel voor een dienst, meestal uitgedrukt als percentage (bijv. 99,9% beschikbaarheid). Het foutbudget is de wiskundige aanvulling hierop: bij een SLO van 99,9% is het foutbudget 0,1% van het totale aantal verzoeken. Dit geeft aan hoeveel fouten of downtime acceptabel zijn binnen een bepaalde tijdsperiode. Het foutbudget biedt een kwantitatieve basis om betrouwbaarheid af te wegen tegen innovatie, waardoor teams weloverwogen risico’s kunnen nemen zolang ze binnen het budget blijven."
+      },
+      {
+        "question": "Hoe lees ik de SLO Burn Chart?",
+        "answer": "De SLO Burn Chart toont hoe snel je foutbudget wordt opgebruikt bij verschillende foutpercentages. De x-as geeft de tijd weer, de y-as toont het resterende foutbudget in procent. Elke lijn vertegenwoordigt een ander foutscenario. Steilere lijnen wijzen op sneller verbruik. De grafiek helpt je te begrijpen: (1) Hoe lang je foutbudget meegaat bij huidige of verwachte foutpercentages; (2) De impact van incidenten op je betrouwbaarheid; (3) Wanneer je betrouwbaarheid boven nieuwe functies moet stellen."
+      },
+      {
+        "question": "Hoe wordt het foutbudget berekend?",
+        "answer": "Foutbudget = Totaal aantal verzoeken × (100% – SLO%). Bijvoorbeeld: bij een SLO van 99,9% en 1.000.000 verzoeken in 30 dagen, is het foutbudget 1.000.000 × 0,1% = 1.000 fouten. Dat betekent dat je maximaal 1.000 fouten mag hebben binnen die periode om toch aan het SLO te voldoen. De simulator berekent dit automatisch op basis van je invoer."
+      },
+      {
+        "question": "Wat is het verschil tussen gemiddeld en maximaal throughput-modus?",
+        "answer": "De throughput-modus bepaalt hoe het foutbudget wordt berekend: de gemiddelde modus gebruikt het opgegeven gemiddelde aantal verzoeken. Dit is geschikt voor stabiele diensten. De maximale modus gebruikt de piekverzoeken en leidt tot een groter budget. Dit is beter voor diensten met wisselende belasting. Door te wisselen tussen modi krijg je inzicht in de impact van verkeerspatronen op je budget."
+      },
+      {
+        "question": "Hoe helpt dit hulpmiddel bij betrouwbaarheid?",
+        "answer": "Deze tool helpt bij het verbeteren van betrouwbaarheid door: (1) Proactieve planning – inzicht in hoe foutpercentages SLO-naleving beïnvloeden; (2) Incidentrespons – inschatten hoe lang je het huidige niveau kunt volhouden; (3) Prioritering – bepalen of je nieuwe functies of betrouwbaarheid verbetert; (4) SLO-afstemming – testen met verschillende SLO-doelen; (5) Communicatie – grafieken delen met stakeholders om betrouwbaarheid uit te leggen."
+      }
+    ]
   }
 ]

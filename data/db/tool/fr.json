@@ -650,5 +650,45 @@
         "answer": "Oui. Toutes les conversions suivent des algorithmes standards fiables. HEX, RGB, HSL, HSV utilisent des formules reconnues. OKLCH/OKLAB sont basés sur le CSS Color Module Level 4, avec gestion du gamut et haute précision numérique. Notez que l’affichage peut varier selon l’écran, les profils de couleur et la calibration. Ce n’est pas dû à une erreur de conversion, mais aux limites naturelles du numérique. Pour un usage critique, utilisez aussi un écran calibré et un logiciel de gestion des couleurs."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "Simulateur de consommation de budget SLO – Visualisez la consommation de votre budget d’objectif de niveau de service",
+    "description": "Visualisez les taux de consommation du budget SLO et estimez le temps jusqu’à l’épuisement en fonction du taux d’erreur et du débit. Idéal pour les professionnels SRE et DevOps surveillant la fiabilité des services.",
+    "category": "development",
+    "keywords": [
+      "graphique de consommation SLO",
+      "budget d’erreur",
+      "objectif de niveau de service",
+      "outil SRE",
+      "calculateur de fiabilité",
+      "calculateur de budget d’erreur",
+      "visualisation SLO",
+      "calculateur de taux d’erreur",
+      "fiabilité des services",
+      "outil DevOps"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce qu’un SLO et un budget d’erreur ?",
+        "answer": "Un Service Level Objective (SLO) est un niveau de fiabilité cible pour un service, généralement exprimé en pourcentage (par exemple 99,9 % de disponibilité). Le budget d’erreur est le complément mathématique du SLO : si le SLO est de 99,9 %, le budget d’erreur représente 0,1 % des requêtes totales. Ce budget désigne la quantité acceptable d’erreurs ou d’interruptions sur une période donnée. Il offre un cadre quantitatif pour équilibrer fiabilité et vitesse d’innovation, permettant aux équipes de prendre des risques calculés tant qu’elles restent dans le budget."
+      },
+      {
+        "question": "Comment interpréter le graphique de consommation SLO ?",
+        "answer": "Le graphique de consommation SLO visualise la vitesse à laquelle votre budget d’erreur se vide selon différents taux d’erreurs. L’axe des x représente le temps, l’axe des y le pourcentage de budget restant. Chaque courbe illustre un scénario de taux d’erreur. Des pentes plus raides indiquent une consommation plus rapide. Ce graphique vous aide à comprendre : (1) combien de temps votre budget peut tenir à un taux actuel ou estimé, (2) l’impact de la gravité d’un incident sur vos objectifs de fiabilité, (3) quand il faut prioriser la fiabilité plutôt que les nouvelles fonctionnalités."
+      },
+      {
+        "question": "Comment le budget d’erreur est-il calculé ?",
+        "answer": "Le budget d’erreur se calcule ainsi : Budget d’erreur = Total des requêtes × (100 % − SLO %). Par exemple, avec un SLO de 99,9 % et 1 000 000 de requêtes prévues sur 30 jours, le budget est de 1 000 000 × 0,1 % = 1 000 erreurs. Cela signifie que jusqu’à 1 000 requêtes défaillantes sont tolérables tout en respectant le SLO. Le simulateur calcule automatiquement ce budget à partir des valeurs saisies pour le SLO, la période et le débit."
+      },
+      {
+        "question": "Quelle est la différence entre les modes de débit moyen et maximal ?",
+        "answer": "Le mode de débit influe sur le calcul du budget d’erreur : le mode « débit moyen » se base sur le débit moyen spécifié pour calculer le volume total et donc le budget — adapté aux services au trafic stable. Le mode « débit maximal » utilise le débit de pointe, ce qui génère un budget d’erreur plus élevé — pertinent pour les services à trafic très variable. Alterner entre ces modes permet de saisir comment les schémas de trafic influent sur le budget d’erreur et facilite la planification de capacité."
+      },
+      {
+        "question": "Comment ce outil peut-il améliorer la fiabilité des services ?",
+        "answer": "Cet outil aide à améliorer la fiabilité des services de plusieurs manières : (1) Planification proactive — visualiser l’impact des différents taux d’erreur sur le respect du SLO ; (2) Réponse aux incidents — estimer en temps réel combien de temps le SLO peut être maintenu malgré le taux d’erreur ; (3) Priorisation — décider si l’on doit privilégier de nouvelles fonctionnalités ou consolider la fiabilité selon le budget restant ; (4) Ajustement des SLO — tester plusieurs objectifs SLO pour équilibrer fiabilité et vitesse de développement ; (5) Communication — partager des visualisations avec les parties prenantes pour vulgariser les enjeux de fiabilité et les compromis."
+      }
+    ]
   }
 ]

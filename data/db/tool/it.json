@@ -650,5 +650,45 @@
         "answer": "Sì, il nostro Convertitore di Modelli di Colore implementa algoritmi standard del settore per tutte le conversioni, rendendolo adatto all’uso professionale in ambito design e sviluppo. Per HEX, RGB, HSL e HSV utilizziamo formule matematiche consolidate che garantiscono accuratezza su tutto lo spettro cromatico. Per OKLCH e OKLAB, implementiamo le specifiche ufficiali del CSS Color Module Level 4, includendo la gestione della gamma e dei colori fuori gamma. Tutti i calcoli sono eseguiti con alta precisione numerica per minimizzare gli errori di arrotondamento. È importante notare, tuttavia, che alcuni colori possono apparire leggermente diversi tra i dispositivi a causa della calibrazione del display, dei profili colore e delle limitazioni della gamma—si tratta di una limitazione intrinseca della rappresentazione digitale del colore, non di un errore di conversione. Per lavori critici in ambito colore, si consiglia di utilizzare questo strumento insieme a uno schermo calibrato e a un software professionale di gestione del colore."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "Simulatore di Consumo SLO – Visualizza il consumo del budget dell'obiettivo di livello di servizio",
+    "description": "Visualizza i tassi di consumo del budget SLO e stima il tempo di esaurimento in base ai tassi di errore e throughput. Ideale per professionisti SRE e DevOps che monitorano l'affidabilità del servizio.",
+    "category": "development",
+    "keywords": [
+      "grafico consumo slo",
+      "budget errori",
+      "obiettivo livello di servizio",
+      "strumento sre",
+      "calcolatore affidabilità",
+      "calcolatore budget errori",
+      "visualizzazione slo",
+      "calcolatore tasso errore",
+      "affidabilità del servizio",
+      "strumento devops"
+    ],
+    "faq": [
+      {
+        "question": "Cos'è un SLO e un budget degli errori?",
+        "answer": "Un SLO è un obiettivo di affidabilità espresso in percentuale. Il budget degli errori è ciò che rimane (es: 0,1%) e quantifica gli errori tollerabili. Aiuta a bilanciare stabilità e sviluppo."
+      },
+      {
+        "question": "Come interpreto il grafico di consumo?",
+        "answer": "Mostra quanto velocemente consumi il budget a seconda del tasso di errore. Linee ripide = consumo veloce. Ti aiuta a decidere su affidabilità vs funzionalità."
+      },
+      {
+        "question": "Come si calcola il budget errori?",
+        "answer": "Budget = Richieste totali × (100% – SLO%). Il simulatore lo calcola automaticamente dai tuoi input."
+      },
+      {
+        "question": "Qual è la differenza tra modalità media e massima?",
+        "answer": "Media usa traffico medio. Massima usa picco. Ti aiuta a valutare come cambia il budget con il carico."
+      },
+      {
+        "question": "Come migliora l'affidabilità?",
+        "answer": "Aiuta a: (1) pianificare, (2) rispondere agli incidenti, (3) scegliere tra funzionalità e stabilità, (4) testare SLO diversi, (5) comunicare con stakeholder."
+      }
+    ]
   }
 ]

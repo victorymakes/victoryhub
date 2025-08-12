@@ -646,5 +646,45 @@
         "answer": "Kyllä. HEX, RGB, HSL, HSV käyttävät tunnettuja laskentakaavoja. OKLCH/OKLAB perustuvat CSS Color Module Level 4 -määrittelyihin. Laskennat ovat erittäin tarkkoja. Huomaa kuitenkin: värit voivat näyttää erilaisilta eri näytöillä, profiileilla ja kalibroinneilla – tämä on digitaalisen värin rajoite, ei virhe. Väritarkkaan työhön suosittelemme kalibroitua näyttöä ja ammattitason värihallintaa."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "SLO-kulutussimulaattori – Visualisoi palvelutason tavoitebudjetin kuluminen",
+    "description": "Visualisoi SLO-budjetin kulumisnopeus ja arvioi aika sen loppumiseen virheprosentin ja läpäisykyvyn perusteella. Täydellinen SRE- ja DevOps-ammattilaisille, jotka seuraavat palvelun luotettavuutta.",
+    "category": "development",
+    "keywords": [
+      "slo-kulutuskaavio",
+      "virhebudjetti",
+      "palvelutason tavoite",
+      "sre-työkalu",
+      "luotettavuuslaskuri",
+      "virhebudjettilaskuri",
+      "slo-visualisointi",
+      "virheprosenttilaskuri",
+      "palvelun luotettavuus",
+      "devops-työkalu"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on SLO ja virhebudjetti?",
+        "answer": "Palvelutason tavoite (SLO) on tavoitetaso palvelun luotettavuudelle, yleensä prosentteina (esim. 99,9 % saatavuus). Virhebudjetti on tämän täydentävä osuus – jos SLO on 99,9 %, virhebudjetti on 0,1 % pyynnöistä. Budjetti osoittaa sallitun virhe- tai käyttökatkomäärän tietyssä aikaikkunassa. Se tarjoaa määrällisen kehyksen tasapainottamaan luotettavuuden ja kehityksen nopeuden välillä ja sallii hallitut riskit."
+      },
+      {
+        "question": "Kuinka tulkitsen SLO-kulutuskaaviota?",
+        "answer": "Kaavio näyttää kuinka nopeasti virhebudjetti kuluu eri virheprosenteilla. X-akseli on aika, Y-akseli näyttää jäljellä olevan budjetin. Jokainen viiva edustaa eri skenaariota. Jyrkempi viiva = nopeampi kulutus. Kaavio auttaa ymmärtämään: (1) Kuinka kauan budjetti kestää, (2) Kuinka tapahtuman vakavuus vaikuttaa SLO-tavoitteisiin, (3) Milloin priorisoida luotettavuutta."
+      },
+      {
+        "question": "Miten virhebudjetti lasketaan?",
+        "answer": "Virhebudjetti = Pyynnöt × (100 % – SLO %). Esim. SLO 99,9 % ja 1 000 000 pyyntöä → budjetti = 1 000 virhettä. Simulaattori laskee tämän automaattisesti."
+      },
+      {
+        "question": "Mikä ero on keskimääräisen ja maksimaalisen läpäisyn välillä?",
+        "answer": "Keskimääräinen läpäisy käyttää ilmoitettua keskiarvoa – sopii vakaalle liikenteelle. Maksimi käyttää huippuarvoa – sopii vaihtelevalle liikenteelle. Näiden välillä vaihtaminen auttaa arvioimaan vaikutuksia."
+      },
+      {
+        "question": "Kuinka tämä työkalu parantaa palvelun luotettavuutta?",
+        "answer": "Se auttaa: (1) Suunnittelemaan – miten virheet vaikuttavat SLO:hon, (2) Reagoimaan – kuinka pitkään kestät nykyisellä virhetasolla, (3) Priorisoimaan – uusia ominaisuuksia vai luotettavuus, (4) Testaamaan eri tavoitteita, (5) Viestimään selkeästi sidosryhmille."
+      }
+    ]
   }
 ]
