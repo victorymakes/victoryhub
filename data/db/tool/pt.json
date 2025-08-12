@@ -650,5 +650,45 @@
         "answer": "Sim. HEX, RGB, HSL e HSV usam fórmulas estabelecidas. OKLCH e OKLAB seguem as especificações do CSS Color Module Level 4 com mapeamento de gamut. Os cálculos são altamente precisos. No entanto, lembre-se de que cores podem variar entre dispositivos devido a perfis de cor e calibração – isso é uma limitação digital, não do conversor. Para trabalhos sensíveis à cor, use um monitor calibrado e ferramentas de gestão de cor profissionais."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "Simulador de Consumo de SLO – Visualize o Consumo do Orçamento de Nível de Serviço",
+    "description": "Visualize as taxas de consumo do orçamento de SLO e estime o tempo até sua exaustão com base na taxa de erros e throughput. Ideal para profissionais de SRE e DevOps que monitoram a confiabilidade do serviço.",
+    "category": "development",
+    "keywords": [
+      "gráfico de queima de SLO",
+      "orçamento de erro",
+      "objetivo de nível de serviço",
+      "ferramenta SRE",
+      "calculadora de confiabilidade",
+      "calculadora de orçamento de erro",
+      "visualização de SLO",
+      "calculadora de taxa de erro",
+      "confiabilidade de serviço",
+      "ferramenta DevOps"
+    ],
+    "faq": [
+      {
+        "question": "O que é um SLO e orçamento de erro?",
+        "answer": "Um SLO é um objetivo de confiabilidade de serviço, geralmente em porcentagem (ex: 99,9%). O orçamento de erro é o complemento (100% – SLO%), representando quantos erros são aceitáveis. Ajuda a equilibrar inovação e confiabilidade."
+      },
+      {
+        "question": "Como interpretar o gráfico de SLO?",
+        "answer": "O gráfico mostra quanto tempo seu orçamento durará em diferentes taxas de erro. Linhas mais inclinadas indicam consumo mais rápido. Mostra: (1) duração, (2) impacto de incidentes, (3) quando priorizar estabilidade."
+      },
+      {
+        "question": "Como o orçamento de erro é calculado?",
+        "answer": "Orçamento = Total de requisições × (100% – SLO%). Ex: 1.000.000 × 0,1% = 1.000 erros. O simulador calcula isso com base nas entradas."
+      },
+      {
+        "question": "Qual a diferença entre modos de throughput?",
+        "answer": "Modo médio usa a média de requisições; modo máximo usa pico. Trocar ajuda a entender o impacto da carga no orçamento."
+      },
+      {
+        "question": "Como este simulador melhora a confiabilidade?",
+        "answer": "Ajuda a: (1) Planejar proativamente, (2) Agir durante incidentes, (3) Priorizar estabilidade, (4) Ajustar SLOs, (5) Comunicar decisões com dados."
+      }
+    ]
   }
 ]

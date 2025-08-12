@@ -650,5 +650,45 @@
         "answer": "Ja. Unser Tool verwendet präzise, standardisierte Algorithmen für alle Konvertierungen – ideal für Design und Entwicklung. HEX, RGB, HSL und HSV nutzen etablierte mathematische Formeln. OKLCH/OKLAB beruhen auf offiziellen Spezifikationen des CSS Color Module Level 4 inklusive Gamut-Mapping und Genauigkeit für außerhalb des Farbraums liegende Farben. Alle Berechnungen erfolgen mit hoher numerischer Präzision. Bitte beachte: Farben können auf verschiedenen Geräten abweichen, je nach Kalibrierung und Farbraum – dies liegt an digitalen Grenzen, nicht am Tool selbst. Für farbkritische Arbeit empfehlen wir zusätzlich kalibrierte Monitore und professionelle Farbtools."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "SLO-Budgetverbrauch-Simulator – Visualisierung des Service Level Objective-Budgetverbrauchs",
+    "description": "Visualisieren Sie die SLO-Budgetverbrauchsraten und schätzen Sie anhand der Fehlerrate und Durchsatz die Zeit bis zur Erschöpfung. Ideal für SRE- und DevOps-Profis, die die Zuverlässigkeit von Services überwachen.",
+    "category": "development",
+    "keywords": [
+      "SLO‑Burn‑Diagramm",
+      "Fehlerbudget",
+      "Service Level Objective",
+      "SRE‑Tool",
+      "Zuverlässigkeitsrechner",
+      "Fehlerbudgetrechner",
+      "SLO‑Visualisierung",
+      "Fehlerratenrechner",
+      "Servicezuverlässigkeit",
+      "DevOps‑Tool"
+    ],
+    "faq": [
+      {
+        "question": "Was ist ein SLO und Fehlerbudget?",
+        "answer": "Ein Service Level Objective (SLO) ist ein Zielwert für die Zuverlässigkeit eines Services, typischerweise in Prozent ausgedrückt (z. B. 99,9 % Verfügbarkeit). Das Fehlerbudget ist das mathematische Komplement zum SLO – bei einem SLO von 99,9 % beträgt das Fehlerbudget 0,1 % der Gesamtanfragen. Dieses Budget steht für die akzeptable Menge an Fehlern oder Ausfallzeiten innerhalb eines festgelegten Zeitfensters. Fehlerbudgets bieten einen quantitativen Rahmen, der die Zuverlässigkeit mit Innovationsgeschwindigkeit in Einklang bringt und Teams kalkulierte Risiken erlaubt, solange sie im Budget bleiben."
+      },
+      {
+        "question": "Wie interpretiere ich das SLO-Burn-Diagramm?",
+        "answer": "Das SLO-Burn-Diagramm verdeutlicht, wie schnell Ihr Fehlerbudget bei unterschiedlichen Fehlerraten aufgebraucht wird. Die x‑Achse zeigt die Zeit, die y‑Achse den prozentual verbleibenden Fehlerbudgetanteil. Jede Linie steht für ein anderes Fehlerratenszenario – steilere Linien bedeuten schnelleren Verbrauch. Das Diagramm hilft Ihnen zu verstehen: (1) Wie lange Ihr Fehlerbudget bei aktuellen oder prognostizierten Fehlerraten hält, (2) Wie sich die Schwere eines Vorfalls auf Ihre Zuverlässigkeitsziele auswirkt, und (3) Wann Sie Zuverlässigkeitsarbeit gegenüber neuen Features priorisieren sollten."
+      },
+      {
+        "question": "Wie wird das Fehlerbudget berechnet?",
+        "answer": "Das Fehlerbudget wird folgendermaßen berechnet: Fehlerbudget = Gesamtanfragen × (100 % – SLO %). Beispiel: Bei einem SLO von 99,9 % und erwarteten 1.000.000 Anfragen in einem 30‑Tage‑Zeitraum ergibt sich ein Fehlerbudget von 1.000.000 × 0,1 % = 1.000 Fehler. Das bedeutet, dass bis zu 1.000 fehlerhafte Anfragen innerhalb dieses Zeitfensters toleriert werden können und das SLO trotzdem erfüllt ist. Der Simulator berechnet dies automatisch anhand Ihrer Eingaben zu SLO-Ziel, Zeitfenster und Durchsatz."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen durchschnittlichem und max­imalem Durchsatzmodus?",
+        "answer": "Der Durchsatzmodus beeinflusst die Fehlerbudgetberechnung: Der Durchschnittsmodus nutzt Ihre angegebene durchschnittliche Anfragerate zur Berechnung des Gesamtvolumens und damit des Fehlerbudgets – geeignet für relativ stabile Trafficmuster. Der Maximalmodus verwendet die Spitzenrate, was zu einem größeren Fehlerbudget führt – sinnvoll bei stark schwankendem Traffic. Der Wechsel zwischen den Modi hilft Ihnen zu verstehen, wie Trafficmuster das Fehlerbudget beeinflussen und kann Ihre Kapazitätsplanung unterstützen."
+      },
+      {
+        "question": "Wie kann dieses Tool die Servicezuverlässigkeit verbessern?",
+        "answer": "Dieses Tool unterstützt die Verbesserung der Servicezuverlässigkeit auf verschiedene Weise: (1) Proaktive Planung – visualisieren, wie verschiedene Fehlerraten die Einhaltung von SLOs beeinflussen; (2) Incident Response – während eines Vorfalls abschätzen, wie lange Sie den aktuellen Fehlerraten standhalten können, bevor das SLO verletzt wird; (3) Priorisierung – verbleibendes Fehlerbudget verwenden, um zu entscheiden, ob neue Features oder Zuverlässigkeitsverbesserungen wichtig sind; (4) SLO‑Anpassung – mit verschiedenen Zielen experimentieren, um das optimale Gleichgewicht zwischen Zuverlässigkeit und Entwicklungsgeschwindigkeit zu finden; (5) Kommunikation – Visualisierungen für Stakeholder bereitstellen, um Zuverlässigkeitskonzepte und trade-offs zugänglich zu erklären."
+      }
+    ]
   }
 ]

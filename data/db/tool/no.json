@@ -645,5 +645,45 @@
         "answer": "Ja. HEX, RGB, HSL og HSV bruker veletablerte matematiske formler. OKLCH og OKLAB følger CSS Color Module Level 4, inkludert gamuthåndtering. Beregningene gjøres med høy presisjon. Vær imidlertid oppmerksom på at farger kan vises forskjellig avhengig av skjerm, fargeprofil og kalibrering – dette er en digital begrensning, ikke en feil. For fargenøyaktige prosjekter anbefales kalibrert skjerm og profesjonelt verktøy i tillegg."
       }
     ]
+  },
+  {
+    "slug": "slo-burn-simulator",
+    "name": "SLO-forbruksimulator – Visualiser forbruk av Service Level Objective-budsjett",
+    "description": "Visualiser SLO-budsjettets forbrukshastighet og estimer tid til uttømming basert på feilrate og gjennomstrømning. Perfekt for SRE- og DevOps-profesjonelle som overvåker tjenestepålitelighet.",
+    "category": "development",
+    "keywords": [
+      "slo burn-diagram",
+      "feilbudsjett",
+      "servicenivåmål",
+      "sre-verktøy",
+      "pålitelighetskalkulator",
+      "feilbudsjettkalkulator",
+      "slo-visualisering",
+      "feilratekalkulator",
+      "tjenestepålitelighet",
+      "devops-verktøy"
+    ],
+    "faq": [
+      {
+        "question": "Hva er et SLO og feilbudsjett?",
+        "answer": "Et Service Level Objective (SLO) er et pålitelighetsmål for en tjeneste, vanligvis uttrykt i prosent (f.eks. 99,9% oppetid). Feilbudsjettet er det matematiske komplementet til SLO – hvis SLO er 99,9 %, er feilbudsjettet 0,1 % av de totale forespørslene. Dette budsjettet representerer mengden akseptable feil eller nedetid innenfor et bestemt tidsvindu. Det gir et kvantitativt rammeverk for å balansere pålitelighet med innovasjonshastighet, slik at team kan ta kalkulerte risikoer innenfor budsjettet."
+      },
+      {
+        "question": "Hvordan tolker jeg SLO Burn-diagrammet?",
+        "answer": "SLO Burn-diagrammet visualiserer hvor raskt feilbudsjettet forbrukes ved ulike feilrater. X-aksen viser tid, mens Y-aksen viser gjenværende prosent av budsjettet. Hver linje representerer et annet scenario. Brattere skråninger betyr raskere forbruk. Diagrammet hjelper deg å forstå: (1) Hvor lenge budsjettet varer ved nåværende/forventet feilrate, (2) Hvordan alvorlighetsgrad på hendelser påvirker pålitelighetsmål, (3) Når du bør prioritere stabilitet fremfor nye funksjoner."
+      },
+      {
+        "question": "Hvordan beregnes feilbudsjettet?",
+        "answer": "Feilbudsjett = Totalt antall forespørsler × (100 % - SLO %). For eksempel: Hvis SLO er 99,9 % og du har 1 000 000 forespørsler over 30 dager, er feilbudsjettet 1 000 000 × 0,1 % = 1 000 feil. Dette betyr at du kan ha opptil 1 000 feil og fortsatt møte SLO. Simulatoren beregner dette automatisk basert på dine inndata."
+      },
+      {
+        "question": "Hva er forskjellen på gjennomsnittlig og maksimal gjennomstrømming?",
+        "answer": "Gjennomstrømmingsmodusen påvirker beregningen: Gjennomsnittlig modus bruker den angitte gjennomsnittsfrekvensen – ideell for stabile tjenester. Maksimal modus bruker toppfrekvens og gir større feilbudsjett – nyttig ved variabel trafikk. Å bytte modus gir innsikt i hvordan trafikkmønstre påvirker budsjettet."
+      },
+      {
+        "question": "Hvordan kan jeg bruke dette verktøyet til å forbedre påliteligheten?",
+        "answer": "Verktøyet hjelper med: (1) Proaktiv planlegging – se hvordan ulike feilrater påvirker SLO; (2) Hendelsesrespons – estimer hvor lenge du kan opprettholde nåværende feilrate; (3) Prioritering – avgjør om nye funksjoner eller forbedret stabilitet er viktigst; (4) Justering av SLO – eksperimenter med ulike mål; (5) Kommunikasjon – del visualiseringer med interessenter for å forklare beslutninger og risikoer."
+      }
+    ]
   }
 ]
