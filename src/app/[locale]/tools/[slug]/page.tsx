@@ -38,47 +38,6 @@ export async function generateMetadata({
         resolvedParams.locale,
         `/tools/${resolvedParams.slug}`,
     );
-
-    const jsonLdSchemas = [];
-    // 创建JSON-LD结构化数据
-    jsonLdSchemas.push({
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        name: tool.name,
-        description: tool.description,
-        applicationCategory: "WebApplication",
-        operatingSystem: "Any",
-        offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-        },
-        url: url,
-        provider: {
-            "@type": "Organization",
-            name: config.siteName,
-            url: config.baseUrl,
-        },
-        keywords: tool.keywords?.join(", "),
-        inLanguage: resolvedParams.locale || config.defaultLocale,
-    });
-
-    // Add FAQ schema if FAQ items exist
-    if (tool.faq && tool.faq.length > 0) {
-        jsonLdSchemas.push({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: tool.faq.map((item) => ({
-                "@type": "Question",
-                name: item.question,
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: item.answer,
-                },
-            })),
-        });
-    }
-
     return {
         title: generateTitle(tool.name),
         description: tool.description,
@@ -99,11 +58,6 @@ export async function generateMetadata({
         alternates: {
             canonical: url,
             languages: getLocalizedUrls(`/tools/${resolvedParams.slug}`),
-        },
-        other: {
-            "script:ld+json": JSON.stringify(
-                jsonLdSchemas.length === 1 ? jsonLdSchemas[0] : jsonLdSchemas,
-            ),
         },
     };
 }
