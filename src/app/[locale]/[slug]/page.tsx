@@ -34,29 +34,6 @@ export async function generateMetadata({
 
     const url = getLocalizedUrl(locale, page.slug);
 
-    // Create JSON-LD structured data for page
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        name: page.title,
-        description: page.description,
-        url: `${config.baseUrl}${url}`,
-        datePublished: page.date,
-        author: {
-            "@type": "Person",
-            name: page.author,
-        },
-        publisher: {
-            "@type": "Organization",
-            name: config.siteName,
-            logo: {
-                "@type": "ImageObject",
-                url: `${config.baseUrl}/logo.png`,
-            },
-        },
-        inLanguage: locale,
-    };
-
     return {
         title: generateTitle(page.title),
         description: page.description,
@@ -92,7 +69,6 @@ export async function generateMetadata({
             "article:published_time": page.date,
             "article:section": page.category?.name ?? "",
             "article:tag": page.tags?.join(",") ?? "",
-            "script:ld+json": JSON.stringify(jsonLd),
         },
     };
 }

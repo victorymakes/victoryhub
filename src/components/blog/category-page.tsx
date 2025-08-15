@@ -30,23 +30,7 @@ export const generateCategoryPageMetadata = async ({
         locale,
         `/blog/category/${category}/page/${page}`,
     );
-
     const pageTitle = `${t("seoTitle")} - ${category} - ${t("page")} ${page}`;
-
-    // Create CollectionPage JSON-LD data
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: `${t("seoTitle")} - ${category}`,
-        description: t("seoDescription"),
-        url: `${config.baseUrl}${url}`,
-        publisher: {
-            "@type": "Organization",
-            name: config.siteName,
-            url: config.baseUrl,
-        },
-        inLanguage: locale || config.defaultLocale,
-    };
 
     return {
         title: generateTitle(pageTitle),
@@ -70,9 +54,6 @@ export const generateCategoryPageMetadata = async ({
             languages: getLocalizedUrls(
                 `/blog/category/${category}/page/${page}`,
             ),
-        },
-        other: {
-            "script:ld+json": JSON.stringify(jsonLd),
         },
     };
 };
