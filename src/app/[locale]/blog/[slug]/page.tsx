@@ -18,6 +18,7 @@ import {
 } from "@/lib/config";
 import Image from "next/image";
 import BlogGrid from "@/components/blog/blog-grid";
+import { BlogPostJsonLd } from "@/components/seo/page-json-ld";
 
 interface BlogPostPageProps {
     params: Promise<{
@@ -99,115 +100,136 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
     // Generate the full URL for sharing
     const shareUrl = getLocalizedUrl(locale, `/blog/${slug}`);
-
     return (
-        <div className="bg-background">
-            {/* Article Header */}
-            <Container className="py-16">
-                {/* Article Meta */}
-                <div className="mb-8 space-y-6">
-                    <div className="flex items-center gap-4">
-                        <Link
-                            href={`/blog/category/${post.category.id}/page/1`}
-                        >
-                            <Badge>{post.category.name}</Badge>
-                        </Link>
-                        <span className="text-sm text-muted-foreground">
-                            {post.readingTime} {t("minRead")}
-                        </span>
-                        {post.featured && <Badge>{t("featured")}</Badge>}
-                    </div>
-
-                    <h1 className="text-4xl font-bold text-foreground lg:text-5xl">
-                        {post.title}
-                    </h1>
-                    <div className="flex items-center justify-between border-b">
+        <>
+            {/* JSON-LD structured data */}
+            <BlogPostJsonLd
+                inLanguage={locale}
+                url={shareUrl}
+                title={post.title}
+                description={post.description}
+                authorName={post.author}
+                publishDate={post.date}
+                imageUrl={post.cover}
+                tags={post.tags.map((tag) => tag.name)}
+                categoryName={post.category.name}
+                breadcrumbItems={[
+                    { name: config.siteName, item: config.baseUrl },
+                    {
+                        name: t("title"),
+                        item: getLocalizedUrl("locale", "/blog"),
+                    },
+                    { name: post.title, item: shareUrl },
+                ]}
+            />
+            <div className="bg-background">
+                {/* Article Header */}
+                <Container className="py-16">
+                    {/* Article Meta */}
+                    <div className="mb-8 space-y-6">
                         <div className="flex items-center gap-4">
-                            <div>
-                                <p className="font-medium text-foreground">
-                                    {post.author}
-                                </p>
-                                <time
-                                    dateTime={post.date}
-                                    className="text-sm text-muted-foreground"
-                                >
-                                    {new Date(post.date).toLocaleDateString(
-                                        locale,
-                                        {
-                                            year: "numeric",
-                                            month: "long",
-                                            day: "numeric",
-                                        },
-                                    )}
-                                </time>
-                            </div>
+                            <Link
+                                href={`/blog/category/${post.category.id}/page/1`}
+                            >
+                                <Badge>{post.category.name}</Badge>
+                            </Link>
+                            <span className="text-sm text-muted-foreground">
+                                {post.readingTime} {t("minRead")}
+                            </span>
+                            {post.featured && <Badge>{t("featured")}</Badge>}
                         </div>
 
-                        {/* Tags */}
-                        {post.tags.length > 0 && (
-                            <div className="flex flex-wrap gap-2">
-                                {post.tags.map((tag) => (
-                                    <span
-                                        key={tag.id}
-                                        className="bg-muted text-muted-foreground px-3 py-1 text-sm rounded-full"
+                        <h1 className="text-4xl font-bold text-foreground lg:text-5xl">
+                            {post.title}
+                        </h1>
+                        <div className="flex items-center justify-between border-b">
+                            <div className="flex items-center gap-4">
+                                <div>
+                                    <p className="font-medium text-foreground">
+                                        {post.author}
+                                    </p>
+                                    <time
+                                        dateTime={post.date}
+                                        className="text-sm text-muted-foreground"
                                     >
-                                        #{tag.name}
-                                    </span>
-                                ))}
+                                        {new Date(post.date).toLocaleDateString(
+                                            locale,
+                                            {
+                                                year: "numeric",
+                                                month: "long",
+                                                day: "numeric",
+                                            },
+                                        )}
+                                    </time>
+                                </div>
+                            </div>
+
+                            {/* Tags */}
+                            {post.tags.length > 0 && (
+                                <div className="flex flex-wrap gap-2">
+                                    {post.tags.map((tag) => (
+                                        <span
+                                            key={tag.id}
+                                            className="bg-muted text-muted-foreground px-3 py-1 text-sm rounded-full"
+                                        >
+                                            #{tag.name}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                        {/* Cover Image */}
+                        {post.cover && (
+                            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                                <Image
+                                    fill
+                                    src={post.cover}
+                                    alt={post.title}
+                                    className="object-cover"
+                                />
                             </div>
                         )}
                     </div>
-                    {/* Cover Image */}
-                    {post.cover && (
-                        <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
-                            <Image
-                                fill
-                                src={post.cover}
-                                alt={post.title}
-                                className="object-cover"
+
+                    {/* Article Content */}
+                    <article className="prose prose-neutral dark:prose-invert max-w-none">
+                        <Content />
+                    </article>
+
+                    {/* Article Footer */}
+                    <div className="border-t pt-8 mt-12">
+                        <div className="flex items-center justify-between gap-4">
+                            <Link
+                                href="/blog"
+                                className="text-primary hover:text-primary/80 transition-colors"
+                            >
+                                {t("backToBlog")}
+                            </Link>
+
+                            <Share
+                                url={shareUrl}
+                                title={post.title}
+                                description={post.description}
+                                hashtags={[
+                                    config.siteName,
+                                    "blog",
+                                    ...post.tags.map((tag) => tag.name),
+                                ]}
                             />
                         </div>
-                    )}
-                </div>
-
-                {/* Article Content */}
-                <article className="prose prose-neutral dark:prose-invert max-w-none">
-                    <Content />
-                </article>
-
-                {/* Article Footer */}
-                <div className="border-t pt-8 mt-12">
-                    <div className="flex items-center justify-between gap-4">
-                        <Link
-                            href="/blog"
-                            className="text-primary hover:text-primary/80 transition-colors"
-                        >
-                            {t("backToBlog")}
-                        </Link>
-
-                        <Share
-                            url={shareUrl}
-                            title={post.title}
-                            description={post.description}
-                            hashtags={[
-                                config.siteName,
-                                "blog",
-                                ...post.tags.map((tag) => tag.name),
-                            ]}
-                        />
                     </div>
-                </div>
-            </Container>
-
-            {/* Related Posts */}
-            {relatedPosts.length > 0 && (
-                <Container className="py-16 bg-muted/30 mb-16">
-                    <h2 className="text-2xl font-bold text-foreground mb-8">
-                        {t("relatedArticles")}
-                    </h2>
-                    <BlogGrid blogs={relatedPosts} hideCover={false} />
                 </Container>
-            )}
-        </div>
+
+                {/* Related Posts */}
+                {relatedPosts.length > 0 && (
+                    <Container className="py-16 bg-muted/30 mb-16">
+                        <h2 className="text-2xl font-bold text-foreground mb-8">
+                            {t("relatedArticles")}
+                        </h2>
+                        <BlogGrid blogs={relatedPosts} hideCover={false} />
+                    </Container>
+                )}
+            </div>
+        </>
     );
 }

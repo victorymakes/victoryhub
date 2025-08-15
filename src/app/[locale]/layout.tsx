@@ -10,6 +10,8 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/common/analytics";
 import { config } from "@/lib/config";
+import { getTranslations } from "next-intl/server";
+import { RootJsonLd } from "@/components/seo/page-json-ld";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -33,6 +35,9 @@ export default async function LocaleLayout({
     if (!hasLocale(routing.locales, locale)) {
         notFound();
     }
+
+    const t = await getTranslations("Homepage");
+    const description = t("seoDescription");
 
     return (
         <html lang={locale} suppressHydrationWarning>
@@ -58,7 +63,13 @@ export default async function LocaleLayout({
                         disableTransitionOnChange
                     >
                         <Navbar />
-                        <main className="flex-1">{children}</main>
+                        <main className="flex-1">
+                            <RootJsonLd
+                                inLanguage={locale}
+                                description={description}
+                            />
+                            {children}
+                        </main>
                         <Footer />
                         <Toaster />
                     </ThemeProvider>

@@ -12,6 +12,7 @@ import {
     generateTitle,
 } from "@/lib/config";
 import { getTranslations } from "next-intl/server";
+import { ToolDetailJsonLd } from "@/components/seo/page-json-ld";
 
 interface ToolPageProps {
     params: Promise<{
@@ -23,8 +24,8 @@ interface ToolPageProps {
 export async function generateMetadata({
     params,
 }: ToolPageProps): Promise<Metadata> {
-    const resolvedParams = await params;
-    const tool = await getTool(resolvedParams.slug, resolvedParams.locale);
+    const { locale, slug } = await params;
+    const tool = await getTool(slug, locale);
 
     if (!tool) {
         const t = await getTranslations("ToolDetail");
@@ -34,10 +35,7 @@ export async function generateMetadata({
         };
     }
 
-    const url = getLocalizedUrl(
-        resolvedParams.locale,
-        `/tools/${resolvedParams.slug}`,
-    );
+    const url = getLocalizedUrl(locale, `/tools/${slug}`);
     return {
         title: generateTitle(tool.name),
         description: tool.description,
@@ -47,7 +45,7 @@ export async function generateMetadata({
             description: tool.description,
             url,
             siteName: config.siteName,
-            locale: resolvedParams.locale,
+            locale: locale,
             type: "website",
         },
         twitter: {
@@ -57,56 +55,82 @@ export async function generateMetadata({
         },
         alternates: {
             canonical: url,
-            languages: getLocalizedUrls(`/tools/${resolvedParams.slug}`),
+            languages: getLocalizedUrls(`/tools/${slug}`),
         },
     };
 }
 
 export default async function ToolPage({ params }: ToolPageProps) {
-    const resolvedParams = await params;
-    const tool = await getTool(resolvedParams.slug, resolvedParams.locale);
+    const { locale, slug } = await params;
+    const tool = await getTool(slug, locale);
     if (!tool) return notFound();
 
     const t = await getTranslations("ToolDetail");
-
-    const currentUrl = getLocalizedUrl(
-        resolvedParams.locale,
-        `/tools/${resolvedParams.slug}`,
-    );
-
+    const tTools = await getTranslations("Tools");
+    const url = getLocalizedUrl(locale, `/tools/${slug}`);
     return (
-        <div className="bg-background">
-            <Container className="py-16">
-                <div className="flex items-start justify-between mb-6">
-                    <div className="flex-1">
-                        <h1 className="text-2xl font-bold mb-2">{tool.name}</h1>
-                        <p className="text-muted-foreground">
-                            {tool.description}
-                        </p>
-                    </div>
-                    <div className="ml-4 flex-shrink-0">
-                        <Share
-                            url={currentUrl}
-                            title={`${tool.name} - ${config.siteName}`}
-                            description={tool.description}
-                            hashtags={[
-                                config.siteName,
-                                "tools",
-                                "productivity",
-                                "developer",
-                            ]}
-                        />
-                    </div>
-                </div>
+        <>
+            {/* JSON-LD structured data */}
+            <ToolDetailJsonLd
+                inLanguage={locale}
+                name={tool.name}
+                description={tool.description}
+                url={url}
+                keywords={tool.keywords}
+                applicationCategory={tool.category.name}
+                breadcrumbItems={[
+                    { name: config.siteName, item: config.baseUrl },
+                    {
+                        name: tTools("seoTitle"),
+                        item: `${config.baseUrl}/${locale}/tools`,
+                    },
+                    { name: tool.name, item: url },
+                ]}
+                faqItems={
+                    tool.faq && tool.faq.length > 0
+                        ? tool.faq.map((faqItem) => ({
+                              question: faqItem.question,
+                              answer: faqItem.answer,
+                          }))
+                        : undefined
+                }
+            />
 
-                <ToolComponent
-                    id={resolvedParams.slug}
-                    underConstructionMessage={t("toolUnderConstruction")}
-                />
+            <div className="bg-background">
+                <Container className="py-16">
+                    <div className="flex items-start justify-between mb-6">
+                        <div className="flex-1">
+                            <h1 className="text-2xl font-bold mb-2">
+                                {tool.name}
+                            </h1>
+                            <p className="text-muted-foreground">
+                                {tool.description}
+                            </p>
+                        </div>
+                        <div className="ml-4 flex-shrink-0">
+                            <Share
+                                url={url}
+                                title={`${tool.name} - ${config.siteName}`}
+                                description={tool.description}
+                                hashtags={[
+                                    config.siteName,
+                                    "tools",
+                                    "productivity",
+                                    "developer",
+                                ]}
+                            />
+                        </div>
+                    </div>
 
-                {/* FAQ Section */}
-                <FAQSection faqItems={tool.faq} title={t("faq")} />
-            </Container>
-        </div>
+                    <ToolComponent
+                        id={slug}
+                        underConstructionMessage={t("toolUnderConstruction")}
+                    />
+
+                    {/* FAQ Section */}
+                    <FAQSection faqItems={tool.faq} title={t("faq")} />
+                </Container>
+            </div>
+        </>
     );
 }
