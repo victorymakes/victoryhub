@@ -11,6 +11,7 @@ import {
     getLocalizedUrls,
     generateTitle,
 } from "@/lib/config";
+import { BlogCategoryJsonLd } from "@/components/seo/page-json-ld";
 
 interface CategoryPageProps {
     locale: string;
@@ -92,39 +93,73 @@ export const CategoryPage = async ({
     }
 
     const categories = await getCategories(locale);
+
+    // JSON-LD info
+    const url = getLocalizedUrl(
+        locale,
+        `/blog/category/${category}/page/${page}`,
+    );
+    const categoryName =
+        categories.find((cat) => cat.id === category)?.name || category;
     return (
-        <div className="bg-background">
-            {/* Hero Section */}
-            <Container className="py-16">
-                <div className="text-center">
-                    <h1 className="text-4xl font-bold text-foreground sm:text-6xl">
-                        {t("title")}
-                    </h1>
-                    <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-                        {t("subtitle")}
-                    </p>
-                </div>
-            </Container>
+        <>
+            {/* JSON-LD structured data */}
+            <BlogCategoryJsonLd
+                url={url}
+                title={`${t("seoTitle")} - ${category}`}
+                description={t("seoDescription")}
+                breadcrumbItems={[
+                    { name: config.siteName, item: config.baseUrl },
+                    {
+                        name: t("seoTitle"),
+                        item: getLocalizedUrl(locale, "/blog"),
+                    },
+                    { name: categoryName, item: url },
+                ]}
+                blogItems={paginationData.items.map((post, index) => ({
+                    name: post.title,
+                    url: getLocalizedUrl(locale, post.slug),
+                    image: post.cover,
+                    description: post.description,
+                    position: index + 1,
+                }))}
+                inLanguage={locale}
+            />
 
-            {/* Blog Content */}
-            <Container className="py-16 space-y-12">
-                {/* Category Filters */}
-                <CategoryFilters
-                    categories={categories}
-                    currentCategoryId={category}
-                />
+            {/* Page Content */}
+            <div className="bg-background">
+                {/* Hero Section */}
+                <Container className="py-16">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold text-foreground sm:text-6xl">
+                            {t("title")}
+                        </h1>
+                        <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+                            {t("subtitle")}
+                        </p>
+                    </div>
+                </Container>
 
-                {/* Blog Grid */}
-                <BlogGrid blogs={paginationData.items} />
+                {/* Blog Content */}
+                <Container className="py-16 space-y-12">
+                    {/* Category Filters */}
+                    <CategoryFilters
+                        categories={categories}
+                        currentCategoryId={category}
+                    />
 
-                {/* Pagination */}
-                <BlogPagination
-                    currentLocale={locale}
-                    currentCategoryId={category}
-                    currentPage={paginationData.currentPage}
-                    totalPages={paginationData.totalPages}
-                />
-            </Container>
-        </div>
+                    {/* Blog Grid */}
+                    <BlogGrid blogs={paginationData.items} />
+
+                    {/* Pagination */}
+                    <BlogPagination
+                        currentLocale={locale}
+                        currentCategoryId={category}
+                        currentPage={paginationData.currentPage}
+                        totalPages={paginationData.totalPages}
+                    />
+                </Container>
+            </div>
+        </>
     );
 };

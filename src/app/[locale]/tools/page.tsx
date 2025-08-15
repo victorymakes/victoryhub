@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { getCategories, getTools } from "@/service/tool-service";
 import { DynamicIcon } from "@/components/common/dynamic-icon";
 import { Metadata } from "next";
+import { ToolCollectionJsonLd } from "@/components/seo/page-json-ld";
 import {
     config,
     getLocalizedUrl,
@@ -51,9 +52,10 @@ export async function generateMetadata({
 }
 
 export default async function ToolsPage({ params }: ToolsPageProps) {
-    const resolvedParams = await params;
+    const { locale } = await params;
     const t = await getTranslations("Tools");
-    const tools = await getTools(resolvedParams.locale);
+    const tools = await getTools(locale);
+    const url = getLocalizedUrl(locale, "/tools");
 
     // Group tools by category
     const toolsByCategory = tools.reduce(
@@ -68,40 +70,59 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
     );
 
     // Sort categories alphabetically
-    const categories = (await getCategories(resolvedParams.locale)).filter(
+    const categories = (await getCategories(locale)).filter(
         (item) => item.slug.length > 0 && item.slug !== "all",
     );
 
     return (
-        <div className="bg-background">
-            <Container className="py-16">
-                {/* Header */}
-                <div className="mb-8">
-                    <h1 className="text-3xl font-bold text-foreground mb-4">
-                        {t("title")}
-                    </h1>
-                    <p className="text-muted-foreground">{t("subtitle")}</p>
-                </div>
+        <>
+            {/* JSON-LD structured data */}
+            <ToolCollectionJsonLd
+                url={url}
+                title={t("seoTitle")}
+                description={t("seoDescription")}
+                breadcrumbItems={[
+                    { name: config.siteName, item: config.baseUrl },
+                    { name: t("title"), item: url },
+                ]}
+                toolItems={tools.map((tool, index) => ({
+                    name: tool.name,
+                    url: getLocalizedUrl(locale, `/tools/${tool.slug}`),
+                    description: tool.description,
+                    position: index + 1,
+                }))}
+                inLanguage={locale}
+            />
+            <div className="bg-background">
+                <Container className="py-16">
+                    {/* Header */}
+                    <div className="mb-8">
+                        <h1 className="text-3xl font-bold text-foreground mb-4">
+                            {t("title")}
+                        </h1>
+                        <p className="text-muted-foreground">{t("subtitle")}</p>
+                    </div>
 
-                {/* Tools by Category */}
-                <div className="space-y-12">
-                    {categories.map((category) => (
-                        <div id={category.slug} key={category.slug}>
-                            <div className={"mb-6 flex gap-2 items-center"}>
-                                <DynamicIcon name={category.icon} />
-                                <h2 className="text-2xl font-bold text-foreground">
-                                    {category.name}
-                                </h2>
+                    {/* Tools by Category */}
+                    <div className="space-y-12">
+                        {categories.map((category) => (
+                            <div id={category.slug} key={category.slug}>
+                                <div className={"mb-6 flex gap-2 items-center"}>
+                                    <DynamicIcon name={category.icon} />
+                                    <h2 className="text-2xl font-bold text-foreground">
+                                        {category.name}
+                                    </h2>
+                                </div>
+
+                                <ToolGrid
+                                    tools={toolsByCategory[category.slug] || []}
+                                    showCategory={false}
+                                />
                             </div>
-
-                            <ToolGrid
-                                tools={toolsByCategory[category.slug] || []}
-                                showCategory={false}
-                            />
-                        </div>
-                    ))}
-                </div>
-            </Container>
-        </div>
+                        ))}
+                    </div>
+                </Container>
+            </div>
+        </>
     );
 }
