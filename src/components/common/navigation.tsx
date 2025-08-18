@@ -215,7 +215,7 @@ const renderMenuItem = (item: MenuItem) => {
         return (
             <HoverCard key={item.title} openDelay={100} closeDelay={100}>
                 <HoverCardTrigger asChild>
-                    <div className="relative z-20 px-4 py-2 text-sm font-medium cursor-pointer hover:bg-muted transition rounded-md">
+                    <div className="relative z-20 px-4 py-2 text-base font-medium cursor-pointer transition rounded-md hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50">
                         {item.title}
                     </div>
                 </HoverCardTrigger>
