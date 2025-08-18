@@ -690,5 +690,45 @@
         "answer": "Esta herramienta mejora la fiabilidad del servicio de varias maneras: (1) Planificación proactiva: visualiza cómo diferentes tasas de error afectan el cumplimiento del SLO; (2) Respuesta a incidentes: durante un incidente, estima cuánto tiempo puedes mantener tu SLO con la tasa de errores actual; (3) Priorización: usa el presupuesto restante para decidir entre nuevas funciones o mejoras de fiabilidad; (4) Refinamiento del SLO: experimenta con diferentes objetivos de SLO para equilibrar fiabilidad y velocidad de desarrollo; (5) Comunicación: comparte visualizaciones con los interesados para explicar los conceptos y compensaciones de fiabilidad de forma accesible."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "Visor/Limpiador EXIF – Ver y eliminar metadatos de imágenes",
+    "description": "Vea y elimine los metadatos EXIF de sus imágenes para proteger su privacidad. Procesamiento local sin subir a ningún servidor.",
+    "category": "Medios",
+    "keywords": [
+      "visor exif",
+      "limpiador exif",
+      "eliminar exif",
+      "metadatos de imagen",
+      "privacidad de fotos",
+      "borrar exif",
+      "visor de metadatos",
+      "eliminar datos gps",
+      "herramienta de privacidad de imagen",
+      "visor de datos exif"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué son los datos EXIF y por qué debo eliminarlos?",
+        "answer": "Los datos EXIF son metadatos incrustados en las imágenes que incluyen información sobre la cámara, configuración y a veces la ubicación. Estos datos pueden contener coordenadas GPS u otra información sensible. Eliminarlos protege su privacidad al compartir fotos en línea."
+      },
+      {
+        "question": "¿Son seguras mis imágenes al usar esta herramienta?",
+        "answer": "Sí. Las imágenes se procesan completamente en su navegador, sin cargarse a ningún servidor. Todo ocurre de forma local."
+      },
+      {
+        "question": "¿Qué tipo de metadatos se pueden ver y eliminar?",
+        "answer": "Ubicación GPS, marca y modelo de la cámara, fecha y hora, ajustes (apertura, velocidad, ISO), software de edición, información de copyright y más."
+      },
+      {
+        "question": "¿Qué formatos de imagen son compatibles?",
+        "answer": "JPEG/JPG, TIFF y algunos PNG. Los JPEG contienen con más frecuencia datos EXIF. WebP, GIF y la mayoría de los PNG casi no tienen EXIF."
+      },
+      {
+        "question": "¿Eliminar los datos EXIF afecta la calidad de la imagen?",
+        "answer": "No. Los EXIF están separados de los datos visuales. Eliminarlos no cambia la apariencia, solo reduce ligeramente el tamaño del archivo."
+      }
+    ]
   }
 ]

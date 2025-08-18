@@ -690,5 +690,45 @@
         "answer": "Cet outil aide à améliorer la fiabilité des services de plusieurs manières : (1) Planification proactive — visualiser l’impact des différents taux d’erreur sur le respect du SLO ; (2) Réponse aux incidents — estimer en temps réel combien de temps le SLO peut être maintenu malgré le taux d’erreur ; (3) Priorisation — décider si l’on doit privilégier de nouvelles fonctionnalités ou consolider la fiabilité selon le budget restant ; (4) Ajustement des SLO — tester plusieurs objectifs SLO pour équilibrer fiabilité et vitesse de développement ; (5) Communication — partager des visualisations avec les parties prenantes pour vulgariser les enjeux de fiabilité et les compromis."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "Visionneuse/Nettoyeur EXIF – Afficher et supprimer les métadonnées d’images",
+    "description": "Affichez et supprimez les métadonnées EXIF de vos images pour protéger votre vie privée. Traitement local sans envoi vers un serveur.",
+    "category": "Médias",
+    "keywords": [
+      "visionneuse exif",
+      "nettoyeur exif",
+      "supprimer exif",
+      "métadonnées image",
+      "confidentialité photo",
+      "effacer exif",
+      "lecteur métadonnées",
+      "supprimer gps",
+      "outil confidentialité image",
+      "lecteur exif"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce que les données EXIF et pourquoi les supprimer ?",
+        "answer": "Les données EXIF (Exchangeable Image File Format) sont des métadonnées intégrées dans les images, contenant des informations sur l’appareil photo, les réglages et parfois la localisation. Elles peuvent inclure des informations sensibles comme les coordonnées GPS. Les supprimer protège votre vie privée lors du partage de photos en ligne."
+      },
+      {
+        "question": "Mes images sont-elles sécurisées avec cet outil ?",
+        "answer": "Oui. Le traitement est effectué entièrement dans votre navigateur, sans envoi de données vers un serveur. Tout reste sur votre appareil."
+      },
+      {
+        "question": "Quels types de métadonnées peuvent être affichés et supprimés ?",
+        "answer": "Coordonnées GPS, marque et modèle de l’appareil, date et heure de la prise de vue, réglages (ouverture, vitesse, ISO), logiciels utilisés, informations de copyright et autres détails techniques."
+      },
+      {
+        "question": "Quels formats d’image sont pris en charge ?",
+        "answer": "JPEG/JPG, TIFF et certains fichiers PNG. Les JPEG sont ceux qui contiennent le plus fréquemment des données EXIF. WebP, GIF et la plupart des PNG n’en contiennent pas."
+      },
+      {
+        "question": "La suppression des données EXIF affecte-t-elle la qualité de l’image ?",
+        "answer": "Non. Les données EXIF sont séparées de l’image elle-même. Les supprimer ne modifie pas la qualité visuelle. Le fichier devient simplement plus léger."
+      }
+    ]
   }
 ]

@@ -685,5 +685,45 @@
         "answer": "Verktøyet hjelper med: (1) Proaktiv planlegging – se hvordan ulike feilrater påvirker SLO; (2) Hendelsesrespons – estimer hvor lenge du kan opprettholde nåværende feilrate; (3) Prioritering – avgjør om nye funksjoner eller forbedret stabilitet er viktigst; (4) Justering av SLO – eksperimenter med ulike mål; (5) Kommunikasjon – del visualiseringer med interessenter for å forklare beslutninger og risikoer."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "EXIF Viewer/Renser – Vis og fjern bilde-metadata",
+    "description": "Vis og fjern EXIF-metadata fra bildene dine for å beskytte personvernet ditt. Behandling skjer lokalt uten opplasting til server.",
+    "category": "Media",
+    "keywords": [
+      "exif viewer",
+      "exif renser",
+      "fjerne exif",
+      "bildemetadata",
+      "foto personvern",
+      "fjerne metadata",
+      "metadata viewer",
+      "fjerne gps-data",
+      "bilde personvern verktøy",
+      "exif data viewer"
+    ],
+    "faq": [
+      {
+        "question": "Hva er EXIF-data og hvorfor bør jeg fjerne dem?",
+        "answer": "EXIF-data er metadata i bildefiler med informasjon om kamera, innstillinger og ofte posisjon. Dette kan inkludere sensitive opplysninger som GPS-koordinater. Å fjerne dem beskytter personvernet når du deler bilder."
+      },
+      {
+        "question": "Er bildene mine trygge med dette verktøyet?",
+        "answer": "Ja. Bildene behandles kun i nettleseren din. Ingen data lastes opp til en server."
+      },
+      {
+        "question": "Hvilken type metadata kan vises og fjernes?",
+        "answer": "GPS-posisjon, kameramerke og modell, dato og tid, innstillinger (blender, lukker, ISO), programvare og copyright."
+      },
+      {
+        "question": "Hvilke bildeformater støttes?",
+        "answer": "JPEG/JPG, TIFF og noen PNG. JPEG inneholder vanligvis mest EXIF. WebP, GIF og de fleste PNG-filer inneholder lite eller ingen EXIF."
+      },
+      {
+        "question": "Påvirker fjerning av EXIF bildekvaliteten?",
+        "answer": "Nei. Bildekvaliteten forblir den samme, men filstørrelsen blir litt mindre."
+      }
+    ]
   }
 ]

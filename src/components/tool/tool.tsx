@@ -7,6 +7,7 @@ import URLEncoderDecoder from "./url-encoder-decoder";
 import Base64EncoderDecoder from "./base64-encoder-decoder";
 import ImageCompressor from "./image-compressor";
 import ImageConverter from "./image-converter";
+import ExifViewer from "./exif-viewer";
 import QRCodeGenerator from "./qrcode-generator";
 import CronExpressionGenerator from "./cron-expression-generator";
 import BMICalculator from "./bmi-calculator";
@@ -45,6 +46,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <ImageCompressor />;
         case "image-converter":
             return <ImageConverter />;
+        case "exif-viewer":
+            return <ExifViewer />;
         case "qrcode-generator":
             return <QRCodeGenerator />;
         case "cron-expression-generator":

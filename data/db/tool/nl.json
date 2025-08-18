@@ -686,5 +686,45 @@
         "answer": "Deze tool helpt bij het verbeteren van betrouwbaarheid door: (1) Proactieve planning – inzicht in hoe foutpercentages SLO-naleving beïnvloeden; (2) Incidentrespons – inschatten hoe lang je het huidige niveau kunt volhouden; (3) Prioritering – bepalen of je nieuwe functies of betrouwbaarheid verbetert; (4) SLO-afstemming – testen met verschillende SLO-doelen; (5) Communicatie – grafieken delen met stakeholders om betrouwbaarheid uit te leggen."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "EXIF Viewer/Cleaner – Bekijk en verwijder afbeeldingsmetadata",
+    "description": "Bekijk en verwijder EXIF-metadata uit uw afbeeldingen om uw privacy te beschermen. Alles wordt lokaal verwerkt zonder upload naar een server.",
+    "category": "Media",
+    "keywords": [
+      "exif viewer",
+      "exif cleaner",
+      "exif verwijderen",
+      "afbeelding metadata",
+      "foto privacy",
+      "exif strippen",
+      "metadata viewer",
+      "gps data verwijderen",
+      "privacy tool afbeelding",
+      "exif data viewer"
+    ],
+    "faq": [
+      {
+        "question": "Wat is EXIF-data en waarom zou ik het verwijderen?",
+        "answer": "EXIF-data zijn metadata in afbeeldingen die informatie bevatten over de camera, instellingen en soms locatie. Ze kunnen gevoelige gegevens zoals GPS-coördinaten bevatten. Door deze te verwijderen beschermt u uw privacy bij het delen van foto’s."
+      },
+      {
+        "question": "Zijn mijn afbeeldingen veilig met dit hulpmiddel?",
+        "answer": "Ja. Alles gebeurt lokaal in uw browser. Uw afbeeldingen worden niet naar servers verzonden."
+      },
+      {
+        "question": "Welke metadata kunnen worden bekeken en verwijderd?",
+        "answer": "GPS-coördinaten, cameramodel, datum en tijd, instellingen (diafragma, sluitertijd, ISO), software, copyrightinformatie enzovoort."
+      },
+      {
+        "question": "Welke afbeeldingsformaten worden ondersteund?",
+        "answer": "JPEG/JPG, TIFF en sommige PNG-bestanden. Vooral JPEG’s bevatten veel EXIF-data. WebP, GIF en de meeste PNG’s meestal niet."
+      },
+      {
+        "question": "Beïnvloedt het verwijderen van EXIF-data de beeldkwaliteit?",
+        "answer": "Nee. De beeldkwaliteit blijft gelijk, alleen de bestandsgrootte wordt iets kleiner."
+      }
+    ]
   }
 ]
