@@ -726,5 +726,45 @@
         "answer": "Ei. Kuvan laatu pysyy samana, vain metatiedot poistetaan ja tiedostokoko pienenee hieman."
       }
     ]
+  },
+  {
+    "slug": "csv-json-converter",
+    "name": "CSV-JSON Muunnin – Muunna CSV ja JSON formaatien välillä",
+    "description": "Muunna helposti dataa CSV:n ja JSON:n välillä. Tukee eri erotinmerkkejä. Täydellinen tietojenkäsittelyyn, API-integraatioihin ja taulukkolaskennan muunnoksiin.",
+    "category": "development",
+    "keywords": [
+      "csv json muunnin",
+      "json csv muunnin",
+      "csv muunnin",
+      "json muunnin",
+      "dataformaatti muunnin",
+      "csv jäsentäjä",
+      "json jäsentäjä",
+      "datan muunnos",
+      "taulukko jsoniin",
+      "api datamuunnin"
+    ],
+    "faq": [
+      {
+        "question": "Mikä ero on CSV:n ja JSON:n välillä?",
+        "answer": "CSV (Comma-Separated Values) on yksinkertainen taulukkomuoto, jossa jokainen rivi edustaa yhtä riviä ja arvot erotetaan pilkuilla tai muilla merkeillä. Hyvä taulukkolaskentadataan, mutta ei tue hierarkioita.<br/>JSON (JavaScript Object Notation) on jäsennelty formaatti, joka tukee sisäkkäisiä objekteja, taulukoita ja erilaisia tietotyyppejä. Joustavampi monimutkaisille tiedoille, mutta vähemmän luettava yksinkertaisissa tauluissa.<br/>CSV on tiiviimpi ja luettavampi yksinkertaiselle datalle, JSON sopii paremmin suhteille ja monimutkaisille rakenteille."
+      },
+      {
+        "question": "Miten muunnan CSV-tiedoston JSONiksi?",
+        "answer": "CSV → JSON:<br/>1) Liitä CSV-data syötekenttään.<br/>2) Valitse oikea erotin (pilkku tai välilyönti).<br/>3) Valitse 'CSV to JSON' välilehti.<br/>4) Muunnos tapahtuu automaattisesti ja tulos näkyy JSONina.<br/>5) Kopioi tai lataa JSON-tiedosto.<br/>CSV:n ensimmäinen rivi käytetään otsikoina ja muutetaan JSON-avaimiksi."
+      },
+      {
+        "question": "Miten muunnan JSONin CSV:ksi?",
+        "answer": "JSON → CSV:<br/>1) Liitä JSON-taulukko syötekenttään.<br/>2) Valitse 'JSON to CSV' välilehti.<br/>3) Valitse erotin (pilkku tai välilyönti).<br/>4) Muunnos tapahtuu automaattisesti ja tulos näkyy CSV:nä.<br/>5) Kopioi tai lataa CSV-tiedosto.<br/>Parhaiten toimii taulukoilla, joissa on johdonmukaisia objekteja. Sisäkkäiset objektit/taulukot litistetään tai muunnetaan merkkijonoiksi."
+      },
+      {
+        "question": "Mitä erottimia tuetaan?",
+        "answer": "Muunnin tukee kahta erotinta: pilkku (,) ja välilyönti ( ).<br/>Pilkku on standardi ja laajasti tuettu.<br/>Välilyönti on hyödyllinen joissakin kiinteän leveysdatan tiedostoissa, jotka on muunnettu välilyönnillä erotetuiksi arvoiksi."
+      },
+      {
+        "question": "Miten käsittelen suuria tietojoukkoja?",
+        "answer": "Suurten tietojoukkojen käsittely:<br/>1) Muunnos tapahtuu selaimessa paikallisesti ja riippuu laitteestasi.<br/>2) Yli 10 Mt tiedostot kannattaa jakaa pienempiin osiin.<br/>3) Käytä latauspainiketta kopioinnin sijasta.<br/>4) Sulje muut välilehdet/sovellukset vapauttaaksesi muistia.<br/>5) Erittäin suurille aineistoille käytä komentorivityökaluja kuten jq tai csvkit."
+      }
+    ]
   }
 ]

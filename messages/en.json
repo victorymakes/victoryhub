@@ -701,5 +701,25 @@
       "notAnImage": "The file is not an image. Please select an image file.",
       "canvasContextFailed": "Failed to get canvas context. Your browser may not support this feature."
     }
+  },
+  "CsvJsonConverter": {
+    "csvToJson": "CSV to JSON",
+    "jsonToCsv": "JSON to CSV",
+    "input": "Input",
+    "output": "Output",
+    "enterCsv": "Enter CSV data...",
+    "enterJson": "Enter JSON data...",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "download": "Download",
+    "outputPlaceholder": "Output will appear here...",
+    "errors": {
+      "invalidCsv": "Invalid CSV format. Please check your input and try again.",
+      "invalidJson": "Invalid JSON format. Please check your input and try again."
+    },
+    "warnings": {
+      "largeOutput": "Large output. Consider downloading the file for better handling."
+    }
   }
 }

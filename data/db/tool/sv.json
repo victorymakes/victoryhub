@@ -725,5 +725,45 @@
         "answer": "Nej. Bildens kvalitet påverkas inte. Endast metadata tas bort, vilket gör filen lite mindre."
       }
     ]
+  },
+  {
+    "slug": "csv-json-converter",
+    "name": "CSV-JSON Konverterare – Konvertera mellan CSV och JSON format",
+    "description": "Konvertera enkelt data mellan CSV och JSON med stöd för olika avgränsare. Perfekt för databehandling, API-integration och kalkylbladsomvandlingar.",
+    "category": "development",
+    "keywords": [
+      "csv till json",
+      "json till csv",
+      "csv konverterare",
+      "json konverterare",
+      "dataformat konverterare",
+      "csv parser",
+      "json parser",
+      "datatransformation",
+      "kalkylblad till json",
+      "api data konverterare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är skillnaden mellan CSV och JSON?",
+        "answer": "CSV (Comma-Separated Values) är ett enkelt tabellformat där varje rad representerar en rad, och värden skiljs med kommatecken eller andra avgränsare. Bra för kalkylbladsdata men saknar hierarki.<br/>JSON (JavaScript Object Notation) är ett strukturerat format som stöder nästlade objekt, arrayer och olika datatyper. Mer flexibelt för komplex data men mindre läsbart för enkla tabeller.<br/>CSV är mer kompakt och lättläst för enkel data, medan JSON är bättre för relationer och komplexa strukturer."
+      },
+      {
+        "question": "Hur konverterar jag en CSV-fil till JSON?",
+        "answer": "CSV → JSON:<br/>1) Klistra in dina CSV-data i inmatningsfältet.<br/>2) Välj rätt avgränsare (komma eller mellanslag).<br/>3) Välj fliken 'CSV to JSON'.<br/>4) Konverteringen sker automatiskt och visas som JSON.<br/>5) Kopiera eller ladda ner JSON-filen.<br/>Den första raden i CSV används som rubriker och blir JSON-nycklar."
+      },
+      {
+        "question": "Hur konverterar jag JSON till CSV?",
+        "answer": "JSON → CSV:<br/>1) Klistra in JSON-arrayen i inmatningsfältet.<br/>2) Välj fliken 'JSON to CSV'.<br/>3) Välj avgränsare (komma eller mellanslag).<br/>4) Konverteringen sker automatiskt och visas som CSV.<br/>5) Kopiera eller ladda ner CSV-filen.<br/>Fungerar bäst med arrayer av objekt med konsekventa egenskaper. Nästlade objekt/arrayer plattas ut eller konverteras till strängar."
+      },
+      {
+        "question": "Vilka avgränsare stöds?",
+        "answer": "Konverteraren stöder två avgränsare: komma (,) och mellanslag ( ).<br/>Komma är standard och allmänt stödd.<br/>Mellanslag är användbart för vissa fasta breddfiler som konverterats till mellanslagsseparerade värden."
+      },
+      {
+        "question": "Hur hanterar jag stora dataset?",
+        "answer": "För stora dataset:<br/>1) Konverteringen sker lokalt i webbläsaren, beror på din enhet.<br/>2) Dela upp filer större än 10 MB i mindre delar.<br/>3) Använd nedladdningsknappen i stället för att kopiera.<br/>4) Stäng andra flikar/program för att frigöra minne.<br/>5) För mycket stora dataset, använd kommandoradsverktyg som jq eller csvkit."
+      }
+    ]
   }
 ]
