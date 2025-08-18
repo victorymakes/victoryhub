@@ -695,7 +695,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Cleaner – Bildmetadaten anzeigen und entfernen",
     "description": "Zeigen Sie EXIF-Metadaten Ihrer Bilder an und entfernen Sie diese, um Ihre Privatsphäre zu schützen. Die Verarbeitung erfolgt lokal ohne Hochladen auf einen Server.",
-    "category": "Medien",
+    "category": "media",
     "keywords": [
       "exif viewer",
       "exif cleaner",
@@ -768,6 +768,46 @@
       {
         "question": "Wie gehe ich mit großen Datensätzen um?",
         "answer": "Umgang mit großen Datenmengen:<br/>1) Die Konvertierung erfolgt lokal im Browser, abhängig von Ihrer Geräteleistung.<br/>2) Bei Dateien über 10 MB: Teilen Sie die Daten in kleinere Abschnitte.<br/>3) Nutzen Sie die Download-Funktion statt Copy-Paste.<br/>4) Schließen Sie andere Tabs oder Programme, um Speicher freizugeben.<br/>5) Für sehr große Datensätze: jq oder csvkit nutzen, die für große Daten optimiert sind."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 Bildkonverter – Konvertieren zwischen Bildern und Base64",
+    "description": "Bilder in Base64-Zeichenketten umwandeln oder Base64 zurück in Bilder dekodieren. Ideal zum Einbetten von Bildern in CSS, HTML und JSON oder für die Arbeit mit Data-URIs.",
+    "category": "development",
+    "keywords": [
+      "base64 bildkonverter",
+      "bild zu base64",
+      "base64 zu bild",
+      "bild in base64 umwandeln",
+      "data URI generator",
+      "base64 bild dekodierer",
+      "base64 bild kodierer",
+      "bild in CSS einbetten",
+      "bild data URI",
+      "inline bildkonverter"
+    ],
+    "faq": [
+      {
+        "question": "Was ist ein Base64-Bild und warum sollte ich es verwenden?",
+        "answer": "Ein Base64-Bild ist eine Bilddatei, die in eine Base64-codierte Zeichenkette umgewandelt wurde. Dadurch kann das Bild als Text direkt in HTML, CSS oder JSON eingebettet werden, ohne eine separate Bilddatei. Häufige Anwendungsfälle:<li>Kleine Bilder direkt in HTML/CSS einbetten, um HTTP-Anfragen zu reduzieren</li><li>Bilder in JSON-API-Antworten einfügen</li><li>Bilder in SVG-Dateien einbetten</li><li>Data-URIs für Webanwendungen erstellen</li><li>Bilder in Datenbanken speichern, die keine Binärdaten unterstützen</li>Obwohl Base64-Dateien etwa 33 % größer sind, überwiegen die Vorteile bei kleinen Bildern oft."
+      },
+      {
+        "question": "Wie verwende ich Base64-Bilder in HTML, CSS und JavaScript?",
+        "answer": "Base64-Bilder können in verschiedenen Webtechnologien verwendet werden:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Das Format lautet immer <code>data:[MIME-Typ];base64,[kodierte Daten]</code>. Für kleine Bilder verbessert es die Ladezeit, für große Bilder sind klassische Dateiverweise effizienter."
+      },
+      {
+        "question": "Welche Vor- und Nachteile haben Base64-Bilder?",
+        "answer": "Vorteile:<li>Weniger HTTP-Anfragen (schnellere Ladezeiten)</li><li>Weniger Dateien, einfachere Bereitstellung</li><li>Bilder können in JSON/Textformaten eingebettet werden</li><li>Keine CORS-Probleme (Bilder inline)</li><li>Cache-Vorteile bei Code-Updates</li><br/>Nachteile:<li>Dateigröße steigt um ca. 33 %</li><li>Bilder werden nicht separat vom Browser zwischengespeichert</li><li>HTML/CSS-Dateien werden größer</li><li>Wartung/Update von eingebetteten Bildern schwieriger</li><li>Bei großen Bildern Performance-Probleme</li><br/>Base64 ist am besten für kleine Icons und UI-Elemente geeignet, große Bilder sollten klassisch eingebunden werden."
+      },
+      {
+        "question": "Welche Bildformate können in Base64 umgewandelt werden?",
+        "answer": "Grundsätzlich jedes Bildformat. Für Webanwendungen am gebräuchlichsten:<li>PNG (ideal für Logos/Grafiken mit Transparenz)</li><li>JPEG (für Fotos und komplexe Bilder)</li><li>SVG (skalierbare Vektorgrafiken)</li><li>GIF (einfache Animationen)</li><li>WebP (moderne Komprimierung)</li><li>ICO (Favicons)</li>Beim Umwandeln muss der richtige MIME-Typ in der Data-URI angegeben werden (z. B. <code>data:image/png;base64,</code>). Das Tool erkennt ihn automatisch."
+      },
+      {
+        "question": "Gibt es eine Größenbeschränkung für Base64-Bilder?",
+        "answer": "Technisch nein, praktisch ja:<li>Dateigröße steigt um ca. 33 %</li><li>Lange Strings können Browser verlangsamen</li><li>Einige Browser haben Längenbeschränkungen für CSS-Data-URIs</li><li>Große Bilder blähen HTML/CSS auf, verlangsamen Ladezeit</li><br/>Empfohlen: Base64 nur für kleine Bilder (<10KB) wie Icons oder UI-Elemente. Für größere Bilder sind klassische Dateien per HTTP/HTTPS besser geeignet."
       }
     ]
   }

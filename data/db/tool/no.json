@@ -690,7 +690,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Renser – Vis og fjern bilde-metadata",
     "description": "Vis og fjern EXIF-metadata fra bildene dine for å beskytte personvernet ditt. Behandling skjer lokalt uten opplasting til server.",
-    "category": "Media",
+    "category": "media",
     "keywords": [
       "exif viewer",
       "exif renser",
@@ -763,6 +763,46 @@
       {
         "question": "Hvordan håndterer jeg store datasett?",
         "answer": "For store datasett:<br/>1) Konverteringen skjer lokalt i nettleseren, avhenger av enheten din.<br/>2) Del filer over 10 MB i mindre biter.<br/>3) Bruk nedlastingsknappen i stedet for å kopiere.<br/>4) Lukk andre faner eller programmer for å frigjøre minne.<br/>5) For svært store datasett, bruk kommandolinjeverktøy som jq eller csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 Bildekonverter – Konverter mellom bilder og Base64",
+    "description": "Konverter bilder til Base64-strenger eller dekod Base64 tilbake til bilder. Perfekt for å bygge inn bilder i CSS, HTML og JSON, eller jobbe med data-URIer.",
+    "category": "development",
+    "keywords": [
+      "base64 bildekonverter",
+      "bilde til base64",
+      "base64 til bilde",
+      "konverter bilde til base64",
+      "data URI generator",
+      "base64 bilde dekoder",
+      "base64 bilde koder",
+      "bygg inn bilde i CSS",
+      "bilde data URI",
+      "inline bildekonverter"
+    ],
+    "faq": [
+      {
+        "question": "Hva er et Base64-bilde og hvorfor bruke det?",
+        "answer": "Et Base64-bilde er en bildefil som er konvertert til en Base64-kodet streng. Dette gjør at bildet kan representeres som tekst og bygges inn direkte i HTML, CSS eller JSON uten en egen fil. Vanlige bruksområder:<li>bygge inn små bilder i HTML/CSS for færre HTTP-forespørsler</li><li>inkludere bilder i JSON API-responser</li><li>bygge inn bilder i SVG-filer</li><li>lage data-URIer for webapper</li><li>lagre bilder i databaser uten binærstøtte</li>Selv om Base64 øker størrelsen med ~33 %, oppveier fordelene for små bilder ofte ulempene."
+      },
+      {
+        "question": "Hvordan bruke Base64-bilder i HTML, CSS og JavaScript?",
+        "answer": "Bruksområder:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Format: <code>data:[MIME type];base64,[data]</code>. Godt for små bilder, men for store bilder er tradisjonelle filer bedre."
+      },
+      {
+        "question": "Hva er fordeler og ulemper med Base64-bilder?",
+        "answer": "Fordeler:<li>færre HTTP-forespørsler</li><li>færre filer, enklere deploy</li><li>kan bygges inn i JSON</li><li>ingen CORS-problemer</li><li>cache følger kodeendringer</li><br/>Ulemper:<li>større fil (~33 %)</li><li>ingen separat caching i nettleser</li><li>større HTML/CSS-filer</li><li>vanskeligere å oppdatere</li><li>ytelsesproblemer for store bilder</li><br/>Best for små ikoner og UI-elementer, ikke store bilder."
+      },
+      {
+        "question": "Hvilke bildeformater kan konverteres til Base64?",
+        "answer": "Alle, men mest brukt på web:<li>PNG (logoer, gjennomsiktighet)</li><li>JPEG (bilder/foto)</li><li>SVG (vektorgrafikk)</li><li>GIF (enkle animasjoner)</li><li>WebP (moderne komprimering)</li><li>ICO (favicon)</li>Korrekt MIME-type må settes (f.eks. <code>data:image/png;base64,</code>). Verktøyet finner dette automatisk."
+      },
+      {
+        "question": "Finnes det en størrelsesgrense for Base64-bilder?",
+        "answer": "Teknisk nei, men praktisk ja:<li>~33 % større filer</li><li>lange strenger kan gi treghet</li><li>begrensninger i CSS data-URI-lengde i noen nettlesere</li><li>større HTML/CSS gir tregere lasting</li><br/>Anbefalt: kun små bilder (&lt;10KB). Store bilder bør serveres via HTTP/HTTPS."
       }
     ]
   }

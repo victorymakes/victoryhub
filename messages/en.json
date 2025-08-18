@@ -721,5 +721,29 @@
     "warnings": {
       "largeOutput": "Large output. Consider downloading the file for better handling."
     }
+  },
+  "Base64ImageConverter": {
+    "base64ToImage": "Base64 to Image",
+    "imageToBase64": "Image to Base64",
+    "base64Input": "Base64 Input",
+    "base64Output": "Base64 Output",
+    "imagePreview": "Image Preview",
+    "selectImage": "Select Image",
+    "enterBase64": "Enter Base64 string...",
+    "convert": "Convert",
+    "download": "Download",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "dragAndDrop": "Drag and drop your image here",
+    "supportedFormats": "Supports JPG, PNG, GIF, WebP, and SVG",
+    "browseFiles": "Browse Files",
+    "errors": {
+      "invalidBase64Image": "Invalid Base64 image data. Please check your input.",
+      "conversionFailed": "Conversion failed. Please try again.",
+      "notAnImage": "The selected file is not an image.",
+      "fileTooLarge": "File is too large. Maximum size is 5MB.",
+      "readingFileFailed": "Failed to read the file. Please try again."
+    }
   }
 }

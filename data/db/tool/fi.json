@@ -691,7 +691,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Katselu/Siivous – Näytä ja poista kuvan metadata",
     "description": "Näytä ja poista EXIF-metadataa kuvista suojataksesi yksityisyyttäsi. Kaikki käsittely tapahtuu paikallisesti ilman palvelinlähetystä.",
-    "category": "Media",
+    "category": "media",
     "keywords": [
       "exif katselu",
       "exif siivous",
@@ -764,6 +764,46 @@
       {
         "question": "Miten käsittelen suuria tietojoukkoja?",
         "answer": "Suurten tietojoukkojen käsittely:<br/>1) Muunnos tapahtuu selaimessa paikallisesti ja riippuu laitteestasi.<br/>2) Yli 10 Mt tiedostot kannattaa jakaa pienempiin osiin.<br/>3) Käytä latauspainiketta kopioinnin sijasta.<br/>4) Sulje muut välilehdet/sovellukset vapauttaaksesi muistia.<br/>5) Erittäin suurille aineistoille käytä komentorivityökaluja kuten jq tai csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64-kuvamuunnin – Muunna kuvien ja Base64:n välillä",
+    "description": "Muunna kuvat Base64-merkkijonoiksi tai pura Base64 takaisin kuviksi. Täydellinen kuvien upottamiseen CSS:ään, HTML:ään ja JSON:iin tai data-URI:en käsittelyyn.",
+    "category": "development",
+    "keywords": [
+      "base64 kuvan muunnin",
+      "kuva base64:ksi",
+      "base64 kuvaksi",
+      "muunna kuva base64:ksi",
+      "data URI generaattori",
+      "base64 kuvan purkaja",
+      "base64 kuvan kooderi",
+      "upota kuva CSS:ään",
+      "kuvan data URI",
+      "inline kuvan muunnin"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on Base64-kuva ja miksi sitä käytetään?",
+        "answer": "Base64-kuva on kuvatiedosto, joka on muunnettu Base64-koodatuksi merkkijonoksi. Näin kuva voidaan esittää tekstinä ja upottaa suoraan HTML:ään, CSS:ään tai JSON:iin ilman erillistä tiedostoa. Yleisiä käyttötapoja:<li>pienten kuvien upottaminen HTML/CSS:ään HTTP-pyyntöjen vähentämiseksi</li><li>kuvien sisällyttäminen JSON API -vastauksiin</li><li>kuvien upottaminen SVG-tiedostoihin</li><li>data-URI:en luominen web-sovelluksille</li><li>kuvien tallentaminen tietokantoihin ilman binääritukea</li>Tiedostokoko kasvaa noin 33 %, mutta pienille kuville hyödyt usein ylittävät haitat."
+      },
+      {
+        "question": "Miten käytän Base64-kuvia HTML:ssä, CSS:ssä ja JavaScriptissä?",
+        "answer": "Esimerkkejä:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Muoto on aina <code>data:[MIME-tyyppi];base64,[data]</code>. Hyödyllinen pienille kuville, mutta suurille kuville tavalliset tiedostot ovat parempia."
+      },
+      {
+        "question": "Mitkä ovat Base64-kuvien edut ja haitat?",
+        "answer": "Edut:<li>vähemmän HTTP-pyyntöjä</li><li>vähemmän tiedostoja, helpompi käyttöönotto</li><li>kuvat voidaan upottaa JSON:iin</li><li>ei CORS-ongelmia</li><li>välimuisti päivittyy koodin mukana</li><br/>Haitat:<li>koko kasvaa ~33 %</li><li>ei erillistä välimuistia selaimessa</li><li>HTML/CSS-tiedostot kasvavat</li><li>sisäisten kuvien ylläpito hankalaa</li><li>suorituskyky heikkenee isoilla kuvilla</li><br/>Sopii parhaiten pienille ikoneille ja käyttöliittymäelementeille, ei suurille valokuville."
+      },
+      {
+        "question": "Mitä kuvaformaatteja voidaan muuntaa Base64:ksi?",
+        "answer": "Kaikki kuvaformaatit voidaan muuntaa. Yleisimmät webissä:<li>PNG (logot, läpinäkyvyys)</li><li>JPEG (valokuvat)</li><li>SVG (vektorigrafiikka)</li><li>GIF (yksinkertaiset animaatiot)</li><li>WebP (nykyaikainen pakkaus)</li><li>ICO (faviconit)</li>Oikea MIME-tyyppi täytyy määrittää (esim. <code>data:image/png;base64,</code>). Työkalu tunnistaa sen automaattisesti."
+      },
+      {
+        "question": "Onko Base64-kuvilla kokorajoitusta?",
+        "answer": "Teknisesti ei, mutta käytännössä kyllä:<li>koko kasvaa ~33 %</li><li>pitkät merkkijonot hidastavat selainta</li><li>CSS data-URI:lla on pituusrajoituksia joissain selaimissa</li><li>HTML/CSS kasvaa ja hidastaa latausta</li><br/>Suositus: käytä Base64 vain pienille kuville (&lt;10KB). Suuremmat kuvat kannattaa palvella HTTP/HTTPS:n kautta."
       }
     ]
   }

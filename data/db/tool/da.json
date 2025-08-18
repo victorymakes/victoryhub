@@ -690,7 +690,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Renser – Vis og fjern billedmetadata",
     "description": "Vis og fjern EXIF-metadata fra dine billeder for at beskytte dit privatliv. Behandlingen sker lokalt uden upload til server.",
-    "category": "Medier",
+    "category": "media",
     "keywords": [
       "exif viewer",
       "exif renser",
@@ -763,6 +763,46 @@
       {
         "question": "Hvordan håndterer jeg store datasæt?",
         "answer": "For store datasæt:<br/>1) Konverteringen sker lokalt i browseren, afhængigt af din enhed.<br/>2) Del filer over 10 MB i mindre dele.<br/>3) Brug downloadknappen i stedet for at kopiere.<br/>4) Luk andre faner/programmer for at frigøre hukommelse.<br/>5) For meget store datasæt, brug kommandolinjeværktøjer som jq eller csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 Billedekonverter – Konverter mellem billeder og Base64",
+    "description": "Konverter billeder til Base64-strenge eller dekod Base64 tilbage til billeder. Perfekt til indlejring af billeder i CSS, HTML og JSON eller arbejde med data-URI’er.",
+    "category": "development",
+    "keywords": [
+      "base64 billede konverter",
+      "billede til base64",
+      "base64 til billede",
+      "konverter billede til base64",
+      "data URI generator",
+      "base64 billede dekoder",
+      "base64 billede koder",
+      "indlejr billede i CSS",
+      "billede data URI",
+      "inline billede konverter"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er et Base64-billede, og hvorfor bruge det?",
+        "answer": "Et Base64-billede er en bildefil, der er konverteret til en Base64-kodet streng. Det gør det muligt at repræsentere billedet som tekst og indlejre det direkte i HTML, CSS eller JSON uden en separat fil. Typiske anvendelser:<li>indlejring af små billeder i HTML/CSS for færre HTTP-forespørgsler</li><li>inkludering af billeder i JSON API-svar</li><li>indlejring af billeder i SVG-filer</li><li>oprettelse af data-URI’er til webapps</li><li>lagring af billeder i databaser uden binær support</li>Selvom filstørrelsen øges med ~33 %, opvejer fordelene ofte for små billeder."
+      },
+      {
+        "question": "Hvordan bruger jeg Base64-billeder i HTML, CSS og JavaScript?",
+        "answer": "Eksempler:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Formatet er altid <code>data:[MIME type];base64,[data]</code>. Godt til små billeder, men større billeder bør hentes som filer."
+      },
+      {
+        "question": "Hvad er fordele og ulemper ved Base64-billeder?",
+        "answer": "Fordele:<li>færre HTTP-forespørgsler</li><li>færre filer, nemmere deployment</li><li>kan indlejres i JSON</li><li>ingen CORS-problemer</li><li>cache opdateres med kode</li><br/>Ulemper:<li>~33 % større filer</li><li>ingen separat cache i browser</li><li>større HTML/CSS filer</li><li>sværere at vedligeholde indlejrede billeder</li><li>performance-problemer for store billeder</li><br/>Bedst til små ikoner og UI-elementer, ikke store fotos."
+      },
+      {
+        "question": "Hvilke billedformater kan konverteres til Base64?",
+        "answer": "Alle formater kan konverteres. Mest brugt på nettet:<li>PNG (logoer, gennemsigtighed)</li><li>JPEG (fotos)</li><li>SVG (vektorgrafik)</li><li>GIF (simple animationer)</li><li>WebP (moderne komprimering)</li><li>ICO (favicons)</li>Korrekt MIME-type skal bruges (fx <code>data:image/png;base64,</code>). Værktøjet registrerer det automatisk."
+      },
+      {
+        "question": "Er der en størrelsesgrænse for Base64-billeder?",
+        "answer": "Teknisk nej, men praktisk ja:<li>~33 % større filer</li><li>lange strenge kan gøre browseren langsom</li><li>CSS data-URI har længdebegrænsninger i visse browsere</li><li>større HTML/CSS gør sider langsommere</li><br/>Anbefaling: Brug Base64 kun til små billeder (&lt;10KB). Større billeder bør serveres via HTTP/HTTPS."
       }
     ]
   }

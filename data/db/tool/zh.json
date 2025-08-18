@@ -737,7 +737,7 @@
     "slug": "exif-viewer",
     "name": "EXIF 查看/清理器 – 查看与移除图片元数据",
     "description": "查看并移除图片中的 EXIF 元数据，保护您的隐私。所有处理均在本地完成，不会上传到任何服务器。",
-    "category": "媒体",
+    "category": "media",
     "keywords": [
       "exif 查看器",
       "exif 清理器",
@@ -810,6 +810,46 @@
       {
         "question": "如何处理大规模数据？",
         "answer": "大规模数据处理方法:<br/>1) 转换在浏览器本地执行，性能取决于设备。<br/>2) 对于超过 10MB 的文件，建议分割后再转换。<br/>3) 使用下载按钮保存文件更高效。<br/>4) 如果速度慢，可关闭其他标签页或应用释放内存。<br/>5) 极大数据建议使用 jq 或 csvkit 等命令行工具。"
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 图片转换器 – 图片与 Base64 互转",
+    "description": "将图片转换为 Base64 字符串，或将 Base64 解码为图片。适合在 CSS、HTML、JSON 中嵌入图片，或处理数据 URI。",
+    "category": "development",
+    "keywords": [
+      "base64 图片转换器",
+      "图片转 base64",
+      "base64 转图片",
+      "图片转为 base64",
+      "数据 URI 生成器",
+      "base64 图片解码",
+      "base64 图片编码",
+      "在 CSS 中嵌入图片",
+      "图片数据 URI",
+      "内联图片转换器"
+    ],
+    "faq": [
+      {
+        "question": "什么是 Base64 图片？为什么要使用它？",
+        "answer": "Base64 图片是将图片文件转为 Base64 编码字符串。这样可以将图片作为文本嵌入到 HTML、CSS、JSON 中，而无需单独的图片文件。常见用途包括:<li>在 HTML/CSS 中嵌入小图以减少 HTTP 请求</li><li>在 JSON API 响应中包含图片</li><li>在 SVG 文件中嵌入图片</li><li>为 Web 应用生成数据 URI</li><li>在不支持二进制的数据库中存储图片</li>虽然 Base64 编码会使文件体积增加约 33%，但对小图标来说，减少请求和简化部署的好处往往更大。"
+      },
+      {
+        "question": "如何在 HTML、CSS 和 JavaScript 中使用 Base64 图片？",
+        "answer": "Base64 图片可在多种 Web 技术中使用:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>格式始终为 <code>data:[MIME type];base64,[编码数据]</code>。对小图片能提高加载性能，但大图片更适合传统文件引用。"
+      },
+      {
+        "question": "使用 Base64 图片的优缺点是什么？",
+        "answer": "优点:<li>减少 HTTP 请求，加快加载</li><li>文件更少，部署更简单</li><li>可嵌入 JSON 等文本格式</li><li>内联图像，无跨域问题</li><li>更新代码时缓存同步</li><br/>缺点:<li>文件体积增大约 33%</li><li>浏览器无法单独缓存图片</li><li>HTML/CSS 文件体积变大</li><li>内嵌图片更新不便</li><li>大图片可能造成性能问题</li><br/>适合小图标和 UI 元素，大图片推荐使用传统方式。"
+      },
+      {
+        "question": "哪些图片格式可以转换为 Base64？",
+        "answer": "任何图片都能转换为 Base64，常用格式包括:<li>PNG（透明图/标志最佳）</li><li>JPEG（适合照片）</li><li>SVG（矢量图，缩放无损）</li><li>GIF（简单动画）</li><li>WebP（现代高压缩格式）</li><li>ICO（网站图标）</li>转换时需在 data URI 中指定正确 MIME 类型（如 <code>data:image/png;base64,</code>）。工具会自动识别。"
+      },
+      {
+        "question": "Base64 图片有大小限制吗？",
+        "answer": "无硬性技术限制，但存在实际问题:<li>文件体积增加约 33%</li><li>字符串过长会导致浏览器性能下降</li><li>部分浏览器限制 CSS data URI 长度</li><li>大图嵌入会增加 HTML/CSS 体积，影响加载速度</li><br/>建议仅用于 10KB 以下的小图标/简单图形。大图片推荐通过 HTTP/HTTPS 方式加载，并利用缓存。"
       }
     ]
   }

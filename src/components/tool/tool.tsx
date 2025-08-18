@@ -18,6 +18,7 @@ import TextFaviconGenerator from "./text-favicon-generator";
 import { ColorModelConverter } from "./color-model-converter";
 import SLOBurnSimulator from "./slo-burn-simulator";
 import CsvJsonConverter from "./csv-json-converter";
+import Base64ImageConverter from "./base64-image-converter";
 
 interface ToolComponentProps {
     id: string;
@@ -67,6 +68,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <SLOBurnSimulator />;
         case "csv-json-converter":
             return <CsvJsonConverter />;
+        case "base64-image-converter":
+            return <Base64ImageConverter />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">
