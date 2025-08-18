@@ -17,6 +17,7 @@ import RandomPicker from "./random-picker";
 import TextFaviconGenerator from "./text-favicon-generator";
 import { ColorModelConverter } from "./color-model-converter";
 import SLOBurnSimulator from "./slo-burn-simulator";
+import CsvJsonConverter from "./csv-json-converter";
 
 interface ToolComponentProps {
     id: string;
@@ -64,6 +65,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <ColorModelConverter />;
         case "slo-burn-simulator":
             return <SLOBurnSimulator />;
+        case "csv-json-converter":
+            return <CsvJsonConverter />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

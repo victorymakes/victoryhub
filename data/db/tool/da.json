@@ -725,5 +725,45 @@
         "answer": "Nej. Billedkvaliteten ændres ikke, kun filstørrelsen bliver lidt mindre."
       }
     ]
+  },
+  {
+    "slug": "csv-json-converter",
+    "name": "CSV-JSON Konverter – Konverter mellem CSV og JSON formater",
+    "description": "Konverter nemt data mellem CSV og JSON med understøttelse af forskellige skilletegn. Perfekt til databehandling, API-integration og regnearkskonvertering.",
+    "category": "development",
+    "keywords": [
+      "csv til json",
+      "json til csv",
+      "csv konverter",
+      "json konverter",
+      "dataformat konverter",
+      "csv parser",
+      "json parser",
+      "datatransformation",
+      "regneark til json",
+      "api data konverter"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er forskellen på CSV og JSON?",
+        "answer": "CSV (Comma-Separated Values) er et simpelt tabeldataformat, hvor hver linje repræsenterer en række, og værdier adskilles med komma eller andre skilletegn. Godt til regnearksdata, men uden hierarki.<br/>JSON (JavaScript Object Notation) er et struktureret format, der understøtter indlejrede objekter, arrays og forskellige datatyper. Mere fleksibelt til komplekse data, men mindre læsbart for enkle tabeller.<br/>CSV er mere kompakt og læsbart for simpelt data, mens JSON er bedre til relationer og komplekse strukturer."
+      },
+      {
+        "question": "Hvordan konverterer jeg en CSV-fil til JSON?",
+        "answer": "CSV → JSON:<br/>1) Indsæt dine CSV-data i inputfeltet.<br/>2) Vælg det rigtige skilletegn (komma eller mellemrum).<br/>3) Vælg fanen 'CSV to JSON'.<br/>4) Konverteringen sker automatisk, og resultatet vises som JSON.<br/>5) Kopiér eller download JSON-filen.<br/>Den første række i CSV bruges som header og omdannes til JSON-nøgler."
+      },
+      {
+        "question": "Hvordan konverterer jeg JSON til CSV?",
+        "answer": "JSON → CSV:<br/>1) Indsæt din JSON-array i inputfeltet.<br/>2) Vælg fanen 'JSON to CSV'.<br/>3) Vælg skilletegn (komma eller mellemrum).<br/>4) Konverteringen sker automatisk, og resultatet vises som CSV.<br/>5) Kopiér eller download CSV-filen.<br/>Bedst egnet til arrays med konsistente objekter. Indlejrede objekter/arrays flades ud eller konverteres til strenge."
+      },
+      {
+        "question": "Hvilke skilletegn understøttes?",
+        "answer": "Konverteren understøtter to skilletegn: komma (,) og mellemrum ( ).<br/>Komma er standard og bredt understøttet.<br/>Mellemrum er nyttigt til visse data fra fast-bredde filer, der er konverteret til mellemrum-separerede værdier."
+      },
+      {
+        "question": "Hvordan håndterer jeg store datasæt?",
+        "answer": "For store datasæt:<br/>1) Konverteringen sker lokalt i browseren, afhængigt af din enhed.<br/>2) Del filer over 10 MB i mindre dele.<br/>3) Brug downloadknappen i stedet for at kopiere.<br/>4) Luk andre faner/programmer for at frigøre hukommelse.<br/>5) For meget store datasæt, brug kommandolinjeværktøjer som jq eller csvkit."
+      }
+    ]
   }
 ]

@@ -730,5 +730,45 @@
         "answer": "No. La qualità rimane invariata, solo i metadati vengono rimossi e la dimensione del file si riduce leggermente."
       }
     ]
+  },
+  {
+    "slug": "csv-json-converter",
+    "name": "Convertitore CSV-JSON – Conversione tra formati CSV e JSON",
+    "description": "Converti facilmente i dati tra CSV e JSON con supporto per diversi delimitatori. Perfetto per l’elaborazione dati, l’integrazione API e la conversione di fogli di calcolo.",
+    "category": "development",
+    "keywords": [
+      "csv in json",
+      "json in csv",
+      "convertitore csv",
+      "convertitore json",
+      "convertitore formato dati",
+      "parser csv",
+      "parser json",
+      "trasformazione dati",
+      "foglio di calcolo in json",
+      "convertitore dati api"
+    ],
+    "faq": [
+      {
+        "question": "Qual è la differenza tra CSV e JSON?",
+        "answer": "CSV (Comma-Separated Values) è un formato tabellare semplice in cui ogni riga rappresenta un record e i valori sono separati da virgole o altri delimitatori. È adatto ai dati dei fogli di calcolo, ma non supporta gerarchie.<br/>JSON (JavaScript Object Notation) è un formato strutturato che supporta oggetti annidati, array e diversi tipi di dati. Più flessibile per dati complessi, ma meno leggibile per tabelle semplici.<br/>CSV è più compatto e leggibile per dati semplici, mentre JSON è migliore per rappresentare relazioni e strutture complesse."
+      },
+      {
+        "question": "Come posso convertire un file CSV in JSON?",
+        "answer": "CSV → JSON:<br/>1) Incolla i dati CSV nel campo di input.<br/>2) Seleziona il delimitatore corretto (virgola o spazio).<br/>3) Seleziona la scheda 'CSV to JSON'.<br/>4) La conversione avviene automaticamente e il risultato appare in JSON.<br/>5) Copia o scarica il file JSON.<br/>La prima riga del CSV viene usata come intestazione e convertita in chiavi JSON."
+      },
+      {
+        "question": "Come posso convertire JSON in CSV?",
+        "answer": "JSON → CSV:<br/>1) Incolla il tuo array JSON nel campo di input.<br/>2) Seleziona la scheda 'JSON to CSV'.<br/>3) Scegli il delimitatore (virgola o spazio).<br/>4) La conversione avviene automaticamente e il risultato appare in CSV.<br/>5) Copia o scarica il file CSV.<br/>Funziona meglio con array di oggetti coerenti. Oggetti/array annidati vengono appiattiti o convertiti in stringhe."
+      },
+      {
+        "question": "Quali delimitatori sono supportati?",
+        "answer": "Il convertitore supporta due delimitatori: virgola (,) e spazio ( ).<br/>La virgola è lo standard comunemente usato.<br/>Lo spazio è utile per alcuni file a larghezza fissa convertiti in valori separati da spazi."
+      },
+      {
+        "question": "Come gestire set di dati di grandi dimensioni?",
+        "answer": "Per set di dati grandi:<br/>1) La conversione avviene localmente nel browser, dipende dal dispositivo.<br/>2) Per file oltre 10 MB, dividerli in parti più piccole.<br/>3) Usa il pulsante di download invece di copiare.<br/>4) Chiudi altre schede o programmi per liberare memoria.<br/>5) Per set molto grandi, usa strumenti da riga di comando come jq o csvkit."
+      }
+    ]
   }
 ]

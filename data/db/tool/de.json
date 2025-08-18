@@ -730,5 +730,45 @@
         "answer": "Nein. EXIF-Daten sind unabhängig vom Bildinhalt gespeichert. Nach dem Entfernen bleibt die Bildqualität unverändert, lediglich die Dateigröße reduziert sich leicht."
       }
     ]
+  },
+  {
+    "slug": "csv-json-converter",
+    "name": "CSV-JSON Konverter – Umwandlung zwischen CSV und JSON Formaten",
+    "description": "Konvertieren Sie Daten einfach zwischen CSV- und JSON-Formaten mit Unterstützung verschiedener Trennzeichen. Ideal für Datenverarbeitung, API-Integration und Tabellenkalkulationen.",
+    "category": "development",
+    "keywords": [
+      "csv zu json",
+      "json zu csv",
+      "csv konverter",
+      "json konverter",
+      "datenformat konverter",
+      "csv parser",
+      "json parser",
+      "datenumwandlung",
+      "tabelle zu json",
+      "api daten konverter"
+    ],
+    "faq": [
+      {
+        "question": "Was ist der Unterschied zwischen CSV und JSON?",
+        "answer": "CSV (Comma-Separated Values) ist ein einfaches Tabellenformat, bei dem jede Zeile eine Datenreihe darstellt und Werte durch Kommas oder andere Trennzeichen getrennt werden. Es eignet sich gut für Tabellendaten, unterstützt jedoch keine Hierarchien.<br/>JSON (JavaScript Object Notation) ist ein strukturiertes Datenformat, das verschachtelte Objekte, Arrays und verschiedene Datentypen unterstützt. Es ist flexibler für komplexe Daten, aber weniger lesbar bei einfachen Tabellen.<br/>CSV ist kompakter für einfache Daten, während JSON besser für Beziehungen und komplexe Strukturen geeignet ist."
+      },
+      {
+        "question": "Wie konvertiere ich eine CSV-Datei in JSON?",
+        "answer": "CSV → JSON Konvertierung:<br/>1) Fügen Sie Ihre CSV-Daten in das Eingabefeld ein.<br/>2) Wählen Sie das richtige Trennzeichen (Komma oder Leerzeichen).<br/>3) Wählen Sie den Tab „CSV to JSON“. <br/>4) Die Konvertierung erfolgt automatisch und das Ergebnis erscheint als JSON.<br/>5) Kopieren Sie das Ergebnis oder laden Sie es als JSON-Datei herunter.<br/>Die erste Zeile der CSV wird als Header genutzt und in JSON-Schlüssel umgewandelt."
+      },
+      {
+        "question": "Wie konvertiere ich JSON in CSV?",
+        "answer": "JSON → CSV Konvertierung:<br/>1) Fügen Sie Ihr JSON-Array in das Eingabefeld ein.<br/>2) Wählen Sie den Tab „JSON to CSV“. <br/>3) Wählen Sie ein Trennzeichen (Komma oder Leerzeichen).<br/>4) Die Konvertierung erfolgt automatisch und das Ergebnis erscheint als CSV.<br/>5) Kopieren Sie das Ergebnis oder laden Sie es als CSV-Datei herunter.<br/>Am besten geeignet für Arrays von Objekten mit konsistenten Eigenschaften. Verschachtelte Objekte oder Arrays werden flach umgewandelt oder als String dargestellt."
+      },
+      {
+        "question": "Welche Trennzeichen werden unterstützt?",
+        "answer": "Der Konverter unterstützt zwei Trennzeichen: Komma (,) und Leerzeichen ( ).<br/>Komma ist das Standardtrennzeichen und wird von Tabellenkalkulationen und Tools weit verbreitet unterstützt.<br/>Leerzeichen eignet sich für bestimmte Datensätze wie konvertierte Festbreitentabellen. Sie können das gewünschte Trennzeichen in der Oberfläche auswählen."
+      },
+      {
+        "question": "Wie gehe ich mit großen Datensätzen um?",
+        "answer": "Umgang mit großen Datenmengen:<br/>1) Die Konvertierung erfolgt lokal im Browser, abhängig von Ihrer Geräteleistung.<br/>2) Bei Dateien über 10 MB: Teilen Sie die Daten in kleinere Abschnitte.<br/>3) Nutzen Sie die Download-Funktion statt Copy-Paste.<br/>4) Schließen Sie andere Tabs oder Programme, um Speicher freizugeben.<br/>5) Für sehr große Datensätze: jq oder csvkit nutzen, die für große Daten optimiert sind."
+      }
+    ]
   }
 ]

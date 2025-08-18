@@ -726,5 +726,45 @@
         "answer": "Nee. De beeldkwaliteit blijft gelijk, alleen de bestandsgrootte wordt iets kleiner."
       }
     ]
+  },
+  {
+    "slug": "csv-json-converter",
+    "name": "CSV-JSON Converter – Conversie tussen CSV- en JSON-formaten",
+    "description": "Converteer eenvoudig gegevens tussen CSV en JSON met ondersteuning voor verschillende scheidingstekens. Perfect voor gegevensverwerking, API-integratie en spreadsheetconversies.",
+    "category": "development",
+    "keywords": [
+      "csv naar json",
+      "json naar csv",
+      "csv converter",
+      "json converter",
+      "gegevensformaat converter",
+      "csv parser",
+      "json parser",
+      "gegevens transformatie",
+      "spreadsheet naar json",
+      "api gegevens converter"
+    ],
+    "faq": [
+      {
+        "question": "Wat is het verschil tussen CSV en JSON?",
+        "answer": "CSV (Comma-Separated Values) is een eenvoudig tabelformaat waarbij elke regel een rij is en waarden door komma’s of spaties gescheiden worden. Handig voor spreadsheetdata, maar zonder hiërarchie.<br/>JSON (JavaScript Object Notation) is een gestructureerd formaat dat geneste objecten, arrays en verschillende datatypes ondersteunt. Flexibeler voor complexe data, maar minder leesbaar bij eenvoudige tabellen.<br/>CSV is compacter en beter leesbaar voor eenvoudige data, JSON is beter voor relaties en complexe structuren."
+      },
+      {
+        "question": "Hoe converteer ik een CSV-bestand naar JSON?",
+        "answer": "CSV → JSON:<br/>1) Plak uw CSV-gegevens in het invoerveld.<br/>2) Kies het juiste scheidingsteken (komma of spatie).<br/>3) Selecteer het tabblad 'CSV to JSON'.<br/>4) De conversie gebeurt automatisch en verschijnt als JSON.<br/>5) Kopieer of download het JSON-bestand.<br/>De eerste rij van CSV wordt als header gebruikt en omgezet in JSON-sleutels."
+      },
+      {
+        "question": "Hoe converteer ik JSON naar CSV?",
+        "answer": "JSON → CSV:<br/>1) Plak uw JSON-array in het invoerveld.<br/>2) Selecteer het tabblad 'JSON to CSV'.<br/>3) Kies uw scheidingsteken (komma of spatie).<br/>4) De conversie gebeurt automatisch en verschijnt als CSV.<br/>5) Kopieer of download het CSV-bestand.<br/>Het werkt het beste met objectarrays met consistente eigenschappen. Geneste objecten/arrays worden afgevlakt of als string weergegeven."
+      },
+      {
+        "question": "Welke scheidingstekens worden ondersteund?",
+        "answer": "De converter ondersteunt twee scheidingstekens: komma (,) en spatie ( ).<br/>Komma is de standaard en breed ondersteund.<br/>Spatie is nuttig voor bepaalde vaste-breedtebestanden die naar spatiegescheiden waarden zijn geconverteerd."
+      },
+      {
+        "question": "Hoe ga ik om met grote datasets?",
+        "answer": "Voor grote datasets:<br/>1) De conversie gebeurt lokaal in uw browser, afhankelijk van uw apparaat.<br/>2) Voor bestanden groter dan 10 MB: splits in kleinere delen.<br/>3) Gebruik de downloadknop i.p.v. kopiëren.<br/>4) Sluit andere tabs of apps om geheugen vrij te maken.<br/>5) Voor zeer grote datasets gebruik command-line tools zoals jq of csvkit."
+      }
+    ]
   }
 ]
