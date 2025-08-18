@@ -691,7 +691,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Cleaner – Bekijk en verwijder afbeeldingsmetadata",
     "description": "Bekijk en verwijder EXIF-metadata uit uw afbeeldingen om uw privacy te beschermen. Alles wordt lokaal verwerkt zonder upload naar een server.",
-    "category": "Media",
+    "category": "media",
     "keywords": [
       "exif viewer",
       "exif cleaner",
@@ -764,6 +764,46 @@
       {
         "question": "Hoe ga ik om met grote datasets?",
         "answer": "Voor grote datasets:<br/>1) De conversie gebeurt lokaal in uw browser, afhankelijk van uw apparaat.<br/>2) Voor bestanden groter dan 10 MB: splits in kleinere delen.<br/>3) Gebruik de downloadknop i.p.v. kopiëren.<br/>4) Sluit andere tabs of apps om geheugen vrij te maken.<br/>5) Voor zeer grote datasets gebruik command-line tools zoals jq of csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 Afbeeldingsconverter – Conversie tussen afbeeldingen en Base64",
+    "description": "Zet afbeeldingen om naar Base64-strings of decodeer Base64 terug naar afbeeldingen. Perfect voor het insluiten van afbeeldingen in CSS, HTML en JSON, of voor gebruik met data-URI’s.",
+    "category": "development",
+    "keywords": [
+      "base64 afbeelding converter",
+      "afbeelding naar base64",
+      "base64 naar afbeelding",
+      "afbeelding omzetten naar base64",
+      "data URI generator",
+      "base64 afbeelding decoder",
+      "base64 afbeelding encoder",
+      "afbeelding insluiten in CSS",
+      "afbeelding data URI",
+      "inline afbeelding converter"
+    ],
+    "faq": [
+      {
+        "question": "Wat is een Base64-afbeelding en waarom zou ik het gebruiken?",
+        "answer": "Een Base64-afbeelding is een afbeeldingsbestand dat is omgezet naar een Base64-gecodeerde tekenreeks. Hierdoor kan de afbeelding als tekst direct worden ingesloten in HTML, CSS of JSON, zonder apart bestand. Veelgebruikte toepassingen:<li>kleine afbeeldingen insluiten in HTML/CSS om HTTP-verzoeken te verminderen</li><li>afbeeldingen opnemen in JSON-API-responses</li><li>afbeeldingen insluiten in SVG-bestanden</li><li>data-URI’s maken voor webapps</li><li>afbeeldingen opslaan in databases zonder binaire ondersteuning</li>Hoewel de bestandsgrootte ~33% groter wordt, wegen de voordelen vaak zwaarder bij kleine afbeeldingen."
+      },
+      {
+        "question": "Hoe gebruik ik Base64-afbeeldingen in HTML, CSS en JavaScript?",
+        "answer": "Gebruik in verschillende webtechnieken:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Altijd het formaat <code>data:[MIME type];base64,[data]</code>. Werkt goed voor kleine afbeeldingen; voor grote bestanden zijn traditionele verwijzingen efficiënter."
+      },
+      {
+        "question": "Wat zijn de voor- en nadelen van Base64-afbeeldingen?",
+        "answer": "Voordelen:<li>minder HTTP-verzoeken</li><li>eenvoudiger deployment (minder bestanden)</li><li>afbeeldingen kunnen in JSON worden opgenomen</li><li>geen CORS-problemen (inline)</li><li>cache-synchronisatie met code</li><br/>Nadelen:<li>bestandsgrootte stijgt met ~33%</li><li>geen aparte caching door browser</li><li>grotere HTML/CSS-bestanden</li><li>lastiger onderhoud van ingesloten afbeeldingen</li><li>prestatieproblemen bij grote afbeeldingen</li><br/>Aanbevolen voor kleine iconen of UI-elementen, niet voor grote foto’s."
+      },
+      {
+        "question": "Welke afbeeldingsformaten kunnen worden omgezet naar Base64?",
+        "answer": "Alle formaten, meest gebruikt voor web:<li>PNG (transparantie, logo’s)</li><li>JPEG (foto’s)</li><li>SVG (vectorafbeeldingen)</li><li>GIF (eenvoudige animaties)</li><li>WebP (moderne compressie)</li><li>ICO (favicons)</li>Geef het juiste MIME-type aan (bijv. <code>data:image/png;base64,</code>). De tool detecteert dit automatisch."
+      },
+      {
+        "question": "Is er een limiet aan de grootte van Base64-afbeeldingen?",
+        "answer": "Technisch niet, maar praktisch wel:<li>bestand ~33% groter</li><li>lange strings vertragen browsers</li><li>limieten op lengte van CSS data-URI’s</li><li>grotere HTML/CSS-bestanden vertragen de laadtijd</li><br/>Beste gebruik: kleine afbeeldingen (&lt;10KB). Voor grote bestanden zijn traditionele HTTP/HTTPS-bestanden beter."
       }
     ]
   }

@@ -810,5 +810,45 @@
         "answer": "For large datasets: <br/>1) The converter processes data locally in your browser, so performance depends on your device's capabilities. <br/>2) For very large files (over 10MB), consider splitting the data into smaller chunks for conversion. <br/>3) Use the download button to save results directly to a file instead of copying from the browser, which is more efficient for large outputs. <br/>4) If you experience slow performance, try closing other browser tabs and applications to free up memory. <br/>5) For extremely large datasets that cause browser performance issues, consider using command-line tools like jq or csvkit which are optimized for processing large files."
       }
     ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 Image Converter – Convert Between Images and Base64",
+    "description": "Convert images to Base64 strings or decode Base64 back to images. Perfect for embedding images in CSS, HTML, and JSON, or working with data URIs.",
+    "category": "development",
+    "keywords": [
+      "base64 image converter",
+      "image to base64",
+      "base64 to image",
+      "convert image to base64",
+      "data URI generator",
+      "base64 image decoder",
+      "base64 image encoder",
+      "embed image in CSS",
+      "image data URI",
+      "inline image converter"
+    ],
+    "faq": [
+      {
+        "question": "What is a Base64 image and why would I use it?",
+        "answer": "A Base64 image is an image file that has been converted to a Base64 encoded string. This allows the image to be represented as text, which can be embedded directly in HTML, CSS, or JSON without requiring a separate image file. Base64 images are commonly used for: <li>embedding small images directly in HTML/CSS to reduce HTTP requests,</li> <li>including images in JSON API responses,</li> <li>embedding images in SVG files,</li> <li>creating data URIs for web applications,</li> <li>and storing images in databases that don't support binary data.</li> While Base64 encoding increases file size by about 33%, the benefits of reduced HTTP requests and simplified deployment often outweigh this drawback for smaller images."
+      },
+      {
+        "question": "How do I use Base64 images in HTML, CSS, and JavaScript?",
+        "answer": "Base64 images can be used in various web technologies: <br/>In HTML, use the data URI scheme in the src attribute: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code>. <br/>In CSS, embed images in background properties: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code>. <br/>In JavaScript, create new Image objects with Base64 sources: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code>. <br/>The format is always <code>data:[MIME type];base64,[encoded data]</code>. This approach works in all modern browsers and eliminates separate image file requests, improving page load performance for small images. For larger images, traditional file references are usually more efficient."
+      },
+      {
+        "question": "What are the advantages and disadvantages of using Base64 images?",
+        "answer": "Advantages of Base64 images include: <li>reduced HTTP requests (improving page load time),</li> <li>simplified deployment with fewer files to manage,</li> <li>ability to embed images in text-based formats like JSON,</li> <li>no cross-origin issues since images are inline,</li> <li>and caching benefits when images change with code.</li> <br/>Disadvantages include: <li>increased file size (approximately 33% larger),</li> <li>images not separately cached by browsers,</li> <li>increased HTML/CSS file size affecting initial page load,</li> <li>>difficulty in maintaining or updating embedded images,</li> <li>and potential performance issues with large images.</li> <br/>Base64 encoding is best for small, frequently used images like icons and UI elements, while traditional image files are better for photographs and larger graphics."
+      },
+      {
+        "question": "What image formats can be converted to Base64?",
+        "answer": "Any image format can be converted to Base64, but the most commonly used formats for web applications are: <li>PNG (best for graphics, logos, and images requiring transparency),</li> <li>JPEG (ideal for photographs and complex images with many colors),</li> <li>SVG (perfect for vector graphics that scale without quality loss),</li> <li>GIF (suitable for simple animations),</li> <li>WebP (modern format with superior compression), and ICO (for favicons).</li> When converting to Base64, it's important to specify the correct MIME type in the data URI (e.g., 'data:image/png;base64,' for PNG images). Our tool supports all standard web image formats and automatically detects the correct MIME type during conversion."
+      },
+      {
+        "question": "Is there a size limit for Base64 images?",
+        "answer": "While there's no technical limit to the size of a Base64 encoded image, there are practical considerations: <li>Base64 encoding increases file size by approximately 33%, large Base64 strings can cause performance issues in browsers, some browsers have URL length limitations that affect data URIs in CSS, and embedding large images increases HTML/CSS file size, slowing initial page load. <li>As a best practice, limit Base64 encoding to small images (under 10KB when encoded) like icons, small UI elements, and simple graphics.</li> <li>For larger images, traditional image files served via HTTP/HTTPS are more efficient and better for caching. Consider using image sprites or modern techniques like SVG for icons instead of large Base64 encoded images.</li>"
+      }
+    ]
   }
 ]

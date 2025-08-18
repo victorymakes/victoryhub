@@ -695,7 +695,7 @@
     "slug": "exif-viewer",
     "name": "Visualizzatore/Pulitore EXIF – Visualizza e rimuovi i metadati delle immagini",
     "description": "Visualizza e rimuovi i metadati EXIF dalle tue immagini per proteggere la privacy. Elaborazione locale senza caricamento su server.",
-    "category": "Media",
+    "category": "media",
     "keywords": [
       "visualizzatore exif",
       "pulitore exif",
@@ -768,6 +768,46 @@
       {
         "question": "Come gestire set di dati di grandi dimensioni?",
         "answer": "Per set di dati grandi:<br/>1) La conversione avviene localmente nel browser, dipende dal dispositivo.<br/>2) Per file oltre 10 MB, dividerli in parti più piccole.<br/>3) Usa il pulsante di download invece di copiare.<br/>4) Chiudi altre schede o programmi per liberare memoria.<br/>5) Per set molto grandi, usa strumenti da riga di comando come jq o csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Convertitore Immagini Base64 – Conversione tra Immagini e Base64",
+    "description": "Converti immagini in stringhe Base64 o decodifica Base64 in immagini. Perfetto per incorporare immagini in CSS, HTML e JSON o lavorare con data URI.",
+    "category": "development",
+    "keywords": [
+      "convertitore immagini base64",
+      "immagine in base64",
+      "base64 in immagine",
+      "converti immagine in base64",
+      "generatore data URI",
+      "decodificatore immagini base64",
+      "codificatore immagini base64",
+      "incorpora immagine in CSS",
+      "immagine data URI",
+      "convertitore immagini inline"
+    ],
+    "faq": [
+      {
+        "question": "Cos’è un’immagine Base64 e perché usarla?",
+        "answer": "Un’immagine Base64 è un file convertito in stringa codificata Base64. Permette di rappresentarla come testo e incorporarla direttamente in HTML, CSS o JSON senza file separato. Usi comuni:<li>incorporare piccole immagini in HTML/CSS per ridurre richieste HTTP</li><li>includere immagini nelle risposte API JSON</li><li>incorporare immagini nei file SVG</li><li>creare data URI per app web</li><li>salvare immagini in database senza supporto binario</li>Sebbene aumenti la dimensione (~33 %), i vantaggi superano per piccole immagini."
+      },
+      {
+        "question": "Come usare immagini Base64 in HTML, CSS e JavaScript?",
+        "answer": "Esempi:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Il formato è sempre <code>data:[MIME type];base64,[dati]</code>. Utile per piccole immagini, per quelle grandi meglio file tradizionali."
+      },
+      {
+        "question": "Quali sono i vantaggi e gli svantaggi delle immagini Base64?",
+        "answer": "Vantaggi:<li>meno richieste HTTP</li><li>meno file, deploy più semplice</li><li>può essere incorporata in JSON</li><li>nessun problema CORS</li><li>cache sincronizzata col codice</li><br/>Svantaggi:<li>~33 % più grande</li><li>nessuna cache separata nel browser</li><li>file HTML/CSS più grandi</li><li>manutenzione immagini incorporate difficile</li><li>problemi di performance con immagini grandi</li><br/>Meglio per piccole icone o elementi UI, non per foto grandi."
+      },
+      {
+        "question": "Quali formati di immagini possono essere convertiti in Base64?",
+        "answer": "Tutti i formati, i più usati sul web:<li>PNG (loghi, trasparenza)</li><li>JPEG (foto)</li><li>SVG (grafica vettoriale)</li><li>GIF (animazioni semplici)</li><li>WebP (compressione moderna)</li><li>ICO (favicons)</li>È necessario indicare il tipo MIME corretto (es. <code>data:image/png;base64,</code>). Lo strumento lo rileva automaticamente."
+      },
+      {
+        "question": "C’è un limite di dimensione per le immagini Base64?",
+        "answer": "Tecnicamente no, ma in pratica:<li>file ~33 % più grandi</li><li>stringhe lunghe rallentano il browser</li><li>limiti sulla lunghezza delle data URI CSS</li><li>HTML/CSS più grandi rallentano il caricamento</li><br/>Raccomandazione: usare Base64 solo per piccole immagini (&lt;10KB). Per quelle grandi meglio file HTTP/HTTPS."
       }
     ]
   }

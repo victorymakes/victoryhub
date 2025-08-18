@@ -690,7 +690,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Visare/Rensare – Visa och ta bort bildmetadata",
     "description": "Visa och ta bort EXIF-metadata från dina bilder för att skydda din integritet. All bearbetning sker lokalt, inget laddas upp till en server.",
-    "category": "Media",
+    "category": "media",
     "keywords": [
       "exif visare",
       "exif rensare",
@@ -763,6 +763,46 @@
       {
         "question": "Hur hanterar jag stora dataset?",
         "answer": "För stora dataset:<br/>1) Konverteringen sker lokalt i webbläsaren, beror på din enhet.<br/>2) Dela upp filer större än 10 MB i mindre delar.<br/>3) Använd nedladdningsknappen i stället för att kopiera.<br/>4) Stäng andra flikar/program för att frigöra minne.<br/>5) För mycket stora dataset, använd kommandoradsverktyg som jq eller csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Base64 Bildkonverterare – Konvertera mellan bilder och Base64",
+    "description": "Konvertera bilder till Base64-strängar eller avkoda Base64 tillbaka till bilder. Perfekt för att bädda in bilder i CSS, HTML och JSON, eller arbeta med data-URI:er.",
+    "category": "development",
+    "keywords": [
+      "base64 bildkonverterare",
+      "bild till base64",
+      "base64 till bild",
+      "konvertera bild till base64",
+      "data URI generator",
+      "base64 bild avkodare",
+      "base64 bild kodare",
+      "bädda in bild i CSS",
+      "bild data URI",
+      "inline bildkonverterare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är en Base64-bild och varför använda det?",
+        "answer": "En Base64-bild är en bildfil som har konverterats till en Base64-kodad sträng. Detta gör att bilden kan representeras som text och bäddas in direkt i HTML, CSS eller JSON utan en separat fil. Vanliga användningar:<li>bädda in små bilder i HTML/CSS för att minska HTTP-förfrågningar</li><li>inkludera bilder i JSON API-svar</li><li>bädda in bilder i SVG-filer</li><li>skapa data-URI:er för webbappar</li><li>lagra bilder i databaser utan binärstöd</li>Trots att filstorleken ökar med ~33 %, överväger fördelarna ofta för små bilder."
+      },
+      {
+        "question": "Hur använder jag Base64-bilder i HTML, CSS och JavaScript?",
+        "answer": "Exempel:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>Formatet är alltid <code>data:[MIME type];base64,[data]</code>. Bra för små bilder, men stora bör laddas som vanliga filer."
+      },
+      {
+        "question": "Vilka är för- och nackdelarna med Base64-bilder?",
+        "answer": "Fördelar:<li>färre HTTP-förfrågningar</li><li>färre filer, enklare deploy</li><li>kan bäddas in i JSON</li><li>inga CORS-problem</li><li>cache uppdateras med kod</li><br/>Nackdelar:<li>~33 % större filer</li><li>ingen separat cache i webbläsaren</li><li>större HTML/CSS-filer</li><li>svårare underhåll av inbäddade bilder</li><li>prestandaproblem med stora filer</li><br/>Rekommenderas för små ikoner/UI-element, inte för stora bilder."
+      },
+      {
+        "question": "Vilka bildformat kan konverteras till Base64?",
+        "answer": "Alla, men vanligast på webben:<li>PNG (logotyper, transparens)</li><li>JPEG (foton)</li><li>SVG (vektorgrafik)</li><li>GIF (enkla animationer)</li><li>WebP (modern komprimering)</li><li>ICO (favicon)</li>Rätt MIME-typ måste anges (ex. <code>data:image/png;base64,</code>). Verktyget känner av detta automatiskt."
+      },
+      {
+        "question": "Finns det en storleksgräns för Base64-bilder?",
+        "answer": "Tekniskt sett nej, men praktiskt:<li>filer blir ~33 % större</li><li>långa strängar kan göra webbläsaren långsam</li><li>begränsningar för CSS data-URI-längd i vissa webbläsare</li><li>större HTML/CSS ger långsammare laddning</li><br/>Bäst för små bilder (&lt;10KB). Stora bilder bör servas via HTTP/HTTPS."
       }
     ]
   }

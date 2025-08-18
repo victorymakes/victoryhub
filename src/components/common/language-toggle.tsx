@@ -44,7 +44,7 @@ export function LanguageToggle() {
                 <Button
                     variant="ghost"
                     size="icon"
-                    className="h-9 w-9 rounded-full cursor-pointer"
+                    className="h-9 w-9 rounded-full cursor-pointer border"
                 >
                     <span className="text-2xl">{currentLanguage.flag}</span>
                     <span className="sr-only">Change language</span>

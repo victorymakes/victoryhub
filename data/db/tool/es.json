@@ -695,7 +695,7 @@
     "slug": "exif-viewer",
     "name": "Visor/Limpiador EXIF – Ver y eliminar metadatos de imágenes",
     "description": "Vea y elimine los metadatos EXIF de sus imágenes para proteger su privacidad. Procesamiento local sin subir a ningún servidor.",
-    "category": "Medios",
+    "category": "media",
     "keywords": [
       "visor exif",
       "limpiador exif",
@@ -768,6 +768,46 @@
       {
         "question": "¿Cómo manejo conjuntos de datos grandes?",
         "answer": "Para conjuntos grandes:<br/>1) La conversión se realiza localmente en el navegador, dependiendo de su dispositivo.<br/>2) Para archivos de más de 10 MB, divídalos en partes más pequeñas.<br/>3) Use el botón de descarga en lugar de copiar.<br/>4) Cierre otras pestañas o programas para liberar memoria.<br/>5) Para datos muy grandes, use herramientas de línea de comandos como jq o csvkit."
+      }
+    ]
+  },
+  {
+    "slug": "base64-image-converter",
+    "name": "Convertidor de imágenes Base64 – Conversión entre imágenes y Base64",
+    "description": "Convierte imágenes en cadenas Base64 o decodifica Base64 en imágenes. Perfecto para incrustar imágenes en CSS, HTML y JSON, o trabajar con URIs de datos.",
+    "category": "development",
+    "keywords": [
+      "convertidor de imágenes base64",
+      "imagen a base64",
+      "base64 a imagen",
+      "convertir imagen a base64",
+      "generador de data URI",
+      "decodificador de imágenes base64",
+      "codificador de imágenes base64",
+      "incrustar imagen en CSS",
+      "imagen data URI",
+      "convertidor de imágenes en línea"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es una imagen Base64 y por qué usarla?",
+        "answer": "Una imagen Base64 es un archivo convertido en una cadena codificada en Base64. Esto permite representarla como texto e incrustarla directamente en HTML, CSS o JSON sin necesidad de un archivo separado. Usos comunes:<li>incrustar imágenes pequeñas en HTML/CSS para reducir peticiones HTTP</li><li>incluir imágenes en respuestas de API JSON</li><li>incrustar imágenes en archivos SVG</li><li>crear URIs de datos para aplicaciones web</li><li>almacenar imágenes en bases de datos sin soporte binario</li>Aunque aumenta el tamaño (~33 %), las ventajas superan en el caso de imágenes pequeñas."
+      },
+      {
+        "question": "¿Cómo usar imágenes Base64 en HTML, CSS y JavaScript?",
+        "answer": "Se pueden usar en distintas tecnologías web:<br/>HTML: <code>&lt;img src='data:image/png;base64,ABC123...'&gt;</code><br/>CSS: <code>background-image: url('data:image/jpeg;base64,ABC123...');</code><br/>JavaScript: <code>const img = new Image(); img.src = 'data:image/png;base64,ABC123...';</code><br/>El formato es siempre <code>data:[tipo MIME];base64,[datos]</code>. Ideal para imágenes pequeñas; para grandes es mejor usar archivos tradicionales."
+      },
+      {
+        "question": "¿Cuáles son las ventajas y desventajas de las imágenes Base64?",
+        "answer": "Ventajas:<li>menos peticiones HTTP</li><li>menos archivos, despliegue más sencillo</li><li>posibilidad de incrustar imágenes en JSON</li><li>sin problemas de CORS</li><li>caché asociado al código</li><br/>Desventajas:<li>aumento del tamaño (~33 %)</li><li>sin caché independiente en navegador</li><li>archivos HTML/CSS más pesados</li><li>dificultad para actualizar imágenes embebidas</li><li>posibles problemas de rendimiento con imágenes grandes</li><br/>Mejor para iconos pequeños y elementos UI, no para fotografías grandes."
+      },
+      {
+        "question": "¿Qué formatos de imagen se pueden convertir a Base64?",
+        "answer": "Todos, pero los más usados en la web son:<li>PNG (transparencia, logos)</li><li>JPEG (fotos)</li><li>SVG (vectoriales)</li><li>GIF (animaciones simples)</li><li>WebP (compresión moderna)</li><li>ICO (favicons)</li>Debe indicarse el tipo MIME en la URI (ej. <code>data:image/png;base64,</code>). La herramienta lo detecta automáticamente."
+      },
+      {
+        "question": "¿Hay límite de tamaño para imágenes Base64?",
+        "answer": "No técnico, pero sí práctico:<li>aumento del tamaño (~33 %)</li><li>cadenas largas ralentizan el navegador</li><li>limitaciones de longitud en URIs CSS en algunos navegadores</li><li>HTML/CSS más pesados ralentizan la carga</li><br/>Recomendación: solo para imágenes pequeñas (&lt;10KB). Para imágenes grandes, mejor archivos HTTP/HTTPS."
       }
     ]
   }
