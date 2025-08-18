@@ -685,5 +685,45 @@
         "answer": "Det hjælper dig med at: (1) Planlægge fremad, (2) Reagere på hændelser, (3) Vælge mellem features og stabilitet, (4) Justere mål, (5) Kommunikere med interessenter via visualisering."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "EXIF Viewer/Renser – Vis og fjern billedmetadata",
+    "description": "Vis og fjern EXIF-metadata fra dine billeder for at beskytte dit privatliv. Behandlingen sker lokalt uden upload til server.",
+    "category": "Medier",
+    "keywords": [
+      "exif viewer",
+      "exif renser",
+      "fjern exif",
+      "billedmetadata",
+      "foto privatliv",
+      "exif sletning",
+      "metadata viewer",
+      "fjern gps-data",
+      "billede privatliv værktøj",
+      "exif data viewer"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er EXIF-data, og hvorfor bør jeg fjerne dem?",
+        "answer": "EXIF-data er metadata i billedfiler med information om kamera, indstillinger og ofte placering. De kan indeholde følsomme oplysninger som GPS-koordinater. Fjernelse beskytter dit privatliv."
+      },
+      {
+        "question": "Er mine billeder sikre med dette værktøj?",
+        "answer": "Ja. Behandlingen sker lokalt i din browser. Intet uploades til en server."
+      },
+      {
+        "question": "Hvilke metadata kan vises og fjernes?",
+        "answer": "GPS, kameramodel, dato og tid, indstillinger (blænde, lukker, ISO), software, copyright."
+      },
+      {
+        "question": "Hvilke billedformater understøttes?",
+        "answer": "JPEG/JPG, TIFF og nogle PNG. JPEG indeholder oftest EXIF-data."
+      },
+      {
+        "question": "Påvirker det billedkvaliteten at fjerne EXIF?",
+        "answer": "Nej. Billedkvaliteten ændres ikke, kun filstørrelsen bliver lidt mindre."
+      }
+    ]
   }
 ]

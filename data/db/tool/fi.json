@@ -686,5 +686,45 @@
         "answer": "Se auttaa: (1) Suunnittelemaan – miten virheet vaikuttavat SLO:hon, (2) Reagoimaan – kuinka pitkään kestät nykyisellä virhetasolla, (3) Priorisoimaan – uusia ominaisuuksia vai luotettavuus, (4) Testaamaan eri tavoitteita, (5) Viestimään selkeästi sidosryhmille."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "EXIF Katselu/Siivous – Näytä ja poista kuvan metadata",
+    "description": "Näytä ja poista EXIF-metadataa kuvista suojataksesi yksityisyyttäsi. Kaikki käsittely tapahtuu paikallisesti ilman palvelinlähetystä.",
+    "category": "Media",
+    "keywords": [
+      "exif katselu",
+      "exif siivous",
+      "poista exif",
+      "kuva metadata",
+      "valokuvien yksityisyys",
+      "exif poistaminen",
+      "metadata katselu",
+      "gps tietojen poisto",
+      "kuvan yksityisyystyökalu",
+      "exif data katselu"
+    ],
+    "faq": [
+      {
+        "question": "Mitä EXIF-data on ja miksi se tulisi poistaa?",
+        "answer": "EXIF-data on kuvatiedostoihin tallennettua metadataa, jossa on tietoja kamerasta, asetuksista ja sijainnista. Se voi sisältää GPS-koordinaatteja ja muita arkaluontoisia tietoja. Sen poistaminen suojaa yksityisyyttäsi kuvia jaettaessa."
+      },
+      {
+        "question": "Ovatko kuvani turvassa tätä työkalua käyttäessä?",
+        "answer": "Kyllä. Kaikki tapahtuu selaimessasi. Kuviasi ei ladata millekään palvelimelle."
+      },
+      {
+        "question": "Mitä metatietoja voidaan näyttää ja poistaa?",
+        "answer": "GPS, kameran merkki ja malli, kuvauspäivä ja -aika, asetukset (aukko, suljin, ISO), ohjelmisto, tekijänoikeustiedot."
+      },
+      {
+        "question": "Mitä kuvaformaatteja tuetaan?",
+        "answer": "JPEG/JPG, TIFF ja jotkin PNG-tiedostot. JPEG sisältää yleensä eniten EXIF-dataa."
+      },
+      {
+        "question": "Vaikuttaako EXIF-datan poistaminen kuvan laatuun?",
+        "answer": "Ei. Kuvan laatu pysyy samana, vain metatiedot poistetaan ja tiedostokoko pienenee hieman."
+      }
+    ]
   }
 ]

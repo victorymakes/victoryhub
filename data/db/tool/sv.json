@@ -685,5 +685,45 @@
         "answer": "Så här hjälper verktyget: (1) Planera i förväg – förstå hur olika felprocent påverkar SLO; (2) Under incidenter – beräkna hur länge du kan hålla din nivå; (3) Prioritera – avgör vad som är viktigast; (4) Finjustera målen; (5) Kommunicera med intressenter visuellt."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "EXIF Visare/Rensare – Visa och ta bort bildmetadata",
+    "description": "Visa och ta bort EXIF-metadata från dina bilder för att skydda din integritet. All bearbetning sker lokalt, inget laddas upp till en server.",
+    "category": "Media",
+    "keywords": [
+      "exif visare",
+      "exif rensare",
+      "ta bort exif",
+      "bildmetadata",
+      "foto integritet",
+      "rens exif",
+      "metadata visare",
+      "ta bort gps-data",
+      "bild integritet verktyg",
+      "exif data visare"
+    ],
+    "faq": [
+      {
+        "question": "Vad är EXIF-data och varför bör jag ta bort dem?",
+        "answer": "EXIF är metadata i bildfiler som innehåller information om kamera, inställningar och plats. De kan inkludera känsliga data som GPS-koordinater. Att ta bort dem skyddar din integritet vid delning av bilder online."
+      },
+      {
+        "question": "Är mina bilder säkra när jag använder verktyget?",
+        "answer": "Ja. Allt bearbetas lokalt i din webbläsare. Inga data laddas upp till en server."
+      },
+      {
+        "question": "Vilka metadata kan visas och tas bort?",
+        "answer": "GPS, kameramodell, datum och tid, kamerainställningar (bländare, slutartid, ISO), programvara och upphovsrättsinformation."
+      },
+      {
+        "question": "Vilka bildformat stöds?",
+        "answer": "JPEG/JPG, TIFF och vissa PNG. JPEG innehåller oftast mest EXIF-data. WebP, GIF och de flesta PNG saknar detta."
+      },
+      {
+        "question": "Påverkar det bildkvaliteten att ta bort EXIF?",
+        "answer": "Nej. Bildens kvalitet påverkas inte. Endast metadata tas bort, vilket gör filen lite mindre."
+      }
+    ]
   }
 ]

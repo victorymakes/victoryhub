@@ -690,5 +690,45 @@
         "answer": "Dieses Tool unterstützt die Verbesserung der Servicezuverlässigkeit auf verschiedene Weise: (1) Proaktive Planung – visualisieren, wie verschiedene Fehlerraten die Einhaltung von SLOs beeinflussen; (2) Incident Response – während eines Vorfalls abschätzen, wie lange Sie den aktuellen Fehlerraten standhalten können, bevor das SLO verletzt wird; (3) Priorisierung – verbleibendes Fehlerbudget verwenden, um zu entscheiden, ob neue Features oder Zuverlässigkeitsverbesserungen wichtig sind; (4) SLO‑Anpassung – mit verschiedenen Zielen experimentieren, um das optimale Gleichgewicht zwischen Zuverlässigkeit und Entwicklungsgeschwindigkeit zu finden; (5) Kommunikation – Visualisierungen für Stakeholder bereitstellen, um Zuverlässigkeitskonzepte und trade-offs zugänglich zu erklären."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "EXIF Viewer/Cleaner – Bildmetadaten anzeigen und entfernen",
+    "description": "Zeigen Sie EXIF-Metadaten Ihrer Bilder an und entfernen Sie diese, um Ihre Privatsphäre zu schützen. Die Verarbeitung erfolgt lokal ohne Hochladen auf einen Server.",
+    "category": "Medien",
+    "keywords": [
+      "exif viewer",
+      "exif cleaner",
+      "exif daten entfernen",
+      "bildmetadaten",
+      "foto privatsphäre",
+      "exif entfernen",
+      "metadaten viewer",
+      "gps daten entfernen",
+      "bild privatsphäre tool",
+      "exif daten viewer"
+    ],
+    "faq": [
+      {
+        "question": "Was sind EXIF-Daten und warum sollte ich sie entfernen?",
+        "answer": "EXIF (Exchangeable Image File Format) Daten sind Metadaten, die in Bilddateien eingebettet sind. Sie enthalten Informationen über die Kamera, Einstellungen und manchmal auch den Aufnahmeort. Diese Daten können sensible Informationen wie GPS-Koordinaten, Geräteangaben und Zeitstempel enthalten. Das Entfernen schützt Ihre Privatsphäre, wenn Sie Fotos online teilen."
+      },
+      {
+        "question": "Sind meine Bilddaten bei der Nutzung dieses Tools sicher?",
+        "answer": "Ja. Dieses Tool verarbeitet Ihre Bilder ausschließlich in Ihrem Browser. Es erfolgt kein Upload auf einen Server. Alle Vorgänge laufen lokal per JavaScript ab, wodurch maximale Sicherheit gewährleistet ist."
+      },
+      {
+        "question": "Welche Arten von Metadaten können angezeigt und entfernt werden?",
+        "answer": "GPS-Koordinaten, Kameramodell, Aufnahmedatum und -zeit, Kameraeinstellungen (Blende, Verschlusszeit, ISO), verwendete Software, Urheberrechtsinformationen und weitere technische Details können angezeigt und entfernt werden."
+      },
+      {
+        "question": "Welche Bildformate werden unterstützt?",
+        "answer": "JPEG/JPG, TIFF und einige PNG-Dateien. Besonders JPEGs enthalten umfangreiche EXIF-Daten. WebP, GIF und die meisten PNG-Dateien enthalten wenig bis keine EXIF-Daten."
+      },
+      {
+        "question": "Beeinträchtigt das Entfernen von EXIF-Daten die Bildqualität?",
+        "answer": "Nein. EXIF-Daten sind unabhängig vom Bildinhalt gespeichert. Nach dem Entfernen bleibt die Bildqualität unverändert, lediglich die Dateigröße reduziert sich leicht."
+      }
+    ]
   }
 ]

@@ -657,5 +657,49 @@
     "invalidErrorRate": "Invalid error rate. Please enter a positive number.",
     "burnChart": "Budget Burn Chart",
     "formulas": "Formulas"
+  },
+  "ExifViewer": {
+    "uploadImage": "Upload Image",
+    "dragAndDropImage": "Drag and drop image here or click to browse",
+    "viewExif": "View EXIF Data",
+    "removeExif": "Remove EXIF",
+    "download": "Download",
+    "file": "Image Metadata",
+    "camera": "Camera Settings",
+    "location": "Location Information",
+    "all": "All EXIF Data",
+    "exif": {
+      "file": {
+        "name": "Name",
+        "type": "Type",
+        "size": "Size",
+        "width": "Width",
+        "height": "Height",
+        "colorSpace": "Color space",
+        "createdAt": "Created at"
+      },
+      "camera": {
+        "aperture": "Aperture",
+        "exposureTime": "Exposure time",
+        "focalLength": "Focal length",
+        "fNumber": "F-number",
+        "flash": "Flash",
+        "iso": "ISO",
+        "lens": "Lens"
+      },
+      "location": {
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "altitude": "Altitude"
+      }
+    },
+    "exifRemoved": "EXIF metadata has been successfully removed from the image.",
+    "errors": {
+      "fileReadFailed": "Failed to read file. Please try another image.",
+      "exifRemovalFailed": "EXIF data removal failed. Please try another image.",
+      "exifExtractionFailed": "Failed to extract EXIF data. The image may not contain metadata.",
+      "notAnImage": "The file is not an image. Please select an image file.",
+      "canvasContextFailed": "Failed to get canvas context. Your browser may not support this feature."
+    }
   }
 }

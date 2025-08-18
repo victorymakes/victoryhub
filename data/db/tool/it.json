@@ -690,5 +690,45 @@
         "answer": "Aiuta a: (1) pianificare, (2) rispondere agli incidenti, (3) scegliere tra funzionalità e stabilità, (4) testare SLO diversi, (5) comunicare con stakeholder."
       }
     ]
+  },
+  {
+    "slug": "exif-viewer",
+    "name": "Visualizzatore/Pulitore EXIF – Visualizza e rimuovi i metadati delle immagini",
+    "description": "Visualizza e rimuovi i metadati EXIF dalle tue immagini per proteggere la privacy. Elaborazione locale senza caricamento su server.",
+    "category": "Media",
+    "keywords": [
+      "visualizzatore exif",
+      "pulitore exif",
+      "rimuovere exif",
+      "metadati immagine",
+      "privacy foto",
+      "cancellare exif",
+      "visualizzatore metadati",
+      "rimuovere dati gps",
+      "strumento privacy immagine",
+      "visualizzatore dati exif"
+    ],
+    "faq": [
+      {
+        "question": "Cosa sono i dati EXIF e perché dovrei rimuoverli?",
+        "answer": "I dati EXIF sono metadati incorporati nelle immagini, contenenti informazioni sulla fotocamera, impostazioni e talvolta posizione. Possono includere dati sensibili come coordinate GPS. Rimuoverli protegge la privacy quando condividi foto online."
+      },
+      {
+        "question": "Le mie immagini sono al sicuro usando questo strumento?",
+        "answer": "Sì. Tutto viene elaborato localmente nel browser. Nessuna immagine viene caricata su server."
+      },
+      {
+        "question": "Quali metadati possono essere visualizzati e rimossi?",
+        "answer": "Coordinate GPS, marca e modello della fotocamera, data e ora, impostazioni (apertura, velocità, ISO), software, copyright."
+      },
+      {
+        "question": "Quali formati di immagine sono supportati?",
+        "answer": "JPEG/JPG, TIFF e alcuni PNG. I JPEG contengono più spesso dati EXIF. WebP, GIF e la maggior parte dei PNG non li contengono."
+      },
+      {
+        "question": "La rimozione dei dati EXIF influisce sulla qualità dell'immagine?",
+        "answer": "No. La qualità rimane invariata, solo i metadati vengono rimossi e la dimensione del file si riduce leggermente."
+      }
+    ]
   }
 ]
