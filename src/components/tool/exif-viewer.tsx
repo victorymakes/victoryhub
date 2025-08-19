@@ -319,9 +319,12 @@ const ExifViewer: React.FC = () => {
                                 <h3 className="text-lg font-medium mb-1">
                                     {t("uploadImage")}
                                 </h3>
-                                <p className="text-sm text-muted-foreground">
+                                <p className="text-sm text-muted-foreground mb-2">
                                     {t("dragAndDropImage")}
                                 </p>
+                                <Button size="sm" variant="secondary">
+                                    {t("chooseFiles")}
+                                </Button>
                             </>
                         ) : (
                             <div className="w-full flex items-center justify-between">

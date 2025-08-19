@@ -850,5 +850,45 @@
         "answer": "While there's no technical limit to the size of a Base64 encoded image, there are practical considerations: <li>Base64 encoding increases file size by approximately 33%, large Base64 strings can cause performance issues in browsers, some browsers have URL length limitations that affect data URIs in CSS, and embedding large images increases HTML/CSS file size, slowing initial page load. <li>As a best practice, limit Base64 encoding to small images (under 10KB when encoded) like icons, small UI elements, and simple graphics.</li> <li>For larger images, traditional image files served via HTTP/HTTPS are more efficient and better for caching. Consider using image sprites or modern techniques like SVG for icons instead of large Base64 encoded images.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Image to Black & White Converter – Convert Color Images to Grayscale",
+    "description": "Convert your colorful images to black and white directly in your browser. No upload needed, preserves original resolution and quality.",
+    "category": "media",
+    "keywords": [
+      "black and white converter",
+      "grayscale image converter",
+      "color to black and white",
+      "image to grayscale",
+      "monochrome converter",
+      "online black and white filter",
+      "convert image to grayscale",
+      "black and white photo editor",
+      "grayscale filter",
+      "image desaturation tool"
+    ],
+    "faq": [
+      {
+        "question": "How does the black and white image converter work?",
+        "answer": "Our black and white image converter works entirely in your browser. When you upload an image, the tool processes it using HTML5 Canvas technology to convert each pixel from color to grayscale using a weighted luminance formula (0.299R + 0.587G + 0.114B). This formula preserves the natural brightness perception of the human eye, resulting in more natural-looking black and white images. The conversion happens instantly on your device without uploading your images to any server, ensuring your privacy and fast processing."
+      },
+      {
+        "question": "Why convert images to black and white?",
+        "answer": "Converting images to black and white has both artistic and practical benefits. Artistically, black and white photography emphasizes composition, texture, lighting, and contrast without the distraction of color. It can create a timeless, classic look or evoke specific moods. Practically, black and white images often have smaller file sizes, making them ideal for printing documents, creating e-books, or situations where color isn't necessary. Black and white conversion can also help salvage images with poor color balance or make text more readable by increasing contrast."
+      },
+      {
+        "question": "Will converting to black and white reduce my image quality?",
+        "answer": "No, our black and white converter maintains the original resolution and quality of your image. The only change is the removal of color information, which is replaced with appropriate grayscale values. The dimensions, resolution, and overall sharpness remain unchanged. In fact, black and white conversion can sometimes make details more apparent by emphasizing contrast and texture that might be less noticeable in color images. The output file format preserves the original format's quality characteristics, whether JPEG, PNG, or other supported formats."
+      },
+      {
+        "question": "Can I convert multiple images at once?",
+        "answer": "Yes, our tool supports batch processing of multiple images simultaneously. You can drag and drop several images or select multiple files through the file browser. Each image will be processed individually and converted to black and white. When the conversion is complete, you can download each image separately or download all converted images as a ZIP archive with a single click. This batch capability makes it easy to convert entire photo collections or project assets efficiently."
+      },
+      {
+        "question": "Is there a limit to the file size or number of images I can convert?",
+        "answer": "Since all processing happens directly in your browser, the limits depend primarily on your device's capabilities. Most modern devices can easily handle images up to 20MB in size. There's no arbitrary limit on the number of images you can convert, though processing many large images simultaneously may require more memory and processing power. For optimal performance, we recommend converting batches of 10-20 images at a time if you're working with very large files. The tool supports all common image formats including JPEG, PNG, WebP, and more."
+      }
+    ]
   }
 ]

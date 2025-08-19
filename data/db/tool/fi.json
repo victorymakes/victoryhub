@@ -806,5 +806,45 @@
         "answer": "Teknisesti ei, mutta käytännössä kyllä:<li>koko kasvaa ~33 %</li><li>pitkät merkkijonot hidastavat selainta</li><li>CSS data-URI:lla on pituusrajoituksia joissain selaimissa</li><li>HTML/CSS kasvaa ja hidastaa latausta</li><br/>Suositus: käytä Base64 vain pienille kuville (&lt;10KB). Suuremmat kuvat kannattaa palvella HTTP/HTTPS:n kautta."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Kuvan mustavalkomuunnin – Muunna värikuvat harmaasävyiksi",
+    "description": "Muunna värikkäät kuvat mustavalkoisiksi suoraan selaimessasi. Ei tarvetta ladata tiedostoja, alkuperäinen resoluutio ja laatu säilyvät.",
+    "category": "media",
+    "keywords": [
+      "mustavalkomuunnin",
+      "harmaasävykuvan muunnin",
+      "väri mustavalkoiseksi",
+      "kuva harmaasävyksi",
+      "monokromimuunnin",
+      "online mustavalkosuodatin",
+      "muunna kuva harmaasävyksi",
+      "mustavalkokuvan muokkain",
+      "harmaasävysuodatin",
+      "kuvan desaturointityökalu"
+    ],
+    "faq": [
+      {
+        "question": "Kuinka mustavalkomuunnin toimii?",
+        "answer": "Työkalumme toimii täysin selaimessasi. Kun valitset kuvan, se käyttää HTML5 Canvas -tekniikkaa muuntaakseen jokaisen pikselin harmaasävyksi painotetulla luminanssikaavalla (0.299R + 0.587G + 0.114B). Tämä säilyttää ihmisen silmän luonnollisen kirkkauskokemuksen ja tuottaa realistisia mustavalkoisia kuvia. Muunnos tapahtuu heti laitteellasi ilman lataamista palvelimelle, mikä takaa yksityisyyden ja nopeuden."
+      },
+      {
+        "question": "Miksi muuntaa kuvat mustavalkoisiksi?",
+        "answer": "Mustavalkoisilla kuvilla on sekä taiteellisia että käytännöllisiä etuja. Taiteellisesti ne korostavat sommittelua, tekstuuria, valoa ja kontrastia ilman värien häiriötä. Ne voivat luoda ajattoman, klassisen tunnelman tai välittää tiettyjä tunteita. Käytännöllisesti katsottuna tiedostokoko on usein pienempi, mikä sopii tulostukseen, e-kirjoihin tai tilanteisiin, joissa värejä ei tarvita. Mustavalkomuunnos voi myös parantaa huonon väribalanssin kuvia tai tehdä tekstistä helpommin luettavaa lisäämällä kontrastia."
+      },
+      {
+        "question": "Heikkeneekö kuvan laatu muunnoksessa?",
+        "answer": "Ei. Työkalumme säilyttää alkuperäisen resoluution ja laadun. Vain väritiedot poistetaan ja korvataan harmaasävyillä. Terävyys ja mitat pysyvät ennallaan. Joissakin tapauksissa yksityiskohdat jopa korostuvat kontrastin ja tekstuurin ansiosta. Tulostiedosto säilyttää alkuperäisen muodon laadun (JPEG, PNG jne.)."
+      },
+      {
+        "question": "Voinko muuntaa useita kuvia kerralla?",
+        "answer": "Kyllä, työkalu tukee erämuunnosta. Voit vetää ja pudottaa useita tiedostoja tai valita ne tiedostoselaimen kautta. Jokainen kuva muunnetaan erikseen, ja voit ladata ne yksittäin tai kaikki yhdessä ZIP-tiedostona."
+      },
+      {
+        "question": "Onko tiedostokoolla tai määrällä rajoituksia?",
+        "answer": "Koska kaikki tapahtuu selaimessa, rajoitukset riippuvat laitteestasi. Useimmat nykyaikaiset laitteet käsittelevät helposti jopa 20 Mt kuvia. Tiedostomäärälle ei ole tiukkaa rajaa, mutta monien suurten tiedostojen käsittely kerralla vaatii enemmän muistia ja prosessointitehoa. Suosittelemme käsittelemään 10–20 suurta kuvaa kerrallaan. Tuetut muodot: JPEG, PNG, WebP jne."
+      }
+    ]
   }
 ]

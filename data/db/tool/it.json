@@ -810,5 +810,45 @@
         "answer": "Tecnicamente no, ma in pratica:<li>file ~33 % più grandi</li><li>stringhe lunghe rallentano il browser</li><li>limiti sulla lunghezza delle data URI CSS</li><li>HTML/CSS più grandi rallentano il caricamento</li><br/>Raccomandazione: usare Base64 solo per piccole immagini (&lt;10KB). Per quelle grandi meglio file HTTP/HTTPS."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Convertitore immagini in bianco e nero – Trasforma foto a colori in scala di grigi",
+    "description": "Converti le tue immagini a colori in bianco e nero direttamente nel browser. Nessun upload necessario, mantiene risoluzione e qualità originali.",
+    "category": "media",
+    "keywords": [
+      "convertitore bianco e nero",
+      "convertitore immagini scala di grigi",
+      "colore in bianco e nero",
+      "immagine in scala di grigi",
+      "convertitore monocromatico",
+      "filtro online bianco e nero",
+      "converti immagine in scala di grigi",
+      "editor foto bianco e nero",
+      "filtro scala di grigi",
+      "strumento desaturazione immagine"
+    ],
+    "faq": [
+      {
+        "question": "Come funziona il convertitore di immagini in bianco e nero?",
+        "answer": "Il nostro convertitore funziona interamente nel browser. Quando selezioni un’immagine, lo strumento utilizza la tecnologia HTML5 Canvas per convertire ogni pixel in scala di grigi usando una formula di luminanza ponderata (0.299R + 0.587G + 0.114B). Questo mantiene la naturale percezione della luminosità dell’occhio umano e produce immagini in bianco e nero più realistiche. La conversione avviene istantaneamente sul tuo dispositivo, senza caricamenti su server, garantendo privacy e velocità."
+      },
+      {
+        "question": "Perché convertire le immagini in bianco e nero?",
+        "answer": "Convertire le immagini in bianco e nero ha vantaggi artistici e pratici. Artisticamente, enfatizza composizione, texture, luce e contrasto senza la distrazione del colore. Può dare uno stile classico, senza tempo o evocare particolari emozioni. Praticamente, i file in bianco e nero sono spesso più leggeri, ideali per la stampa di documenti, e-book o in casi in cui il colore non è necessario. Può anche migliorare foto con cattivo bilanciamento dei colori o rendere il testo più leggibile aumentando il contrasto."
+      },
+      {
+        "question": "La conversione in bianco e nero riduce la qualità dell’immagine?",
+        "answer": "No. Il convertitore mantiene la risoluzione e la qualità originali. Viene rimossa solo l’informazione di colore, sostituita con valori in scala di grigi. Nitidezza e dimensioni rimangono invariate. In alcuni casi i dettagli risaltano ancora di più grazie al contrasto. Il file di output mantiene le stesse caratteristiche del formato originale (JPEG, PNG, ecc.)."
+      },
+      {
+        "question": "Posso convertire più immagini contemporaneamente?",
+        "answer": "Sì, lo strumento supporta l’elaborazione batch. Puoi trascinare e rilasciare più file o selezionarli dal file browser. Ogni immagine viene elaborata singolarmente e puoi scaricarle separatamente o tutte insieme in un file ZIP."
+      },
+      {
+        "question": "Ci sono limiti alla dimensione o al numero di immagini?",
+        "answer": "Poiché l’elaborazione avviene nel browser, i limiti dipendono dal tuo dispositivo. La maggior parte dei dispositivi moderni gestisce facilmente immagini fino a 20 MB. Non ci sono limiti fissi sul numero di file, ma molte immagini grandi contemporaneamente richiedono più memoria e potenza di calcolo. Per migliori prestazioni, consigliamo di elaborare 10–20 immagini grandi alla volta. Formati supportati: JPEG, PNG, WebP e altri."
+      }
+    ]
   }
 ]

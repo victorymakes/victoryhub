@@ -8,7 +8,7 @@ export const formatBytes = (bytes: number) => {
 
 // Get MIME type for output format
 export const getImageMimeType = (format: string): string => {
-    switch (format) {
+    switch (format.toLowerCase()) {
         case "jpeg":
             return "image/jpeg";
         case "png":
@@ -22,7 +22,7 @@ export const getImageMimeType = (format: string): string => {
 
 // Get file extension for output format
 export const getImageFileExtension = (format: string): string => {
-    switch (format) {
+    switch (format.toLowerCase()) {
         case "jpeg":
             return "jpg";
         case "png":

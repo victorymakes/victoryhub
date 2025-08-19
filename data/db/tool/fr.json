@@ -810,5 +810,45 @@
         "answer": "Techniquement non, mais en pratique :<li>taille augmentée (~33 %)</li><li>chaînes trop longues peuvent ralentir le navigateur</li><li>certaines limites de longueur pour les data URI CSS</li><li>HTML/CSS gonflés ralentissent le chargement</li><br/>Bonne pratique : utiliser Base64 pour les petites images (&lt;10KB). Pour des images plus grandes, préférez les fichiers traditionnels HTTP/HTTPS."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Convertisseur d’images en noir et blanc – Transformer vos images en niveaux de gris",
+    "description": "Convertissez vos images colorées en noir et blanc directement dans votre navigateur. Aucun téléchargement requis, la résolution et la qualité d’origine sont conservées.",
+    "category": "media",
+    "keywords": [
+      "convertisseur noir et blanc",
+      "convertisseur d’images en niveaux de gris",
+      "couleur en noir et blanc",
+      "image en niveaux de gris",
+      "convertisseur monochrome",
+      "filtre noir et blanc en ligne",
+      "convertir image en niveaux de gris",
+      "éditeur de photo noir et blanc",
+      "filtre niveaux de gris",
+      "outil de désaturation d’image"
+    ],
+    "faq": [
+      {
+        "question": "Comment fonctionne le convertisseur d’images en noir et blanc ?",
+        "answer": "Notre convertisseur fonctionne entièrement dans votre navigateur. Lorsque vous importez une image, l’outil utilise la technologie HTML5 Canvas pour transformer chaque pixel en niveaux de gris selon une formule de luminance pondérée (0.299R + 0.587G + 0.114B). Cette méthode conserve la perception naturelle de la luminosité et produit des images en noir et blanc réalistes. La conversion est instantanée et réalisée uniquement sur votre appareil, sans envoi vers un serveur, garantissant confidentialité et rapidité."
+      },
+      {
+        "question": "Pourquoi convertir des images en noir et blanc ?",
+        "answer": "La conversion en noir et blanc présente des avantages artistiques et pratiques. Artistiquement, elle met en valeur la composition, les textures, la lumière et les contrastes sans l’interférence des couleurs. Elle peut donner un style intemporel ou classique, voire susciter des émotions spécifiques. Pratiquement, les images en noir et blanc ont souvent une taille de fichier réduite, ce qui les rend idéales pour l’impression de documents, la création d’e-books ou lorsqu’il n’est pas nécessaire d’utiliser la couleur. Cela permet aussi d’améliorer la lisibilité d’images à mauvaise balance des couleurs."
+      },
+      {
+        "question": "La conversion en noir et blanc réduit-elle la qualité ?",
+        "answer": "Non. Notre outil conserve la résolution et la qualité d’origine. Seules les informations de couleur sont remplacées par des valeurs de gris appropriées. La netteté et les dimensions restent identiques. Parfois, la conversion met même davantage en valeur les détails grâce à l’accentuation des contrastes et des textures. Le format de sortie conserve les caractéristiques du format d’origine (JPEG, PNG, etc.)."
+      },
+      {
+        "question": "Puis-je convertir plusieurs images en même temps ?",
+        "answer": "Oui, notre outil prend en charge le traitement par lots. Vous pouvez glisser-déposer plusieurs fichiers ou les sélectionner via le navigateur de fichiers. Chaque image est convertie individuellement et vous pouvez ensuite les télécharger séparément ou en un seul fichier ZIP."
+      },
+      {
+        "question": "Y a-t-il une limite de taille ou de nombre d’images ?",
+        "answer": "Comme le traitement s’effectue localement dans le navigateur, les limites dépendent principalement des capacités de votre appareil. La plupart des appareils modernes gèrent sans problème des images jusqu’à 20 Mo. Il n’y a pas de limite stricte sur le nombre d’images, mais un grand nombre de fichiers volumineux nécessitera plus de mémoire et de puissance de calcul. Pour de meilleures performances, nous conseillons de convertir 10 à 20 grandes images à la fois. L’outil prend en charge les formats courants comme JPEG, PNG, WebP, etc."
+      }
+    ]
   }
 ]

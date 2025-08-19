@@ -810,5 +810,45 @@
         "answer": "Technisch nein, praktisch ja:<li>Dateigröße steigt um ca. 33 %</li><li>Lange Strings können Browser verlangsamen</li><li>Einige Browser haben Längenbeschränkungen für CSS-Data-URIs</li><li>Große Bilder blähen HTML/CSS auf, verlangsamen Ladezeit</li><br/>Empfohlen: Base64 nur für kleine Bilder (<10KB) wie Icons oder UI-Elemente. Für größere Bilder sind klassische Dateien per HTTP/HTTPS besser geeignet."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Bild in Schwarz-Weiß-Konverter – Farbbilder in Graustufen umwandeln",
+    "description": "Wandeln Sie farbige Bilder direkt im Browser in Schwarz-Weiß um. Kein Upload erforderlich, die ursprüngliche Auflösung und Qualität bleiben erhalten.",
+    "category": "media",
+    "keywords": [
+      "Schwarz-Weiß-Konverter",
+      "Graustufenbild-Konverter",
+      "Farbe zu Schwarz-Weiß",
+      "Bild in Graustufen umwandeln",
+      "Monochrom-Konverter",
+      "Online Schwarz-Weiß-Filter",
+      "Bild in Graustufen konvertieren",
+      "Schwarz-Weiß-Fotoeditor",
+      "Graustufenfilter",
+      "Bildentsättigungs-Tool"
+    ],
+    "faq": [
+      {
+        "question": "Wie funktioniert der Schwarz-Weiß-Bildkonverter?",
+        "answer": "Unser Schwarz-Weiß-Konverter arbeitet vollständig in Ihrem Browser. Wenn Sie ein Bild hochladen, verarbeitet das Tool es mit HTML5 Canvas und wandelt jedes Pixel mithilfe einer gewichteten Luminanzformel (0.299R + 0.587G + 0.114B) in Graustufen um. Diese Methode bewahrt die natürliche Helligkeitswahrnehmung des menschlichen Auges und sorgt für natürlich aussehende Schwarz-Weiß-Bilder. Die Umwandlung erfolgt sofort auf Ihrem Gerät, ohne dass Ihre Bilder auf einen Server hochgeladen werden – für maximale Privatsphäre und schnelle Verarbeitung."
+      },
+      {
+        "question": "Warum sollte man Bilder in Schwarz-Weiß umwandeln?",
+        "answer": "Die Umwandlung in Schwarz-Weiß hat sowohl künstlerische als auch praktische Vorteile. Künstlerisch betont Schwarz-Weiß die Komposition, Texturen, Beleuchtung und Kontraste, ohne von Farben abzulenken. Es kann ein zeitloses, klassisches Aussehen schaffen oder bestimmte Stimmungen hervorrufen. Praktisch gesehen sind Schwarz-Weiß-Bilder oft kleiner und eignen sich besser für Drucke, E-Books oder Szenarien, in denen Farben nicht notwendig sind. Zudem können Bilder mit schlechter Farbbalance verbessert oder Texte durch stärkeren Kontrast besser lesbar gemacht werden."
+      },
+      {
+        "question": "Wird die Bildqualität durch die Umwandlung beeinträchtigt?",
+        "answer": "Nein. Unser Konverter behält die ursprüngliche Auflösung und Qualität bei. Es wird lediglich die Farbinformation entfernt und durch Graustufen ersetzt. Abmessungen, Auflösung und Schärfe bleiben unverändert. In vielen Fällen werden Details durch den stärkeren Kontrast und die Betonung von Texturen sogar besser sichtbar. Das Ausgabeformat behält die Qualitätsmerkmale des Originals bei, egal ob JPEG, PNG oder ein anderes Format."
+      },
+      {
+        "question": "Kann ich mehrere Bilder gleichzeitig konvertieren?",
+        "answer": "Ja, unser Tool unterstützt die Stapelverarbeitung mehrerer Bilder. Sie können mehrere Dateien per Drag & Drop hinzufügen oder über den Dateibrowser auswählen. Jedes Bild wird einzeln konvertiert, und Sie können sie danach einzeln herunterladen oder gesammelt als ZIP-Archiv speichern."
+      },
+      {
+        "question": "Gibt es eine Begrenzung für Dateigröße oder Anzahl der Bilder?",
+        "answer": "Da die Verarbeitung direkt in Ihrem Browser erfolgt, hängt die Grenze hauptsächlich von Ihrem Gerät ab. Die meisten modernen Geräte können problemlos Bilder bis zu 20 MB verarbeiten. Es gibt keine feste Begrenzung der Anzahl, aber sehr große Mengen an großen Bildern erfordern mehr Speicher und Rechenleistung. Für optimale Leistung empfehlen wir, 10–20 große Bilder gleichzeitig zu konvertieren. Unterstützt werden alle gängigen Formate wie JPEG, PNG und WebP."
+      }
+    ]
   }
 ]

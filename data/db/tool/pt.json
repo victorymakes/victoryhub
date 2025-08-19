@@ -810,5 +810,45 @@
         "answer": "Tecnicamente não, mas na prática:<li>tamanho ~33 % maior</li><li>strings longas podem deixar o navegador lento</li><li>limites de comprimento em CSS data URI</li><li>HTML/CSS maiores atrasam carregamento</li><br/>Recomendação: usar Base64 apenas em imagens pequenas (&lt;10KB). Para grandes, melhor arquivos HTTP/HTTPS."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Conversor de imagens para preto e branco – Converter fotos coloridas em escala de cinza",
+    "description": "Converta suas imagens coloridas para preto e branco diretamente no navegador. Nenhum upload necessário, mantendo a resolução e qualidade originais.",
+    "category": "media",
+    "keywords": [
+      "conversor preto e branco",
+      "conversor de imagem para escala de cinza",
+      "cor para preto e branco",
+      "imagem para escala de cinza",
+      "conversor monocromático",
+      "filtro online preto e branco",
+      "converter imagem para escala de cinza",
+      "editor de fotos preto e branco",
+      "filtro de escala de cinza",
+      "ferramenta de dessaturação de imagem"
+    ],
+    "faq": [
+      {
+        "question": "Como funciona o conversor de imagens para preto e branco?",
+        "answer": "Nosso conversor funciona totalmente no navegador. Quando você seleciona uma imagem, a ferramenta usa a tecnologia HTML5 Canvas para converter cada pixel em escala de cinza usando a fórmula de luminância ponderada (0.299R + 0.587G + 0.114B). Isso mantém a percepção natural de brilho do olho humano, produzindo imagens mais realistas. Todo o processo acontece no seu dispositivo, sem upload para servidores, garantindo privacidade e rapidez."
+      },
+      {
+        "question": "Por que converter imagens para preto e branco?",
+        "answer": "Converter imagens para preto e branco tem vantagens artísticas e práticas. Artisticamente, enfatiza composição, textura, luz e contraste sem a distração das cores. Pode criar um estilo clássico, atemporal ou transmitir sentimentos específicos. Na prática, arquivos em preto e branco geralmente têm tamanho menor, ideais para impressão de documentos, e-books ou quando a cor não é necessária. Também pode melhorar fotos com balanço de cores ruim ou aumentar a legibilidade do texto com mais contraste."
+      },
+      {
+        "question": "A conversão para preto e branco reduz a qualidade da imagem?",
+        "answer": "Não. O conversor mantém a resolução e qualidade originais. Apenas a informação de cor é removida e substituída por tons de cinza. A nitidez e dimensões permanecem inalteradas. Em alguns casos, os detalhes até se destacam mais graças ao contraste. O arquivo de saída mantém as mesmas características do formato original (JPEG, PNG, etc.)."
+      },
+      {
+        "question": "Posso converter várias imagens de uma vez?",
+        "answer": "Sim, a ferramenta suporta processamento em lote. Você pode arrastar e soltar várias imagens ou selecioná-las pelo explorador de arquivos. Cada imagem é convertida separadamente e pode ser baixada individualmente ou todas juntas em um arquivo ZIP."
+      },
+      {
+        "question": "Existe limite para o tamanho ou quantidade de imagens?",
+        "answer": "Como o processamento é feito no navegador, o limite depende do seu dispositivo. A maioria dos dispositivos modernos lida facilmente com imagens de até 20 MB. Não há limite fixo para a quantidade, mas muitas imagens grandes exigem mais memória e processamento. Para melhor desempenho, recomendamos converter 10–20 imagens grandes por vez. Formatos suportados: JPEG, PNG, WebP e outros."
+      }
+    ]
   }
 ]

@@ -805,5 +805,45 @@
         "answer": "Teknisk nej, men praktisk ja:<li>~33 % større filer</li><li>lange strenge kan gøre browseren langsom</li><li>CSS data-URI har længdebegrænsninger i visse browsere</li><li>større HTML/CSS gør sider langsommere</li><br/>Anbefaling: Brug Base64 kun til små billeder (&lt;10KB). Større billeder bør serveres via HTTP/HTTPS."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Billed til sort-hvid konverter – Konverter farvebilleder til gråtoner",
+    "description": "Konverter farverige billeder til sort-hvid direkte i din browser. Ingen upload nødvendig, original opløsning og kvalitet bevares.",
+    "category": "media",
+    "keywords": [
+      "sort-hvid konverter",
+      "gråtonebillede konverter",
+      "farve til sort-hvid",
+      "billede til gråtoner",
+      "monokrom konverter",
+      "online sort-hvid filter",
+      "konverter billede til gråtoner",
+      "sort-hvid fotoeditor",
+      "gråtoner filter",
+      "billed afmætning værktøj"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan fungerer sort-hvid konverteren?",
+        "answer": "Vores værktøj fungerer helt i din browser. Når du vælger et billede, bruges HTML5 Canvas til at konvertere hver pixel til gråtoner ved hjælp af en vægtet luminansformel (0.299R + 0.587G + 0.114B). Denne metode bevarer øjets naturlige opfattelse af lysstyrke og giver realistiske sort-hvide billeder. Konverteringen sker øjeblikkeligt på din enhed uden upload, hvilket sikrer privatliv og hurtig behandling."
+      },
+      {
+        "question": "Hvorfor konvertere billeder til sort-hvid?",
+        "answer": "Sort-hvide billeder har både kunstneriske og praktiske fordele. Kunstnerisk fremhæver de komposition, tekstur, lys og kontrast uden farvernes forstyrrelse. De kan skabe et tidløst, klassisk udseende eller vække bestemte stemninger. Praktisk set er filstørrelsen ofte mindre, hvilket gør dem ideelle til udskrivning, e-bøger eller når farver ikke er nødvendige. De kan også forbedre billeder med dårlig farvebalance eller gøre tekst mere læsbar gennem højere kontrast."
+      },
+      {
+        "question": "Reducerer konvertering kvaliteten?",
+        "answer": "Nej. Vores konverter bevarer opløsning og kvalitet. Kun farveinformationen fjernes og erstattes med gråtoner. Skarphed og dimensioner forbliver uændrede. I nogle tilfælde bliver detaljer endda tydeligere med mere kontrast. Outputformatet bevarer de samme kvaliteter som originalen (JPEG, PNG osv.)."
+      },
+      {
+        "question": "Kan jeg konvertere flere billeder på én gang?",
+        "answer": "Ja, værktøjet understøtter batchbehandling. Du kan trække og slippe flere filer eller vælge dem via filbrowseren. Hvert billede konverteres separat, og du kan hente dem enkeltvis eller alle samlet i en ZIP-fil."
+      },
+      {
+        "question": "Er der begrænsninger på filstørrelse eller antal?",
+        "answer": "Da alt sker i browseren, afhænger grænserne af din enhed. De fleste moderne enheder kan håndtere billeder op til 20 MB. Der er ingen fast grænse for antallet, men mange store billeder på én gang kræver mere hukommelse og processorkraft. For bedst ydeevne anbefaler vi at konvertere 10–20 store billeder ad gangen. Understøttede formater: JPEG, PNG, WebP osv."
+      }
+    ]
   }
 ]

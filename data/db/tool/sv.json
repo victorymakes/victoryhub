@@ -805,5 +805,45 @@
         "answer": "Tekniskt sett nej, men praktiskt:<li>filer blir ~33 % större</li><li>långa strängar kan göra webbläsaren långsam</li><li>begränsningar för CSS data-URI-längd i vissa webbläsare</li><li>större HTML/CSS ger långsammare laddning</li><br/>Bäst för små bilder (&lt;10KB). Stora bilder bör servas via HTTP/HTTPS."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Bild till svartvit konverterare – Konvertera färgbilder till gråskala",
+    "description": "Konvertera färgglada bilder till svartvitt direkt i din webbläsare. Ingen uppladdning behövs, originalupplösning och kvalitet bevaras.",
+    "category": "media",
+    "keywords": [
+      "svartvit konverterare",
+      "gråskale bildkonverterare",
+      "färg till svartvit",
+      "bild till gråskala",
+      "monokrom konverterare",
+      "online svartvit filter",
+      "konvertera bild till gråskala",
+      "svartvit fotoeditor",
+      "gråskale filter",
+      "avmättnadsverktyg för bilder"
+    ],
+    "faq": [
+      {
+        "question": "Hur fungerar svartvit-konverteraren?",
+        "answer": "Vårt verktyg fungerar helt i din webbläsare. När du väljer en bild används HTML5 Canvas för att omvandla varje pixel till gråskala med en viktad luminansformel (0.299R + 0.587G + 0.114B). Detta bevarar ögats naturliga ljusuppfattning och ger mer realistiska svartvita bilder. Konverteringen sker direkt på din enhet utan uppladdning, vilket ger integritet och snabb behandling."
+      },
+      {
+        "question": "Varför konvertera bilder till svartvitt?",
+        "answer": "Svartvita bilder har både konstnärliga och praktiska fördelar. Konstnärligt framhäver de komposition, texturer, ljus och kontrast utan färgernas distraktion. De kan ge en tidlös, klassisk känsla eller skapa särskilda stämningar. Praktiskt blir filstorleken ofta mindre, perfekt för utskrift, e-böcker eller när färg inte behövs. De kan också förbättra bilder med dålig färgbalans eller göra text mer läsbar genom högre kontrast."
+      },
+      {
+        "question": "Försämras bildkvaliteten vid konvertering?",
+        "answer": "Nej. Vår konverterare bevarar upplösning och kvalitet. Endast färginformation tas bort och ersätts med gråskalor. Skärpa och dimensioner förblir oförändrade. I vissa fall blir detaljer tydligare tack vare högre kontrast. Utdataformatet behåller originalfilens egenskaper (JPEG, PNG, etc.)."
+      },
+      {
+        "question": "Kan jag konvertera flera bilder samtidigt?",
+        "answer": "Ja, verktyget stöder batchbearbetning. Du kan dra och släppa flera filer eller välja dem via filbläddraren. Varje bild konverteras separat och kan laddas ner individuellt eller alla tillsammans i en ZIP-fil."
+      },
+      {
+        "question": "Finns det begränsningar för filstorlek eller antal?",
+        "answer": "Eftersom allt sker i webbläsaren beror gränserna på din enhet. De flesta moderna enheter hanterar bilder upp till 20 MB utan problem. Det finns ingen strikt gräns för antalet, men många stora filer på en gång kräver mer minne och processorkraft. För bästa prestanda rekommenderar vi 10–20 stora bilder åt gången. Stödda format inkluderar JPEG, PNG, WebP m.fl."
+      }
+    ]
   }
 ]

@@ -660,6 +660,7 @@
   },
   "ExifViewer": {
     "uploadImage": "Upload Image",
+    "chooseFiles": "Choose Files",
     "dragAndDropImage": "Drag and drop image here or click to browse",
     "viewExif": "View EXIF Data",
     "removeExif": "Remove EXIF",
@@ -744,6 +745,29 @@
       "notAnImage": "The selected file is not an image.",
       "fileTooLarge": "File is too large. Maximum size is 5MB.",
       "readingFileFailed": "Failed to read the file. Please try again."
+    }
+  },
+  "ImageToBlackWhiteConverter": {
+    "uploadImage": "Upload Image",
+    "dragDropText": "Drag and drop images here or click to browse",
+    "chooseFiles": "Choose Files",
+    "clearAll": "Clear All",
+    "processing": "Processing images...",
+    "conversionSummary": "Conversion Summary",
+    "originalSize": "Original Size",
+    "convertedSize": "Converted Size",
+    "savedSize": "Saved Size",
+    "ready": "Ready",
+    "download": "Download",
+    "downloadAll": "Download All",
+    "images": "images",
+    "preview": "Image Preview",
+    "previewTip": "Preview images by clicking the thumbnails.",
+    "errors": {
+      "canvasContextFailed": "Failed to get canvas context.",
+      "conversionFailed": "Conversion failed. Try a different image.",
+      "imageLoadFailed": "Image load failed. File may be corrupted.",
+      "fileReadFailed": "File read failed. File may be corrupted."
     }
   }
 }
