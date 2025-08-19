@@ -7,6 +7,7 @@ import URLEncoderDecoder from "./url-encoder-decoder";
 import Base64EncoderDecoder from "./base64-encoder-decoder";
 import ImageCompressor from "./image-compressor";
 import ImageConverter from "./image-converter";
+import ImageToBlackWhiteConverter from "./image-to-bw-converter";
 import ExifViewer from "./exif-viewer";
 import QRCodeGenerator from "./qrcode-generator";
 import CronExpressionGenerator from "./cron-expression-generator";
@@ -70,6 +71,8 @@ export const ToolComponent: FC<ToolComponentProps> = ({
             return <CsvJsonConverter />;
         case "base64-image-converter":
             return <Base64ImageConverter />;
+        case "image-to-bw-converter":
+            return <ImageToBlackWhiteConverter />;
         default:
             return (
                 <p className="text-muted-foreground text-sm">

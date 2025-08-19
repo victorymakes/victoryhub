@@ -810,5 +810,45 @@
         "answer": "No técnico, pero sí práctico:<li>aumento del tamaño (~33 %)</li><li>cadenas largas ralentizan el navegador</li><li>limitaciones de longitud en URIs CSS en algunos navegadores</li><li>HTML/CSS más pesados ralentizan la carga</li><br/>Recomendación: solo para imágenes pequeñas (&lt;10KB). Para imágenes grandes, mejor archivos HTTP/HTTPS."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Convertidor de imágenes a blanco y negro – Convierte fotos a escala de grises",
+    "description": "Convierte tus imágenes en color a blanco y negro directamente en el navegador. No necesitas subir archivos, se conserva la resolución y calidad original.",
+    "category": "media",
+    "keywords": [
+      "convertidor blanco y negro",
+      "convertidor de imágenes a escala de grises",
+      "color a blanco y negro",
+      "imagen a escala de grises",
+      "convertidor monocromo",
+      "filtro blanco y negro en línea",
+      "convertir imagen a escala de grises",
+      "editor de fotos en blanco y negro",
+      "filtro escala de grises",
+      "herramienta de desaturación de imágenes"
+    ],
+    "faq": [
+      {
+        "question": "¿Cómo funciona el convertidor de imágenes en blanco y negro?",
+        "answer": "Nuestro convertidor funciona completamente en tu navegador. Cuando seleccionas una imagen, la herramienta utiliza la tecnología HTML5 Canvas para convertir cada píxel a escala de grises usando una fórmula de luminancia ponderada (0.299R + 0.587G + 0.114B). Esto conserva la percepción natural de la luminosidad del ojo humano, produciendo imágenes más realistas. Todo el proceso ocurre en tu dispositivo sin subir nada a un servidor, garantizando privacidad y rapidez."
+      },
+      {
+        "question": "¿Por qué convertir imágenes a blanco y negro?",
+        "answer": "Convertir imágenes a blanco y negro tiene beneficios artísticos y prácticos. Artísticamente, resalta la composición, texturas, iluminación y contraste sin la distracción del color. Puede crear un estilo clásico, atemporal o transmitir emociones específicas. Prácticamente, los archivos en blanco y negro suelen ser más pequeños, ideales para imprimir documentos, crear libros electrónicos o cuando el color no es necesario. También ayuda a rescatar fotos con mal balance de color o mejorar la legibilidad del texto mediante mayor contraste."
+      },
+      {
+        "question": "¿La conversión a blanco y negro reduce la calidad de la imagen?",
+        "answer": "No. Nuestro convertidor mantiene la resolución y calidad original. Solo se eliminan los datos de color y se sustituyen por valores de escala de grises. El tamaño, resolución y nitidez se mantienen. A veces incluso mejora los detalles al resaltar el contraste y la textura. El archivo de salida conserva la calidad del formato original, ya sea JPEG, PNG u otros."
+      },
+      {
+        "question": "¿Puedo convertir varias imágenes a la vez?",
+        "answer": "Sí, la herramienta permite el procesamiento por lotes. Puedes arrastrar y soltar varias imágenes o seleccionarlas desde el explorador de archivos. Cada imagen se convierte individualmente y luego puedes descargarlas por separado o todas juntas en un archivo ZIP."
+      },
+      {
+        "question": "¿Hay límite en el tamaño o la cantidad de imágenes?",
+        "answer": "El procesamiento se realiza en el navegador, por lo que depende de tu dispositivo. La mayoría de dispositivos modernos soportan imágenes de hasta 20 MB. No hay límite en el número de archivos, pero muchas imágenes grandes a la vez requieren más memoria y potencia. Para un rendimiento óptimo, recomendamos procesar lotes de 10–20 imágenes grandes. Se admiten formatos comunes como JPEG, PNG, WebP, etc."
+      }
+    ]
   }
 ]

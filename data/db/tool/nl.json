@@ -806,5 +806,45 @@
         "answer": "Technisch niet, maar praktisch wel:<li>bestand ~33% groter</li><li>lange strings vertragen browsers</li><li>limieten op lengte van CSS data-URI’s</li><li>grotere HTML/CSS-bestanden vertragen de laadtijd</li><br/>Beste gebruik: kleine afbeeldingen (&lt;10KB). Voor grote bestanden zijn traditionele HTTP/HTTPS-bestanden beter."
       }
     ]
+  },
+  {
+    "slug": "image-to-bw-converter",
+    "name": "Afbeelding naar zwart-wit converter – Kleur naar grijstinten omzetten",
+    "description": "Zet kleurrijke afbeeldingen direct in de browser om naar zwart-wit. Geen upload nodig, behoudt de originele resolutie en kwaliteit.",
+    "category": "media",
+    "keywords": [
+      "zwart-wit converter",
+      "grijstinten afbeelding converter",
+      "kleur naar zwart-wit",
+      "afbeelding naar grijstinten",
+      "monochrome converter",
+      "online zwart-wit filter",
+      "afbeelding naar grijstinten converteren",
+      "zwart-wit foto-editor",
+      "grijstinten filter",
+      "afbeelding desaturatie tool"
+    ],
+    "faq": [
+      {
+        "question": "Hoe werkt de zwart-wit converter?",
+        "answer": "Onze converter werkt volledig in uw browser. Bij het selecteren van een afbeelding gebruikt de tool HTML5 Canvas om elke pixel om te zetten naar grijstinten met behulp van een gewogen luminantieformule (0.299R + 0.587G + 0.114B). Deze methode behoudt de natuurlijke helderheidsperceptie van het menselijk oog en levert realistisch ogende zwart-wit afbeeldingen. De conversie gebeurt direct op uw apparaat, zonder upload naar een server, wat privacy en snelheid garandeert."
+      },
+      {
+        "question": "Waarom afbeeldingen omzetten naar zwart-wit?",
+        "answer": "Zwart-wit conversie heeft zowel artistieke als praktische voordelen. Artistiek gezien benadrukt het compositie, textuur, belichting en contrast zonder afleiding door kleur. Het kan een tijdloze, klassieke uitstraling geven of bepaalde stemmingen oproepen. Praktisch gezien zijn zwart-wit bestanden vaak kleiner en dus ideaal voor printen, e-books of situaties waar kleur niet nodig is. Het kan ook helpen afbeeldingen met slechte kleur balans te verbeteren of tekst leesbaarder te maken."
+      },
+      {
+        "question": "Vermindert de kwaliteit bij conversie naar zwart-wit?",
+        "answer": "Nee. Onze converter behoudt resolutie en kwaliteit. Alleen de kleurinformatie wordt vervangen door grijstinten. Afmetingen en scherpte blijven gelijk. In sommige gevallen worden details zelfs beter zichtbaar door versterkt contrast. Het uitvoerformaat behoudt de kwaliteitskenmerken van het originele bestand (JPEG, PNG enz.)."
+      },
+      {
+        "question": "Kan ik meerdere afbeeldingen tegelijk converteren?",
+        "answer": "Ja, de tool ondersteunt batchverwerking. U kunt meerdere afbeeldingen slepen of selecteren en deze worden afzonderlijk geconverteerd. Daarna kunt u ze individueel of samen in een ZIP-bestand downloaden."
+      },
+      {
+        "question": "Zijn er beperkingen op bestandsgrootte of aantal?",
+        "answer": "Omdat de verwerking lokaal in de browser gebeurt, hangt het af van uw apparaat. Moderne apparaten verwerken moeiteloos afbeeldingen tot 20 MB. Er is geen harde limiet, maar grote hoeveelheden grote bestanden vereisen meer geheugen en rekenkracht. Voor optimale prestaties raden we aan 10–20 grote afbeeldingen per keer te verwerken. Ondersteunde formaten: JPEG, PNG, WebP en meer."
+      }
+    ]
   }
 ]
