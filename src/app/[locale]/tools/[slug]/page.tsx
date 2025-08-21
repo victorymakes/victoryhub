@@ -4,7 +4,7 @@ import { ToolComponent } from "@/components/tool/tool";
 import Container from "@/components/common/container";
 import Share from "@/components/common/share";
 import { FAQSection } from "@/components/tool/faq-section";
-import { getTool } from "@/service/tool-service";
+import { getRelatedTools, getTool } from "@/service/tool-service";
 import {
     config,
     getLocalizedUrls,
@@ -13,6 +13,7 @@ import {
 } from "@/lib/config";
 import { getTranslations } from "next-intl/server";
 import { ToolDetailJsonLd } from "@/components/seo/page-json-ld";
+import ToolGrid from "@/components/tool/tool-grid";
 
 interface ToolPageProps {
     params: Promise<{
@@ -68,6 +69,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
     const t = await getTranslations("ToolDetail");
     const tTools = await getTranslations("Tools");
     const url = getLocalizedUrl(locale, `/tools/${slug}`);
+    const relatedTools = await getRelatedTools(tool, locale);
     return (
         <>
             {/* JSON-LD structured data */}
@@ -97,8 +99,9 @@ export default async function ToolPage({ params }: ToolPageProps) {
             />
 
             <div className="bg-background">
-                <Container className="py-16">
-                    <div className="flex items-start justify-between mb-6">
+                <Container className="py-16 space-y-8">
+                    {/* Header Section */}
+                    <div className="flex items-start justify-between">
                         <div className="flex-1">
                             <h1 className="text-2xl font-bold mb-2">
                                 {tool.name}
@@ -122,6 +125,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
                         </div>
                     </div>
 
+                    {/* Tool Section */}
                     <ToolComponent
                         id={slug}
                         underConstructionMessage={t("toolUnderConstruction")}
@@ -129,6 +133,19 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
                     {/* FAQ Section */}
                     <FAQSection faqItems={tool.faq} title={t("faq")} />
+
+                    {/* Related Tools Section */}
+                    {relatedTools && relatedTools.length > 0 && (
+                        <div className="space-y-6">
+                            <h2 className="text-xl font-semibold">
+                                {t("relatedTools")}
+                            </h2>
+                            <ToolGrid
+                                tools={relatedTools}
+                                showCategory={false}
+                            />
+                        </div>
+                    )}
                 </Container>
             </div>
         </>

@@ -85,3 +85,14 @@ export const getTool = async (
     const tools = await getTools(locale);
     return tools.find((tool) => tool.slug === slug) || null;
 };
+
+export const getRelatedTools = async (
+    tool: Tool,
+    locale: string = "en",
+): Promise<Tool[]> => {
+    let tools = await getTools(locale);
+    tools = tools.filter(
+        (t) => t.category.slug === tool.category.slug && t.slug !== tool.slug,
+    );
+    return tools.sort(() => Math.random() - 0.5).slice(0, 3);
+};

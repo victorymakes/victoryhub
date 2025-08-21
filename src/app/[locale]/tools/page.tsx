@@ -11,6 +11,8 @@ import {
     generateTitle,
 } from "@/lib/config";
 import ToolGrid from "@/components/tool/tool-grid";
+import { Link } from "@/i18n/navigation";
+import { Button } from "@/components/ui/button";
 
 interface ToolsPageProps {
     params: Promise<{
@@ -94,13 +96,36 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
                 inLanguage={locale}
             />
             <div className="bg-background">
-                <Container className="py-16">
-                    {/* Header */}
-                    <div className="mb-8">
-                        <h1 className="text-3xl font-bold text-foreground mb-4">
+                <Container className="py-16 space-y-12">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold text-foreground sm:text-6xl">
                             {t("title")}
                         </h1>
-                        <p className="text-muted-foreground">{t("subtitle")}</p>
+                        <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+                            {t("subtitle")}
+                        </p>
+                    </div>
+
+                    {/* Categories */}
+                    <div className="flex flex-wrap gap-2">
+                        {categories.map((category) => (
+                            <Link
+                                key={category.slug}
+                                href={`#${category.slug}`}
+                                className="inline-block"
+                            >
+                                <Button
+                                    variant="outline"
+                                    className="inline-flex items-center gap-1 rounded-full text-xs"
+                                >
+                                    <DynamicIcon
+                                        name={category.icon}
+                                        className="w-4 h-4"
+                                    />
+                                    {category.name}
+                                </Button>
+                            </Link>
+                        ))}
                     </div>
 
                     {/* Tools by Category */}
