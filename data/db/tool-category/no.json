@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Sikkerhet",
-        "description": "Sikkerhets- og personvernverktøy som passordgenerator og IP-sjekker",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Personvern og Sikkerhet",
+        "description": "Inspiser, rens og del trygt — personvernsverktøy for filer, lenker og tekst.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

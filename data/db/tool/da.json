@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "Hvad er min IP – Tjek din offentlige IP-adresse og placering",
     "description": "Se øjeblikkeligt din offentlige IPv4/IPv6-adresse, geolokation, internetudbyder og forbindelsesdetaljer. Nyttigt til netværksfejlfinding og VPN-verifikation.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ip-adresse tjekker",
       "find min ip",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "Adgangskodegenerator – Opret stærke og sikre adgangskoder online",
     "description": "Generer kryptografisk sikre adgangskoder med tilpasselig længde og tegnsæt. Opret stærke og tilfældige adgangskoder for maksimal kontosikkerhed.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "adgangskodegenerator",
       "sikker adgangskode",
@@ -690,7 +690,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Renser – Vis og fjern billedmetadata",
     "description": "Vis og fjern EXIF-metadata fra dine billeder for at beskytte dit privatliv. Behandlingen sker lokalt uden upload til server.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif viewer",
       "exif renser",

@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Sécurité",
-        "description": "Outils de sécurité et de confidentialité comme générateur de mot de passe et vérificateur d'IP",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Confidentialité & Sécurité",
+        "description": "Inspecter, assainir et partager en toute sécurité — outils de confidentialité pour fichiers, liens et textes.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

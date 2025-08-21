@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Sicherheit",
-        "description": "Sicherheits- und Datenschutztools wie Passwortgenerator und IP-Prüfer",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Datenschutz & Sicherheit",
+        "description": "Prüfen, bereinigen und sicher teilen — Datenschutz-Werkzeuge für Dateien, Links und Texte.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

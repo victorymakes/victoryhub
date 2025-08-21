@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "Cuál es mi IP – Verificar dirección IP pública y ubicación",
     "description": "Visualiza instantáneamente tu dirección IPv4/IPv6 pública, geolocalización, ISP y detalles de conexión. Útil para solución de problemas de red y verificación de VPN.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "verificador de dirección ip",
       "encontrar mi ip",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "Generador de Contraseñas – Crear contraseñas fuertes y seguras en línea",
     "description": "Genera contraseñas criptográficamente seguras con longitud y conjuntos de caracteres personalizables. Crea contraseñas fuertes y aleatorias para máxima seguridad de cuentas.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "generador de contraseñas",
       "contraseña segura",
@@ -695,7 +695,7 @@
     "slug": "exif-viewer",
     "name": "Visor/Limpiador EXIF – Ver y eliminar metadatos de imágenes",
     "description": "Vea y elimine los metadatos EXIF de sus imágenes para proteger su privacidad. Procesamiento local sin subir a ningún servidor.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "visor exif",
       "limpiador exif",

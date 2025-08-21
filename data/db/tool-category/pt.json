@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Segurança",
-        "description": "Ferramentas de segurança e privacidade como gerador de senhas e verificador de IP",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Privacidade & Segurança",
+        "description": "Inspecione, higienize e compartilhe com segurança — utilitários de privacidade para arquivos, links e texto.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

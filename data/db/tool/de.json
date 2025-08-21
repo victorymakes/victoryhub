@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "Was ist meine IP – Öffentliche IP-Adresse & Standort prüfen",
     "description": "Sehen Sie sofort Ihre öffentliche IPv4/IPv6-Adresse, Geolokalisierung, ISP und Verbindungsdetails. Nützlich für Netzwerk-Fehlerbehebung und VPN-Überprüfung.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ip-adresse prüfer",
       "meine ip finden",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "Passwort-Generator – Starke, sichere Passwörter online erstellen",
     "description": "Generieren Sie kryptografisch sichere Passwörter mit anpassbarer Länge und Zeichensätzen. Erstellen Sie starke, zufällige Passwörter für maximale Kontosicherheit.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "passwort-generator",
       "sicheres passwort",
@@ -695,7 +695,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Cleaner – Bildmetadaten anzeigen und entfernen",
     "description": "Zeigen Sie EXIF-Metadaten Ihrer Bilder an und entfernen Sie diese, um Ihre Privatsphäre zu schützen. Die Verarbeitung erfolgt lokal ohne Hochladen auf einen Server.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif viewer",
       "exif cleaner",

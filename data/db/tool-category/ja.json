@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "セキュリティ",
-        "description": "パスワード生成器やIPチェッカーなどのセキュリティとプライバシーツール",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "プライバシーと安全",
+        "description": "検査、サニタイズ、安全に共有 — ファイル、リンク、テキストのためのプライバシー ユーティリティ。",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

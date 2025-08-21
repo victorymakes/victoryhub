@@ -2,31 +2,31 @@
     {
         "slug": "",
         "name": "All Tools",
-        "description": "View all available tools across all categories",
+        "description": "View all available tools across all categories.",
         "icon": "grid"
     },
     {
         "slug": "development",
         "name": "Development",
-        "description": "Developer utilities like UUID generator, Timestamp Convertor, URL encoder/decoder and more",
+        "description": "Developer utilities like UUID generator, Timestamp Convertor, URL encoder/decoder and more.",
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Security",
-        "description": "Security and privacy tools like Password Generator and IP checker",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Privacy & Safety",
+        "description": "Inspect, sanitize, and share safely — privacy utilities for files, links, and text.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",
         "name": "Media & Image",
-        "description": "Tools for image, media, and file processing",
+        "description": "Tools for image, media, and file processing.",
         "icon": "image"
     },
     {
         "slug": "utilities",
         "name": "Utilities",
-        "description": "Everyday tools and calculators for productivity and daily use",
+        "description": "Everyday tools and calculators for productivity and daily use.",
         "icon": "activity"
     }
 ]
