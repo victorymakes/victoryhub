@@ -101,8 +101,8 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <div className="bg-background">
                 <Container className="py-16 space-y-8">
                     {/* Header Section */}
-                    <div className="flex items-start justify-between">
-                        <div className="flex-1">
+                    <div className="w-full flex flex-col items-end sm:flex-row sm:items-center justify-between">
+                        <div className="flex-1 w-full">
                             <h1 className="text-2xl font-bold mb-2">
                                 {tool.name}
                             </h1>
@@ -110,7 +110,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
                                 {tool.description}
                             </p>
                         </div>
-                        <div className="ml-4 flex-shrink-0">
+                        <div className="mt-4 sm:mt-0 sm:w-auto flex-shrink-0">
                             <Share
                                 url={url}
                                 title={`${tool.name} - ${config.siteName}`}
