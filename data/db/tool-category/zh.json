@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "安全",
-        "description": "密码生成器和 IP 检查器等安全和隐私工具",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "隐私与安全",
+        "description": "检查、清理并安全分享 —— 文件、链接和文本的隐私工具。",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

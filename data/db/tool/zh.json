@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "我的IP地址 – 查看公共IP地址和位置信息",
     "description": "即时查看您的公共IPv4/IPv6地址、地理位置、ISP和连接详情。对网络故障排除和VPN验证非常有用。",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ip地址查询",
       "公共ip",
@@ -161,7 +161,7 @@
     "slug": "password-generator",
     "name": "密码生成器 – 在线创建强大安全的密码",
     "description": "使用可自定义长度和字符集生成加密安全的密码。创建强大、随机的密码以获得最大的账户安全性。",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "密码生成器",
       "安全密码",
@@ -737,7 +737,7 @@
     "slug": "exif-viewer",
     "name": "EXIF 查看/清理器 – 查看与移除图片元数据",
     "description": "查看并移除图片中的 EXIF 元数据，保护您的隐私。所有处理均在本地完成，不会上传到任何服务器。",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif 查看器",
       "exif 清理器",

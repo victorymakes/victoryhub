@@ -182,7 +182,7 @@
       "featured": false,
       "draft": false,
       "locale": "da",
-      "readingTime": 2,
+      "readingTime": 5,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -370,7 +370,7 @@
       "featured": false,
       "draft": false,
       "locale": "de",
-      "readingTime": 2,
+      "readingTime": 6,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -746,7 +746,7 @@
       "featured": false,
       "draft": false,
       "locale": "es",
-      "readingTime": 3,
+      "readingTime": 7,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -1122,7 +1122,7 @@
       "featured": false,
       "draft": false,
       "locale": "fr",
-      "readingTime": 3,
+      "readingTime": 7,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -1310,7 +1310,7 @@
       "featured": false,
       "draft": false,
       "locale": "it",
-      "readingTime": 3,
+      "readingTime": 6,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -1874,7 +1874,7 @@
       "featured": false,
       "draft": false,
       "locale": "nl",
-      "readingTime": 2,
+      "readingTime": 6,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -2062,7 +2062,7 @@
       "featured": false,
       "draft": false,
       "locale": "no",
-      "readingTime": 2,
+      "readingTime": 5,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -2250,7 +2250,7 @@
       "featured": false,
       "draft": false,
       "locale": "pt",
-      "readingTime": 3,
+      "readingTime": 7,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -2438,7 +2438,7 @@
       "featured": false,
       "draft": false,
       "locale": "ru",
-      "readingTime": 2,
+      "readingTime": 6,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }
@@ -2626,7 +2626,7 @@
       "featured": false,
       "draft": false,
       "locale": "sv",
-      "readingTime": 2,
+      "readingTime": 5,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
       "type": "blog"
     }

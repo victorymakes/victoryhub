@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Beveiliging",
-        "description": "Beveiligings- en privacytools zoals wachtwoordgenerator en IP-checker",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Privacy & Veiligheid",
+        "description": "Inspecteer, schoonmaken en veilig delen — privacy-hulpmiddelen voor bestanden, links en tekst.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

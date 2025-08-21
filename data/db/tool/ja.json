@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "私のIPアドレスは？ – パブリックIPアドレスと位置情報を確認",
     "description": "あなたのパブリックIPv4/IPv6アドレス、位置情報、ISP、接続詳細を即座に表示。ネットワークトラブルシューティングやVPN検証に役立ちます。",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ipアドレスチェッカー",
       "私のipを検索",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "パスワード生成ツール – 強力で安全なパスワードをオンラインで作成",
     "description": "カスタマイズ可能な長さと文字セットで暗号学的に安全なパスワードを生成。アカウントセキュリティを最大化する強力でランダムなパスワードを作成します。",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "パスワード生成",
       "安全なパスワード",
@@ -736,7 +736,7 @@
     "slug": "exif-viewer",
     "name": "EXIFビューア/クリーナー – 画像メタデータの表示と削除",
     "description": "画像のEXIFメタデータを表示・削除してプライバシーを保護します。画像はサーバーにアップロードせず、ローカルで処理されます。",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif ビューア",
       "exif クリーナー",

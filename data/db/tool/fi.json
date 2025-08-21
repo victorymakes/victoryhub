@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "Mikä on IP-osoitteeni – Tarkista julkinen IP-osoitteesi ja sijaintisi",
     "description": "Näe välittömästi julkinen IPv4/IPv6-osoitteesi, geolokaatiosi, internetpalveluntarjoajasi ja yhteystietosi. Hyödyllinen verkkovianmääritykseen ja VPN-vahvistukseen.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ip-osoitteen tarkistus",
       "etsi ip-osoitteeni",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "Salasanageneraattori – Luo vahvoja ja turvallisia salasanoja verkossa",
     "description": "Generoi kryptografisesti turvallisia salasanoja mukautettavalla pituudella ja merkistöllä. Luo vahvoja ja satunnaisia salasanoja maksimaalista tiliturvallisuutta varten.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "salasanageneraattori",
       "turvallinen salasana",
@@ -691,7 +691,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Katselu/Siivous – Näytä ja poista kuvan metadata",
     "description": "Näytä ja poista EXIF-metadataa kuvista suojataksesi yksityisyyttäsi. Kaikki käsittely tapahtuu paikallisesti ilman palvelinlähetystä.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif katselu",
       "exif siivous",

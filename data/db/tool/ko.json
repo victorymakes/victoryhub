@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "내 IP 주소 – 공용 IP 주소 및 위치 확인",
     "description": "귀하의 공용 IPv4/IPv6 주소, 지리적 위치, ISP 및 연결 세부 정보를 즉시 확인하세요. 네트워크 문제 해결 및 VPN 확인에 유용합니다.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ip 주소 확인기",
       "내 ip 찾기",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "비밀번호 생성기 – 강력하고 안전한 비밀번호 온라인 생성",
     "description": "맞춤형 길이와 문자 세트로 암호학적으로 안전한 비밀번호를 생성합니다. 최대 계정 보안을 위한 강력하고 무작위적인 비밀번호를 만드세요.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "비밀번호 생성기",
       "안전한 비밀번호",
@@ -736,7 +736,7 @@
     "slug": "exif-viewer",
     "name": "EXIF 뷰어/클리너 – 이미지 메타데이터 보기 및 제거",
     "description": "이미지의 EXIF 메타데이터를 확인하고 제거하여 개인 정보를 보호하세요. 모든 처리는 서버 업로드 없이 로컬에서 실행됩니다.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif 뷰어",
       "exif 클리너",

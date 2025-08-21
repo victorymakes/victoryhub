@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Turvallisuus",
-        "description": "Turvallisuus- ja yksityisyystyökalut kuten salasanageneraattori ja IP-tarkistaja",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Tietosuoja ja Turvallisuus",
+        "description": "Tarkista, puhdista ja jaa turvallisesti — tietosuojatyökalut tiedostoille, linkeille ja tekstille.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

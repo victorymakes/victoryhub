@@ -15,6 +15,7 @@ import {
     Folder,
     Lock,
     Activity,
+    EyeClosed,
 } from "lucide-react";
 
 // 预定义常用图标映射
@@ -34,6 +35,7 @@ const iconMap: Record<string, LucideIcon> = {
     folder: Folder,
     lock: Lock,
     activity: Activity,
+    eyeClosed: EyeClosed,
 };
 
 // 优化的静态图标组件

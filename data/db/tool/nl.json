@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "Wat is mijn IP – Controleer je publieke IP-adres en locatie",
     "description": "Bekijk direct je publieke IPv4/IPv6 adres, geolocatie, internetprovider en verbindingsdetails. Handig voor netwerk troubleshooting en VPN-verificatie.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "ip adres checker",
       "mijn ip vinden",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "Wachtwoord Generator – Maak sterke en veilige wachtwoorden online",
     "description": "Genereer cryptografisch veilige wachtwoorden met aanpasbare lengte en tekensets. Maak sterke en willekeurige wachtwoorden voor maximale accountbeveiliging.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "wachtwoord generator",
       "veilig wachtwoord",
@@ -691,7 +691,7 @@
     "slug": "exif-viewer",
     "name": "EXIF Viewer/Cleaner – Bekijk en verwijder afbeeldingsmetadata",
     "description": "Bekijk en verwijder EXIF-metadata uit uw afbeeldingen om uw privacy te beschermen. Alles wordt lokaal verwerkt zonder upload naar een server.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "exif viewer",
       "exif cleaner",

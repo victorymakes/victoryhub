@@ -121,7 +121,7 @@
     "slug": "whats-my-ip",
     "name": "Quelle est mon IP – Vérifier l'adresse IP publique et la localisation",
     "description": "Visualisez instantanément votre adresse IPv4/IPv6 publique, géolocalisation, FAI et détails de connexion. Utile pour le dépannage réseau et la vérification VPN.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "vérificateur d'adresse ip",
       "trouver mon ip",
@@ -160,7 +160,7 @@
     "slug": "password-generator",
     "name": "Générateur de Mot de Passe – Créer des mots de passe forts et sécurisés en ligne",
     "description": "Générez des mots de passe cryptographiquement sécurisés avec longueur et jeux de caractères personnalisables. Créez des mots de passe forts et aléatoires pour une sécurité maximale des comptes.",
-    "category": "security",
+    "category": "privacy",
     "keywords": [
       "générateur de mot de passe",
       "mot de passe sécurisé",
@@ -695,7 +695,7 @@
     "slug": "exif-viewer",
     "name": "Visionneuse/Nettoyeur EXIF – Afficher et supprimer les métadonnées d’images",
     "description": "Affichez et supprimez les métadonnées EXIF de vos images pour protéger votre vie privée. Traitement local sans envoi vers un serveur.",
-    "category": "media",
+    "category": "privacy",
     "keywords": [
       "visionneuse exif",
       "nettoyeur exif",

@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Säkerhet",
-        "description": "Säkerhets- och integritetsverktyg som lösenordsgenerator och IP-kontroll",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Integritet & Säkerhet",
+        "description": "Inspektera, rensa och dela säkert — sekretessverktyg för filer, länkar och text.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

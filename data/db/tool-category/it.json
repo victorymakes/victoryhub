@@ -12,10 +12,10 @@
         "icon": "code"
     },
     {
-        "slug": "security",
-        "name": "Sicurezza",
-        "description": "Strumenti per la sicurezza e la privacy come generatore di password e controllo IP",
-        "icon": "lock"
+        "slug": "privacy",
+        "name": "Privacy e Sicurezza",
+        "description": "Ispeziona, sanifica e condividi in sicurezza — strumenti di privacy per file, link e testo.",
+        "icon": "eyeClosed"
     },
     {
         "slug": "media",

@@ -132,12 +132,18 @@ export default async function ToolsPage({ params }: ToolsPageProps) {
                     <div className="space-y-12">
                         {categories.map((category) => (
                             <div id={category.slug} key={category.slug}>
-                                <div className={"mb-6 flex gap-2 items-center"}>
+                                <div className={"mb-4 flex gap-2 items-center"}>
                                     <DynamicIcon name={category.icon} />
                                     <h2 className="text-2xl font-bold text-foreground">
                                         {category.name}
                                     </h2>
                                 </div>
+
+                                {category.description && (
+                                    <p className="text-muted-foreground mb-6">
+                                        {category.description}
+                                    </p>
+                                )}
 
                                 <ToolGrid
                                     tools={toolsByCategory[category.slug] || []}
