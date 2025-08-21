@@ -128,8 +128,8 @@ export const CategoryPage = async ({
 
             {/* Page Content */}
             <div className="bg-background">
-                {/* Hero Section */}
-                <Container className="py-16">
+                <Container className="py-16 space-y-12">
+                    {/* Hero Section */}
                     <div className="text-center">
                         <h1 className="text-4xl font-bold text-foreground sm:text-6xl">
                             {t("title")}
@@ -138,26 +138,26 @@ export const CategoryPage = async ({
                             {t("subtitle")}
                         </p>
                     </div>
-                </Container>
 
-                {/* Blog Content */}
-                <Container className="py-16 space-y-12">
-                    {/* Category Filters */}
-                    <CategoryFilters
-                        categories={categories}
-                        currentCategoryId={category}
-                    />
+                    {/* Blog Content */}
+                    <div className="space-y-12">
+                        {/* Category Filters */}
+                        <CategoryFilters
+                            categories={categories}
+                            currentCategoryId={category}
+                        />
 
-                    {/* Blog Grid */}
-                    <BlogGrid blogs={paginationData.items} />
+                        {/* Blog Grid */}
+                        <BlogGrid blogs={paginationData.items} />
 
-                    {/* Pagination */}
-                    <BlogPagination
-                        currentLocale={locale}
-                        currentCategoryId={category}
-                        currentPage={paginationData.currentPage}
-                        totalPages={paginationData.totalPages}
-                    />
+                        {/* Pagination */}
+                        <BlogPagination
+                            currentLocale={locale}
+                            currentCategoryId={category}
+                            currentPage={paginationData.currentPage}
+                            totalPages={paginationData.totalPages}
+                        />
+                    </div>
                 </Container>
             </div>
         </>

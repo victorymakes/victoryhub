@@ -22,7 +22,7 @@ export function FAQSection({ faqItems, title }: FAQSectionProps) {
     }
 
     return (
-        <Card className="mt-8">
+        <Card>
             <CardHeader>
                 <CardTitle className="text-xl font-semibold flex items-center gap-2">
                     <span className="text-2xl">❓</span>
