@@ -377,6 +377,37 @@
   ],
   "en": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Why You Should Care About URL Trackers and How to Remove Them",
+      "description": "Learn how URL trackers affect your privacy and discover the most common tracking parameters explained in detail. Find out why removing trackers matters and how our URL Tracker Remover tool helps you share clean, private, and secure links.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "security",
+          "name": "Security"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web Tools"
+        }
+      ],
+      "category": {
+        "id": "privacy-tools",
+        "name": "Privacy Tools"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Health & Wellness Tools You Can Use Right in Your Browser",
       "description": "Explore free, privacy-friendly health and wellness tools like BMI, BMR, and carbon footprint calculators — all usable instantly in your browser. No downloads, no accounts, just insights.",

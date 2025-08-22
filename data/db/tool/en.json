@@ -890,5 +890,45 @@
         "answer": "Since all processing happens directly in your browser, the limits depend primarily on your device's capabilities. Most modern devices can easily handle images up to 20MB in size. There's no arbitrary limit on the number of images you can convert, though processing many large images simultaneously may require more memory and processing power. For optimal performance, we recommend converting batches of 10-20 images at a time if you're working with very large files. The tool supports all common image formats including JPEG, PNG, WebP, and more."
       }
     ]
+  },
+  {
+    "slug": "url-tracker-cleaner",
+    "name": "URL Tracker Cleaner – Remove UTM and Tracking Parameters",
+    "description": "Identify and remove tracking parameters from URLs including UTM tags, click IDs, and other analytics trackers. Clean your links for privacy and sharing.",
+    "category": "privacy",
+    "keywords": [
+      "url cleaner",
+      "remove utm parameters",
+      "clean tracking urls",
+      "utm tag remover",
+      "url tracker remover",
+      "remove fbclid",
+      "remove gclid",
+      "clean url for sharing",
+      "privacy url cleaner",
+      "tracking parameter remover"
+    ],
+    "faq": [
+      {
+        "question": "What are URL tracking parameters and why should I remove them?",
+        "answer": "URL tracking parameters are additional pieces of information added to web addresses that help marketers and website owners track where visitors come from and how they interact with content. <br/>Common examples include UTM parameters (utm_source, utm_medium, utm_campaign), click identifiers (gclid, fbclid), and other analytics trackers. While these parameters are valuable for businesses, they can compromise your privacy by revealing your browsing habits and referral sources. <br/>Removing them creates cleaner, shorter links that are more private and easier to share, while preventing unnecessary data collection about your online activities."
+      },
+      {
+        "question": "What tracking parameters does this tool detect and remove?",
+        "answer": "This tool detects and removes a comprehensive range of tracking parameters, including: <li>UTM parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content),</li> <li>advertising click IDs (gclid from Google, fbclid from Facebook, msclkid from Microsoft/Bing, dclid from DoubleClick, twclid from Twitter),</li> <li>email marketing trackers (mc_eid from Mailchimp, _hsenc and _hsmi from HubSpot),</li> <li>and general referral parameters (ref, source, cmpid).</li> <br/>The tool is regularly updated to identify new tracking parameters as they emerge in the digital marketing ecosystem."
+      },
+      {
+        "question": "Is this URL cleaner tool secure and private?",
+        "answer": "Yes, our URL Tracker Cleaner is completely secure and private. <br/>All URL processing happens locally in your browser - no data is sent to our servers or any third parties. Your URLs are never stored, logged, or transmitted anywhere. You can verify this by checking your browser's network tab while using the tool - no requests are made when processing URLs. This makes it safe to use even with sensitive or private links."
+      },
+      {
+        "question": "Will removing tracking parameters break the URL or prevent me from accessing the website?",
+        "answer": "No, removing tracking parameters will not break the URL's core functionality. <br/>Tracking parameters are supplementary information added after the main URL structure and are not required for the webpage to load correctly. The cleaned URL will still direct you to the same destination page, just without the tracking information. However, in rare cases where a website has been specifically configured to require certain parameters, the tool preserves all non-tracking parameters to maintain functionality while only removing the privacy-invasive tracking elements."
+      },
+      {
+        "question": "How can I use cleaned URLs in my daily browsing for better privacy?",
+        "answer": "To enhance your browsing privacy: <li>Before clicking links in emails or social media, right-click, copy the link address, and paste it into our tool to clean it.</li> <li>When sharing links with others, clean them first to avoid propagating tracking parameters.</li> <li>Consider installing browser extensions that automatically strip tracking parameters from URLs as you browse.</li> <li>For maximum privacy, combine URL cleaning with other privacy practices like using a VPN, privacy-focused browser, and regularly clearing cookies.</li> </br>This tool is a simple first step toward more private browsing habits."
+      }
+    ]
   }
 ]

@@ -75,7 +75,7 @@ export const CategoryPage = async ({
         notFound();
     }
 
-    const postsPerPage = 3;
+    const postsPerPage = 6;
 
     // Get paginated blogs and categories
     const paginationData = await getPaginatedBlogs(
