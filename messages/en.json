@@ -769,5 +769,22 @@
       "imageLoadFailed": "Image load failed. File may be corrupted.",
       "fileReadFailed": "File read failed. File may be corrupted."
     }
+  },
+  "UrlTrackerCleaner": {
+    "inputLabel": "URL with Trackers",
+    "inputPlaceholder": "Enter URL with tracking parameters...",
+    "trackersFound": "Trackers Found",
+    "cleanedUrl": "Cleaned URL",
+    "copy": "Copy",
+    "clear": "Clear",
+    "visit": "Visit",
+    "copied": "Copied to clipboard!",
+    "learnMore": "Learn more about URL tracker parameters",
+    "errors": {
+      "invalidUrl": "Invalid URL format. Please check your input."
+    },
+    "warnings": {
+      "noTrackers": "No tracking parameters found in this URL."
+    }
   }
 }

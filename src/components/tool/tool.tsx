@@ -51,6 +51,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "url-tracker-cleaner": dynamic(() => import("./url-tracker-cleaner"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
     "random-picker": dynamic(() => import("./random-picker"), {
         loading: () => <ToolLoader />,
         ssr: false,

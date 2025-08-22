@@ -95,6 +95,30 @@ export const mdxComponents: MDXComponents = {
             />
         </div>
     ),
+    table: ({ children }) => (
+        <table className="w-full border-collapse my-6 text-sm">
+            {children}
+        </table>
+    ),
+    thead: ({ children }) => (
+        <thead className="bg-gray-50 dark:bg-gray-900/40">{children}</thead>
+    ),
+    tbody: ({ children }) => <tbody>{children}</tbody>,
+    tr: ({ children }) => (
+        <tr className="[&:not(:first-child)]:border-t border-gray-200 dark:border-gray-800">
+            {children}
+        </tr>
+    ),
+    th: ({ children }) => (
+        <th className="text-left font-semibold px-3 py-2 border border-gray-200 dark:border-gray-800 align-top">
+            {children}
+        </th>
+    ),
+    td: ({ children }) => (
+        <td className="px-3 py-2 border border-gray-200 dark:border-gray-800 align-top">
+            {children}
+        </td>
+    ),
     ContactEmail,
     ContactTwitter,
 };
