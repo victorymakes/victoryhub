@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "Privacidad y Seguridad",
         "description": "Inspeccionar, sanear y compartir de forma segura — utilidades de privacidad para archivos, enlaces y texto.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",

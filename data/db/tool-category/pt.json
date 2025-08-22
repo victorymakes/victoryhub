@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "Privacidade & Segurança",
         "description": "Inspecione, higienize e compartilhe com segurança — utilitários de privacidade para arquivos, links e texto.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",

@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "Privacy & Safety",
         "description": "Inspect, sanitize, and share safely — privacy utilities for files, links, and text.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",

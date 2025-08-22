@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "Tietosuoja ja Turvallisuus",
         "description": "Tarkista, puhdista ja jaa turvallisesti — tietosuojatyökalut tiedostoille, linkeille ja tekstille.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",
