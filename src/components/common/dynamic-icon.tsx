@@ -46,8 +46,8 @@ export const DynamicIcon = ({
     name?: string;
     className?: string;
 }) => {
-    if (name && (iconMap[name] || iconMap[name.toLowerCase()])) {
-        const IconComponent = iconMap[name.toLowerCase()];
+    if (name && iconMap[name]) {
+        const IconComponent = iconMap[name];
         return <IconComponent {...props} />;
     }
 

@@ -12,7 +12,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             enableSystem
             disableTransitionOnChange
         >
-            <ProgressProvider options={{ showSpinner: false }}>
+            <ProgressProvider height="3px" options={{ showSpinner: false }}>
                 {children}
             </ProgressProvider>
         </ThemeProvider>
