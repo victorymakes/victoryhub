@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "Personvern og Sikkerhet",
         "description": "Inspiser, rens og del trygt — personvernsverktøy for filer, lenker og tekst.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",

@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "Privacy & Veiligheid",
         "description": "Inspecteer, schoonmaken en veilig delen — privacy-hulpmiddelen voor bestanden, links en tekst.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",

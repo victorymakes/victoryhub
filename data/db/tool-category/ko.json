@@ -15,7 +15,7 @@
         "slug": "privacy",
         "name": "개인정보 보호 및 안전",
         "description": "검사하고, 정화하고, 안전하게 공유하세요 — 파일, 링크, 텍스트를 위한 개인정보 보호 유틸리티.",
-        "icon": "eyeClosed"
+        "icon": "shield"
     },
     {
         "slug": "media",
