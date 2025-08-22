@@ -6,12 +6,12 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/common/navigation";
 import { Footer } from "@/components/common/footer";
-import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/common/analytics";
 import { config } from "@/lib/config";
 import { getTranslations } from "next-intl/server";
 import { RootJsonLd } from "@/components/seo/page-json-ld";
+import { Providers } from "@/components/common/providers";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -56,12 +56,7 @@ export default async function LocaleLayout({
                 className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
             >
                 <NextIntlClientProvider>
-                    <ThemeProvider
-                        attribute="class"
-                        defaultTheme="system"
-                        enableSystem
-                        disableTransitionOnChange
-                    >
+                    <Providers>
                         <Navbar />
                         <main className="flex-1">
                             <RootJsonLd
@@ -72,7 +67,7 @@ export default async function LocaleLayout({
                         </main>
                         <Footer />
                         <Toaster />
-                    </ThemeProvider>
+                    </Providers>
                 </NextIntlClientProvider>
                 <Analytics />
             </body>
