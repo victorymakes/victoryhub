@@ -401,8 +401,8 @@
         }
       ],
       "category": {
-        "id": "privacy-tools",
-        "name": "Privacy Tools"
+        "id": "privacy",
+        "name": "Privacy"
       },
       "featured": false,
       "draft": false,
