@@ -1,6 +1,41 @@
 {
   "da": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Hvorfor du bør bekymre dig om URL-trackere og hvordan du fjerner dem",
+      "description": "Lær hvordan URL-trackere påvirker dit privatliv og få overblik over de mest almindelige sporingsparametre. Find ud af, hvorfor det er vigtigt at fjerne trackere, og hvordan vores værktøj hjælper dig med at dele rene og sikre links.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privatliv"
+        },
+        {
+          "id": "security",
+          "name": "Sikkerhed"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-tracker"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webværktøjer"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Privatliv"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Sundheds- og velværeværktøjer du kan bruge direkte i din browser",
       "description": "Udforsk gratis, privatlivsvenlige sundheds- og velværeværktøjer som BMI, BMR og CO2-fodaftryksberegnere — alle brugbare øjeblikkeligt i din browser. Ingen downloads, ingen konti, kun indsigt.",
@@ -188,6 +223,41 @@
     }
   ],
   "de": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Warum URL-Tracker wichtig sind und wie man sie entfernt",
+      "description": "Erfahren Sie, wie URL-Tracker Ihre Privatsphäre beeinflussen und lernen Sie die wichtigsten Tracking-Parameter im Detail kennen. Entdecken Sie, warum das Entfernen von Trackern wichtig ist und wie unser URL-Tracker-Entferner Ihnen hilft, saubere und sichere Links zu teilen.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Datenschutz"
+        },
+        {
+          "id": "security",
+          "name": "Sicherheit"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-Tracker"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Datenschutz"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Gesundheits- und Wellness-Tools, die Sie direkt in Ihrem Browser nutzen können",
@@ -600,6 +670,41 @@
   ],
   "es": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Por qué deberías preocuparte por los rastreadores de URL y cómo eliminarlos",
+      "description": "Descubre cómo los rastreadores de URL afectan tu privacidad y conoce los parámetros de seguimiento más comunes. Aprende por qué es importante eliminarlos y cómo nuestra herramienta te ayuda a compartir enlaces limpios y seguros.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacidad"
+        },
+        {
+          "id": "security",
+          "name": "Seguridad"
+        },
+        {
+          "id": "url-tracker",
+          "name": "Rastreador de URL"
+        },
+        {
+          "id": "web-tools",
+          "name": "Herramientas web"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Privacidad"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Herramientas de salud y bienestar que puedes usar directamente en tu navegador",
       "description": "Explora herramientas gratuitas y respetuosas con la privacidad para la salud y el bienestar, como calculadoras de IMC, TMB y huella de carbono — todas utilizables al instante en tu navegador. Sin descargas, sin cuentas, solo información útil.",
@@ -787,6 +892,41 @@
     }
   ],
   "fi": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Miksi URL-seurannasta kannattaa välittää ja miten ne poistetaan",
+      "description": "Opi, miten URL-seuranta vaikuttaa yksityisyyteesi ja tutustu yleisimpiin seurantaparametreihin. Selvitä, miksi seurannan poistaminen on tärkeää ja miten työkalu auttaa jakamaan puhtaita ja turvallisia linkkejä.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Yksityisyys"
+        },
+        {
+          "id": "security",
+          "name": "Turvallisuus"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-seuranta"
+        },
+        {
+          "id": "web-tools",
+          "name": "Verkkotyökalut"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Yksityisyys"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Terveys- ja hyvinvointityökalut, joita voit käyttää suoraan selaimessasi",
@@ -976,6 +1116,41 @@
   ],
   "fr": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Pourquoi les traceurs d'URL comptent et comment les supprimer",
+      "description": "Découvrez comment les traceurs d'URL affectent votre vie privée et apprenez à reconnaître les paramètres de suivi les plus courants. Comprenez pourquoi il est important de les supprimer et comment notre outil de nettoyage d'URL vous aide à partager des liens propres et sécurisés.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Vie privée"
+        },
+        {
+          "id": "security",
+          "name": "Sécurité"
+        },
+        {
+          "id": "url-tracker",
+          "name": "Traceur d'URL"
+        },
+        {
+          "id": "web-tools",
+          "name": "Outils web"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Vie privée"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Outils de santé et de bien-être que vous pouvez utiliser directement dans votre navigateur",
       "description": "Explorez des outils gratuits et respectueux de la vie privée pour la santé et le bien-être, comme les calculateurs d'IMC, de MB et d'empreinte carbone — tous utilisables instantanément dans votre navigateur. Pas de téléchargements, pas de comptes, juste des informations utiles.",
@@ -1163,6 +1338,41 @@
     }
   ],
   "it": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Perché dovresti preoccuparti dei tracker URL e come rimuoverli",
+      "description": "Scopri come i tracker URL influenzano la tua privacy e conosci i parametri di tracciamento più comuni. Scopri perché è importante rimuoverli e come il nostro strumento ti aiuta a condividere link puliti e sicuri.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "security",
+          "name": "Sicurezza"
+        },
+        {
+          "id": "url-tracker",
+          "name": "Tracker URL"
+        },
+        {
+          "id": "web-tools",
+          "name": "Strumenti web"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Privacy"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Strumenti per la salute e il benessere che puoi usare direttamente nel tuo browser",
@@ -1352,6 +1562,41 @@
   ],
   "ja": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "URLトラッカーを気にすべき理由と削除方法",
+      "description": "URLトラッカーがプライバシーに与える影響や、よく使われるトラッキングパラメータの詳細を解説。なぜトラッカーを削除すべきか、そして当サイトのURLトラッカー除去ツールで安全・クリーンなリンクを共有する方法を紹介します。",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "プライバシー"
+        },
+        {
+          "id": "security",
+          "name": "セキュリティ"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URLトラッカー"
+        },
+        {
+          "id": "web-tools",
+          "name": "ウェブツール"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "プライバシー"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "ブラウザ上ですぐに使える健康・ウェルネスツール",
       "description": "BMI、BMR、カーボンフットプリント計算機など、無料でプライバシーに配慮した健康・ウェルネスツールをブラウザ上ですぐに利用できます。ダウンロード不要、アカウント不要、必要なのは洞察だけです。",
@@ -1539,6 +1784,41 @@
     }
   ],
   "ko": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "URL 추적기를 신경 써야 하는 이유와 제거 방법",
+      "description": "URL 추적기가 개인정보에 미치는 영향과 자주 사용되는 추적 파라미터를 자세히 설명합니다. 추적기를 제거해야 하는 이유와, 우리 URL 추적기 제거 도구로 더 깨끗하고 안전한 링크를 공유하는 방법을 알아보세요.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "개인정보"
+        },
+        {
+          "id": "security",
+          "name": "보안"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL 추적기"
+        },
+        {
+          "id": "web-tools",
+          "name": "웹 도구"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "개인정보"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "브라우저에서 바로 사용할 수 있는 건강 및 웰니스 도구",
@@ -1728,6 +2008,41 @@
   ],
   "nl": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Waarom URL-trackers belangrijk zijn en hoe je ze verwijdert",
+      "description": "Lees hoe URL-trackers je privacy beïnvloeden en ontdek de meest voorkomende trackingparameters. Ontdek waarom het verwijderen van trackers belangrijk is en hoe onze URL Tracker Remover je helpt om schone, veilige links te delen.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacy"
+        },
+        {
+          "id": "security",
+          "name": "Beveiliging"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-tracker"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Privacy"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "nl",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Gezondheids- en welzijnstools die je direct in je browser kunt gebruiken",
       "description": "Ontdek gratis, privacyvriendelijke gezondheids- en welzijnstools zoals BMI-, BMR- en CO2-voetafdrukberekenaars — allemaal direct te gebruiken in je browser. Geen downloads, geen accounts, alleen inzichten.",
@@ -1915,6 +2230,41 @@
     }
   ],
   "no": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Hvorfor du bør bry deg om URL-trackere og hvordan du fjerner dem",
+      "description": "Lær hvordan URL-trackere påvirker personvernet ditt og få oversikt over de vanligste sporingsparametrene. Finn ut hvorfor det er viktig å fjerne trackere og hvordan vårt verktøy hjelper deg å dele rene og sikre lenker.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Personvern"
+        },
+        {
+          "id": "security",
+          "name": "Sikkerhet"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-tracker"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webverktøy"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Personvern"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Helse- og velværeverktøy du kan bruke direkte i nettleseren din",
@@ -2104,6 +2454,41 @@
   ],
   "pt": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Por que você deve se preocupar com rastreadores de URL e como removê-los",
+      "description": "Saiba como rastreadores de URL afetam sua privacidade e conheça os parâmetros de rastreamento mais comuns. Descubra por que é importante removê-los e como nossa ferramenta ajuda você a compartilhar links limpos e seguros.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Privacidade"
+        },
+        {
+          "id": "security",
+          "name": "Segurança"
+        },
+        {
+          "id": "url-tracker",
+          "name": "Rastreador de URL"
+        },
+        {
+          "id": "web-tools",
+          "name": "Ferramentas web"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Privacidade"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Ferramentas de Saúde e Bem-estar que Você Pode Usar Diretamente no Seu Navegador",
       "description": "Explore ferramentas gratuitas e respeitosas com a privacidade para saúde e bem-estar, como calculadoras de IMC, TMB e pegada de carbono — todas utilizáveis instantaneamente no seu navegador. Sem downloads, sem contas, apenas insights.",
@@ -2291,6 +2676,41 @@
     }
   ],
   "ru": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Почему важно заботиться о URL-трекерах и как их удалить",
+      "description": "Узнайте, как URL-трекеры влияют на вашу приватность, и ознакомьтесь с самыми распространёнными параметрами отслеживания. Поймите, почему важно удалять трекеры, и как наш инструмент помогает делиться чистыми и безопасными ссылками.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Приватность"
+        },
+        {
+          "id": "security",
+          "name": "Безопасность"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-трекер"
+        },
+        {
+          "id": "web-tools",
+          "name": "Веб-инструменты"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Приватность"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Инструменты для здоровья и благополучия, которые можно использовать прямо в браузере",
@@ -2480,6 +2900,41 @@
   ],
   "sv": [
     {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "Varför du bör bry dig om URL-spårare och hur du tar bort dem",
+      "description": "Lär dig hur URL-spårare påverkar din integritet och upptäck de vanligaste spårningsparametrarna. Ta reda på varför det är viktigt att ta bort spårare och hur vårt verktyg hjälper dig att dela rena och säkra länkar.",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "Integritet"
+        },
+        {
+          "id": "security",
+          "name": "Säkerhet"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL-spårare"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webbverktyg"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "Integritet"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "Hälso- och välmåendeverktyg du kan använda direkt i din webbläsare",
       "description": "Utforska gratis, integritetsvänliga hälso- och välmåendeverktyg som BMI, BMR och koldioxidavtryckskalkylatorer — alla användbara direkt i din webbläsare. Inga nedladdningar, inga konton, bara insikter.",
@@ -2667,6 +3122,41 @@
     }
   ],
   "zh": [
+    {
+      "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
+      "title": "为什么你应该关心URL跟踪器以及如何去除它们",
+      "description": "了解URL跟踪器如何影响你的隐私，详细解释最常见的跟踪参数。了解为什么去除跟踪器很重要，以及我们的URL跟踪器清理工具如何帮助你分享更干净、更私密、更安全的链接。",
+      "date": "2025-08-22",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "privacy",
+          "name": "隐私"
+        },
+        {
+          "id": "security",
+          "name": "安全"
+        },
+        {
+          "id": "url-tracker",
+          "name": "URL跟踪器"
+        },
+        {
+          "id": "web-tools",
+          "name": "网络工具"
+        }
+      ],
+      "category": {
+        "id": "privacy",
+        "name": "隐私"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/d1WMw05P/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/health-and-wellness-tools-you-can-use-right-in-your-browser",
       "title": "可直接在浏览器中使用的健康与养生工具",
