@@ -16,7 +16,7 @@ export const getRecentBlogs = async (
     locale: string = "en",
 ): Promise<Page[]> => {
     const blogs = await getBlogs(locale);
-    return blogs.slice(0, Math.max(count, blogs.length));
+    return blogs.slice(0, Math.min(count, blogs.length));
 };
 
 export const getBlogsByCategory = async (
