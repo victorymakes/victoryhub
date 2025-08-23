@@ -1,0 +1,160 @@
+export const metadata = {
+    title: "Pourquoi les traceurs d'URL comptent et comment les supprimer",
+    date: "2025-08-22",
+    cover: "https://i.postimg.cc/d1WMw05P/image.png",
+    description:
+        "Découvrez comment les traceurs d'URL affectent votre vie privée et apprenez à reconnaître les paramètres de suivi les plus courants. Comprenez pourquoi il est important de les supprimer et comment notre outil de nettoyage d'URL vous aide à partager des liens propres et sécurisés.",
+    tags: [
+        { id: "privacy", name: "Vie privée" },
+        { id: "security", name: "Sécurité" },
+        { id: "url-tracker", name: "Traceur d'URL" },
+        { id: "web-tools", name: "Outils web" },
+    ],
+    category: {
+        id: "privacy",
+        name: "Vie privée",
+    },
+};
+
+# Pourquoi les traceurs d'URL comptent et comment les supprimer
+
+Lorsque vous partagez ou cliquez sur un lien, il contient souvent des **paramètres de suivi** cachés dans l'URL.
+Ces _traceurs d'URL_ (comme `utm_source` ou `fbclid`) sont utilisés par les entreprises pour suivre votre provenance, vos clics et même la campagne ou la publicité qui vous a amené ici.
+
+Utile pour le marketing, mais cela pose de vrais **problèmes de vie privée**.
+
+---
+
+## 🔒 Comment les traceurs d'URL affectent votre vie privée
+
+- **Révèlent vos habitudes de navigation** : Les traceurs montrent le site ou l'application d'origine.
+- **Profilage croisé** : Les annonceurs relient votre activité sur plusieurs sites.
+- **URLs encombrées** : Liens longs et illisibles remplis de paramètres.
+- **Partage de données non désiré** : Vos infos sont souvent envoyées à des tiers sans consentement.
+
+En résumé : les traceurs d'URL sont des miettes invisibles que vous laissez sur le web.
+
+---
+
+## 📑 Référence des paramètres de suivi d'URL courants
+
+Cette référence compile les paramètres de suivi les plus utilisés, avec explications. Elle s'appuie sur les standards, les plateformes d'analyse, les systèmes publicitaires et les bonnes pratiques SEO.
+
+---
+
+### 1. Paramètres UTM (Urchin Tracking Module)
+
+Paramètres marketing standards pris en charge par Google Analytics et d'autres plateformes.
+
+| Paramètre      | Description                                                |
+| -------------- | ---------------------------------------------------------- |
+| `utm_source`   | Source du trafic (ex : `google`, `newsletter`, `facebook`) |
+| `utm_medium`   | Médium marketing (ex : `email`, `cpc`, `social`)           |
+| `utm_campaign` | Nom de la campagne ou promotion (ex : `spring_sale`)       |
+| `utm_term`     | Mots-clés de recherche payante (ex : `running+shoes`)      |
+| `utm_content`  | Différencie le contenu pour A/B test (ex : `logolink`)     |
+
+---
+
+### 2. Identifiants de clic publicitaire
+
+Paramètres générés automatiquement pour l'attribution des clics.
+
+| Paramètre | Plateforme / Usage             |
+| --------- | ------------------------------ |
+| `gclid`   | Identifiant de clic Google Ads |
+| `dclid`   | Identifiant Google Display Ads |
+| `fbclid`  | Identifiant Facebook/Instagram |
+| `msclkid` | Identifiant Microsoft/Bing Ads |
+| `twclid`  | Identifiant Twitter/X          |
+| `yclid`   | Identifiant Yandex Ads         |
+
+---
+
+### 3. Suivi de parrainage & affiliation
+
+Pour attribuer les parrainages, partenariats ou campagnes d'affiliation.
+
+| Paramètre              | Description                    |
+| ---------------------- | ------------------------------ |
+| `ref` / `referrer`     | Source de parrainage           |
+| `aff_id` / `affiliate` | ID d'affilié ou de partenaire  |
+| `partner`              | Identifiant du programme       |
+| `campaignid`           | ID de campagne publicitaire    |
+| `adgroupid`            | ID de groupe d'annonces        |
+| `creative`             | ID de la création publicitaire |
+
+---
+
+### 4. Expérimentation / A/B Testing
+
+Paramètres pour répartir les utilisateurs dans des groupes de test.
+
+| Paramètre              | Usage                              |
+| ---------------------- | ---------------------------------- |
+| `experiment` / `expid` | Nom ou ID de l'expérience          |
+| `variant`              | Variante ou version de test        |
+| `bucket` / `group`     | Groupe ou bucket d'expérimentation |
+
+---
+
+### 5. Suivi de session & client
+
+Paramètres pour identifier la session ou le client (usage analytique).
+
+| Paramètre           | Usage                        |
+| ------------------- | ---------------------------- |
+| `sessionid` / `sid` | Identifiant de session       |
+| `cid` / `clientid`  | ID client ou utilisateur     |
+| `tracking_id`       | Identifiant de suivi interne |
+
+---
+
+### 6. Identifiants spécifiques à la plateforme
+
+Paramètres spéciaux de divers outils ou plateformes.
+
+| Paramètre          | Plateforme / Usage               |
+| ------------------ | -------------------------------- |
+| `mc_eid`           | Suivi de clic Mailchimp          |
+| `_hsenc` / `_hsmi` | Suivi email HubSpot              |
+| `igshid`           | Identifiant de partage Instagram |
+
+---
+
+### 7. Paramètres actifs vs passifs
+
+Selon leur fonction — modifient-ils le contenu ou servent-ils juste au suivi ?
+
+- **Paramètres actifs** : Modifient le contenu ou la fonctionnalité de la page.
+  Exemples :
+- `category=shoes`, `color=blue`, `sort=price_asc`, `page=2`, `lang=de`
+- **Paramètres passifs** : Ne changent rien, servent juste au suivi.
+  Exemples :
+- `utm_*`, `gclid`, `ref`, `sessionid`
+
+---
+
+## 🚀 Comment se protéger
+
+Le meilleur moyen est de **supprimer les traceurs des URLs avant de les partager ou de cliquer dessus**.
+
+C'est pourquoi j'ai créé **[l'outil de nettoyage de traceurs d'URL](/tools/url-tracker-cleaner)** 🎉
+
+✨ Avec cet outil, vous pouvez :
+
+- Nettoyer instantanément les URLs encombrées
+- Supprimer automatiquement des dizaines de traceurs connus
+- Partager des liens en toute confiance, sans fuite de données
+- Protéger votre historique de navigation
+
+---
+
+## ✅ Conclusion
+
+Les traceurs d'URL semblent anodins, mais révèlent beaucoup sur votre vie en ligne.
+En les supprimant, vous reprenez le contrôle de votre vie privée.
+
+👉 Essayez **l'outil de nettoyage de traceurs d'URL** et profitez de liens propres et sans traceur.
+
+---

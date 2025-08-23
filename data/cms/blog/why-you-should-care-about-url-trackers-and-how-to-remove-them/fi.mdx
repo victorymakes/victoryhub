@@ -1,0 +1,160 @@
+export const metadata = {
+    title: "Miksi URL-seurannasta kannattaa välittää ja miten ne poistetaan",
+    date: "2025-08-22",
+    cover: "https://i.postimg.cc/d1WMw05P/image.png",
+    description:
+        "Opi, miten URL-seuranta vaikuttaa yksityisyyteesi ja tutustu yleisimpiin seurantaparametreihin. Selvitä, miksi seurannan poistaminen on tärkeää ja miten työkalu auttaa jakamaan puhtaita ja turvallisia linkkejä.",
+    tags: [
+        { id: "privacy", name: "Yksityisyys" },
+        { id: "security", name: "Turvallisuus" },
+        { id: "url-tracker", name: "URL-seuranta" },
+        { id: "web-tools", name: "Verkkotyökalut" },
+    ],
+    category: {
+        id: "privacy",
+        name: "Yksityisyys",
+    },
+};
+
+# Miksi URL-seurannasta kannattaa välittää ja miten ne poistetaan
+
+Kun jaat tai klikkaat linkkiä, siinä on usein **seurantaparametreja** URL-osoitteessa.
+Nämä _URL-seurannat_ (esim. `utm_source` tai `fbclid`) auttavat yrityksiä seuraamaan, mistä tulet, mitä klikkaat ja minkä kampanjan kautta päädyit sivulle.
+
+Markkinoinnille hyödyllistä, mutta aiheuttaa merkittäviä **yksityisyysriskejä**.
+
+---
+
+## 🔒 Miten URL-seuranta vaikuttaa yksityisyyteesi
+
+- **Paljastaa selaustottumuksesi**: Seuranta näyttää, miltä sivulta tai sovelluksesta tulit.
+- **Ristiinprofilointi**: Mainostajat yhdistävät toimintasi eri sivustoilla.
+- **Pitkät ja sekavat URL-osoitteet**: Linkit täynnä parametreja ovat vaikeita lukea.
+- **Ei-toivottu tiedon jakaminen**: Tietoja jaetaan usein kolmansille osapuolille ilman suostumusta.
+
+Lyhyesti: URL-seuranta on näkymätön jälki, jonka jätät internetiin.
+
+---
+
+## 📑 Yleisimmät URL-seurantaparametrit
+
+Tässä yleisimmät seurantaparametrit ja niiden tarkoitus. Perustuu standardeihin, analytiikka-alustoihin, mainosjärjestelmiin ja SEO-käytäntöihin.
+
+---
+
+### 1. UTM-parametrit (Urchin Tracking Module)
+
+Markkinoinnin vakioparametrit, joita tukevat Google Analytics ja monet muut alustat.
+
+| Parametri      | Kuvaus                                                      |
+| -------------- | ----------------------------------------------------------- |
+| `utm_source`   | Liikenteen lähde (esim. `google`, `newsletter`, `facebook`) |
+| `utm_medium`   | Markkinointikanava (esim. `email`, `cpc`, `social`)         |
+| `utm_campaign` | Kampanjan nimi (esim. `spring_sale`)                        |
+| `utm_term`     | Maksetut hakusanat (esim. `running+shoes`)                  |
+| `utm_content`  | Sisällön/linkin erottelu A/B-testissä (esim. `logolink`)    |
+
+---
+
+### 2. Mainosklikkien tunnisteet
+
+Mainosalustojen automaattisesti luomat parametrit klikkien seurantaan.
+
+| Parametri | Alusta / Tarkoitus                 |
+| --------- | ---------------------------------- |
+| `gclid`   | Google Ads -klikkitunniste         |
+| `dclid`   | Google Display Ads -klikkitunniste |
+| `fbclid`  | Facebook/Instagram -klikkitunniste |
+| `msclkid` | Microsoft/Bing Ads -klikkitunniste |
+| `twclid`  | Twitter/X -klikkitunniste          |
+| `yclid`   | Yandex Ads -klikkitunniste         |
+
+---
+
+### 3. Viittaus- ja affiliate-seuranta
+
+Käytetään viittausten, kumppanuuksien ja affiliate-kampanjoiden seurantaan.
+
+| Parametri              | Kuvaus                      |
+| ---------------------- | --------------------------- |
+| `ref` / `referrer`     | Viittauslähde               |
+| `aff_id` / `affiliate` | Affiliate- tai kumppani-ID  |
+| `partner`              | Kumppanuusohjelman tunniste |
+| `campaignid`           | Kampanjan tunniste          |
+| `adgroupid`            | Mainosryhmän tunniste       |
+| `creative`             | Luovan sisällön tunniste    |
+
+---
+
+### 4. Kokeilu / A/B-testaus
+
+Parametrit käyttäjien ryhmittelyyn testeissä.
+
+| Parametri              | Tarkoitus                 |
+| ---------------------- | ------------------------- |
+| `experiment` / `expid` | Kokeilun nimi tai ID      |
+| `variant`              | Variantti tai testiversio |
+| `bucket` / `group`     | Testiryhmän tunniste      |
+
+---
+
+### 5. Istunto- ja asiakasseuranta
+
+Parametrit istunnon tai asiakkaan tunnistamiseen (analytiikka).
+
+| Parametri           | Tarkoitus                               |
+| ------------------- | --------------------------------------- |
+| `sessionid` / `sid` | Istunnon tunniste (harvinainen nykyään) |
+| `cid` / `clientid`  | Asiakas- tai käyttäjä-ID                |
+| `tracking_id`       | Sisäinen seurantatunniste               |
+
+---
+
+### 6. Alustakohtaiset parametrit
+
+Erityiset parametrit eri alustoilta tai työkaluista.
+
+| Parametri          | Alusta / Tarkoitus                     |
+| ------------------ | -------------------------------------- |
+| `mc_eid`           | Mailchimp-sähköpostin klikkiseuranta   |
+| `_hsenc` / `_hsmi` | HubSpot-sähköpostin seurantaparametrit |
+| `igshid`           | Instagram-jakotunniste                 |
+
+---
+
+### 7. Aktiiviset vs passiiviset parametrit
+
+Vaikuttavatko ne sisältöön vai ovatko ne vain seurantaa varten:
+
+- **Aktiiviset parametrit**: Muuttavat sivun sisältöä tai toiminnallisuutta.
+  Esimerkkejä:
+- `category=shoes`, `color=blue`, `sort=price_asc`, `page=2`, `lang=de`
+- **Passiiviset parametrit**: Vain seurantaan, eivät muuta sisältöä.
+  Esimerkkejä:
+- `utm_*`, `gclid`, `ref`, `sessionid`
+
+---
+
+## 🚀 Miten suojautua
+
+Paras tapa on **poistaa seurannat URL-osoitteista ennen jakamista tai klikkaamista**.
+
+Siksi loimme **[URL-seurannan poistotyökalun](/tools/url-tracker-cleaner)** 🎉
+
+✨ Tällä työkalulla voit:
+
+- Siivota sekavat URL-osoitteet hetkessä
+- Poistaa automaattisesti kymmeniä tunnettuja seurantoja
+- Jakaa linkkejä turvallisesti ja yksityisesti
+- Suojata selaushistoriasi paremmin
+
+---
+
+## ✅ Yhteenveto
+
+URL-seurannat vaikuttavat harmittomilta, mutta paljastavat paljon verkkokäyttäytymisestäsi.
+Poistamalla ne suojaat yksityisyyttäsi.
+
+👉 Kokeile **URL-seurannan poistotyökalua** ja nauti puhtaista, seurannattomista linkeistä.
+
+---

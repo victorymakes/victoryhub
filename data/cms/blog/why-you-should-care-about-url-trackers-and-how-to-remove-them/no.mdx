@@ -1,0 +1,160 @@
+export const metadata = {
+    title: "Hvorfor du bør bry deg om URL-trackere og hvordan du fjerner dem",
+    date: "2025-08-22",
+    cover: "https://i.postimg.cc/d1WMw05P/image.png",
+    description:
+        "Lær hvordan URL-trackere påvirker personvernet ditt og få oversikt over de vanligste sporingsparametrene. Finn ut hvorfor det er viktig å fjerne trackere og hvordan vårt verktøy hjelper deg å dele rene og sikre lenker.",
+    tags: [
+        { id: "privacy", name: "Personvern" },
+        { id: "security", name: "Sikkerhet" },
+        { id: "url-tracker", name: "URL-tracker" },
+        { id: "web-tools", name: "Webverktøy" },
+    ],
+    category: {
+        id: "privacy",
+        name: "Personvern",
+    },
+};
+
+# Hvorfor du bør bry deg om URL-trackere og hvordan du fjerner dem
+
+Når du deler eller klikker på en lenke, inneholder den ofte **sporingsparametere** i URL-en.
+Disse _URL-trackerne_ (som `utm_source` eller `fbclid`) brukes av selskaper til å følge hvor du kommer fra, hva du klikker på og hvilken kampanje som ledet deg dit.
+
+Nyttig for markedsføring, men gir betydelige **personvernutfordringer**.
+
+---
+
+## 🔒 Hvordan URL-trackere påvirker personvernet ditt
+
+- **Avslører surfevanene dine**: Trackere viser hvilken side eller app du kom fra.
+- **Profilering på tvers av plattformer**: Annonsører kobler aktivitetene dine på ulike nettsteder.
+- **Rotete og lange URL-er**: Lenker fulle av parametere er vanskelige å lese.
+- **Uønsket datadeling**: Informasjon sendes ofte til tredjeparter uten samtykke.
+
+Kort sagt: URL-trackere er usynlige spor du legger igjen på internett.
+
+---
+
+## 📑 Vanlige URL-sporingsparametere
+
+Her finner du de vanligste sporingsparametrene, med forklaring på formål og bruk. Basert på standarder, analyseplattformer, annonsesystemer og SEO-best practices.
+
+---
+
+### 1. UTM-parametere (Urchin Tracking Module)
+
+Standard markedsføringsparametere, støttet av Google Analytics og mange andre plattformer.
+
+| Parameter      | Beskrivelse                                                |
+| -------------- | ---------------------------------------------------------- |
+| `utm_source`   | Trafikkilde (f.eks. `google`, `newsletter`, `facebook`)    |
+| `utm_medium`   | Markedsføringskanal (f.eks. `email`, `cpc`, `social`)      |
+| `utm_campaign` | Kampanjenavn (f.eks. `spring_sale`)                        |
+| `utm_term`     | Betalte søkeord (f.eks. `running+shoes`)                   |
+| `utm_content`  | Skiller innhold/lenker for A/B-testing (f.eks. `logolink`) |
+
+---
+
+### 2. Annonseklikk-IDer
+
+Automatisk genererte parametere fra annonseplattformer for klikk-attribusjon.
+
+| Parameter | Plattform / Formål          |
+| --------- | --------------------------- |
+| `gclid`   | Google Ads klikk-ID         |
+| `dclid`   | Google Display Ads klikk-ID |
+| `fbclid`  | Facebook/Instagram klikk-ID |
+| `msclkid` | Microsoft/Bing Ads klikk-ID |
+| `twclid`  | Twitter/X klikk-ID          |
+| `yclid`   | Yandex Ads klikk-ID         |
+
+---
+
+### 3. Henvisnings- og affiliate-sporing
+
+Brukes til å tilskrive henvisninger, partnerskap eller affiliatekampanjer.
+
+| Parameter              | Beskrivelse                 |
+| ---------------------- | --------------------------- |
+| `ref` / `referrer`     | Henvisningskilde            |
+| `aff_id` / `affiliate` | Affiliate- eller partner-ID |
+| `partner`              | Partnerprogram/-kilde       |
+| `campaignid`           | Kampanje-ID                 |
+| `adgroupid`            | Annonsegruppe-ID            |
+| `creative`             | Kreativt asset-ID           |
+
+---
+
+### 4. Eksperimentering / A/B-testing
+
+Parametere for å gruppere brukere i tester.
+
+| Parameter              | Formål                       |
+| ---------------------- | ---------------------------- |
+| `experiment` / `expid` | Navn eller ID på eksperiment |
+| `variant`              | Variant eller testversjon    |
+| `bucket` / `group`     | Testgruppe/bucket-ID         |
+
+---
+
+### 5. Sesjons- og klientsporing
+
+Parametere for identifisering av sesjon eller klient (analyse).
+
+| Parameter           | Formål                        |
+| ------------------- | ----------------------------- |
+| `sessionid` / `sid` | Sesjons-ID (nå sjelden brukt) |
+| `cid` / `clientid`  | Klient- eller bruker-ID       |
+| `tracking_id`       | Intern sporings-ID            |
+
+---
+
+### 6. Plattformspesifikke parametere
+
+Spesialparametere fra ulike plattformer eller verktøy.
+
+| Parameter          | Plattform / Formål           |
+| ------------------ | ---------------------------- |
+| `mc_eid`           | Mailchimp e-postklikksporing |
+| `_hsenc` / `_hsmi` | HubSpot e-postsporing        |
+| `igshid`           | Instagram delings-ID         |
+
+---
+
+### 7. Aktive vs passive parametere
+
+Om de påvirker innholdet eller kun brukes til sporing:
+
+- **Aktive parametere**: Endrer innhold eller funksjonalitet på siden.
+  Eksempler:
+- `category=shoes`, `color=blue`, `sort=price_asc`, `page=2`, `lang=de`
+- **Passive parametere**: Kun for sporing, endrer ikke innhold.
+  Eksempler:
+- `utm_*`, `gclid`, `ref`, `sessionid`
+
+---
+
+## 🚀 Hvordan beskytte deg selv
+
+Den beste måten er å **fjerne trackere fra URL-er før du deler eller klikker på dem**.
+
+Derfor har jeg laget **[URL Tracker Remover-verktøyet](/tools/url-tracker-cleaner)** 🎉
+
+✨ Med dette kan du:
+
+- Raskt rydde opp i rotete URL-er
+- Automatisk fjerne dusinvis av kjente trackere
+- Dele lenker trygt og privat
+- Beskytte nettleserhistorikken din bedre
+
+---
+
+## ✅ Oppsummering
+
+URL-trackere virker harmløse, men avslører mye om ditt liv på nett.
+Ved å fjerne dem tar du tilbake kontrollen over personvernet ditt.
+
+👉 Prøv **URL Tracker Remover-verktøyet** og nyt rene, tracker-frie lenker.
+
+---

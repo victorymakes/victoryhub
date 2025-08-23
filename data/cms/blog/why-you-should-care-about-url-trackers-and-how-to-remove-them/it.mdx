@@ -1,0 +1,160 @@
+export const metadata = {
+    title: "Perché dovresti preoccuparti dei tracker URL e come rimuoverli",
+    date: "2025-08-22",
+    cover: "https://i.postimg.cc/d1WMw05P/image.png",
+    description:
+        "Scopri come i tracker URL influenzano la tua privacy e conosci i parametri di tracciamento più comuni. Scopri perché è importante rimuoverli e come il nostro strumento ti aiuta a condividere link puliti e sicuri.",
+    tags: [
+        { id: "privacy", name: "Privacy" },
+        { id: "security", name: "Sicurezza" },
+        { id: "url-tracker", name: "Tracker URL" },
+        { id: "web-tools", name: "Strumenti web" },
+    ],
+    category: {
+        id: "privacy",
+        name: "Privacy",
+    },
+};
+
+# Perché dovresti preoccuparti dei tracker URL e come rimuoverli
+
+Quando condividi o clicchi su un link, spesso contiene **parametri di tracciamento** nascosti nell'URL.
+Questi _tracker URL_ (come `utm_source` o `fbclid`) vengono utilizzati dalle aziende per sapere da dove vieni, cosa clicchi e quale campagna ti ha portato lì.
+
+Utili per il marketing, ma comportano seri **rischi per la privacy**.
+
+---
+
+## 🔒 Come i tracker URL influenzano la tua privacy
+
+- **Rivelano le tue abitudini di navigazione**: Mostrano il sito o l'app di origine.
+- **Profilazione incrociata**: Gli inserzionisti collegano la tua attività tra siti diversi.
+- **URL lunghe e confuse**: Link pieni di parametri difficili da leggere.
+- **Condivisione indesiderata di dati**: Le informazioni vengono spesso inviate a terze parti senza il tuo consenso.
+
+In breve: i tracker URL sono briciole invisibili che lasci su internet.
+
+---
+
+## 📑 Parametri di tracciamento URL più comuni
+
+Questa guida raccoglie i parametri di tracciamento più utilizzati, con spiegazioni sul loro scopo e utilizzo. Basata su standard, piattaforme di analisi, sistemi pubblicitari e best practice SEO.
+
+---
+
+### 1. Parametri UTM (Urchin Tracking Module)
+
+Parametri standard di marketing supportati da Google Analytics e molte altre piattaforme.
+
+| Parametro      | Descrizione                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `utm_source`   | Origine del traffico (es: `google`, `newsletter`, `facebook`) |
+| `utm_medium`   | Canale di marketing (es: `email`, `cpc`, `social`)            |
+| `utm_campaign` | Nome della campagna o promozione (es: `spring_sale`)          |
+| `utm_term`     | Parole chiave di ricerca a pagamento (es: `running+shoes`)    |
+| `utm_content`  | Differenzia contenuti/link per test A/B (es: `logolink`)      |
+
+---
+
+### 2. Identificatori di clic pubblicitari
+
+Parametri generati automaticamente dalle piattaforme pubblicitarie per l'attribuzione dei clic.
+
+| Parametro | Piattaforma / Scopo               |
+| --------- | --------------------------------- |
+| `gclid`   | Identificatore di clic Google Ads |
+| `dclid`   | Identificatore Google Display Ads |
+| `fbclid`  | Identificatore Facebook/Instagram |
+| `msclkid` | Identificatore Microsoft/Bing Ads |
+| `twclid`  | Identificatore Twitter/X          |
+| `yclid`   | Identificatore Yandex Ads         |
+
+---
+
+### 3. Tracciamento referral e affiliati
+
+Per attribuire referral, partnership o campagne di affiliazione.
+
+| Parametro              | Descrizione                     |
+| ---------------------- | ------------------------------- |
+| `ref` / `referrer`     | Fonte di referral               |
+| `aff_id` / `affiliate` | ID affiliato o partner          |
+| `partner`              | Identificatore del programma    |
+| `campaignid`           | ID della campagna pubblicitaria |
+| `adgroupid`            | ID del gruppo di annunci        |
+| `creative`             | ID della risorsa creativa       |
+
+---
+
+### 4. Sperimentazione / Test A/B
+
+Parametri per assegnare gli utenti a gruppi di test.
+
+| Parametro              | Scopo                       |
+| ---------------------- | --------------------------- |
+| `experiment` / `expid` | Nome o ID dell'esperimento  |
+| `variant`              | Variante o versione di test |
+| `bucket` / `group`     | Gruppo o bucket di test     |
+
+---
+
+### 5. Tracciamento sessioni e clienti
+
+Parametri per identificare sessioni o clienti (analisi).
+
+| Parametro           | Scopo                          |
+| ------------------- | ------------------------------ |
+| `sessionid` / `sid` | Identificatore di sessione     |
+| `cid` / `clientid`  | ID cliente o utente            |
+| `tracking_id`       | Identificatore di tracciamento |
+
+---
+
+### 6. Identificatori specifici della piattaforma
+
+Parametri speciali di diverse piattaforme o strumenti.
+
+| Parametro          | Piattaforma / Scopo                      |
+| ------------------ | ---------------------------------------- |
+| `mc_eid`           | Tracciamento clic Mailchimp              |
+| `_hsenc` / `_hsmi` | Parametri di tracciamento HubSpot        |
+| `igshid`           | Identificatore di condivisione Instagram |
+
+---
+
+### 7. Parametri attivi vs passivi
+
+In base alla funzione — se influenzano il contenuto o servono solo per il tracciamento:
+
+- **Parametri attivi**: Modificano il contenuto o la funzionalità della pagina.
+  Esempi:
+- `category=shoes`, `color=blue`, `sort=price_asc`, `page=2`, `lang=de`
+- **Parametri passivi**: Non modificano il contenuto, servono solo per il tracciamento.
+  Esempi:
+- `utm_*`, `gclid`, `ref`, `sessionid`
+
+---
+
+## 🚀 Come proteggerti
+
+Il modo migliore è **rimuovere i tracker dagli URL prima di condividerli o cliccarli**.
+
+Ecco perché ho creato lo **[strumento per rimuovere i tracker URL](/tools/url-tracker-cleaner)** 🎉
+
+✨ Con questo strumento puoi:
+
+- Pulire immediatamente URL disordinati
+- Rimuovere automaticamente decine di tracker noti
+- Condividere link in sicurezza, senza perdita di dati
+- Proteggere meglio la tua cronologia di navigazione
+
+---
+
+## ✅ Conclusione
+
+I tracker URL sembrano innocui, ma rivelano molto sulla tua vita online.
+Rimuovendoli, riprendi il controllo della tua privacy.
+
+👉 Prova lo **strumento per rimuovere i tracker URL** e goditi link puliti e privi di tracciamento.
+
+---

@@ -1,0 +1,160 @@
+export const metadata = {
+    title: "Por qué deberías preocuparte por los rastreadores de URL y cómo eliminarlos",
+    date: "2025-08-22",
+    cover: "https://i.postimg.cc/d1WMw05P/image.png",
+    description:
+        "Descubre cómo los rastreadores de URL afectan tu privacidad y conoce los parámetros de seguimiento más comunes. Aprende por qué es importante eliminarlos y cómo nuestra herramienta te ayuda a compartir enlaces limpios y seguros.",
+    tags: [
+        { id: "privacy", name: "Privacidad" },
+        { id: "security", name: "Seguridad" },
+        { id: "url-tracker", name: "Rastreador de URL" },
+        { id: "web-tools", name: "Herramientas web" },
+    ],
+    category: {
+        id: "privacy",
+        name: "Privacidad",
+    },
+};
+
+# Por qué deberías preocuparte por los rastreadores de URL y cómo eliminarlos
+
+Al compartir o hacer clic en un enlace, es probable que contenga **parámetros de seguimiento** ocultos en la URL.
+Estos _rastreadores de URL_ (como `utm_source` o `fbclid`) permiten a las empresas saber de dónde vienes, qué haces clic y qué campaña te llevó allí.
+
+Son útiles para el marketing, pero plantean importantes **problemas de privacidad**.
+
+---
+
+## 🔒 Cómo los rastreadores de URL afectan tu privacidad
+
+- **Revelan tus hábitos de navegación**: Muestran el sitio o app de origen.
+- **Perfilado cruzado**: Los anunciantes vinculan tu actividad entre sitios.
+- **URLs largas y confusas**: Enlaces llenos de parámetros difíciles de leer.
+- **Compartir datos sin consentimiento**: Tu información se envía a terceros sin que lo sepas.
+
+En resumen: los rastreadores de URL son migas invisibles que dejas por internet.
+
+---
+
+## 📑 Parámetros de rastreo de URL más comunes
+
+Esta referencia recopila los parámetros de rastreo más usados, con explicación de su propósito. Basado en estándares, plataformas de analítica, sistemas publicitarios y buenas prácticas SEO.
+
+---
+
+### 1. Parámetros UTM (Urchin Tracking Module)
+
+Parámetros estándar de marketing soportados por Google Analytics y otras plataformas.
+
+| Parámetro      | Descripción                                                 |
+| -------------- | ----------------------------------------------------------- |
+| `utm_source`   | Origen del tráfico (ej: `google`, `newsletter`, `facebook`) |
+| `utm_medium`   | Medio de marketing (ej: `email`, `cpc`, `social`)           |
+| `utm_campaign` | Campaña o promoción específica (ej: `spring_sale`)          |
+| `utm_term`     | Palabras clave de búsqueda pagada (ej: `running+shoes`)     |
+| `utm_content`  | Diferencia contenido/enlaces para A/B test (ej: `logolink`) |
+
+---
+
+### 2. Identificadores de clic publicitario
+
+Parámetros generados por plataformas de anuncios para atribución de clics.
+
+| Parámetro | Plataforma / Propósito              |
+| --------- | ----------------------------------- |
+| `gclid`   | Identificador de clic de Google Ads |
+| `dclid`   | Identificador de Google Display Ads |
+| `fbclid`  | Identificador de Facebook/Instagram |
+| `msclkid` | Identificador de Microsoft/Bing Ads |
+| `twclid`  | Identificador de Twitter/X          |
+| `yclid`   | Identificador de Yandex Ads         |
+
+---
+
+### 3. Seguimiento de referidos y afiliados
+
+Para atribuir referidos, socios o campañas de afiliados.
+
+| Parámetro              | Descripción                |
+| ---------------------- | -------------------------- |
+| `ref` / `referrer`     | Fuente de referido         |
+| `aff_id` / `affiliate` | ID de afiliado o socio     |
+| `partner`              | Identificador de programa  |
+| `campaignid`           | ID de campaña publicitaria |
+| `adgroupid`            | ID de grupo de anuncios    |
+| `creative`             | ID de recurso creativo     |
+
+---
+
+### 4. Experimentación / Pruebas A/B
+
+Parámetros para asignar usuarios a grupos de prueba.
+
+| Parámetro              | Propósito                     |
+| ---------------------- | ----------------------------- |
+| `experiment` / `expid` | Nombre o ID del experimento   |
+| `variant`              | Variante o versión de prueba  |
+| `bucket` / `group`     | Grupo o bucket de experimento |
+
+---
+
+### 5. Seguimiento de sesión y cliente
+
+Parámetros para identificar sesión o cliente (análisis).
+
+| Parámetro           | Propósito                    |
+| ------------------- | ---------------------------- |
+| `sessionid` / `sid` | Identificador de sesión      |
+| `cid` / `clientid`  | ID de cliente o usuario      |
+| `tracking_id`       | Identificador de seguimiento |
+
+---
+
+### 6. Identificadores específicos de plataforma
+
+Parámetros especiales de diversas plataformas o herramientas.
+
+| Parámetro          | Plataforma / Propósito                   |
+| ------------------ | ---------------------------------------- |
+| `mc_eid`           | Seguimiento de clic de Mailchimp         |
+| `_hsenc` / `_hsmi` | Parámetros de seguimiento de HubSpot     |
+| `igshid`           | Identificador de compartido de Instagram |
+
+---
+
+### 7. Parámetros activos vs pasivos
+
+Según su función — si afectan el contenido o solo sirven para rastreo:
+
+- **Parámetros activos**: Modifican el contenido o funcionalidad de la página.
+  Ejemplos:
+- `category=shoes`, `color=blue`, `sort=price_asc`, `page=2`, `lang=de`
+- **Parámetros pasivos**: No cambian el contenido, solo rastrean.
+  Ejemplos:
+- `utm_*`, `gclid`, `ref`, `sessionid`
+
+---
+
+## 🚀 Cómo protegerte
+
+La mejor forma es **eliminar los rastreadores de las URLs antes de compartirlas o hacer clic**.
+
+Por eso creé la **[herramienta para limpiar rastreadores de URL](/tools/url-tracker-cleaner)** 🎉
+
+✨ Con ella puedes:
+
+- Limpiar instantáneamente URLs desordenadas
+- Eliminar automáticamente decenas de rastreadores conocidos
+- Compartir enlaces con confianza, sin filtrar datos
+- Proteger mejor tu historial de navegación
+
+---
+
+## ✅ Conclusión
+
+Los rastreadores de URL parecen inofensivos, pero exponen mucho sobre tu vida online.
+Al eliminarlos, recuperas el control de tu privacidad.
+
+👉 Prueba la **herramienta para limpiar rastreadores de URL** y disfruta de enlaces limpios y libres de rastreo.
+
+---

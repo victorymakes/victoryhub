@@ -1,0 +1,160 @@
+export const metadata = {
+    title: "Varför du bör bry dig om URL-spårare och hur du tar bort dem",
+    date: "2025-08-22",
+    cover: "https://i.postimg.cc/d1WMw05P/image.png",
+    description:
+        "Lär dig hur URL-spårare påverkar din integritet och upptäck de vanligaste spårningsparametrarna. Ta reda på varför det är viktigt att ta bort spårare och hur vårt verktyg hjälper dig att dela rena och säkra länkar.",
+    tags: [
+        { id: "privacy", name: "Integritet" },
+        { id: "security", name: "Säkerhet" },
+        { id: "url-tracker", name: "URL-spårare" },
+        { id: "web-tools", name: "Webbverktyg" },
+    ],
+    category: {
+        id: "privacy",
+        name: "Integritet",
+    },
+};
+
+# Varför du bör bry dig om URL-spårare och hur du tar bort dem
+
+När du delar eller klickar på en länk innehåller den ofta **spårningsparametrar** i URL:en.
+Dessa _URL-spårare_ (som `utm_source` eller `fbclid`) används av företag för att följa var du kommer ifrån, vad du klickar på och vilken kampanj som ledde dig dit.
+
+Bra för marknadsföring, men innebär stora **integritetsrisker**.
+
+---
+
+## 🔒 Hur URL-spårare påverkar din integritet
+
+- **Avslöjar dina surfbeteenden**: Spårare visar vilken sida eller app du kom från.
+- **Profilering över plattformar**: Annonsörer kopplar din aktivitet mellan olika webbplatser.
+- **Långa och röriga URL:er**: Länkar fulla av parametrar är svåra att läsa.
+- **Oönskad datadelning**: Information skickas ofta till tredje part utan ditt samtycke.
+
+Kort sagt: URL-spårare är osynliga spår du lämnar på internet.
+
+---
+
+## 📑 Vanliga URL-spårningsparametrar
+
+Här är de vanligaste spårningsparametrarna, med förklaring av syfte och användning. Baserat på standarder, analysplattformar, annonsnätverk och SEO-best practices.
+
+---
+
+### 1. UTM-parametrar (Urchin Tracking Module)
+
+Standardparametrar för marknadsföring, stöds av Google Analytics och många andra plattformar.
+
+| Parameter      | Beskrivning                                            |
+| -------------- | ------------------------------------------------------ |
+| `utm_source`   | Trafikkälla (t.ex. `google`, `newsletter`, `facebook`) |
+| `utm_medium`   | Marknadsföringskanal (t.ex. `email`, `cpc`, `social`)  |
+| `utm_campaign` | Kampanjnamn (t.ex. `spring_sale`)                      |
+| `utm_term`     | Betalda sökord (t.ex. `running+shoes`)                 |
+| `utm_content`  | Skiljer liknande innehåll/länkar (t.ex. `logolink`)    |
+
+---
+
+### 2. Annonsklick-ID
+
+Automatiskt genererade parametrar från annonsplattformar för klickspårning.
+
+| Parameter | Plattform / Syfte           |
+| --------- | --------------------------- |
+| `gclid`   | Google Ads klick-ID         |
+| `dclid`   | Google Display Ads klick-ID |
+| `fbclid`  | Facebook/Instagram klick-ID |
+| `msclkid` | Microsoft/Bing Ads klick-ID |
+| `twclid`  | Twitter/X klick-ID          |
+| `yclid`   | Yandex Ads klick-ID         |
+
+---
+
+### 3. Referens- & affiliate-spårning
+
+För att attribuera referenser, partnerskap eller affiliatekampanjer.
+
+| Parameter              | Beskrivning                 |
+| ---------------------- | --------------------------- |
+| `ref` / `referrer`     | Referenskälla               |
+| `aff_id` / `affiliate` | Affiliate- eller partner-ID |
+| `partner`              | Partnerprogram/-källa       |
+| `campaignid`           | Kampanj-ID                  |
+| `adgroupid`            | Annonsgrupp-ID              |
+| `creative`             | Kreativt asset-ID           |
+
+---
+
+### 4. Experiment / A/B-testning
+
+Parametrar för att placera användare i testgrupper.
+
+| Parameter              | Syfte                         |
+| ---------------------- | ----------------------------- |
+| `experiment` / `expid` | Namn eller ID på experimentet |
+| `variant`              | Variant eller testversion     |
+| `bucket` / `group`     | Testgrupp/bucket-ID           |
+
+---
+
+### 5. Sessions- & klientspårning
+
+Parametrar för sessions- eller klientidentifiering (analys).
+
+| Parameter           | Syfte                         |
+| ------------------- | ----------------------------- |
+| `sessionid` / `sid` | Sessions-ID (numera ovanligt) |
+| `cid` / `clientid`  | Klient- eller användar-ID     |
+| `tracking_id`       | Intern spårnings-ID           |
+
+---
+
+### 6. Plattformsspecifika parametrar
+
+Speciella parametrar från olika plattformar eller verktyg.
+
+| Parameter          | Plattform / Syfte             |
+| ------------------ | ----------------------------- |
+| `mc_eid`           | Mailchimp e-postklickspårning |
+| `_hsenc` / `_hsmi` | HubSpot e-postspårning        |
+| `igshid`           | Instagram delnings-ID         |
+
+---
+
+### 7. Aktiva vs passiva parametrar
+
+Om de påverkar innehållet eller bara används för spårning:
+
+- **Aktiva parametrar**: Ändrar sidans innehåll eller funktion.
+  Exempel:
+- `category=shoes`, `color=blue`, `sort=price_asc`, `page=2`, `lang=de`
+- **Passiva parametrar**: Endast för spårning, påverkar inte innehållet.
+  Exempel:
+- `utm_*`, `gclid`, `ref`, `sessionid`
+
+---
+
+## 🚀 Hur du skyddar dig
+
+Det bästa är att **ta bort spårare från URL:er innan du delar eller klickar på dem**.
+
+Därför har jag byggt **[URL Tracker Remover-verktyget](/tools/url-tracker-cleaner)** 🎉
+
+✨ Med det kan du:
+
+- Rensa röriga URL:er direkt
+- Ta bort dussintals kända spårare automatiskt
+- Dela länkar tryggt och privat
+- Skydda din webbhistorik bättre
+
+---
+
+## ✅ Slutsats
+
+URL-spårare verkar harmlösa, men avslöjar mycket om ditt liv online.
+Genom att ta bort dem skyddar du din integritet.
+
+👉 Prova **URL Tracker Remover-verktyget** och njut av rena, spårningsfria länkar.
+
+---
