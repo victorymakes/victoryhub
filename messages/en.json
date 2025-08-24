@@ -818,8 +818,6 @@
     }
   },
   "PasswordStrengthChecker": {
-    "title": "Password Strength Checker",
-    "description": "Check the strength of your passwords and get improvement suggestions",
     "enterPassword": "Enter Password",
     "passwordPlaceholder": "Type or paste your password here...",
     "passwordStrength": "Password Strength",
@@ -833,5 +831,30 @@
     "feedbackStrong": "Great! Consider making it even longer for extra safety.",
     "validating": "Checking  password strength......",
     "clear": "Clear"
+  },
+  "BarcodeGenerator": {
+    "code128Description": "High-density barcode supporting ASCII 0–127, ideal for shipping and logistics.",
+    "ean13Description": "13-digit barcode used worldwide for retail products.",
+    "valueLabel": "Barcode Content",
+    "valuePlaceholder": "Enter text for Code128 or 12-13 digits for EAN-13",
+    "barcodeType": "Barcode Type",
+    "typeCode128": "Code128",
+    "typeEAN13": "EAN-13",
+    "options": "Options",
+    "height": "Height",
+    "width": "Width",
+    "lineColor": "Line Color",
+    "textMargin": "Text Margin",
+    "fontSize": "Font Size",
+    "backgroundColor": "Background Color",
+    "displayValue": "Display Value",
+    "download": "Download Barcode",
+    "generate": "Generate Barcode",
+    "generating": "Generating...",
+    "errors": {
+      "invalidEAN13": "Invalid EAN-13 format. Please enter 12-13 digits.",
+      "emptyValue": "Please enter a value to generate a barcode.",
+      "generationFailed": "Failed to generate barcode. Please try again."
+    }
   }
 }
