@@ -816,5 +816,22 @@
     "warnings": {
       "noDataDetected": "No sensitive data detected in the input text."
     }
+  },
+  "PasswordStrengthChecker": {
+    "title": "Password Strength Checker",
+    "description": "Check the strength of your passwords and get improvement suggestions",
+    "enterPassword": "Enter Password",
+    "passwordPlaceholder": "Type or paste your password here...",
+    "passwordStrength": "Password Strength",
+    "strengthWeak": "Weak",
+    "strengthFair": "Fair",
+    "strengthGood": "Good",
+    "strengthStrong": "Strong",
+    "feedbackWeak": "Add more characters and avoid common words.",
+    "feedbackFair": "Turn it into a passphrase of 3–4 words.",
+    "feedbackGood": "Good password! Consider adding more variety.",
+    "feedbackStrong": "Great! Consider making it even longer for extra safety.",
+    "checkButton": "Check Strength",
+    "clear": "Clear"
   }
 }

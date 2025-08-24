@@ -14,6 +14,7 @@ import {
 import { getTranslations } from "next-intl/server";
 import { ToolDetailJsonLd } from "@/components/seo/page-json-ld";
 import ToolGrid from "@/components/tool/tool-grid";
+import { MessageCircleQuestionMark, ThumbsUp } from "lucide-react";
 
 interface ToolPageProps {
     params: Promise<{
@@ -99,46 +100,55 @@ export default async function ToolPage({ params }: ToolPageProps) {
             />
 
             <div className="bg-background">
-                <Container className="py-16 space-y-8">
-                    {/* Header Section */}
-                    <div className="w-full flex flex-col items-end sm:flex-row sm:items-center justify-between">
-                        <div className="flex-1 w-full">
-                            <h1 className="text-2xl font-bold mb-2">
-                                {tool.name}
-                            </h1>
-                            <p className="text-muted-foreground">
-                                {tool.description}
-                            </p>
+                <Container className="py-16 space-y-12">
+                    {/* Tool Section */}
+                    <div className="w-full space-y-6">
+                        <div className="w-full flex flex-col items-end sm:flex-row sm:items-center justify-between">
+                            <div className="flex-1 w-full">
+                                <h1 className="text-2xl font-bold mb-2">
+                                    {tool.name}
+                                </h1>
+                                <p className="text-muted-foreground">
+                                    {tool.description}
+                                </p>
+                            </div>
+                            <div className="mt-4 sm:mt-0 sm:w-auto flex-shrink-0">
+                                <Share
+                                    url={url}
+                                    title={`${tool.name} - ${config.siteName}`}
+                                    description={tool.description}
+                                    hashtags={[
+                                        config.siteName,
+                                        "tools",
+                                        "productivity",
+                                        "developer",
+                                    ]}
+                                />
+                            </div>
                         </div>
-                        <div className="mt-4 sm:mt-0 sm:w-auto flex-shrink-0">
-                            <Share
-                                url={url}
-                                title={`${tool.name} - ${config.siteName}`}
-                                description={tool.description}
-                                hashtags={[
-                                    config.siteName,
-                                    "tools",
-                                    "productivity",
-                                    "developer",
-                                ]}
-                            />
-                        </div>
+                        <ToolComponent
+                            id={slug}
+                            underConstructionMessage={t(
+                                "toolUnderConstruction",
+                            )}
+                        />
                     </div>
 
-                    {/* Tool Section */}
-                    <ToolComponent
-                        id={slug}
-                        underConstructionMessage={t("toolUnderConstruction")}
-                    />
-
                     {/* FAQ Section */}
-                    <FAQSection faqItems={tool.faq} title={t("faq")} />
+                    <div className="space-y-6">
+                        <h2 className="flex gap-2 text-xl font-semibold items-center">
+                            {t("faq")}
+                            <MessageCircleQuestionMark />
+                        </h2>
+                        <FAQSection faqItems={tool.faq} />
+                    </div>
 
                     {/* Related Tools Section */}
                     {relatedTools && relatedTools.length > 0 && (
                         <div className="space-y-6">
-                            <h2 className="text-xl font-semibold">
+                            <h2 className="flex gap-2 text-xl font-semibold items-center">
                                 {t("relatedTools")}
+                                <ThumbsUp />
                             </h2>
                             <ToolGrid
                                 tools={relatedTools}

@@ -67,6 +67,13 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "password-strength-checker": dynamic(
+        () => import("./password-strength-checker"),
+        {
+            loading: () => <ToolLoader />,
+            ssr: false,
+        },
+    ),
     "image-converter": dynamic(() => import("./image-converter"), {
         loading: () => <ToolLoader />,
         ssr: false,

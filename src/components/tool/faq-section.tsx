@@ -4,7 +4,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface FAQItem {
     question: string;
@@ -13,22 +13,15 @@ interface FAQItem {
 
 interface FAQSectionProps {
     faqItems: FAQItem[];
-    title: string;
 }
 
-export function FAQSection({ faqItems, title }: FAQSectionProps) {
+export function FAQSection({ faqItems }: FAQSectionProps) {
     if (!faqItems || faqItems.length === 0) {
         return null;
     }
 
     return (
         <Card>
-            <CardHeader>
-                <CardTitle className="text-xl font-semibold flex items-center gap-2">
-                    <span className="text-2xl">❓</span>
-                    {title}
-                </CardTitle>
-            </CardHeader>
             <CardContent>
                 <Accordion type="single" collapsible className="w-full">
                     {faqItems.map((item, index) => (
