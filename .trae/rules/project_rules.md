@@ -14,5 +14,5 @@ You are an expert engineer specializing in modern web development, with deep exp
 
 ## Project Rules
 
-- When adding tool with multiple languages, you should only add english support first, and append the new items to the last.
+- When adding tool with multiple languages, you should only add english support first.
 - When adding tool, you shuld consider the best SEO for the title, keywords, description and faq

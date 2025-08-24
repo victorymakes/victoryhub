@@ -786,5 +786,35 @@
     "warnings": {
       "noTrackers": "No tracking parameters found in this URL."
     }
+  },
+  "TextRedactor": {
+    "redact": "Redact Text",
+    "settings": "Settings",
+    "input": "Input Text",
+    "enterText": "Enter text containing sensitive information...",
+    "output": "Redacted Output",
+    "outputPlaceholder": "Redacted text will appear here...",
+    "copy": "Copy",
+    "clear": "Clear",
+    "redactButton": "Redact",
+    "redactionOptions": "Redaction Options",
+    "redactionCharacter": "Redaction Character",
+    "dataTypesToRedact": "Data Types to Redact",
+    "customPattern": "Custom Pattern (RegEx)",
+    "customPatternPlaceholder": "Enter custom regex pattern...",
+    "customPatternHelp": "Use regular expressions to define custom patterns to redact",
+    "maskingType": "Masking Type",
+    "fullMask": "Full Mask",
+    "partialMask": "Partial Mask",
+    "fullMaskHelp": "Completely masks sensitive data (e.g., ******@gmail.com)",
+    "partialMaskHelp": "Preserves some characters for readability (e.g., u***@gmail.com, 138****5678)",
+    "applySettings": "Apply Settings",
+    "copied": "Copied to clipboard",
+    "errors": {
+      "processingFailed": "Failed to process text. Please try again."
+    },
+    "warnings": {
+      "noDataDetected": "No sensitive data detected in the input text."
+    }
   }
 }
