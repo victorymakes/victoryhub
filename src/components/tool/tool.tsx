@@ -19,7 +19,7 @@ const ToolLoader: FC = () => {
                 <div className="h-64 bg-muted rounded" />
                 <div className="flex items-center gap-3 text-muted-foreground">
                     <span className="inline-block h-3 w-3 rounded-full bg-muted animate-bounce" />
-                    <span className="text-sm">Loading…</span>
+                    {/*<span className="text-sm">Loading…</span>*/}
                 </div>
             </div>
         </div>
