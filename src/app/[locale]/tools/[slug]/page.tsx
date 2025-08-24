@@ -103,7 +103,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 <Container className="py-16 space-y-12">
                     {/* Tool Section */}
                     <div className="w-full space-y-6">
-                        <div className="w-full flex flex-col items-end sm:flex-row sm:items-center justify-between">
+                        <div className="w-full gap-2 flex flex-col items-end sm:flex-row sm:items-center justify-between">
                             <div className="flex-1 w-full">
                                 <h1 className="text-2xl font-bold mb-2">
                                     {tool.name}

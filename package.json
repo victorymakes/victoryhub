@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
+    "@iarna/toml": "^2.2.5",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.4.2",
