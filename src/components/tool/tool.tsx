@@ -98,6 +98,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "barcode-generator": dynamic(() => import("./barcode-generator"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
     "carbon-footprint-calculator": dynamic(
         () => import("./carbon-footprint-calculator"),
         { loading: () => <ToolLoader />, ssr: false },
