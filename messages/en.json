@@ -918,5 +918,25 @@
       "invalidJson": "Invalid JSON format",
       "invalidYaml": "Invalid YAML format"
     }
+  },
+  "JsonTomlConverter": {
+    "title": "JSON TOML Converter",
+    "description": "Convert between JSON and TOML formats easily",
+    "jsonToToml": "JSON to TOML",
+    "tomlToJson": "TOML to JSON",
+    "jsonInput": "JSON Input",
+    "jsonOutput": "JSON Output",
+    "tomlInput": "TOML Input",
+    "tomlOutput": "TOML Output",
+    "jsonPlaceholder": "Paste your JSON here...",
+    "tomlPlaceholder": "Paste your TOML here...",
+    "outputPlaceholder": "Conversion result will appear here...",
+    "convert": "Convert",
+    "copy": "Copy",
+    "clear": "Clear",
+    "copied": "Copied!",
+    "invalidJson": "Invalid JSON",
+    "invalidToml": "Invalid TOML",
+    "emptyInput": "Please enter some content to convert"
   }
 }
