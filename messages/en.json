@@ -856,5 +856,28 @@
       "emptyValue": "Please enter a value to generate a barcode.",
       "generationFailed": "Failed to generate barcode. Please try again."
     }
+  },
+  "RegexTester": {
+    "pattern": "Regex Pattern",
+    "patternPlaceholder": "Enter regular expression pattern...",
+    "flags": "Regex Flags",
+    "flagGlobal": "Global match",
+    "flagCaseInsensitive": "Case insensitive",
+    "flagMultiline": "Multiline",
+    "flagDotAll": "Dot matches newlines",
+    "flagUnicode": "Unicode",
+    "flagSticky": "Sticky",
+    "testString": "Test String",
+    "testStringPlaceholder": "Enter text to test against the regex pattern...",
+    "results": "Results",
+    "matchesFound": "{count} match(es) found",
+    "noMatches": "No matches found",
+    "enterPatternAndString": "Enter a pattern and test string to see results",
+    "test": "Test",
+    "clear": "Clear",
+    "copied": "Copied to clipboard",
+    "errors": {
+      "invalidRegex": "Invalid regular expression pattern"
+    }
   }
 }
