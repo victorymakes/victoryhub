@@ -970,5 +970,45 @@
         "answer": "Yes, our tool offers customization options. You can select which types of information to redact by toggling different PII categories on or off. You can also choose the redaction style (replacement characters like XXX, black bars, or custom characters). Additionally, the tool allows you to add custom terms or patterns for redaction, which is useful for organization-specific information or names that wouldn't be automatically detected. This flexibility ensures the tool meets your specific redaction requirements."
       }
     ]
+  },
+  {
+    "slug": "password-strength-checker",
+    "name": "Password Strength Checker – Evaluate Password Security",
+    "description": "Check the strength of your passwords and get personalized improvement suggestions. Ensure your accounts stay secure with strong password practices.",
+    "category": "privacy",
+    "keywords": [
+      "password strength checker",
+      "password security",
+      "password analyzer",
+      "password safety",
+      "password evaluation",
+      "secure password",
+      "password strength meter",
+      "password security tool",
+      "password validator",
+      "password strength test"
+    ],
+    "faq": [
+      {
+        "question": "How does the password strength checker evaluate my password?",
+        "answer": "Our password strength checker evaluates passwords based on multiple security factors: <li>length (longer is better),</li> <li>character variety (uppercase, lowercase, numbers, symbols),</li> <li>absence of common patterns or dictionary words,</li> <li>and lack of sequential or repeated characters.</li> Each factor contributes to an overall strength score that determines if your password is weak, fair, good, or strong. The evaluation happens entirely in your browser - your password is never transmitted to any server."
+      },
+      {
+        "question": "How to make a strong password?",
+        "answer": "To create a strong password: <li>Use at least 12-16 characters - length is the most important factor.</li> <li>Include a mix of uppercase letters, lowercase letters, numbers, and special symbols.</li> <li>Avoid common words, phrases, or personal information that could be easily guessed.</li> <li>Don't use sequential patterns like '123456' or 'qwerty'.</li> <li>Consider using a passphrase - a string of random words with numbers and symbols mixed in.</li> <li>Use a unique password for each account - never reuse passwords across different services.</li> <li>Consider using a password manager to generate and store complex passwords securely.</li>"
+      },
+      {
+        "question": "Why is my password rated as weak even though it's long?",
+        "answer": "Length alone doesn't guarantee password strength. A long password might still be rated weak if it: <li>contains common dictionary words or phrases (like 'iloveyou' or 'password123'),</li> <li>uses predictable patterns (like keyboard sequences 'qwerty' or number sequences '123456'), consists of repeated characters ('aaaaa'),</li> <li>contains personal information that could be easily guessed,</li> <li>or lacks character variety (using only lowercase letters, for example).</li> The strongest passwords combine significant length with unpredictability and character diversity."
+      },
+      {
+        "question": "Are passphrases better than complex passwords?",
+        "answer": "Passphrases (sequences of random words with some modifications) often provide better security than traditional complex passwords. <br/>A passphrase like 'correct-horse-battery-staple' or 'purple_monkey_dinosaur_42!' is typically longer, easier to remember, and harder to crack than a shorter complex password like 'P@s$w0rd!'. The ideal passphrase includes 3-5 random words, some capitalization, numbers, and special characters. This approach creates passwords with high entropy (randomness) that are resistant to both dictionary and brute force attacks while remaining memorable for humans."
+      },
+      {
+        "question": "How often should I change my passwords?",
+        "answer": "Modern security guidance has shifted away from mandatory periodic password changes. Instead of changing all passwords every 90 days (which often leads to weaker passwords), focus on: <li>Using unique, strong passwords for each account,</li> <li>Immediately changing passwords after a service experiences a data breach,</li> <li>Changing passwords if you suspect they've been compromised,</li> <li>Using two-factor authentication (2FA) whenever possible, and <li>Employing a password manager to maintain unique, complex passwords.</li> This approach, recommended by NIST (National Institute of Standards and Technology), provides better security than arbitrary password rotation schedules."
+      }
+    ]
   }
 ]
