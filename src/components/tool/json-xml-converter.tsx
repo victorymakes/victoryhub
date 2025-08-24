@@ -201,9 +201,9 @@ export const JsonXmlConverter = () => {
 
                 <TabsContent value="json-to-xml" className="space-y-4">
                     <Card>
-                        <CardContent className="pt-6 space-y-4">
+                        <CardContent className=" space-y-4">
                             <div className="space-y-2">
-                                <label className="text-sm font-medium">
+                                <label className="block text-sm font-medium">
                                     {t("inputJson")}
                                 </label>
                                 <Textarea
@@ -234,7 +234,7 @@ export const JsonXmlConverter = () => {
                             {output && (
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
-                                        <label className="text-sm font-medium">
+                                        <label className="block text-sm font-medium">
                                             {t("outputXml")}
                                         </label>
                                         <Button
@@ -260,9 +260,9 @@ export const JsonXmlConverter = () => {
 
                 <TabsContent value="xml-to-json" className="space-y-4">
                     <Card>
-                        <CardContent className="pt-6 space-y-4">
+                        <CardContent className=" space-y-4">
                             <div className="space-y-2">
-                                <label className="text-sm font-medium">
+                                <label className="block text-sm font-medium">
                                     {t("inputXml")}
                                 </label>
                                 <Textarea
@@ -293,7 +293,7 @@ export const JsonXmlConverter = () => {
                             {output && (
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
-                                        <label className="text-sm font-medium">
+                                        <label className="block text-sm font-medium">
                                             {t("outputJson")}
                                         </label>
                                         <Button
