@@ -1,92 +1,143 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { AlertTriangle, Check } from "lucide-react";
+import { AlertTriangle, Check, Loader2 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
 import { trackToolUsage } from "@/lib/analytics";
 
+interface Zxcvbn {
+    (password: string): { score: number };
+}
+
+interface ZxcvbnWindow extends Window {
+    zxcvbn: Zxcvbn;
+}
+
+interface Result {
+    score: number;
+    text: string;
+    color: string;
+    bgColor: string;
+    feedback: string;
+}
+
+const check = (password: string) => {
+    // Check password strength
+    let score = 0;
+    const length = password.length;
+
+    // Length checks
+    if (length >= 8) score += 1;
+    if (length >= 12) score += 1;
+    if (length >= 16) score += 1;
+
+    // Character variety checks
+    if (/[a-z]/.test(password)) score += 1;
+    if (/[A-Z]/.test(password)) score += 1;
+    if (/[0-9]/.test(password)) score += 1;
+    if (/[^A-Za-z0-9]/.test(password)) score += 1;
+
+    // Common patterns and dictionary words check (simplified)
+    const commonPatterns = [
+        /^123456/,
+        /^password/i,
+        /^qwerty/i,
+        /^admin/i,
+        /^welcome/i,
+        /^letmein/i,
+        /^abc123/i,
+        /^monkey/i,
+        /^1234/,
+        /^111111/,
+        /^12345/,
+        /^123123/,
+        /^dragon/i,
+        /^baseball/i,
+        /^football/i,
+        /^master/i,
+        /^shadow/i,
+        /^superman/i,
+        /^trustno1/i,
+        /^hello/i,
+    ];
+
+    // Check for common patterns
+    const hasCommonPattern = commonPatterns.some((pattern) =>
+        pattern.test(password),
+    );
+    if (hasCommonPattern) score = Math.max(0, score - 2); // Penalize common patterns
+
+    // Check for sequential characters
+    if (
+        /(?:abcdef|bcdefg|cdefgh|defghi|efghij|fghijk|ghijkl|hijklm|ijklmn|jklmno|klmnop|lmnopq|mnopqr|nopqrs|opqrst|pqrstu|qrstuv|rstuvw|stuvwx|tuvwxy|uvwxyz|012345|123456|234567|345678|456789)/i.test(
+            password,
+        )
+    ) {
+        score = Math.max(0, score - 1); // Penalize sequential characters
+    }
+
+    // Check for repeated characters
+    if (/(.)(\1{2,})/i.test(password)) {
+        score = Math.max(0, score - 1); // Penalize repeated characters
+    }
+
+    return score;
+};
+
 export default function PasswordStrengthChecker() {
     const t = useTranslations("PasswordStrengthChecker");
     const [password, setPassword] = useState("");
-    const [result, setResult] = useState<{
-        score: number;
-        text: string;
-        color: string;
-        bgColor: string;
-        feedback: string;
-    } | null>(null);
+    const [result, setResult] = useState<Result | null>(null);
+    const [loading, setLoading] = useState(false);
+    const zxcvbnRef = useRef<Zxcvbn | null>(null);
+
+    const loadZxcvbn = useCallback(async () => {
+        if (zxcvbnRef.current) return zxcvbnRef.current;
+        setLoading(true);
+        await new Promise<void>((resolve) => {
+            const s = document.createElement("script");
+            s.src = "https://unpkg.com/zxcvbn@4.4.2/dist/zxcvbn.js";
+            s.async = true;
+            s.onload = () => resolve();
+            s.onerror = (e) => console.log("load zxcvbn failed", e);
+            document.head.appendChild(s);
+        });
+        zxcvbnRef.current = (window as unknown as ZxcvbnWindow).zxcvbn;
+        setLoading(false);
+        return zxcvbnRef.current;
+    }, []);
+
+    const setResponse = (response: Result | null) => {
+        setResult(response);
+        setLoading(false);
+    };
 
     // improvement: try to use https://zxcvbn-ts.github.io/zxcvbn/
-    const checkPasswordStrength = () => {
+    const checkPasswordStrength = useCallback(async () => {
         if (!password.trim()) {
-            setResult(null);
+            setResponse(null);
             return;
         }
+        setLoading(true);
 
         // Track usage
         trackToolUsage("password-strength-checker");
 
-        // Check password strength
         let score = 0;
-        const length = password.length;
-
-        // Length checks
-        if (length >= 8) score += 1;
-        if (length >= 12) score += 1;
-        if (length >= 16) score += 1;
-
-        // Character variety checks
-        if (/[a-z]/.test(password)) score += 1;
-        if (/[A-Z]/.test(password)) score += 1;
-        if (/[0-9]/.test(password)) score += 1;
-        if (/[^A-Za-z0-9]/.test(password)) score += 1;
-
-        // Common patterns and dictionary words check (simplified)
-        const commonPatterns = [
-            /^123456/,
-            /^password/i,
-            /^qwerty/i,
-            /^admin/i,
-            /^welcome/i,
-            /^letmein/i,
-            /^abc123/i,
-            /^monkey/i,
-            /^1234/,
-            /^111111/,
-            /^12345/,
-            /^123123/,
-            /^dragon/i,
-            /^baseball/i,
-            /^football/i,
-            /^master/i,
-            /^shadow/i,
-            /^superman/i,
-            /^trustno1/i,
-            /^hello/i,
-        ];
-
-        // Check for common patterns
-        const hasCommonPattern = commonPatterns.some((pattern) =>
-            pattern.test(password),
-        );
-        if (hasCommonPattern) score = Math.max(0, score - 2); // Penalize common patterns
-
-        // Check for sequential characters
-        if (
-            /(?:abcdef|bcdefg|cdefgh|defghi|efghij|fghijk|ghijkl|hijklm|ijklmn|jklmno|klmnop|lmnopq|mnopqr|nopqrs|opqrst|pqrstu|qrstuv|rstuvw|stuvwx|tuvwxy|uvwxyz|012345|123456|234567|345678|456789)/i.test(
-                password,
-            )
-        ) {
-            score = Math.max(0, score - 1); // Penalize sequential characters
-        }
-
-        // Check for repeated characters
-        if (/(.)(\1{2,})/i.test(password)) {
-            score = Math.max(0, score - 1); // Penalize repeated characters
+        const zxcvbn = await loadZxcvbn();
+        if (!loading && zxcvbnRef.current && zxcvbn) {
+            score = zxcvbn(password).score; // zxcvbn score is 0-4
+            if (score === 0) score = 1;
+            else if (score === 1) score = 2;
+            else if (score === 2) score = 4;
+            else if (score === 3) score = 6;
+            else if (score === 4) score = 7;
+        } else {
+            score = check(password);
         }
 
         // Determine result based on score
@@ -125,13 +176,15 @@ export default function PasswordStrengthChecker() {
             };
         }
 
-        setResult(result);
-    };
+        setResponse(result);
+    }, [password, loadZxcvbn, loading, t]);
 
     // Check password strength whenever password changes
     useEffect(() => {
-        checkPasswordStrength();
-    }, [password]);
+        (async () => {
+            await checkPasswordStrength();
+        })();
+    }, [password, checkPasswordStrength]);
 
     return (
         <div className="space-y-6">
@@ -149,6 +202,14 @@ export default function PasswordStrengthChecker() {
                             placeholder={t("passwordPlaceholder")}
                             className="w-full font-mono text-sm"
                         />
+                        {loading && (
+                            <div className="flex gap-2 items-center text-sm">
+                                <Loader2 className="w-4 h-4 animate-spin text-primary" />
+                                <span className="text-muted-foreground">
+                                    {t("validating")}
+                                </span>
+                            </div>
+                        )}
                     </div>
 
                     {/* Password Strength Result */}
@@ -199,12 +260,6 @@ export default function PasswordStrengthChecker() {
                             className="flex-1"
                         >
                             {t("clear")}
-                        </Button>
-                        <Button
-                            onClick={checkPasswordStrength}
-                            className="flex-1"
-                        >
-                            {t("checkButton")}
                         </Button>
                     </div>
                 </CardContent>

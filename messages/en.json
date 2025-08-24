@@ -831,7 +831,7 @@
     "feedbackFair": "Turn it into a passphrase of 3–4 words.",
     "feedbackGood": "Good password! Consider adding more variety.",
     "feedbackStrong": "Great! Consider making it even longer for extra safety.",
-    "checkButton": "Check Strength",
+    "validating": "Checking  password strength......",
     "clear": "Clear"
   }
 }
