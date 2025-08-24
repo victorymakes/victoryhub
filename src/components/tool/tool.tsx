@@ -31,6 +31,10 @@ const TOOL_COMPONENTS: Record<
     string,
     ComponentType<Record<string, React.ComponentType>>
 > = {
+    "json-yaml-converter": dynamic(
+        () => import("./json-yaml-converter").then((m) => m.JsonYamlConverter),
+        { loading: () => <ToolLoader />, ssr: false },
+    ),
     "json-xml-converter": dynamic(
         () => import("./json-xml-converter").then((m) => m.JsonXmlConverter),
         { loading: () => <ToolLoader />, ssr: false },

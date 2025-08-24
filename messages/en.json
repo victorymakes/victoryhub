@@ -898,5 +898,25 @@
       "invalidJson": "Invalid JSON format",
       "invalidXml": "Invalid XML format"
     }
+  },
+  "JsonYamlConverter": {
+    "jsonToYaml": "JSON to YAML",
+    "yamlToJson": "YAML to JSON",
+    "jsonInput": "JSON Input",
+    "yamlInput": "YAML Input",
+    "jsonOutput": "JSON Output",
+    "yamlOutput": "YAML Output",
+    "jsonInputPlaceholder": "Paste your JSON here...",
+    "yamlInputPlaceholder": "Paste your YAML here...",
+    "outputPlaceholder": "Conversion result will appear here...",
+    "convert": "Convert",
+    "copy": "Copy",
+    "clear": "Clear",
+    "copied": "Copied to clipboard!",
+    "errors": {
+      "emptyInput": "Please enter some content to convert",
+      "invalidJson": "Invalid JSON format",
+      "invalidYaml": "Invalid YAML format"
+    }
   }
 }
