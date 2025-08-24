@@ -20,6 +20,7 @@ export default function PasswordStrengthChecker() {
         feedback: string;
     } | null>(null);
 
+    // improvement: try to use https://zxcvbn-ts.github.io/zxcvbn/
     const checkPasswordStrength = () => {
         if (!password.trim()) {
             setResult(null);
