@@ -137,6 +137,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "regex-tester": dynamic(() => import("./regex-tester"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
 };
 
 export const ToolComponent: FC<ToolComponentProps> = ({
