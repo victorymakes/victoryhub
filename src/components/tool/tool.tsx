@@ -122,6 +122,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "text-redactor": dynamic(() => import("./text-redactor"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
 };
 
 export const ToolComponent: FC<ToolComponentProps> = ({

@@ -930,5 +930,45 @@
         "answer": "To enhance your browsing privacy: <li>Before clicking links in emails or social media, right-click, copy the link address, and paste it into our tool to clean it.</li> <li>When sharing links with others, clean them first to avoid propagating tracking parameters.</li> <li>Consider installing browser extensions that automatically strip tracking parameters from URLs as you browse.</li> <li>For maximum privacy, combine URL cleaning with other privacy practices like using a VPN, privacy-focused browser, and regularly clearing cookies.</li> </br>This tool is a simple first step toward more private browsing habits."
       }
     ]
+  },
+  {
+    "slug": "text-redactor",
+    "name": "Text Redactor – Mask PII and Sensitive Information",
+    "description": "Free online text redaction: automatically mask emails, phone numbers, postal addresses and other PII. Copy-paste, redact, and export.",
+    "category": "privacy",
+    "keywords": [
+      "text redactor",
+      "PII redaction",
+      "data masking",
+      "privacy tool",
+      "sensitive information",
+      "email redaction",
+      "phone number masking",
+      "address redaction",
+      "text anonymizer",
+      "data privacy"
+    ],
+    "faq": [
+      {
+        "question": "What is text redaction and why is it important?",
+        "answer": "Text redaction is the process of removing or masking sensitive information from documents or text. It's important for <li>protecting personally identifiable information (PII),</li> <li>maintaining privacy compliance (like GDPR, CCPA),</li> <li>preventing identity theft,</li> <li>and allowing safe sharing of documents while preserving confidentiality.</li> Our tool automatically identifies and masks common PII patterns like emails, phone numbers, and addresses, making it easy to prepare text for sharing or publication without exposing sensitive data."
+      },
+      {
+        "question": "What types of information can this tool redact?",
+        "answer": "This tool can automatically detect and redact several types of personally identifiable information (PII) including: <li>email addresses,/li> <li>phone numbers (international formats supported),/li> <li>postal addresses,/li> <li>IP addresses, <li>credit card numbers,/li> <li>social security numbers (SSN),/li> <li>dates of birth,/li> <li>and names when identified in common formats.</li> The tool uses pattern recognition to identify these data types and replaces them with placeholder characters while preserving the original text structure."
+      },
+      {
+        "question": "Is my data safe when using this redaction tool?",
+        "answer": "Yes, your data is completely safe. This tool runs entirely in your browser - no data is ever sent to our servers or stored anywhere. The text processing happens locally on your device, ensuring maximum privacy and security. Once you close your browser tab, no trace of your text remains. This makes our tool ideal for handling sensitive information that requires confidentiality."
+      },
+      {
+        "question": "How accurate is the automatic redaction?",
+        "answer": "The automatic redaction is highly accurate for standard formats of PII like emails, phone numbers, and credit cards. However, no automated system is perfect. The tool uses pattern matching and regular expressions to identify common PII formats, but unusual formats or contextual information might be missed. For critical redaction needs, we recommend reviewing the output manually to ensure all sensitive information has been properly masked. You can also use the custom redaction feature to manually redact specific terms that weren't automatically detected."
+      },
+      {
+        "question": "Can I customize what gets redacted and how it appears?",
+        "answer": "Yes, our tool offers customization options. You can select which types of information to redact by toggling different PII categories on or off. You can also choose the redaction style (replacement characters like XXX, black bars, or custom characters). Additionally, the tool allows you to add custom terms or patterns for redaction, which is useful for organization-specific information or names that wouldn't be automatically detected. This flexibility ensures the tool meets your specific redaction requirements."
+      }
+    ]
   }
 ]
