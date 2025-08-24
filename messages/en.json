@@ -879,5 +879,24 @@
     "errors": {
       "invalidRegex": "Invalid regular expression pattern"
     }
+  },
+  "JsonXmlConverter": {
+    "jsonToXml": "JSON to XML",
+    "xmlToJson": "XML to JSON",
+    "inputJson": "Input JSON",
+    "outputXml": "Output XML",
+    "inputXml": "Input XML",
+    "outputJson": "Output JSON",
+    "convert": "Convert",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied to clipboard!",
+    "jsonPlaceholder": "Paste your JSON here...",
+    "xmlPlaceholder": "Paste your XML here...",
+    "errors": {
+      "emptyInput": "Please enter some content to convert",
+      "invalidJson": "Invalid JSON format",
+      "invalidXml": "Invalid XML format"
+    }
   }
 }

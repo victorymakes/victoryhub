@@ -31,6 +31,10 @@ const TOOL_COMPONENTS: Record<
     string,
     ComponentType<Record<string, React.ComponentType>>
 > = {
+    "json-xml-converter": dynamic(
+        () => import("./json-xml-converter").then((m) => m.JsonXmlConverter),
+        { loading: () => <ToolLoader />, ssr: false },
+    ),
     "uuid-generator": dynamic(
         () => import("./uuid-generator").then((m) => m.UuidGenerator),
         { loading: () => <ToolLoader />, ssr: false },
