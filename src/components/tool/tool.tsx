@@ -153,6 +153,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "ascii-art-generator": dynamic(() => import("./ascii-art-generator"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
 };
 
 export const ToolComponent: FC<ToolComponentProps> = ({
