@@ -1210,5 +1210,45 @@
         "answer": "Yes, this tool can handle reasonably large files, but there are some considerations: <li>Browser-based tools have memory limitations based on your device.</li> <li>For very large files (multiple MB), you might experience some performance slowdown.</li> <li>Complex nested structures with many levels might be harder to visualize after conversion.</li> <li>For extremely large files (10+ MB), consider using command-line tools like 'toml' for Node.js or language-specific libraries.</li> For most common use cases including configuration files and API responses, this tool will work perfectly fine regardless of complexity."
       }
     ]
+  },
+  {
+    "slug": "ascii-art-generator",
+    "name": "ASCII Art Generator – Convert Images to Text Art",
+    "description": "Transform your images into ASCII art with this free online tool. Customize character sets, width, and colors to create unique text-based representations of your images.",
+    "category": "media",
+    "keywords": [
+      "ascii art generator",
+      "image to ascii",
+      "text art creator",
+      "ascii converter",
+      "image to text art",
+      "ascii image converter",
+      "text art generator",
+      "ascii art maker",
+      "image to ascii art",
+      "text art from image"
+    ],
+    "faq": [
+      {
+        "question": "What is ASCII art and how does it work?",
+        "answer": "ASCII art is a graphic design technique that uses printable characters from the ASCII standard to create images. Our ASCII art generator works by analyzing the brightness values of pixels in your image and mapping them to corresponding ASCII characters. Darker areas are represented by denser characters like '@' or '#', while lighter areas use less dense characters like '.' or spaces. This creates a text-based representation that resembles the original image when viewed at the right scale."
+      },
+      {
+        "question": "Can I customize the characters used in my ASCII art?",
+        "answer": "Yes! Our tool allows you to customize the character set used to generate your ASCII art. You can specify which characters should represent different brightness levels. By default, we use a standard set of characters ranging from dense to light: '@%#*+=-:. ', but you can modify this to create different effects. For example, using only '01' would create a binary-looking output, while using letters or symbols can create unique artistic styles."
+      },
+      {
+        "question": "How do I get the best results from the ASCII art generator?",
+        "answer": "For best results: <li>1) Use images with good contrast and clear subjects, </li><li>2) Experiment with different character sets - longer sets provide more detail, </li><li>3) Adjust the width setting based on your image complexity, <li>4) Try both normal and inverted color options, </li><li>5) For detailed images, use a wider output width, <li>6) Simple logos or portraits often work better than complex scenes, </li><li>7) View the generated ASCII art in a monospaced font for proper alignment.</li>"
+      },
+      {
+        "question": "Is my image data safe when using this tool?",
+        "answer": "Yes, your privacy is protected when using our ASCII art generator. All image processing happens entirely in your browser - your images are never uploaded to our servers. The conversion process runs locally using your device's resources, ensuring your images remain private and secure. This also means the tool works offline once the page has loaded."
+      },
+      {
+        "question": "What can I do with the generated ASCII art?",
+        "answer": "The ASCII art you create can be used in many ways: <li>Copy it into emails, messages, or comments for creative communication,</li> <li>Download it as a text file to use in documents or code,</li> <li>Use it in creative coding projects,</li> <li>Include it in retro-style designs or digital art,</li> <li>Create unique signatures for forums or email,</li> <li>Use colored ASCII art in web projects for a distinctive visual style,</li><li>Incorporate it into terminal-based applications or games.</li>"
+      }
+    ]
   }
 ]

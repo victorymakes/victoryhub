@@ -938,5 +938,33 @@
     "invalidJson": "Invalid JSON",
     "invalidToml": "Invalid TOML",
     "emptyInput": "Please enter some content to convert"
+  },
+  "AsciiArtGenerator": {
+    "clear": "Clear",
+    "changeImage": "Change Image",
+    "dragAndDrop": "Drag & Drop Image Here",
+    "supportedFormats": "Supports JPG, PNG, GIF, WebP, and other image formats",
+    "selectFile": "Select File",
+    "settings": "Settings",
+    "characters": "Characters",
+    "charactersPlaceholder": "Enter characters from dense to light",
+    "charactersHelp": "Characters should be ordered from dense (dark) to light. Default: @%#*+=-:. ",
+    "width": "Width",
+    "invertColors": "Invert Colors",
+    "generateAsciiArt": "Generate ASCII Art",
+    "processing": "Processing...",
+    "result": "ASCII Art Result",
+    "copy": "Copy",
+    "copied": "Copied to clipboard!",
+    "download": "Download",
+    "originalSize": "Original Size",
+    "errors": {
+      "noImageFiles": "Please select a valid image file",
+      "fileReadFailed": "Failed to read the image file",
+      "imageLoadFailed": "Failed to load the image",
+      "canvasContextFailed": "Failed to get canvas context",
+      "processingFailed": "Failed to process the image",
+      "copyFailed": "Failed to copy to clipboard"
+    }
   }
 }

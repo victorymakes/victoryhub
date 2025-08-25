@@ -9,6 +9,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { AlertTriangle, Download, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import JsBarcode from "jsbarcode";
+import { Switch } from "@/components/ui/switch";
 
 // improvement: load JsBarcode dynamically to reduce initial bundle size
 // The password strength checker is an example.
@@ -232,16 +233,12 @@ const BarcodeGenerator: React.FC = () => {
 
                                 <div className="space-y-2">
                                     <div className="flex items-center space-x-2">
-                                        <input
-                                            type="checkbox"
+                                        <Switch
                                             id="display-value"
                                             checked={displayValue}
-                                            onChange={(e) =>
-                                                setDisplayValue(
-                                                    e.target.checked,
-                                                )
+                                            onCheckedChange={(checked) =>
+                                                setDisplayValue(checked)
                                             }
-                                            className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                                         />
                                         <Label htmlFor="display-value">
                                             {t("displayValue")}
