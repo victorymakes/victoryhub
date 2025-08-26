@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { trackToolUsage } from "@/lib/analytics";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,15 +11,9 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Input } from "@/components/ui/input";
-import {
-    Download,
-    Upload,
-    AlertTriangle,
-    Loader2,
-    Copy,
-    X,
-} from "lucide-react";
+import { Download, AlertTriangle, Loader2, Copy } from "lucide-react";
 import { toast } from "sonner";
+import UploadFiles from "@/components/tool/upload-files";
 
 interface ImageItem {
     id: string;
@@ -33,13 +27,11 @@ interface ImageItem {
 const AsciiArtGenerator: React.FC = () => {
     const t = useTranslations("AsciiArtGenerator");
     const [image, setImage] = useState<ImageItem | null>(null);
-    const [isDragging, setIsDragging] = useState<boolean>(false);
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const [characters, setCharacters] = useState<string>("@%#*+=-:. ");
     const [width, setWidth] = useState<number>(80);
     const [invert, setInvert] = useState<boolean>(false);
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
 
     // Track usage
     React.useEffect(() => {
@@ -222,55 +214,14 @@ const AsciiArtGenerator: React.FC = () => {
 
             // Set the image and process it
             setImage(newImage);
-
-            // Reset file input
-            if (fileInputRef.current) {
-                fileInputRef.current.value = "";
-            }
         },
         [t],
-    );
-
-    // Handle file drop
-    const handleDrop = useCallback(
-        (e: React.DragEvent<HTMLDivElement>) => {
-            e.preventDefault();
-            setIsDragging(false);
-
-            if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-                handleFileSelect(e.dataTransfer.files);
-            }
-        },
-        [handleFileSelect],
-    );
-
-    // Handle drag events
-    const handleDragOver = useCallback((e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(true);
-    }, []);
-
-    const handleDragLeave = useCallback(() => {
-        setIsDragging(false);
-    }, []);
-
-    // Handle file input change
-    const handleFileInputChange = useCallback(
-        (e: React.ChangeEvent<HTMLInputElement>) => {
-            if (e.target.files && e.target.files.length > 0) {
-                handleFileSelect(e.target.files);
-            }
-        },
-        [handleFileSelect],
     );
 
     // Clear the image
     const clearImage = useCallback(() => {
         setImage(null);
         setError(null);
-        if (fileInputRef.current) {
-            fileInputRef.current.value = "";
-        }
     }, []);
 
     // Copy ASCII art to clipboard
@@ -319,73 +270,11 @@ const AsciiArtGenerator: React.FC = () => {
         <Card>
             <CardContent className="space-y-6">
                 {/* File Upload Area */}
-                <div
-                    className={`border-2 border-dashed rounded-lg p-6 text-center ${
-                        isDragging
-                            ? "border-primary bg-primary/5"
-                            : "border-muted-foreground/20"
-                    }`}
-                    onDrop={handleDrop}
-                    onDragOver={handleDragOver}
-                    onDragLeave={handleDragLeave}
-                >
-                    <input
-                        type="file"
-                        ref={fileInputRef}
-                        onChange={handleFileInputChange}
-                        accept="image/*"
-                        className="hidden"
-                    />
-                    {image?.file ? (
-                        <div className="space-y-3">
-                            <div className="flex justify-center">
-                                <img
-                                    src={URL.createObjectURL(image.file)}
-                                    alt="Preview"
-                                    className="max-h-[200px] max-w-full object-contain rounded-md"
-                                />
-                            </div>
-                            <div className="flex justify-center space-x-2">
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    onClick={clearImage}
-                                >
-                                    <X className="h-4 w-4" />
-                                    {t("clear")}
-                                </Button>
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    onClick={() =>
-                                        fileInputRef.current?.click()
-                                    }
-                                >
-                                    <Upload className="h-4 w-4" />
-                                    {t("changeImage")}
-                                </Button>
-                            </div>
-                        </div>
-                    ) : (
-                        <div className="space-y-3">
-                            <div className="flex justify-center">
-                                <Upload className="h-10 w-10 text-muted-foreground" />
-                            </div>
-                            <h3 className="text-lg font-semibold">
-                                {t("dragAndDrop")}
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                                {t("supportedFormats")}
-                            </p>
-                            <Button
-                                variant="outline"
-                                onClick={() => fileInputRef.current?.click()}
-                            >
-                                {t("selectFile")}
-                            </Button>
-                        </div>
-                    )}
-                </div>
+                <UploadFiles
+                    onFilesSelected={handleFileSelect}
+                    onFilesCleared={clearImage}
+                    accept="image/*"
+                />
 
                 {/* Settings */}
                 <div className="space-y-4">
@@ -478,7 +367,7 @@ const AsciiArtGenerator: React.FC = () => {
                                     size="sm"
                                     onClick={copyToClipboard}
                                 >
-                                    <Copy className="h-4 w-4 mr-2" />
+                                    <Copy className="h-4 w-4" />
                                     {t("copy")}
                                 </Button>
                                 <Button
@@ -486,7 +375,7 @@ const AsciiArtGenerator: React.FC = () => {
                                     size="sm"
                                     onClick={downloadAsciiArt}
                                 >
-                                    <Download className="h-4 w-4 mr-2" />
+                                    <Download className="h-4 w-4" />
                                     {t("download")}
                                 </Button>
                             </div>

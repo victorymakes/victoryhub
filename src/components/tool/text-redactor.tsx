@@ -433,7 +433,7 @@ export default function TextRedactor() {
                                 }}
                                 className="w-full"
                             >
-                                <Check className="h-4 w-4 mr-2" />
+                                <Check className="h-4 w-4 " />
                                 {t("applySettings")}
                             </Button>
                         </CardContent>

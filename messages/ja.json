@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "ここにファイルをドロップ",
+      "dragAndDrop": "ファイルをここにドラッグ＆ドロップするか、クリックして参照",
+      "chooseFiles": "ファイルを選択",
+      "changeFiles": "ファイルを変更",
+      "clearFiles": "ファイルをクリア"
+    },
+    "loading": "読み込み中...",
+    "clear": "クリア",
+    "clearAll": "すべてクリア",
+    "download": "ダウンロード",
+    "downloadAll": "すべてダウンロード",
+    "copy": "コピー",
+    "copyAll": "すべてコピー",
+    "copied": "コピーしました！"
+  },
   "Navigation": {
     "home": "ホーム",
     "tools": "ツール",

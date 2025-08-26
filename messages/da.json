@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Slip filer her",
+      "dragAndDrop": "Træk og slip filer her, eller klik for at gennemse",
+      "chooseFiles": "Vælg filer",
+      "changeFiles": "Skift filer",
+      "clearFiles": "Ryd filer"
+    },
+    "loading": "Indlæser...",
+    "clear": "Ryd",
+    "clearAll": "Ryd alle",
+    "download": "Download",
+    "downloadAll": "Download alle",
+    "copy": "Kopiér",
+    "copyAll": "Kopiér alle",
+    "copied": "Kopieret!"
+  },
   "Navigation": {
     "home": "Hjem",
     "tools": "Værktøjer",

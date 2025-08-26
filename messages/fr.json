@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Déposez des fichiers ici",
+      "dragAndDrop": "Glissez-déposez des fichiers ici ou cliquez pour parcourir",
+      "chooseFiles": "Choisir des fichiers",
+      "changeFiles": "Modifier les fichiers",
+      "clearFiles": "Effacer les fichiers"
+    },
+    "loading": "Chargement...",
+    "clear": "Effacer",
+    "clearAll": "Tout effacer",
+    "download": "Télécharger",
+    "downloadAll": "Tout télécharger",
+    "copy": "Copier",
+    "copyAll": "Tout copier",
+    "copied": "Copié !"
+  },
   "Navigation": {
     "home": "Accueil",
     "tools": "Outils",

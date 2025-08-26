@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Перетащите файлы сюда",
+      "dragAndDrop": "Перетащите файлы сюда или нажмите, чтобы выбрать",
+      "chooseFiles": "Выбрать файлы",
+      "changeFiles": "Изменить файлы",
+      "clearFiles": "Очистить файлы"
+    },
+    "loading": "Загрузка...",
+    "clear": "Очистить",
+    "clearAll": "Очистить всё",
+    "download": "Скачать",
+    "downloadAll": "Скачать всё",
+    "copy": "Копировать",
+    "copyAll": "Копировать всё",
+    "copied": "Скопировано!"
+  },
   "Navigation": {
     "home": "Главная",
     "tools": "Инструменты",
