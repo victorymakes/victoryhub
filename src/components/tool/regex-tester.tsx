@@ -304,7 +304,7 @@ export default function RegexTester() {
                         className="flex-1"
                         disabled={!pattern.trim() || !testString.trim()}
                     >
-                        <Check className="h-4 w-4 mr-2" />
+                        <Check className="h-4 w-4 " />
                         {t("test")}
                     </Button>
                 </div>

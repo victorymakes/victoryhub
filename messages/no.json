@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Slipp filer her",
+      "dragAndDrop": "Dra og slipp filer her, eller klikk for å bla gjennom",
+      "chooseFiles": "Velg filer",
+      "changeFiles": "Endre filer",
+      "clearFiles": "Fjern filer"
+    },
+    "loading": "Laster...",
+    "clear": "Fjern",
+    "clearAll": "Fjern alt",
+    "download": "Last ned",
+    "downloadAll": "Last ned alt",
+    "copy": "Kopier",
+    "copyAll": "Kopier alt",
+    "copied": "Kopiert!"
+  },
   "Navigation": {
     "home": "Hjem",
     "tools": "Verktøy",

@@ -3,14 +3,13 @@
 import { useState, useRef, useCallback } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Copy, Upload, Download, AlertTriangle, X } from "lucide-react";
+import { Copy, Download, AlertTriangle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
-import { cn } from "@/lib/utils";
-import { formatBytes } from "@/lib/file";
 import { trackToolUsage } from "@/lib/analytics";
 import NextImage from "next/image";
+import UploadFiles, { UploadFilesRef } from "@/components/tool/upload-files";
 
 export default function Base64ImageConverter() {
     const t = useTranslations("Base64ImageConverter");
@@ -19,9 +18,7 @@ export default function Base64ImageConverter() {
     const [imagePreview, setImagePreview] = useState<string | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [mode, setMode] = useState<"toImage" | "toBase64">("toImage");
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
-    const [isDragging, setIsDragging] = useState(false);
-    const [selectedFile, setSelectedFile] = useState<File | null>(null);
+    const uploadFilesRef = useRef<UploadFilesRef>(null);
 
     // Convert base64 to image
     const convertBase64ToImage = useCallback(() => {
@@ -103,39 +100,11 @@ export default function Base64ImageConverter() {
     );
 
     // Handle file selection
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const files = e.target.files;
+    const handleFileChange = (files: FileList | File[]) => {
         if (files && files.length > 0) {
             const file = files[0];
-            setSelectedFile(file);
             convertImageToBase64(file);
         }
-    };
-
-    // Handle file drop
-    const handleDrop = useCallback(
-        (e: React.DragEvent<HTMLDivElement>) => {
-            e.preventDefault();
-            setIsDragging(false);
-
-            const files = e.dataTransfer.files;
-            if (files && files.length > 0) {
-                const file = files[0];
-                setSelectedFile(file);
-                convertImageToBase64(file);
-            }
-        },
-        [convertImageToBase64],
-    );
-
-    // Handle drag events
-    const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(true);
-    };
-
-    const handleDragLeave = () => {
-        setIsDragging(false);
     };
 
     // Copy base64 to clipboard
@@ -165,11 +134,8 @@ export default function Base64ImageConverter() {
             setBase64Input("");
             setImagePreview(null);
         } else {
-            setSelectedFile(null);
             setBase64Output("");
-            if (fileInputRef.current) {
-                fileInputRef.current.value = "";
-            }
+            uploadFilesRef.current?.clear();
         }
         setError(null);
     };
@@ -280,89 +246,11 @@ export default function Base64ImageConverter() {
                         /* Image to Base64 Mode */
                         <>
                             {/* File Upload Section */}
-                            <div className="space-y-3">
-                                <label className="text-sm font-medium">
-                                    {t("selectImage")}
-                                </label>
-                                <div
-                                    className={cn(
-                                        "border-2 border-dashed rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer transition-colors",
-                                        isDragging
-                                            ? "border-primary bg-primary/5"
-                                            : "border-muted-foreground/20 hover:border-primary/50",
-                                        selectedFile &&
-                                            "border-primary/50 bg-primary/5",
-                                    )}
-                                    onDragOver={handleDragOver}
-                                    onDragLeave={handleDragLeave}
-                                    onDrop={handleDrop}
-                                    onClick={() =>
-                                        fileInputRef.current?.click()
-                                    }
-                                >
-                                    <input
-                                        type="file"
-                                        ref={fileInputRef}
-                                        onChange={handleFileChange}
-                                        accept="image/*"
-                                        className="hidden"
-                                    />
-
-                                    {selectedFile ? (
-                                        <div className="flex flex-col items-center gap-2">
-                                            <div className="relative w-16 h-16 overflow-hidden rounded-md">
-                                                <NextImage
-                                                    src={URL.createObjectURL(
-                                                        selectedFile,
-                                                    )}
-                                                    alt="Selected image"
-                                                    fill
-                                                    className="object-cover"
-                                                />
-                                            </div>
-                                            <div className="text-center">
-                                                <p className="text-sm font-medium truncate max-w-[200px]">
-                                                    {selectedFile.name}
-                                                </p>
-                                                <p className="text-xs text-muted-foreground">
-                                                    {formatBytes(
-                                                        selectedFile.size,
-                                                    )}
-                                                </p>
-                                            </div>
-                                            <Button
-                                                variant="ghost"
-                                                size="icon"
-                                                className="absolute top-2 right-2 h-6 w-6 rounded-full bg-background/80 backdrop-blur-sm"
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    clearAll();
-                                                }}
-                                            >
-                                                <X className="h-3 w-3" />
-                                            </Button>
-                                        </div>
-                                    ) : (
-                                        <>
-                                            <div className="mb-4 rounded-full bg-primary/10 p-3">
-                                                <Upload className="h-6 w-6 text-primary" />
-                                            </div>
-                                            <p className="text-sm font-medium mb-1">
-                                                {t("dragAndDrop")}
-                                            </p>
-                                            <p className="text-xs text-muted-foreground mb-2">
-                                                {t("supportedFormats")}
-                                            </p>
-                                            <Button
-                                                size="sm"
-                                                variant="secondary"
-                                            >
-                                                {t("browseFiles")}
-                                            </Button>
-                                        </>
-                                    )}
-                                </div>
-                            </div>
+                            <UploadFiles
+                                onFilesSelected={handleFileChange}
+                                onFilesCleared={() => setBase64Output("")}
+                                accept={"image/*"}
+                            />
 
                             {/* Output Section - Base64 */}
                             {base64Output && (

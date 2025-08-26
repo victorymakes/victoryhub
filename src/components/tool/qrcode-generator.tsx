@@ -1,22 +1,16 @@
 "use client";
 
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import {
-    AlertTriangle,
-    Download,
-    Upload,
-    Image as ImageIcon,
-    Loader2,
-    X,
-} from "lucide-react";
+import { AlertTriangle, Download, Image as ImageIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { QRCode } from "react-qrcode-logo";
+import UploadFiles from "@/components/tool/upload-files";
 
 const QRCodeGenerator: React.FC = () => {
     const t = useTranslations("QrcodeGenerator");
@@ -36,11 +30,10 @@ const QRCodeGenerator: React.FC = () => {
     const [qrStyle, setQrStyle] = useState<"squares" | "dots">("dots");
     const [ecLevel, setEcLevel] = useState<"L" | "M" | "Q" | "H">("M");
 
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
     const qrCodeRef = useRef<QRCode>(null);
 
-    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const file = event.target.files?.[0];
+    const handleFileChange = (files: FileList | File[]) => {
+        const file = files?.[0];
         if (!file) return;
 
         // Check if file is an image
@@ -72,9 +65,6 @@ const QRCodeGenerator: React.FC = () => {
 
     const handleRemoveLogo = () => {
         setLogoImage(null);
-        if (fileInputRef.current) {
-            fileInputRef.current.value = "";
-        }
     };
 
     const handleDownload = () => {
@@ -82,50 +72,6 @@ const QRCodeGenerator: React.FC = () => {
             qrCodeRef.current.download();
         }
     };
-
-    const handleDragOver = useCallback((e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        e.stopPropagation();
-    }, []);
-
-    const handleDrop = useCallback(
-        (e: React.DragEvent<HTMLDivElement>) => {
-            e.preventDefault();
-            e.stopPropagation();
-
-            const files = e.dataTransfer.files;
-            if (files.length > 0) {
-                const file = files[0];
-
-                // Check if file is an image
-                if (!file.type.startsWith("image/")) {
-                    setError(t("errors.notAnImage"));
-                    return;
-                }
-
-                // Check file size (limit to 2MB)
-                if (file.size > 2 * 1024 * 1024) {
-                    setError(t("errors.fileTooLarge"));
-                    return;
-                }
-
-                setError(null);
-                setIsLoading(true);
-
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    setLogoImage(e.target?.result as string);
-                    setIsLoading(false);
-                };
-                reader.onerror = () => {
-                    setError(t("errors.fileReadFailed"));
-                    setIsLoading(false);
-                };
-                reader.readAsDataURL(file);
-            }
-        },
-        [t],
-    );
 
     return (
         <div className="space-y-6">
@@ -287,59 +233,12 @@ const QRCodeGenerator: React.FC = () => {
                                     {t("logoOptions")}
                                 </h3>
 
-                                <div
-                                    className={`border-2 border-dashed rounded-lg p-4 text-center ${isLoading ? "opacity-50" : ""}`}
-                                    onDragOver={handleDragOver}
-                                    onDrop={handleDrop}
-                                >
-                                    {logoImage ? (
-                                        <div className="relative inline-block">
-                                            <img
-                                                src={logoImage}
-                                                alt="Logo"
-                                                className="max-h-32 max-w-full rounded"
-                                            />
-                                            <button
-                                                type="button"
-                                                className="absolute -top-2 -right-2 p-1 rounded-full bg-destructive text-destructive-foreground hover:bg-destructive/90"
-                                                onClick={handleRemoveLogo}
-                                            >
-                                                <X className="h-4 w-4" />
-                                            </button>
-                                        </div>
-                                    ) : (
-                                        <div className="py-4">
-                                            {isLoading ? (
-                                                <Loader2 className="h-10 w-10 animate-spin mx-auto text-primary" />
-                                            ) : (
-                                                <>
-                                                    <Upload className="h-10 w-10 mx-auto text-muted-foreground mb-2" />
-                                                    <p className="text-sm text-muted-foreground">
-                                                        {t("dragAndDropLogo")}
-                                                    </p>
-                                                    <Button
-                                                        variant="outline"
-                                                        className="mt-2"
-                                                        onClick={() =>
-                                                            fileInputRef.current?.click()
-                                                        }
-                                                    >
-                                                        {t("chooseLogo")}
-                                                    </Button>
-                                                    <input
-                                                        ref={fileInputRef}
-                                                        type="file"
-                                                        accept="image/*"
-                                                        className="hidden"
-                                                        onChange={
-                                                            handleFileChange
-                                                        }
-                                                    />
-                                                </>
-                                            )}
-                                        </div>
-                                    )}
-                                </div>
+                                <UploadFiles
+                                    onFilesSelected={handleFileChange}
+                                    onFilesCleared={handleRemoveLogo}
+                                    accept={"image/*"}
+                                    disabled={isLoading}
+                                />
 
                                 {logoImage && (
                                     <div className="space-y-4">
@@ -531,7 +430,7 @@ const QRCodeGenerator: React.FC = () => {
                                 onClick={handleDownload}
                                 disabled={!value}
                             >
-                                <Download className="mr-2 h-4 w-4" />
+                                <Download className=" h-4 w-4" />
                                 {t("download")}
                             </Button>
 

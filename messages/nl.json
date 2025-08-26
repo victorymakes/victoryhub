@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Sleep bestanden hierheen",
+      "dragAndDrop": "Sleep bestanden hierheen of klik om te bladeren",
+      "chooseFiles": "Bestanden kiezen",
+      "changeFiles": "Bestanden wijzigen",
+      "clearFiles": "Bestanden wissen"
+    },
+    "loading": "Bezig met laden...",
+    "clear": "Wissen",
+    "clearAll": "Alles wissen",
+    "download": "Downloaden",
+    "downloadAll": "Alles downloaden",
+    "copy": "Kopiëren",
+    "copyAll": "Alles kopiëren",
+    "copied": "Gekopieerd!"
+  },
   "Navigation": {
     "home": "Home",
     "tools": "Tools",

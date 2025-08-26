@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Drop files here",
+      "dragAndDrop": "Drag & drop files here or click to browse",
+      "chooseFiles": "Choose Files",
+      "changeFiles": "Change Files",
+      "clearFiles": "Clear Files"
+    },
+    "loading": "Loading...",
+    "clear": "Clear",
+    "clearAll": "Clear All",
+    "download": "Download",
+    "downloadAll": "Download All",
+    "copy": "Copy",
+    "copyAll": "Copy All",
+    "copied": "Copied!"
+  },
   "Navigation": {
     "home": "Home",
     "tools": "Tools",
@@ -261,11 +278,6 @@
     }
   },
   "ImageCompressor": {
-    "title": "Image Compressor",
-    "description": "Compress and optimize your images for web and sharing",
-    "uploadImage": "Upload Image",
-    "chooseFile": "Choose File",
-    "chooseFiles": "Choose Files",
     "quality": "Quality",
     "originalSize": "Original size",
     "compressedSize": "Compressed size",
@@ -273,9 +285,6 @@
     "downloadCompressedImage": "Download Compressed Image",
     "downloadAll": "Download All Compressed Images",
     "compressedPreview": "Compressed Preview",
-    "dragAndDrop": "Drag and drop image here or click to browse",
-    "dropMoreImages": "Drop more images or click to browse",
-    "supportMultiple": "Supports multiple images at once",
     "clearAll": "Clear All",
     "image": "image",
     "images": "images",
@@ -659,9 +668,6 @@
     "formulas": "Formulas"
   },
   "ExifViewer": {
-    "uploadImage": "Upload Image",
-    "chooseFiles": "Choose Files",
-    "dragAndDropImage": "Drag and drop image here or click to browse",
     "viewExif": "View EXIF Data",
     "removeExif": "Remove EXIF",
     "download": "Download",
@@ -849,8 +855,8 @@
     "backgroundColor": "Background Color",
     "displayValue": "Display Value",
     "download": "Download Barcode",
-    "generate": "Generate Barcode",
     "generating": "Generating...",
+    "previewPlaceholder": "Enter content to generate Bar code",
     "errors": {
       "invalidEAN13": "Invalid EAN-13 format. Please enter 12-13 digits.",
       "emptyValue": "Please enter a value to generate a barcode.",

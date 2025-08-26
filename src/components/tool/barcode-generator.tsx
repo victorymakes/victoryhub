@@ -1,12 +1,17 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { AlertTriangle, Download, Loader2 } from "lucide-react";
+import {
+    AlertTriangle,
+    Download,
+    Image as ImageIcon,
+    Loader2,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import JsBarcode from "jsbarcode";
 import { Switch } from "@/components/ui/switch";
@@ -29,9 +34,8 @@ const BarcodeGenerator: React.FC = () => {
 
     const svgRef = useRef<SVGSVGElement>(null);
 
-    const validateInput = (): boolean => {
+    const validateInput = React.useCallback((): boolean => {
         if (!value) {
-            setError(t("errors.emptyValue"));
             return false;
         }
 
@@ -43,9 +47,9 @@ const BarcodeGenerator: React.FC = () => {
 
         setError(null);
         return true;
-    };
+    }, [value, barcodeType, t]);
 
-    const generateBarcode = () => {
+    const generateBarcode = React.useCallback(() => {
         if (!validateInput()) return;
 
         setIsGenerating(true);
@@ -68,7 +72,20 @@ const BarcodeGenerator: React.FC = () => {
             setError(t("errors.generationFailed"));
             setIsGenerating(false);
         }
-    };
+    }, [
+        value,
+        barcodeType,
+        width,
+        height,
+        displayValue,
+        textMargin,
+        fontSize,
+        background,
+        lineColor,
+        t,
+        validateInput,
+        svgRef,
+    ]);
 
     const handleDownload = () => {
         if (!svgRef.current || !value) return;
@@ -94,6 +111,10 @@ const BarcodeGenerator: React.FC = () => {
         img.src = "data:image/svg+xml;base64," + btoa(svgData);
     };
 
+    useEffect(() => {
+        generateBarcode();
+    }, [generateBarcode]);
+
     return (
         <div className="space-y-6">
             <Card>
@@ -101,15 +122,28 @@ const BarcodeGenerator: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-6">
                             <div className="space-y-2">
-                                <Label htmlFor="barcode-value">
-                                    {t("valueLabel")}
-                                </Label>
-                                <Input
-                                    id="barcode-value"
-                                    placeholder={t("valuePlaceholder")}
-                                    value={value}
-                                    onChange={(e) => setValue(e.target.value)}
-                                />
+                                <div className="space-y-2">
+                                    <Label htmlFor="barcode-value">
+                                        {t("valueLabel")}
+                                    </Label>
+                                    <Input
+                                        id="barcode-value"
+                                        placeholder={t("valuePlaceholder")}
+                                        value={value}
+                                        onChange={(e) =>
+                                            setValue(e.target.value)
+                                        }
+                                    />
+                                </div>
+
+                                {error && (
+                                    <Alert variant="destructive">
+                                        <AlertTriangle className="h-4 w-4" />
+                                        <AlertDescription>
+                                            {error}
+                                        </AlertDescription>
+                                    </Alert>
+                                )}
                             </div>
 
                             <div className="space-y-4">
@@ -285,45 +319,39 @@ const BarcodeGenerator: React.FC = () => {
                                         </div>
                                     </div>
                                 )}
-
-                                <Button
-                                    onClick={generateBarcode}
-                                    disabled={isGenerating}
-                                    className="w-full"
-                                >
-                                    {isGenerating ? (
-                                        <>
-                                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                            {t("generating")}
-                                        </>
-                                    ) : (
-                                        t("generate")
-                                    )}
-                                </Button>
-
-                                {error && (
-                                    <Alert variant="destructive">
-                                        <AlertTriangle className="h-4 w-4" />
-                                        <AlertDescription>
-                                            {error}
-                                        </AlertDescription>
-                                    </Alert>
-                                )}
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-center justify-center space-y-4">
-                            <div className="bg-white p-4 rounded-lg w-full flex justify-center">
-                                <svg ref={svgRef} className="w-full"></svg>
-                            </div>
+                        <div className="flex flex-col space-y-4">
+                            {value && !error ? (
+                                <div className="bg-white p-4 rounded-lg w-full flex justify-center">
+                                    <svg ref={svgRef} className="w-full"></svg>
+                                </div>
+                            ) : (
+                                <div className="bg-muted p-4 rounded-lg w-full flex items-center justify-center">
+                                    <div className="text-center py-10">
+                                        <ImageIcon className="h-16 w-16 mx-auto text-muted-foreground mb-4" />
+                                        <p className="text-muted-foreground">
+                                            {t("previewPlaceholder")}
+                                        </p>
+                                    </div>
+                                </div>
+                            )}
+
+                            {isGenerating && (
+                                <div className="flex justify-start items-center gap-2">
+                                    <Loader2 className="animate-spin text-primary h-4 w-4" />
+                                    {t("generating")}
+                                </div>
+                            )}
 
                             <Button
-                                variant="outline"
                                 onClick={handleDownload}
-                                disabled={!value || isGenerating}
-                                className="w-full md:w-auto"
+                                disabled={!value || isGenerating || !!error}
+                                className="w-full"
+                                size="lg"
                             >
-                                <Download className="mr-2 h-4 w-4" />
+                                <Download className="h-4 w-4" />
                                 {t("download")}
                             </Button>
                         </div>

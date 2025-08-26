@@ -6,16 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import {
     AlertTriangle,
-    Upload,
     Download,
-    Image as ImageIcon,
     Trash2,
     Loader2,
     X,
     BadgeCheckIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -33,6 +30,7 @@ import {
 import JSZip from "jszip";
 import FileSaver from "file-saver";
 import Image from "next/image";
+import UploadFiles from "@/components/tool/upload-files";
 
 interface ImageItem {
     id: string;
@@ -51,10 +49,8 @@ const ImageConverter: React.FC = () => {
     const t = useTranslations("ImageConverter");
     const [images, setImages] = useState<ImageItem[]>([]);
     const [outputFormat, setOutputFormat] = useState<SupportedFormat>("jpeg");
-    const [isDragging, setIsDragging] = useState<boolean>(false);
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
     const imagesRef = useRef<ImageItem[]>([]);
     const isProcessingRef = useRef<boolean>(false);
 
@@ -236,32 +232,8 @@ const ImageConverter: React.FC = () => {
     );
 
     // Handle file input change
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.files && e.target.files.length > 0) {
-            addImages(e.target.files);
-            // Reset the input value so the same file can be selected again
-            e.target.value = "";
-        }
-    };
-
-    // Handle drag and drop
-    const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(true);
-    };
-
-    const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-    };
-
-    const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-
-        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-            addImages(e.dataTransfer.files);
-        }
+    const handleFileChange = (files: FileList | File[]) => {
+        addImages(files);
     };
 
     // Remove a single image
@@ -390,49 +362,20 @@ const ImageConverter: React.FC = () => {
                                     onClick={clearAllImages}
                                     disabled={isProcessing}
                                 >
-                                    <Trash2 className="h-4 w-4 mr-1" />
+                                    <Trash2 className="h-4 w-4" />
                                     {t("clearAll")}
                                 </Button>
                             )}
                         </div>
-                        <div
-                            className={cn(
-                                "border-2 border-dashed rounded-lg p-6 transition-colors",
-                                "flex flex-col items-center justify-center text-center",
-                                isDragging
-                                    ? "border-primary bg-primary/5"
-                                    : "border-muted-foreground/25 hover:border-primary/50",
-                                images.length > 0 ? "py-4" : "py-10",
-                            )}
-                            onDragOver={handleDragOver}
-                            onDragLeave={handleDragLeave}
-                            onDrop={handleDrop}
-                        >
-                            <input
-                                ref={fileInputRef}
-                                type="file"
-                                accept="image/*"
-                                multiple
-                                onChange={handleFileChange}
-                                className="hidden"
-                            />
-                            <ImageIcon className="h-8 w-8 text-muted-foreground mb-2" />
-                            <p className="text-sm text-muted-foreground mb-2">
-                                {t("dragDropText")}
-                            </p>
-                            <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={() => fileInputRef.current?.click()}
-                                disabled={isProcessing}
-                            >
-                                <Upload className="h-4 w-4 mr-2" />
-                                {t("chooseFiles")}
-                            </Button>
-                        </div>
+                        <UploadFiles
+                            onFilesSelected={handleFileChange}
+                            multiple={true}
+                            disabled={isProcessing}
+                            accept={"image/*"}
+                        />
 
                         {/* Display uploaded images */}
-                        {images.length > 0 && (
+                        {images && images.length > 0 && (
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-96 overflow-y-auto">
                                 {images.map((img) => (
                                     <div
@@ -582,7 +525,7 @@ const ImageConverter: React.FC = () => {
                                                             size="sm"
                                                             className="ml-auto"
                                                         >
-                                                            <Download className="h-4 w-4 mr-1" />
+                                                            <Download className="h-4 w-4" />
                                                             {t("download")}
                                                         </Button>
                                                     </>
@@ -698,7 +641,7 @@ const ImageConverter: React.FC = () => {
                                 className="w-full"
                                 onClick={downloadAll}
                             >
-                                <Download className="h-4 w-4 mr-2" />
+                                <Download className="h-4 w-4" />
                                 {t("downloadAll")}
                             </Button>
                         </div>

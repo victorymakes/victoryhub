@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "将文件拖到此处",
+      "dragAndDrop": "将文件拖放到此处或点击浏览",
+      "chooseFiles": "选择文件",
+      "changeFiles": "更换文件",
+      "clearFiles": "清除文件"
+    },
+    "loading": "加载中...",
+    "clear": "清除",
+    "clearAll": "全部清除",
+    "download": "下载",
+    "downloadAll": "全部下载",
+    "copy": "复制",
+    "copyAll": "全部复制",
+    "copied": "已复制！"
+  },
   "Navigation": {
     "home": "首页",
     "tools": "工具",

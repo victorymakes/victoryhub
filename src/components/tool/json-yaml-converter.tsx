@@ -133,7 +133,7 @@ export const JsonYamlConverter = () => {
                                                 size="sm"
                                                 onClick={copyOutput}
                                             >
-                                                <Copy className="h-4 w-4 mr-2" />
+                                                <Copy className="h-4 w-4 " />
                                                 {t("copy")}
                                             </Button>
                                         )}
@@ -185,7 +185,7 @@ export const JsonYamlConverter = () => {
                                                 size="sm"
                                                 onClick={copyOutput}
                                             >
-                                                <Copy className="h-4 w-4 mr-2" />
+                                                <Copy className="h-4 w-4 " />
                                                 {t("copy")}
                                             </Button>
                                         )}
@@ -211,11 +211,11 @@ export const JsonYamlConverter = () => {
 
             <div className="flex space-x-2 justify-center">
                 <Button onClick={convert}>
-                    <ArrowLeftRight className="h-4 w-4 mr-2" />
+                    <ArrowLeftRight className="h-4 w-4 " />
                     {t("convert")}
                 </Button>
                 <Button variant="outline" onClick={clearAll}>
-                    <RefreshCw className="h-4 w-4 mr-2" />
+                    <RefreshCw className="h-4 w-4 " />
                     {t("clear")}
                 </Button>
             </div>

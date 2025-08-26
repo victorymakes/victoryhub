@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "UploadFiles": {
+      "dropFiles": "Pudota tiedostot tähän",
+      "dragAndDrop": "Vedä ja pudota tiedostot tähän tai napsauta selataksesi",
+      "chooseFiles": "Valitse tiedostot",
+      "changeFiles": "Vaihda tiedostot",
+      "clearFiles": "Tyhjennä tiedostot"
+    },
+    "loading": "Ladataan...",
+    "clear": "Tyhjennä",
+    "clearAll": "Tyhjennä kaikki",
+    "download": "Lataa",
+    "downloadAll": "Lataa kaikki",
+    "copy": "Kopioi",
+    "copyAll": "Kopioi kaikki",
+    "copied": "Kopioitu!"
+  },
   "Navigation": {
     "home": "Etusivu",
     "tools": "Työkalut",

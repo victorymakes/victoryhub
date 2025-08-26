@@ -216,11 +216,11 @@ export const JsonXmlConverter = () => {
 
                             <div className="flex flex-wrap gap-2">
                                 <Button onClick={convert}>
-                                    <ArrowLeftRight className="mr-2 h-4 w-4" />
+                                    <ArrowLeftRight className=" h-4 w-4" />
                                     {t("convert")}
                                 </Button>
                                 <Button variant="outline" onClick={clearAll}>
-                                    <RefreshCw className="mr-2 h-4 w-4" />
+                                    <RefreshCw className=" h-4 w-4" />
                                     {t("clear")}
                                 </Button>
                             </div>
@@ -243,7 +243,7 @@ export const JsonXmlConverter = () => {
                                             onClick={copyOutput}
                                             className="h-8"
                                         >
-                                            <Copy className="h-4 w-4 mr-2" />
+                                            <Copy className="h-4 w-4 " />
                                             {t("copy")}
                                         </Button>
                                     </div>
@@ -275,11 +275,11 @@ export const JsonXmlConverter = () => {
 
                             <div className="flex flex-wrap gap-2">
                                 <Button onClick={convert}>
-                                    <ArrowLeftRight className="mr-2 h-4 w-4" />
+                                    <ArrowLeftRight className=" h-4 w-4" />
                                     {t("convert")}
                                 </Button>
                                 <Button variant="outline" onClick={clearAll}>
-                                    <RefreshCw className="mr-2 h-4 w-4" />
+                                    <RefreshCw className=" h-4 w-4" />
                                     {t("clear")}
                                 </Button>
                             </div>
@@ -302,7 +302,7 @@ export const JsonXmlConverter = () => {
                                             onClick={copyOutput}
                                             className="h-8"
                                         >
-                                            <Copy className="h-4 w-4 mr-2" />
+                                            <Copy className="h-4 w-4 " />
                                             {t("copy")}
                                         </Button>
                                     </div>

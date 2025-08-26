@@ -684,28 +684,10 @@ const TextFaviconGenerator = () => {
                     {/* Generated Favicons */}
                     {generatedFavicons.size > 0 && (
                         <div className="space-y-4">
-                            {/*/!* Batch mode info *!/*/}
-                            {/*{isBatchMode && (*/}
-                            {/*    <Alert>*/}
-                            {/*        <AlertDescription>*/}
-                            {/*            {allBatchTexts.length > 1*/}
-                            {/*                ? t("batchModePreviewWarning", {*/}
-                            {/*                      count: allBatchTexts.length,*/}
-                            {/*                  })*/}
-                            {/*                : t("batchModeGeneratedInfo", {*/}
-                            {/*                      count: generatedFavicons.size,*/}
-                            {/*                  })}*/}
-                            {/*        </AlertDescription>*/}
-                            {/*    </Alert>*/}
-                            {/*)}*/}
-
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-h-80 overflow-y-auto p-2">
                                 {Array.from(generatedFavicons.entries())
                                     .map(([text, textFavicons], textIndex) => {
-                                        // 如果是批量模式，只显示第一个文本的所有尺寸
-                                        // 如果不是批量模式，显示当前文本的所有尺寸
                                         if (isBatchMode && textIndex > 0) {
-                                            // 对于批量模式中的其他文本，只显示16px尺寸作为预览
                                             const sizeFormats =
                                                 textFavicons.get(16);
                                             if (!sizeFormats) return null;
@@ -737,7 +719,6 @@ const TextFaviconGenerator = () => {
                                             );
                                         }
 
-                                        // 显示所有尺寸（对于单一模式或批量模式的第一个文本）
                                         return Array.from(
                                             textFavicons.entries(),
                                         ).map(([size, formats]) => {
