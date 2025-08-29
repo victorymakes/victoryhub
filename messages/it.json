@@ -1,12 +1,5 @@
 {
   "Common": {
-    "UploadFiles": {
-      "dropFiles": "Rilascia i file qui",
-      "dragAndDrop": "Trascina e rilascia i file qui oppure clicca per sfogliare",
-      "chooseFiles": "Scegli file",
-      "changeFiles": "Cambia file",
-      "clearFiles": "Cancella file"
-    },
     "loading": "Caricamento...",
     "clear": "Cancella",
     "clearAll": "Cancella tutto",
@@ -15,6 +8,13 @@
     "copy": "Copia",
     "copyAll": "Copia tutto",
     "copied": "Copiato!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Rilascia i file qui",
+    "dragAndDrop": "Trascina e rilascia i file qui oppure clicca per sfogliare",
+    "chooseFiles": "Scegli file",
+    "changeFiles": "Cambia file",
+    "clearFiles": "Cancella file"
   },
   "Navigation": {
     "home": "Home",

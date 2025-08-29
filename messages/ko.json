@@ -1,12 +1,5 @@
 {
   "Common": {
-    "UploadFiles": {
-      "dropFiles": "여기에 파일을 놓으세요",
-      "dragAndDrop": "여기로 파일을 드래그 앤 드롭하거나 클릭하여 찾아보기",
-      "chooseFiles": "파일 선택",
-      "changeFiles": "파일 변경",
-      "clearFiles": "파일 지우기"
-    },
     "loading": "로딩 중...",
     "clear": "지우기",
     "clearAll": "모두 지우기",
@@ -15,6 +8,13 @@
     "copy": "복사",
     "copyAll": "모두 복사",
     "copied": "복사됨!"
+  },
+  "UploadFiles": {
+    "dropFiles": "여기에 파일을 놓으세요",
+    "dragAndDrop": "여기로 파일을 드래그 앤 드롭하거나 클릭하여 찾아보기",
+    "chooseFiles": "파일 선택",
+    "changeFiles": "파일 변경",
+    "clearFiles": "파일 지우기"
   },
   "Navigation": {
     "home": "홈",

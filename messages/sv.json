@@ -1,12 +1,5 @@
 {
   "Common": {
-    "UploadFiles": {
-      "dropFiles": "Släpp filer här",
-      "dragAndDrop": "Dra och släpp filer här eller klicka för att bläddra",
-      "chooseFiles": "Välj filer",
-      "changeFiles": "Ändra filer",
-      "clearFiles": "Rensa filer"
-    },
     "loading": "Läser in...",
     "clear": "Rensa",
     "clearAll": "Rensa alla",
@@ -15,6 +8,13 @@
     "copy": "Kopiera",
     "copyAll": "Kopiera alla",
     "copied": "Kopierat!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Släpp filer här",
+    "dragAndDrop": "Dra och släpp filer här eller klicka för att bläddra",
+    "chooseFiles": "Välj filer",
+    "changeFiles": "Ändra filer",
+    "clearFiles": "Rensa filer"
   },
   "Navigation": {
     "home": "Hem",
