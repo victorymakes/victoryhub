@@ -97,7 +97,7 @@ const UploadFiles = forwardRef<UploadFilesRef, UploadFilesProps>(
         },
         ref,
     ) => {
-        const t = useTranslations("Common.UploadFiles");
+        const t = useTranslations("UploadFiles");
         const [isDragging, setIsDragging] = useState(false);
         const fileInputRef = useRef<HTMLInputElement>(null);
         const [previewImage, setPreviewImage] = useState<File | null>(null);

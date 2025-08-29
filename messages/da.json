@@ -1,12 +1,5 @@
 {
   "Common": {
-    "UploadFiles": {
-      "dropFiles": "Slip filer her",
-      "dragAndDrop": "Træk og slip filer her, eller klik for at gennemse",
-      "chooseFiles": "Vælg filer",
-      "changeFiles": "Skift filer",
-      "clearFiles": "Ryd filer"
-    },
     "loading": "Indlæser...",
     "clear": "Ryd",
     "clearAll": "Ryd alle",
@@ -15,6 +8,13 @@
     "copy": "Kopiér",
     "copyAll": "Kopiér alle",
     "copied": "Kopieret!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Slip filer her",
+    "dragAndDrop": "Træk og slip filer her, eller klik for at gennemse",
+    "chooseFiles": "Vælg filer",
+    "changeFiles": "Skift filer",
+    "clearFiles": "Ryd filer"
   },
   "Navigation": {
     "home": "Hjem",
