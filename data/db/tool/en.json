@@ -1250,5 +1250,45 @@
         "answer": "The ASCII art you create can be used in many ways: <li>Copy it into emails, messages, or comments for creative communication,</li> <li>Download it as a text file to use in documents or code,</li> <li>Use it in creative coding projects,</li> <li>Include it in retro-style designs or digital art,</li> <li>Create unique signatures for forums or email,</li> <li>Use colored ASCII art in web projects for a distinctive visual style,</li><li>Incorporate it into terminal-based applications or games.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Image Color Picker – Extract Colors from Images",
+    "description": "Extract and identify colors from any image. Upload your photo to get color codes in HEX, RGB, and HSL formats for design projects.",
+    "category": "media",
+    "keywords": [
+      "image color picker",
+      "extract colors from image",
+      "color palette generator",
+      "image color extractor",
+      "get color from image",
+      "color code finder",
+      "hex color picker",
+      "rgb color extractor",
+      "website color picker",
+      "design color tool"
+    ],
+    "faq": [
+      {
+        "question": "How does the Image Color Picker tool work?",
+        "answer": "Our Image Color Picker tool allows you to upload any image and extract its colors. Simply upload your image, and the tool will analyze it to identify the dominant colors and create a palette. You can click on any part of the image to get the exact color at that pixel. The tool displays color values in multiple formats including HEX, RGB, and HSL, making it easy to use the colors in your design projects, websites, or applications."
+      },
+      {
+        "question": "What image formats are supported by the Color Picker?",
+        "answer": "The Image Color Picker supports all common image formats including JPEG, PNG, GIF, WebP, and BMP. The tool works best with high-quality images that have clear, distinct colors. There is a file size limit of 5MB to ensure optimal performance. For best results, use images with good lighting and minimal compression artifacts."
+      },
+      {
+        "question": "How can I use the extracted colors in my projects?",
+        "answer": "Once you've extracted colors from your image, you can use them in various ways: Copy the HEX, RGB, or HSL values directly into your design software (like Adobe Photoshop, Illustrator, Figma, or Sketch). Use the colors in your website's CSS by copying the color codes. Create a consistent color palette for your brand or project based on images that inspire you. Save the color palette for future reference. The tool makes it easy to maintain color consistency across different platforms and applications."
+      },
+      {
+        "question": "Is my image data secure when using this tool?",
+        "answer": "Yes, your image data is completely secure. The Image Color Picker processes all images locally in your browser - your images are never uploaded to our servers. This ensures your visual content remains private and secure. Additionally, no image data is stored after you close the browser tab or navigate away from the tool."
+      },
+      {
+        "question": "How accurate is the color extraction process?",
+        "answer": "The Image Color Picker provides highly accurate color extraction at the pixel level. When you click on a specific point in the image, you get the exact color value of that pixel. For dominant color extraction, the tool uses advanced algorithms to identify the most representative colors in your image. However, keep in mind that perceived colors can vary slightly depending on your monitor calibration, screen brightness, and ambient lighting conditions. For professional design work requiring absolute color accuracy, we recommend using the tool in conjunction with a calibrated display."
+      }
+    ]
   }
 ]

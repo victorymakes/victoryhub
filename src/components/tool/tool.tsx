@@ -157,6 +157,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "image-color-picker": dynamic(() => import("./image-color-picker"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
 };
 
 export const ToolComponent: FC<ToolComponentProps> = ({
