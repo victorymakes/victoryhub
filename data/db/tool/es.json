@@ -850,5 +850,365 @@
         "answer": "El procesamiento se realiza en el navegador, por lo que depende de tu dispositivo. La mayoría de dispositivos modernos soportan imágenes de hasta 20 MB. No hay límite en el número de archivos, pero muchas imágenes grandes a la vez requieren más memoria y potencia. Para un rendimiento óptimo, recomendamos procesar lotes de 10–20 imágenes grandes. Se admiten formatos comunes como JPEG, PNG, WebP, etc."
       }
     ]
+  },
+  {
+    "slug": "url-tracker-cleaner",
+    "name": "Limpiador de rastreadores de URL – Elimina UTM y parámetros de seguimiento",
+    "description": "Identifica y elimina los parámetros de seguimiento en las URL, incluidos UTM, IDs de clic y otros rastreadores de analítica. Deja tus enlaces limpios para más privacidad y para compartir.",
+    "category": "privacy",
+    "keywords": [
+      "limpiador de URL",
+      "eliminar parámetros UTM",
+      "limpiar URL con seguimiento",
+      "removedor de etiquetas UTM",
+      "eliminador de rastreadores de URL",
+      "eliminar fbclid",
+      "eliminar gclid",
+      "URL limpia para compartir",
+      "limpiador de URL de privacidad",
+      "eliminador de parámetros de seguimiento"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué son los parámetros de seguimiento en URL y por qué debería eliminarlos?",
+        "answer": "Los parámetros de seguimiento son piezas adicionales de información añadidas a las direcciones web para ayudar a los profesionales de marketing y propietarios de sitios a saber de dónde vienen los visitantes y cómo interactúan con el contenido. <br/>Ejemplos comunes incluyen parámetros UTM (utm_source, utm_medium, utm_campaign), identificadores de clic (gclid, fbclid) y otros rastreadores de analítica. Aunque son valiosos para las empresas, pueden comprometer tu privacidad al revelar tus hábitos de navegación y fuentes de referencia. <br/>Eliminar estos parámetros produce enlaces más limpios y cortos, más privados y fáciles de compartir, además de impedir la recopilación innecesaria de datos sobre tu actividad en línea."
+      },
+      {
+        "question": "¿Qué parámetros de seguimiento detecta y elimina esta herramienta?",
+        "answer": "Esta herramienta detecta y elimina una amplia gama de parámetros de seguimiento, entre ellos: <li>parámetros UTM (utm_source, utm_medium, utm_campaign, utm_term, utm_content),</li> <li>IDs de clic publicitario (gclid de Google, fbclid de Facebook, msclkid de Microsoft/Bing, dclid de DoubleClick, twclid de Twitter),</li> <li>rastreadores de e-mail marketing (mc_eid de Mailchimp, _hsenc y _hsmi de HubSpot),</li> <li>y parámetros de referencia generales (ref, source, cmpid).</li> <br/>La herramienta se actualiza regularmente para identificar nuevos parámetros a medida que surgen en el ecosistema de marketing digital."
+      },
+      {
+        "question": "¿Este limpiador de URL es seguro y privado?",
+        "answer": "Sí. Todo el procesamiento de URL ocurre localmente en tu navegador: no se envían datos a nuestros servidores ni a terceros. Tus URL nunca se guardan, registran ni transmiten. Puedes verificarlo en la pestaña de red del navegador: al procesar no se realizan solicitudes. Es seguro incluso con enlaces sensibles o privados."
+      },
+      {
+        "question": "¿Eliminar parámetros de seguimiento rompe la URL o impide acceder al sitio?",
+        "answer": "No. Los parámetros de seguimiento son información suplementaria añadida después de la estructura principal de la URL y no son necesarios para que la página cargue. La URL limpia te llevará a la misma página de destino, solo que sin la información de seguimiento. En casos raros en que un sitio requiera ciertos parámetros, la herramienta conserva los no relacionados con el seguimiento para mantener la funcionalidad y solo elimina los elementos invasivos para la privacidad."
+      },
+      {
+        "question": "¿Cómo puedo usar URL limpias en mi día a día para mayor privacidad?",
+        "answer": "Para reforzar tu privacidad: <li>Antes de abrir enlaces en correos o redes sociales, haz clic derecho, copia la dirección y pégala en nuestra herramienta para limpiarla.</li> <li>Al compartir enlaces, límpialos primero para no propagar parámetros de seguimiento.</li> <li>Considera extensiones del navegador que eliminen parámetros de seguimiento automáticamente mientras navegas.</li> <li>Para máxima privacidad, combina la limpieza de URL con otras prácticas como usar una VPN, un navegador centrado en la privacidad y limpiar las cookies periódicamente.</li> </br>Esta herramienta es un primer paso sencillo hacia hábitos de navegación más privados."
+      }
+    ]
+  },
+  {
+    "slug": "text-redactor",
+    "name": "Redactor de texto – Enmascara PII e información sensible",
+    "description": "Redacción de texto en línea gratis: enmascara automáticamente correos, teléfonos, direcciones postales y otros PII. Copia/pega, redacta y exporta.",
+    "category": "privacy",
+    "keywords": [
+      "redactor de texto",
+      "enmascaramiento de PII",
+      "enmascaramiento de datos",
+      "herramienta de privacidad",
+      "información sensible",
+      "redacción de correos",
+      "enmascaramiento de teléfonos",
+      "enmascaramiento de direcciones",
+      "anonimizador de texto",
+      "privacidad de datos"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es la redacción de texto y por qué es importante?",
+        "answer": "La redacción (redaction) es el proceso de eliminar o enmascarar información sensible en documentos o texto. Es importante para <li>proteger la información personal identificable (PII),</li> <li>mantener el cumplimiento normativo (como GDPR, CCPA),</li> <li>prevenir el robo de identidad,</li> <li>y permitir compartir documentos de forma segura preservando la confidencialidad.</li> Nuestra herramienta identifica y enmascara automáticamente patrones comunes de PII como correos, teléfonos y direcciones para que puedas compartir o publicar sin exponer datos sensibles."
+      },
+      {
+        "question": "¿Qué tipos de información puede redactar esta herramienta?",
+        "answer": "Detecta y enmascara automáticamente varios tipos de PII, incluidos: <li>direcciones de correo electrónico,</li> <li>números de teléfono (se admiten formatos internacionales),</li> <li>direcciones postales,</li> <li>direcciones IP,</li> <li>números de tarjeta de crédito,</li> <li>números de seguridad social (SSN),</li> <li>fechas de nacimiento,</li> <li>y nombres cuando se reconocen en formatos comunes.</li> Usa reconocimiento de patrones para localizar estos datos y los reemplaza por marcadores manteniendo la estructura del texto."
+      },
+      {
+        "question": "¿Mis datos están seguros al usar esta herramienta?",
+        "answer": "Sí. Todo ocurre en tu navegador: no se envía ni almacena ningún dato en servidores. El procesamiento es local en tu dispositivo, garantizando máxima privacidad y seguridad. Al cerrar la pestaña, tu texto no deja rastro. Ideal para manejar información confidencial."
+      },
+      {
+        "question": "¿Qué tan precisa es la redacción automática?",
+        "answer": "Es muy precisa para formatos estándar como correos, teléfonos y tarjetas de crédito, pero ningún sistema automático es perfecto. Usamos coincidencia de patrones y expresiones regulares, por lo que formatos inusuales o información contextual pueden pasar desapercibidos. Para casos críticos, revisa manualmente la salida. También puedes añadir términos o patrones personalizados para redactar lo que no se detecte automáticamente."
+      },
+      {
+        "question": "¿Puedo personalizar qué se redacta y cómo se muestra?",
+        "answer": "Sí. Puedes elegir qué categorías de PII redactar activándolas o desactivándolas. También puedes seleccionar el estilo de redacción (caracteres como XXX, barras negras o caracteres personalizados) y añadir términos/patrones propios (útil para información específica de tu organización o nombres que no se detectan automáticamente)."
+      }
+    ]
+  },
+  {
+    "slug": "password-strength-checker",
+    "name": "Comprobador de fuerza de contraseña – Evalúa la seguridad",
+    "description": "Comprueba la fuerza de tus contraseñas y recibe sugerencias personalizadas de mejora. Mantén tus cuentas seguras con buenas prácticas.",
+    "category": "privacy",
+    "keywords": [
+      "comprobador de fuerza de contraseña",
+      "seguridad de contraseña",
+      "analizador de contraseñas",
+      "contraseña segura",
+      "evaluación de contraseña",
+      "medidor de fuerza",
+      "herramienta de seguridad",
+      "validador de contraseña",
+      "prueba de fuerza de contraseña",
+      "seguridad de cuentas"
+    ],
+    "faq": [
+      {
+        "question": "¿Cómo evalúa la herramienta la fuerza de mi contraseña?",
+        "answer": "Evaluamos las contraseñas según varios factores: <li>longitud (cuanto más larga, mejor),</li> <li>variedad de caracteres (mayúsculas, minúsculas, números, símbolos),</li> <li>ausencia de patrones comunes o palabras de diccionario,</li> <li>y ausencia de secuencias o caracteres repetidos.</li> Cada factor contribuye a una puntuación global que clasifica tu contraseña como débil, aceptable, buena o fuerte. La evaluación ocurre totalmente en tu navegador: tu contraseña nunca se transmite."
+      },
+      {
+        "question": "¿Cómo crear una contraseña fuerte?",
+        "answer": "Recomendaciones: <li>Usa al menos 12–16 caracteres (la longitud es lo más importante).</li> <li>Incluye mezcla de mayúsculas, minúsculas, números y símbolos.</li> <li>Evita palabras/fras­es comunes o información personal.</li> <li>No uses secuencias como “123456” o “qwerty”.</li> <li>Considera una frase de acceso (passphrase): varias palabras aleatorias con números y símbolos.</li> <li>Una contraseña única por servicio; nunca reutilices.</li> <li>Usa un gestor de contraseñas para generar y guardar claves complejas.</li>"
+      },
+      {
+        "question": "¿Por qué mi contraseña es larga pero sigue siendo débil?",
+        "answer": "La longitud por sí sola no garantiza fuerza. Puede ser débil si: <li>contiene palabras o frases comunes (p. ej., “iloveyou” o “password123”),</li> <li>usa patrones previsibles (p. ej., “qwerty”, “123456”) o caracteres repetidos (“aaaaa”),</li> <li>incluye información personal fácil de adivinar,</li> <li>o carece de variedad de caracteres (solo minúsculas, por ejemplo).</li> Las contraseñas más fuertes combinan longitud, imprevisibilidad y diversidad."
+      },
+      {
+        "question": "¿Son mejores las passphrases que las contraseñas cortas y complejas?",
+        "answer": "A menudo sí. Una passphrase como “correct-horse-battery-staple” o “purple_monkey_dinosaur_42!” suele ser más larga, fácil de recordar y difícil de romper que una clave corta “compleja” como “P@s$w0rd!”. Lo ideal son 3–5 palabras aleatorias con algo de mayúsculas, números y símbolos: alta entropía y memorizable."
+      },
+      {
+        "question": "¿Con qué frecuencia debo cambiar mis contraseñas?",
+        "answer": "Las guías modernas desaconsejan cambios periódicos obligatorios. En lugar de rotarlas cada 90 días (lo que suele empeorar la calidad), céntrate en: <li>usar contraseñas únicas y fuertes,</li> <li>cambiarlas inmediatamente tras una brecha,</li> <li>cambiarlas si sospechas compromiso,</li> <li>activar 2FA siempre que sea posible,</li> <li>y usar un gestor para mantener claves únicas y complejas.</li> Este enfoque, recomendado por NIST, ofrece mejor seguridad que la rotación arbitraria."
+      }
+    ]
+  },
+  {
+    "slug": "barcode-generator",
+    "name": "Generador de códigos de barras – Crear CODE128 y EAN-13 en línea",
+    "description": "Genera gratis códigos de barras CODE128 y EAN-13 de calidad profesional. Personaliza tamaño, colores y texto para etiquetas de producto, inventario y retail.",
+    "category": "media",
+    "keywords": [
+      "generador de códigos de barras",
+      "generador code128",
+      "generador ean13",
+      "crear código de barras online",
+      "creador de códigos de barras",
+      "código de barras para productos",
+      "herramienta de códigos de barras",
+      "generador de UPC",
+      "código de barras para retail",
+      "código de barras de inventario"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué tipos de códigos de barras puedo crear con esta herramienta?",
+        "answer": "Dos de los formatos más usados: CODE128 y EAN-13. <li>CODE128 es versátil y de alta densidad; puede codificar los 128 caracteres ASCII, ideal para datos alfanuméricos en logística, inventario y gestión documental.</li> <li>EAN-13 es el estándar mundial en retail, con 13 dígitos que identifican país, fabricante y producto.</li> Nuestro generador crea códigos conformes a estándares para uso comercial y personal."
+      },
+      {
+        "question": "¿Cómo creo un EAN-13 válido?",
+        "answer": "Introduce exactamente 12 dígitos (el 13.º es un dígito de control calculado automáticamente). <li>Los 2–3 primeros: código de país,</li><li>los siguientes 4–5: fabricante,</li><li>y el resto: código de producto.</li> Para pruebas puedes usar números que empiecen por 200–299 (reservados para uso interno en tienda). Para uso comercial, regístrate en GS1 y obtén un prefijo de fabricante legítimo."
+      },
+      {
+        "question": "¿Puedo personalizar el aspecto de mis códigos?",
+        "answer": "Sí. <li>Ajusta el ancho (grosor de línea) y la altura,</li><li>cambia colores de primer plano (líneas) y fondo,</li><li>muestra/oculta el valor numérico y ajusta márgenes y tamaño de fuente.</li> Así integras los códigos tanto funcional como visualmente."
+      },
+      {
+        "question": "¿Cómo usar los códigos generados en mis proyectos?",
+        "answer": "Descárgalos como PNG e intégralos en: <li>packs de producto, etiquetas de inventario, precios, carnés, entradas y sistemas de activos,</li> <li>PDF, sitios web, apps móviles o plataformas e-commerce.</li> Para impresión, recomendamos mínimo 300 DPI y probar con un escáner antes de producir en masa."
+      },
+      {
+        "question": "¿Son compatibles con escáneres estándar?",
+        "answer": "Sí, cumplen estándares internacionales y funcionan con casi todos los escáneres comerciales. <li>CODE128 funciona con la mayoría de escáneres genéricos en retail, almacén y oficina.</li><li>EAN-13 está diseñado para POS en retail.</li> Para fiabilidad, deja zonas tranquilas (quiet zones), usa buen contraste y un tamaño adecuado."
+      }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "name": "Probador de expresiones regulares – Probar y depurar regex",
+    "description": "Prueba, depura y valida expresiones regulares con esta herramienta interactiva. Visualiza coincidencias en tiempo real con soporte para varios flags/modificadores y patrones.",
+    "category": "development",
+    "keywords": [
+      "probador de regex",
+      "expresión regular",
+      "validador de regex",
+      "depurador de regex",
+      "coincidencia de patrones",
+      "flags de regex",
+      "tester de regex",
+      "checker de regex",
+      "patrones regex",
+      "match de regex"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué son las expresiones regulares y por qué son útiles?",
+        "answer": "Las expresiones regulares (regex) son cadenas especiales que definen patrones de búsqueda. Son potentes para procesar, validar y extraer texto. Se usan para <li>validar formatos (correo, teléfono),</li> <li>extraer datos de texto,</li> <li>buscar y reemplazar,</li> <li>parsear y transformar datos,</li> <li>e implementar funciones de búsqueda.</li> Desarrolladores, analistas y personal de TI las usan en múltiples lenguajes, editores y herramientas CLI."
+      },
+      {
+        "question": "¿Qué significan los distintos flags de regex?",
+        "answer": "Los flags/modificadores cambian el comportamiento del emparejamiento: <li><strong>g (global)</strong>: encuentra todas las coincidencias en lugar de detenerse en la primera,</li> <li><strong>i (case-insensitive)</strong>: ignora mayúsculas/minúsculas,</li> <li><strong>m (multiline)</strong>: ^ y $ coinciden al inicio/fin de cada línea,</li> <li><strong>s (dotAll)</strong>: el punto (.) también coincide con saltos de línea,</li> <li><strong>u (unicode)</strong>: trata el patrón como Unicode,</li> <li><strong>y (sticky)</strong>: coincide solo desde lastIndex y no avanza más.</li> El soporte varía por lenguaje/herramienta; estos son comunes en JavaScript."
+      },
+      {
+        "question": "¿Cómo creo expresiones regulares efectivas?",
+        "answer": "Buenas prácticas: <li>Empieza simple y construye poco a poco, probando cada cambio,</li> <li>usa el tester para visualizar coincidencias,</li> <li>aprende patrones comunes (correo, URL, teléfono),</li> <li>usa clases de caracteres ([a-z], \\d, \\w) para legibilidad,</li> <li>sé específico para evitar coincidencias codiciosas,</li> <li>usa grupos no capturantes (?:...) cuando no necesites el contenido,</li> <li>considera el rendimiento en patrones complejos,</li> <li>si se admite, añade comentarios con la flag x,</li> <li>prueba con casos límite e inputs inesperados.</li> La regex más mantenible suele ser la más simple que cumple el objetivo."
+      },
+      {
+        "question": "¿Mis datos están seguros al usar este probador?",
+        "answer": "Sí. Todo se ejecuta en tu navegador: no se envían ni guardan datos. El matching ocurre localmente en tu dispositivo, lo que maximiza privacidad y seguridad. Al cerrar la página no queda rastro, por lo que es adecuado incluso para datos sensibles."
+      },
+      {
+        "question": "¿Cuáles son algunos patrones regex comunes que puedo usar?",
+        "answer": "Ejemplos útiles: <li><strong>Correo</strong>: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}</li> <li><strong>URL</strong>: https?:\\/\\/[\\w\\.-]+\\.[a-zA-Z]{2,}[\\/\\w\\.-]*</li> <li><strong>Teléfono (EE. UU.)</strong>: \\(\\d{3}\\)\\s?\\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}</li> <li><strong>Fecha (YYYY-MM-DD)</strong>: \\d{4}-\\d{2}-\\d{2}</li> <li><strong>Hora (HH:MM)</strong>: ([01]?[0-9]|2[0-3]):[0-5][0-9]</li> <li><strong>IP</strong>: \\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b</li> <li><strong>Fuerza de contraseña</strong>: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^\\w\\s]).{8,}$</li> <li><strong>Etiqueta HTML</strong>: <([a-z]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)</li> Ajusta según tu caso de uso."
+      }
+    ]
+  },
+  {
+    "slug": "json-xml-converter",
+    "name": "Convertidor JSON-XML – Convertir entre JSON y XML",
+    "description": "Convierte fácilmente entre los formatos JSON y XML con esta herramienta gratuita. Perfecta para transformación de datos, integración de APIs y conversión de archivos de configuración.",
+    "category": "development",
+    "keywords": [
+      "convertidor json a xml",
+      "convertidor xml a json",
+      "transformación json xml",
+      "convertir json a xml",
+      "convertir xml a json",
+      "parser json xml",
+      "convertidor de formatos de datos",
+      "convertidor de datos api",
+      "transformación xml json",
+      "herramienta json xml online"
+    ],
+    "faq": [
+      {
+        "question": "¿Cuál es la diferencia entre JSON y XML?",
+        "answer": "Ambos son formatos de intercambio de datos, pero difieren: <li>JSON es ligero, usa sintaxis simple de clave-valor y es nativo de JavaScript. Es más compacto, legible y rápido de parsear.</li> <li>XML es más verboso con etiquetas de apertura/cierre, admite atributos y espacios de nombres y puede validarse mediante esquemas.</li> XML es flexible para estructuras complejas; JSON es eficiente para transferencias de datos simples."
+      },
+      {
+        "question": "¿Cuándo debo usar JSON vs. XML?",
+        "answer": "<li>Elige JSON para intercambio ligero, integración con JS, estructuras simples, respuestas de API, archivos de configuración o apps móviles donde importa el ancho de banda.</li> <li>Elige XML para datos orientados a documentos, jerarquías complejas, metadatos vía atributos, namespaces, validación por esquema o compatibilidad con sistemas legacy/enterprise. Sectores como salud (HL7), finanzas (FIX) y publicación (DocBook) lo usan ampliamente.</li> Nuestro convertidor te permite alternar según tus necesidades."
+      },
+      {
+        "question": "¿Cómo maneja el convertidor las estructuras complejas?",
+        "answer": "Preserva las relaciones jerárquicas durante la transformación. <li>JSON→XML: los arrays se vuelven elementos repetidos; los objetos anidados, elementos hijos; y los caracteres especiales se escapan correctamente.</li> <li>XML→JSON: los elementos con atributos se convierten en objetos anidados; los elementos repetidos pasan a arrays; y se conserva el contenido de texto.</li> Mantiene la integridad estructural adaptándose a las convenciones del formato destino."
+      },
+      {
+        "question": "¿Existen limitaciones en la conversión JSON↔XML?",
+        "answer": "Sí: <li>los atributos de XML no tienen equivalente directo en JSON y suelen convertirse en objetos anidados o propiedades especiales,</li> <li>el contenido mixto en XML no se mapea limpiamente a JSON,</li> <li>los espacios de nombres suelen convertirse en nombres con prefijo en JSON,</li> <li>las instrucciones de procesamiento y DTDs se pierden al convertir a JSON,</li> <li>JSON no distingue entre elementos y atributos.</li> Aun así, el convertidor cubre la mayoría de escenarios comunes."
+      },
+      {
+        "question": "¿Cómo asegurar que los datos convertidos sean válidos en el formato objetivo?",
+        "answer": "Primero, verifica que la fuente esté bien formada. Luego valida la salida: <li>JSON: que sea parseable con JSON.parse().</li> <li>XML: valida contra reglas XML o un esquema.</li> <li>Para JSON, revisa comillas de claves y anidamiento.</li> <li>Para XML, revisa anidamiento/cierre correcto y escape de caracteres especiales.</li> Para usos críticos, usa herramientas de validación adicionales."
+      }
+    ]
+  },
+  {
+    "slug": "json-yaml-converter",
+    "name": "Convertidor JSON-YAML – Convertir entre JSON y YAML",
+    "description": "Convierte sin esfuerzo entre los formatos JSON y YAML con esta herramienta gratuita. Ideal para desarrolladores que trabajan con configuración, APIs e intercambio de datos.",
+    "category": "development",
+    "keywords": [
+      "json a yaml",
+      "yaml a json",
+      "convertidor json yaml",
+      "convertidor yaml",
+      "convertidor json",
+      "convertir json a yaml",
+      "convertir yaml a json",
+      "formateador yaml",
+      "formateador json",
+      "convertidor de formatos de datos"
+    ],
+    "faq": [
+      {
+        "question": "¿Cuál es la diferencia entre JSON y YAML?",
+        "answer": "Ambos son formatos de serialización, pero: <li>JSON es más compacto y usa llaves, corchetes y comillas; es ideal para transmisión.</li> <li>YAML es más legible para humanos con jerarquía por indentación, admite comentarios y estructuras como anclas y referencias.</li> YAML se prefiere para configuración; JSON, para APIs y intercambio por su simplicidad y velocidad."
+      },
+      {
+        "question": "¿Por qué convertir entre JSON y YAML?",
+        "answer": "Útil cuando: <li>migras configuraciones entre sistemas con formatos distintos (p. ej., de JSON a YAML de Kubernetes),</li> <li>trabajas con APIs que aceptan un formato distinto,</li> <li>colaboras con equipos con herramientas/preferencias diferentes,</li> <li>o necesitas hacer más legible un JSON complejo para documentación o depuración.</li> Este convertidor hace la transición simple y sin errores."
+      },
+      {
+        "question": "¿El convertidor es seguro y privado?",
+        "answer": "Sí. Todo ocurre localmente en tu navegador; tus datos no salen de tu dispositivo. Es seguro para configuraciones sensibles o datos propietarios. Puedes verificar en la pestaña de red que no hay transmisiones."
+      },
+      {
+        "question": "¿Problemas comunes en JSON↔YAML?",
+        "answer": "Incluyen: <li>manejo de caracteres especiales (YAML requiere más escapes),</li> <li>preservar tipos (números vs. cadenas),</li> <li>indentación correcta al convertir a YAML,</li> <li>cadenas multilínea,</li> <li>y conservación de comentarios (JSON no los soporta; YAML sí).</li> El convertidor maneja muchos casos límite, pero verifica la salida en estructuras complejas."
+      },
+      {
+        "question": "¿Puedo usarlo con archivos grandes?",
+        "answer": "Sí, al procesar localmente maneja archivos relativamente grandes. Sin embargo, ficheros muy grandes (varios MB) pueden afectar el rendimiento según el dispositivo. Para tamaños extremos, considera herramientas de línea de comando como “yq” o “jq”."
+      }
+    ]
+  },
+  {
+    "slug": "json-toml-converter",
+    "name": "Convertidor JSON-TOML – Convertir entre JSON y TOML",
+    "description": "Convierte fácilmente entre los formatos JSON y TOML con esta herramienta gratuita. Perfecta para trabajar con archivos de configuración, APIs e intercambio de datos.",
+    "category": "development",
+    "keywords": [
+      "json a toml",
+      "toml a json",
+      "convertidor json toml",
+      "convertidor toml",
+      "convertidor json",
+      "convertir json a toml",
+      "convertir toml a json",
+      "formateador toml",
+      "formateador json",
+      "convertidor de datos"
+    ],
+    "faq": [
+      {
+        "question": "¿Cuál es la diferencia entre JSON y TOML?",
+        "answer": "Ambos son formatos de serialización, pero con enfoques distintos: <li>JSON está pensado para intercambio de datos (muy usado en APIs web); TOML, para archivos de configuración.</li> <li>JSON usa sintaxis compacta con llaves/corchetes; TOML, una sintaxis legible tipo INI con secciones explícitas.</li> <li>TOML admite comentarios (JSON, oficialmente, no).</li> <li>TOML tiene tipos nativos de fecha/hora; JSON requiere codificación personalizada.</li> <li>TOML es más fácil de escribir para humanos; JSON es más “amigable” para máquinas.</li>"
+      },
+      {
+        "question": "¿Por qué convertir entre JSON y TOML?",
+        "answer": "Escenarios típicos: <li>migrar configuraciones entre sistemas con distintos formatos (p. ej., ecosistemas de Rust/Go),</li> <li>APIs que aceptan un formato distinto al que tienes,</li> <li>colaborar con equipos con herramientas/preferencias diferentes,</li> <li>hacer más legible un JSON complejo para configuración,</li> <li>o integrarse con herramientas como Cargo (Rust) que usan TOML.</li> El convertidor hace el proceso fluido y fiable."
+      },
+      {
+        "question": "¿El convertidor es seguro y privado?",
+        "answer": "Sí. La conversión se realiza íntegramente en el navegador; no se suben datos. Tus datos no salen del dispositivo y, una vez cargada la página, funciona offline. No usamos cookies ni tracking y empleamos librerías cliente consolidadas."
+      },
+      {
+        "question": "¿Problemas comunes en JSON↔TOML?",
+        "answer": "Entre ellos: <li>diferencias de escape de caracteres especiales,</li> <li>preservar tipos (número vs. cadena),</li> <li>representación de estructuras anidadas (TOML usa notación por puntos),</li> <li>conversión correcta de arrays y tablas,</li> <li>y pérdida de comentarios al ir de TOML a JSON (JSON no los soporta).</li> El convertidor cubre la mayoría de casos; aun así, revisa salidas críticas."
+      },
+      {
+        "question": "¿Puede manejar archivos JSON o TOML grandes?",
+        "answer": "Sí, dentro de límites razonables; las restricciones de memoria del navegador aplican. Archivos muy grandes (10+ MB) pueden ir lentos; para esos casos, usa herramientas CLI o librerías específicas del lenguaje. Para la mayoría de configuraciones y respuestas de API, funciona sin problema."
+      }
+    ]
+  },
+  {
+    "slug": "ascii-art-generator",
+    "name": "Generador de arte ASCII – Convierte imágenes en arte de texto",
+    "description": "Transforma tus imágenes en arte ASCII con esta herramienta gratuita. Personaliza el conjunto de caracteres, el ancho y los colores para crear representaciones únicas basadas en texto.",
+    "category": "media",
+    "keywords": [
+      "generador de arte ascii",
+      "imagen a ascii",
+      "creador de arte de texto",
+      "convertidor ascii",
+      "imagen a arte de texto",
+      "generador de texto artístico",
+      "creador de arte ascii",
+      "imagen a arte ascii",
+      "texto desde imagen",
+      "imagen en ascii"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es el arte ASCII y cómo funciona?",
+        "answer": "Es una técnica que usa caracteres imprimibles del estándar ASCII para crear imágenes. Nuestro generador analiza el brillo de los píxeles y los mapea a caracteres ASCII equivalentes: las zonas oscuras usan caracteres densos como “@” o “#”, y las claras “.” o espacios. Así se obtiene una representación en texto que se parece a la imagen original al verla a la escala adecuada."
+      },
+      {
+        "question": "¿Puedo personalizar los caracteres usados?",
+        "answer": "¡Sí! Puedes definir el conjunto de caracteres para distintos niveles de brillo. Por defecto usamos “@%#*+=-:. ” (de más denso a más ligero), pero puedes cambiarlo para efectos distintos; por ejemplo, solo “01” para un aspecto binario."
+      },
+      {
+        "question": "¿Cómo obtener los mejores resultados?",
+        "answer": "Sugerencias: <li>usa imágenes con buen contraste y sujeto claro,</li><li>prueba distintos conjuntos de caracteres (los más largos dan más detalle),</li><li>ajusta el ancho según la complejidad,</li><li>prueba modo normal e invertido,</li><li>para mucho detalle, aumenta el ancho,</li><li>logotipos sencillos o retratos suelen funcionar mejor,</li><li>visualiza con una fuente monoespaciada para un alineado correcto.</li>"
+      },
+      {
+        "question": "¿Mis imágenes están seguras al usar la herramienta?",
+        "answer": "Sí. Todo el procesamiento es local en el navegador; tus imágenes no se suben a servidores. La conversión corre en tu dispositivo, por lo que tus imágenes permanecen privadas y seguras. También funciona sin conexión tras cargar la página."
+      },
+      {
+        "question": "¿Para qué puedo usar el arte ASCII generado?",
+        "answer": "Usos posibles: <li>pegar en correos, mensajes o comentarios,</li> <li>descargar como archivo de texto para documentos o código,</li> <li>proyectos de creative coding,</li> <li>diseños retro o arte digital,</li> <li>firmas únicas en foros o e-mail,</li> <li>arte ASCII con color en proyectos web,</li> <li>o integrarlo en apps de terminal y juegos.</li>"
+      }
+    ]
   }
 ]

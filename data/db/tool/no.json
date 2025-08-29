@@ -845,5 +845,365 @@
         "answer": "Alt skjer i nettleseren, så begrensningene avhenger av enheten din. Moderne enheter håndterer enkelt bilder opptil 20 MB. Det er ingen streng grense, men mange store bilder samtidig kan kreve mer minne og prosessorkraft. Vi anbefaler å konvertere 10–20 store bilder om gangen. Støttede formater inkluderer JPEG, PNG, WebP m.fl."
       }
     ]
+  },
+  {
+    "slug": "url-tracker-cleaner",
+    "name": "URL-renser – Fjern UTM- og sporingsparametere",
+    "description": "Identifiser og fjern sporingsparametere fra URL-er, inkludert UTM-tagger, klikk-ID-er og andre analysetrackere. Rens lenkene dine for personvern og deling.",
+    "category": "privacy",
+    "keywords": [
+      "url-renser",
+      "fjern utm-parametere",
+      "rens sporings-url-er",
+      "utm-tag-fjerner",
+      "url-tracker-fjerner",
+      "fjern fbclid",
+      "fjern gclid",
+      "ren url for deling",
+      "personvern-url-renser",
+      "fjerner sporingsparametere"
+    ],
+    "faq": [
+      {
+        "question": "Hva er URL-sporingsparametere og hvorfor bør jeg fjerne dem?",
+        "answer": "URL-sporingsparametere er ekstra informasjon som legges til webadresser for å hjelpe markedsførere og nettstedeiere med å se hvor besøkende kommer fra og hvordan de samhandler med innhold. <br/>Vanlige eksempler er UTM-parametere (utm_source, utm_medium, utm_campaign), klikk-identifikatorer (gclid, fbclid) og andre analysetrackere. Selv om disse er nyttige for bedrifter, kan de svekke personvernet ditt ved å avsløre nettlesevaner og henvisningskilder. <br/>Å fjerne dem gir renere, kortere lenker som er mer private og enklere å dele, samtidig som unødvendig datainnsamling om din nettaktivitet forhindres."
+      },
+      {
+        "question": "Hvilke sporingsparametere oppdager og fjerner dette verktøyet?",
+        "answer": "Verktøyet oppdager og fjerner et bredt spekter av sporingsparametere, inkludert: <li>UTM-parametere (utm_source, utm_medium, utm_campaign, utm_term, utm_content),</li> <li>annonseringsklikk-ID-er (gclid fra Google, fbclid fra Facebook, msclkid fra Microsoft/Bing, dclid fra DoubleClick, twclid fra Twitter),</li> <li>e-postmarkedsføringstrackere (mc_eid fra Mailchimp, _hsenc og _hsmi fra HubSpot),</li> <li>og generelle henvisningsparametere (ref, source, cmpid).</li> <br/>Verktøyet oppdateres jevnlig for å identifisere nye sporingsparametere etter hvert som de dukker opp i det digitale markedsføringsøkosystemet."
+      },
+      {
+        "question": "Er denne URL-renseren sikker og privat?",
+        "answer": "Ja. All URL-behandling skjer lokalt i nettleseren din – ingen data sendes til våre servere eller tredjeparter. URL-ene dine blir aldri lagret, logget eller overført. Du kan verifisere dette i nettleserens nettverksfane under bruk – ingen forespørsler gjøres når URL-er behandles. Det gjør verktøyet trygt selv for sensitive eller private lenker."
+      },
+      {
+        "question": "Vil fjerning av sporingsparametere ødelegge URL-en eller hindre tilgang til nettstedet?",
+        "answer": "Nei. Sporingsparametere er tilleggsinformasjon lagt etter den viktigste URL-strukturen og er ikke nødvendige for at siden skal lastes. Den rensede URL-en fører fortsatt til samme destinasjonsside, bare uten sporingsinformasjon. I sjeldne tilfeller der et nettsted krever visse parametere, bevarer verktøyet alle ikke-sporingsparametere for å opprettholde funksjonalitet, og fjerner kun de personverninngripende elementene."
+      },
+      {
+        "question": "Hvordan kan jeg bruke rensede URL-er i hverdagen for bedre personvern?",
+        "answer": "For bedre personvern: <li>Høyreklikk før du åpner lenker i e-post eller sosiale medier, kopier lenkeadressen og lim den inn i verktøyet vårt for å rense den.</li> <li>Rens lenker før du deler dem for å unngå å spre sporingsparametere.</li> <li>Vurder nettleserutvidelser som automatisk fjerner sporingsparametere mens du surfer.</li> <li>For maksimal beskyttelse, kombiner URL-rensing med andre praksiser som VPN, personvernfokusert nettleser og regelmessig sletting av informasjonskapsler.</li> </br>Dette verktøyet er et enkelt første steg mot mer private surfevaner."
+      }
+    ]
+  },
+  {
+    "slug": "text-redactor",
+    "name": "Tekstsladding – Masker PII og sensitiv informasjon",
+    "description": "Gratis tekstsladding på nett: maskér automatisk e-poster, telefonnumre, postadresser og annen PII. Lim inn, sladd og eksporter.",
+    "category": "privacy",
+    "keywords": [
+      "tekstsladding",
+      "pii-sladding",
+      "datamaskering",
+      "personvernsverktøy",
+      "sensitiv informasjon",
+      "sladding av e-post",
+      "telefonnummermaskering",
+      "adresse-sladding",
+      "tekstanonymisering",
+      "datapersonvern"
+    ],
+    "faq": [
+      {
+        "question": "Hva er tekstsladding, og hvorfor er det viktig?",
+        "answer": "Sladding (redaction) er prosessen med å fjerne eller maskere sensitiv informasjon fra dokumenter eller tekst. Det er viktig for <li>å beskytte personopplysninger (PII),</li> <li>å overholde personvernregelverk (som GDPR, CCPA),</li> <li>å forhindre identitetstyveri,</li> <li>og å kunne dele dokumenter trygt samtidig som konfidensialitet bevares.</li> Verktøyet vårt identifiserer og maskerer automatisk vanlige PII-mønstre som e-post, telefon og adresser, slik at du kan dele eller publisere uten å eksponere sensitive data."
+      },
+      {
+        "question": "Hvilke typer informasjon kan dette verktøyet sladde?",
+        "answer": "Verktøyet oppdager og sladder automatisk flere typer personopplysninger (PII), inkludert: <li>e-postadresser,</li> <li>telefonnumre (støtte for internasjonale formater),</li> <li>postadresser,</li> <li>IP-adresser,</li> <li>kredittkortnumre,</li> <li>personnummer/SSN,</li> <li>fødselsdatoer,</li> <li>og navn når de kan identifiseres i vanlige formater.</li> Verktøyet bruker mønstergjenkjenning for å erstatte disse dataene med plassholdere samtidig som den opprinnelige tekststrukturen bevares."
+      },
+      {
+        "question": "Er dataene mine trygge når jeg bruker dette sladdeverktøyet?",
+        "answer": "Ja. Alt skjer i nettleseren din – ingen data sendes til servere eller lagres noe sted. Tekstbehandlingen skjer lokalt på enheten din, som sikrer maksimal personvern og sikkerhet. Når du lukker fanen, forsvinner alle spor av teksten. Ideelt for håndtering av konfidensiell informasjon."
+      },
+      {
+        "question": "Hvor nøyaktig er automatisk sladding?",
+        "answer": "Svært nøyaktig for standardformater som e-post, telefonnumre og kredittkort. Ingen automatiserte systemer er likevel perfekte. Verktøyet bruker mønstermatching og regulære uttrykk, så uvanlige formater eller kontekstuell informasjon kan bli oversett. Ved kritiske behov anbefaler vi manuell gjennomgang og eventuelt bruk av egendefinerte termer/mønstre."
+      },
+      {
+        "question": "Kan jeg tilpasse hva som sladdes og hvordan det vises?",
+        "answer": "Ja. Du kan velge hvilke PII-kategorier som skal sladdes (av/på), velge sladdestil (erstatningstegn som XXX, svarte streker eller egendefinerte tegn) og legge til egendefinerte termer eller mønstre – nyttig for virksomhetsspesifikk informasjon."
+      }
+    ]
+  },
+  {
+    "slug": "password-strength-checker",
+    "name": "Passordstyrketester – Vurder passordsikkerhet",
+    "description": "Sjekk styrken på passordene dine og få personlige forbedringsforslag. Sikre kontoene dine med gode passordrutiner.",
+    "category": "privacy",
+    "keywords": [
+      "passordstyrketest",
+      "passordsikkerhet",
+      "passordanalyse",
+      "sikkert passord",
+      "vurdering av passord",
+      "passordstyrkemåler",
+      "sikkerhetsverktøy",
+      "passordvalidator",
+      "test av passordstyrke",
+      "kontosikkerhet"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan vurderer styrketesteren passordet mitt?",
+        "answer": "Vi vurderer passord basert på flere sikkerhetsfaktorer: <li>lengde (lengre er bedre),</li> <li>tegnvariasjon (store/små bokstaver, tall, symboler),</li> <li>fravær av vanlige mønstre eller ordbokord,</li> <li>og mangel på sekvenser eller gjentatte tegn.</li> Hver faktor bidrar til en samlet styrkescore (svakt, middels, bra, sterkt). Evalueringen skjer helt i nettleseren – passordet ditt sendes aldri til noen server."
+      },
+      {
+        "question": "Hvordan lager jeg et sterkt passord?",
+        "answer": "Anbefalinger: <li>bruk minst 12–16 tegn – lengde er viktigst,</li> <li>inkluder en miks av store/små bokstaver, tall og symboler,</li> <li>unngå vanlige ord, fraser eller personopplysninger,</li> <li>ikke bruk sekvenser som «123456» eller «qwerty»,</li> <li>vurder en passfrase – en rekke tilfeldige ord med tall og symboler,</li> <li>bruk unike passord for hver konto – aldri gjenbruk,</li> <li>bruk en passordmanager for å generere og lagre komplekse passord.</li>"
+      },
+      {
+        "question": "Hvorfor vurderes passordet mitt som svakt selv om det er langt?",
+        "answer": "Lengde alene garanterer ikke styrke. Et langt passord kan fortsatt være svakt hvis det: <li>inneholder vanlige ord eller fraser (som «iloveyou» eller «password123»),</li> <li>bruker forutsigbare mønstre (som «qwerty» eller «123456») eller gjentakelser («aaaaa»),</li> <li>inneholder lett gjenkjennelige personopplysninger,</li> <li>eller mangler tegnvariasjon (f.eks. bare små bokstaver).</li> De sterkeste passordene kombinerer lengde med uforutsigbarhet og variasjon."
+      },
+      {
+        "question": "Er passfraser bedre enn korte «komplekse» passord?",
+        "answer": "Ofte, ja. En passfrase som «correct-horse-battery-staple» eller «purple_monkey_dinosaur_42!» er vanligvis lengre, lettere å huske og vanskeligere å knekke enn et kort «komplekst» passord som «P@s$w0rd!». Ideelt består en passfrase av 3–5 tilfeldige ord med litt bruk av store bokstaver, tall og symboler."
+      },
+      {
+        "question": "Hvor ofte bør jeg endre passordene mine?",
+        "answer": "Moderne anbefalinger (f.eks. fra NIST) fraråder vilkårlige periodiske endringer. Fokuser heller på: <li>unike, sterke passord for hver tjeneste,</li> <li>å endre passord umiddelbart etter et datainnbrudd,</li> <li>å bytte passord ved mistanke om kompromittering,</li> <li>å bruke tofaktorautentisering (2FA) der det er mulig,</li> <li>og å bruke passordmanager for å opprettholde unike, komplekse passord.</li>"
+      }
+    ]
+  },
+  {
+    "slug": "barcode-generator",
+    "name": "Strekkodegenerator – Lag CODE128- og EAN-13-strekkoder på nett",
+    "description": "Generer profesjonelle CODE128- og EAN-13-strekkoder gratis på nett. Tilpass størrelse, farger og tekstvisning for produktetiketter, lagerstyring og detaljhandel.",
+    "category": "media",
+    "keywords": [
+      "strekkodegenerator",
+      "code128-generator",
+      "ean13-generator",
+      "lag strekkode på nett",
+      "gratis strekkodeverktøy",
+      "produktstrekkodegenerator",
+      "strekkode-oppretter",
+      "upc-strekkodegenerator",
+      "strekkoder for detaljhandel",
+      "lagerstrekkodeverktøy"
+    ],
+    "faq": [
+      {
+        "question": "Hvilke typer strekkoder kan jeg lage med dette verktøyet?",
+        "answer": "Verktøyet lar deg generere to av de mest brukte formatene: CODE128 og EAN-13. <li>CODE128 er allsidig og med høy tetthet; det kan kode alle 128 ASCII-tegn, ideelt for alfanumeriske data i logistikk, lager og dokumenthåndtering.</li> <li>EAN-13 er standardformatet for detaljhandel globalt, bestående av 13 sifre som identifiserer land, produsent og produkt.</li> Generatoren lager standardkompatible strekkoder for både kommersiell og personlig bruk."
+      },
+      {
+        "question": "Hvordan lager jeg en gyldig EAN-13-strekkode?",
+        "answer": "Skriv inn nøyaktig 12 sifre (det 13. er en kontrollsifre som generatoren beregner automatisk). <li>De første 2–3 sifrene angir landkode,</li><li>de neste 4–5 angir produsent,</li><li>og de resterende sifrene er produktkoden.</li> Til testing kan du bruke tall som starter med 200–299 (reservert for bruk i butikk). For kommersiell bruk bør du registrere deg hos GS1 for å få et gyldig produsentprefiks."
+      },
+      {
+        "question": "Kan jeg tilpasse utseendet på strekkodene mine?",
+        "answer": "Ja. <li>Juster strekkodebredden (linjetykkelse) og høyden,</li><li>endre forgrunns- (linjer) og bakgrunnsfarger,</li><li>vis/skjul den numeriske verdien og juster tekstmargin og skriftstørrelse.</li> Disse tilpasningene sikrer at strekkodene både fungerer godt og passer visuelt inn."
+      },
+      {
+        "question": "Hvordan kan jeg bruke de genererte strekkodene i prosjektene mine?",
+        "answer": "Last ned som PNG og bruk dem i: <li>produktpakninger, lageretiketter, prislapper, medlemskort, billetter og systemer for sporing av eiendeler,</li> <li>PDF-er, nettsteder, mobilapper eller e-handelsplattformer.</li> Ved utskrift anbefaler vi minst 300 DPI for pålitelig skanning, og å teste med en skanner før masseproduksjon."
+      },
+      {
+        "question": "Er disse strekkodene kompatible med standardskannere?",
+        "answer": "Ja, strekkodene er i samsvar med internasjonale standarder og fungerer med nesten alle kommersielle skannere. <li>CODE128 fungerer med de fleste generelle skannere i detaljhandel, lager og kontor.</li><li>EAN-13 er spesielt designet for POS-systemer.</li> For best pålitelighet: hold tilstrekkelige «stille soner» rundt strekkoden, høyt kontrastforhold og passende størrelse."
+      }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "name": "Regex-tester – Test og feilsøk regulære uttrykk",
+    "description": "Test, feilsøk og valider regulære uttrykk med dette interaktive verktøyet. Visualiser treff i sanntid med støtte for ulike regex-flagg og mønstre.",
+    "category": "development",
+    "keywords": [
+      "regex-tester",
+      "regulært uttrykk",
+      "regex-validator",
+      "regex-feilsøker",
+      "mønstermatching",
+      "regex-flagg",
+      "regex testverktøy",
+      "regex-sjekker",
+      "regex-mønster",
+      "regex-treff"
+    ],
+    "faq": [
+      {
+        "question": "Hva er regulære uttrykk, og hvorfor er de nyttige?",
+        "answer": "Regulære uttrykk (regex) er spesielle tekststrenger som definerer søkemønstre. De er kraftige verktøy for tekstbehandling, validering og utdrag. Regex er nyttig for <li>å validere inndataformater som e-post eller telefonnummer,</li> <li>å hente ut spesifikke data fra tekst,</li> <li>å finne og erstatte tekst,</li> <li>å parse og transformere data,</li> <li>og å implementere søkefunksjonalitet.</li> Utviklere, dataanalytikere og IT-folk bruker regex på tvers av programmeringsspråk, tekstredigerere og kommandolinjeverktøy."
+      },
+      {
+        "question": "Hva betyr de ulike regex-flaggene?",
+        "answer": "Flagg endrer hvordan matching oppfører seg: <li><strong>g (global)</strong>: finner alle treff i stedet for å stoppe etter første,</li> <li><strong>i (case-insensitive)</strong>: ignorerer små/store bokstaver,</li> <li><strong>m (multiline)</strong>: ^ og $ matcher start/slutt på hver linje,</li> <li><strong>s (dotAll)</strong>: punktum (.) matcher også linjeskift,</li> <li><strong>u (unicode)</strong>: behandler mønsteret som Unicode,</li> <li><strong>y (sticky)</strong>: matcher bare fra lastIndex-posisjonen og går ikke videre.</li> Støtten varierer mellom språk og verktøy, men disse er vanlige i JavaScript."
+      },
+      {
+        "question": "Hvordan lager jeg effektive regulære uttrykk?",
+        "answer": "Beste praksis: <li>start enkelt og bygg gradvis, test hver endring,</li> <li>bruk testeren vår for å visualisere treff i sanntid,</li> <li>lær vanlige mønstre for e-post, URL, telefon osv.,</li> <li>bruk tegnklasser ([a-z], \\d, \\w) for bedre lesbarhet,</li> <li>vær spesifikk for å unngå for «grådige» treff,</li> <li>bruk ikke-fangende grupper (?:...) når du ikke trenger selve innholdet,</li> <li>tenk på ytelse for komplekse mønstre,</li> <li>legg til kommentarer med x-flagget der det støttes,</li> <li>test med hjørnetilfeller og uventet inndata.</li> Det mest vedlikeholdsvennlige regex-et er ofte det enkleste som gjør jobben."
+      },
+      {
+        "question": "Er dataene mine trygge med denne regex-testeren?",
+        "answer": "Ja. Alt kjører i nettleseren – ingen data sendes eller lagres. Matching skjer lokalt på enheten din, som gir maksimal personvern og sikkerhet. Når du lukker siden, blir det ikke igjen spor – egnet også for sensitive data."
+      },
+      {
+        "question": "Hva er noen vanlige regex-mønstre jeg kan bruke?",
+        "answer": "Nyttige mønstre: <li><strong>E-post</strong>: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}</li> <li><strong>URL</strong>: https?:\\/\\/[\\w\\.-]+\\.[a-zA-Z]{2,}[\\/\\w\\.-]*</li> <li><strong>Telefon (USA)</strong>: \\(\\d{3}\\)\\s?\\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}</li> <li><strong>Dato (YYYY-MM-DD)</strong>: \\d{4}-\\d{2}-\\d{2}</li> <li><strong>Tid (HH:MM)</strong>: ([01]?[0-9]|2[0-3]):[0-5][0-9]</li> <li><strong>IP-adresse</strong>: \\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b</li> <li><strong>Passordstyrke</strong>: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^\\w\\s]).{8,}$</li> <li><strong>HTML-tag</strong>: <([a-z]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)</li> Disse kan tilpasses etter behov."
+      }
+    ]
+  },
+  {
+    "slug": "json-xml-converter",
+    "name": "JSON-XML-omformer – Konverter mellom JSON og XML",
+    "description": "Konverter enkelt mellom JSON- og XML-formater med dette gratisverktøyet. Perfekt for datatransformasjon, API-integrasjon og konfigurasjonsfiler.",
+    "category": "development",
+    "keywords": [
+      "json til xml-omformer",
+      "xml til json-omformer",
+      "json xml-transformasjon",
+      "konverter json til xml",
+      "konverter xml til json",
+      "json xml-parser",
+      "dataformat-omformer",
+      "api-dataomformer",
+      "xml json-konvertering",
+      "online json xml-verktøy"
+    ],
+    "faq": [
+      {
+        "question": "Hva er forskjellen mellom JSON og XML?",
+        "answer": "JSON (JavaScript Object Notation) og XML (Extensible Markup Language) er begge formater for datautveksling, men de skiller seg på flere måter. <li>JSON er lettvekts, bruker enkel nøkkel–verdi-syntaks og er naturlig for JavaScript. Det er mer kompakt, lettere å lese og raskere å parse.</li> <li>XML er mer ordrikt med åpne-/lukkemerker, støtter attributter og navnerom og kan valideres strengt via skjemaer.</li> XML er mer fleksibelt for komplekse dokumentstrukturer, mens JSON er mer effektivt for enkel dataoverføring."
+      },
+      {
+        "question": "Når bør jeg bruke JSON og når bør jeg bruke XML?",
+        "answer": "<li>Velg JSON for lett datautveksling, JavaScript-integrasjon, enkle datastrukturer, API-responser, konfigurasjonsfiler eller mobile apper der båndbredde betyr noe.</li> <li>Velg XML for dokumentorienterte data, komplekse hierarkier, metadata via attributter, støtte for navnerom, skjema­validering eller kompatibilitet med eldre/enterprise-systemer. Bransjer som helse (HL7), finans (FIX) og publisering (DocBook) har etablerte XML-standarder.</li> Omformeren vår hjelper deg å gå mellom formatene etter behov."
+      },
+      {
+        "question": "Hvordan håndterer omformeren komplekse datastrukturer?",
+        "answer": "Vi bevarer hierarkiske relasjoner under transformasjonen. <li>JSON→XML: arrayer blir gjentatte elementer, nestede objekter blir barneelementer, og spesialtegn escapes riktig.</li> <li>XML→JSON: elementer med attributter blir nestede objekter, gjentatte elementer blir arrayer, og tekstinnhold bevares.</li> Den strukturelle integriteten opprettholdes i tråd med konvensjonene i målformatet."
+      },
+      {
+        "question": "Finnes det begrensninger i JSON↔XML-konverteringen?",
+        "answer": "Ja: <li>XML-attributter har ingen direkte ekvivalent i JSON og konverteres ofte til nestede objekter eller spesialfelter,</li> <li>blandet XML-innhold (tekst blandet med elementer) mappes ikke rent til JSON,</li> <li>navnerom blir ofte prefiksede feltnavn i JSON,</li> <li>prosesseringsinstruksjoner og DTD går tapt ved konvertering til JSON,</li> <li>JSON skiller ikke mellom elementer og attributter.</li> Likevel dekker omformeren de fleste vanlige scenarier effektivt."
+      },
+      {
+        "question": "Hvordan sikrer jeg at konverterte data er gyldige i målformatet?",
+        "answer": "Sjekk først at kildedataene er velstrukturert (gyldig JSON eller XML). Deretter: <li>for JSON: verifiser at det kan parses med JSON.parse(),</li> <li>for XML: valider mot XML-regler eller et spesifikt skjema,</li> <li>for JSON-utdata: sjekk sitering av nøkler og korrekt nesting,</li> <li>for XML-utdata: sjekk korrekt nesting/lukking og escaping av spesialtegn.</li> For kritiske bruksområder bør du bruke ekstra valideringsverktøy."
+      }
+    ]
+  },
+  {
+    "slug": "json-yaml-converter",
+    "name": "JSON-YAML-omformer – Konverter mellom JSON og YAML",
+    "description": "Konverter enkelt mellom JSON- og YAML-dataformater med dette gratisverktøyet. Perfekt for utviklere som jobber med konfigurasjonsfiler, API-er og datautveksling.",
+    "category": "development",
+    "keywords": [
+      "json til yaml",
+      "yaml til json",
+      "json yaml-omformer",
+      "yaml-omformer",
+      "json-omformer",
+      "konverter json til yaml",
+      "konverter yaml til json",
+      "yaml-formatter",
+      "json-formatter",
+      "dataformat-omformer"
+    ],
+    "faq": [
+      {
+        "question": "Hva er forskjellen mellom JSON og YAML?",
+        "answer": "Begge er serialiseringsformater, men: <li>JSON er mer kompakt og bruker klamme- og hakeparenteser samt anførselstegn – ideelt for overføring,</li> <li>YAML er mer menneskevennlig med innrykkbasert hierarki, støtter kommentarer og mer komplekse konstruksjoner som ankere og referanser.</li> YAML foretrekkes ofte for konfigurasjon, mens JSON er vanlig i API-er og datautveksling på grunn av enkelhet og parsehastighet."
+      },
+      {
+        "question": "Hvorfor konvertere mellom JSON og YAML?",
+        "answer": "Nyttig når du: <li>migrerer konfigurasjonsfiler mellom systemer som bruker ulike formater (f.eks. fra JSON til Kubernetes-YAML),</li> <li>jobber med API-er som aksepterer et annet format enn kildedataene dine,</li> <li>samarbeider med team som bruker ulike verktøy eller preferanser,</li> <li>eller ønsker å gjøre en kompleks JSON-struktur mer lesbar for dokumentasjon eller feilsøking.</li> Denne omformeren gjør overgangen enkel og feilfri."
+      },
+      {
+        "question": "Er denne omformeren sikker og privat?",
+        "answer": "Ja. All konvertering skjer lokalt i nettleseren – dataene dine forlater aldri enheten. Dette passer godt for sensitive konfigurasjoner eller proprietære datastrukturer. Du kan verifisere i nettverksfanen at ingen overføringer skjer."
+      },
+      {
+        "question": "Hva er vanlige utfordringer ved JSON↔YAML-konvertering?",
+        "answer": "For eksempel: <li>håndtering av spesialtegn (YAML kan kreve mer escaping),</li> <li>bevaring av datatyper (tall vs. strenger),</li> <li>riktig innrykk ved konvertering til YAML,</li> <li>håndtering av flerlinjestrenger,</li> <li>og bevaring av kommentarer (JSON støtter ikke kommentarer, YAML gjør det).</li> Omformeren håndterer disse kanttilfellene automatisk, men det er lurt å verifisere kompleks utdata."
+      },
+      {
+        "question": "Kan jeg bruke verktøyet for store JSON- eller YAML-filer?",
+        "answer": "Ja, siden alt skjer lokalt, håndteres ganske store filer. Svært store filer (flere megabyte) kan påvirke ytelsen avhengig av enheten. For svært store datasett kan du vurdere kommandolinjeverktøy som «yq» eller «jq»."
+      }
+    ]
+  },
+  {
+    "slug": "json-toml-converter",
+    "name": "JSON-TOML-omformer – Konverter mellom JSON og TOML",
+    "description": "Konverter enkelt mellom JSON- og TOML-formater med dette gratisverktøyet. Perfekt for utviklere som jobber med konfigurasjon, API-er og datautveksling.",
+    "category": "development",
+    "keywords": [
+      "json til toml",
+      "toml til json",
+      "json toml-omformer",
+      "toml-omformer",
+      "json-omformer",
+      "konverter json til toml",
+      "konverter toml til json",
+      "toml-formatter",
+      "json-formatter",
+      "dataomformer"
+    ],
+    "faq": [
+      {
+        "question": "Hva er forskjellen mellom JSON og TOML?",
+        "answer": "Begge er serialiseringsformater, men med ulike mål: <li>JSON er laget for datautveksling (utbredt i web-API-er), mens TOML primært er laget for konfigurasjonsfiler.</li> <li>JSON har en kompakt syntaks med klamme- og hakeparenteser; TOML bruker en mer lesbar INI-aktig syntaks med eksplisitte seksjoner.</li> <li>TOML støtter kommentarer (noe JSON ikke gjør offisielt),</li> <li>har innebygde dato-/tids­typer (i JSON kreves tilpasset koding),</li> <li>og er mer menneskevennlig å skrive, mens JSON er mer maskinvennlig.</li>"
+      },
+      {
+        "question": "Hvorfor konvertere mellom JSON og TOML?",
+        "answer": "Typiske scenarier: <li>migrering av konfigurasjoner mellom formater (f.eks. i Rust-/Go-økosystemer),</li> <li>arbeid med API-er som krever et annet format enn kildedataene dine,</li> <li>samarbeid mellom team med ulike verktøy/preferanser,</li> <li>å gjøre kompleks JSON mer lesbar for konfigurasjon,</li> <li>eller integrasjon med verktøy som Cargo (Rust) som bruker TOML.</li> Denne omformeren gjør overgangen jevn og pålitelig."
+      },
+      {
+        "question": "Er omformeren sikker og personvernvennlig?",
+        "answer": "Ja. Konverteringen skjer fullt og helt i nettleseren; ingenting lastes opp. Dataene forlater ikke enheten, og når siden er lastet, kan verktøyet brukes offline. Ingen informasjonskapsler eller sporing; vi bruker velprøvde klientbiblioteker."
+      },
+      {
+        "question": "Hva er vanlige problemer ved JSON↔TOML-konvertering?",
+        "answer": "Blant annet: <li>forskjeller i escaping av spesialtegn,</li> <li>bevaring av datatyper (tall vs. streng),</li> <li>representasjon av nestede strukturer (TOML bruker punktnotasjon),</li> <li>korrekt konvertering av arrayer og tabeller,</li> <li>tap av kommentarer ved TOML→JSON (JSON støtter ikke kommentarer).</li> Omformeren dekker de fleste tilfeller – kontroller likevel kritisk utdata."
+      },
+      {
+        "question": "Håndterer verktøyet store JSON- eller TOML-filer?",
+        "answer": "Ja, innen rimelige grenser – nettleserens minne setter begrensninger. Svært store filer (10+ MB) kan være trege; bruk da CLI-verktøy eller språkspesifikke biblioteker. For de fleste konfigurasjoner og API-svar er verktøyet mer enn godt nok."
+      }
+    ]
+  },
+  {
+    "slug": "ascii-art-generator",
+    "name": "ASCII-kunstgenerator – Konverter bilder til tekstkunst",
+    "description": "Gjør bildene dine om til ASCII-kunst med dette gratisverktøyet. Tilpass tegnsett, bredde og farger for å lage unike tekstbaserte fremstillinger.",
+    "category": "media",
+    "keywords": [
+      "ascii-kunstgenerator",
+      "bilde til ascii",
+      "tekstkunst-generator",
+      "ascii-omformer",
+      "bilde til tekstkunst",
+      "tekstkunstlager",
+      "lag ascii-kunst",
+      "bilde til ascii-kunst",
+      "tekst fra bilde",
+      "ascii-bilde"
+    ],
+    "faq": [
+      {
+        "question": "Hva er ASCII-kunst, og hvordan fungerer det?",
+        "answer": "ASCII-kunst er en teknikk som bruker skrivbare tegn fra ASCII-standarden til å lage bilder. Generatoren vår analyserer lysstyrken i pikslene og mapper dem til tilsvarende ASCII-tegn. Mørkere områder representeres av tettere tegn som «@» eller «#», mens lysere områder bruker «.» eller mellomrom. Dette danner en tekstbasert fremstilling som ligner originalbildet i riktig skala."
+      },
+      {
+        "question": "Kan jeg tilpasse hvilke tegn som brukes?",
+        "answer": "Ja! Du kan tilpasse tegnsettet som brukes for ulike lysstyrkenivåer. Som standard bruker vi «@%#*+=-:. » fra tett til lett, men du kan endre dette for ulike effekter. For eksempel gir bare «01» et binært uttrykk."
+      },
+      {
+        "question": "Hvordan får jeg best mulig resultat fra ASCII-kunstgeneratoren?",
+        "answer": "Tips: <li>bruk bilder med godt kontrastforhold og tydelige motiver,</li><li>eksperimenter med ulike tegnsett – lengre sett gir mer detalj,</li><li>juster bredden etter bildekontinuitet/kompleksitet,</li><li>prøv både normal og invertert modus,</li><li>for mer detalj: øk utdata-bredden,</li><li>enkle logoer eller portretter fungerer ofte bedre enn komplekse scener,</li><li>se resultatet i en skrifttype med fast bredde for riktig justering.</li>"
+      },
+      {
+        "question": "Er bildedataene mine trygge når jeg bruker dette verktøyet?",
+        "answer": "Ja. All bildebehandling skjer lokalt i nettleseren – ingenting lastes opp til servere. Konverteringen kjører på enheten din, slik at bildene forblir private og sikre. Verktøyet fungerer også offline når siden først er lastet."
+      },
+      {
+        "question": "Hva kan jeg gjøre med generert ASCII-kunst?",
+        "answer": "Muligheter: <li>lim det inn i e-poster, meldinger eller kommentarer,</li> <li>last ned som tekstfil til dokumenter eller kode,</li> <li>bruk i kreative kodeprosjekter,</li> <li>retroinspirert design eller digital kunst,</li> <li>unike signaturer for forum eller e-post,</li> <li>farget ASCII-kunst i webprosjekter,</li><li>eller integrer i terminalapper eller spill.</li>"
+      }
+    ]
   }
 ]
