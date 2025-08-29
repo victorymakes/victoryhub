@@ -972,5 +972,26 @@
       "processingFailed": "Failed to process the image",
       "copyFailed": "Failed to copy to clipboard"
     }
+  },
+  "ImageColorPicker": {
+    "title": "Image Color Picker",
+    "description": "Extract and identify colors from any image. Upload your photo to get color codes in HEX, RGB, and HSL formats.",
+    "dropImageHere": "Drop your image here",
+    "orClickToBrowse": "or click to browse",
+    "activatePicker": "Activate Color Picker",
+    "pickerActive": "Picker Active",
+    "clearImage": "Clear Image",
+    "downloadPalette": "Download Palette",
+    "processingImage": "Processing image...",
+    "selectedColor": "Selected Color",
+    "dominantColors": "Dominant Colors",
+    "colorCopied": "Color copied to clipboard",
+    "paletteDownloaded": "Color palette downloaded",
+    "errors": {
+      "invalidFileType": "Invalid file type. Please upload an image file.",
+      "fileTooLarge": "File is too large. Maximum size is 5MB.",
+      "processingFailed": "Failed to process the image.",
+      "copyFailed": "Failed to copy to clipboard"
+    }
   }
 }
