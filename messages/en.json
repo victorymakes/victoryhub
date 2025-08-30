@@ -974,10 +974,8 @@
     }
   },
   "ImageColorPicker": {
-    "title": "Image Color Picker",
-    "description": "Extract and identify colors from any image. Upload your photo to get color codes in HEX, RGB, and HSL formats.",
     "dropImageHere": "Drop your image here",
-    "orClickToBrowse": "or click to browse",
+    "chooseImage": "Choose Image",
     "activatePicker": "Activate Color Picker",
     "pickerActive": "Picker Active",
     "clearImage": "Clear Image",
