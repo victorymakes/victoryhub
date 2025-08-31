@@ -34,7 +34,7 @@ interface DominantColor {
 const ImageColorPicker: React.FC = () => {
     const t = useTranslations("ImageColorPicker");
     const [image, setImage] = useState<File | null>(null);
-    const [imageUrl, setImageUrl] = useState<string>("");
+    const [imageUrl, setImageUrl] = useState<string | null>(null);
     const [selectedColor, setSelectedColor] = useState<ColorInfo | null>(null);
     const [dominantColors, setDominantColors] = useState<DominantColor[]>([]);
     const [error, setError] = useState<string | null>(null);
@@ -70,22 +70,23 @@ const ImageColorPicker: React.FC = () => {
         [t],
     );
 
-    // Process the image when it's uploaded
-    useEffect(() => {
-        if (!image) {
-            setImageUrl("");
-            return;
-        }
+    const domainColorToColorInfo = useCallback(
+        (color: DominantColor): ColorInfo | null => {
+            const rgb = hexToRgb(color.color);
+            if (!rgb) {
+                return null;
+            }
 
-        const objectUrl = URL.createObjectURL(image);
-        setImageUrl(objectUrl);
-        setIsProcessing(true);
-
-        // Clean up the object URL when component unmounts or image changes
-        return () => {
-            URL.revokeObjectURL(objectUrl);
-        };
-    }, [image]);
+            const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+            return {
+                hex: color.color,
+                rgb: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`,
+                hsl: `hsl(${h}, ${s}%, ${l}%)`,
+                pos: color.pos,
+            };
+        },
+        [],
+    );
 
     // Extract dominant colors from the image
     const extractDominantColors = useCallback(
@@ -184,9 +185,11 @@ const ImageColorPicker: React.FC = () => {
                 return diverseColors;
             };
 
-            setDominantColors(getDiverseColors(colors));
+            const domainColors = getDiverseColors(colors);
+            setDominantColors(domainColors);
+            setSelectedColor(domainColorToColorInfo(domainColors[0]));
         },
-        [],
+        [domainColorToColorInfo],
     );
 
     // Handle image load and extract dominant colors
@@ -195,6 +198,14 @@ const ImageColorPicker: React.FC = () => {
 
         const img = imageRef.current;
         const canvas = canvasRef.current;
+
+        // Wait until natural size is available
+        if (!img.naturalWidth || !img.naturalHeight) {
+            // try again on next frame; avoids calling getImageData with zero size
+            requestAnimationFrame(() => handleImageLoad());
+            return;
+        }
+
         const ctx = canvas.getContext("2d", { willReadFrequently: true });
         if (!ctx) return;
 
@@ -255,7 +266,7 @@ const ImageColorPicker: React.FC = () => {
     // Clear the current image
     const clearImage = useCallback(() => {
         setImage(null);
-        setImageUrl("");
+        setImageUrl(null);
         setSelectedColor(null);
         setDominantColors([]);
     }, []);
@@ -397,6 +408,23 @@ const ImageColorPicker: React.FC = () => {
         return { x, y };
     };
 
+    // Process the image when it's uploaded
+    useEffect(() => {
+        if (!image) {
+            setImageUrl(null);
+            return;
+        }
+
+        const objectUrl = URL.createObjectURL(image);
+        setImageUrl(objectUrl);
+        setIsProcessing(true);
+
+        // Clean up the object URL when component unmounts or image changes
+        return () => {
+            URL.revokeObjectURL(objectUrl);
+        };
+    }, [image]);
+
     return (
         <Card>
             <CardContent className="px-6 space-y-4">
@@ -441,21 +469,26 @@ const ImageColorPicker: React.FC = () => {
                         </div>
 
                         <div className="relative border rounded-md overflow-hidden cursor-crosshair flex justify-center">
-                            <Image
-                                ref={imageRef}
-                                src={imageUrl}
-                                alt="Uploaded image"
-                                className="max-w-full object-contain h-auto"
-                                style={{ display: "none" }}
-                                onLoad={handleImageLoad}
-                                width={800}
-                                height={600}
-                            />
-                            <canvas
-                                ref={canvasRef}
-                                onClick={handleCanvasClick}
-                                className="w-full h-auto cursor-crosshair"
-                            />
+                            {imageUrl && (
+                                <>
+                                    <Image
+                                        ref={imageRef}
+                                        src={imageUrl}
+                                        alt="Uploaded image"
+                                        className="max-w-full object-contain h-auto"
+                                        style={{ display: "none" }}
+                                        onLoad={handleImageLoad}
+                                        width={800}
+                                        height={600}
+                                    />
+                                    <canvas
+                                        ref={canvasRef}
+                                        onClick={handleCanvasClick}
+                                        className="w-full h-auto cursor-crosshair"
+                                    />
+                                </>
+                            )}
+
                             {selectedColor?.pos &&
                                 canvasRef.current &&
                                 (() => {
@@ -590,22 +623,11 @@ const ImageColorPicker: React.FC = () => {
                                             key={index}
                                             className={`border rounded-md overflow-hidden hover:shadow-md transition-shadow ${selectedColor?.hex === color.color && "ring-2 ring-primary"}`}
                                             onClick={() => {
-                                                const rgb = hexToRgb(
-                                                    color.color,
+                                                setSelectedColor(
+                                                    domainColorToColorInfo(
+                                                        color,
+                                                    ),
                                                 );
-                                                if (rgb) {
-                                                    const [h, s, l] = rgbToHsl(
-                                                        rgb[0],
-                                                        rgb[1],
-                                                        rgb[2],
-                                                    );
-                                                    setSelectedColor({
-                                                        hex: color.color,
-                                                        rgb: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`,
-                                                        hsl: `hsl(${h}, ${s}%, ${l}%)`,
-                                                        pos: color.pos,
-                                                    });
-                                                }
                                             }}
                                         >
                                             <div
