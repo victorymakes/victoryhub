@@ -21,6 +21,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import Image from "next/image";
 
 type FaviconShape = "square" | "circle" | "rounded";
 type FontWeight = "normal" | "bold";
@@ -702,14 +703,12 @@ const TextFaviconGenerator = () => {
                                                     className="flex flex-col items-center gap-2 p-3 border rounded-lg bg-muted/30 justify-center"
                                                 >
                                                     <div className="flex items-center justify-center h-16">
-                                                        <img
+                                                        <Image
                                                             src={pngUrl}
                                                             alt={`Favicon for "${text}"`}
                                                             className="object-contain"
-                                                            style={{
-                                                                width: "16px",
-                                                                height: "16px",
-                                                            }}
+                                                            width={16}
+                                                            height={16}
                                                         />
                                                     </div>
                                                     <div className="text-xs text-center text-muted-foreground truncate w-full">
@@ -731,14 +730,12 @@ const TextFaviconGenerator = () => {
                                                     className="flex flex-col items-center gap-2 p-3 border rounded-lg bg-muted/30 justify-center"
                                                 >
                                                     <div className="flex items-center justify-center h-16">
-                                                        <img
+                                                        <Image
                                                             src={pngUrl}
                                                             alt={`Favicon ${size}x${size} for "${text}"`}
                                                             className="object-contain"
-                                                            style={{
-                                                                width: `${size}px`,
-                                                                height: `${size}px`,
-                                                            }}
+                                                            width={size}
+                                                            height={size}
                                                         />
                                                     </div>
                                                     <div className="text-xs text-center text-muted-foreground truncate w-full">
