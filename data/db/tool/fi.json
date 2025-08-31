@@ -1206,5 +1206,45 @@
         "answer": "Käyttökohteita: <li>liitä sähköposteihin, viesteihin tai kommentteihin,</li> <li>lataa tekst tiedostona dokumentteihin tai koodiin,</li> <li>creative coding -projektit,</li> <li>retro-tyyliset designit tai digitaalinen taide,</li> <li>uniikit allekirjoitukset foorumeihin tai sähköpostiin,</li> <li>värillinen ASCII-taide web-projekteissa,</li> <li>tai käyttö terminaalisovelluksissa ja peleissä.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Kuvan väripoimuri – Poimi värejä kuvista",
+    "description": "Poimi ja tunnista värejä mistä tahansa kuvasta. Lataa kuvasi ja saat värikoodeja HEX-, RGB- ja HSL-muodoissa suunnitteluprojekteihin.",
+    "category": "media",
+    "keywords": [
+      "kuvan väripoimuri",
+      "poimi värejä kuvasta",
+      "väripalettigeneraattori",
+      "kuvan väri­ekstraktori",
+      "hae väri kuvasta",
+      "värikoodin etsintä",
+      "HEX-väripoimuri",
+      "RGB-väri­ekstraktori",
+      "verkkosivun väripoimuri",
+      "suunnittelun värityökalu"
+    ],
+    "faq": [
+      {
+        "question": "Miten Image Color Picker toimii?",
+        "answer": "Lataa kuva, ja työkalu analysoi sen, tunnistaa hallitsevat värit ja luo paletin. Napsauta mitä tahansa kohtaa kuvassa saadaksesi kyseisen pikselin tarkan värin. Värit näytetään HEX-, RGB- ja HSL-muodoissa, joten voit käyttää niitä suoraan verkkosivuilla, sovelluksissa ja muissa suunnittelutöissä."
+      },
+      {
+        "question": "Mitä kuvamuotoja tuetaan?",
+        "answer": "Tuettuja ovat yleiset muodot: JPEG, PNG, GIF, WebP ja BMP. Parhaat tulokset saadaan laadukkaista kuvista, joissa on selkeät värit. Suorituskyvyn vuoksi tiedoston koko on rajattu 5 Mt:iin. Suosi hyvin valaistuja kuvia, joissa on vähän pakkausartefakteja."
+      },
+      {
+        "question": "Miten voin käyttää poimittuja värejä?",
+        "answer": "Kopioi HEX-, RGB- tai HSL-arvot Adobe Photoshopiin, Illustratoriın, Figmaan tai Sketchiin; käytä värikoodeja verkkosivun CSS:ssä; luo johdonmukainen väripaletti brändillesi tai projektille; tallenna paletti myöhempää käyttöä varten. Tämä auttaa säilyttämään värien johdonmukaisuuden eri alustoilla."
+      },
+      {
+        "question": "Ovatko kuvani turvassa?",
+        "answer": "Kyllä. Kaikki käsittely tapahtuu paikallisesti selaimessasi – kuvia ei koskaan lähetetä palvelimillemme. Kun suljet välilehden tai poistut sivulta, kuva-aineistoa ei tallenneta."
+      },
+      {
+        "question": "Kuinka tarkkaa värin poiminta on?",
+        "answer": "Napsautus palauttaa pikselin tarkan värin, joten tarkkuus on erittäin hyvä. Hallitsevien värien tunnistuksessa käytetään kehittyneitä algoritmeja. Koettu väri voi hieman vaihdella näytön kalibroinnin, kirkkauden ja ympäröivän valaistuksen mukaan. Ammattitason tarkkuutta varten suositellaan kalibroitua näyttöä."
+      }
+    ]
   }
 ]

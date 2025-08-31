@@ -1210,5 +1210,45 @@
         "answer": "Anwendungsbeispiele: <li>In E-Mails, Nachrichten oder Kommentaren teilen,</li> <li>als Textdatei herunterladen und in Dokumenten oder Code verwenden,</li> <li>für Creative-Coding-Projekte,</li> <li>für Retro-Designs oder digitale Kunst,</li> <li>als einzigartige Signaturen für Foren oder E-Mails,</li> <li>farbige ASCII-Art in Webprojekten,</li> <li>oder Integration in Terminal-Apps und Spiele.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Bild-Farbpicker – Farben aus Bildern extrahieren",
+    "description": "Extrahieren und identifizieren Sie Farben aus jedem Bild. Laden Sie Ihr Foto hoch, um Farbwerte in den Formaten HEX, RGB und HSL für Designprojekte zu erhalten.",
+    "category": "media",
+    "keywords": [
+      "Bild-Farbpicker",
+      "Farben aus Bild extrahieren",
+      "Farbpaletten-Generator",
+      "Bildfarb-Extraktor",
+      "Farbe aus Bild holen",
+      "Farbcode-Finder",
+      "HEX-Farbpicker",
+      "RGB-Farb-Extraktor",
+      "Website-Farbpicker",
+      "Design-Farbtool"
+    ],
+    "faq": [
+      {
+        "question": "Wie funktioniert der Image Color Picker?",
+        "answer": "Sie laden ein Bild hoch, das Tool analysiert es, erkennt dominante Farben und erstellt eine Palette. Durch Klicken auf eine beliebige Stelle im Bild erhalten Sie den exakten Farbwert des Pixels. Die Farben werden in mehreren Formaten wie HEX, RGB und HSL angezeigt, damit Sie sie direkt in Websites, Apps oder Designprojekten nutzen können."
+      },
+      {
+        "question": "Welche Bildformate werden unterstützt?",
+        "answer": "Unterstützt werden gängige Formate wie JPEG, PNG, GIF, WebP und BMP. Am besten funktionieren hochwertige Bilder mit klaren, deutlichen Farben. Zur Sicherung der Performance gilt ein Limit von 5MB. Für optimale Ergebnisse empfehlen wir gut ausgeleuchtete Bilder mit wenigen Kompressionsartefakten."
+      },
+      {
+        "question": "Wie kann ich die extrahierten Farben verwenden?",
+        "answer": "Kopieren Sie HEX-, RGB- oder HSL-Werte in Adobe Photoshop, Illustrator, Figma oder Sketch; verwenden Sie Farbcodes direkt im CSS Ihrer Website; erstellen Sie eine konsistente Farbpalette für Marke oder Projekt; speichern Sie die Palette zur späteren Verwendung. So bleibt Farbkonstanz über Plattformen hinweg erhalten."
+      },
+      {
+        "question": "Sind meine Bilddaten sicher?",
+        "answer": "Ja. Die Verarbeitung erfolgt vollständig lokal in Ihrem Browser – Ihre Bilder werden nie auf unsere Server hochgeladen. Zudem werden nach dem Schließen des Tabs bzw. Verlassen der Seite keine Bilddaten gespeichert."
+      },
+      {
+        "question": "Wie genau ist die Farberkennung?",
+        "answer": "Beim Klicken erhalten Sie den exakten Farbwert des Pixels – sehr präzise. Für dominante Farben nutzt das Tool fortgeschrittene Algorithmen. Beachten Sie jedoch, dass die Farbwahrnehmung je nach Monitor-Kalibrierung, Helligkeit und Umgebungslicht leicht variieren kann. Für professionelle Genauigkeit empfehlen wir einen kalibrierten Monitor."
+      }
+    ]
   }
 ]

@@ -1210,5 +1210,45 @@
         "answer": "Exemples d’utilisation : <li>le coller dans des e-mails, messages ou commentaires,</li> <li>le télécharger en fichier texte pour des documents ou du code,</li> <li>des projets de creative coding,</li> <li>des designs rétro ou de l’art numérique,</li> <li>des signatures originales pour forums ou e-mail,</li> <li>de l’art ASCII en couleur dans des projets web,</li> <li>ou l’intégrer dans des applications terminal et des jeux.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Sélecteur de couleurs d’image – Extraire les couleurs depuis une image",
+    "description": "Extrayez et identifiez les couleurs de n’importe quelle image. Importez votre photo pour obtenir des codes couleur aux formats HEX, RGB et HSL pour vos projets de design.",
+    "category": "media",
+    "keywords": [
+      "sélecteur de couleurs d’image",
+      "extraire les couleurs d’une image",
+      "générateur de palette de couleurs",
+      "extracteur de couleurs d’image",
+      "récupérer une couleur d’une image",
+      "chercheur de codes couleur",
+      "sélecteur de couleur HEX",
+      "extracteur de couleurs RGB",
+      "sélecteur de couleurs pour site web",
+      "outil couleur pour le design"
+    ],
+    "faq": [
+      {
+        "question": "Comment fonctionne l’Image Color Picker ?",
+        "answer": "Téléversez une image : l’outil l’analyse, identifie les couleurs dominantes et crée une palette. Cliquez n’importe où dans l’image pour obtenir la couleur exacte du pixel. Les valeurs sont affichées en HEX, RGB et HSL, prêtes à être utilisées dans vos sites, applications ou projets de design."
+      },
+      {
+        "question": "Quels formats d’image sont pris en charge ?",
+        "answer": "Les formats courants sont pris en charge : JPEG, PNG, GIF, WebP et BMP. Les images de haute qualité aux couleurs nettes donnent les meilleurs résultats. Une limite de 5 Mo s’applique pour garantir de bonnes performances. Pour un rendu optimal, privilégiez des images bien éclairées avec peu d’artefacts de compression."
+      },
+      {
+        "question": "Comment utiliser les couleurs extraites ?",
+        "answer": "Copiez les valeurs HEX, RGB ou HSL dans Adobe Photoshop, Illustrator, Figma ou Sketch ; utilisez-les dans le CSS de votre site ; créez une palette cohérente pour votre marque ou projet ; enregistrez la palette pour référence ultérieure. Cela facilite la cohérence des couleurs sur différentes plateformes."
+      },
+      {
+        "question": "Mes images sont-elles en sécurité ?",
+        "answer": "Oui. Le traitement est entièrement local dans votre navigateur : vos images ne sont jamais envoyées sur nos serveurs. Aucune donnée d’image n’est conservée après la fermeture de l’onglet ou la navigation hors de l’outil."
+      },
+      {
+        "question": "Quelle est la précision de l’extraction ?",
+        "answer": "Le clic renvoie la valeur du pixel, donc une précision au niveau du pixel. Pour les couleurs dominantes, l’outil utilise des algorithmes avancés. La perception peut toutefois varier selon l’étalonnage de l’écran, la luminosité et l’éclairage ambiant. Pour une précision maximale, utilisez un écran calibré."
+      }
+    ]
   }
 ]

@@ -976,8 +976,6 @@
   "ImageColorPicker": {
     "dropImageHere": "Drop your image here",
     "chooseImage": "Choose Image",
-    "activatePicker": "Activate Color Picker",
-    "pickerActive": "Picker Active",
     "clearImage": "Clear Image",
     "downloadPalette": "Download Palette",
     "processingImage": "Processing image...",
@@ -987,7 +985,7 @@
     "paletteDownloaded": "Color palette downloaded",
     "errors": {
       "invalidFileType": "Invalid file type. Please upload an image file.",
-      "fileTooLarge": "File is too large. Maximum size is 5MB.",
+      "fileTooLarge": "File is too large. Maximum size is 10MB.",
       "processingFailed": "Failed to process the image.",
       "copyFailed": "Failed to copy to clipboard"
     }

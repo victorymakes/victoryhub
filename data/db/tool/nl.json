@@ -1206,5 +1206,45 @@
         "answer": "Mogelijkheden: <li>plak in e-mails, berichten of reacties,</li> <li>download als tekstbestand voor documenten of code,</li> <li>gebruik in creative-codingprojecten,</li> <li>retro-designs of digitale kunst,</li> <li>unieke handtekeningen voor fora of e-mail,</li> <li>gekleurde ASCII-art in webprojecten,</li><li>of integreer in terminalapps of games.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Afbeeldingskleurkiezer – Kleuren uit afbeeldingen halen",
+    "description": "Haal en identificeer kleuren uit elke afbeelding. Upload je foto om kleurcodes in HEX-, RGB- en HSL-indeling te krijgen voor je ontwerp­projecten.",
+    "category": "media",
+    "keywords": [
+      "afbeeldingskleurkiezer",
+      "kleuren uit afbeelding halen",
+      "kleurpaletgenerator",
+      "afbeeldingskleur-extractor",
+      "kleur uit afbeelding halen",
+      "kleurcodezoeker",
+      "HEX-kleurkiezer",
+      "RGB-kleurextractor",
+      "website-kleurkiezer",
+      "ontwerptool voor kleuren"
+    ],
+    "faq": [
+      {
+        "question": "Hoe werkt de Image Color Picker?",
+        "answer": "Upload een afbeelding. De tool analyseert het beeld, herkent dominante kleuren en maakt een palet. Klik ergens in de afbeelding om de exacte kleur van die pixel te zien. Waarden worden getoond als HEX, RGB en HSL, klaar voor gebruik in websites, apps en designprojecten."
+      },
+      {
+        "question": "Welke bestandsformaten worden ondersteund?",
+        "answer": "Gangbare formaten zoals JPEG, PNG, GIF, WebP en BMP worden ondersteund. Hoogwaardige afbeeldingen met duidelijke kleuren geven de beste resultaten. Om de prestaties te waarborgen geldt een limiet van 5MB. Gebruik bij voorkeur goed belichte beelden met weinig compressie-artefacten."
+      },
+      {
+        "question": "Hoe kan ik de geëxtraheerde kleuren gebruiken?",
+        "answer": "Kopieer HEX-, RGB- of HSL-waarden naar Adobe Photoshop, Illustrator, Figma of Sketch; gebruik de kleurcodes in de CSS van je site; maak een consistente merk- of project­palet; sla de palet op voor later. Zo houd je kleurconsistentie over verschillende platforms."
+      },
+      {
+        "question": "Zijn mijn afbeeldingen veilig?",
+        "answer": "Ja. Alles wordt lokaal in je browser verwerkt—afbeeldingen worden niet naar onze servers geüpload. Er wordt niets opgeslagen nadat je het tabblad sluit of de pagina verlaat."
+      },
+      {
+        "question": "Hoe nauwkeurig is de kleurextractie?",
+        "answer": "Een klik geeft de exacte pixelkleur: zeer nauwkeurig. Voor dominante kleuren gebruikt de tool geavanceerde algoritmen. Houd rekening met kleine verschillen door monitorkalibratie, schermhelderheid en omgevinglicht. Voor maximale precisie is een gekalibreerd scherm aan te raden."
+      }
+    ]
   }
 ]
