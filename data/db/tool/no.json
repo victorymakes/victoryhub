@@ -1205,5 +1205,45 @@
         "answer": "Muligheter: <li>lim det inn i e-poster, meldinger eller kommentarer,</li> <li>last ned som tekstfil til dokumenter eller kode,</li> <li>bruk i kreative kodeprosjekter,</li> <li>retroinspirert design eller digital kunst,</li> <li>unike signaturer for forum eller e-post,</li> <li>farget ASCII-kunst i webprosjekter,</li><li>eller integrer i terminalapper eller spill.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Fargevelger for bilder – Hent farger fra bilder",
+    "description": "Trekk ut og identifiser farger fra hvilket som helst bilde. Last opp bildet ditt for å få fargekoder i HEX-, RGB- og HSL-format til designprosjekter.",
+    "category": "media",
+    "keywords": [
+      "fargevelger for bilder",
+      "trekk ut farger fra bilde",
+      "fargepalettgenerator",
+      "bildefargeuttrekker",
+      "hent farge fra bilde",
+      "fargekodefinner",
+      "HEX-fargevelger",
+      "RGB-fargeuttrekker",
+      "fargevelger for nettsted",
+      "design-fargeverktøy"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan fungerer Image Color Picker?",
+        "answer": "Last opp et bilde, så analyserer verktøyet det for å finne dominerende farger og lage en palett. Klikk hvor som helst i bildet for å få nøyaktig farge for den pikselen. Farger vises i HEX, RGB og HSL, klare til bruk i nettsteder, apper og designprosjekter."
+      },
+      {
+        "question": "Hvilke bildeformater støttes?",
+        "answer": "Vanlige formater som JPEG, PNG, GIF, WebP og BMP støttes. Høyoppløselige bilder med tydelige farger gir best resultat. For ytelse er filstørrelsen begrenset til 5MB. Bruk bilder med god belysning og minimale kompresjonsartefakter for best kvalitet."
+      },
+      {
+        "question": "Hvordan kan jeg bruke de uttrukne fargene?",
+        "answer": "Kopier HEX-, RGB- eller HSL-verdier til Adobe Photoshop, Illustrator, Figma eller Sketch; bruk kodene i nettstedets CSS; lag en konsistent merke-/prosjektpalett; lagre paletten for senere bruk. Dette sikrer fargekonsistens på tvers av plattformer."
+      },
+      {
+        "question": "Er bildene mine sikre?",
+        "answer": "Ja. All behandling skjer lokalt i nettleseren—bildene lastes aldri opp til våre servere. Ingen bildedata lagres etter at du lukker fanen eller forlater siden."
+      },
+      {
+        "question": "Hvor nøyaktig er fargeuttaket?",
+        "answer": "Et klikk gir den eksakte pikselfargen, altså svært nøyaktig. For dominerende farger brukes avanserte algoritmer. Opplevd farge kan variere noe med skjermkalibrering, lysstyrke og omgivelseslys. For profesjonell presisjon anbefales en kalibrert skjerm."
+      }
+    ]
   }
 ]

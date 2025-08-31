@@ -1210,5 +1210,45 @@
         "answer": "Possibili usi: <li>incollala in e-mail, messaggi o commenti,</li> <li>scaricala come file di testo per documenti o codice,</li> <li>progetti di creative coding,</li> <li>design in stile retrò o arte digitale,</li> <li>firme uniche per forum o e-mail,</li> <li>ASCII Art a colori in progetti web,</li> <li>o integrala in applicazioni da terminale e giochi.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Selettore colori da immagine – Estrai colori dalle immagini",
+    "description": "Estrai e identifica i colori da qualsiasi immagine. Carica la tua foto per ottenere codici colore nei formati HEX, RGB e HSL per i tuoi progetti di design.",
+    "category": "media",
+    "keywords": [
+      "selettore colori immagine",
+      "estrarre colori da immagine",
+      "generatore di palette colori",
+      "estrattore colori immagine",
+      "ottenere colore da immagine",
+      "cercatore di codici colore",
+      "selettore colore HEX",
+      "estrattore colori RGB",
+      "selettore colori per siti web",
+      "strumento colori per il design"
+    ],
+    "faq": [
+      {
+        "question": "Come funziona Image Color Picker?",
+        "answer": "Carica un’immagine: lo strumento la analizza, identifica i colori dominanti e crea una palette. Clicca in qualsiasi punto per ottenere il valore esatto del pixel. I colori sono mostrati in HEX, RGB e HSL, pronti per l’uso in siti web, app e progetti di design."
+      },
+      {
+        "question": "Quali formati di immagine sono supportati?",
+        "answer": "Sono supportati i formati più comuni: JPEG, PNG, GIF, WebP e BMP. Funziona al meglio con immagini di alta qualità e colori nitidi. Per motivi di prestazioni è previsto un limite di 5MB. Per risultati ottimali, usa immagini ben illuminate e con pochi artefatti di compressione."
+      },
+      {
+        "question": "Come posso usare i colori estratti?",
+        "answer": "Copia i valori HEX, RGB o HSL in Adobe Photoshop, Illustrator, Figma o Sketch; usa i codici colore nel CSS del tuo sito; crea una palette coerente per il tuo brand o progetto; salva la palette per riferimento futuro. In questo modo mantieni la coerenza cromatica tra diverse piattaforme."
+      },
+      {
+        "question": "I miei dati immagine sono al sicuro?",
+        "answer": "Sì. L’elaborazione avviene interamente in locale nel tuo browser: le immagini non vengono caricate sui nostri server. Inoltre, nessun dato viene conservato dopo la chiusura della scheda o l’uscita dalla pagina."
+      },
+      {
+        "question": "Quanto è accurata l’estrazione dei colori?",
+        "answer": "Il clic restituisce il valore esatto del pixel, quindi l’accuratezza è molto elevata. Per i colori dominanti lo strumento usa algoritmi avanzati. La percezione dei colori può variare leggermente in base alla calibrazione del monitor, alla luminosità e alla luce ambientale. Per la massima precisione professionale, utilizza un display calibrato."
+      }
+    ]
   }
 ]

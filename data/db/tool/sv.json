@@ -1205,5 +1205,45 @@
         "answer": "Du kan: <li>klistra in den i e-post, meddelanden eller kommentarer,</li> <li>ladda ned som textfil för dokument eller kod,</li> <li>använda den i creative-coding-projekt,</li> <li>använda i retroinspirerad design eller digital konst,</li> <li>skapa unika signaturer för forum eller e-post,</li> <li>använda färgad ASCII-konst i webbprojekt,</li><li>eller integrera i terminalappar och spel.</li>"
       }
     ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Bildfärgväljare – Extrahera färger från bilder",
+    "description": "Extrahera och identifiera färger från vilken bild som helst. Ladda upp ditt foto för att få färgkoder i HEX-, RGB- och HSL-format för dina designprojekt.",
+    "category": "media",
+    "keywords": [
+      "bildfärgväljare",
+      "extrahera färger från bild",
+      "färgpalettgenerator",
+      "bildfärgsextraktor",
+      "hämta färg från bild",
+      "färgkodssökare",
+      "HEX-färgväljare",
+      "RGB-färgextraktor",
+      "färgväljare för webbplats",
+      "designfärgverktyg"
+    ],
+    "faq": [
+      {
+        "question": "Hur fungerar Image Color Picker?",
+        "answer": "Ladda upp en bild så analyserar verktyget den, identifierar dominerande färger och skapar en palett. Klicka var som helst i bilden för att få exakt färg för den pixeln. Färger visas i HEX, RGB och HSL och kan användas direkt i webbplatser, appar och designprojekt."
+      },
+      {
+        "question": "Vilka bildformat stöds?",
+        "answer": "Vanliga format som JPEG, PNG, GIF, WebP och BMP stöds. Högkvalitativa bilder med tydliga färger fungerar bäst. För att säkerställa prestanda är filstorleken begränsad till 5 MB. Använd gärna bilder med god belysning och få kompressionsartefakter."
+      },
+      {
+        "question": "Hur kan jag använda de extraherade färgerna?",
+        "answer": "Kopiera HEX-, RGB- eller HSL-värden till Adobe Photoshop, Illustrator, Figma eller Sketch; använd färgkoderna i din webbplats CSS; skapa en konsekvent färgpalett för ditt varumärke eller projekt; spara paletten för framtida bruk. Detta hjälper dig att behålla färgkonsekvens mellan plattformar."
+      },
+      {
+        "question": "Är mina bilder säkra?",
+        "answer": "Ja. All bearbetning sker lokalt i din webbläsare – dina bilder laddas aldrig upp till våra servrar. Inga bilddata lagras efter att du stänger fliken eller lämnar sidan."
+      },
+      {
+        "question": "Hur exakt är färgextraheringen?",
+        "answer": "Ett klick ger den exakta pixel­färgen, vilket är mycket noggrant. För dominerande färger används avancerade algoritmer. Upplevda färger kan variera något beroende på skärmens kalibrering, ljusstyrka och omgivande ljus. För professionell precision rekommenderas en kalibrerad skärm."
+      }
+    ]
   }
 ]

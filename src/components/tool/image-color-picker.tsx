@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { trackToolUsage } from "@/lib/analytics";
 import UploadFiles from "@/components/tool/upload-files";
+import Image from "next/image";
 
 interface Pos {
     x: number;
@@ -52,8 +53,8 @@ const ImageColorPicker: React.FC = () => {
                 return;
             }
 
-            // Check file size (5MB limit)
-            if (file.size > 5 * 1024 * 1024) {
+            // Check file size (10MB limit)
+            if (file.size > 10 * 1024 * 1024) {
                 setError(t("errors.fileTooLarge"));
                 return;
             }
@@ -95,20 +96,23 @@ const ImageColorPicker: React.FC = () => {
             // single read for better perf
             const imgData = ctx.getImageData(0, 0, width, height).data;
 
+            // Adaptive sampling based on image size
             const sampleSize = Math.max(
                 1,
                 Math.floor(Math.sqrt((width * height) / 10000)),
             );
-            const step = 32; // quantization step
-
-            // use offset to reduce sampling grid bias
-            const offset = Math.floor(sampleSize / 2);
+            const step = 16; // Reduced quantization step for better color accuracy
+            const alphaThreshold = 10; // Skip pixels that are nearly transparent
 
             for (let x = 0; x < width; x += sampleSize) {
                 for (let y = 0; y < height; y += sampleSize) {
-                    const sx = Math.min(x + offset, width - 1);
-                    const sy = Math.min(y + offset, height - 1);
+                    const sx = Math.min(x, width - 1);
+                    const sy = Math.min(y, height - 1);
                     const idx = (sy * width + sx) * 4;
+
+                    // Skip transparent pixels
+                    const alpha = imgData[idx + 3];
+                    if (alpha < alphaThreshold) continue;
 
                     const rRaw = imgData[idx];
                     const gRaw = imgData[idx + 1];
@@ -132,17 +136,55 @@ const ImageColorPicker: React.FC = () => {
                 }
             }
 
-            const sortedColors = Object.entries(colorMap)
+            //  Sort by count and filter out colors with very low occurrence (likely noise)
+            const minCount = Math.max(1, sampledPixelCount * 0.001); // At least 0.1% occurrence
+            const colors = Object.entries(colorMap)
                 .map(([color, data]) => ({
                     color,
                     count: data.count,
                     percentage: (data.count / sampledPixelCount) * 100,
                     pos: data.pos,
                 }))
-                .sort((a, b) => b.count - a.count)
-                .slice(0, 10);
+                .filter((color) => color.count >= minCount)
+                .sort((a, b) => b.count - a.count);
 
-            setDominantColors(sortedColors);
+            // helper to ensure diverse colors
+            const getDiverseColors = (colors: DominantColor[]) => {
+                // Helper function to calculate color distance
+                const colorDistance = (hex1: string, hex2: string): number => {
+                    const rgb1 = hexToRgb(hex1);
+                    const rgb2 = hexToRgb(hex2);
+                    if (!rgb1 || !rgb2) return 1000; // Large distance if invalid colors
+
+                    return Math.sqrt(
+                        Math.pow(rgb1[0] - rgb2[0], 2) +
+                            Math.pow(rgb1[1] - rgb2[1], 2) +
+                            Math.pow(rgb1[2] - rgb2[2], 2),
+                    );
+                };
+
+                // Then ensure color diversity by removing very similar colors
+                const diverseColors: DominantColor[] = [];
+                const similarityThreshold = 25; // RGB distance threshold
+
+                for (const color of colors) {
+                    // Check if this color is too similar to any already selected color
+                    const isTooSimilar = diverseColors.some(
+                        (selected) =>
+                            colorDistance(color.color, selected.color) <
+                            similarityThreshold,
+                    );
+
+                    if (!isTooSimilar) {
+                        diverseColors.push(color);
+                        if (diverseColors.length >= 10) break;
+                    }
+                }
+
+                return diverseColors;
+            };
+
+            setDominantColors(getDiverseColors(colors));
         },
         [],
     );
@@ -399,13 +441,15 @@ const ImageColorPicker: React.FC = () => {
                         </div>
 
                         <div className="relative border rounded-md overflow-hidden cursor-crosshair flex justify-center">
-                            <img
+                            <Image
                                 ref={imageRef}
                                 src={imageUrl}
                                 alt="Uploaded image"
-                                className="max-w-full h-auto"
+                                className="max-w-full object-contain h-auto"
                                 style={{ display: "none" }}
                                 onLoad={handleImageLoad}
+                                width={800}
+                                height={600}
                             />
                             <canvas
                                 ref={canvasRef}
@@ -544,7 +588,7 @@ const ImageColorPicker: React.FC = () => {
                                     {dominantColors.map((color, index) => (
                                         <div
                                             key={index}
-                                            className={`border rounded-md overflow-hidden hover:shadow-md transition-shadow`}
+                                            className={`border rounded-md overflow-hidden hover:shadow-md transition-shadow ${selectedColor?.hex === color.color && "ring-2 ring-primary"}`}
                                             onClick={() => {
                                                 const rgb = hexToRgb(
                                                     color.color,
