@@ -12,14 +12,14 @@ const pagePath = "./data/cms";
 const outputPath = "./data/cms/metadata.json";
 
 // Helper function to estimate reading time
-const estimateReadingTime = (content) => {
+const estimateReadingTime = (content: string) => {
     const wordsPerMinute = 200;
     const words = content.split(/\s+/).length;
     return Math.ceil(words / wordsPerMinute);
 };
 
 // Helper function to extract metadata from export statement
-const extractMetadataFromExport = (content) => {
+const extractMetadataFromExport = (content: string) => {
     try {
         // Look for export const metadata = { ... }
         const metadataRegex = /export\s+const\s+metadata\s*=\s*({[\s\S]*?});/;
@@ -38,14 +38,14 @@ const extractMetadataFromExport = (content) => {
 
         return metadata;
     } catch (error) {
-        console.error("Error extracting metadata:", error.message);
+        console.error("Error extracting metadata:", error);
         return null;
     }
 };
 
 // Recursively find all .mdx files under a directory
-const findAllMarkdownFiles = (dir) => {
-    let results = [];
+const findAllMarkdownFiles = (dir: string) => {
+    let results: string[] = [];
     const list = fs.readdirSync(dir);
     list.forEach((file) => {
         const filePath = path.join(dir, file);
@@ -60,7 +60,7 @@ const findAllMarkdownFiles = (dir) => {
 };
 
 // Extract slug and locale from file path: data/cms/{slug}/{locale}.mdx (or deeper)
-const extractSlugAndLocale = (filePath) => {
+const extractSlugAndLocale = (filePath: string) => {
     const relPath = path.relative(pagePath, filePath);
     const parts = relPath.split(path.sep);
     // Find locale (last part before extension)
@@ -71,10 +71,26 @@ const extractSlugAndLocale = (filePath) => {
     return { slug, locale };
 };
 
+interface Metadata {
+    slug: string;
+    title: string;
+    description: string;
+    date: string;
+    author: string;
+    tags: string[];
+    category: { id: string; name: string };
+    featured: boolean;
+    draft: boolean;
+    locale: string;
+    readingTime: number;
+    cover: string;
+    type: string;
+}
+
 // Process all markdown files recursively
 const processAllMarkdownFiles = () => {
     const files = findAllMarkdownFiles(pagePath);
-    const allMetadata = {};
+    const allMetadata: Record<string, Array<Metadata>> = {};
     files.forEach((filePath) => {
         const { slug, locale } = extractSlugAndLocale(filePath);
         const content = fs.readFileSync(filePath, "utf8");
@@ -103,24 +119,28 @@ const processAllMarkdownFiles = () => {
     });
     // Sort by date (newest first)
     Object.keys(allMetadata).forEach((locale) => {
-        allMetadata[locale].sort((a, b) => new Date(b.date) - new Date(a.date));
+        allMetadata[locale].sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        );
     });
     return allMetadata;
 };
 
 // Helper function to save metadata to file
-const saveMetadata = (metadata, outputPath) => {
+const saveMetadata = (
+    metadata: Record<string, Metadata[]>,
+    outputPath: string,
+) => {
     try {
         fs.writeFileSync(outputPath, JSON.stringify(metadata, null, 2));
-        console.log(`Generated: ${outputPath}`);
     } catch (error) {
-        console.error(`Error saving metadata to ${outputPath}:`, error.message);
+        console.error(`Error saving metadata to ${outputPath}:`, error);
     }
 };
 
 // Helper function to generate statistics
-const generateStats = (allMetadata) => {
-    return {
+const logStats = (allMetadata: Record<string, Metadata[]>) => {
+    const stats = {
         totalPosts: Object.values(allMetadata).flat().length,
         postsByLocale: Object.fromEntries(
             Object.entries(allMetadata).map(([locale, posts]) => [
@@ -130,20 +150,13 @@ const generateStats = (allMetadata) => {
         ),
         lastUpdated: new Date().toISOString(),
     };
+    console.log("Metadata stats:", JSON.stringify(stats));
 };
 
 // Main function - now much shorter and focused
-const generateMetadata = () => {
+export const generateMetadata = () => {
     const allMetadata = processAllMarkdownFiles();
     saveMetadata(allMetadata, outputPath);
-    const stats = generateStats(allMetadata);
-    saveMetadata(stats, path.join(pagePath, "metadata.stats.json"));
+    logStats(allMetadata);
+    console.log(`Generated: ${outputPath}`);
 };
-
-// Run the script
-if (
-    typeof process !== "undefined" &&
-    process.argv[1] === import.meta.url.replace("file://", "")
-) {
-    generateMetadata();
-}

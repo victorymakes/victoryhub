@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "generate-page-metadata": "node scripts/page-metadata-generator.mjs",
-    "dev": "npm run generate-page-metadata && next dev",
-    "build": "npm run generate-page-metadata && next build",
-    "start": "npm run generate-page-metadata && next start",
+    "pre-build": "tsx scripts/pre-build.ts",
+    "dev": "npm run pre-build && next dev",
+    "build": "npm run pre-build && next build",
+    "start": "npm run pre-build && next start",
     "lint": "next lint",
     "format": "prettier . --write",
     "cf:login": "wrangler login",
-    "cf:preview": "npm run generate-page-metadata && opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf:deploy": "npm run generate-page-metadata && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf:preview": "npm run pre-build && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf:deploy": "npm run pre-build &&  opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
@@ -66,6 +67,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.3.5",
     "@tailwindcss/postcss": "^4",
     "@types/file-saver": "^2.0.7",
     "@types/js-yaml": "^4.0.9",
@@ -78,6 +80,7 @@
     "eslint-config-prettier": "^10.1.5",
     "prettier": "3.6.2",
     "tailwindcss": "^4",
+    "tsx": "^4.20.5",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5",
     "wrangler": "^4.25.0"
