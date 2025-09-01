@@ -12,8 +12,7 @@
     "cf:login": "wrangler login",
     "cf:preview": "npm run pre-build && opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cf:deploy": "npm run pre-build &&  opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
-    "analyze": "ANALYZE=true next build"
+    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
@@ -67,7 +66,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@next/bundle-analyzer": "^15.3.5",
     "@tailwindcss/postcss": "^4",
     "@types/file-saver": "^2.0.7",
     "@types/js-yaml": "^4.0.9",

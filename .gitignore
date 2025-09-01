@@ -47,3 +47,7 @@ next-env.d.ts
 /.wrangler/
 /.open-next/
 /data/cms/metadata.stats.json
+
+# project specific
+/public/sitemap.xml
+/public/robots.txt

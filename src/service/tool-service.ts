@@ -1,11 +1,11 @@
-import { Category, Tool, RawTool } from "@/types/tool";
+import {Category, Tool, RawTool} from "@/types/tool";
 
 const loadCategories = async (locale: string = "en"): Promise<Category[]> => {
     try {
         // Try to import the locale-specific file
         const categories = await import(
             `../../data/db/tool-category/${locale}.json`
-        );
+            );
         return categories.default;
     } catch {
         // Fallback to English if locale file doesn't exist
@@ -94,5 +94,15 @@ export const getRelatedTools = async (
     tools = tools.filter(
         (t) => t.category.slug === tool.category.slug && t.slug !== tool.slug,
     );
-    return tools.sort(() => Math.random() - 0.5).slice(0, 3);
+
+    // randomly select up to 3 tools from the same category
+    const m = tools.length;
+    const k = Math.min(3, m);
+    for (let i = 0; i < k; i++) {
+        const j = i + Math.floor(Math.random() * (m - i));
+        const tmp = tools[i];
+        tools[i] = tools[j];
+        tools[j] = tmp;
+    }
+    return tools.slice(0, k);
 };
