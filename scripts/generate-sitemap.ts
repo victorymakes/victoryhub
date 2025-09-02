@@ -3,7 +3,7 @@ import { writeFileSync, mkdirSync } from "fs";
 import path from "path";
 
 import { config } from "@/lib/config";
-import { getTools } from "@/service/tool-service";
+import { loadTools } from "@/service/tool-service";
 import { getBlogs } from "@/service/blog-service";
 import { getPages } from "@/service/cms-service";
 import { MetadataRoute } from "next";
@@ -34,7 +34,7 @@ export const generateSitemap = async () => {
         });
 
         // Individual tool pages
-        const tools = await getTools(locale);
+        const tools = await loadTools(locale);
         tools.forEach((tool) => {
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}/tools/${tool.slug}`,
