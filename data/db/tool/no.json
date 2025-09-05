@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI-kalkulator – Beregn din kroppsmasseindeks",
     "description": "Beregn din kroppsmasseindeks (BMI) for å bestemme din vektkategori og få innsikt i helsen din.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi kalkulator",
       "kroppsmasseindeks",
@@ -399,7 +399,7 @@
     "slug": "bmr-calculator",
     "name": "BMR-kalkulator – Beregn din Basale Metabolske Rate",
     "description": "Beregn din BMR og totale daglige energiforbruk (TDEE) basert på alder, kjønn, høyde, vekt og aktivitetsnivå.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr kalkulator",
       "basalmetabolisme",
@@ -443,7 +443,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Karbonfotavtrykk-kalkulator – Mål din miljøpåvirkning",
     "description": "Beregn ditt personlige eller families karbonavtrykk basert på livsstilsfaktorer inkludert transport, energibruk, kosthold og forbruksvaner.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "karbonfotavtrykk-kalkulator",
       "CO2-utslippskalkulator",

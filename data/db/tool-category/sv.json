@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "Verktyg",
-        "description": "Dagliga produktivitetsverktyg och kalkylatorer",
+        "description": "Slumpväljare och andra praktiska miniverktyg.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Kalkylatorer",
+        "description": "Snabba beräkningar, enhetsomvandlingar samt finans- och hälsokalkylatorer.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Övervakning & status",
+        "description": "Kontrollera webbplatsers nåbarhet, speglars tillgänglighet, latens och DNS-status.",
+        "icon": "server"
     }
 ]

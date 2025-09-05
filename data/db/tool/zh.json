@@ -445,7 +445,7 @@
     "slug": "bmi-calculator",
     "name": "BMI 计算器 – 立即检查您的身体质量指数",
     "description": "使用公制或英制单位计算您的身体质量指数 (BMI)。获取即时结果，包括类别分类和健康见解。",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi 计算器",
       "身体质量指数",
@@ -489,7 +489,7 @@
     "slug": "bmr-calculator",
     "name": "BMR 计算器 – 计算您的基础代谢率",
     "description": "根据您的年龄、性别、身高、体重和活动水平计算您的基础代谢率 (BMR) 和每日总能量消耗 (TDEE)。",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr 计算器",
       "基础代谢率",
@@ -533,7 +533,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "碳足迹计算器 – 测量您的环境影响",
     "description": "根据生活方式因素（包括交通、能源使用、饮食和消费习惯）计算您的个人或家庭碳足迹。",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "碳足迹计算器",
       "二氧化碳排放计算器",

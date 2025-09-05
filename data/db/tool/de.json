@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI-Rechner – Überprüfen Sie Ihren Body-Mass-Index sofort",
     "description": "Berechnen Sie Ihren Body-Mass-Index (BMI) mit metrischen oder imperialen Einheiten. Erhalten Sie sofortige Ergebnisse mit Kategorisierung und Gesundheitseinblicken.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi rechner",
       "body mass index",
@@ -404,7 +404,7 @@
     "slug": "bmr-calculator",
     "name": "BMR-Rechner – Berechne deinen Grundumsatz",
     "description": "Berechne deinen Grundumsatz (BMR) und deinen Gesamtenergieverbrauch (TDEE) basierend auf Alter, Geschlecht, Größe, Gewicht und Aktivitätsniveau.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr rechner",
       "grundumsatz",
@@ -448,7 +448,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "CO2-Fußabdruck-Rechner – Messen Sie Ihre Umweltauswirkungen",
     "description": "Berechnen Sie Ihren persönlichen oder Haushalt-CO2-Fußabdruck basierend auf Lebensstilfaktoren wie Verkehr, Energieverbrauch, Ernährung und Konsumgewohnheiten.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "CO2-Fußabdruck-Rechner",
       "CO2-Emissionsrechner",

@@ -443,7 +443,7 @@
     "slug": "bmi-calculator",
     "name": "BMI Calculator – Check Your Body Mass Index Instantly",
     "description": "Calculate your Body Mass Index (BMI) using metric or imperial units. Get instant results with category classification and health insights.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi calculator",
       "body mass index",
@@ -487,7 +487,7 @@
     "slug": "bmr-calculator",
     "name": "BMR Calculator – Calculate Your Basal Metabolic Rate",
     "description": "Calculate your Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE) based on your age, gender, height, weight, and activity level.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr calculator",
       "basal metabolic rate",
@@ -531,7 +531,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Carbon Footprint Calculator – Measure Your Environmental Impact",
     "description": "Calculate your personal or household carbon footprint based on lifestyle factors including transportation, energy usage, diet, and consumption habits.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "carbon footprint calculator",
       "co2 emissions calculator",

@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "ユーティリティ",
-        "description": "日常の生産性や計算機などの便利ツール",
+        "description": "ランダムピッカーなどの便利なミニツール。",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "計算ツール",
+        "description": "クイック計算、単位変換、金融・健康の計算ツール。",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "監視とステータス",
+        "description": "ウェブサイトの到達性、ミラーの可用性、レイテンシー、DNS 状態をチェック。",
+        "icon": "server"
     }
 ]

@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI-laskuri – Laske painoindeksisi ja arvioi terveysriskejä",
     "description": "Laske painoindeksisi (BMI) määrittääksesi painoluokkasi ja saadaksesi tietoa terveydestäsi. Yksinkertainen työkalu painon ja pituuden suhteen arviointiin.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi-laskuri",
       "painoindeksi",
@@ -400,7 +400,7 @@
     "slug": "bmr-calculator",
     "name": "BMR-laskin – Laske Perusaineenvaihduntasi",
     "description": "Laske BMR ja TDEE iän, sukupuolen, pituuden, painon ja aktiivisuustason mukaan.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr laskin",
       "perusaineenvaihdunta",
@@ -444,7 +444,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Hiilijalanjälkilaskuri – Mittaa ympäristövaikutuksesi",
     "description": "Laske henkilökohtainen tai perheesi hiilijalanjälki elämäntapatekijöiden perusteella, mukaan lukien liikenne, energiankäyttö, ruokavalio ja kulutustottumukset.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "hiilijalanjälkilaskuri",
       "CO2-päästölaskuri",

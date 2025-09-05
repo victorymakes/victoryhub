@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI-kalkylator – Beräkna ditt Body Mass Index",
     "description": "Beräkna ditt Body Mass Index (BMI) för att bestämma din viktkategori och få insikt om din hälsa.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi kalkylator",
       "body mass index",
@@ -399,7 +399,7 @@
     "slug": "bmr-calculator",
     "name": "BMR-Kalkylator – Beräkna din Basala Metaboliska Hastighet",
     "description": "Beräkna din BMR och TDEE baserat på din ålder, kön, längd, vikt och aktivitetsnivå.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr kalkylator",
       "basal ämnesomsättning",
@@ -443,7 +443,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Koldioxidavtrycksräknare – Mät din miljöpåverkan",
     "description": "Beräkna ditt personliga eller familjens koldioxidavtryck baserat på livsstilsfaktorer inklusive transport, energianvändning, kost och konsumtionsvanor.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "koldioxidavtrycksräknare",
       "CO2-utsläppsräknare",
