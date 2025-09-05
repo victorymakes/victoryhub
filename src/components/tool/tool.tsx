@@ -19,7 +19,6 @@ const ToolLoader: FC = () => {
                 <div className="h-64 bg-muted rounded" />
                 <div className="flex items-center gap-3 text-muted-foreground">
                     <span className="inline-block h-3 w-3 rounded-full bg-muted animate-bounce" />
-                    {/*<span className="text-sm">Loading…</span>*/}
                 </div>
             </div>
         </div>
@@ -161,6 +160,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "image-resizer": dynamic(() => import("./image-resizer"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
 };
 
 export const ToolComponent: FC<ToolComponentProps> = ({
@@ -173,9 +176,5 @@ export const ToolComponent: FC<ToolComponentProps> = ({
         return <Component />;
     }
 
-    return (
-        <p className="text-muted-foreground text-sm">
-            {underConstructionMessage}
-        </p>
-    );
+    return <p className="text-muted-foreground">{underConstructionMessage}</p>;
 };
