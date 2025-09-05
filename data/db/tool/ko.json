@@ -444,7 +444,7 @@
     "slug": "bmi-calculator",
     "name": "BMI 계산기 – 체질량지수 즉시 확인",
     "description": "미터법 또는 영국식 단위를 사용하여 체질량지수(BMI)를 계산합니다. 카테고리 분류 및 건강 정보가 포함된 즉각적인 결과를 얻으세요.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi 계산기",
       "체질량지수",
@@ -488,7 +488,7 @@
     "slug": "bmr-calculator",
     "name": "BMR 계산기 – 기초 대사량 계산",
     "description": "나이, 성별, 키, 몸무게 및 활동 수준을 기준으로 BMR(기초 대사량)과 TDEE(총 일일 에너지 소비량)를 계산하세요.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr 계산기",
       "기초 대사량",
@@ -532,7 +532,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "탄소 발자국 계산기 – 환경 영향 측정하기",
     "description": "교통, 에너지 사용, 식단, 소비 습관 등 생활 방식 요소를 기반으로 개인 또는 가정의 탄소 발자국을 계산합니다.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "탄소 발자국 계산기",
       "이산화탄소 배출량 계산기",

@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "Utilities",
-        "description": "Everyday tools and calculators for productivity and daily use.",
+        "description": "Random picker and other handy mini-tools.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Calculators",
+        "description": "Quick math, unit conversions, finance & health calculators.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Monitoring & Status",
+        "description": "Check website reachability, mirror availability, latency, and DNS status.",
+        "icon": "server"
     }
 ]

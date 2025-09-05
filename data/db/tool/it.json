@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "Calcolatore BMI – Controlla il tuo indice di massa corporea",
     "description": "Calcola il tuo indice di massa corporea (BMI) utilizzando unità metriche o imperiali. Ottieni risultati istantanei con classificazione per categoria e informazioni sulla salute.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calcolatore bmi",
       "indice di massa corporea",
@@ -404,7 +404,7 @@
     "slug": "bmr-calculator",
     "name": "Calcolatore BMR – Calcola il Tuo Metabolismo Basale",
     "description": "Calcola il tuo BMR e il TDEE in base a età, sesso, altezza, peso e livello di attività.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calcolatore bmr",
       "metabolismo basale",
@@ -448,7 +448,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Calcolatore di Impronta di Carbonio – Misura il Tuo Impatto Ambientale",
     "description": "Calcola la tua impronta di carbonio personale o familiare basata su fattori dello stile di vita, inclusi trasporti, uso di energia, dieta e abitudini di consumo.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calcolatore di impronta di carbonio",
       "calcolatore di emissioni di CO2",

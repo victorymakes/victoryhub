@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "Verktøy",
-        "description": "Daglige produktivitetsverktøy og kalkulatorer",
+        "description": "Tilfeldig velger og andre nyttige mini-verktøy.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Kalkulatorer",
+        "description": "Raske beregninger, enhetskonvertering samt finans- og helsekalkulatorer.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Overvåking og status",
+        "description": "Sjekk nettstedets tilgjengelighet, speiltilgjengelighet, latens og DNS-status.",
+        "icon": "server"
     }
 ]

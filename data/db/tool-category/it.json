@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "Utilità",
-        "description": "Strumenti quotidiani e calcolatrici per la produttività e l'uso giornaliero",
+        "description": "Selettore casuale e altre comode mini-utility.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Calcolatrici",
+        "description": "Calcoli rapidi, conversioni di unità e calcolatrici finanziarie e per la salute.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Monitoraggio e stato",
+        "description": "Controlla raggiungibilità dei siti, disponibilità dei mirror, latenza e stato DNS.",
+        "icon": "server"
     }
 ]

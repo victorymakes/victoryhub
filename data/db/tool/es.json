@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "Calculadora de IMC – Comprueba tu Índice de Masa Corporal al instante",
     "description": "Calcula tu Índice de Masa Corporal (IMC) utilizando unidades métricas o imperiales. Obtén resultados instantáneos con clasificación por categorías e información sobre la salud.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calculadora imc",
       "índice de masa corporal",
@@ -404,7 +404,7 @@
     "slug": "bmr-calculator",
     "name": "Calculadora BMR – Calcula tu Tasa Metabólica Basal",
     "description": "Calcula tu Tasa Metabólica Basal (BMR) y Gasto Energético Diario Total (TDEE) según edad, sexo, altura, peso y nivel de actividad.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calculadora bmr",
       "tasa metabólica basal",
@@ -448,7 +448,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Calculadora de Huella de Carbono – Mide Tu Impacto Ambiental",
     "description": "Calcula tu huella de carbono personal o familiar basada en factores de estilo de vida incluyendo transporte, uso de energía, dieta y hábitos de consumo.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calculadora de huella de carbono",
       "calculadora de emisiones de CO2",

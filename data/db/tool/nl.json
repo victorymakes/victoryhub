@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI Calculator – Bereken je Body Mass Index",
     "description": "Bereken je Body Mass Index (BMI) om je gewichtscategorie te bepalen en krijg inzicht in je gezondheid.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi calculator",
       "body mass index",
@@ -400,7 +400,7 @@
     "slug": "bmr-calculator",
     "name": "BMR Calculator – Bereken je Basaal Metabolisme",
     "description": "Bereken je basaal metabolisme (BMR) en totale dagelijkse energieverbruik (TDEE) op basis van leeftijd, geslacht, lengte, gewicht en activiteitsniveau.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr calculator",
       "basaal metabolisme",
@@ -444,7 +444,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "CO2-voetafdruk Calculator – Meet Uw Milieu-impact",
     "description": "Bereken uw persoonlijke of gezins-koolstofvoetafdruk op basis van levensstijlfactoren, waaronder transport, energiegebruik, dieet en consumptiegewoonten.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "CO2-voetafdruk calculator",
       "koolstofvoetafdruk berekenen",

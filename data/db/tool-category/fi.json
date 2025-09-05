@@ -25,8 +25,20 @@
     },
     {
         "slug": "utilities",
-        "name": "Hyötyohjelmat",
-        "description": "Päivittäiset tuottavuustyökalut ja laskimet",
+        "name": "Apuohjelmat",
+        "description": "Satunnaisvalitsin ja muut kätevät minityökalut.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Laskurit",
+        "description": "Nopeat laskut, yksikkömuunnokset sekä talous- ja terveyslaskurit.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Valvonta ja tila",
+        "description": "Tarkista verkkosivuston saavutettavuus, peilien saatavuus, latenssi ja DNS-tila.",
+        "icon": "server"
     }
 ]

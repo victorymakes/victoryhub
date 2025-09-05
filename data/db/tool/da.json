@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI-beregner – Beregn dit Body Mass Index",
     "description": "Beregn dit Body Mass Index (BMI) for at bestemme din vægtkategori og få indsigt i dit helbred.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi beregner",
       "body mass index",
@@ -399,7 +399,7 @@
     "slug": "bmr-calculator",
     "name": "BMR-Beregner – Beregn din Basale Stofskifte",
     "description": "Beregn din BMR og TDEE ud fra alder, køn, højde, vægt og aktivitetsniveau.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr beregner",
       "basalstofskifte",
@@ -443,7 +443,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "CO2-fodaftryksberegner – Mål din miljøpåvirkning",
     "description": "Beregn dit personlige eller families CO2-fodaftryk baseret på livsstilsfaktorer, herunder transport, energiforbrug, kost og forbrugsvaner.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "CO2-fodaftryksberegner",
       "kulstofaftryksberegner",

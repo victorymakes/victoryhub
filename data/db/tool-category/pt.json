@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "Utilitários",
-        "description": "Ferramentas diárias de produtividade e calculadoras",
+        "description": "Seletor aleatório e outros miniutilitários úteis.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Calculadoras",
+        "description": "Cálculos rápidos, conversões de unidades e calculadoras financeiras e de saúde.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Monitoramento e status",
+        "description": "Verificar acessibilidade de sites, disponibilidade de espelhos, latência e status do DNS.",
+        "icon": "server"
     }
 ]

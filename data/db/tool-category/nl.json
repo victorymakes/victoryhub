@@ -26,7 +26,19 @@
     {
         "slug": "utilities",
         "name": "Hulpprogramma's",
-        "description": "Dagelijkse productiviteitstools en rekenmachines",
+        "description": "Willekeurige kiezer en andere handige mini-tools.",
         "icon": "activity"
+    },
+    {
+        "slug": "calculator",
+        "name": "Rekenmachines",
+        "description": "Snelle berekeningen, eenheidsconversies en rekenmachines voor financiën en gezondheid.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Monitoring & status",
+        "description": "Controleer website-bereikbaarheid, mirror-beschikbaarheid, latentie en DNS-status.",
+        "icon": "server"
     }
 ]

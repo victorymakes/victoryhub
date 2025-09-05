@@ -444,7 +444,7 @@
     "slug": "bmi-calculator",
     "name": "BMI計算機 – 体格指数を即座にチェック",
     "description": "メートル法またはヤード・ポンド法を使用して体格指数（BMI）を計算します。カテゴリー分類と健康情報を含む即時結果を取得します。",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi計算機",
       "体格指数",
@@ -488,7 +488,7 @@
     "slug": "bmr-calculator",
     "name": "BMR計算機 – 基礎代謝量を計算する",
     "description": "年齢、性別、身長、体重、活動レベルに基づいて、基礎代謝量（BMR）および1日の総消費カロリー（TDEE）を計算します。",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr 計算機",
       "基礎代謝量",
@@ -532,7 +532,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "カーボンフットプリント計算機 – あなたの環境への影響を測定",
     "description": "交通手段、エネルギー使用量、食事、消費習慣などの生活様式要因に基づいて、個人または家庭のカーボンフットプリントを計算します。",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "カーボンフットプリント計算機",
       "CO2排出量計算機",
