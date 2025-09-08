@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Dienstprogramme",
-        "description": "Zufallsauswahl und weitere praktische Mini-Tools.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Rechner",
         "description": "Schnellrechner, Einheitenumrechnungen sowie Finanz- und Gesundheitsrechner.",
@@ -40,5 +34,11 @@
         "name": "Überwachung & Status",
         "description": "Website-Erreichbarkeit, Spiegel-Verfügbarkeit, Latenz und DNS-Status prüfen.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Dienstprogramme",
+        "description": "Zufallsauswahl und weitere praktische Mini-Tools.",
+        "icon": "activity"
     }
 ]

@@ -1246,5 +1246,45 @@
         "answer": "Een klik geeft de exacte pixelkleur: zeer nauwkeurig. Voor dominante kleuren gebruikt de tool geavanceerde algoritmen. Houd rekening met kleine verschillen door monitorkalibratie, schermhelderheid en omgevinglicht. Voor maximale precisie is een gekalibreerd scherm aan te raden."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Controleer de status en mirrors van Library Genesis",
+    "description": "Controleer in realtime de status van Library Genesis (LibGen) en de mirrorsites. Zie of LibGen offline is of bereikbaar is vanaf jouw locatie.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen status",
+      "library genesis monitor",
+      "libgen mirror status",
+      "libgen offline",
+      "libgen checker",
+      "library genesis beschikbaarheid",
+      "libgen mirror checker",
+      "libgen uptime",
+      "werkende mirrors library genesis",
+      "alternatieve links libgen"
+    ],
+    "faq": [
+      {
+        "question": "Wat is Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) is een ‘shadow library’ die gratis toegang biedt tot wetenschappelijke artikelen, academische teksten en boeken. Het is bedoeld voor studenten, onderzoekers en docenten die geen toegang hebben tot betaalde content. De dienst draait op een netwerk van mirrorsites die de database repliceren over verschillende domeinen en servers."
+      },
+      {
+        "question": "Waarom de status van LibGen monitoren?",
+        "answer": "Door serverproblemen, domeinwijzigingen of juridische kwesties kan er af en toe downtime zijn. Met monitoring zie je snel welke mirrors vanaf jouw locatie werken, wat tijd scheelt als je de dienst nodig hebt. De tool controleert meerdere officiële en community-mirrors en toont realtime beschikbaarheid."
+      },
+      {
+        "question": "Hoe werkt deze tool?",
+        "answer": "We voeren realtime checks uit op meerdere LibGen-domeinen en mirrors om bereikbaarheid te meten. Client-side checks draaien in je browser (situatie vanaf jouw locatie); server-side checks geven een wereldwijd beeld. We tonen responstijden, HTTP-statuscodes en een eenvoudige up/down-indicator per site."
+      },
+      {
+        "question": "Is het legaal om dit te gebruiken?",
+        "answer": "Ja. De tool meet enkel beschikbaarheid en responstijden, vergelijkbaar met andere uptime-diensten. Er wordt geen LibGen-content gehost, verspreid of direct aangeboden. Toegang tot LibGen zelf kan juridisch verschillen per land."
+      },
+      {
+        "question": "Waarom is LibGen mogelijk niet bereikbaar?",
+        "answer": "Oorzaken kunnen zijn: <li>1) technische problemen of serverstoring bij het domein,</li> <li>2) blokkade door je ISP vanwege wettelijke eisen,</li> <li>3) domein is gewijzigd of offline gehaald,</li><li>4) netwerkproblemen tussen jouw netwerk en de server.</li> De tool helpt bepalen of het lokaal of wereldwijd is."
+      }
+    ]
   }
 ]

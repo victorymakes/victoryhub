@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "实用工具",
-        "description": "随机选择器等实用迷你工具。",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "计算器",
         "description": "快速计算、单位换算、金融与健康计算。",
@@ -40,5 +34,11 @@
         "name": "监控与状态",
         "description": "检查网站可达性、镜像可用性、延迟和 DNS 状态。",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "实用工具",
+        "description": "随机选择器等实用迷你工具。",
+        "icon": "activity"
     }
 ]

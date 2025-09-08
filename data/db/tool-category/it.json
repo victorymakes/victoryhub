@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Utilità",
-        "description": "Selettore casuale e altre comode mini-utility.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Calcolatrici",
         "description": "Calcoli rapidi, conversioni di unità e calcolatrici finanziarie e per la salute.",
@@ -40,5 +34,11 @@
         "name": "Monitoraggio e stato",
         "description": "Controlla raggiungibilità dei siti, disponibilità dei mirror, latenza e stato DNS.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Utilità",
+        "description": "Selettore casuale e altre comode mini-utility.",
+        "icon": "activity"
     }
 ]

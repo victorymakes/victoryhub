@@ -1245,5 +1245,45 @@
         "answer": "Ett klick ger den exakta pixel­färgen, vilket är mycket noggrant. För dominerande färger används avancerade algoritmer. Upplevda färger kan variera något beroende på skärmens kalibrering, ljusstyrka och omgivande ljus. För professionell precision rekommenderas en kalibrerad skärm."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Kontrollera status och speglar för Library Genesis",
+    "description": "Övervaka i realtid status för Library Genesis (LibGen) och dess spegelsajter. Se om LibGen ligger nere eller är tillgängligt från din plats.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen status",
+      "library genesis monitor",
+      "libgen spegelstatus",
+      "libgen nere",
+      "libgen kontroll",
+      "library genesis tillgänglighet",
+      "libgen spegelkontroll",
+      "libgen upptid",
+      "fungerande speglar library genesis",
+      "alternativa länkar libgen"
+    ],
+    "faq": [
+      {
+        "question": "Vad är Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) är ett skuggbibliotek som ger fri tillgång till vetenskapliga artiklar, akademiska texter och böcker. Det är en resurs för studenter, forskare och lärare som saknar tillgång till betalinnehåll. Tjänsten drivs via ett nätverk av speglar som replikerar databasen över olika domäner och servrar."
+      },
+      {
+        "question": "Varför övervaka LibGens status?",
+        "answer": "På grund av serverproblem, domänbyten eller juridiska processer kan LibGen och dess speglar tidvis ligga nere. Med övervakning ser du snabbt vilka speglar som fungerar från din plats. Verktyget kontrollerar flera officiella och community-speglar och visar tillgänglighet i realtid."
+      },
+      {
+        "question": "Hur fungerar verktyget?",
+        "answer": "Verktyget gör realtidskontroller mot flera LibGen-domäner och speglar för att avgöra åtkomlighet. Klienttester körs i din webbläsare (lokal anslutning), medan servertester ger en global bild. Vi visar svarstider, HTTP-statuskoder och en enkel upp/ned-indikator per sajt."
+      },
+      {
+        "question": "Är det lagligt att använda?",
+        "answer": "Ja. Verktyget kontrollerar endast tillgänglighet och svarstider, likt andra upptidstjänster. Det hostar inte innehåll från LibGen eller ger direkt åtkomst. Själva åtkomsten till LibGen kan dock ha olika juridiska konsekvenser beroende på landets upphovsrättslagstiftning."
+      },
+      {
+        "question": "Varför kan LibGen vara otillgängligt?",
+        "answer": "Möjliga orsaker: <li>1) tekniska problem eller serveravbrott för domänen,</li> <li>2) blockering av din internetleverantör enligt lagkrav,</li> <li>3) domänen har ändrats eller stängts ned,</li><li>4) nätverksproblem mellan dig och servern.</li> Verktyget hjälper dig avgöra om problemet är lokalt eller globalt."
+      }
+    ]
   }
 ]

@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Verktøy",
-        "description": "Tilfeldig velger og andre nyttige mini-verktøy.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Kalkulatorer",
         "description": "Raske beregninger, enhetskonvertering samt finans- og helsekalkulatorer.",
@@ -40,5 +34,11 @@
         "name": "Overvåking og status",
         "description": "Sjekk nettstedets tilgjengelighet, speiltilgjengelighet, latens og DNS-status.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Verktøy",
+        "description": "Tilfeldig velger og andre nyttige mini-verktøy.",
+        "icon": "activity"
     }
 ]

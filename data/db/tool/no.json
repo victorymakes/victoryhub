@@ -1245,5 +1245,45 @@
         "answer": "Et klikk gir den eksakte pikselfargen, altså svært nøyaktig. For dominerende farger brukes avanserte algoritmer. Opplevd farge kan variere noe med skjermkalibrering, lysstyrke og omgivelseslys. For profesjonell presisjon anbefales en kalibrert skjerm."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Sjekk status for Library Genesis og speil",
+    "description": "Overvåk i sanntid statusen til Library Genesis (LibGen) og speilnettstedene. Se om LibGen er nede eller tilgjengelig fra din lokasjon.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen status",
+      "library genesis monitor",
+      "libgen speil status",
+      "libgen nede",
+      "libgen sjekker",
+      "library genesis tilgjengelighet",
+      "libgen speilsjekk",
+      "libgen oppetid",
+      "fungerende speil library genesis",
+      "alternative lenker libgen"
+    ],
+    "faq": [
+      {
+        "question": "Hva er Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) er et «shadow library»-prosjekt som gir gratis tilgang til vitenskapelige artikler, akademiske tekster og bøker. Det fungerer som en ressurs for studenter, forskere og akademikere uten tilgang til betalingsinnhold. Tjenesten drives via et nettverk av speil som replikerer databasen på tvers av domener og servere."
+      },
+      {
+        "question": "Hvorfor overvåke statusen til LibGen?",
+        "answer": "På grunn av serverproblemer, domenebytter eller juridiske forhold kan LibGen og speilene ha nedetid. Overvåking lar deg raskt se hvilke speil som er tilgjengelige fra din lokasjon. Verktøyet sjekker flere offisielle og community-speil og gir sanntidsinformasjon om tilgjengelighet."
+      },
+      {
+        "question": "Hvordan fungerer verktøyet?",
+        "answer": "Det kjøres sanntidssjekker mot flere LibGen-domener og speil for å teste tilgjengelighet. Klientsjekker kjøres i nettleseren din (lokal tilkobling), mens serversjekker gir et globalt bilde. Vi viser svartider, HTTP-status og en enkel opp/ned-indikator per nettsted."
+      },
+      {
+        "question": "Er det lovlig å bruke?",
+        "answer": "Ja. Verktøyet måler kun tilgjengelighet og responstid, slik andre oppetidstjenester gjør. Det hoster ikke innhold fra LibGen eller speil, og gir heller ikke direkte tilgang. Tilgang til LibGen i seg selv kan ha ulike juridiske konsekvenser avhengig av lovverket der du bor."
+      },
+      {
+        "question": "Hvorfor kan LibGen være utilgjengelig?",
+        "answer": "Mulige årsaker: <li>1) tekniske problemer eller serverfeil på domenet,</li> <li>2) blokkering fra ISP iht. lovkrav,</li> <li>3) domenet er endret eller tatt ned,</li><li>4) nettverksproblemer mellom deg og serveren.</li> Verktøyet hjelper å avklare om problemet er lokalt eller globalt."
+      }
+    ]
   }
 ]

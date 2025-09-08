@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Apuohjelmat",
-        "description": "Satunnaisvalitsin ja muut kätevät minityökalut.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Laskurit",
         "description": "Nopeat laskut, yksikkömuunnokset sekä talous- ja terveyslaskurit.",
@@ -40,5 +34,11 @@
         "name": "Valvonta ja tila",
         "description": "Tarkista verkkosivuston saavutettavuus, peilien saatavuus, latenssi ja DNS-tila.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Apuohjelmat",
+        "description": "Satunnaisvalitsin ja muut kätevät minityökalut.",
+        "icon": "activity"
     }
 ]

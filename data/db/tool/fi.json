@@ -1246,5 +1246,45 @@
         "answer": "Napsautus palauttaa pikselin tarkan värin, joten tarkkuus on erittäin hyvä. Hallitsevien värien tunnistuksessa käytetään kehittyneitä algoritmeja. Koettu väri voi hieman vaihdella näytön kalibroinnin, kirkkauden ja ympäröivän valaistuksen mukaan. Ammattitason tarkkuutta varten suositellaan kalibroitua näyttöä."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Tarkista Library Genesisin tila ja peilit",
+    "description": "Seuraa reaaliajassa Library Genesisin (LibGen) ja sen peilisivustojen tilaa. Katso, onko LibGen alhaalla vai saavutettavissa sijainnistasi.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen tila",
+      "library genesis monitori",
+      "libgen peilin tila",
+      "libgen alhaalla",
+      "libgen tarkistin",
+      "library genesis saatavuus",
+      "libgen peilitarkistin",
+      "libgen käyttöaika",
+      "toimivat library genesis -peilit",
+      "libgen vaihtoehtolinkit"
+    ],
+    "faq": [
+      {
+        "question": "Mikä on Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) on varjokirjasto, joka tarjoaa ilmaisen pääsyn tieteellisiin artikkeleihin, akateemisiin teksteihin ja kirjoihin. Se on resurssi opiskelijoille, tutkijoille ja opettajille, joilla ei ole pääsyä maksullisiin aineistoihin. Palvelu toimii peilisivustojen verkon kautta, joka replikoituu eri verkkotunnuksiin ja palvelimiin."
+      },
+      {
+        "question": "Miksi LibGenin tilaa kannattaa seurata?",
+        "answer": "LibGen ja sen peilit voivat ajoittain olla poissa käytöstä esimerkiksi palvelinongelmien, verkkotunnuksen muutosten tai oikeudellisten syiden vuoksi. Seuranta auttaa nopeasti näkemään, mitkä peilit ovat käytettävissä juuri sinun sijainnistasi. Työkalu tarkistaa useita virallisia ja yhteisön peilejä ja näyttää saatavuuden reaaliajassa."
+      },
+      {
+        "question": "Miten työkalu toimii?",
+        "answer": "Työkalu tekee reaaliaikaisia tarkistuksia useille LibGenin verkkotunnuksille ja peileille. Asiakaspuolen tarkistus toimii selaimessasi (paikallinen näkymä), palvelinpuolen tarkistus antaa globaalin kuvan. Näytämme vasteajat, HTTP-tilakoodit ja yksinkertaisen ylhäällä/alhaalla-ilmaisimen kullekin sivulle."
+      },
+      {
+        "question": "Onko käyttö laillista?",
+        "answer": "Kyllä. Työkalu ainoastaan tarkistaa saatavuuden ja vasteajat, kuten muutkin käyttöaikapalvelut. Se ei hostaa, jaa eikä tarjoa suoraa pääsyä LibGenin sisältöön. Huomaa, että itse LibGeniin pääsy voi olla eri tavoin säädelty tekijänoikeuslakien mukaan."
+      },
+      {
+        "question": "Miksi LibGen ei ehkä ole saavutettavissa?",
+        "answer": "Mahdollisia syitä: <li>1) tekninen häiriö tai palvelinkatkos kyseisellä verkkotunnuksella,</li> <li>2) internetpalveluntarjoaja estää pääsyn lakisääteisesti,</li> <li>3) verkkotunnus on vaihtunut tai poistettu,</li><li>4) verkko-ongelmat sijaintisi ja palvelimen välillä.</li> Työkalu auttaa erottamaan, onko kyse paikallisesta vai globaalista ongelmasta."
+      }
+    ]
   }
 ]

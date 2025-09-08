@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "유틸리티",
-        "description": "랜덤 선택기 등 유용한 미니 도구.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "계산기",
         "description": "빠른 계산, 단위 변환, 금융·건강 계산기.",
@@ -40,5 +34,11 @@
         "name": "모니터링 및 상태",
         "description": "웹사이트 도달성, 미러 가용성, 지연 시간, DNS 상태 확인.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "유틸리티",
+        "description": "랜덤 선택기 등 유용한 미니 도구.",
+        "icon": "activity"
     }
 ]

@@ -993,5 +993,18 @@
       "processingFailed": "Failed to process the image.",
       "copyFailed": "Failed to copy to clipboard"
     }
+  },
+  "WebsiteMonitor": {
+    "status": "Status",
+    "refresh": "Refresh",
+    "mirrors": "Mirrors",
+    "error": "Error",
+    "online": "Online",
+    "offline": "Offline",
+    "checking": "Checking...",
+    "responseTime": "Response time:",
+    "statusCode": "Status code:",
+    "visitSite": "Visit Website",
+    "mainWebsite": "Main Website"
   }
 }

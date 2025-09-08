@@ -16,6 +16,8 @@ import {
     Lock,
     Activity,
     Shield,
+    Server,
+    Calculator,
 } from "lucide-react";
 
 // 预定义常用图标映射
@@ -36,6 +38,8 @@ const iconMap: Record<string, LucideIcon> = {
     lock: Lock,
     activity: Activity,
     shield: Shield,
+    server: Server,
+    calculator: Calculator,
 };
 
 // 优化的静态图标组件
