@@ -101,6 +101,11 @@
     "description": "Den side, du leder efter, findes ikke eller er blevet flyttet.",
     "goHome": "Gå til forsiden"
   },
+  "Error": {
+    "title": "500 - Der opstod en fejl",
+    "description": "Noget gik galt. Prøv igen senere, eller kontakt support, hvis problemet fortsætter.",
+    "goHome": "Gå til forside"
+  },
   "UuidGenerator": {
     "title": "UUID-generator",
     "description": "Generer unikke universelle identifikatorer (UUID) til dine applikationer",

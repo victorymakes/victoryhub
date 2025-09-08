@@ -101,6 +101,11 @@
     "description": "Etsimäsi sivu ei ole olemassa tai se on siirretty.",
     "goHome": "Siirry etusivulle"
   },
+  "Error": {
+    "title": "500 - Tapahtui virhe",
+    "description": "Jokin meni pieleen. Yritä myöhemmin uudelleen tai ota yhteyttä tukeen, jos ongelma jatkuu.",
+    "goHome": "Siirry etusivulle"
+  },
   "UuidGenerator": {
     "title": "UUID-generaattori",
     "description": "Luo ainutlaatuisia universaaleja tunnisteita (UUID) sovelluksillesi",

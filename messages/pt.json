@@ -101,6 +101,11 @@
     "description": "A página que você está procurando não existe ou foi movida.",
     "goHome": "Ir para a página inicial"
   },
+  "Error": {
+    "title": "500 - Ocorreu um erro",
+    "description": "Algo correu mal. Tente novamente mais tarde ou contacte o suporte se o problema persistir.",
+    "goHome": "Ir para a página inicial"
+  },
   "UuidGenerator": {
     "title": "Gerador de UUID",
     "description": "Gere identificadores únicos universais (UUID) para suas aplicações",
