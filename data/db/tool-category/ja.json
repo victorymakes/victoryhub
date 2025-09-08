@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "ユーティリティ",
-        "description": "ランダムピッカーなどの便利なミニツール。",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "計算ツール",
         "description": "クイック計算、単位変換、金融・健康の計算ツール。",
@@ -40,5 +34,11 @@
         "name": "監視とステータス",
         "description": "ウェブサイトの到達性、ミラーの可用性、レイテンシー、DNS 状態をチェック。",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "ユーティリティ",
+        "description": "ランダムピッカーなどの便利なミニツール。",
+        "icon": "activity"
     }
 ]

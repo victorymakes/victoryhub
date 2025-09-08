@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Værktøjer",
-        "description": "Tilfældig vælger og andre nyttige miniværktøjer.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Beregnere",
         "description": "Hurtige beregninger, enhedsomregning samt finans- og sundhedsberegnere.",
@@ -40,5 +34,11 @@
         "name": "Overvågning og status",
         "description": "Tjek websteders tilgængelighed, spejl-tilgængelighed, latens og DNS-status.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Værktøjer",
+        "description": "Tilfældig vælger og andre nyttige miniværktøjer.",
+        "icon": "activity"
     }
 ]

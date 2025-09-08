@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Hulpprogramma's",
-        "description": "Willekeurige kiezer en andere handige mini-tools.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Rekenmachines",
         "description": "Snelle berekeningen, eenheidsconversies en rekenmachines voor financiën en gezondheid.",
@@ -40,5 +34,11 @@
         "name": "Monitoring & status",
         "description": "Controleer website-bereikbaarheid, mirror-beschikbaarheid, latentie en DNS-status.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Hulpprogramma's",
+        "description": "Willekeurige kiezer en andere handige mini-tools.",
+        "icon": "activity"
     }
 ]

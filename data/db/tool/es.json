@@ -1250,5 +1250,45 @@
         "answer": "Al hacer clic obtienes el valor exacto del píxel, lo que ofrece gran precisión. Para los colores dominantes se emplean algoritmos avanzados. La percepción puede variar ligeramente según la calibración del monitor, el brillo y la luz ambiental. Para máxima precisión profesional, usa una pantalla calibrada."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Comprueba el estado de Library Genesis y sus espejos",
+    "description": "Supervisa en tiempo real el estado de Library Genesis (LibGen) y de sus sitios espejo. Verifica si LibGen está caído o accesible desde tu ubicación.",
+    "category": "monitoring",
+    "keywords": [
+      "estado libgen",
+      "monitor de library genesis",
+      "estado de espejo libgen",
+      "libgen caído",
+      "verificador libgen",
+      "disponibilidad de library genesis",
+      "verificador de espejos libgen",
+      "uptime libgen",
+      "espejos activos de library genesis",
+      "enlaces alternativos libgen"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) es un proyecto de biblioteca en la sombra que ofrece acceso gratuito a artículos científicos, textos académicos y libros. Es un recurso para estudiantes, investigadores y docentes que no pueden acceder a contenido de pago. Funciona mediante una red de sitios espejo que replican su base de datos en distintos dominios y servidores."
+      },
+      {
+        "question": "¿Por qué conviene monitorizar el estado de LibGen?",
+        "answer": "LibGen y sus espejos pueden sufrir caídas por problemas de servidor, cambios de dominio o cuestiones legales. Monitorizar te permite identificar rápidamente qué espejos son accesibles desde tu ubicación y ahorrar tiempo cuando necesitas el servicio. La herramienta comprueba varios espejos oficiales y de la comunidad y ofrece disponibilidad en tiempo real."
+      },
+      {
+        "question": "¿Cómo funciona esta herramienta?",
+        "answer": "Realiza comprobaciones en tiempo real sobre varios dominios y espejos de LibGen para medir su accesibilidad. Las pruebas del lado del cliente se ejecutan en tu navegador (conectividad local) y las del lado del servidor aportan una visión global. Muestra tiempos de respuesta, códigos HTTP e indicador simple activo/inactivo por sitio."
+      },
+      {
+        "question": "¿Es legal usarla?",
+        "answer": "Sí. La herramienta solo verifica disponibilidad y tiempos de respuesta, como otros servicios de uptime. No aloja ni distribuye contenido de LibGen ni da acceso directo. El acceso a LibGen en sí puede tener implicaciones legales según las leyes de derechos de autor de tu país."
+      },
+      {
+        "question": "¿Por qué puede ser inaccesible desde mi ubicación?",
+        "answer": "Posibles causas: <li>1) problemas técnicos o caída del servidor del dominio,</li> <li>2) bloqueo por tu ISP por requisitos legales,</li> <li>3) cambio o baja del dominio,</li><li>4) problemas de conectividad entre tu red y el servidor.</li> La herramienta ayuda a distinguir si es un problema local o una caída global."
+      }
+    ]
   }
 ]

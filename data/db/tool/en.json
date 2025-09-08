@@ -1290,5 +1290,45 @@
         "answer": "The Image Color Picker provides highly accurate color extraction at the pixel level. When you click on a specific point in the image, you get the exact color value of that pixel. For dominant color extraction, the tool uses advanced algorithms to identify the most representative colors in your image. However, keep in mind that perceived colors can vary slightly depending on your monitor calibration, screen brightness, and ambient lighting conditions. For professional design work requiring absolute color accuracy, we recommend using the tool in conjunction with a calibrated display."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Check Library Genesis Status and Mirrors",
+    "description": "Monitor the status of Library Genesis (LibGen) and its mirror websites in real-time. Check if LibGen is down or accessible from your location.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen status",
+      "library genesis monitor",
+      "libgen mirror status",
+      "libgen down",
+      "libgen checker",
+      "library genesis availability",
+      "libgen mirror checker",
+      "libgen uptime",
+      "library genesis working mirrors",
+      "libgen alternative links"
+    ],
+    "faq": [
+      {
+        "question": "What is Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) is a shadow library project that provides free access to scholarly articles, academic texts, and books. It serves as a resource for students, researchers, and academics who may not have access to paywalled content. The service operates through a network of mirror websites that replicate its database across different domains and servers."
+      },
+      {
+        "question": "Why do I need to monitor LibGen status?",
+        "answer": "LibGen and its mirrors occasionally experience downtime due to various factors including server issues, domain changes, or legal challenges. Monitoring the status helps you quickly identify which mirrors are currently accessible from your location, saving you time when you need to access the service. This tool checks multiple official and community mirrors to provide real-time availability information."
+      },
+      {
+        "question": "How does this LibGen Monitor tool work?",
+        "answer": "This tool performs real-time checks on multiple LibGen domains and mirror sites to determine their accessibility. It works in two ways: client-side checks run directly from your browser to test connectivity from your specific location, while server-side checks provide a broader view of global availability. The tool displays response times, HTTP status codes, and a simple up/down status indicator for each tested site."
+      },
+      {
+        "question": "Is using this monitoring tool legal?",
+        "answer": "Yes, this monitoring tool itself is completely legal. It simply checks website availability and response times, similar to other uptime monitoring services. The tool does not host, distribute, or provide direct access to any content from LibGen or its mirrors - it only reports on whether those websites are accessible. However, be aware that accessing LibGen itself may have different legal implications depending on your country's copyright laws."
+      },
+      {
+        "question": "Why might LibGen be inaccessible from my location?",
+        "answer": "There are several reasons why LibGen might be inaccessible: <li>1) The specific domain might be experiencing technical issues or server downtime,</li> <li>2) Your Internet Service Provider (ISP) might be blocking access to the site based on legal requirements in your country,</li> <li>3) The domain might have changed or been taken down, </li><li>4) Network connectivity issues between your location and the server. </li>This tool helps identify whether the issue is specific to your connection or if the service is down globally."
+      }
+    ]
   }
 ]

@@ -24,12 +24,6 @@
         "icon": "image"
     },
     {
-        "slug": "utilities",
-        "name": "Utilitaires",
-        "description": "Sélecteur aléatoire et autres mini-outils pratiques.",
-        "icon": "activity"
-    },
-    {
         "slug": "calculator",
         "name": "Calculatrices",
         "description": "Calcul rapide, conversions d’unités, calculateurs financiers et de santé.",
@@ -40,5 +34,11 @@
         "name": "Surveillance & Statut",
         "description": "Vérifier l’accessibilité des sites Web, la disponibilité des miroirs, la latence et l’état DNS.",
         "icon": "server"
+    },
+    {
+        "slug": "utilities",
+        "name": "Utilitaires",
+        "description": "Sélecteur aléatoire et autres mini-outils pratiques.",
+        "icon": "activity"
     }
 ]

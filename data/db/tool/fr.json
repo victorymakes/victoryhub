@@ -1250,5 +1250,45 @@
         "answer": "Le clic renvoie la valeur du pixel, donc une précision au niveau du pixel. Pour les couleurs dominantes, l’outil utilise des algorithmes avancés. La perception peut toutefois varier selon l’étalonnage de l’écran, la luminosité et l’éclairage ambiant. Pour une précision maximale, utilisez un écran calibré."
       }
     ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Vérifier l’état de Library Genesis et de ses miroirs",
+    "description": "Surveillez en temps réel l’état de Library Genesis (LibGen) et de ses sites miroirs. Vérifiez si LibGen est en panne ou accessible depuis votre localisation.",
+    "category": "monitoring",
+    "keywords": [
+      "statut libgen",
+      "surveillance library genesis",
+      "statut miroir libgen",
+      "libgen en panne",
+      "vérificateur libgen",
+      "disponibilité library genesis",
+      "vérificateur de miroirs libgen",
+      "uptime libgen",
+      "miroirs fonctionnels library genesis",
+      "liens alternatifs libgen"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce que Library Genesis (LibGen) ?",
+        "answer": "Library Genesis (LibGen) est un projet de « bibliothèque fantôme » offrant un accès gratuit à des articles scientifiques, textes académiques et livres. Il sert de ressource aux étudiants, chercheurs et enseignants n’ayant pas accès aux contenus payants. Le service fonctionne via un réseau de sites miroirs répliquant sa base de données sur différents domaines et serveurs."
+      },
+      {
+        "question": "Pourquoi surveiller l’état de LibGen ?",
+        "answer": "LibGen et ses miroirs connaissent parfois des interruptions (problèmes serveur, changements de domaine, enjeux juridiques). En surveillant le statut, vous identifiez rapidement les miroirs accessibles depuis votre emplacement et gagnez du temps. Cet outil vérifie plusieurs miroirs officiels et communautaires et fournit des informations de disponibilité en temps réel."
+      },
+      {
+        "question": "Comment fonctionne l’outil LibGen Monitor ?",
+        "answer": "Il effectue des tests en temps réel sur plusieurs domaines et miroirs LibGen pour mesurer leur accessibilité. Des tests côté client (dans votre navigateur) évaluent la connectivité depuis votre position, tandis que des tests côté serveur donnent une vue globale. L’outil affiche temps de réponse, codes d’état HTTP et un indicateur en ligne/hors ligne par site."
+      },
+      {
+        "question": "L’utilisation de cet outil est-elle légale ?",
+        "answer": "Oui. L’outil se limite à vérifier la disponibilité et les temps de réponse – comme les autres services d’uptime. Il n’héberge ni ne distribue de contenu LibGen et n’en fournit pas l’accès direct. En revanche, l’accès à LibGen lui-même peut avoir des implications juridiques différentes selon les lois de votre pays."
+      },
+      {
+        "question": "Pourquoi LibGen peut-il être inaccessible depuis mon emplacement ?",
+        "answer": "Plusieurs raisons possibles : <li>1) problèmes techniques ou panne serveur sur le domaine concerné,</li> <li>2) blocage par votre FAI selon les exigences légales,</li> <li>3) changement ou suppression du domaine,</li><li>4) problèmes de connectivité entre votre position et le serveur.</li> L’outil aide à déterminer s’il s’agit d’un souci local ou d’une indisponibilité globale."
+      }
+    ]
   }
 ]
