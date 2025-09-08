@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "Calculateur d'IMC – Vérifiez votre indice de masse corporelle instantanément",
     "description": "Calculez votre indice de masse corporelle (IMC) en utilisant des unités métriques ou impériales. Obtenez des résultats instantanés avec classification par catégorie et informations sur la santé.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calculateur imc",
       "indice de masse corporelle",
@@ -404,7 +404,7 @@
     "slug": "bmr-calculator",
     "name": "Calculateur de BMR – Calculez votre Métabolisme de Base",
     "description": "Calculez votre BMR (métabolisme de base) et votre TDEE (dépense énergétique quotidienne totale) selon votre âge, sexe, taille, poids et niveau d’activité.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calculateur bmr",
       "métabolisme basal",
@@ -448,7 +448,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "Calculateur d'Empreinte Carbone – Mesurez Votre Impact Environnemental",
     "description": "Calculez votre empreinte carbone personnelle ou familiale en fonction de facteurs liés au mode de vie, notamment les transports, la consommation d'énergie, l'alimentation et les habitudes de consommation.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "calculateur d'empreinte carbone",
       "calculateur d'émissions de CO2",
@@ -848,6 +848,446 @@
       {
         "question": "Y a-t-il une limite de taille ou de nombre d’images ?",
         "answer": "Comme le traitement s’effectue localement dans le navigateur, les limites dépendent principalement des capacités de votre appareil. La plupart des appareils modernes gèrent sans problème des images jusqu’à 20 Mo. Il n’y a pas de limite stricte sur le nombre d’images, mais un grand nombre de fichiers volumineux nécessitera plus de mémoire et de puissance de calcul. Pour de meilleures performances, nous conseillons de convertir 10 à 20 grandes images à la fois. L’outil prend en charge les formats courants comme JPEG, PNG, WebP, etc."
+      }
+    ]
+  },
+  {
+    "slug": "url-tracker-cleaner",
+    "name": "Nettoyeur de traceurs d’URL – Supprimer les paramètres UTM et de suivi",
+    "description": "Identifiez et supprimez les paramètres de suivi des URL, notamment les balises UTM, les ID de clic et autres traceurs d’analytics. Nettoyez vos liens pour plus de confidentialité et pour le partage.",
+    "category": "privacy",
+    "keywords": [
+      "nettoyeur d’URL",
+      "supprimer paramètres UTM",
+      "nettoyer URL de suivi",
+      "supprimeur de balises UTM",
+      "supprimeur de traceurs d’URL",
+      "supprimer fbclid",
+      "supprimer gclid",
+      "URL propre pour le partage",
+      "nettoyeur d’URL confidentialité",
+      "suppression de paramètres de suivi"
+    ],
+    "faq": [
+      {
+        "question": "Que sont les paramètres de suivi d’URL et pourquoi les supprimer ?",
+        "answer": "Les paramètres de suivi sont des informations ajoutées aux adresses web pour aider les marketeurs et propriétaires de sites à savoir d’où viennent les visiteurs et comment ils interagissent avec le contenu. <br/>Exemples courants : paramètres UTM (utm_source, utm_medium, utm_campaign), identifiants de clic (gclid, fbclid) et autres traceurs d’analytics. Bien qu’utiles pour les entreprises, ils peuvent compromettre votre vie privée en révélant vos habitudes de navigation et vos sources de référence. <br/>Les supprimer donne des liens plus courts et plus propres, plus privés et faciles à partager, tout en empêchant la collecte inutile de données sur votre activité en ligne."
+      },
+      {
+        "question": "Quels paramètres de suivi cet outil détecte-t-il et supprime-t-il ?",
+        "answer": "Cet outil détecte et supprime un large éventail de paramètres de suivi, notamment : <li>paramètres UTM (utm_source, utm_medium, utm_campaign, utm_term, utm_content),</li> <li>ID de clic publicitaire (gclid de Google, fbclid de Facebook, msclkid de Microsoft/Bing, dclid de DoubleClick, twclid de Twitter),</li> <li>traceurs d’e-mail marketing (mc_eid de Mailchimp, _hsenc et _hsmi de HubSpot),</li> <li>et paramètres de référence généraux (ref, source, cmpid).</li> <br/>L’outil est régulièrement mis à jour pour identifier les nouveaux paramètres au fur et à mesure qu’ils apparaissent dans l’écosystème du marketing digital."
+      },
+      {
+        "question": "Cet outil de nettoyage d’URL est-il sécurisé et respectueux de la vie privée ?",
+        "answer": "Oui. Tout le traitement a lieu localement dans votre navigateur – aucune donnée n’est envoyée à nos serveurs ni à des tiers. Vos URL ne sont jamais stockées, journalisées ni transmises. Vous pouvez le vérifier dans l’onglet Réseau de votre navigateur pendant l’utilisation – aucune requête n’est émise lors du traitement. Cet outil est donc sûr, même avec des liens sensibles ou privés."
+      },
+      {
+        "question": "Supprimer les paramètres de suivi casse-t-il l’URL ou empêche-t-il l’accès au site ?",
+        "answer": "Non. Les paramètres de suivi sont des informations supplémentaires ajoutées après la structure principale de l’URL et ne sont pas nécessaires au chargement de la page. L’URL nettoyée mène à la même page de destination, simplement sans les informations de suivi. Dans de rares cas où un site exige certains paramètres, l’outil préserve tous les paramètres non liés au suivi pour maintenir la fonctionnalité et ne supprime que les éléments intrusifs."
+      },
+      {
+        "question": "Comment utiliser des URL nettoyées au quotidien pour plus de confidentialité ?",
+        "answer": "Pour renforcer votre confidentialité : <li>avant de cliquer sur des liens dans des e-mails ou sur les réseaux sociaux, clic droit, copiez l’adresse et collez-la dans notre outil pour la nettoyer ;</li> <li>lorsque vous partagez des liens, nettoyez-les d’abord pour éviter de propager des traceurs ;</li> <li>envisagez des extensions de navigateur qui suppriment automatiquement les paramètres de suivi pendant la navigation ;</li> <li>pour une protection maximale, combinez le nettoyage d’URL avec d’autres pratiques : VPN, navigateur axé sur la confidentialité, nettoyage régulier des cookies.</li> </br>Cet outil est un premier pas simple vers des habitudes de navigation plus privées."
+      }
+    ]
+  },
+  {
+    "slug": "text-redactor",
+    "name": "Rédaction de texte – Masquer les PII et informations sensibles",
+    "description": "Rédaction de texte en ligne gratuite : masquez automatiquement e-mails, numéros de téléphone, adresses postales et autres PII. Copier-coller, masquer et exporter.",
+    "category": "privacy",
+    "keywords": [
+      "rédaction de texte",
+      "rédaction PII",
+      "masquage de données",
+      "outil de confidentialité",
+      "informations sensibles",
+      "rédaction d’e-mails",
+      "masquage de numéros de téléphone",
+      "rédaction d’adresses",
+      "anonymiseur de texte",
+      "protection des données"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce que la rédaction de texte et pourquoi est-ce important ?",
+        "answer": "La rédaction (redaction) consiste à supprimer ou masquer les informations sensibles dans des documents ou du texte. C’est important pour <li>protéger les informations personnelles identifiables (PII),</li> <li>respecter la conformité (GDPR, CCPA, etc.),</li> <li>prévenir l’usurpation d’identité,</li> <li>et permettre le partage sécurisé de documents tout en préservant la confidentialité.</li> Notre outil identifie et masque automatiquement les schémas PII courants (e-mails, téléphones, adresses) afin de partager ou publier sans exposer de données sensibles."
+      },
+      {
+        "question": "Quels types d’informations cet outil peut-il rédiger ?",
+        "answer": "Il détecte et masque automatiquement plusieurs types de PII, dont : <li>adresses e-mail,</li> <li>numéros de téléphone (formats internationaux pris en charge),</li> <li>adresses postales,</li> <li>adresses IP,</li> <li>numéros de carte bancaire,</li> <li>numéros de sécurité sociale (SSN),</li> <li>dates de naissance,</li> <li>et noms lorsqu’identifiables dans des formats usuels.</li> L’outil utilise la reconnaissance de motifs pour remplacer ces données par des caractères de substitution tout en préservant la structure du texte."
+      },
+      {
+        "question": "Mes données sont-elles en sécurité avec cet outil ?",
+        "answer": "Oui. Tout se passe dans votre navigateur – aucune donnée n’est envoyée ni stockée sur des serveurs. Le traitement s’effectue localement sur votre appareil, garantissant une confidentialité et une sécurité maximales. Une fois l’onglet fermé, il ne reste aucune trace de votre texte. Idéal pour les informations confidentielles."
+      },
+      {
+        "question": "Quelle est la précision de la rédaction automatique ?",
+        "answer": "Très élevée pour les formats standard (e-mails, téléphones, cartes bancaires). Aucun système automatisé n’est parfait toutefois : l’outil s’appuie sur la correspondance de motifs et les expressions régulières, de sorte que des formats inhabituels ou des informations contextuelles peuvent être manqués. Pour des besoins critiques, relisez la sortie manuellement. Vous pouvez aussi ajouter des termes ou motifs personnalisés."
+      },
+      {
+        "question": "Puis-je personnaliser ce qui est masqué et l’apparence du masquage ?",
+        "answer": "Oui. Sélectionnez les catégories de PII à masquer (activées/désactivées), choisissez le style (XXX, barres noires ou caractères personnalisés) et ajoutez des termes/modèles propres à votre organisation pour les éléments non détectés automatiquement."
+      }
+    ]
+  },
+  {
+    "slug": "password-strength-checker",
+    "name": "Vérificateur de robustesse – Évaluer la sécurité des mots de passe",
+    "description": "Vérifiez la robustesse de vos mots de passe et recevez des conseils personnalisés pour les renforcer. Protégez vos comptes avec de bonnes pratiques.",
+    "category": "privacy",
+    "keywords": [
+      "vérificateur de robustesse",
+      "sécurité du mot de passe",
+      "analyseur de mots de passe",
+      "mot de passe sécurisé",
+      "évaluation de mot de passe",
+      "baromètre de robustesse",
+      "outil de sécurité",
+      "validateur de mot de passe",
+      "test de robustesse",
+      "sécurité des comptes"
+    ],
+    "faq": [
+      {
+        "question": "Comment évaluez-vous la robustesse de mon mot de passe ?",
+        "answer": "Nous évaluons selon plusieurs facteurs : <li>longueur (plus c’est long, mieux c’est),</li> <li>diversité des caractères (majuscules, minuscules, chiffres, symboles),</li> <li>absence de motifs courants ou de mots de dictionnaire,</li> <li>et absence de séquences ou répétitions.</li> Chaque facteur contribue à un score global (faible, moyen, bon, fort). L’évaluation se fait entièrement dans votre navigateur – votre mot de passe n’est jamais transmis."
+      },
+      {
+        "question": "Comment créer un mot de passe fort ?",
+        "answer": "Recommandations : <li>utilisez au moins 12–16 caractères (la longueur est cruciale),</li> <li>mélangez majuscules/minuscules, chiffres et symboles,</li> <li>évitez mots/phrases courants et informations personnelles,</li> <li>n’utilisez pas de séquences « 123456 » ou « qwerty ».</li> <li>envisagez une phrase secrète (passphrase) – une suite de mots aléatoires avec chiffres/symboles,</li> <li>un mot de passe unique par compte – jamais de réutilisation,</li> <li>utilisez un gestionnaire de mots de passe pour générer et stocker des clés complexes.</li>"
+      },
+      {
+        "question": "Pourquoi mon mot de passe long est-il quand même jugé faible ?",
+        "answer": "La longueur seule ne garantit pas la robustesse. Un mot de passe long reste faible s’il : <li>contient des mots/phrases courants (p. ex. « iloveyou », « password123 »),</li> <li>utilise des motifs prévisibles (claviers « qwerty », suites « 123456 ») ou des répétitions (« aaaaa »),</li> <li>inclut des données personnelles faciles à deviner,</li> <li>ou manque de diversité (que des minuscules, par ex.).</li> Les mots de passe les plus solides combinent longueur, imprévisibilité et variété."
+      },
+      {
+        "question": "Les passphrases sont-elles meilleures que des mots de passe courts complexes ?",
+        "answer": "Souvent oui. Une passphrase comme « correct-horse-battery-staple » ou « purple_monkey_dinosaur_42! » est généralement plus longue, plus mémorisable et plus résistante aux attaques qu’un court mot de passe « complexe » tel que « P@s$w0rd! ». Idéalement 3–5 mots aléatoires, avec un peu de majuscules, chiffres et symboles."
+      },
+      {
+        "question": "À quelle fréquence dois-je changer mes mots de passe ?",
+        "answer": "Les recommandations modernes (p. ex. du NIST) déconseillent les rotations arbitraires. Plutôt que de tout changer tous les 90 jours, concentrez-vous sur : <li>des mots de passe uniques et forts pour chaque service,</li> <li>un changement immédiat après une violation de données,</li> <li>un changement en cas de soupçon de compromission,</li> <li>l’activation de l’authentification à deux facteurs (2FA),</li> <li>et l’usage d’un gestionnaire de mots de passe.</li>"
+      }
+    ]
+  },
+  {
+    "slug": "barcode-generator",
+    "name": "Générateur de codes-barres – Créer des CODE128 et EAN-13 en ligne",
+    "description": "Générez gratuitement des codes-barres CODE128 et EAN-13 professionnels en ligne. Personnalisez taille, couleurs et affichage du texte pour étiquettes produit, gestion d’inventaire et retail.",
+    "category": "media",
+    "keywords": [
+      "générateur de codes-barres",
+      "générateur code128",
+      "générateur ean13",
+      "créer un code-barres en ligne",
+      "outil gratuit de code-barres",
+      "générateur de codes produit",
+      "créateur de code-barres",
+      "générateur upc",
+      "code-barres retail",
+      "code-barres inventaire"
+    ],
+    "faq": [
+      {
+        "question": "Quels types de codes-barres puis-je créer avec cet outil ?",
+        "answer": "Deux des formats les plus répandus : CODE128 et EAN-13. <li>CODE128 est polyvalent et à haute densité ; il encode les 128 caractères ASCII, idéal pour des données alphanumériques en logistique, inventaire et gestion documentaire.</li> <li>EAN-13 est le standard mondial retail, composé de 13 chiffres identifiant pays, fabricant et produit.</li> Notre générateur produit des codes conformes aux standards, pour usage professionnel et personnel."
+      },
+      {
+        "question": "Comment créer un EAN-13 valide ?",
+        "answer": "Saisissez exactement 12 chiffres (le 13ᵉ est une clé de contrôle calculée automatiquement). <li>Les 2–3 premiers : code pays,</li><li>les 4–5 suivants : fabricant,</li><li>le reste : code produit.</li> Pour les tests, vous pouvez utiliser des numéros commençant par 200–299 (réservés à l’usage en magasin). Pour un usage commercial, inscrivez-vous auprès de GS1 pour obtenir un préfixe fabricant légitime."
+      },
+      {
+        "question": "Puis-je personnaliser l’apparence de mes codes-barres ?",
+        "answer": "Oui. <li>Ajustez la largeur des barres (épaisseur) et la hauteur,</li><li>modifiez les couleurs de premier plan (barres) et d’arrière-plan,</li><li>affichez/masquez la valeur numérique et ajustez marge et taille de police.</li> Ainsi, vos codes s’intègrent à la fois fonctionnellement et visuellement."
+      },
+      {
+        "question": "Comment utiliser les codes générés dans mes projets ?",
+        "answer": "Téléchargez au format PNG et intégrez-les à : <li>packaging produit, étiquettes d’inventaire, étiquettes de prix, cartes de membre, billets et systèmes de suivi d’actifs,</li> <li>PDF, sites web, applications mobiles ou plateformes e-commerce.</li> Pour l’impression, nous recommandons au moins 300 DPI et des tests avec un lecteur avant la production en série."
+      },
+      {
+        "question": "Ces codes-barres sont-ils compatibles avec les lecteurs standards ?",
+        "answer": "Oui, ils respectent les normes internationales et fonctionnent avec la plupart des lecteurs commerciaux. <li>CODE128 fonctionne avec la plupart des lecteurs génériques en retail, entrepôt et bureau.</li><li>EAN-13 est conçu pour les systèmes POS.</li> Pour une fiabilité maximale : zones de silence suffisantes, contraste élevé et taille appropriée."
+      }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "name": "Testeur d’expressions régulières – Tester et déboguer les regex",
+    "description": "Testez, déboguez et validez des expressions régulières avec cet outil interactif. Visualisez les correspondances en temps réel avec prise en charge de divers indicateurs (flags) et motifs.",
+    "category": "development",
+    "keywords": [
+      "testeur regex",
+      "expression régulière",
+      "validateur regex",
+      "débogueur regex",
+      "correspondance de motifs",
+      "indicateurs regex",
+      "outil de test regex",
+      "vérificateur regex",
+      "motif regex",
+      "correspondance regex"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce qu’une expression régulière et à quoi ça sert ?",
+        "answer": "Les expressions régulières (regex) sont des chaînes spéciales qui définissent des motifs de recherche. Elles sont puissantes pour le traitement, la validation et l’extraction de texte. Elles servent à <li>valider des formats (e-mail, téléphone),</li> <li>extraire des données d’un texte,</li> <li>rechercher/remplacer,</li> <li>parsing et transformation de données,</li> <li>et implémenter des fonctionnalités de recherche.</li> Développeurs, analystes et professionnels IT les utilisent à travers langages, éditeurs et outils CLI."
+      },
+      {
+        "question": "Que signifient les différents indicateurs (flags) en regex ?",
+        "answer": "Ils modifient le comportement de correspondance : <li><strong>g (global)</strong> : trouve toutes les occurrences au lieu d’arrêter à la première,</li> <li><strong>i (insensible à la casse)</strong> : ignore majuscules/minuscules,</li> <li><strong>m (multilignes)</strong> : ^ et $ correspondent au début/fin de chaque ligne,</li> <li><strong>s (dotAll)</strong> : le point (.) correspond aussi aux sauts de ligne,</li> <li><strong>u (unicode)</strong> : traite le motif comme Unicode,</li> <li><strong>y (sticky)</strong> : ne correspond qu’à partir de lastIndex et n’avance pas plus loin.</li> Le support varie selon les langages/outils ; ces indicateurs sont courants en JavaScript."
+      },
+      {
+        "question": "Comment créer des expressions régulières efficaces ?",
+        "answer": "Bonnes pratiques : <li>commencez simple et construisez progressivement en testant,</li> <li>utilisez notre testeur pour visualiser en direct,</li> <li>apprenez les motifs courants (e-mail, URL, téléphone),</li> <li>utilisez des classes de caractères ([a-z], \\d, \\w) pour la lisibilité,</li> <li>soyez précis pour éviter les correspondances gourmandes,</li> <li>utilisez des groupes non capturants (?:...) quand le contenu n’est pas requis,</li> <li>prenez en compte la performance pour les motifs complexes,</li> <li>ajoutez des commentaires avec le flag x si disponible,</li> <li>testez avec des cas limites et des entrées inattendues.</li> La regex la plus maintenable est souvent la plus simple qui accomplit la tâche."
+      },
+      {
+        "question": "Mes données sont-elles en sécurité avec ce testeur ?",
+        "answer": "Oui. Tout s’exécute dans votre navigateur – aucune donnée n’est envoyée ni stockée. La correspondance se fait localement sur votre appareil pour une confidentialité et une sécurité maximales. Une fois la page fermée, aucune trace ne subsiste."
+      },
+      {
+        "question": "Quels sont quelques motifs regex utiles ?",
+        "answer": "Exemples : <li><strong>E-mail</strong> : [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}</li> <li><strong>URL</strong> : https?:\\/\\/[\\w\\.-]+\\.[a-zA-Z]{2,}[\\/\\w\\.-]*</li> <li><strong>Téléphone (US)</strong> : \\(\\d{3}\\)\\s?\\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}</li> <li><strong>Date (YYYY-MM-DD)</strong> : \\d{4}-\\d{2}-\\d{2}</li> <li><strong>Heure (HH:MM)</strong> : ([01]?[0-9]|2[0-3]):[0-5][0-9]</li> <li><strong>Adresse IP</strong> : \\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b</li> <li><strong>Robustesse de mot de passe</strong> : ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^\\w\\s]).{8,}$</li> <li><strong>Balise HTML</strong> : <([a-z]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)</li> À adapter selon vos besoins."
+      }
+    ]
+  },
+  {
+    "slug": "json-xml-converter",
+    "name": "Convertisseur JSON-XML – Convertir entre JSON et XML",
+    "description": "Convertissez facilement entre les formats JSON et XML avec cet outil gratuit. Parfait pour la transformation de données, l’intégration d’API et la conversion de fichiers de configuration.",
+    "category": "development",
+    "keywords": [
+      "convertisseur json vers xml",
+      "convertisseur xml vers json",
+      "transformation json xml",
+      "convertir json en xml",
+      "convertir xml en json",
+      "parseur json xml",
+      "convertisseur de formats de données",
+      "convertisseur de données api",
+      "transformation xml json",
+      "outil json xml en ligne"
+    ],
+    "faq": [
+      {
+        "question": "Quelle est la différence entre JSON et XML ?",
+        "answer": "JSON (JavaScript Object Notation) et XML (Extensible Markup Language) sont deux formats d’échange de données qui diffèrent : <li>JSON est léger, utilise une syntaxe clé-valeur simple et est natif de JavaScript. Il est plus compact, plus lisible et plus rapide à parser.</li> <li>XML est plus verbeux avec des balises ouvrantes/fermantes, prend en charge les attributs et espaces de noms, et peut être validé par schémas.</li> XML convient mieux aux structures documentaires complexes, tandis que JSON est efficace pour des transferts de données simples."
+      },
+      {
+        "question": "Quand utiliser JSON plutôt que XML (et inversement) ?",
+        "answer": "<li>Choisissez JSON pour l’échange léger, l’intégration JS, les structures simples, les réponses d’API, les fichiers de configuration ou les applications mobiles à faible bande passante.</li> <li>Choisissez XML pour des données orientées document, des hiérarchies complexes, des métadonnées via attributs, la prise en charge des espaces de noms, la validation par schémas, ou la compatibilité avec des systèmes legacy/entreprise (ex. HL7, FIX, DocBook).</li> Notre convertisseur vous aide à passer de l’un à l’autre selon vos besoins."
+      },
+      {
+        "question": "Comment le convertisseur gère-t-il les structures complexes ?",
+        "answer": "Il préserve les relations hiérarchiques lors de la transformation. <li>JSON→XML : les tableaux deviennent des éléments répétés, les objets imbriqués des éléments enfants, et les caractères spéciaux sont correctement échappés.</li> <li>XML→JSON : les éléments avec attributs deviennent des objets imbriqués, les éléments répétés deviennent des tableaux, et le texte est conservé.</li> L’intégrité structurelle est maintenue tout en respectant les conventions du format cible."
+      },
+      {
+        "question": "Y a-t-il des limites à la conversion JSON↔XML ?",
+        "answer": "Oui : <li>les attributs XML n’ont pas d’équivalent direct en JSON et sont généralement convertis en objets imbriqués ou champs spéciaux,</li> <li>le contenu mixte XML (texte + éléments) se mappe mal vers JSON,</li> <li>les espaces de noms deviennent souvent des noms préfixés en JSON,</li> <li>les instructions de traitement et DTD sont perdues côté JSON,</li> <li>JSON ne distingue pas éléments et attributs.</li> Malgré cela, notre convertisseur couvre la plupart des scénarios courants."
+      },
+      {
+        "question": "Comment garantir la validité des données converties ?",
+        "answer": "D’abord, assurez-vous que la source est bien formée. Ensuite : <li>pour JSON : vérifiez qu’il est parseable par JSON.parse(),</li> <li>pour XML : validez contre les règles XML ou un schéma,</li> <li>pour JSON : contrôlez les guillemets des clés et l’imbrication,</li> <li>pour XML : vérifiez l’imbrication/la fermeture correcte et l’échappement des caractères spéciaux.</li> Pour les usages critiques, utilisez des outils de validation supplémentaires."
+      }
+    ]
+  },
+  {
+    "slug": "json-yaml-converter",
+    "name": "Convertisseur JSON-YAML – Convertir entre JSON et YAML",
+    "description": "Convertissez facilement entre les formats JSON et YAML avec cet outil gratuit. Idéal pour les développeurs travaillant avec des fichiers de configuration, des API et l’échange de données.",
+    "category": "development",
+    "keywords": [
+      "json vers yaml",
+      "yaml vers json",
+      "convertisseur json yaml",
+      "convertisseur yaml",
+      "convertisseur json",
+      "convertir json en yaml",
+      "convertir yaml en json",
+      "formateur yaml",
+      "formateur json",
+      "convertisseur de formats de données"
+    ],
+    "faq": [
+      {
+        "question": "Quelle est la différence entre JSON et YAML ?",
+        "answer": "Deux formats de sérialisation, mais : <li>JSON est plus compact et utilise accolades, crochets et guillemets – idéal pour la transmission,</li> <li>YAML est plus lisible pour l’humain avec une hiérarchie basée sur l’indentation, prend en charge les commentaires et des structures comme ancres et références.</li> YAML est souvent préféré pour la configuration ; JSON pour les API et l’échange grâce à sa simplicité et sa vitesse de parsing."
+      },
+      {
+        "question": "Pourquoi convertir entre JSON et YAML ?",
+        "answer": "Utile lorsque : <li>vous migrez des configurations entre systèmes aux formats différents (ex. JSON → YAML Kubernetes),</li> <li>vous travaillez avec des API qui acceptent un autre format,</li> <li>vous collaborez avec des équipes aux outils/préférences variés,</li> <li>ou vous souhaitez rendre un JSON complexe plus lisible pour la documentation ou le débogage.</li> Ce convertisseur rend ces transitions simples et sans erreur."
+      },
+      {
+        "question": "Le convertisseur est-il sûr et privé ?",
+        "answer": "Oui. Toute la conversion s’effectue localement dans votre navigateur ; vos données ne quittent pas votre appareil. Cela convient aux fichiers de configuration sensibles ou aux données propriétaires. Vous pouvez le vérifier dans l’onglet Réseau : aucune transmission n’a lieu."
+      },
+      {
+        "question": "Quelles sont les difficultés courantes en JSON↔YAML ?",
+        "answer": "Par exemple : <li>gestion des caractères spéciaux (YAML nécessite plus d’échappements),</li> <li>préservation des types (nombres vs chaînes),</li> <li>maintien d’une indentation correcte vers YAML,</li> <li>gestion des chaînes multilignes,</li> <li>conservation des commentaires (absents en JSON, présents en YAML).</li> Notre convertisseur gère la plupart des cas limites, mais vérifiez toujours des structures complexes."
+      },
+      {
+        "question": "Puis-je l’utiliser avec de gros fichiers ?",
+        "answer": "Oui, comme tout est local. Cependant, des fichiers très volumineux (plusieurs Mo) peuvent affecter les performances selon l’appareil. Pour des tailles extrêmes, envisagez des outils en ligne de commande comme « yq » ou « jq »."
+      }
+    ]
+  },
+  {
+    "slug": "json-toml-converter",
+    "name": "Convertisseur JSON-TOML – Convertir entre JSON et TOML",
+    "description": "Convertissez facilement entre JSON et TOML avec cet outil gratuit. Parfait pour travailler avec des fichiers de configuration, des API et l’échange de données.",
+    "category": "development",
+    "keywords": [
+      "json vers toml",
+      "toml vers json",
+      "convertisseur json toml",
+      "convertisseur toml",
+      "convertisseur json",
+      "convertir json en toml",
+      "convertir toml en json",
+      "formateur toml",
+      "formateur json",
+      "convertisseur de données"
+    ],
+    "faq": [
+      {
+        "question": "Quelle est la différence entre JSON et TOML ?",
+        "answer": "Deux formats de sérialisation aux objectifs distincts : <li>JSON est conçu pour l’échange de données (très utilisé dans les API web), tandis que TOML est axé sur les fichiers de configuration.</li> <li>JSON a une syntaxe compacte à base d’accolades/crochets ; TOML adopte une syntaxe lisible de type INI avec sections explicites.</li> <li>TOML prend en charge les commentaires (contrairement à JSON),</li> <li>dispose de types de date/heure natifs (en JSON, encodage personnalisé requis),</li> <li>et est plus facile à écrire pour l’humain, tandis que JSON est plus « machine-friendly ».</li>"
+      },
+      {
+        "question": "Pourquoi convertir entre JSON et TOML ?",
+        "answer": "Scénarios typiques : <li>migration de configurations entre formats (ex. écosystèmes Rust/Go),</li> <li>API exigeant un format différent de vos données,</li> <li>collaboration entre équipes avec outils/préférences variés,</li> <li>rendre un JSON complexe plus lisible pour la configuration,</li> <li>ou intégration avec des outils comme Cargo (Rust) qui utilisent TOML.</li> Ce convertisseur rend la transition fluide et fiable."
+      },
+      {
+        "question": "Le convertisseur est-il sécurisé et respectueux de la vie privée ?",
+        "answer": "Oui. La conversion se fait intégralement dans le navigateur ; aucune donnée n’est téléversée. Vos données ne quittent pas l’appareil et, une fois la page chargée, l’outil fonctionne hors ligne. Pas de cookies ni de tracking ; nous utilisons des bibliothèques clientes éprouvées."
+      },
+      {
+        "question": "Problèmes fréquents lors d’une conversion JSON↔TOML ?",
+        "answer": "Notamment : <li>différences d’échappement des caractères spéciaux,</li> <li>préservation des types (nombre vs chaîne),</li> <li>représentation des structures imbriquées (TOML utilise une notation par points),</li> <li>conversion correcte des tableaux et tables,</li> <li>perte des commentaires lors de TOML→JSON (JSON ne prend pas en charge les commentaires).</li> Notre convertisseur couvre la plupart des cas ; vérifiez néanmoins les sorties critiques."
+      },
+      {
+        "question": "L’outil gère-t-il de gros fichiers JSON ou TOML ?",
+        "answer": "Oui, dans des limites raisonnables – la mémoire du navigateur impose des contraintes. Des fichiers très volumineux (10+ Mo) peuvent être lents ; préférez alors des outils CLI ou des bibliothèques spécifiques au langage. Pour la plupart des configurations et réponses d’API, l’outil convient très bien."
+      }
+    ]
+  },
+  {
+    "slug": "ascii-art-generator",
+    "name": "Générateur d’art ASCII – Convertir des images en art textuel",
+    "description": "Transformez vos images en art ASCII avec cet outil gratuit. Personnalisez l’ensemble de caractères, la largeur et les couleurs pour créer des rendus textuels uniques.",
+    "category": "media",
+    "keywords": [
+      "générateur d’art ascii",
+      "image en ascii",
+      "créateur d’art textuel",
+      "convertisseur ascii",
+      "image en art texte",
+      "générateur de texte artistique",
+      "créateur d’art ascii",
+      "image en art ascii",
+      "texte depuis image",
+      "image en ascii art"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce que l’art ASCII et comment ça fonctionne ?",
+        "answer": "L’art ASCII est une technique qui utilise les caractères imprimables de la norme ASCII pour créer des images. Notre générateur analyse la luminosité des pixels de votre image et les associe à des caractères ASCII correspondants : les zones sombres utilisent des caractères denses comme « @ » ou « # », les zones claires « . » ou des espaces. Le rendu textuel ressemble à l’image d’origine à la bonne échelle."
+      },
+      {
+        "question": "Puis-je personnaliser les caractères utilisés ?",
+        "answer": "Oui ! Vous pouvez définir l’ensemble de caractères pour différents niveaux de luminosité. Par défaut, nous utilisons « @%#*+=-:. » (du plus dense au plus léger), mais vous pouvez le modifier pour d’autres effets – par exemple uniquement « 01 » pour un style binaire."
+      },
+      {
+        "question": "Comment obtenir les meilleurs résultats avec le générateur d’art ASCII ?",
+        "answer": "Conseils : <li>utilisez des images à bon contraste et sujet clair,</li><li>expérimentez différents jeux de caractères – les plus longs offrent davantage de détail,</li><li>ajustez la largeur selon la complexité,</li><li>essayez les modes normal et inversé,</li><li>augmentez la largeur pour plus de détails,</li><li>les logos simples ou portraits fonctionnent souvent le mieux,</li><li>affichez le rendu avec une police à chasse fixe pour un alignement correct.</li>"
+      },
+      {
+        "question": "Mes images sont-elles en sécurité avec cet outil ?",
+        "answer": "Oui. Tout le traitement d’image est effectué localement dans votre navigateur – aucune image n’est envoyée à nos serveurs. La conversion s’exécute sur votre appareil ; vos images restent privées et sécurisées. L’outil fonctionne aussi hors ligne une fois la page chargée."
+      },
+      {
+        "question": "Que puis-je faire avec l’art ASCII généré ?",
+        "answer": "Exemples d’utilisation : <li>le coller dans des e-mails, messages ou commentaires,</li> <li>le télécharger en fichier texte pour des documents ou du code,</li> <li>des projets de creative coding,</li> <li>des designs rétro ou de l’art numérique,</li> <li>des signatures originales pour forums ou e-mail,</li> <li>de l’art ASCII en couleur dans des projets web,</li> <li>ou l’intégrer dans des applications terminal et des jeux.</li>"
+      }
+    ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Sélecteur de couleurs d’image – Extraire les couleurs depuis une image",
+    "description": "Extrayez et identifiez les couleurs de n’importe quelle image. Importez votre photo pour obtenir des codes couleur aux formats HEX, RGB et HSL pour vos projets de design.",
+    "category": "media",
+    "keywords": [
+      "sélecteur de couleurs d’image",
+      "extraire les couleurs d’une image",
+      "générateur de palette de couleurs",
+      "extracteur de couleurs d’image",
+      "récupérer une couleur d’une image",
+      "chercheur de codes couleur",
+      "sélecteur de couleur HEX",
+      "extracteur de couleurs RGB",
+      "sélecteur de couleurs pour site web",
+      "outil couleur pour le design"
+    ],
+    "faq": [
+      {
+        "question": "Comment fonctionne l’Image Color Picker ?",
+        "answer": "Téléversez une image : l’outil l’analyse, identifie les couleurs dominantes et crée une palette. Cliquez n’importe où dans l’image pour obtenir la couleur exacte du pixel. Les valeurs sont affichées en HEX, RGB et HSL, prêtes à être utilisées dans vos sites, applications ou projets de design."
+      },
+      {
+        "question": "Quels formats d’image sont pris en charge ?",
+        "answer": "Les formats courants sont pris en charge : JPEG, PNG, GIF, WebP et BMP. Les images de haute qualité aux couleurs nettes donnent les meilleurs résultats. Une limite de 5 Mo s’applique pour garantir de bonnes performances. Pour un rendu optimal, privilégiez des images bien éclairées avec peu d’artefacts de compression."
+      },
+      {
+        "question": "Comment utiliser les couleurs extraites ?",
+        "answer": "Copiez les valeurs HEX, RGB ou HSL dans Adobe Photoshop, Illustrator, Figma ou Sketch ; utilisez-les dans le CSS de votre site ; créez une palette cohérente pour votre marque ou projet ; enregistrez la palette pour référence ultérieure. Cela facilite la cohérence des couleurs sur différentes plateformes."
+      },
+      {
+        "question": "Mes images sont-elles en sécurité ?",
+        "answer": "Oui. Le traitement est entièrement local dans votre navigateur : vos images ne sont jamais envoyées sur nos serveurs. Aucune donnée d’image n’est conservée après la fermeture de l’onglet ou la navigation hors de l’outil."
+      },
+      {
+        "question": "Quelle est la précision de l’extraction ?",
+        "answer": "Le clic renvoie la valeur du pixel, donc une précision au niveau du pixel. Pour les couleurs dominantes, l’outil utilise des algorithmes avancés. La perception peut toutefois varier selon l’étalonnage de l’écran, la luminosité et l’éclairage ambiant. Pour une précision maximale, utilisez un écran calibré."
+      }
+    ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Vérifier l’état de Library Genesis et de ses miroirs",
+    "description": "Surveillez en temps réel l’état de Library Genesis (LibGen) et de ses sites miroirs. Vérifiez si LibGen est en panne ou accessible depuis votre localisation.",
+    "category": "monitoring",
+    "keywords": [
+      "statut libgen",
+      "surveillance library genesis",
+      "statut miroir libgen",
+      "libgen en panne",
+      "vérificateur libgen",
+      "disponibilité library genesis",
+      "vérificateur de miroirs libgen",
+      "uptime libgen",
+      "miroirs fonctionnels library genesis",
+      "liens alternatifs libgen"
+    ],
+    "faq": [
+      {
+        "question": "Qu’est-ce que Library Genesis (LibGen) ?",
+        "answer": "Library Genesis (LibGen) est un projet de « bibliothèque fantôme » offrant un accès gratuit à des articles scientifiques, textes académiques et livres. Il sert de ressource aux étudiants, chercheurs et enseignants n’ayant pas accès aux contenus payants. Le service fonctionne via un réseau de sites miroirs répliquant sa base de données sur différents domaines et serveurs."
+      },
+      {
+        "question": "Pourquoi surveiller l’état de LibGen ?",
+        "answer": "LibGen et ses miroirs connaissent parfois des interruptions (problèmes serveur, changements de domaine, enjeux juridiques). En surveillant le statut, vous identifiez rapidement les miroirs accessibles depuis votre emplacement et gagnez du temps. Cet outil vérifie plusieurs miroirs officiels et communautaires et fournit des informations de disponibilité en temps réel."
+      },
+      {
+        "question": "Comment fonctionne l’outil LibGen Monitor ?",
+        "answer": "Il effectue des tests en temps réel sur plusieurs domaines et miroirs LibGen pour mesurer leur accessibilité. Des tests côté client (dans votre navigateur) évaluent la connectivité depuis votre position, tandis que des tests côté serveur donnent une vue globale. L’outil affiche temps de réponse, codes d’état HTTP et un indicateur en ligne/hors ligne par site."
+      },
+      {
+        "question": "L’utilisation de cet outil est-elle légale ?",
+        "answer": "Oui. L’outil se limite à vérifier la disponibilité et les temps de réponse – comme les autres services d’uptime. Il n’héberge ni ne distribue de contenu LibGen et n’en fournit pas l’accès direct. En revanche, l’accès à LibGen lui-même peut avoir des implications juridiques différentes selon les lois de votre pays."
+      },
+      {
+        "question": "Pourquoi LibGen peut-il être inaccessible depuis mon emplacement ?",
+        "answer": "Plusieurs raisons possibles : <li>1) problèmes techniques ou panne serveur sur le domaine concerné,</li> <li>2) blocage par votre FAI selon les exigences légales,</li> <li>3) changement ou suppression du domaine,</li><li>4) problèmes de connectivité entre votre position et le serveur.</li> L’outil aide à déterminer s’il s’agit d’un souci local ou d’une indisponibilité globale."
       }
     ]
   }

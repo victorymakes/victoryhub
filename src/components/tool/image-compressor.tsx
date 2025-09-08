@@ -3,11 +3,9 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import {
     AlertTriangle,
-    Upload,
     Download,
     Image as ImageIcon,
     Trash2,
@@ -15,7 +13,6 @@ import {
     X,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Slider } from "@/components/ui/slider";
@@ -23,6 +20,7 @@ import { formatBytes } from "@/lib/file";
 import JSZip from "jszip";
 import FileSaver from "file-saver";
 import Image from "next/image";
+import UploadFiles from "@/components/tool/upload-files";
 
 interface ImageItem {
     id: string;
@@ -39,10 +37,8 @@ const ImageCompressor: React.FC = () => {
     const [images, setImages] = useState<ImageItem[]>([]);
     const [quality, setQuality] = useState<number>(70);
     const [sliderValue, setSliderValue] = useState<number>(70);
-    const [isDragging, setIsDragging] = useState<boolean>(false);
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
     const imagesRef = useRef<ImageItem[]>([]);
     const isProcessingRef = useRef<boolean>(false);
 
@@ -205,32 +201,8 @@ const ImageCompressor: React.FC = () => {
     );
 
     // Handle file input change
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.files && e.target.files.length > 0) {
-            addImages(e.target.files);
-            // Reset the input value so the same file can be selected again
-            e.target.value = "";
-        }
-    };
-
-    // Handle drag and drop
-    const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(true);
-    };
-
-    const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-    };
-
-    const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-
-        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-            addImages(e.dataTransfer.files);
-        }
+    const handleFileChange = (files: FileList | File[]) => {
+        addImages(files);
     };
 
     // Remove a single image
@@ -354,158 +326,106 @@ const ImageCompressor: React.FC = () => {
                                     onClick={clearAllImages}
                                     disabled={isProcessing}
                                 >
-                                    <Trash2 className="h-4 w-4 mr-1" />
+                                    <Trash2 className="h-4 w-4" />
                                     {t("clearAll")}
                                 </Button>
                             )}
                         </div>
-                        <div
-                            className={cn(
-                                "border-2 border-dashed rounded-lg p-6 transition-colors",
-                                "flex flex-col items-center justify-center text-center",
-                                isDragging
-                                    ? "border-primary bg-primary/5"
-                                    : "border-muted-foreground/25 hover:border-primary/50",
-                                images.length > 0 ? "py-4" : "py-10",
-                            )}
-                            onDragOver={handleDragOver}
-                            onDragLeave={handleDragLeave}
-                            onDrop={handleDrop}
-                            onClick={() => fileInputRef.current?.click()}
-                        >
-                            <Input
-                                type="file"
-                                accept="image/*"
-                                ref={fileInputRef}
-                                onChange={handleFileChange}
-                                className="hidden"
-                                multiple
-                            />
-
-                            {images.length > 0 ? (
-                                <div className="w-full">
-                                    <p className="text-sm text-muted-foreground mb-3">
-                                        {t("dropMoreImages")}
-                                    </p>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[300px] overflow-y-auto p-1 relative z-10">
-                                        {images.map((img) => (
-                                            <div
-                                                key={img.id}
-                                                className="relative flex items-center p-2 border rounded-md group"
-                                                onClick={(e) =>
-                                                    e.stopPropagation()
-                                                }
-                                            >
-                                                <div className="relative w-16 h-16 rounded-md border overflow-hidden bg-muted mr-2 flex-shrink-0">
-                                                    {img.compressedUrl ? (
-                                                        <Image
-                                                            src={
-                                                                img.compressedUrl
-                                                            }
-                                                            alt={img.file.name}
-                                                            width={64}
-                                                            height={64}
-                                                            className="object-cover w-full h-full"
-                                                        />
-                                                    ) : (
-                                                        <div className="flex items-center justify-center w-full h-full">
-                                                            {img.status ===
-                                                            "processing" ? (
-                                                                <Loader2 className="h-8 w-8 text-primary animate-spin" />
-                                                            ) : img.status ===
-                                                              "error" ? (
-                                                                <AlertTriangle className="h-8 w-8 text-destructive" />
-                                                            ) : (
-                                                                <ImageIcon className="h-8 w-8 text-muted-foreground/50" />
-                                                            )}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                                <div className="text-sm flex flex-col min-w-0 pr-12 space-y-2">
-                                                    <span className="font-medium truncate">
-                                                        {img.file.name}
-                                                    </span>
-                                                    <div className="flex items-center text-xs text-muted-foreground justify-between">
-                                                        <span>
-                                                            {formatBytes(
-                                                                img.originalSize,
-                                                            )}
-                                                        </span>
-                                                        {img.compressedSize && (
-                                                            <>
-                                                                <span>→ </span>
-                                                                <span>
-                                                                    {formatBytes(
-                                                                        img.compressedSize,
-                                                                    )}
-                                                                    <span className="ml-1 text-green-600">
-                                                                        (
-                                                                        {(
-                                                                            (1 -
-                                                                                img.compressedSize /
-                                                                                    img.originalSize) *
-                                                                            100
-                                                                        ).toFixed(
-                                                                            1,
-                                                                        )}
-                                                                        %)
-                                                                    </span>
-                                                                </span>
-                                                            </>
-                                                        )}
-                                                    </div>
-                                                    {img.status === "error" &&
-                                                        img.error && (
-                                                            <p className="text-xs text-destructive truncate">
-                                                                {img.error}
-                                                            </p>
-                                                        )}
-                                                </div>
-                                                <Button
-                                                    variant={"ghost"}
-                                                    className="absolute top-1 right-1 p-1 rounded-full text-muted-foreground transition-opacity opacity-100"
-                                                    onClick={() =>
-                                                        removeImage(img.id)
-                                                    }
-                                                    disabled={isProcessing}
-                                                >
-                                                    <X className="h-3 w-3" />
-                                                </Button>
-                                                <Button
-                                                    variant={"ghost"}
-                                                    className="absolute bottom-1 right-1 p-1 rounded-full text-muted-foreground transition-opacity opacity-100"
-                                                    onClick={() =>
-                                                        downloadSingleFile(img)
-                                                    }
-                                                    disabled={isProcessing}
-                                                    aria-label={t("download")}
-                                                >
-                                                    <Download className="h-3 w-3" />
-                                                </Button>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            ) : (
-                                <>
-                                    <Upload className="h-10 w-10 text-muted-foreground mb-2" />
-                                    <p className="text-sm font-medium mb-1">
-                                        {t("dragAndDrop")}
-                                    </p>
-                                    <p className="text-xs text-muted-foreground mb-3">
-                                        {t("supportMultiple")}
-                                    </p>
-                                    <Button
-                                        size="sm"
-                                        variant="secondary"
-                                        className="mt-2"
-                                    >
-                                        {t("chooseFiles")}
-                                    </Button>
-                                </>
-                            )}
-                        </div>
+                        <UploadFiles
+                            onFilesSelected={handleFileChange}
+                            multiple={true}
+                            disabled={isProcessing}
+                            accept={"image/*"}
+                        />
                     </div>
+
+                    {/* Image Preview Grid */}
+                    {images && images.length > 0 && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[300px] overflow-y-auto p-1">
+                            {images.map((img) => (
+                                <div
+                                    key={img.id}
+                                    className="relative flex items-center p-2 border rounded-md group"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    <div className="relative w-16 h-16 rounded-md border overflow-hidden bg-muted mr-2 flex-shrink-0">
+                                        {img.compressedUrl ? (
+                                            <Image
+                                                src={img.compressedUrl}
+                                                alt={img.file.name}
+                                                width={64}
+                                                height={64}
+                                                className="object-cover w-full h-full"
+                                            />
+                                        ) : (
+                                            <div className="flex items-center justify-center w-full h-full">
+                                                {img.status === "processing" ? (
+                                                    <Loader2 className="h-8 w-8 text-primary animate-spin" />
+                                                ) : img.status === "error" ? (
+                                                    <AlertTriangle className="h-8 w-8 text-destructive" />
+                                                ) : (
+                                                    <ImageIcon className="h-8 w-8 text-muted-foreground/50" />
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="text-sm flex flex-col min-w-0 pr-12 space-y-2">
+                                        <span className="font-medium truncate">
+                                            {img.file.name}
+                                        </span>
+                                        <div className="flex items-center text-xs text-muted-foreground justify-between">
+                                            <span>
+                                                {formatBytes(img.originalSize)}
+                                            </span>
+                                            {img.compressedSize && (
+                                                <>
+                                                    <span>→ </span>
+                                                    <span>
+                                                        {formatBytes(
+                                                            img.compressedSize,
+                                                        )}
+                                                        <span className="ml-1 text-green-600">
+                                                            (
+                                                            {(
+                                                                (1 -
+                                                                    img.compressedSize /
+                                                                        img.originalSize) *
+                                                                100
+                                                            ).toFixed(1)}
+                                                            %)
+                                                        </span>
+                                                    </span>
+                                                </>
+                                            )}
+                                        </div>
+                                        {img.status === "error" &&
+                                            img.error && (
+                                                <p className="text-xs text-destructive truncate">
+                                                    {img.error}
+                                                </p>
+                                            )}
+                                    </div>
+                                    <Button
+                                        variant={"ghost"}
+                                        className="absolute top-1 right-1 p-1 rounded-full text-muted-foreground transition-opacity opacity-100"
+                                        onClick={() => removeImage(img.id)}
+                                        disabled={isProcessing}
+                                    >
+                                        <X className="h-3 w-3" />
+                                    </Button>
+                                    <Button
+                                        variant={"ghost"}
+                                        className="absolute bottom-1 right-1 p-1 rounded-full text-muted-foreground transition-opacity opacity-100"
+                                        onClick={() => downloadSingleFile(img)}
+                                        disabled={isProcessing}
+                                        aria-label={t("download")}
+                                    >
+                                        <Download className="h-3 w-3" />
+                                    </Button>
+                                </div>
+                            ))}
+                        </div>
+                    )}
 
                     {/* Quality Slider */}
                     <div className="space-y-2">
@@ -610,7 +530,7 @@ const ImageCompressor: React.FC = () => {
                                 onClick={downloadAllCompressedImages}
                                 disabled={!hasCompletedImages}
                             >
-                                <Download className="h-4 w-4 mr-2" />
+                                <Download className="h-4 w-4" />
                                 {t("downloadAll")}
                             </Button>
                         </div>

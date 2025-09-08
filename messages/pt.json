@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Carregando...",
+    "clear": "Limpar",
+    "clearAll": "Limpar tudo",
+    "download": "Baixar",
+    "downloadAll": "Baixar tudo",
+    "copy": "Copiar",
+    "copyAll": "Copiar tudo",
+    "copied": "Copiado!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Solte os arquivos aqui",
+    "dragAndDrop": "Arraste e solte os arquivos aqui ou clique para procurar",
+    "chooseFiles": "Escolher arquivos",
+    "changeFiles": "Alterar arquivos",
+    "clearFiles": "Limpar arquivos"
+  },
   "Navigation": {
     "home": "Início",
     "tools": "Ferramentas",
@@ -82,6 +99,11 @@
   "NotFound": {
     "title": "404 - Página não encontrada",
     "description": "A página que você está procurando não existe ou foi movida.",
+    "goHome": "Ir para a página inicial"
+  },
+  "Error": {
+    "title": "500 - Ocorreu um erro",
+    "description": "Algo correu mal. Tente novamente mais tarde ou contacte o suporte se o problema persistir.",
     "goHome": "Ir para a página inicial"
   },
   "UuidGenerator": {
@@ -286,27 +308,31 @@
     }
   },
   "ImageResizer": {
-    "title": "Redimensionador de Imagem",
-    "description": "Redimensione suas imagens para dimensões específicas mantendo a qualidade",
-    "chooseFiles": "Escolher arquivos",
-    "originalSize": "Tamanho original",
-    "resizedSize": "Tamanho redimensionado",
-    "reduction": "Redução",
-    "downloadAll": "Baixar todos",
-    "dragAndDrop": "Arraste e solte a imagem aqui ou clique para navegar",
-    "dropMoreImages": "Solte mais imagens ou clique para navegar",
-    "supportMultiple": "Suporta múltiplas imagens de uma vez",
-    "dimensions": "Dimensões",
+    "uploadImages": "Enviar imagens",
+    "options": "Opções",
+    "specificDimensions": "Dimensões específicas",
+    "percentageResize": "Redimensionar por porcentagem",
+    "maxDimension": "Dimensão máxima",
     "width": "Largura",
     "height": "Altura",
-    "lockAspectRatio": "Travar proporção",
-    "unlockAspectRatio": "Destravar proporção",
+    "widthPlaceholder": "Insira a largura em pixels",
+    "heightPlaceholder": "Insira a altura em pixels",
+    "maintainAspectRatio": "Manter proporção",
+    "percentage": "Porcentagem",
+    "maxDimensionValue": "Dimensão máxima (pixels)",
+    "maxDimensionHelp": "O lado mais longo será redimensionado para este valor mantendo a proporção",
+    "originalSize": "Tamanho original",
+    "resizedSize": "Tamanho redimensionado",
+    "download": "Baixar",
+    "downloadAll": "Baixar tudo",
+    "clearAll": "Limpar tudo",
+    "image": "imagem",
+    "images": "imagens",
     "processing": "Processando imagens...",
-    "resizeSummary": "Resumo do redimensionamento",
     "errors": {
-      "canvasContextFailed": "Falha ao obter contexto do canvas.",
-      "resizeFailed": "Redimensionamento falhou. Tente uma imagem diferente ou dimensões.",
-      "fileReadFailed": "Falha ao ler arquivo. O arquivo pode estar corrompido."
+      "canvasContextFailed": "Falha ao obter o contexto do canvas.",
+      "resizeFailed": "Falha ao redimensionar. Tente outra imagem ou dimensões.",
+      "fileReadFailed": "Falha ao ler o arquivo. O arquivo pode estar corrompido."
     }
   },
   "ImageConverter": {

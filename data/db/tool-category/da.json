@@ -24,9 +24,21 @@
         "icon": "image"
     },
     {
+        "slug": "calculator",
+        "name": "Beregnere",
+        "description": "Hurtige beregninger, enhedsomregning samt finans- og sundhedsberegnere.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Overvågning og status",
+        "description": "Tjek websteders tilgængelighed, spejl-tilgængelighed, latens og DNS-status.",
+        "icon": "server"
+    },
+    {
         "slug": "utilities",
         "name": "Værktøjer",
-        "description": "Daglige produktivitetsværktøjer og regnemaskiner",
+        "description": "Tilfældig vælger og andre nyttige miniværktøjer.",
         "icon": "activity"
     }
 ]

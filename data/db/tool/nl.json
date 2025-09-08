@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI Calculator – Bereken je Body Mass Index",
     "description": "Bereken je Body Mass Index (BMI) om je gewichtscategorie te bepalen en krijg inzicht in je gezondheid.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi calculator",
       "body mass index",
@@ -400,7 +400,7 @@
     "slug": "bmr-calculator",
     "name": "BMR Calculator – Bereken je Basaal Metabolisme",
     "description": "Bereken je basaal metabolisme (BMR) en totale dagelijkse energieverbruik (TDEE) op basis van leeftijd, geslacht, lengte, gewicht en activiteitsniveau.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr calculator",
       "basaal metabolisme",
@@ -444,7 +444,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "CO2-voetafdruk Calculator – Meet Uw Milieu-impact",
     "description": "Bereken uw persoonlijke of gezins-koolstofvoetafdruk op basis van levensstijlfactoren, waaronder transport, energiegebruik, dieet en consumptiegewoonten.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "CO2-voetafdruk calculator",
       "koolstofvoetafdruk berekenen",
@@ -844,6 +844,446 @@
       {
         "question": "Zijn er beperkingen op bestandsgrootte of aantal?",
         "answer": "Omdat de verwerking lokaal in de browser gebeurt, hangt het af van uw apparaat. Moderne apparaten verwerken moeiteloos afbeeldingen tot 20 MB. Er is geen harde limiet, maar grote hoeveelheden grote bestanden vereisen meer geheugen en rekenkracht. Voor optimale prestaties raden we aan 10–20 grote afbeeldingen per keer te verwerken. Ondersteunde formaten: JPEG, PNG, WebP en meer."
+      }
+    ]
+  },
+  {
+    "slug": "url-tracker-cleaner",
+    "name": "URL-trackercleaner – UTM- en trackingparameters verwijderen",
+    "description": "Identificeer en verwijder trackingparameters uit URL’s, waaronder UTM-tags, klik-ID’s en andere analysetrackers. Maak je links schoon voor privacy en delen.",
+    "category": "privacy",
+    "keywords": [
+      "URL-opschoner",
+      "UTM-parameters verwijderen",
+      "tracking-URL’s opschonen",
+      "UTM-tagverwijderaar",
+      "URL-trackerverwijderaar",
+      "fbclid verwijderen",
+      "gclid verwijderen",
+      "schone URL om te delen",
+      "privacy URL-opschoner",
+      "trackingparameter-verwijderaar"
+    ],
+    "faq": [
+      {
+        "question": "Wat zijn URL-trackingparameters en waarom moet ik ze verwijderen?",
+        "answer": "URL-trackingparameters zijn extra stukjes informatie die aan webadressen worden toegevoegd om marketeers en website-eigenaren te helpen zien waar bezoekers vandaan komen en hoe ze met content omgaan. <br/>Veelvoorkomende voorbeelden zijn UTM-parameters (utm_source, utm_medium, utm_campaign), klik-ID’s (gclid, fbclid) en andere analysetrackers. Hoewel deze parameters nuttig zijn voor bedrijven, kunnen ze je privacy aantasten door je browsegedrag en herkomst te onthullen. <br/>Door ze te verwijderen krijg je schonere, kortere links die privater en makkelijker te delen zijn, en voorkom je onnodige dataverzameling over je online activiteiten."
+      },
+      {
+        "question": "Welke trackingparameters detecteert en verwijdert deze tool?",
+        "answer": "Deze tool detecteert en verwijdert een breed scala aan trackingparameters, waaronder: <li>UTM-parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content),</li> <li>advertentieklik-ID’s (gclid van Google, fbclid van Facebook, msclkid van Microsoft/Bing, dclid van DoubleClick, twclid van Twitter),</li> <li>e-mailmarketingtrackers (mc_eid van Mailchimp, _hsenc en _hsmi van HubSpot),</li> <li>en algemene verwijzingsparameters (ref, source, cmpid).</li> <br/>De tool wordt regelmatig bijgewerkt om nieuwe trackingparameters te herkennen naarmate ze opduiken in het digitale marketingecosysteem."
+      },
+      {
+        "question": "Is deze URL-cleaner veilig en privacyvriendelijk?",
+        "answer": "Ja. Alle URL-verwerking gebeurt lokaal in je browser – er wordt geen data naar onze servers of derden verzonden. Je URL’s worden nooit opgeslagen, gelogd of doorgestuurd. Je kunt dit verifiëren in het netwerkpaneel van je browser tijdens gebruik – er worden geen verzoeken gedaan tijdens het verwerken. Daardoor is het veilig, zelfs voor gevoelige of privélinks."
+      },
+      {
+        "question": "Leidt het verwijderen van trackingparameters tot kapotte URL’s of toegangsfouten?",
+        "answer": "Nee. Trackingparameters zijn aanvullende informatie achter de hoofdstructuur van de URL en zijn niet nodig om de webpagina te laden. De opgeschoonde URL leidt nog steeds naar dezelfde bestemmingspagina, alleen zonder trackinginfo. In zeldzame gevallen waarin een site specifieke parameters vereist, bewaart de tool alle niet-trackingparameters om de functionaliteit te behouden en verwijdert hij alleen de privacygevoelige elementen."
+      },
+      {
+        "question": "Hoe gebruik ik opgeschoonde URL’s voor meer privacy in het dagelijks gebruik?",
+        "answer": "Voor betere privacy: <li>Klik vóór het openen van e-mail- of socialelinks met de rechtermuisknop, kopieer het linkadres en plak het in onze tool om het te schonen.</li> <li>Schoon links op voordat je ze deelt, zodat je geen tracking verspreidt.</li> <li>Overweeg browserextensies die trackingparameters automatisch verwijderen tijdens het browsen.</li> <li>Combineer voor maximale privacy URL-schoonmaak met andere praktijken zoals een VPN, een privacygerichte browser en regelmatig cookies wissen.</li> </br>Deze tool is een eenvoudige eerste stap naar meer privé surfgedrag."
+      }
+    ]
+  },
+  {
+    "slug": "text-redactor",
+    "name": "Tekstanonimisatie – PII en gevoelige informatie maskeren",
+    "description": "Gratis online tekstanonimisatie: maskeer automatisch e-mails, telefoonnummers, postadressen en andere PII. Kopieer–plak, anonimiseer en exporteer.",
+    "category": "privacy",
+    "keywords": [
+      "tekstanonimisatie",
+      "PII-redactie",
+      "datamasking",
+      "privacytool",
+      "gevoelige informatie",
+      "e-mailredactie",
+      "telefoonnummermaskering",
+      "adresredactie",
+      "tekstanonimiseerder",
+      "gegevensbescherming"
+    ],
+    "faq": [
+      {
+        "question": "Wat is tekstanonimisatie en waarom is het belangrijk?",
+        "answer": "Tekstanonimisatie (redactie) is het verwijderen of maskeren van gevoelige informatie uit documenten of tekst. Het is belangrijk voor <li>het beschermen van persoonsidentificerende informatie (PII),</li> <li>het naleven van privacywetgeving (zoals AVG/GDPR, CCPA),</li> <li>het voorkomen van identiteitsdiefstal,</li> <li>en het veilig kunnen delen van documenten met behoud van vertrouwelijkheid.</li> Onze tool detecteert en maskeert automatisch veelvoorkomende PII-patronen zoals e-mails, telefoonnummers en adressen."
+      },
+      {
+        "question": "Welke soorten informatie kan deze tool redigeren?",
+        "answer": "De tool detecteert en maskeert automatisch verschillende typen PII, waaronder: <li>e-mailadressen,</li> <li>telefoonnummers (internationale formaten ondersteund),</li> <li>postadressen,</li> <li>IP-adressen,</li> <li>creditcardnummers,</li> <li>burgerservicenummers/SSN,</li> <li>geboortedata,</li> <li>en namen wanneer herkenbaar in gangbare formaten.</li> De tool gebruikt patroonherkenning en vervangt deze gegevens door placeholders waarbij de oorspronkelijke tekstopmaak behouden blijft."
+      },
+      {
+        "question": "Zijn mijn gegevens veilig wanneer ik deze tool gebruik?",
+        "answer": "Ja. Alles gebeurt in je browser – er wordt niets naar servers verzonden of ergens opgeslagen. De verwerking vindt lokaal plaats op je apparaat, wat maximale privacy en veiligheid biedt. Zodra je het tabblad sluit, blijft er geen spoor van je tekst achter. Ideaal voor vertrouwelijke informatie."
+      },
+      {
+        "question": "Hoe nauwkeurig is de automatische redactie?",
+        "answer": "Zeer nauwkeurig voor standaardformaten zoals e-mails, telefoonnummers en creditcards. Geen enkel automatisch systeem is echter perfect. De tool gebruikt patroonmatching en reguliere expressies; ongewone formaten of contextuele informatie kunnen worden gemist. Controleer bij kritische behoeften de output handmatig en voeg zo nodig aangepaste termen/patronen toe."
+      },
+      {
+        "question": "Kan ik aanpassen wat wordt geredigeerd en hoe het eruitziet?",
+        "answer": "Ja. Je kunt kiezen welke PII-categorieën worden gemaskeerd (aan/uit), de stijl van redactie bepalen (vervangtekens zoals XXX, zwarte balken of aangepaste tekens) en aangepaste termen of patronen toevoegen, bijvoorbeeld voor organisatie-specifieke informatie."
+      }
+    ]
+  },
+  {
+    "slug": "password-strength-checker",
+    "name": "Wachtwoordsterktecontrole – Beveiliging van wachtwoorden beoordelen",
+    "description": "Controleer de sterkte van je wachtwoorden en ontvang persoonlijke verbetersuggesties. Bescherm je accounts met sterke wachtwoordpraktijken.",
+    "category": "privacy",
+    "keywords": [
+      "wachtwoordsterktecontrole",
+      "wachtwoordbeveiliging",
+      "wachtwoordanalyse",
+      "veilig wachtwoord",
+      "wachtwoordbeoordeling",
+      "wachtwoordmeter",
+      "beveiligingstool",
+      "wachtwoordvalidator",
+      "wachtwoordtest",
+      "accountbeveiliging"
+    ],
+    "faq": [
+      {
+        "question": "Hoe beoordeelt de checker de sterkte van mijn wachtwoord?",
+        "answer": "We beoordelen wachtwoorden op meerdere factoren: <li>lengte (langer is beter),</li> <li>variatie in tekens (hoofdletters, kleine letters, cijfers, symbolen),</li> <li>afwezigheid van veelvoorkomende patronen of woorden uit woordenlijsten,</li> <li>en het ontbreken van sequenties of herhaalde tekens.</li> Elke factor draagt bij aan een totaalscore (zwak, redelijk, goed, sterk). De evaluatie gebeurt volledig in je browser – je wachtwoord wordt nooit verzonden."
+      },
+      {
+        "question": "Hoe maak ik een sterk wachtwoord?",
+        "answer": "Aanbevelingen: <li>gebruik minstens 12–16 tekens – lengte is het belangrijkst,</li> <li>combineer hoofdletters/kleine letters, cijfers en symbolen,</li> <li>vermijd veelvoorkomende woorden, zinnen of persoonlijke info,</li> <li>gebruik geen sequenties zoals ‘123456’ of ‘qwerty’,</li> <li>overweeg een passphrase – een reeks willekeurige woorden met cijfers en symbolen,</li> <li>gebruik voor elke dienst een uniek wachtwoord – nooit hergebruiken,</li> <li>gebruik een wachtwoordmanager om complexe wachtwoorden te genereren en op te slaan.</li>"
+      },
+      {
+        "question": "Waarom wordt mijn lange wachtwoord toch als zwak beoordeeld?",
+        "answer": "Lengte alleen garandeert geen sterkte. Een lang wachtwoord kan zwak zijn als het: <li>veelvoorkomende woorden of zinnen bevat (zoals ‘iloveyou’ of ‘password123’),</li> <li>voorspelbare patronen gebruikt (zoals ‘qwerty’ of ‘123456’) of herhalingen (‘aaaaa’),</li> <li>persoonlijke informatie bevat die makkelijk te raden is,</li> <li>of onvoldoende tekenvariatie heeft (bijv. alleen kleine letters).</li> De sterkste wachtwoorden combineren lengte met onvoorspelbaarheid en diversiteit."
+      },
+      {
+        "question": "Zijn passphrases beter dan korte ‘complexe’ wachtwoorden?",
+        "answer": "Vaak wel. Een passphrase zoals ‘correct-horse-battery-staple’ of ‘purple_monkey_dinosaur_42!’ is doorgaans langer, makkelijker te onthouden en lastiger te kraken dan een kort ‘complex’ wachtwoord zoals ‘P@s$w0rd!’. Ideaal is 3–5 willekeurige woorden met wat hoofdletters, cijfers en symbolen."
+      },
+      {
+        "question": "Hoe vaak moet ik mijn wachtwoorden wijzigen?",
+        "answer": "Moderne richtlijnen (bijv. van NIST) ontraden verplichte periodieke wijzigingen. Richt je in plaats daarvan op: <li>unieke, sterke wachtwoorden per account,</li> <li>direct wijzigen na een datalek,</li> <li>wissen bij vermoeden van compromis,</li> <li>twee-factor-authenticatie (2FA) inschakelen waar mogelijk,</li> <li>en een wachtwoordmanager gebruiken om unieke, complexe wachtwoorden te beheren.</li>"
+      }
+    ]
+  },
+  {
+    "slug": "barcode-generator",
+    "name": "Barcodegenerator – Maak CODE128- en EAN-13-barcodes online",
+    "description": "Genereer gratis professionele CODE128- en EAN-13-barcodes online. Pas grootte, kleuren en tekstweergave aan voor productlabels, voorraadbeheer en retailtoepassingen.",
+    "category": "media",
+    "keywords": [
+      "barcodegenerator",
+      "code128-generator",
+      "ean13-generator",
+      "barcode online maken",
+      "gratis barcodemaker",
+      "productbarcodegenerator",
+      "barcodecreator",
+      "upc-barcodegenerator",
+      "retailbarcode",
+      "voorraadbarcode-tool"
+    ],
+    "faq": [
+      {
+        "question": "Welke soorten barcodes kan ik maken met deze tool?",
+        "answer": "Deze tool ondersteunt twee van de meest gebruikte barcodetypen: CODE128 en EAN-13. <li>CODE128 is veelzijdig en hogedichtheid en kan alle 128 ASCII-tekens encoderen – ideaal voor alfanumerieke data in logistiek, voorraad en documentbeheer.</li> <li>EAN-13 is de wereldwijde standaard voor retail en bestaat uit 13 cijfers die land, fabrikant en product identificeren.</li> Onze generator produceert standaarden-conforme barcodes voor professioneel en persoonlijk gebruik."
+      },
+      {
+        "question": "Hoe maak ik een geldige EAN-13-barcode?",
+        "answer": "Voer exact 12 cijfers in (het 13e cijfer is een controlecijfer dat onze generator automatisch berekent). <li>De eerste 2–3 cijfers: landcode,</li><li>de volgende 4–5: fabrikant,</li><li>de resterende: productcode.</li> Voor tests kun je nummers gebruiken die beginnen met 200–299 (gereserveerd voor intern winkelgebruik). Voor commercieel gebruik moet je je registreren bij GS1 om een legitiem fabrikantprefix te verkrijgen."
+      },
+      {
+        "question": "Kan ik het uiterlijk van mijn barcodes aanpassen?",
+        "answer": "Ja. <li>Stel de balkbreedte (lijndikte) en -hoogte in,</li><li>wijzig voorgrond- (balken) en achtergrondkleuren,</li><li>toon/verberg de numerieke waarde en pas marge en lettergrootte aan.</li> Zo passen je barcodes zowel functioneel als visueel in je toepassing."
+      },
+      {
+        "question": "Hoe kan ik de gegenereerde barcodes gebruiken in mijn projecten?",
+        "answer": "Download als PNG en gebruik ze voor: <li>productverpakkingen, voorraadlabels, prijskaartjes, lidmaatschapskaarten, tickets en assettracking,</li> <li>PDF’s, websites, mobiele apps of e-commerceplatforms.</li> Voor drukwerk raden we minstens 300 DPI aan en testen met een barcodescanner vóór massaproductie."
+      },
+      {
+        "question": "Zijn deze barcodes compatibel met standaardscanners?",
+        "answer": "Ja, ze voldoen aan internationale standaarden en werken met vrijwel alle commerciële barcodescanners. <li>CODE128 werkt met de meeste generieke scanners in retail, magazijn en kantoor.</li><li>EAN-13 is specifiek ontworpen voor POS-systemen.</li> Voor optimale scanbaarheid: houd voldoende ‘quiet zones’ rondom, zorg voor hoog contrast en een geschikte grootte."
+      }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "name": "Regex-tester – Reguliere expressies testen en debuggen",
+    "description": "Test, debug en valideer reguliere expressies met deze interactieve tool. Visualiseer matches in realtime met ondersteuning voor diverse regex-vlaggen en patronen.",
+    "category": "development",
+    "keywords": [
+      "regex-tester",
+      "reguliere expressie",
+      "regex-validator",
+      "regex-debugger",
+      "patroonmatching",
+      "regex-vlaggen",
+      "regex testtool",
+      "regex-checker",
+      "regex-patroon",
+      "regex-match"
+    ],
+    "faq": [
+      {
+        "question": "Wat zijn reguliere expressies en waarom zijn ze nuttig?",
+        "answer": "Reguliere expressies (regex) zijn speciale tekenreeksen die zoekpatronen definiëren. Ze zijn krachtig voor tekstverwerking, validatie en extractie. Regex is handig voor <li>het valideren van invoerformaten (zoals e-mails of telefoonnummers),</li> <li>het extraheren van specifieke data uit tekst,</li> <li>zoeken en vervangen,</li> <li>parsen en transformeren van data,</li> <li>en het implementeren van zoekfunctionaliteit.</li> Ontwikkelaars, data-analisten en IT-professionals gebruiken regex in programmeertalen, teksteditors en commandline-tools."
+      },
+      {
+        "question": "Wat betekenen de verschillende regex-vlaggen?",
+        "answer": "Vlaggen wijzigen hoe matching werkt: <li><strong>g (global)</strong>: vindt alle matches in plaats van te stoppen na de eerste,</li> <li><strong>i (case-insensitive)</strong>: negeert hoofd-/kleine letters,</li> <li><strong>m (multiline)</strong>: ^ en $ matchen het begin/einde van elke regel,</li> <li><strong>s (dotAll)</strong>: de punt (.) matcht ook nieuwe regels,</li> <li><strong>u (unicode)</strong>: behandelt het patroon als Unicode,</li> <li><strong>y (sticky)</strong>: matcht alleen vanaf de lastIndex-positie en gaat niet verder.</li> Ondersteuning verschilt per taal/tool, maar deze zijn gangbaar in JavaScript."
+      },
+      {
+        "question": "Hoe maak ik effectieve reguliere expressies?",
+        "answer": "Best practices: <li>begin simpel en bouw stapsgewijs op – test elke stap,</li> <li>gebruik onze tester om matches live te visualiseren,</li> <li>leer veelgebruikte patronen (e-mail, URL, telefoon),</li> <li>gebruik tekenklassen ([a-z], \\d, \\w) voor leesbaarheid,</li> <li>wees specifiek om al te ‘hebberige’ matches te vermijden,</li> <li>gebruik niet-capturerende groepen (?:...) wanneer je de inhoud niet nodig hebt,</li> <li>let op performance bij complexe patronen,</li> <li>voeg commentaar toe met de x-vlag als ondersteund,</li> <li>test met randgevallen en onverwachte invoer.</li> De meest onderhoudbare regex is vaak de eenvoudigste die voldoet."
+      },
+      {
+        "question": "Zijn mijn data veilig met deze regex-tester?",
+        "answer": "Ja. Alles draait in je browser – er wordt geen data verzonden of opgeslagen. Matching gebeurt lokaal op je apparaat, wat maximale privacy en veiligheid biedt. Na het sluiten van de pagina blijft er geen spoor achter, dus geschikt voor gevoelige data."
+      },
+      {
+        "question": "Wat zijn enkele veelgebruikte regex-patronen?",
+        "answer": "Voorbeelden: <li><strong>E-mail</strong>: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}</li> <li><strong>URL</strong>: https?:\\/\\/[\\w\\.-]+\\.[a-zA-Z]{2,}[\\/\\w\\.-]*</li> <li><strong>Telefoon (VS)</strong>: \\(\\d{3}\\)\\s?\\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}</li> <li><strong>Datum (YYYY-MM-DD)</strong>: \\d{4}-\\d{2}-\\d{2}</li> <li><strong>Tijd (HH:MM)</strong>: ([01]?[0-9]|2[0-3]):[0-5][0-9]</li> <li><strong>IP-adres</strong>: \\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b</li> <li><strong>Wachtwoordsterkte</strong>: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^\\w\\s]).{8,}$</li> <li><strong>HTML-tag</strong>: <([a-z]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)</li> Pas ze aan je gebruikssituatie aan."
+      }
+    ]
+  },
+  {
+    "slug": "json-xml-converter",
+    "name": "JSON-XML-converter – Converteren tussen JSON en XML",
+    "description": "Converteer eenvoudig tussen JSON- en XML-formaten met deze gratis tool. Perfect voor datatransformatie, API-integratie en conversie van configuratiebestanden.",
+    "category": "development",
+    "keywords": [
+      "json naar xml converter",
+      "xml naar json converter",
+      "json xml transformatie",
+      "converteer json naar xml",
+      "converteer xml naar json",
+      "json xml parser",
+      "converter voor dataformaten",
+      "api-dataconverter",
+      "xml json conversie",
+      "online json xml tool"
+    ],
+    "faq": [
+      {
+        "question": "Wat is het verschil tussen JSON en XML?",
+        "answer": "JSON (JavaScript Object Notation) en XML (Extensible Markup Language) zijn beide gegevensuitwisselingsformaten, maar verschillen op meerdere punten. <li>JSON is lichtgewicht, gebruikt eenvoudige sleutel-waarde-syntaxis en is native voor JavaScript. Het is compacter, leesbaarder en sneller te parsen.</li> <li>XML is uitvoeriger met openende/sluitende tags, ondersteunt attributen en namespaces en kan strikt worden gevalideerd met schema’s.</li> XML is flexibeler voor complexe documentstructuren, terwijl JSON efficiënter is voor eenvoudige datatransfers."
+      },
+      {
+        "question": "Wanneer gebruik ik JSON en wanneer XML?",
+        "answer": "<li>Kies JSON voor: lichtgewicht uitwisseling, JavaScript-integratie, eenvoudige datastructuren, API-responses, configuratiebestanden of mobiele apps waar bandbreedte telt.</li> <li>Kies XML voor: documentgeoriënteerde data, complexe hiërarchieën, metadata via attributen, namespace-ondersteuning, schema­validatie of compatibiliteit met legacy/enterprise-systemen. Sectoren als zorg (HL7), financiën (FIX) en uitgeverij (DocBook) hebben gevestigde XML-standaarden.</li> Onze converter helpt je te wisselen afhankelijk van je behoeften."
+      },
+      {
+        "question": "Hoe gaat deze JSON-XML-converter om met complexe datastructuren?",
+        "answer": "We behouden hiërarchische relaties tijdens de transformatie. <li>JSON→XML: arrays worden herhaalde elementen, geneste objecten worden kindelementen en speciale tekens worden correct geescaped.</li> <li>XML→JSON: elementen met attributen worden geneste objecten, herhaalde elementen worden arrays en tekstinhoud blijft behouden.</li> De structurele integriteit blijft intact volgens de conventies van het doelformaat."
+      },
+      {
+        "question": "Zijn er beperkingen bij conversie tussen JSON en XML?",
+        "answer": "Ja: <li>XML-attributen hebben geen directe tegenhanger in JSON en worden meestal omgezet naar geneste objecten of speciale velden,</li> <li>gemengde XML-inhoud (tekst + elementen) map je niet netjes naar JSON,</li> <li>namespaces worden vaak prefixeigenschappen in JSON,</li> <li>verwerkingsinstructies en DTD’s gaan verloren bij omzetting naar JSON,</li> <li>JSON onderscheidt geen elementen en attributen.</li> Toch dekt de converter de meeste gangbare scenario’s effectief."
+      },
+      {
+        "question": "Hoe zorg ik dat mijn geconverteerde data geldig is in het doelformaat?",
+        "answer": "Zorg eerst dat je brondata goed gevormd is. Controleer daarna: <li>voor JSON: parseerbaar met JSON.parse(),</li> <li>voor XML: valideer tegen XML-regels of een specifiek schema,</li> <li>voor JSON-output: juiste aanhaling van sleutels en nestings,</li> <li>voor XML-output: correcte nesting/sluiting en escaping van speciale tekens.</li> Voor kritieke toepassingen kun je aanvullende validatietools inzetten."
+      }
+    ]
+  },
+  {
+    "slug": "json-yaml-converter",
+    "name": "JSON-YAML-converter – Converteren tussen JSON en YAML",
+    "description": "Converteer moeiteloos tussen JSON- en YAML-dataformaten met deze gratis tool. Ideaal voor ontwikkelaars die met configuratiebestanden, API’s en gegevensuitwisseling werken.",
+    "category": "development",
+    "keywords": [
+      "json naar yaml",
+      "yaml naar json",
+      "json yaml converter",
+      "yaml-converter",
+      "json-converter",
+      "converteer json naar yaml",
+      "converteer yaml naar json",
+      "yaml-formatter",
+      "json-formatter",
+      "dataformaatconverter"
+    ],
+    "faq": [
+      {
+        "question": "Wat is het verschil tussen JSON en YAML?",
+        "answer": "Beide zijn serialisatieformaten, maar: <li>JSON is compacter en gebruikt accolades, blokhaken en aanhalingstekens – ideaal voor transmissie,</li> <li>YAML is mensvriendelijker met inspringingsgebaseerde hiërarchie, ondersteunt commentaar en geavanceerde structuren zoals anchors en referenties.</li> YAML is vaak de voorkeur voor configuraties; JSON is populair voor API’s en data-uitwisseling vanwege eenvoud en parseersnelheid."
+      },
+      {
+        "question": "Waarom zou ik converteren tussen JSON en YAML?",
+        "answer": "Handig wanneer je: <li>configuraties migreert tussen systemen met verschillende formaten (bijv. van JSON naar Kubernetes-YAML),</li> <li>werkt met API’s die een ander formaat accepteren dan je bron,</li> <li>samenwerkt met teams met verschillende tools/voorkeuren,</li> <li>of een complex JSON-document leesbaarder wilt maken voor documentatie of debuggen.</li> Deze converter maakt die overstappen eenvoudig en foutloos."
+      },
+      {
+        "question": "Is deze converter veilig en privé?",
+        "answer": "Ja. Alle conversies gebeuren lokaal in je browser – je data verlaat je apparaat niet. Dat is geschikt voor gevoelige configuraties of propriëtaire datastructuren. In het netwerkpaneel zie je dat er geen transmissie plaatsvindt."
+      },
+      {
+        "question": "Wat zijn veelvoorkomende problemen bij JSON↔YAML-conversie?",
+        "answer": "Bijvoorbeeld: <li>afhandeling van speciale tekens (YAML vereist vaker escapings),</li> <li>behoud van datatypen (nummers vs. strings),</li> <li>correcte inspringing bij conversie naar YAML,</li> <li>meerregelige strings,</li> <li>en behoud van commentaar (JSON ondersteunt geen commentaar, YAML wel).</li> Onze converter handelt de meeste randgevallen af, maar het is goed om complexe output te controleren."
+      },
+      {
+        "question": "Kan ik deze tool gebruiken voor grote JSON- of YAML-bestanden?",
+        "answer": "Ja, omdat alles lokaal gebeurt, verwerkt de tool redelijk grote bestanden. Zeer grote bestanden (meerdere MB’s) kunnen performance-issues geven afhankelijk van je apparaat. Voor extreem grote datasets kun je commandline-tools zoals ‘yq’ of ‘jq’ overwegen."
+      }
+    ]
+  },
+  {
+    "slug": "json-toml-converter",
+    "name": "JSON-TOML-converter – Converteren tussen JSON en TOML",
+    "description": "Converteer eenvoudig tussen JSON- en TOML-formaten met deze gratis tool. Perfect voor ontwikkelaars die werken met configuraties, API’s en gegevensuitwisseling.",
+    "category": "development",
+    "keywords": [
+      "json naar toml",
+      "toml naar json",
+      "json toml converter",
+      "toml-converter",
+      "json-converter",
+      "converteer json naar toml",
+      "converteer toml naar json",
+      "toml-formatter",
+      "json-formatter",
+      "dataconverter"
+    ],
+    "faq": [
+      {
+        "question": "Wat is het verschil tussen JSON en TOML?",
+        "answer": "Beide zijn serialisatieformaten maar met verschillende doelen: <li>JSON is ontworpen voor gegevensuitwisseling (veel gebruikt in web-API’s), terwijl TOML primair is bedoeld voor configuratiebestanden.</li> <li>JSON heeft een compacte syntaxis met accolades en blokhaken; TOML gebruikt een beter leesbare INI-achtige syntaxis met expliciete secties.</li> <li>TOML ondersteunt commentaar (JSON officieel niet),</li> <li>heeft native datum-/tijdtypen (JSON vereist aangepaste codering),</li> <li>en is mensvriendelijker om te schrijven, terwijl JSON machinevriendelijker is.</li>"
+      },
+      {
+        "question": "Waarom converteren tussen JSON en TOML?",
+        "answer": "Typische scenario’s: <li>migreren van configuraties tussen formaten (bijv. in Rust/Go-ecosystemen),</li> <li>werken met API’s die een ander formaat eisen dan je data,</li> <li>samenwerken met teams met verschillende tools/voorkeuren,</li> <li>een complex JSON-document leesbaarder maken voor configuratie,</li> <li>of integreren met tools zoals Cargo (Rust) die TOML gebruiken.</li> Deze converter maakt de overgang soepel en betrouwbaar."
+      },
+      {
+        "question": "Is deze converter veilig en privacyvriendelijk?",
+        "answer": "Ja. De conversie gebeurt volledig in de browser; er wordt niets geüpload. Je data verlaat je apparaat niet en, zodra de pagina is geladen, werkt de tool ook offline. Geen cookies of tracking; we gebruiken beproefde clientbibliotheken."
+      },
+      {
+        "question": "Wat zijn veelvoorkomende issues bij JSON↔TOML?",
+        "answer": "Onder meer: <li>verschillen in escaping van speciale tekens,</li> <li>behoud van datatypen (getal vs. string),</li> <li>representatie van geneste structuren (TOML gebruikt puntnotatie),</li> <li>juiste conversie van arrays en tabellen,</li> <li>verlies van commentaar bij TOML→JSON (JSON ondersteunt geen commentaar).</li> Onze converter dekt de meeste gevallen – controleer kritieke output altijd."
+      },
+      {
+        "question": "Kan de tool grote JSON- of TOML-bestanden aan?",
+        "answer": "Ja, binnen redelijke grenzen – de browsergeheugenlimieten zijn leidend. Zeer grote bestanden (10+ MB) kunnen traag zijn; gebruik in dat geval CLI-tools of taalspecifieke libraries. Voor de meeste configuraties en API-responses is de tool ruim voldoende."
+      }
+    ]
+  },
+  {
+    "slug": "ascii-art-generator",
+    "name": "ASCII-artgenerator – Afbeeldingen omzetten naar tekstkunst",
+    "description": "Zet je afbeeldingen om in ASCII-art met deze gratis tool. Pas het tekenbestand, de breedte en kleuren aan om unieke tekstuele weergaven te maken.",
+    "category": "media",
+    "keywords": [
+      "ascii-artgenerator",
+      "afbeelding naar ascii",
+      "tekstkunstmaker",
+      "ascii-converter",
+      "afbeelding naar tekstkunst",
+      "tekstkunstgenerator",
+      "ascii-art maken",
+      "afbeelding naar ascii-art",
+      "tekst uit afbeelding",
+      "ascii-afbeelding"
+    ],
+    "faq": [
+      {
+        "question": "Wat is ASCII-art en hoe werkt het?",
+        "answer": "ASCII-art is een techniek waarbij afdrukbare tekens uit de ASCII-standaard worden gebruikt om afbeeldingen te creëren. Onze generator analyseert de helderheid van pixels in je afbeelding en koppelt deze aan overeenkomstige ASCII-tekens. Donkere gebieden worden weergegeven met dichtere tekens zoals ‘@’ of ‘#’, lichtere gebieden met ‘.’ of spaties. Zo ontstaat een tekstweergave die op de originele afbeelding lijkt bij de juiste schaal."
+      },
+      {
+        "question": "Kan ik de gebruikte tekens aanpassen?",
+        "answer": "Ja! Je kunt het tekenbestand voor verschillende helderheidsniveaus aanpassen. Standaard gebruiken we ‘@%#*+=-:. ’ van dicht naar licht, maar je kunt dit wijzigen voor andere effecten. Gebruik bijvoorbeeld alleen ‘01’ voor een binaire stijl."
+      },
+      {
+        "question": "Hoe krijg ik de beste resultaten uit de ASCII-artgenerator?",
+        "answer": "Tips: <li>gebruik afbeeldingen met goed contrast en een duidelijk onderwerp,</li><li>experimenteer met verschillende tekenbestanden – langere reeksen geven meer detail,</li><li>pas de breedte aan op basis van de complexiteit,</li><li>probeer zowel normale als omgekeerde modus,</li><li>voor meer detail: verhoog de uitvoerbreedte,</li><li>eenvoudige logo’s of portretten werken vaak beter dan complexe scènes,</li><li>bekijk het resultaat in een monospaced lettertype voor correcte uitlijning.</li>"
+      },
+      {
+        "question": "Zijn mijn afbeeldingen veilig bij gebruik van deze tool?",
+        "answer": "Ja. Alle beeldverwerking gebeurt lokaal in je browser – er wordt niets naar onze servers geüpload. De conversie draait op je apparaat, waardoor je afbeeldingen privé en veilig blijven. De tool werkt ook offline zodra de pagina is geladen."
+      },
+      {
+        "question": "Wat kan ik met de gegenereerde ASCII-art doen?",
+        "answer": "Mogelijkheden: <li>plak in e-mails, berichten of reacties,</li> <li>download als tekstbestand voor documenten of code,</li> <li>gebruik in creative-codingprojecten,</li> <li>retro-designs of digitale kunst,</li> <li>unieke handtekeningen voor fora of e-mail,</li> <li>gekleurde ASCII-art in webprojecten,</li><li>of integreer in terminalapps of games.</li>"
+      }
+    ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Afbeeldingskleurkiezer – Kleuren uit afbeeldingen halen",
+    "description": "Haal en identificeer kleuren uit elke afbeelding. Upload je foto om kleurcodes in HEX-, RGB- en HSL-indeling te krijgen voor je ontwerp­projecten.",
+    "category": "media",
+    "keywords": [
+      "afbeeldingskleurkiezer",
+      "kleuren uit afbeelding halen",
+      "kleurpaletgenerator",
+      "afbeeldingskleur-extractor",
+      "kleur uit afbeelding halen",
+      "kleurcodezoeker",
+      "HEX-kleurkiezer",
+      "RGB-kleurextractor",
+      "website-kleurkiezer",
+      "ontwerptool voor kleuren"
+    ],
+    "faq": [
+      {
+        "question": "Hoe werkt de Image Color Picker?",
+        "answer": "Upload een afbeelding. De tool analyseert het beeld, herkent dominante kleuren en maakt een palet. Klik ergens in de afbeelding om de exacte kleur van die pixel te zien. Waarden worden getoond als HEX, RGB en HSL, klaar voor gebruik in websites, apps en designprojecten."
+      },
+      {
+        "question": "Welke bestandsformaten worden ondersteund?",
+        "answer": "Gangbare formaten zoals JPEG, PNG, GIF, WebP en BMP worden ondersteund. Hoogwaardige afbeeldingen met duidelijke kleuren geven de beste resultaten. Om de prestaties te waarborgen geldt een limiet van 5MB. Gebruik bij voorkeur goed belichte beelden met weinig compressie-artefacten."
+      },
+      {
+        "question": "Hoe kan ik de geëxtraheerde kleuren gebruiken?",
+        "answer": "Kopieer HEX-, RGB- of HSL-waarden naar Adobe Photoshop, Illustrator, Figma of Sketch; gebruik de kleurcodes in de CSS van je site; maak een consistente merk- of project­palet; sla de palet op voor later. Zo houd je kleurconsistentie over verschillende platforms."
+      },
+      {
+        "question": "Zijn mijn afbeeldingen veilig?",
+        "answer": "Ja. Alles wordt lokaal in je browser verwerkt—afbeeldingen worden niet naar onze servers geüpload. Er wordt niets opgeslagen nadat je het tabblad sluit of de pagina verlaat."
+      },
+      {
+        "question": "Hoe nauwkeurig is de kleurextractie?",
+        "answer": "Een klik geeft de exacte pixelkleur: zeer nauwkeurig. Voor dominante kleuren gebruikt de tool geavanceerde algoritmen. Houd rekening met kleine verschillen door monitorkalibratie, schermhelderheid en omgevinglicht. Voor maximale precisie is een gekalibreerd scherm aan te raden."
+      }
+    ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Controleer de status en mirrors van Library Genesis",
+    "description": "Controleer in realtime de status van Library Genesis (LibGen) en de mirrorsites. Zie of LibGen offline is of bereikbaar is vanaf jouw locatie.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen status",
+      "library genesis monitor",
+      "libgen mirror status",
+      "libgen offline",
+      "libgen checker",
+      "library genesis beschikbaarheid",
+      "libgen mirror checker",
+      "libgen uptime",
+      "werkende mirrors library genesis",
+      "alternatieve links libgen"
+    ],
+    "faq": [
+      {
+        "question": "Wat is Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) is een ‘shadow library’ die gratis toegang biedt tot wetenschappelijke artikelen, academische teksten en boeken. Het is bedoeld voor studenten, onderzoekers en docenten die geen toegang hebben tot betaalde content. De dienst draait op een netwerk van mirrorsites die de database repliceren over verschillende domeinen en servers."
+      },
+      {
+        "question": "Waarom de status van LibGen monitoren?",
+        "answer": "Door serverproblemen, domeinwijzigingen of juridische kwesties kan er af en toe downtime zijn. Met monitoring zie je snel welke mirrors vanaf jouw locatie werken, wat tijd scheelt als je de dienst nodig hebt. De tool controleert meerdere officiële en community-mirrors en toont realtime beschikbaarheid."
+      },
+      {
+        "question": "Hoe werkt deze tool?",
+        "answer": "We voeren realtime checks uit op meerdere LibGen-domeinen en mirrors om bereikbaarheid te meten. Client-side checks draaien in je browser (situatie vanaf jouw locatie); server-side checks geven een wereldwijd beeld. We tonen responstijden, HTTP-statuscodes en een eenvoudige up/down-indicator per site."
+      },
+      {
+        "question": "Is het legaal om dit te gebruiken?",
+        "answer": "Ja. De tool meet enkel beschikbaarheid en responstijden, vergelijkbaar met andere uptime-diensten. Er wordt geen LibGen-content gehost, verspreid of direct aangeboden. Toegang tot LibGen zelf kan juridisch verschillen per land."
+      },
+      {
+        "question": "Waarom is LibGen mogelijk niet bereikbaar?",
+        "answer": "Oorzaken kunnen zijn: <li>1) technische problemen of serverstoring bij het domein,</li> <li>2) blokkade door je ISP vanwege wettelijke eisen,</li> <li>3) domein is gewijzigd of offline gehaald,</li><li>4) netwerkproblemen tussen jouw netwerk en de server.</li> De tool helpt bepalen of het lokaal of wereldwijd is."
       }
     ]
   }

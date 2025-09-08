@@ -181,7 +181,7 @@ export default function RandomPicker() {
                                     onClick={addItem}
                                     disabled={!newItem.trim()}
                                 >
-                                    <Plus className="h-4 w-4 mr-2" />
+                                    <Plus className="h-4 w-4 " />
                                     {t("add")}
                                 </Button>
                                 <Button
@@ -208,7 +208,7 @@ export default function RandomPicker() {
                                         onClick={addBulkItems}
                                         disabled={!bulkItems.trim()}
                                     >
-                                        <Plus className="h-4 w-4 mr-2" />
+                                        <Plus className="h-4 w-4 " />
                                         {t("addAll")}
                                     </Button>
                                     <Button
@@ -237,7 +237,7 @@ export default function RandomPicker() {
                                     size="sm"
                                     onClick={clearItems}
                                 >
-                                    <Trash className="h-4 w-4 mr-2" />
+                                    <Trash className="h-4 w-4 " />
                                     {t("clearAll")}
                                 </Button>
                             )}
@@ -289,9 +289,9 @@ export default function RandomPicker() {
                             className="w-full py-6 text-lg"
                         >
                             {isSpinning ? (
-                                <RefreshCw className="h-5 w-5 mr-2 animate-spin" />
+                                <RefreshCw className="h-5 w-5  animate-spin" />
                             ) : (
-                                <Shuffle className="h-5 w-5 mr-2" />
+                                <Shuffle className="h-5 w-5 " />
                             )}
                             {isSpinning ? t("picking") : t("pickRandom")}
                         </Button>

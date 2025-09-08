@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Indlæser...",
+    "clear": "Ryd",
+    "clearAll": "Ryd alle",
+    "download": "Download",
+    "downloadAll": "Download alle",
+    "copy": "Kopiér",
+    "copyAll": "Kopiér alle",
+    "copied": "Kopieret!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Slip filer her",
+    "dragAndDrop": "Træk og slip filer her, eller klik for at gennemse",
+    "chooseFiles": "Vælg filer",
+    "changeFiles": "Skift filer",
+    "clearFiles": "Ryd filer"
+  },
   "Navigation": {
     "home": "Hjem",
     "tools": "Værktøjer",
@@ -83,6 +100,11 @@
     "title": "404 - Side ikke fundet",
     "description": "Den side, du leder efter, findes ikke eller er blevet flyttet.",
     "goHome": "Gå til forsiden"
+  },
+  "Error": {
+    "title": "500 - Der opstod en fejl",
+    "description": "Noget gik galt. Prøv igen senere, eller kontakt support, hvis problemet fortsætter.",
+    "goHome": "Gå til forside"
   },
   "UuidGenerator": {
     "title": "UUID-generator",
@@ -286,27 +308,31 @@
     }
   },
   "ImageResizer": {
-    "title": "Billedstørrelse",
-    "description": "Ændr størrelsen på dine billeder til specifikke dimensioner mens kvaliteten bevares",
-    "chooseFiles": "Vælg filer",
-    "originalSize": "Original størrelse",
-    "resizedSize": "Ændret størrelse",
-    "reduction": "Reduktion",
-    "downloadAll": "Download alle",
-    "dragAndDrop": "Træk og slip billede her eller klik for at gennemse",
-    "dropMoreImages": "Slip flere billeder eller klik for at gennemse",
-    "supportMultiple": "Understøtter flere billeder på én gang",
-    "dimensions": "Dimensioner",
+    "uploadImages": "Upload billeder",
+    "options": "Indstillinger",
+    "specificDimensions": "Specifikke mål",
+    "percentageResize": "Ændr størrelse i procent",
+    "maxDimension": "Maksimal dimension",
     "width": "Bredde",
     "height": "Højde",
-    "lockAspectRatio": "Lås billedforhold",
-    "unlockAspectRatio": "Lås billedforhold op",
+    "widthPlaceholder": "Indtast bredde i pixels",
+    "heightPlaceholder": "Indtast højde i pixels",
+    "maintainAspectRatio": "Bevar højde-bredde-forhold",
+    "percentage": "Procent",
+    "maxDimensionValue": "Maksimal dimension (pixels)",
+    "maxDimensionHelp": "Den længste side ændres til denne værdi med bevaret forhold",
+    "originalSize": "Oprindelig størrelse",
+    "resizedSize": "Ændret størrelse",
+    "download": "Download",
+    "downloadAll": "Download alle",
+    "clearAll": "Ryd alt",
+    "image": "billede",
+    "images": "billeder",
     "processing": "Behandler billeder...",
-    "resizeSummary": "Størrelsessammendrag",
     "errors": {
-      "canvasContextFailed": "Kunne ikke få canvas-kontekst.",
-      "resizeFailed": "Størrelsesændring mislykkedes. Prøv et andet billede eller dimensioner.",
-      "fileReadFailed": "Kunne ikke læse fil. Filen kan være beskadiget."
+      "canvasContextFailed": "Kunne ikke hente canvas-kontekst.",
+      "resizeFailed": "Ændring af størrelse mislykkedes. Prøv et andet billede eller andre mål.",
+      "fileReadFailed": "Kunne ikke læse filen. Filen kan være beskadiget."
     }
   },
   "ImageConverter": {

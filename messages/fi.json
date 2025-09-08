@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Ladataan...",
+    "clear": "Tyhjennä",
+    "clearAll": "Tyhjennä kaikki",
+    "download": "Lataa",
+    "downloadAll": "Lataa kaikki",
+    "copy": "Kopioi",
+    "copyAll": "Kopioi kaikki",
+    "copied": "Kopioitu!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Pudota tiedostot tähän",
+    "dragAndDrop": "Vedä ja pudota tiedostot tähän tai napsauta selataksesi",
+    "chooseFiles": "Valitse tiedostot",
+    "changeFiles": "Vaihda tiedostot",
+    "clearFiles": "Tyhjennä tiedostot"
+  },
   "Navigation": {
     "home": "Etusivu",
     "tools": "Työkalut",
@@ -82,6 +99,11 @@
   "NotFound": {
     "title": "404 - Sivua ei löydy",
     "description": "Etsimäsi sivu ei ole olemassa tai se on siirretty.",
+    "goHome": "Siirry etusivulle"
+  },
+  "Error": {
+    "title": "500 - Tapahtui virhe",
+    "description": "Jokin meni pieleen. Yritä myöhemmin uudelleen tai ota yhteyttä tukeen, jos ongelma jatkuu.",
     "goHome": "Siirry etusivulle"
   },
   "UuidGenerator": {
@@ -286,27 +308,31 @@
     }
   },
   "ImageResizer": {
-    "title": "Kuvankoon muuttaja",
-    "description": "Muuta kuviesi kokoa tiettyihin mittoihin säilyttäen laadun",
-    "chooseFiles": "Valitse tiedostot",
-    "originalSize": "Alkuperäinen koko",
-    "resizedSize": "Muutettu koko",
-    "reduction": "Vähennys",
-    "downloadAll": "Lataa kaikki",
-    "dragAndDrop": "Vedä ja pudota kuva tähän tai klikkaa selataksesi",
-    "dropMoreImages": "Pudota lisää kuvia tai klikkaa selataksesi",
-    "supportMultiple": "Tukee useita kuvia kerralla",
-    "dimensions": "Mitat",
+    "uploadImages": "Lataa kuvia",
+    "options": "Asetukset",
+    "specificDimensions": "Määritetyt mitat",
+    "percentageResize": "Koosta prosentteina",
+    "maxDimension": "Suurin mitta",
     "width": "Leveys",
     "height": "Korkeus",
-    "lockAspectRatio": "Lukitse kuvasuhde",
-    "unlockAspectRatio": "Vapauta kuvasuhde",
+    "widthPlaceholder": "Anna leveys pikseleinä",
+    "heightPlaceholder": "Anna korkeus pikseleinä",
+    "maintainAspectRatio": "Säilytä kuvasuhde",
+    "percentage": "Prosentti",
+    "maxDimensionValue": "Suurin mitta (pikseliä)",
+    "maxDimensionHelp": "Pisimmän sivun koko muutetaan tähän arvoon kuvasuhde säilyttäen",
+    "originalSize": "Alkuperäinen koko",
+    "resizedSize": "Muutettu koko",
+    "download": "Lataa",
+    "downloadAll": "Lataa kaikki",
+    "clearAll": "Tyhjennä kaikki",
+    "image": "kuva",
+    "images": "kuvat",
     "processing": "Käsitellään kuvia...",
-    "resizeSummary": "Koonmuutosyhteenveto",
     "errors": {
-      "canvasContextFailed": "Canvas-kontekstin saaminen epäonnistui.",
-      "resizeFailed": "Koonmuutos epäonnistui. Kokeile toista kuvaa tai mittoja.",
-      "fileReadFailed": "Tiedoston lukeminen epäonnistui. Tiedosto saattaa olla vioittunut."
+      "canvasContextFailed": "Canvas-kontekstia ei saatu.",
+      "resizeFailed": "Koonsäätö epäonnistui. Kokeile toista kuvaa tai mittoja.",
+      "fileReadFailed": "Tiedoston lukeminen epäonnistui. Tiedosto voi olla vioittunut."
     }
   },
   "ImageConverter": {

@@ -412,7 +412,7 @@ export default function SLOBurnSimulator() {
                                     size="sm"
                                     onClick={exportToPNG}
                                 >
-                                    <Download className="h-4 w-4 mr-2" />
+                                    <Download className="h-4 w-4 " />
                                     PNG
                                 </Button>
                             </div>

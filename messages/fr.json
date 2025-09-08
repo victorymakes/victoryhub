@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Chargement...",
+    "clear": "Effacer",
+    "clearAll": "Tout effacer",
+    "download": "Télécharger",
+    "downloadAll": "Tout télécharger",
+    "copy": "Copier",
+    "copyAll": "Tout copier",
+    "copied": "Copié !"
+  },
+  "UploadFiles": {
+    "dropFiles": "Déposez des fichiers ici",
+    "dragAndDrop": "Glissez-déposez des fichiers ici ou cliquez pour parcourir",
+    "chooseFiles": "Choisir des fichiers",
+    "changeFiles": "Modifier les fichiers",
+    "clearFiles": "Effacer les fichiers"
+  },
   "Navigation": {
     "home": "Accueil",
     "tools": "Outils",
@@ -228,25 +245,32 @@
     "supportedFormats": "Formats supportés : JPEG, PNG, WebP"
   },
   "ImageResizer": {
-    "title": "Redimensionneur d'Images",
-    "description": "Redimensionne les images en spécifiant la largeur, la hauteur ou le pourcentage",
-    "selectImage": "Sélectionner une image",
-    "dragDropImage": "Glissez et déposez une image ici",
+    "uploadImages": "Importer des images",
+    "options": "Options",
+    "specificDimensions": "Dimensions spécifiques",
+    "percentageResize": "Redimensionner en pourcentage",
+    "maxDimension": "Dimension maximale",
     "width": "Largeur",
     "height": "Hauteur",
+    "widthPlaceholder": "Saisir la largeur en pixels",
+    "heightPlaceholder": "Saisir la hauteur en pixels",
+    "maintainAspectRatio": "Conserver les proportions",
     "percentage": "Pourcentage",
-    "maintainAspectRatio": "Maintenir le ratio d'aspect",
-    "resize": "Redimensionner",
+    "maxDimensionValue": "Dimension maximale (pixels)",
+    "maxDimensionHelp": "Le côté le plus long sera redimensionné à cette valeur en conservant les proportions",
+    "originalSize": "Taille d’origine",
+    "resizedSize": "Taille redimensionnée",
     "download": "Télécharger",
-    "originalDimensions": "Dimensions originales",
-    "newDimensions": "Nouvelles dimensions",
-    "preview": "Aperçu",
-    "original": "Original",
-    "resized": "Redimensionnée",
-    "processing": "Traitement...",
-    "error": "Erreur lors du redimensionnement de l'image",
-    "invalidDimensions": "Dimensions invalides",
-    "supportedFormats": "Formats supportés : JPEG, PNG, WebP, GIF"
+    "downloadAll": "Tout télécharger",
+    "clearAll": "Tout effacer",
+    "image": "image",
+    "images": "images",
+    "processing": "Traitement des images...",
+    "errors": {
+      "canvasContextFailed": "Échec de récupération du contexte canvas.",
+      "resizeFailed": "Échec du redimensionnement. Essayez une autre image ou d’autres dimensions.",
+      "fileReadFailed": "Échec de lecture du fichier. Le fichier est peut-être corrompu."
+    }
   },
   "ImageConverter": {
     "title": "Convertisseur d'Images",

@@ -1,6 +1,51 @@
-import { Category, Tool, RawTool } from "@/types/tool";
+import { Category, RawTool, Tool } from "@/types/tool";
+import { cache } from "../lib/cache";
 
-const loadCategories = async (locale: string = "en"): Promise<Category[]> => {
+export const initToolDB = async (locale: string) => {
+    // In-memory cache for tool category
+    // Structure: TOOLS_CACHE[locale][categorySlug]= toolSlug[]
+    const TOOL_CATEGORY_CACHE: Record<string, Record<string, string[]>> = {};
+
+    // In-memory cache for tools
+    // Structure: TOOLS_CACHE[locale][toolSlug] = Tool
+    const TOOL_CACHE: Record<string, Record<string, Tool>> = {};
+
+    // In-memory cache for categories
+    // Structure: CATEGORY_CACHE[locale][categorySlug] = Category
+    const CATEGORY_CACHE: Record<string, Record<string, Category>> = {};
+
+    // init category cache
+    const categories = await loadCategories(locale);
+    CATEGORY_CACHE[locale] = {};
+    for (const category of categories) {
+        CATEGORY_CACHE[locale][category.slug] = category;
+    }
+
+    // init tool cache
+    const tools = await loadTools(locale);
+    TOOL_CACHE[locale] = {};
+    TOOL_CATEGORY_CACHE[locale] = {};
+    for (const tool of tools) {
+        TOOL_CACHE[locale][tool.slug] = {
+            ...tool,
+            category: CATEGORY_CACHE[locale][tool.category],
+        };
+        if (!TOOL_CATEGORY_CACHE[locale][tool.category]) {
+            TOOL_CATEGORY_CACHE[locale][tool.category] = [];
+        }
+        TOOL_CATEGORY_CACHE[locale][tool.category].push(tool.slug);
+    }
+
+    return { CATEGORY_CACHE, TOOL_CACHE, TOOL_CATEGORY_CACHE };
+};
+
+export function getToolDB(locale: string) {
+    return cache(() => initToolDB(locale), ["tooldb", locale])();
+}
+
+export const loadCategories = async (
+    locale: string = "en",
+): Promise<Category[]> => {
     try {
         // Try to import the locale-specific file
         const categories = await import(
@@ -14,7 +59,7 @@ const loadCategories = async (locale: string = "en"): Promise<Category[]> => {
     }
 };
 
-const loadTools = async (locale: string = "en"): Promise<RawTool[]> => {
+export const loadTools = async (locale: string = "en"): Promise<RawTool[]> => {
     try {
         // Try to import the locale-specific file
         const tools = await import(`../../data/db/tool/${locale}.json`);
@@ -29,34 +74,13 @@ const loadTools = async (locale: string = "en"): Promise<RawTool[]> => {
 export const getCategories = async (
     locale: string = "en",
 ): Promise<Category[]> => {
-    return loadCategories(locale);
+    const { CATEGORY_CACHE } = await getToolDB(locale);
+    return Object.values(CATEGORY_CACHE[locale]);
 };
 
 export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
-    const categories = await getCategories(locale);
-    const categoryMap = new Map(categories.map((cat) => [cat.slug, cat]));
-    const tools = await loadTools(locale);
-
-    const validTools: Tool[] = [];
-    const notPublishedTools = ["image-resizer"];
-
-    for (const tool of tools) {
-        if (notPublishedTools.includes(tool.slug)) {
-            continue;
-        }
-
-        if (categoryMap.has(tool.category)) {
-            validTools.push({
-                ...tool,
-                category: categoryMap.get(tool.category)!,
-            });
-        } else {
-            console.error(
-                `Tool "${tool.slug}" has invalid category "${tool.category}" - no mapping found in locale "${locale}"`,
-            );
-        }
-    }
-    return validTools;
+    const { TOOL_CACHE } = await getToolDB(locale);
+    return Object.values(TOOL_CACHE[locale]);
 };
 
 export const getPopularTools = async (
@@ -71,28 +95,51 @@ export const getPopularTools = async (
         "image-compressor",
         "image-converter",
     ];
-    const tools = await getTools(locale);
-    const sortedPopular = popularTools
-        .map((slug) => tools.find((tool) => tool.slug === slug))
-        .filter(Boolean) as Tool[];
-    return sortedPopular.slice(0, Math.min(count, sortedPopular.length));
+    const { TOOL_CACHE } = await getToolDB(locale);
+    return popularTools
+        .map((slug) => TOOL_CACHE[locale][slug])
+        .slice(0, Math.min(popularTools.length, count));
 };
 
 export const getTool = async (
     slug: string,
     locale: string = "en",
 ): Promise<Tool | null> => {
-    const tools = await getTools(locale);
-    return tools.find((tool) => tool.slug === slug) || null;
+    const { TOOL_CACHE } = await getToolDB(locale);
+    return TOOL_CACHE[locale][slug];
+};
+
+const getToolsByCategory = async (
+    categorySlug: string,
+    locale: string = "en",
+): Promise<Tool[]> => {
+    const { TOOL_CATEGORY_CACHE, TOOL_CACHE } = await getToolDB(locale);
+    return (
+        TOOL_CATEGORY_CACHE[locale][categorySlug]?.map(
+            (slug) => TOOL_CACHE[locale][slug],
+        ) || []
+    );
 };
 
 export const getRelatedTools = async (
     tool: Tool,
     locale: string = "en",
 ): Promise<Tool[]> => {
-    let tools = await getTools(locale);
-    tools = tools.filter(
-        (t) => t.category.slug === tool.category.slug && t.slug !== tool.slug,
-    );
-    return tools.sort(() => Math.random() - 0.5).slice(0, 3);
+    let tools = await getToolsByCategory(tool.category.slug, locale);
+    // exclude the current tool
+    tools = tools.filter((t) => t.slug !== tool.slug);
+    if (tools.length === 0) {
+        return [];
+    }
+
+    // randomly select up to 3 tools from the same category
+    const m = tools.length;
+    const k = Math.min(3, m);
+    for (let i = 0; i < k; i++) {
+        const j = i + Math.floor(Math.random() * (m - i));
+        const tmp = tools[i];
+        tools[i] = tools[j];
+        tools[j] = tmp;
+    }
+    return tools.slice(0, k);
 };

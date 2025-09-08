@@ -28,21 +28,6 @@ export async function generateMetadata({
     const t = await getTranslations("Homepage");
     const url = getLocalizedUrl(locale, "");
 
-    // Create JSON-LD structured data for website
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: config.siteName,
-        url: `${config.baseUrl}${url}`,
-        description: t("seoDescription"),
-        potentialAction: {
-            "@type": "SearchAction",
-            target: `${config.baseUrl}${getLocalizedUrl(locale, "tools")}?q={search_term_string}`,
-            "query-input": "required name=search_term_string",
-        },
-        inLanguage: locale,
-    };
-
     return {
         title: generateTitle(t("seoTitle")),
         description: t("seoDescription"),
@@ -63,9 +48,6 @@ export async function generateMetadata({
         alternates: {
             canonical: url,
             languages: getLocalizedUrls(""),
-        },
-        other: {
-            "script:ld+json": JSON.stringify(jsonLd),
         },
     };
 }

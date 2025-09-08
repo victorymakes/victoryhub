@@ -6,9 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import {
     AlertTriangle,
-    Upload,
     Download,
-    Image as ImageIcon,
     Trash2,
     Loader2,
     X,
@@ -26,6 +24,7 @@ import { formatBytes, getImageMimeType } from "@/lib/file";
 import JSZip from "jszip";
 import FileSaver from "file-saver";
 import Image from "next/image";
+import UploadFiles from "@/components/tool/upload-files";
 
 interface ImageItem {
     id: string;
@@ -41,11 +40,9 @@ interface ImageItem {
 const ImageToBlackWhiteConverter: React.FC = () => {
     const t = useTranslations("ImageToBlackWhiteConverter");
     const [images, setImages] = useState<ImageItem[]>([]);
-    const [isDragging, setIsDragging] = useState<boolean>(false);
     const [isProcessing, setIsProcessing] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const [previewIndex, setPreviewIndex] = useState<number | null>(null);
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
     const imagesRef = useRef<ImageItem[]>([]);
 
     const hasCompletedImages = images.some((img) => img.status === "done");
@@ -236,32 +233,8 @@ const ImageToBlackWhiteConverter: React.FC = () => {
     );
 
     // Handle file input change
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.files && e.target.files.length > 0) {
-            addImages(e.target.files);
-            // Reset the input value so the same file can be selected again
-            e.target.value = "";
-        }
-    };
-
-    // Handle drag and drop
-    const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(true);
-    };
-
-    const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-    };
-
-    const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-
-        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-            addImages(e.dataTransfer.files);
-        }
+    const handleFileChange = (files: FileList | File[]) => {
+        addImages(files);
     };
 
     // Remove a single image
@@ -404,47 +377,18 @@ const ImageToBlackWhiteConverter: React.FC = () => {
                                     onClick={clearAllImages}
                                     disabled={isProcessing}
                                 >
-                                    <Trash2 className="h-4 w-4 mr-1" />
+                                    <Trash2 className="h-4 w-4" />
                                     {t("clearAll")}
                                 </Button>
                             )}
                         </div>
 
                         {/* upload images */}
-                        <div
-                            className={cn(
-                                "border-2 border-dashed rounded-lg p-6 transition-colors",
-                                isDragging
-                                    ? "border-primary bg-primary/5"
-                                    : "border-muted-foreground/20",
-                                "flex flex-col items-center justify-center gap-2 text-center",
-                            )}
-                            onDragOver={handleDragOver}
-                            onDragLeave={handleDragLeave}
-                            onDrop={handleDrop}
-                        >
-                            <input
-                                type="file"
-                                ref={fileInputRef}
-                                accept="image/*"
-                                multiple
-                                onChange={handleFileChange}
-                                className="hidden"
-                            />
-                            <ImageIcon className="h-8 w-8 text-muted-foreground mb-2" />
-                            <p className="text-sm text-muted-foreground mb-2">
-                                {t("dragDropText")}
-                            </p>
-                            <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={() => fileInputRef.current?.click()}
-                                disabled={isProcessing}
-                            >
-                                <Upload className="h-4 w-4 mr-2" />
-                                {t("chooseFiles")}
-                            </Button>
-                        </div>
+                        <UploadFiles
+                            onFilesSelected={handleFileChange}
+                            multiple={true}
+                            accept={"image/*"}
+                        />
 
                         {/* Preview images */}
                         {images.length > 0 && previewIndex !== null && (
@@ -589,7 +533,7 @@ const ImageToBlackWhiteConverter: React.FC = () => {
                                                     )
                                                 }
                                             >
-                                                <Download className="h-4 w-4 mr-2" />
+                                                <Download className="h-4 w-4" />
                                                 {t("download")}
                                             </Button>
                                         )}
@@ -775,7 +719,7 @@ const ImageToBlackWhiteConverter: React.FC = () => {
                                 className="w-full"
                                 onClick={downloadAll}
                             >
-                                <Download className="h-4 w-4 mr-2" />
+                                <Download className="h-4 w-4" />
                                 {t("downloadAll")}
                             </Button>
                         </div>

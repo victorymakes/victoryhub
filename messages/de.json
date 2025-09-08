@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Wird geladen...",
+    "clear": "Leeren",
+    "clearAll": "Alles leeren",
+    "download": "Herunterladen",
+    "downloadAll": "Alle herunterladen",
+    "copy": "Kopieren",
+    "copyAll": "Alles kopieren",
+    "copied": "Kopiert!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Dateien hierher ziehen",
+    "dragAndDrop": "Dateien hier per Drag & Drop ablegen oder zum Durchsuchen klicken",
+    "chooseFiles": "Dateien auswählen",
+    "changeFiles": "Dateien ändern",
+    "clearFiles": "Dateien löschen"
+  },
   "Navigation": {
     "home": "Startseite",
     "tools": "Tools",
@@ -228,25 +245,32 @@
     "supportedFormats": "Unterstützte Formate: JPEG, PNG, WebP"
   },
   "ImageResizer": {
-    "title": "Bildgrößenänderer",
-    "description": "Ändere die Bildgröße durch Angabe von Breite, Höhe oder Prozentsatz",
-    "selectImage": "Bild auswählen",
-    "dragDropImage": "Bild hier hineinziehen",
+    "uploadImages": "Bilder hochladen",
+    "options": "Optionen",
+    "specificDimensions": "Bestimmte Abmessungen",
+    "percentageResize": "Prozentuale Größenänderung",
+    "maxDimension": "Maximale Kantenlänge",
     "width": "Breite",
     "height": "Höhe",
-    "percentage": "Prozentsatz",
+    "widthPlaceholder": "Breite in Pixel eingeben",
+    "heightPlaceholder": "Höhe in Pixel eingeben",
     "maintainAspectRatio": "Seitenverhältnis beibehalten",
-    "resize": "Größe ändern",
+    "percentage": "Prozentsatz",
+    "maxDimensionValue": "Maximale Abmessung (Pixel)",
+    "maxDimensionHelp": "Die längste Seite wird bei beibehaltenem Seitenverhältnis auf diesen Wert skaliert",
+    "originalSize": "Originalgröße",
+    "resizedSize": "Geänderte Größe",
     "download": "Herunterladen",
-    "originalDimensions": "Originalabmessungen",
-    "newDimensions": "Neue Abmessungen",
-    "preview": "Vorschau",
-    "original": "Original",
-    "resized": "Größe geändert",
-    "processing": "Verarbeitung...",
-    "error": "Fehler beim Ändern der Bildgröße",
-    "invalidDimensions": "Ungültige Abmessungen",
-    "supportedFormats": "Unterstützte Formate: JPEG, PNG, WebP, GIF"
+    "downloadAll": "Alle herunterladen",
+    "clearAll": "Alle löschen",
+    "image": "Bild",
+    "images": "Bilder",
+    "processing": "Bilder werden verarbeitet...",
+    "errors": {
+      "canvasContextFailed": "Canvas-Kontext konnte nicht abgerufen werden.",
+      "resizeFailed": "Größenänderung fehlgeschlagen. Versuche ein anderes Bild oder andere Abmessungen.",
+      "fileReadFailed": "Datei konnte nicht gelesen werden. Die Datei ist möglicherweise beschädigt."
+    }
   },
   "ImageConverter": {
     "title": "Bildkonverter",

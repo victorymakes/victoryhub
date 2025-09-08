@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Bezig met laden...",
+    "clear": "Wissen",
+    "clearAll": "Alles wissen",
+    "download": "Downloaden",
+    "downloadAll": "Alles downloaden",
+    "copy": "Kopiëren",
+    "copyAll": "Alles kopiëren",
+    "copied": "Gekopieerd!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Sleep bestanden hierheen",
+    "dragAndDrop": "Sleep bestanden hierheen of klik om te bladeren",
+    "chooseFiles": "Bestanden kiezen",
+    "changeFiles": "Bestanden wijzigen",
+    "clearFiles": "Bestanden wissen"
+  },
   "Navigation": {
     "home": "Home",
     "tools": "Tools",
@@ -228,25 +245,32 @@
     "supportedFormats": "Ondersteunde formaten: JPEG, PNG, WebP"
   },
   "ImageResizer": {
-    "title": "Afbeelding Resizer",
-    "description": "Wijzigt afbeeldingsgrootte door breedte, hoogte of percentage op te geven",
-    "selectImage": "Afbeelding selecteren",
-    "dragDropImage": "Sleep een afbeelding hierheen",
+    "uploadImages": "Afbeeldingen uploaden",
+    "options": "Opties",
+    "specificDimensions": "Specifieke afmetingen",
+    "percentageResize": "Schalen op percentage",
+    "maxDimension": "Maximale afmeting",
     "width": "Breedte",
     "height": "Hoogte",
-    "percentage": "Percentage",
+    "widthPlaceholder": "Voer de breedte in pixels in",
+    "heightPlaceholder": "Voer de hoogte in pixels in",
     "maintainAspectRatio": "Beeldverhouding behouden",
-    "resize": "Grootte wijzigen",
+    "percentage": "Percentage",
+    "maxDimensionValue": "Maximale afmeting (pixels)",
+    "maxDimensionHelp": "De langste zijde wordt naar deze waarde geschaald met behoud van de verhouding",
+    "originalSize": "Oorspronkelijke grootte",
+    "resizedSize": "Aangepaste grootte",
     "download": "Downloaden",
-    "originalDimensions": "Oorspronkelijke afmetingen",
-    "newDimensions": "Nieuwe afmetingen",
-    "preview": "Voorbeeld",
-    "original": "Origineel",
-    "resized": "Grootte gewijzigd",
-    "processing": "Verwerken...",
-    "error": "Fout bij het wijzigen van afbeeldingsgrootte",
-    "invalidDimensions": "Ongeldige afmetingen",
-    "supportedFormats": "Ondersteunde formaten: JPEG, PNG, WebP, GIF"
+    "downloadAll": "Alles downloaden",
+    "clearAll": "Alles wissen",
+    "image": "afbeelding",
+    "images": "afbeeldingen",
+    "processing": "Afbeeldingen worden verwerkt...",
+    "errors": {
+      "canvasContextFailed": "Canvascontext ophalen mislukt.",
+      "resizeFailed": "Schalen mislukt. Probeer een andere afbeelding of afmetingen.",
+      "fileReadFailed": "Bestand kan niet worden gelezen. Het bestand is mogelijk beschadigd."
+    }
   },
   "ImageConverter": {
     "title": "Afbeelding Converter",

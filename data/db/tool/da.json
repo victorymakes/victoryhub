@@ -278,7 +278,7 @@
     "slug": "bmi-calculator",
     "name": "BMI-beregner – Beregn dit Body Mass Index",
     "description": "Beregn dit Body Mass Index (BMI) for at bestemme din vægtkategori og få indsigt i dit helbred.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmi beregner",
       "body mass index",
@@ -399,7 +399,7 @@
     "slug": "bmr-calculator",
     "name": "BMR-Beregner – Beregn din Basale Stofskifte",
     "description": "Beregn din BMR og TDEE ud fra alder, køn, højde, vægt og aktivitetsniveau.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "bmr beregner",
       "basalstofskifte",
@@ -443,7 +443,7 @@
     "slug": "carbon-footprint-calculator",
     "name": "CO2-fodaftryksberegner – Mål din miljøpåvirkning",
     "description": "Beregn dit personlige eller families CO2-fodaftryk baseret på livsstilsfaktorer, herunder transport, energiforbrug, kost og forbrugsvaner.",
-    "category": "utilities",
+    "category": "calculator",
     "keywords": [
       "CO2-fodaftryksberegner",
       "kulstofaftryksberegner",
@@ -843,6 +843,446 @@
       {
         "question": "Er der begrænsninger på filstørrelse eller antal?",
         "answer": "Da alt sker i browseren, afhænger grænserne af din enhed. De fleste moderne enheder kan håndtere billeder op til 20 MB. Der er ingen fast grænse for antallet, men mange store billeder på én gang kræver mere hukommelse og processorkraft. For bedst ydeevne anbefaler vi at konvertere 10–20 store billeder ad gangen. Understøttede formater: JPEG, PNG, WebP osv."
+      }
+    ]
+  },
+  {
+    "slug": "url-tracker-cleaner",
+    "name": "URL-sporingsrenser – Fjern UTM og sporingsparametre",
+    "description": "Identificér og fjern sporingsparametre fra URL'er, herunder UTM-tags, klik-ID'er og andre analysetrackere. Rens dine links for privatliv og deling.",
+    "category": "privacy",
+    "keywords": [
+      "URL-renser",
+      "fjern UTM-parametre",
+      "rens sporings-URL'er",
+      "UTM-tag-fjerner",
+      "URL-tracker-fjerner",
+      "fjern fbclid",
+      "fjern gclid",
+      "ren URL til deling",
+      "URL-renser til privatliv",
+      "sporingsparameter-fjerner"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er URL-sporingsparametre, og hvorfor bør jeg fjerne dem?",
+        "answer": "URL-sporingsparametre er ekstra information, der tilføjes webadresser for at hjælpe marketingsfolk og websideejere med at spore, hvor besøgende kommer fra, og hvordan de interagerer med indhold. <br/>Almindelige eksempler omfatter UTM-parametre (utm_source, utm_medium, utm_campaign), klik-id'er (gclid, fbclid) og andre analysetrackere. Selvom disse parametre er værdifulde for virksomheder, kan de kompromittere dit privatliv ved at afsløre dine browsingvaner og henvisningskilder. <br/>Ved at fjerne dem får du kortere, renere links, som er mere private og nemmere at dele, samtidig med at unødvendig dataindsamling om dine onlineaktiviteter forhindres."
+      },
+      {
+        "question": "Hvilke sporingsparametre registrerer og fjerner dette værktøj?",
+        "answer": "Værktøjet registrerer og fjerner et bredt udvalg af sporingsparametre, herunder: <li>UTM-parametre (utm_source, utm_medium, utm_campaign, utm_term, utm_content),</li> <li>reklame-klik-id'er (gclid fra Google, fbclid fra Facebook, msclkid fra Microsoft/Bing, dclid fra DoubleClick, twclid fra Twitter),</li> <li>e-mailmarketingtrackere (mc_eid fra Mailchimp, _hsenc og _hsmi fra HubSpot),</li> <li>og generelle henvisningsparametre (ref, source, cmpid).</li> <br/>Værktøjet opdateres løbende for at identificere nye sporingsparametre, efterhånden som de dukker op i det digitale økosystem."
+      },
+      {
+        "question": "Er dette URL-renserværktøj sikkert og privat?",
+        "answer": "Ja, vores URL Tracker Cleaner er helt sikker og privat. <br/>Al behandling af URL'er foregår lokalt i din browser – ingen data sendes til vores servere eller tredjeparter. Dine URL'er gemmes, logges eller transmitteres aldrig. Du kan bekræfte dette ved at tjekke din browsers netværkspanel under brug – der foretages ingen forespørgsler under behandlingen. Det gør værktøjet sikkert selv for følsomme eller private links."
+      },
+      {
+        "question": "Ødelægger fjernelse af sporingsparametre URL'en eller forhindrer adgang til websitet?",
+        "answer": "Nej, fjernelse af sporingsparametre påvirker ikke URL'ens kernefunktionalitet. <br/>Sporingsparametre er supplerende information, der tilføjes efter den primære URL-struktur og er ikke nødvendige for, at websiden indlæses korrekt. Den rensede URL fører stadig til samme destinationsside – blot uden sporingsinfo. I sjældne tilfælde, hvor et website specifikt kræver visse parametre, bevarer værktøjet alle ikke-sporingsparametre for at sikre funktionalitet og fjerner kun de privatlivsinvasive elementer."
+      },
+      {
+        "question": "Hvordan kan jeg bruge rensede URL'er i dagligdagen for bedre privatliv?",
+        "answer": "For at styrke dit privatliv: <li>Højreklik på links i e-mails eller sociale medier, kopiér linkadressen, og indsæt den i vores værktøj for at rense den.</li> <li>Rens links, før du deler dem med andre, så du undgår at viderebringe sporingsparametre.</li> <li>Overvej at installere browserudvidelser, der automatisk fjerner sporingsparametre under browsing.</li> <li>Kombinér URL-rensning med andre privatlivspraksisser som VPN, privatlivsfokuserede browsere og regelmæssig sletning af cookies for maksimal beskyttelse.</li> </br>Dette værktøj er et enkelt første skridt mod mere private browsevaner."
+      }
+    ]
+  },
+  {
+    "slug": "text-redactor",
+    "name": "Tekstmaskering – Maskér PII og følsomme oplysninger",
+    "description": "Gratis online tekstmaskering: maskér automatisk e-mails, telefonnumre, postadresser og anden PII. Kopiér-indsæt, maskér og eksporter.",
+    "category": "privacy",
+    "keywords": [
+      "tekstmaskering",
+      "PII-maskering",
+      "datamaskering",
+      "privatlivsværktøj",
+      "følsomme oplysninger",
+      "e-mailmaskering",
+      "maskering af telefonnumre",
+      "adressemaskering",
+      "tekstanonymisering",
+      "dataprivatliv"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er tekstredaktion (maskering), og hvorfor er det vigtigt?",
+        "answer": "Tekstredaktion er processen med at fjerne eller maskere følsomme oplysninger i dokumenter eller tekst. Det er vigtigt for <li>at beskytte personhenførbare oplysninger (PII),</li> <li>at opretholde efterlevelse af privatlivsregler (som GDPR, CCPA),</li> <li>at forhindre identitetstyveri,</li> <li>og at muliggøre sikker deling af dokumenter med bevaret fortrolighed.</li> Vores værktøj identificerer og maskerer automatisk almindelige PII-mønstre som e-mails, telefonnumre og adresser, så du kan dele eller offentliggøre tekst uden at afsløre følsomme data."
+      },
+      {
+        "question": "Hvilke typer oplysninger kan værktøjet maskere?",
+        "answer": "Værktøjet kan automatisk finde og maskere flere typer PII, herunder: <li>e-mailadresser,</li> <li>telefonnumre (understøtter internationale formater),</li> <li>postadresser,</li> <li>IP-adresser,</li> <li>kreditkortnumre,</li> <li>social security-numre (SSN, USA),</li> <li>fødselsdatoer,</li> <li>og navne, når de kan genkendes i almindelige formater.</li> Værktøjet bruger mønstergenkendelse til at identificere disse datatyper og erstatter dem med pladsholdere, samtidig med at den oprindelige tekststruktur bevares."
+      },
+      {
+        "question": "Er mine data sikre, når jeg bruger dette maskeringsværktøj?",
+        "answer": "Ja, dine data er helt sikre. Værktøjet kører udelukkende i din browser – ingen data sendes til vores servere eller gemmes nogen steder. Tekstbehandlingen sker lokalt på din enhed, hvilket giver maksimal privatliv og sikkerhed. Når du lukker fanen, bliver din tekst ikke bevaret. Værktøjet er derfor velegnet til håndtering af fortrolige oplysninger."
+      },
+      {
+        "question": "Hvor præcis er den automatiske maskering?",
+        "answer": "Maskeringen er meget præcis for standardformater som e-mails, telefonnumre og kreditkort. Intet automatiseret system er dog perfekt. Værktøjet bruger mønstermatching og regulære udtryk til at identificere almindelige formater, men usædvanlige formater eller kontekstafhængig information kan blive overset. Ved kritiske behov anbefaler vi manuel gennemgang af resultatet. Du kan også bruge brugerdefineret maskering til specifikke termer, der ikke blev fanget automatisk."
+      },
+      {
+        "question": "Kan jeg tilpasse, hvad der maskeres, og hvordan det vises?",
+        "answer": "Ja. Du kan vælge, hvilke PII-kategorier der maskeres, ved at slå dem til eller fra. Du kan også vælge maskeringsstil (erstatningstegn som XXX, sorte bjælker eller egne tegn). Derudover kan du tilføje brugerdefinerede termer eller mønstre – nyttigt for organisationsspecifik information eller navne, som ikke fanges automatisk. Denne fleksibilitet sikrer, at værktøjet opfylder dine krav."
+      }
+    ]
+  },
+  {
+    "slug": "password-strength-checker",
+    "name": "Adgangskodestyrke-tjekker – Vurder adgangskodesikkerhed",
+    "description": "Tjek styrken af dine adgangskoder og få personlige forbedringsforslag. Sørg for stærke adgangskoder og bedre kontosikkerhed.",
+    "category": "privacy",
+    "keywords": [
+      "adgangskodestyrke tjekker",
+      "adgangskodesikkerhed",
+      "adgangskodeanalysator",
+      "sikker adgangskode",
+      "adgangskodevurdering",
+      "stærk adgangskode",
+      "styrkemåler til adgangskode",
+      "sikkerhedsværktøj",
+      "adgangskodevalidator",
+      "styrketest"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan vurderer styrketjekket min adgangskode?",
+        "answer": "Vi vurderer adgangskoder ud fra flere sikkerhedsfaktorer: <li>længde (længere er bedre),</li> <li>tegnvariation (store/små bogstaver, tal, symboler),</li> <li>fravær af almindelige mønstre eller ordbogsord,</li> <li>og fravær af sekventielle eller gentagne tegn.</li> Hver faktor bidrager til en samlet score, som klassificerer adgangskoden som svag, middel, god eller stærk. Vurderingen sker udelukkende i din browser – din adgangskode sendes aldrig til en server."
+      },
+      {
+        "question": "Hvordan laver jeg en stærk adgangskode?",
+        "answer": "Gode råd: <li>Brug mindst 12–16 tegn – længden er vigtigst.</li> <li>Inkludér en blanding af store/små bogstaver, tal og symboler.</li> <li>Undgå almindelige ord, fraser eller personlige oplysninger.</li> <li>Brug ikke sekvenser som “123456” eller “qwerty”.</li> <li>Overvej en adgangsfrase (passphrase) – flere tilfældige ord med tal/symboler.</li> <li>Brug unikke adgangskoder for hver konto – genbrug aldrig.</li> <li>Brug en adgangskode­manager til at generere og lagre komplekse koder.</li>"
+      },
+      {
+        "question": "Hvorfor vurderes min adgangskode som svag, selvom den er lang?",
+        "answer": "Længde alene garanterer ikke styrke. En lang adgangskode kan stadig være svag, hvis den: <li>indeholder almindelige ordbogsord eller fraser (fx “iloveyou” eller “password123”),</li> <li>bruger forudsigelige mønstre (fx tastatursekvenser “qwerty” eller talrækker “123456”) eller gentagne tegn (“aaaaa”),</li> <li>indeholder personlige oplysninger, der er lette at gætte,</li> <li>eller mangler tegnvariation (fx kun små bogstaver).</li> De stærkeste adgangskoder kombinerer tilstrækkelig længde med uforudsigelighed og variation."
+      },
+      {
+        "question": "Er adgangsfraser bedre end komplekse korte adgangskoder?",
+        "answer": "Adgangsfraser (en række tilfældige ord med små ændringer) giver ofte bedre sikkerhed end korte “komplekse” adgangskoder. <br/>En frase som “correct-horse-battery-staple” eller “purple_monkey_dinosaur_42!” er typisk længere, nemmere at huske og sværere at knække end en kortere kode som “P@s$w0rd!”. Den ideelle frase har 3–5 tilfældige ord, lidt versaler, tal og symboler – høj entropi og stadig menneskevenlig."
+      },
+      {
+        "question": "Hvor ofte bør jeg skifte adgangskoder?",
+        "answer": "Moderne anbefalinger fraråder tvungen periodisk skift. I stedet for at ændre alle koder hver 90. dag (som ofte giver dårligere koder), bør du fokusere på: <li>unikke, stærke adgangskoder for hver tjeneste,</li> <li>øjeblikkeligt skift efter databrud,</li> <li>skift ved mistanke om kompromittering,</li> <li>to-faktor-godkendelse (2FA) hvor muligt,</li> <li>og brug af en adgangskode­manager.</li> Denne tilgang – som bl.a. NIST anbefaler – giver bedre sikkerhed end vilkårlig rotation."
+      }
+    ]
+  },
+  {
+    "slug": "barcode-generator",
+    "name": "Stregkodegenerator – Opret CODE128 og EAN-13 online",
+    "description": "Generér professionelle CODE128- og EAN-13-stregkoder gratis online. Tilpas størrelse, farver og tekstvisning til produktlabels, lagerstyring og detailhandel.",
+    "category": "media",
+    "keywords": [
+      "stregkodegenerator",
+      "code128 generator",
+      "ean13 generator",
+      "opret stregkode online",
+      "gratis stregkodemager",
+      "produktstregkode generator",
+      "stregkodeværktøj",
+      "upc stregkodegenerator",
+      "detail stregkode",
+      "lagerstregkode"
+    ],
+    "faq": [
+      {
+        "question": "Hvilke typer stregkoder kan jeg lave med dette værktøj?",
+        "answer": "Værktøjet understøtter to af de mest udbredte formater: CODE128 og EAN-13. <li>CODE128 er en fleksibel, høj-densitets stregkode, der kan kode alle 128 ASCII-tegn – ideel til alfanumeriske data i logistik, lager og dokumentstyring.</li> <li>EAN-13 er standardformatet i detailhandel globalt og består af 13 cifre, som identificerer oprindelsesland, producent og produkt.</li> Generatoren laver standardkompatible koder til både kommerciel og privat brug."
+      },
+      {
+        "question": "Hvordan laver jeg en gyldig EAN-13 stregkode?",
+        "answer": "Indtast præcis 12 cifre (det 13. er en kontrolciffer, som vi beregner automatisk). <li>De første 2–3 cifre er landekode,</li><li>de næste 4–5 er producent,</li><li>resten er produktkode.</li> Til test kan du bruge numre, der starter med 200–299 (reserveret til in-store-brug). For kommercielt brug bør du registrere dig hos GS1 for at få et legitimt producentpræfiks."
+      },
+      {
+        "question": "Kan jeg tilpasse stregkodernes udseende?",
+        "answer": "Ja. <li>Juster stregkodenes bredde (linjetykkelse) og højde,</li><li>skift forgrunds- (linje) og baggrundsfarver,</li><li>vis/skjul talværdien under koden samt margin og skriftstørrelse.</li> Så kan koderne tilpasses dit brand og design."
+      },
+      {
+        "question": "Hvordan kan jeg bruge de genererede stregkoder i mine projekter?",
+        "answer": "Download som PNG og brug dem i: <li>produktemballage, lageretiketter, prisskilte, medlemskort, billetter og asset-tracking,</li> <li>PDF'er, websites, mobilapps eller e-handel.</li> Ved print anbefaler vi mindst 300 DPI og test med en scanner før masseproduktion."
+      },
+      {
+        "question": "Er disse stregkoder kompatible med standardscannere?",
+        "answer": "Ja. De følger internationale standarder og virker med næsten alle kommercielle scannere. <li>CODE128 fungerer med de fleste generelle scannere i detail, lager og kontor.</li><li>EAN-13 er designet til detailhandlens POS-systemer.</li> For optimal læsbarhed: hold passende stillezoner, tilstrækkelig kontrast og en passende størrelse."
+      }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "name": "Regex-tester – Test og fejlfind regulære udtryk",
+    "description": "Test, debug og validér regulære udtryk med dette interaktive onlineværktøj. Visualisér matches i realtid med støtte for forskellige flags og mønstre.",
+    "category": "development",
+    "keywords": [
+      "regex tester",
+      "regulært udtryk",
+      "regex validator",
+      "regex debugger",
+      "mønstermatching",
+      "regex flags",
+      "regex testværktøj",
+      "regex checker",
+      "regex mønster",
+      "regex match"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er regulære udtryk, og hvorfor er de nyttige?",
+        "answer": "Regulære udtryk (regex) er tekststrenge, der definerer søgemønstre. De er kraftfulde til tekstbehandling, validering og udtræk. Regex bruges til <li>validering af formater som e-mail eller telefon,</li> <li>udtræk af data fra tekst,</li> <li>søg og erstat,</li> <li>parsing og transformering,</li> <li>og søgefunktionalitet.</li> Udviklere, dataanalytikere og IT-folk bruger regex på tværs af sprog, editorer og CLI-værktøjer."
+      },
+      {
+        "question": "Hvad betyder de forskellige regex-flags?",
+        "answer": "Flags ændrer, hvordan matching fungerer: <li><strong>g (global)</strong>: Finder alle matches i stedet for at stoppe ved den første</li> <li><strong>i (case-insensitive)</strong>: Gør mønstret ufølsomt over for store/små bogstaver</li> <li><strong>m (multiline)</strong>: Lader ^ og $ matche start/slut på hver linje</li> <li><strong>s (dotAll)</strong>: Lader punktum (.) matche også linjeskift</li> <li><strong>u (unicode)</strong>: Behandler mønstret som Unicode for korrekt matching</li> <li><strong>y (sticky)</strong>: Matcher kun fra lastIndex-positionen og avancerer ikke</li> Understøttelsen varierer mellem sprog og værktøjer, men disse er almindelige i JavaScript m.fl."
+      },
+      {
+        "question": "Hvordan laver jeg effektive regulære udtryk?",
+        "answer": "Bedste praksis: <li>Start simpelt og byg gradvist, test løbende,</li> <li>brug vores tester til at visualisere matches,</li> <li>lær almindelige mønstre (e-mail, URL, telefon osv.),</li> <li>brug tegnklasser ([a-z], \\d, \\w) for læsbarhed,</li> <li>vær specifik for at undgå for grådige matches,</li> <li>brug ikke-fangende grupper (?:...) når du ikke skal bruge indholdet,</li> <li>tænk på performance for komplekse mønstre,</li> <li>tilføj kommentarer med x-flag hvor understøttet,</li> <li>test med kanttilfælde og uventede inputs.</li> Den mest vedligeholdelige regex er ofte den enkleste, der løser opgaven."
+      },
+      {
+        "question": "Er mine data sikre, når jeg bruger denne regex-tester?",
+        "answer": "Ja. Alt kører i din browser – ingen data sendes eller gemmes. Matching sker lokalt på din enhed for maksimal privatliv og sikkerhed. Når du lukker siden, efterlades ingen spor, hvilket gør værktøjet velegnet til følsomme data."
+      },
+      {
+        "question": "Hvad er nogle almindelige regex-mønstre, jeg kan bruge?",
+        "answer": "Nyttige mønstre: <li><strong>E-mail</strong>: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}</li> <li><strong>URL</strong>: https?:\\/\\/[\\w\\.-]+\\.[a-zA-Z]{2,}[\\/\\w\\.-]*</li> <li><strong>Telefon (US)</strong>: \\(\\d{3}\\)\\s?\\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}</li> <li><strong>Dato (YYYY-MM-DD)</strong>: \\d{4}-\\d{2}-\\d{2}</li> <li><strong>Tid (HH:MM)</strong>: ([01]?[0-9]|2[0-3]):[0-5][0-9]</li> <li><strong>IP-adresse</strong>: \\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b</li> <li><strong>Adgangskodestyrke</strong>: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^\\w\\s]).{8,}$</li> <li><strong>HTML-tag</strong>: <([a-z]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)</li> Disse er forenklede og kan kræve justering til specifikke brugstilfælde."
+      }
+    ]
+  },
+  {
+    "slug": "json-xml-converter",
+    "name": "JSON XML-konverter – Konvertér mellem JSON og XML",
+    "description": "Konvertér nemt mellem JSON- og XML-formater med dette gratis onlineværktøj. Perfekt til datatransformation, API-integration og konvertering af konfigurationsfiler.",
+    "category": "development",
+    "keywords": [
+      "json til xml konverter",
+      "xml til json konverter",
+      "json xml transformation",
+      "konvertér json til xml",
+      "konvertér xml til json",
+      "json xml parser",
+      "dataformat-konverter",
+      "api data konverter",
+      "xml json transformation",
+      "online json xml værktøj"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er forskellen på JSON og XML?",
+        "answer": "JSON (JavaScript Object Notation) og XML (Extensible Markup Language) er begge dataudvekslingsformater, men de adskiller sig: <li>JSON er letvægts, bruger en enkel nøgle-værdi-syntaks og er naturlig i JavaScript. Det er mere kompakt, lettere at læse og hurtigere at parse.</li> <li>XML er mere verbose med åbne/lukke-tags, understøtter attributter og navnerum og kan valideres stramt via skemaer.</li> XML er fleksibel til komplekse dokumentstrukturer, mens JSON er effektiv til simpel dataudveksling."
+      },
+      {
+        "question": "Hvornår bør jeg bruge JSON kontra XML?",
+        "answer": "<li>Vælg JSON til letvægts dataudveksling, JavaScript-integration, simple datastrukturer, API-svar, konfigurationsfiler eller mobile apps, hvor båndbredde betyder noget.</li> <li>Vælg XML til dokumentorienterede data, komplekse hierarkier, metadata via attributter, navnerum, skemavalidering eller kompatibilitet med legacy-/enterprise-systemer. Brancher som sundhed (HL7), finans (FIX) og udgivelse (DocBook) har veletablerede XML-standarder.</li> Vores konverter hjælper dig med at skifte efter behov."
+      },
+      {
+        "question": "Hvordan håndterer konverteren komplekse datastrukturer?",
+        "answer": "Vi bevarer hierarkier under transformationen. <li>JSON→XML: Arrays bliver gentagne elementer, indlejrede objekter bliver underordnede elementer, og specialtegn escapes korrekt.</li> <li>XML→JSON: Elementer med attributter bliver indlejrede objekter, gentagne elementer bliver arrays, og tekstindhold bevares.</li> Konverteren bevarer strukturens integritet og tilpasser den til målformatets konventioner."
+      },
+      {
+        "question": "Er der begrænsninger ved JSON↔XML-konvertering?",
+        "answer": "Ja, nogle iboende begrænsninger: <li>XML-attributter har ikke direkte ækvivalent i JSON og konverteres typisk til indlejrede objekter eller særlige felter.</li> <li>XML kan have blandet indhold, som ikke maps pænt til JSON.</li> <li>Navnerum bliver ofte præfiksede feltnavne i JSON.</li> <li>XML-processeringsinstruktioner og DTD'er går tabt ved konvertering til JSON.</li> <li>JSON skelner ikke mellem elementer og attributter.</li> På trods af dette dækker konverteren de fleste almindelige scenarier effektivt."
+      },
+      {
+        "question": "Hvordan sikrer jeg, at den konverterede data er gyldig i målformatet?",
+        "answer": "Sørg først for, at kildedata er velstruktureret. Tjek derefter output mod målformatets regler: <li>For JSON: at den kan parses af JSON.parse().</li> <li>For XML: valider mod XML-regler eller et skema.</li> <li>For JSON: tjek, at alle egenskabsnavne er citerede, og indlejring er korrekt.</li> <li>For XML: tjek korrekte nestinger/lukninger og korrekt escape af specialtegn.</li> Ved kritiske anvendelser brug eventuelt yderligere valideringsværktøjer."
+      }
+    ]
+  },
+  {
+    "slug": "json-yaml-converter",
+    "name": "JSON YAML-konverter – Konvertér mellem JSON og YAML",
+    "description": "Konvertér nemt mellem JSON- og YAML-formater med dette gratis onlineværktøj. Perfekt for udviklere, der arbejder med konfigurationsfiler, API'er og dataudveksling.",
+    "category": "development",
+    "keywords": [
+      "json til yaml",
+      "yaml til json",
+      "json yaml konverter",
+      "yaml konverter",
+      "json konverter",
+      "konvertér json til yaml",
+      "konvertér yaml til json",
+      "yaml formatter",
+      "json formatter",
+      "dataformat konverter"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er forskellen på JSON og YAML?",
+        "answer": "Begge er dataserialiseringsformater, men: <li>JSON er mere kompakt og bruger klamme-/kantede parenteser og anførselstegn – velegnet til transmission.</li> <li>YAML er mere menneskelæseligt med indrykning, understøtter kommentarer og giver avancerede strukturer som ankre og referencer.</li> YAML foretrækkes ofte til konfiguration, mens JSON er almindeligt i API'er og dataudveksling pga. enkelhed og parsehastighed."
+      },
+      {
+        "question": "Hvorfor konvertere mellem JSON og YAML?",
+        "answer": "Nyttigt når: <li>du migrerer konfigurationer mellem systemer (fx fra JSON til Kubernetes YAML),</li> <li>API'er accepterer ét format, men dine data er i et andet,</li> <li>teams bruger forskellige værktøjer/præferencer,</li> <li>eller du vil gøre kompleks JSON mere læsbar til dokumentation/fejlsøgning.</li> Denne konverter gør overgangen nem og fejlfri."
+      },
+      {
+        "question": "Er konverteren sikker og privat?",
+        "answer": "Ja. Al konvertering sker lokalt i din browser – dine data forlader aldrig enheden. Det er derfor sikkert at konvertere følsomme konfigurationsfiler eller proprietære datastrukturer. Du kan verificere i netværkspanelet, at der ingen overførsler sker."
+      },
+      {
+        "question": "Hvilke problemer ser man ofte ved JSON↔YAML?",
+        "answer": "Typiske udfordringer: <li>håndtering af specialtegn (YAML kræver oftere escape),</li> <li>bevarelse af datatyper (tal vs. strenge),</li> <li>korrekt indrykning ved konvertering til YAML,</li> <li>håndtering af multilinjede strenge,</li> <li>og bevaring af kommentarer (JSON understøtter ikke kommentarer, YAML gør).</li> Vores konverter håndterer de fleste kanttilfælde, men verificér altid output for komplekse strukturer."
+      },
+      {
+        "question": "Kan jeg bruge værktøjet til store JSON- eller YAML-filer?",
+        "answer": "Ja, da alt sker lokalt. Meget store filer (flere MB) kan dog påvirke ydeevnen afhængigt af din enhed. For ekstremt store filer kan CLI-værktøjer som “yq” eller “jq” være mere passende."
+      }
+    ]
+  },
+  {
+    "slug": "json-toml-converter",
+    "name": "JSON TOML-konverter – Konvertér mellem JSON og TOML",
+    "description": "Konvertér nemt mellem JSON- og TOML-formater med dette gratis onlineværktøj. Ideelt for udviklere, der arbejder med konfigurationsfiler, API'er og dataudveksling.",
+    "category": "development",
+    "keywords": [
+      "json til toml",
+      "toml til json",
+      "json toml konverter",
+      "toml konverter",
+      "json konverter",
+      "konvertér json til toml",
+      "konvertér toml til json",
+      "toml formatter",
+      "json formatter",
+      "dataformat konverter"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er forskellen på JSON og TOML?",
+        "answer": "Begge er dataserialiseringsformater, men der er vigtige forskelle: <li>JSON er designet til dataudveksling (udbredt i web-API'er), mens TOML primært er til konfigurationsfiler.</li> <li>JSON har kompakt syntaks med klamme/kanter; TOML bruger mere læsbar INI-lignende syntaks med eksplicitte sektioner.</li> <li>TOML understøtter kommentarer (JSON gør ikke officielt).</li> <li>TOML har native dato-/tids-typer; JSON kræver brugerdefinerede repræsentationer.</li> <li>TOML er menneskevenlig at skrive, mens JSON er maskinvenlig.</li>"
+      },
+      {
+        "question": "Hvorfor konvertere mellem JSON og TOML?",
+        "answer": "Anvendelser: <li>Migrering af konfigurationer mellem systemer med forskellige formater (fx til økosystemer i Rust/Go m.fl.).</li> <li>Arbejder med API'er, der accepterer ét format, mens dine data er i et andet.</li> <li>Samarbejde på tværs af teams med forskellige værktøjer/præferencer.</li> <li>Gøre kompleks JSON mere læsbar til konfiguration.</li> <li>Integration med værktøjer som Cargo (Rust) mv., der bruger TOML.</li> Konverteren gør processen smidig og pålidelig."
+      },
+      {
+        "question": "Er konverteren sikker og privat?",
+        "answer": "Ja. Al konvertering sker lokalt i din browser – ingen data uploades. Dine data forlader ikke enheden; værktøjet fungerer også offline efter indlæsning. Vi bruger ingen cookies eller tracking, og konverteringen udføres med gennemprøvede klientbiblioteker."
+      },
+      {
+        "question": "Hvilke udfordringer ser man ofte ved JSON↔TOML?",
+        "answer": "Typisk: <li>håndtering af specialtegn (forskellige escape-regler),</li> <li>bevarelse af datatyper (tal vs. strenge),</li> <li>indlejrede strukturer (TOML bruger punktnotation),</li> <li>korrekt konvertering af arrays og tabeller,</li> <li>kommentarer mistes ved TOML→JSON (JSON understøtter ikke kommentarer).</li> Vores konverter håndterer de fleste tilfælde, men tjek gerne output i krævende scenarier."
+      },
+      {
+        "question": "Kan værktøjet håndtere store JSON- eller TOML-filer?",
+        "answer": "Ja, inden for rimelige grænser, men browserens hukommelse sætter loftet. Meget store filer (10+ MB) kan være langsomme; overvej i så fald CLI-værktøjer eller sprog-specifikke biblioteker. Til almindelige konfigurationer og API-svar fungerer værktøjet fint."
+      }
+    ]
+  },
+  {
+    "slug": "ascii-art-generator",
+    "name": "ASCII-kunstgenerator – Konverter billeder til tekstkunst",
+    "description": "Konverter dine billeder til ASCII-kunst med dette gratis onlineværktøj. Tilpas tegnsæt, bredde og farver for at skabe unikke tekstbaserede gengivelser.",
+    "category": "media",
+    "keywords": [
+      "ascii kunstgenerator",
+      "billede til ascii",
+      "tekstkunst skaber",
+      "ascii konverter",
+      "billede til tekstkunst",
+      "tekstkunst generator",
+      "ascii kunst maker",
+      "billede til ascii kunst",
+      "tekst fra billede",
+      "billede som ascii"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er ASCII-kunst, og hvordan fungerer det?",
+        "answer": "ASCII-kunst er en teknik, der bruger udskrivbare tegn fra ASCII-tabellen til at skabe billeder. Vores generator analyserer billedets lysstyrke pr. pixel og mapper dem til tilsvarende ASCII-tegn. Mørke områder repræsenteres af tætte tegn som “@” eller “#”, mens lyse områder bruger “.” eller mellemrum. Det skaber en tekstbaseret gengivelse, der ligner originalen ved korrekt skala."
+      },
+      {
+        "question": "Kan jeg tilpasse de tegn, der bruges i min ASCII-kunst?",
+        "answer": "Ja! Du kan tilpasse det tegnsæt, der bruges til at generere ASCII-kunst. Definér, hvilke tegn der skal repræsentere forskellige lysstyrkeniveauer. Som standard bruger vi et sæt fra tæt til let: “@%#*+=-:. ”, men du kan ændre det for andre effekter – fx kun “01” for et binært udtryk."
+      },
+      {
+        "question": "Hvordan får jeg de bedste resultater fra generatoren?",
+        "answer": "Gode tips: <li>Brug billeder med god kontrast og tydeligt motiv,</li><li>eksperimentér med forskellige tegnsæt – længere sæt giver mere detalje,</li><li>justér bredden efter motivets kompleksitet,</li><li>prøv både normal og inverteret farve,</li><li>brug større bredde til detaljerede billeder,</li><li>simple logoer eller portrætter fungerer ofte bedst,</li><li>vis output i en monospatieret skrifttype for korrekt justering.</li>"
+      },
+      {
+        "question": "Er mine billeddata sikre, når jeg bruger værktøjet?",
+        "answer": "Ja. Al billedbehandling sker lokalt i din browser – dine billeder uploades ikke til vores servere. Konverteringen kører på din enhed, så dine billeder forbliver private og sikre. Værktøjet virker desuden offline, når siden først er indlæst."
+      },
+      {
+        "question": "Hvad kan jeg bruge den genererede ASCII-kunst til?",
+        "answer": "Anvendelser: <li>Kopiér til e-mails, beskeder eller kommentarer,</li> <li>download som tekstfil til dokumenter eller kode,</li> <li>brug i kreative kodeprojekter,</li> <li>retro-design eller digital kunst,</li> <li>unikke signaturer til fora eller e-mail,</li> <li>farvet ASCII-kunst i webprojekter,</li> <li>eller integrér i terminalapps og spil.</li>"
+      }
+    ]
+  },
+  {
+    "slug": "image-color-picker",
+    "name": "Billedfarvevælger – Udtræk farver fra billeder",
+    "description": "Udtræk og identificér farver fra ethvert billede. Upload dit foto for at få farvekoder i HEX-, RGB- og HSL-formater til designprojekter.",
+    "category": "media",
+    "keywords": [
+      "billedfarvevælger",
+      "udtræk farver fra billede",
+      "farvepalettegenerator",
+      "billedfarveekstraktor",
+      "få farve fra billede",
+      "farvekodefinder",
+      "HEX-farvevælger",
+      "RGB-farveekstraktor",
+      "farvevælger til website",
+      "design-farværktøj"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan fungerer Image Color Picker?",
+        "answer": "Upload et billede, så analyserer værktøjet det, finder dominerende farver og opretter en palette. Klik et vilkårligt sted i billedet for at få den præcise farve for den pixel. Farver vises i HEX, RGB og HSL, klar til brug i websites, apps og designprojekter."
+      },
+      {
+        "question": "Hvilke billedformater understøttes?",
+        "answer": "Vi understøtter almindelige formater som JPEG, PNG, GIF, WebP og BMP. Højkvalitetsbilleder med klare farver giver de bedste resultater. For at sikre ydeevne er filstørrelsen begrænset til 5MB. Brug gerne billeder med god belysning og minimale kompressionsartefakter."
+      },
+      {
+        "question": "Hvordan bruger jeg de udtrukne farver?",
+        "answer": "Kopiér HEX-, RGB- eller HSL-værdier til Adobe Photoshop, Illustrator, Figma eller Sketch; brug farvekoder i dit websites CSS; opret en konsistent farvepalette til dit brand eller projekt; gem paletten til senere. Det hjælper med at bevare farvekonsistens på tværs af platforme."
+      },
+      {
+        "question": "Er mine billeder sikre?",
+        "answer": "Ja. Al behandling sker lokalt i din browser – dine billeder uploades aldrig til vores servere. Der gemmes ingen billeddata, når du lukker fanen eller forlader siden."
+      },
+      {
+        "question": "Hvor præcis er farveekstraktionen?",
+        "answer": "Et klik giver den nøjagtige pixelfarve, altså meget høj præcision. Ved udtræk af dominerende farver bruges avancerede algoritmer. Den oplevede farve kan variere en smule afhængigt af skærmkalibrering, lysstyrke og omgivelser. Til professionelt arbejde anbefales en kalibreret skærm."
+      }
+    ]
+  },
+  {
+    "slug": "libgen-monitor",
+    "name": "LibGen Monitor – Tjek status og spejle for Library Genesis",
+    "description": "Overvåg i realtid status for Library Genesis (LibGen) og dets spejlsider. Se, om LibGen er nede, eller om det kan tilgås fra din placering.",
+    "category": "monitoring",
+    "keywords": [
+      "libgen status",
+      "library genesis monitor",
+      "libgen spejl status",
+      "libgen nede",
+      "libgen tjek",
+      "library genesis tilgængelighed",
+      "libgen spejltjek",
+      "libgen oppetid",
+      "fungerende library genesis-spejle",
+      "libgen alternative links"
+    ],
+    "faq": [
+      {
+        "question": "Hvad er Library Genesis (LibGen)?",
+        "answer": "Library Genesis (LibGen) er et ‘shadow library’-projekt, der giver gratis adgang til videnskabelige artikler, akademiske tekster og bøger. Det er en ressource for studerende, forskere og undervisere uden adgang til betalingsindhold. Tjenesten drives via et netværk af spejlsider, som replikerer databasen på tværs af domæner og servere."
+      },
+      {
+        "question": "Hvorfor overvåge LibGens status?",
+        "answer": "Serverproblemer, domæneskift og juridiske sager kan give nedetid. Med overvågning kan du hurtigt se, hvilke spejle der virker fra din placering. Værktøjet tjekker flere officielle og community-spejle og viser tilgængelighed i realtid."
+      },
+      {
+        "question": "Hvordan fungerer værktøjet?",
+        "answer": "Det udfører realtids-tjek af flere LibGen-domæner og spejle for at afgøre tilgængelighed. Klient-tjek kører i din browser (lokalt perspektiv), server-tjek giver et globalt overblik. Vi viser svartider, HTTP-status og en enkel oppe/nede-indikator pr. site."
+      },
+      {
+        "question": "Er brugen lovlig?",
+        "answer": "Ja. Værktøjet måler kun tilgængelighed og svartider – ligesom andre oppetids-tjenester. Det hoster ikke LibGen-indhold og giver ikke direkte adgang. Selve adgangen til LibGen kan være juridisk forskellig alt efter landets ophavsret."
+      },
+      {
+        "question": "Hvorfor kan LibGen være utilgængeligt?",
+        "answer": "Mulige årsager: <li>1) tekniske problemer eller servernedbrud,</li> <li>2) blokering fra din ISP pga. lovkrav,</li> <li>3) domænet er ændret eller taget ned,</li><li>4) netværksproblemer mellem dig og serveren.</li> Værktøjet hjælper med at afgøre, om problemet er lokalt eller globalt."
       }
     ]
   }

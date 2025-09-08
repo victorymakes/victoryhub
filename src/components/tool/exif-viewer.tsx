@@ -1,18 +1,16 @@
 "use client";
 
-import React, { useRef, useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { AlertTriangle, Upload, Download, Shield, X } from "lucide-react";
+import { AlertTriangle, Download, Shield } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { cn } from "@/lib/utils";
 import { formatBytes } from "@/lib/file";
-import Image from "next/image";
 import ExifReader, { Tags } from "exifreader";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import UploadFiles from "@/components/tool/upload-files";
 
 interface ExifData {
     file: {
@@ -118,34 +116,11 @@ const ExifViewer: React.FC = () => {
     const [imageUrl, setImageUrl] = useState<string | null>(null);
     const [cleanImageUrl, setCleanImageUrl] = useState<string | null>(null);
     const [exifData, setExifData] = useState<ExifData | null>(null);
-    const [isDragging, setIsDragging] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const [isExifRemoved, setIsExifRemoved] = useState<boolean>(false);
-    const fileInputRef = useRef<HTMLInputElement | null>(null);
 
     // Handle file selection
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const files = e.target.files;
-        if (files && files.length > 0) {
-            processFile(files[0]);
-        }
-    };
-
-    // Handle drag events
-    const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(true);
-    };
-
-    const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-    };
-
-    const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        setIsDragging(false);
-        const files = e.dataTransfer.files;
+    const handleFileChange = (files: FileList | File[]) => {
         if (files && files.length > 0) {
             processFile(files[0]);
         }
@@ -278,10 +253,6 @@ const ExifViewer: React.FC = () => {
         setExifData(null);
         setIsExifRemoved(false);
         setError(null);
-
-        if (fileInputRef.current) {
-            fileInputRef.current.value = "";
-        }
     };
 
     return (
@@ -289,78 +260,11 @@ const ExifViewer: React.FC = () => {
             <Card>
                 <CardContent className="pt-6 space-y-6">
                     {/* Upload Section */}
-                    <div
-                        className={cn(
-                            "border-2 border-dashed rounded-lg p-6 transition-colors",
-                            "flex flex-col items-center justify-center text-center",
-                            isDragging
-                                ? "border-primary bg-primary/5"
-                                : "border-muted-foreground/25 hover:border-primary/50",
-                            image ? "py-4" : "py-10",
-                        )}
-                        onDragOver={handleDragOver}
-                        onDragLeave={handleDragLeave}
-                        onDrop={handleDrop}
-                        onClick={() => !image && fileInputRef.current?.click()}
-                    >
-                        <Input
-                            type="file"
-                            accept="image/*"
-                            ref={fileInputRef}
-                            onChange={handleFileChange}
-                            className="hidden"
-                        />
-
-                        {!image ? (
-                            <>
-                                <div className="mb-4 rounded-full bg-primary/10 p-3">
-                                    <Upload className="h-6 w-6 text-primary" />
-                                </div>
-                                <h3 className="text-lg font-medium mb-1">
-                                    {t("uploadImage")}
-                                </h3>
-                                <p className="text-sm text-muted-foreground mb-2">
-                                    {t("dragAndDropImage")}
-                                </p>
-                                <Button size="sm" variant="secondary">
-                                    {t("chooseFiles")}
-                                </Button>
-                            </>
-                        ) : (
-                            <div className="w-full flex items-center justify-between">
-                                <div className="flex items-center space-x-4">
-                                    <div className="relative w-16 h-16 rounded-md border overflow-hidden bg-muted">
-                                        {imageUrl && (
-                                            <Image
-                                                src={cleanImageUrl || imageUrl}
-                                                alt={image.name}
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        )}
-                                    </div>
-                                    <div className="space-y-1 text-left">
-                                        <p className="text-sm font-medium">
-                                            {image.name}
-                                        </p>
-                                        <p className="text-xs text-muted-foreground">
-                                            {formatBytes(image.size)}
-                                        </p>
-                                    </div>
-                                </div>
-                                <Button
-                                    variant="ghost"
-                                    size="icon"
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        clearImage();
-                                    }}
-                                >
-                                    <X className="h-4 w-4" />
-                                </Button>
-                            </div>
-                        )}
-                    </div>
+                    <UploadFiles
+                        onFilesSelected={handleFileChange}
+                        onFilesCleared={clearImage}
+                        accept={"image/*"}
+                    />
 
                     {/* Action Buttons */}
                     {image && (
@@ -371,7 +275,7 @@ const ExifViewer: React.FC = () => {
                                     disabled={!image}
                                     className="flex-1"
                                 >
-                                    <Shield className="h-4 w-4 mr-2" />
+                                    <Shield className="h-4 w-4" />
                                     {t("removeExif")}
                                 </Button>
                             ) : (
@@ -379,7 +283,7 @@ const ExifViewer: React.FC = () => {
                                     onClick={downloadCleanImage}
                                     className="flex-1"
                                 >
-                                    <Download className="h-4 w-4 mr-2" />
+                                    <Download className="h-4 w-4" />
                                     {t("download")}
                                 </Button>
                             )}

@@ -24,9 +24,21 @@
         "icon": "image"
     },
     {
+        "slug": "calculator",
+        "name": "Calculatrices",
+        "description": "Calcul rapide, conversions d’unités, calculateurs financiers et de santé.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Surveillance & Statut",
+        "description": "Vérifier l’accessibilité des sites Web, la disponibilité des miroirs, la latence et l’état DNS.",
+        "icon": "server"
+    },
+    {
         "slug": "utilities",
         "name": "Utilitaires",
-        "description": "Outils quotidiens et calculateurs pour la productivité et l'utilisation quotidienne",
+        "description": "Sélecteur aléatoire et autres mini-outils pratiques.",
         "icon": "activity"
     }
 ]

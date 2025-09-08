@@ -1,20 +1,26 @@
-import { MetadataRoute } from "next";
-import { getTools } from "@/service/tool-service";
+// scripts/generate-sitemap.mjs
+import { writeFileSync, mkdirSync } from "fs";
+import path from "path";
+
+import { config } from "@/lib/config";
+import { loadTools } from "@/service/tool-service";
 import { getBlogs } from "@/service/blog-service";
 import { getPages } from "@/service/cms-service";
-import { config } from "@/lib/config";
+import { MetadataRoute } from "next";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export const generateSitemap = async () => {
     const baseUrl = config.baseUrl;
     const locales = config.locales;
     const sitemapEntries: MetadataRoute.Sitemap = [];
+
+    const iso = (date: Date): string => date.toISOString();
 
     // Add tools pages
     for (const locale of locales) {
         // Add home page
         sitemapEntries.push({
             url: `${baseUrl}/${locale}`,
-            lastModified: new Date(),
+            lastModified: iso(new Date()),
             changeFrequency: "monthly",
             priority: 1,
         });
@@ -22,17 +28,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         // Tools index page
         sitemapEntries.push({
             url: `${baseUrl}/${locale}/tools`,
-            lastModified: new Date(),
+            lastModified: iso(new Date()),
             changeFrequency: "weekly",
             priority: 0.9,
         });
 
         // Individual tool pages
-        const tools = await getTools(locale);
+        const tools = await loadTools(locale);
         tools.forEach((tool) => {
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}/tools/${tool.slug}`,
-                lastModified: new Date(),
+                lastModified: iso(new Date()),
                 changeFrequency: "monthly",
                 priority: 0.8,
             });
@@ -41,7 +47,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         // Blog index page
         sitemapEntries.push({
             url: `${baseUrl}/${locale}/blog`,
-            lastModified: new Date(),
+            lastModified: iso(new Date()),
             changeFrequency: "weekly",
             priority: 0.9,
         });
@@ -51,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         blogs.forEach((blog) => {
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}/blog/${blog.slug}`,
-                lastModified: new Date(blog.date),
+                lastModified: iso(new Date(blog.date)),
                 changeFrequency: "monthly",
                 priority: 0.7,
             });
@@ -62,12 +68,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         pages.forEach((page) => {
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}/${page.slug}`,
-                lastModified: new Date(page.date),
+                lastModified: iso(new Date(page.date)),
                 changeFrequency: "monthly",
                 priority: 0.6,
             });
         });
     }
 
-    return sitemapEntries;
-}
+    const xml =
+        `<?xml version="1.0" encoding="UTF-8"?>\n` +
+        `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+        sitemapEntries
+            .map(
+                (u) => `  <url>
+    <loc>${u.url}</loc>
+    <lastmod>${u.lastModified}</lastmod>
+    <changefreq>${u.changeFrequency}</changefreq>
+    <priority>${u.priority}</priority>
+  </url>`,
+            )
+            .join("\n") +
+        `\n</urlset>\n`;
+
+    mkdirSync(path.join("public"), { recursive: true });
+    writeFileSync(path.join("public", "sitemap.xml"), xml);
+    console.log(`Generated: sitemap.xml (${sitemapEntries.length} URLs)`);
+};

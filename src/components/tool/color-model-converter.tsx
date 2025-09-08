@@ -618,7 +618,7 @@ export const ColorModelConverter = () => {
                                     )
                                 }
                             >
-                                <Copy className="mr-2 h-4 w-4" />
+                                <Copy className="h-4 w-4" />
                                 rgb({rgb[0]}, {rgb[1]}, {rgb[2]})
                             </Button>
                         </div>
@@ -731,7 +731,7 @@ export const ColorModelConverter = () => {
                                     )
                                 }
                             >
-                                <Copy className="mr-2 h-4 w-4" />
+                                <Copy className="h-4 w-4" />
                                 hsl({hsl[0]}, {hsl[1]}%, {hsl[2]}%)
                             </Button>
                         </div>
@@ -844,7 +844,7 @@ export const ColorModelConverter = () => {
                                     )
                                 }
                             >
-                                <Copy className="mr-2 h-4 w-4" />
+                                <Copy className="h-4 w-4" />
                                 hsv({hsv[0]}, {hsv[1]}%, {hsv[2]}%)
                             </Button>
                         </div>
@@ -960,7 +960,7 @@ export const ColorModelConverter = () => {
                                     )
                                 }
                             >
-                                <Copy className="mr-2 h-4 w-4" />
+                                <Copy className="h-4 w-4" />
                                 oklab({oklab[0].toFixed(2)}{" "}
                                 {oklab[1].toFixed(2)} {oklab[2].toFixed(2)})
                             </Button>
@@ -1076,7 +1076,7 @@ export const ColorModelConverter = () => {
                                     )
                                 }
                             >
-                                <Copy className="mr-2 h-4 w-4" />
+                                <Copy className="h-4 w-4" />
                                 oklch({oklch[0].toFixed(2)}{" "}
                                 {oklch[1].toFixed(2)} {Math.round(oklch[2])})
                             </Button>

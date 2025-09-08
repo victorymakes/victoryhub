@@ -24,9 +24,21 @@
         "icon": "image"
     },
     {
+        "slug": "calculator",
+        "name": "Rechner",
+        "description": "Schnellrechner, Einheitenumrechnungen sowie Finanz- und Gesundheitsrechner.",
+        "icon": "calculator"
+    },
+    {
+        "slug": "monitoring",
+        "name": "Überwachung & Status",
+        "description": "Website-Erreichbarkeit, Spiegel-Verfügbarkeit, Latenz und DNS-Status prüfen.",
+        "icon": "server"
+    },
+    {
         "slug": "utilities",
         "name": "Dienstprogramme",
-        "description": "Alltagswerkzeuge und Rechner für Produktivität und täglichen Gebrauch",
+        "description": "Zufallsauswahl und weitere praktische Mini-Tools.",
         "icon": "activity"
     }
 ]

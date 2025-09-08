@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -60,28 +60,37 @@ export default function CarbonFootprintCalculator() {
     const [error, setError] = useState<string | null>(null);
 
     // Carbon emission factors (in tons of CO2 per year)
-    const transportationFactors = {
-        [TransportationType.CAR]: 0.000192, // tons per km
-        [TransportationType.PUBLIC_TRANSPORT]: 0.000096, // tons per km
-        [TransportationType.BIKE_WALK]: 0, // tons per km
-        [TransportationType.MIXED]: 0.000144, // tons per km
-    };
+    const transportationFactors = useMemo(
+        () => ({
+            [TransportationType.CAR]: 0.000192, // tons per km
+            [TransportationType.PUBLIC_TRANSPORT]: 0.000096, // tons per km
+            [TransportationType.BIKE_WALK]: 0, // tons per km
+            [TransportationType.MIXED]: 0.000144, // tons per km
+        }),
+        [],
+    );
 
     const flightEmissionFactor = 0.25; // tons per flight (average)
 
-    const dietFactors = {
-        [DietType.MEAT_HEAVY]: 2.5, // tons per year
-        [DietType.AVERAGE]: 1.7, // tons per year
-        [DietType.VEGETARIAN]: 1.4, // tons per year
-        [DietType.VEGAN]: 1.1, // tons per year
-    };
+    const dietFactors = useMemo(
+        () => ({
+            [DietType.MEAT_HEAVY]: 2.5, // tons per year
+            [DietType.AVERAGE]: 1.7, // tons per year
+            [DietType.VEGETARIAN]: 1.4, // tons per year
+            [DietType.VEGAN]: 1.1, // tons per year
+        }),
+        [],
+    );
 
-    const energyFactors = {
-        [EnergyEfficiency.LOW]: 3.0, // tons per household per year
-        [EnergyEfficiency.AVERAGE]: 2.0, // tons per household per year
-        [EnergyEfficiency.HIGH]: 1.0, // tons per household per year
-        [EnergyEfficiency.RENEWABLE]: 0.5, // tons per household per year
-    };
+    const energyFactors = useMemo(
+        () => ({
+            [EnergyEfficiency.LOW]: 3.0, // tons per household per year
+            [EnergyEfficiency.AVERAGE]: 2.0, // tons per household per year
+            [EnergyEfficiency.HIGH]: 1.0, // tons per household per year
+            [EnergyEfficiency.RENEWABLE]: 0.5, // tons per household per year
+        }),
+        [],
+    );
 
     const calculateCarbonFootprint = useCallback(() => {
         setError(null);
@@ -143,6 +152,9 @@ export default function CarbonFootprintCalculator() {
         // Round to 2 decimal places
         setCarbonFootprint(Math.round(totalEmissions * 100) / 100);
     }, [
+        dietFactors,
+        energyFactors,
+        transportationFactors,
         transportationType,
         transportationDistance,
         flightsPerYear,

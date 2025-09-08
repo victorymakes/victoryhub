@@ -1,4 +1,21 @@
 {
+  "Common": {
+    "loading": "Загрузка...",
+    "clear": "Очистить",
+    "clearAll": "Очистить всё",
+    "download": "Скачать",
+    "downloadAll": "Скачать всё",
+    "copy": "Копировать",
+    "copyAll": "Копировать всё",
+    "copied": "Скопировано!"
+  },
+  "UploadFiles": {
+    "dropFiles": "Перетащите файлы сюда",
+    "dragAndDrop": "Перетащите файлы сюда или нажмите, чтобы выбрать",
+    "chooseFiles": "Выбрать файлы",
+    "changeFiles": "Изменить файлы",
+    "clearFiles": "Очистить файлы"
+  },
   "Navigation": {
     "home": "Главная",
     "tools": "Инструменты",
@@ -228,25 +245,32 @@
     "supportedFormats": "Поддерживаемые форматы: JPEG, PNG, WebP"
   },
   "ImageResizer": {
-    "title": "Изменение размера изображений",
-    "description": "Изменяет размер изображений, указывая ширину, высоту или процент",
-    "selectImage": "Выбрать изображение",
-    "dragDropImage": "Перетащите изображение сюда",
+    "uploadImages": "Загрузить изображения",
+    "options": "Параметры",
+    "specificDimensions": "Указать размеры",
+    "percentageResize": "Изменение размера в процентах",
+    "maxDimension": "Максимальная длина стороны",
     "width": "Ширина",
     "height": "Высота",
+    "widthPlaceholder": "Введите ширину в пикселях",
+    "heightPlaceholder": "Введите высоту в пикселях",
+    "maintainAspectRatio": "Сохранять пропорции",
     "percentage": "Процент",
-    "maintainAspectRatio": "Сохранить соотношение сторон",
-    "resize": "Изменить размер",
+    "maxDimensionValue": "Максимальный размер (пиксели)",
+    "maxDimensionHelp": "Длинная сторона будет изменена до этого значения с сохранением пропорций",
+    "originalSize": "Исходный размер",
+    "resizedSize": "Новый размер",
     "download": "Скачать",
-    "originalDimensions": "Исходные размеры",
-    "newDimensions": "Новые размеры",
-    "preview": "Предварительный просмотр",
-    "original": "Исходное",
-    "resized": "Измененное",
-    "processing": "Обработка...",
-    "error": "Ошибка при изменении размера изображения",
-    "invalidDimensions": "Недействительные размеры",
-    "supportedFormats": "Поддерживаемые форматы: JPEG, PNG, WebP, GIF"
+    "downloadAll": "Скачать всё",
+    "clearAll": "Очистить всё",
+    "image": "изображение",
+    "images": "изображения",
+    "processing": "Обработка изображений...",
+    "errors": {
+      "canvasContextFailed": "Не удалось получить контекст canvas.",
+      "resizeFailed": "Не удалось изменить размер. Попробуйте другое изображение или размеры.",
+      "fileReadFailed": "Не удалось прочитать файл. Возможно, файл повреждён."
+    }
   },
   "ImageConverter": {
     "title": "Конвертер изображений",
