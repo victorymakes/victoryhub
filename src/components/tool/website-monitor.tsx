@@ -6,7 +6,7 @@ import {
     CardContent,
     CardHeader,
     CardTitle,
-    CardFooter
+    CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -59,9 +59,9 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
             const response = await fetch(`/api/uptime`, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
                 },
-                body: JSON.stringify(urls)
+                body: JSON.stringify(urls),
             });
 
             if (!response.ok) {
@@ -77,7 +77,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
                     ...site,
                     isUp: siteStatus?.isUp,
                     responseTime: siteStatus?.responseTime,
-                    error: siteStatus?.error
+                    error: siteStatus?.error,
                 };
             });
 
@@ -86,7 +86,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
             setError(
                 error instanceof Error
                     ? error.message
-                    : "Failed to check server status"
+                    : "Failed to check server status",
             );
         } finally {
             setIsLoading(false);
@@ -160,7 +160,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
                         <RefreshCw
                             className={cn(
                                 "h-3 w-3",
-                                isLoading && "animate-spin"
+                                isLoading && "animate-spin",
                             )}
                         />
                         {t("refresh")}
@@ -173,7 +173,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
                         .filter((site) => site.isMainSite)
                         .map((site) => {
                             const status = siteStatus.find(
-                                (s) => s.url === site.url
+                                (s) => s.url === site.url,
                             );
 
                             if (!status) {
@@ -186,8 +186,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
                                     className="overflow-hidden flex flex-col border-primary/20 bg-gradient-to-r from-primary/5 to-transparent"
                                 >
                                     <CardHeader>
-                                        <CardTitle
-                                            className="text-xl flex flex-col items-start sm:flex-row sm:items-center justify-between gap-2">
+                                        <CardTitle className="text-xl flex flex-col items-start sm:flex-row sm:items-center justify-between gap-2">
                                             <div className="flex items-center gap-2">
                                                 {renderStatusIcon(status)}
                                                 {site.name ||
@@ -246,7 +245,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
                             .filter((site) => !site.isMainSite)
                             .map((site) => {
                                 const status = siteStatus.find(
-                                    (s) => s.url === site.url
+                                    (s) => s.url === site.url,
                                 );
 
                                 if (!status) {
@@ -265,7 +264,7 @@ export const WebsiteMonitor: FC<WebsiteMonitorProps> = ({ sites, name }) => {
                                                     <span>
                                                         {site.name ||
                                                             getNameFromUrl(
-                                                                site.url
+                                                                site.url,
                                                             )}
                                                     </span>
                                                 </div>

@@ -14,12 +14,12 @@ export async function POST(request: Request) {
                     const controller = new AbortController();
                     const timeoutId = setTimeout(
                         () => controller.abort(),
-                        5000
+                        5000,
                     );
 
                     const response = await fetch(url, {
                         method: "HEAD",
-                        signal: controller.signal
+                        signal: controller.signal,
                     });
 
                     clearTimeout(timeoutId);
@@ -28,24 +28,24 @@ export async function POST(request: Request) {
                     return {
                         url: url,
                         isUp: response.ok,
-                        responseTime: Math.round(endTime - startTime)
+                        responseTime: Math.round(endTime - startTime),
                     };
                 } catch {
                     const endTime = performance.now();
                     return {
                         url: url,
                         isUp: false,
-                        responseTime: Math.round(endTime - startTime)
+                        responseTime: Math.round(endTime - startTime),
                     };
                 }
-            })
+            }),
         );
 
         return NextResponse.json(results);
     } catch {
         return NextResponse.json(
             { error: "Failed to check websites status" },
-            { status: 500 }
+            { status: 500 },
         );
     }
 }

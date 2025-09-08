@@ -112,6 +112,11 @@
     "description": "Sidan du letar efter finns inte eller har flyttats.",
     "goHome": "Gå till startsidan"
   },
+  "Error": {
+    "title": "500 - Ett fel har inträffat",
+    "description": "Något gick fel. Försök igen senare eller kontakta support om problemet kvarstår.",
+    "goHome": "Gå till startsidan"
+  },
   "UuidGenerator": {
     "title": "UUID-generator",
     "description": "Generera unika universella identifierare (UUID) för dina applikationer",

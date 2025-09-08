@@ -28,7 +28,7 @@ export const initToolDB = async (locale: string) => {
     for (const tool of tools) {
         TOOL_CACHE[locale][tool.slug] = {
             ...tool,
-            category: CATEGORY_CACHE[locale][tool.category]
+            category: CATEGORY_CACHE[locale][tool.category],
         };
         if (!TOOL_CATEGORY_CACHE[locale][tool.category]) {
             TOOL_CATEGORY_CACHE[locale][tool.category] = [];
@@ -44,13 +44,13 @@ export function getToolDB(locale: string) {
 }
 
 export const loadCategories = async (
-    locale: string = "en"
+    locale: string = "en",
 ): Promise<Category[]> => {
     try {
         // Try to import the locale-specific file
         const categories = await import(
             `../../data/db/tool-category/${locale}.json`
-            );
+        );
         return categories.default;
     } catch {
         // Fallback to English if locale file doesn't exist
@@ -72,7 +72,7 @@ export const loadTools = async (locale: string = "en"): Promise<RawTool[]> => {
 };
 
 export const getCategories = async (
-    locale: string = "en"
+    locale: string = "en",
 ): Promise<Category[]> => {
     const { CATEGORY_CACHE } = await getToolDB(locale);
     return Object.values(CATEGORY_CACHE[locale]);
@@ -85,7 +85,7 @@ export const getTools = async (locale: string = "en"): Promise<Tool[]> => {
 
 export const getPopularTools = async (
     count: number = 6,
-    locale: string = "en"
+    locale: string = "en",
 ): Promise<Tool[]> => {
     const popularTools = [
         "password-generator",
@@ -93,7 +93,7 @@ export const getPopularTools = async (
         "timestamp-converter",
         "url-encoder-decoder",
         "image-compressor",
-        "image-converter"
+        "image-converter",
     ];
     const { TOOL_CACHE } = await getToolDB(locale);
     return popularTools
@@ -103,7 +103,7 @@ export const getPopularTools = async (
 
 export const getTool = async (
     slug: string,
-    locale: string = "en"
+    locale: string = "en",
 ): Promise<Tool | null> => {
     const { TOOL_CACHE } = await getToolDB(locale);
     return TOOL_CACHE[locale][slug];
@@ -111,19 +111,19 @@ export const getTool = async (
 
 const getToolsByCategory = async (
     categorySlug: string,
-    locale: string = "en"
+    locale: string = "en",
 ): Promise<Tool[]> => {
     const { TOOL_CATEGORY_CACHE, TOOL_CACHE } = await getToolDB(locale);
     return (
         TOOL_CATEGORY_CACHE[locale][categorySlug]?.map(
-            (slug) => TOOL_CACHE[locale][slug]
+            (slug) => TOOL_CACHE[locale][slug],
         ) || []
     );
 };
 
 export const getRelatedTools = async (
     tool: Tool,
-    locale: string = "en"
+    locale: string = "en",
 ): Promise<Tool[]> => {
     let tools = await getToolsByCategory(tool.category.slug, locale);
     // exclude the current tool

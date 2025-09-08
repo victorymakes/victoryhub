@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 const nextConfig: NextConfig = {
     pageExtensions: ["ts", "tsx", "mdx"],
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: "https",

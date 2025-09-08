@@ -2,7 +2,10 @@
 type Callback = (...args: any[]) => Promise<any>;
 
 class InMemoryCache {
-    private store = new Map<string, { value?: unknown; promise?: Promise<unknown> }>();
+    private store = new Map<
+        string,
+        { value?: unknown; promise?: Promise<unknown> }
+    >();
 
     get(key: string) {
         return this.store.get(key);
@@ -66,7 +69,9 @@ export function cache<T extends Callback>(cb: T, keyParts: string[] = []): T {
         throw new Error("Cache key is required");
     }
     const wrapped = async (...args: Parameters<T>): Promise<ReturnType<T>> => {
-        console.log(`[IN-MEMORY-CACHE] Cache mismatched. Fetch with keys: ${keyFrom(keyParts)} `);
+        console.log(
+            `[IN-MEMORY-CACHE] Cache mismatched. Fetch with keys: ${keyFrom(keyParts)} `,
+        );
         return cb(...args);
     };
     return unstable_cache(wrapped, keyParts) as T;
