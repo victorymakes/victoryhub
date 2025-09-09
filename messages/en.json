@@ -152,8 +152,6 @@
     "goHome": "Go to Home"
   },
   "UuidGenerator": {
-    "title": "UUID Generator",
-    "description": "Generate unique identifiers for your applications with batch support",
     "numberOfUuids": "Number of UUIDs to Generate",
     "generate": "Generate",
     "generatedUuids": "Generated UUIDs",
@@ -166,8 +164,6 @@
     }
   },
   "PasswordGenerator": {
-    "title": "Password Generator",
-    "description": "Generate secure passwords with customizable options",
     "length": "Length",
     "characterSets": "Character Sets",
     "includeUppercase": "Include Uppercase Letters",
@@ -192,8 +188,6 @@
     }
   },
   "TimestampConverter": {
-    "title": "Timestamp Converter",
-    "description": "Convert between timestamp and human-readable date formats",
     "currentTime": "Current Time",
     "timestamp": "Timestamp",
     "dateTime": "Date & Time",
@@ -218,8 +212,6 @@
     }
   },
   "UrlEncoder": {
-    "title": "URL Encoder/Decoder",
-    "description": "Encode and decode URLs for web development",
     "encode": "Encode",
     "decode": "Decode",
     "input": "Input",
@@ -239,8 +231,6 @@
     }
   },
   "WhatsMyIp": {
-    "title": "What's My IP",
-    "description": "Check your public IP address and location information",
     "loading": "Loading your IP information...",
     "refresh": "Refresh",
     "copied": "Copied!",
@@ -257,8 +247,6 @@
     }
   },
   "Base64Encoder": {
-    "title": "Base64 Encoder/Decoder",
-    "description": "Encode and decode Base64 strings for data transmission",
     "encode": "Encode",
     "decode": "Decode",
     "input": "Input",
@@ -328,8 +316,6 @@
     }
   },
   "ImageConverter": {
-    "title": "Image Converter",
-    "description": "Convert images between different formats (JPEG, PNG, WebP)",
     "chooseFiles": "Choose Files",
     "originalSize": "Original size",
     "convertedSize": "Converted size",
@@ -359,8 +345,6 @@
     }
   },
   "QrcodeGenerator": {
-    "title": "QR Code Generator",
-    "description": "Create customizable QR codes with logos, colors, and frames",
     "valueLabel": "QR Code Content",
     "valuePlaceholder": "Enter URL, text, or contact information",
     "styleOptions": "Style Options",
@@ -396,8 +380,6 @@
     }
   },
   "CronGenerator": {
-    "title": "Cron Expression Generator",
-    "description": "Create and decode cron expressions with human-readable explanations",
     "cronExpression": "Cron Expression",
     "humanReadable": "Human Readable",
     "language": "Explanation Language",
@@ -452,8 +434,6 @@
     }
   },
   "BMRCalculator": {
-    "title": "BMR Calculator",
-    "description": "Calculate your Basal Metabolic Rate (BMR) and daily calorie needs.",
     "personalInfo": "Personal Information",
     "unitSystem": "Unit System",
     "metric": "Metric (cm, kg)",
@@ -494,8 +474,6 @@
     }
   },
   "CarbonFootprintCalculator": {
-    "title": "Carbon Footprint Calculator",
-    "description": "Calculate your carbon footprint based on your lifestyle and consumption habits.",
     "transportationTitle": "Transportation",
     "transportationType": "Transportation Type",
     "selectTransportation": "Select transportation type",
@@ -557,8 +535,6 @@
     }
   },
   "RandomPicker": {
-    "title": "Random Picker",
-    "description": "Randomly select an item from your list with a fun animation effect.",
     "addItems": "Add Items",
     "itemPlaceholder": "Enter an item...",
     "add": "Add",
@@ -581,8 +557,6 @@
     "copied": "Copied to clipboard!"
   },
   "TextFaviconGenerator": {
-    "title": "Text Favicon Generator",
-    "description": "Create custom favicons from text with various styles and colors",
     "text": "Text",
     "textPlaceholder": "Enter text (1-4 chars)...",
     "textLengthWarning": "Short text (1-2 chars) works best for favicons",
@@ -627,8 +601,6 @@
     }
   },
   "ColorModelConverter": {
-    "title": "Color Model Converter",
-    "description": "Convert colors between HEX, RGB, HSL, HSV, OKLCH, and OKLAB formats",
     "hexColor": "HEX Color",
     "rgbColor": "RGB Color",
     "hslColor": "HSL Color",
@@ -930,8 +902,6 @@
     }
   },
   "JsonTomlConverter": {
-    "title": "JSON TOML Converter",
-    "description": "Convert between JSON and TOML formats easily",
     "jsonToToml": "JSON to TOML",
     "tomlToJson": "TOML to JSON",
     "jsonInput": "JSON Input",

@@ -13,7 +13,7 @@ import { getTranslations } from "next-intl/server";
 import { RootJsonLd } from "@/components/seo/page-json-ld";
 import { Providers } from "@/components/common/providers";
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
