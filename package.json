@@ -9,10 +9,10 @@
     "start": "npm run pre-build && next start",
     "lint": "next lint",
     "format": "prettier . --write",
-    "cf:login": "wrangler login",
-    "cf:preview": "npm run pre-build && opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf:deploy": "npm run pre-build &&  opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cloudflare: login": "wrangler login",
+    "cloudflare: preview": "npm run pre-build && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cloudflare: deploy": "npm run pre-build &&  opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cloudflare: typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
