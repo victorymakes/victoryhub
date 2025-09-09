@@ -1295,7 +1295,7 @@
     "slug": "zlibrary-monitor",
     "name": "Moniteur ZLibrary – Vérifiez l'état de ZLibrary et ses miroirs",
     "description": "Outil de surveillance en temps réel de ZLibrary (Z-Library) et de ses sites miroirs. Vérifiez instantanément si ZLibrary est inaccessible, affichez les miroirs accessibles et résolvez les problèmes de connectivité à partir de votre emplacement.",
-    "category": "surveillance",
+    "category": "monitoring",
     "keywords": [
       "vérification de l'état de ZLibrary",
       "outil de surveillance ZLibrary",

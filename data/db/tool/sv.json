@@ -1290,7 +1290,7 @@
     "slug": "zlibrary-monitor",
     "name": "ZLibrary Monitor – Kolla status för ZLibrary och dess speglar",
     "description": "Realtidsövervakningsverktyg för ZLibrary (Z-Library) och dess spegelwebbplatser. Kolla genast om ZLibrary är nere, visa tillgängliga speglar och lösa anslutningsproblem från din plats.",
-    "category": "övervakning",
+    "category": "monitoring",
     "keywords": [
       "zlibrary statuskontroll",
       "zlibrary monitorverktyg",

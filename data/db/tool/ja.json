@@ -1336,7 +1336,7 @@
     "slug": "zlibrary-monitor",
     "name": "ZLibraryモニター – ZLibraryのステータスとミラーサイトを確認",
     "description": "ZLibrary (Z-Library) とそのミラーサイトのリアルタイムステータスチェックツール。ZLibraryがダウンしているか、現在利用可能なミラーサイトを確認し、接続問題のトラブルシューティングを行います。",
-    "category": "モニタリング",
+    "category": "monitoring",
     "keywords": [
       "zlibrary ステータスチェック",
       "zlibrary モニターツール",

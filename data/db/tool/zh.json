@@ -1337,7 +1337,7 @@
     "slug": "zlibrary-monitor",
     "name": "ZLibrary监控工具 – 检查ZLibrary状态和镜像站",
     "description": "实时监控ZLibrary（Z-Library）及其镜像网站状态的工具。即时检测ZLibrary是否故障，显示可访问的镜像站，并帮助排查本地网络连接问题。",
-    "category": "监控工具",
+    "category": "monitoring",
     "keywords": [
       "ZLibrary状态检查",
       "ZLibrary监控工具",

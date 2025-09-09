@@ -1295,7 +1295,7 @@
     "slug": "zlibrary-monitor",
     "name": "Monitor ZLibrary – Verifica lo stato di ZLibrary e i suoi mirror",
     "description": "Strumento di monitoraggio in tempo reale per ZLibrary (Z-Library) e i suoi siti mirror. Verifica immediatamente se ZLibrary è offline, visualizza i mirror accessibili e risolve i problemi di connettività dalla tua ubicazione.",
-    "category": "monitoraggio",
+    "category": "monitoring",
     "keywords": [
       "verifica stato ZLibrary",
       "strumento di monitoraggio ZLibrary",

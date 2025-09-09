@@ -1295,7 +1295,7 @@
     "slug": "zlibrary-monitor",
     "name": "ZLibrary Monitor – Überprüfen Sie den Status von ZLibrary und seine Spiegelseiten",
     "description": "Realtime-Monitoring-Tool für ZLibrary (Z-Library) und seine Spiegelwebsites. Prüfen Sie sofort, ob ZLibrary down ist, zeigen Sie zugängliche Spiegelseiten an und beheben Sie Verbindungsprobleme aus Ihrer Lage.",
-    "category": "Monitoring",
+    "category": "monitoring",
     "keywords": [
       "ZLibrary Statusprüfung",
       "ZLibrary Monitor-Tool",

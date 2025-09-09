@@ -1291,7 +1291,7 @@
     "slug": "zlibrary-monitor",
     "name": "ZLibrary Monitori – Tarkista ZLibraryn tila ja siirtosivut",
     "description": "Reaaliaikaisten seurantatooli ZLibraryn (Z-Library) ja sen siirtosivustojen tilalle. Tarkista heti, onko ZLibraryOffline, näytä käytettävät siirtosivut ja ratkaise yhteyspääntöjä sijaintisi mukaan.",
-    "category": "seuranta",
+    "category": "monitoring",
     "keywords": [
       "zlibraryn tilan tarkistus",
       "zlibraryn monitorointi",
