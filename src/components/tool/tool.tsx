@@ -168,6 +168,10 @@ const TOOL_COMPONENTS: Record<
         loading: () => <ToolLoader />,
         ssr: false,
     }),
+    "zlibrary-monitor": dynamic(() => import("./zlibrary-monitor"), {
+        loading: () => <ToolLoader />,
+        ssr: false,
+    }),
 };
 
 export const ToolComponent: FC<ToolComponentProps> = ({

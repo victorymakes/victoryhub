@@ -1285,5 +1285,45 @@
         "answer": "Möjliga orsaker: <li>1) tekniska problem eller serveravbrott för domänen,</li> <li>2) blockering av din internetleverantör enligt lagkrav,</li> <li>3) domänen har ändrats eller stängts ned,</li><li>4) nätverksproblem mellan dig och servern.</li> Verktyget hjälper dig avgöra om problemet är lokalt eller globalt."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "ZLibrary Monitor – Kolla status för ZLibrary och dess speglar",
+    "description": "Realtidsövervakningsverktyg för ZLibrary (Z-Library) och dess spegelwebbplatser. Kolla genast om ZLibrary är nere, visa tillgängliga speglar och lösa anslutningsproblem från din plats.",
+    "category": "övervakning",
+    "keywords": [
+      "zlibrary statuskontroll",
+      "zlibrary monitorverktyg",
+      "zlibrary spegelstatus",
+      "är zlibrary nere",
+      "zlibrary kontrollerare",
+      "zlibrary tillgänglighet",
+      "zlibrary spegelkontrollerare",
+      "zlibrary uptime",
+      "fungerande zlibrary-speglar",
+      "zlibrary alternativa länkar"
+    ],
+    "faq": [
+      {
+        "question": "Vad är ZLibrary (Z-Library)?",
+        "answer": "ZLibrary är en populär digital bibliotek som erbjuder gratis tillgång till miljoner böcker och akademiska artiklar. Den fungerar via ett nätverk av spegelplatser för att upprätthålla tillgängligheten, eftersom huvuddomänen kan uppleva periodiska begränsningar eller driftstopp."
+      },
+      {
+        "question": "Varför borde jag övervaka ZLibrarys status?",
+        "answer": "ZLibrary och dess speglar kan ibland ha åtkomstproblem på grund av domänblockeringar, serverfel eller juridiska åtgärder. Genom att övervaka kan du snabbt hitta aktiva speglar när du behöver dem, vilket garanterar oavbruten åtkomst till resurser. Detta verktyg testar flera speglar och visar tillgängligheten i realtid."
+      },
+      {
+        "question": "Hur fungerar ZLibrary Monitor-verktyget?",
+        "answer": "Verktyget utför två typer av kontroller: klient­sidorna testar från din webbläsare för att mäta åtkomsten från din plats, och serversidans testar ger en global översikt över tillgängligheten. Det visar HTTP-statuskod, svarstid och en tydlig 'upp/nere'-status för varje testad webbplats, vilket hjälper dig att identifiera fungerande länkar."
+      },
+      {
+        "question": "Är det lagligt att använda detta övervakningsverktyg?",
+        "answer": "Ja, själva övervakningsverktyget är helt lagligt. Det kontrollerar endast webbplatsens anslutning och interagerar inte med eller värdar innehåll från ZLibrary. Observera dock att lagliga konsekvenser av att använda ZLibrary kan variera beroende på ditt lands upphovsrättslag, så kontrollera dina lokala lagar."
+      },
+      {
+        "question": "Varför kan jag inte komma åt ZLibrary från min plats?",
+        "answer": "Möjliga orsaker är: <li>1) Din ISP eller lokala nätverk blockerar ZLibrary-domäner,</li><li>2) Den spegel du använder är tillfälligt nere,</li><li>3) Domänen har ändrats eller suspendits,</li><li>4) Allmänna nätverksproblem mellan ditt enhet och servern.</li>Använd detta verktyg för att identifiera fungerande speglar och lösa anslutningsproblem."
+      }
+    ]
   }
 ]

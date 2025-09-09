@@ -1330,5 +1330,45 @@
         "answer": "There are several reasons why LibGen might be inaccessible: <li>1) The specific domain might be experiencing technical issues or server downtime,</li> <li>2) Your Internet Service Provider (ISP) might be blocking access to the site based on legal requirements in your country,</li> <li>3) The domain might have changed or been taken down, </li><li>4) Network connectivity issues between your location and the server. </li>This tool helps identify whether the issue is specific to your connection or if the service is down globally."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "ZLibrary Monitor – Check ZLibrary Status and Mirrors",
+    "description": "Real-time monitoring tool for ZLibrary (Z-Library) and its mirror websites. Instantly check if ZLibrary is down, view accessible mirrors, and troubleshoot connectivity issues from your location.",
+    "category": "monitoring",
+    "keywords": [
+      "zlibrary status check",
+      "zlibrary monitor tool",
+      "zlibrary mirror status",
+      "is zlibrary down",
+      "zlibrary checker",
+      "zlibrary availability",
+      "zlibrary mirror checker",
+      "zlibrary uptime",
+      "zlibrary working mirrors",
+      "zlibrary alternative links"
+    ],
+    "faq": [
+      {
+        "question": "What is ZLibrary (Z-Library)?",
+        "answer": "ZLibrary is a popular digital library offering free access to millions of books and academic articles. It operates through a network of mirror sites to maintain availability, as the primary domain may face periodic restrictions or downtime."
+      },
+      {
+        "question": "Why should I monitor ZLibrary status?",
+        "answer": "ZLibrary and its mirrors often encounter access issues due to domain blocks, server outages, or legal actions. Monitoring helps you quickly find active mirrors, ensuring uninterrupted access to resources when you need them. This tool tests multiple mirrors to show real-time availability."
+      },
+      {
+        "question": "How does the ZLibrary Monitor tool operate?",
+        "answer": "The tool performs dual checks: client-side tests from your browser to gauge accessibility from your location and server-side checks for global availability. It displays each mirror's HTTP status code, response time, and a clear 'up/down' status to help you identify working links."
+      },
+      {
+        "question": "Is using this monitoring tool legal?",
+        "answer": "Yes, the monitoring tool itself is completely legal. It only checks website connectivity and does not interact with or host any content from ZLibrary. However, always review your country's copyright laws regarding access to online libraries, as legal implications for using ZLibrary may vary by region."
+      },
+      {
+        "question": "Why can't I access ZLibrary from my location?",
+        "answer": "Possible reasons include: <li>1) Your ISP or local network is blocking ZLibrary domains,</li> <li>2) The specific mirror you're using is temporarily down,</li> <li>3) The domain has been changed or suspended,</li> <li>4) General network issues between your device and the server.</li> Use this tool to identify functional mirrors and troubleshoot connectivity."
+      }
+    ]
   }
 ]

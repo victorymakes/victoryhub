@@ -1285,5 +1285,45 @@
         "answer": "Mulige årsaker: <li>1) tekniske problemer eller serverfeil på domenet,</li> <li>2) blokkering fra ISP iht. lovkrav,</li> <li>3) domenet er endret eller tatt ned,</li><li>4) nettverksproblemer mellom deg og serveren.</li> Verktøyet hjelper å avklare om problemet er lokalt eller globalt."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "ZLibrary Monitor – Sjekk statusen til ZLibrary og dens speilsider",
+    "description": "Realtidsmonitoringverktøy for ZLibrary (Z-Library) og dens speilwebsites. Sjekk umiddelbart om ZLibrary er nede, vis tilgjengelige speilsider og løs forbindelssproblemer fra din beliggenhet.",
+    "category": "monitoring",
+    "keywords": [
+      "zlibrary statusjekk",
+      "zlibrary monitorverktøy",
+      "zlibrary speilstatus",
+      "er zlibrary nede",
+      "zlibrary sjekker",
+      "zlibrary tilgjengelighet",
+      "zlibrary speilsjekker",
+      "zlibrary uptime",
+      "fungerende zlibrary-speilsider",
+      "zlibrary alternative lenker"
+    ],
+    "faq": [
+      {
+        "question": "Hva er ZLibrary (Z-Library)?",
+        "answer": "ZLibrary er en populær digital bibliotek som gir gratis tilgang til millioner av bøker og akademiske artikler. Den fungerer via et nettverk av speilsider for å opprettholde tilgjengeligheten, siden hoveddomänen kan oppleve periodiske restriksjoner eller nedsidestunder."
+      },
+      {
+        "question": "Hvorfor bør jeg monitorere statusen til ZLibrary?",
+        "answer": "ZLibrary og dens speilsider kan oppleve tilgangsproblemer på grunn av domeneblokker, serverfeil eller juridiske tiltak. Monitoring hjelper deg til å raskt finne aktive speilsider når du trenger dem, og sikrer uinterruptert tilgang til ressurser. Dette verktøyet tester flere speilsider og viser tilgjengelighet i realtid."
+      },
+      {
+        "question": "Hvordan fungerer ZLibrary Monitor-verktøyet?",
+        "answer": "Verktøyet utfører to typer sjekker: klient-side tester fra din nettleser for å vurdere tilgankelijkheten fra din beliggenhet, og server-side tester for en global oversikt over tilgjengeligheten. Det viser HTTP-statuskode, responsetid og en klar 'opp/nede'-status for hver testet side, for å hjelpe deg med å identifisere fungerende lenker."
+      },
+      {
+        "question": "Er det lovlig å bruke dette monitoringsverktøyet?",
+        "answer": "Ja, selve monitoringsverktøyet er helt lovlig. Det sjekker bare websidens tilgankelijkhet og samhandler ikke med eller verter innhold fra ZLibrary. Vær imidlertid oppmerksom på at lovlige implikasjoner for bruk av ZLibrary kan variere etter landets opphavsrettslov, så sjekk gjerne dine lokale lover."
+      },
+      {
+        "question": "Hvorfor kan jeg ikkeaksesere ZLibrary fra min beliggenhet?",
+        "answer": "Mulige grunner er: <li>1) Din ISP eller lokale nettverk blokkerer ZLibrary-domenene,</li><li>2) Den speilsiden du bruker er midlertidig nede,</li><li>3) Domenen er endret eller suspendert,</li><li>4) Generelle nettverksproblemer mellom ditt enhet og serveren.</li>Bruk dette verktøyet til å identifisere fungerende speilsider og løse forbindelssproblemer."
+      }
+    ]
   }
 ]

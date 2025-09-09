@@ -1286,5 +1286,45 @@
         "answer": "Mahdollisia syitä: <li>1) tekninen häiriö tai palvelinkatkos kyseisellä verkkotunnuksella,</li> <li>2) internetpalveluntarjoaja estää pääsyn lakisääteisesti,</li> <li>3) verkkotunnus on vaihtunut tai poistettu,</li><li>4) verkko-ongelmat sijaintisi ja palvelimen välillä.</li> Työkalu auttaa erottamaan, onko kyse paikallisesta vai globaalista ongelmasta."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "ZLibrary Monitori – Tarkista ZLibraryn tila ja siirtosivut",
+    "description": "Reaaliaikaisten seurantatooli ZLibraryn (Z-Library) ja sen siirtosivustojen tilalle. Tarkista heti, onko ZLibraryOffline, näytä käytettävät siirtosivut ja ratkaise yhteyspääntöjä sijaintisi mukaan.",
+    "category": "seuranta",
+    "keywords": [
+      "zlibraryn tilan tarkistus",
+      "zlibraryn monitorointi",
+      "zlibraryn siirtosivujen tila",
+      "onko zlibrary offline",
+      "zlibraryn tarkistus",
+      "zlibraryn käyt Availability",
+      "zlibraryn siirtosivujen tarkistus",
+      "zlibraryn käyttöaika",
+      "toimivat zlibraryn siirtosivut",
+      "zlibraryn vaihtolinkit"
+    ],
+    "faq": [
+      {
+        "question": "Mitä on ZLibrary (Z-Library)?",
+        "answer": "ZLibrary on suosittu digitaalinen kirjasto, joka tarjoaa vapaan pääsyn miljoonien kirjan ja akateemisten artikkelien kanssa. Se toimii siirtosivustojen verkossa säilyttääkseen käyt Availability, koska päädomæni voi kohtailla säännöllisiä rajoituksia tai taukoja."
+      },
+      {
+        "question": "Miksi tulen seurata ZLibraryn tilaa?",
+        "answer": "ZLibrary ja sen siirtosivut saattavat kohdata pääsyongelmia johtuen domænin estämisestä, serverivikoista tai oikeudellisista toimenpiteistä. Seuranta auttaa sinua löytämään nopeasti toimivia siirtosivuja, kun tarvitset niitä, varmistaen keskenään pysyvän pääsyn resursseihin. Tämä työkalutestaa useita siirtosivuja ja näyttää heidän käyt Availabilitynsa reaalissa ajassa."
+      },
+      {
+        "question": "Miten ZLibrary Monitori-työkalutöi?",
+        "answer": "Työkalutekee kaksi tyyppiä tarkistuksia: asiakaspuolen testit selaimestasi mittaamaan pääsyäsi sijaintisi mukaan ja palvelinpuolen testit maailmanlaajuisen käyt Availabilityn näkymäksi. Se näyttää HTTP-tilakoodin, vastausajan ja selkeän 'aktiivinen/passiivinen'-tilan jokaiselle testatulle sivustolle, auttaen sinua tunnistamaan toimivia linkkejä."
+      },
+      {
+        "question": "Onko tämän seurantatyökalun käyttö lainmukavaa?",
+        "answer": "Kyllä, itse seurantatyökalut on täysin lainmukava. Se vain tarkistaa web-sivustojen yhteyden ja ei välirakeana eikä tallenna ZLibraryn sisältöä. Huomaa kuitenkin, että ZLibraryn käytön oikeudelliset vaikutukset voivat vaihdella maakohtaisesti tekijänoikeuslain mukaan, joten tarkista lähikuntasi lakit ennen käyttöä."
+      },
+      {
+        "question": "Miksi en voi päästä ZLibraryyn sijaintistani?",
+        "answer": "Mahdolliset syyt ovat: <li>1) Internet-yhteysantaja (ISP) tai paikallinen verkko estävät ZLibraryn domænit,</li><li>2) Käytössäsi oleva siirtosivu on väliaikaisesti offline,</li><li>3) Domæni on muutettu tai suspenditu,</li><li>4) Yhteysongelmia laitteellesi ja serverin välillä.</li>Käytä tätä työkalua tunnistamaan toimivia siirtosivuja ja ratkaisemaan yhteyspääntöjä."
+      }
+    ]
   }
 ]

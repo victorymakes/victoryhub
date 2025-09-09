@@ -1290,5 +1290,45 @@
         "answer": "Mögliche Gründe sind: <li>1) technische Probleme oder Serverausfall der betreffenden Domain,</li> <li>2) Sperren durch Ihren Internetanbieter (ISP) aufgrund gesetzlicher Vorgaben,</li> <li>3) Domainwechsel oder Abschaltung,</li><li>4) Netzwerkprobleme zwischen Ihrem Standort und dem Server.</li> Das Tool hilft zu erkennen, ob es sich um ein lokales Problem oder einen globalen Ausfall handelt."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "ZLibrary Monitor – Überprüfen Sie den Status von ZLibrary und seine Spiegelseiten",
+    "description": "Realtime-Monitoring-Tool für ZLibrary (Z-Library) und seine Spiegelwebsites. Prüfen Sie sofort, ob ZLibrary down ist, zeigen Sie zugängliche Spiegelseiten an und beheben Sie Verbindungsprobleme aus Ihrer Lage.",
+    "category": "Monitoring",
+    "keywords": [
+      "ZLibrary Statusprüfung",
+      "ZLibrary Monitor-Tool",
+      "ZLibrary Spiegelstatus",
+      "Ist ZLibrary down?",
+      "ZLibrary Checker",
+      "ZLibrary Verfügbarkeit",
+      "ZLibrary Spiegelchecker",
+      "ZLibrary Uptime",
+      "funktionierende ZLibrary-Spiegel",
+      "ZLibrary Alternativlinks"
+    ],
+    "faq": [
+      {
+        "question": "Was ist ZLibrary (Z-Library)?",
+        "answer": "ZLibrary ist eine beliebte Digitale Bibliothek, die freien Zugang zu Millionen von Büchern und akademischen Artikeln bietet. Sie wird über ein Netzwerk von Spiegelseiten betrieben, um die Verfügbarkeit zu wahren, da die primäre Domain periodisch Einschränkungen oder Downtime erfährt."
+      },
+      {
+        "question": "Warum sollte ich den ZLibrary-Status monitorieren?",
+        "answer": "ZLibrary und seine Spiegelseiten sind偶尔 wegen Domain sperren, Serverausfällen oder rechtlicher Maßnahmen für Zugangsprobleme anfällig. Das Monitoring hilft Ihnen, schnell aktive Spiegelseiten zu finden, um den unbehelligten Zugang zu Ressourcen zu gewährleisten, wenn Sie sie benötigen. Dieses Tool testet mehrere Spiegelseiten und zeigt die Echtzeitverfügbarkeit an."
+      },
+      {
+        "question": "Wie funktioniert das ZLibrary Monitor-Tool?",
+        "answer": "Das Tool durchführt doppelte Checks: Clientsseitige Tests in Ihrem Browser, um die Zugänglichkeit aus Ihrer Lage zu messen, und Serverseitige Checks für die globale Verfügbarkeit. Es zeigt den HTTP-Statuscode, die Antwortzeit und einen deutlichen 'Up/Down'-Status für jede Spiegelseite an, um Sie bei der Identifizierung funktionierender Links zu helfen."
+      },
+      {
+        "question": "Ist die Nutzung dieses Monitor Tools rechtlich zulässig?",
+        "answer": "Ja, das Monitor Tool selbst ist vollständig rechtlich zulässig. Es prüft nur die Website-Verbindung und interagiert nicht mit oder hostet keinen Inhalt von ZLibrary. Beachten Sie jedoch immer die Urheberrechtsgesetze Ihres Landes regarding den Zugang zu Onlinebibliotheken, da die rechtlichen Implikationen für die Nutzung von ZLibrary je nach Region variieren können."
+      },
+      {
+        "question": "Warum kann ich ZLibrary nicht aus meiner Lage zugreifen?",
+        "answer": "Mögliche Gründe sind: <li>1) Ihr ISP oder Ihr lokales Netzwerk blockiert ZLibrary-Domänen,</li><li>2) Die von Ihnen verwendete Spiegelseite ist vorübergehend down,</li><li>3) Die Domain wurde geändert oder suspendiert,</li><li>4) Allgemeine Netzwerkprobleme zwischen Ihrem Gerät und dem Server.</li>Verwenden Sie dieses Tool, um funktionierende Spiegelseiten zu identifizieren und Verbindungsprobleme zu beheben."
+      }
+    ]
   }
 ]

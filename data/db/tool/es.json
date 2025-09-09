@@ -1290,5 +1290,45 @@
         "answer": "Posibles causas: <li>1) problemas técnicos o caída del servidor del dominio,</li> <li>2) bloqueo por tu ISP por requisitos legales,</li> <li>3) cambio o baja del dominio,</li><li>4) problemas de conectividad entre tu red y el servidor.</li> La herramienta ayuda a distinguir si es un problema local o una caída global."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "Monitor de ZLibrary – Verifica el estado de ZLibrary y sus sitios espejo",
+    "description": "Herramienta de monitoreo en tiempo real para ZLibrary (Z-Library) y sus sitios web espejo. Comprueba instantáneamente si ZLibrary está caído, muestra los espejos accesibles y soluciona problemas de conexión desde tu ubicación.",
+    "category": "monitoreo",
+    "keywords": [
+      "verificación de estado de ZLibrary",
+      "herramienta de monitoreo de ZLibrary",
+      "estado de los espejos de ZLibrary",
+      "¿está caído ZLibrary?",
+      "verificador de ZLibrary",
+      "disponibilidad de ZLibrary",
+      "verificador de espejos de ZLibrary",
+      "tiempo de funcionamiento de ZLibrary",
+      "espejos funcionales de ZLibrary",
+      "enlaces alternativos de ZLibrary"
+    ],
+    "faq": [
+      {
+        "question": "¿Qué es ZLibrary (Z-Library)?",
+        "answer": "ZLibrary es una popular biblioteca digital que ofrece acceso gratuito a millones de libros y artículos académicos. Funciona a través de una red de sitios espejo para mantener su disponibilidad, ya que el dominio principal puede sufrir restricciones o tiempos de inactividad periódicos."
+      },
+      {
+        "question": "¿Por qué debo monitorear el estado de ZLibrary?",
+        "answer": "ZLibrary y sus espejos a veces experimentan problemas de acceso debido a bloqueos de dominios, fallos de servidor o medidas legales. El monitoreo te ayuda a encontrar rápidamente los espejos activos cuando los necesitas, garantizando un acceso ininterrumpido a los recursos. Esta herramienta prueba múltiples espejos para mostrar la disponibilidad en tiempo real."
+      },
+      {
+        "question": "¿Cómo funciona la herramienta Monitor de ZLibrary?",
+        "answer": "La herramienta realiza dos tipos de comprobaciones: pruebas en el lado del cliente desde tu navegador para evaluar la conexión desde tu ubicación y pruebas en el lado del servidor para ofrecer una visión global de la disponibilidad. Muestra el código de estado HTTP, el tiempo de respuesta y un indicador claro de 'activo/inactivo' para cada sitio probado, ayudándote a identificar los enlaces funcionales."
+      },
+      {
+        "question": "¿Es legal usar esta herramienta de monitoreo?",
+        "answer": "Sí, la herramienta de monitoreo en sí misma es completamente legal. Solo verifica la conectividad de los sitios web y no interactúa ni hospeda contenido de ZLibrary. Sin embargo, es importante revisar las leyes de derechos de autor de tu país regarding el acceso a bibliotecas en línea, ya que las implicaciones legales de usar ZLibrary pueden variar según la región."
+      },
+      {
+        "question": "¿Por qué no puedo acceder a ZLibrary desde mi ubicación?",
+        "answer": "Las posibles razones incluyen: <li>1) Tu proveedor de Internet (ISP) o red local bloquea los dominios de ZLibrary,</li><li>2) El sitio espejo que estás usando está temporalmente caído,</li><li>3) El dominio ha sido cambiado o suspendido,</li><li>4) Problemas de conexión de red entre tu dispositivo y el servidor.</li>Utiliza esta herramienta para identificar los espejos funcionales y solucionar problemas de conexión."
+      }
+    ]
   }
 ]

@@ -1290,5 +1290,45 @@
         "answer": "Plusieurs raisons possibles : <li>1) problèmes techniques ou panne serveur sur le domaine concerné,</li> <li>2) blocage par votre FAI selon les exigences légales,</li> <li>3) changement ou suppression du domaine,</li><li>4) problèmes de connectivité entre votre position et le serveur.</li> L’outil aide à déterminer s’il s’agit d’un souci local ou d’une indisponibilité globale."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "Moniteur ZLibrary – Vérifiez l'état de ZLibrary et ses miroirs",
+    "description": "Outil de surveillance en temps réel de ZLibrary (Z-Library) et de ses sites miroirs. Vérifiez instantanément si ZLibrary est inaccessible, affichez les miroirs accessibles et résolvez les problèmes de connectivité à partir de votre emplacement.",
+    "category": "surveillance",
+    "keywords": [
+      "vérification de l'état de ZLibrary",
+      "outil de surveillance ZLibrary",
+      "état des miroirs ZLibrary",
+      "ZLibrary est-elle inaccessible?",
+      "vérifieur ZLibrary",
+      "disponibilité de ZLibrary",
+      "vérifieur de miroirs ZLibrary",
+      "temps d'activité de ZLibrary",
+      "miroirs actifs de ZLibrary",
+      "liens alternatifs ZLibrary"
+    ],
+    "faq": [
+      {
+        "question": "Qu'est-ce que ZLibrary (Z-Library) ?",
+        "answer": "ZLibrary est une célèbre bibliothèque numérique offrant un accès gratuit à des millions de livres et d'articles académiques. Elle fonctionne via un réseau de sites miroirs pour maintenir sa disponibilité, car le domaine principal peut faire l'objet de restrictions ou d'arrêts périodiques."
+      },
+      {
+        "question": "Pourquoi监视 l'état de ZLibrary ?",
+        "answer": "ZLibrary et ses miroirs rencontrent parfois des problèmes d'accès en raison de blocages de domaines, d'arrêts de serveur ou de mesures juridiques. La surveillance vous'aide à trouver rapidement les miroirs actifs, garantissant un accès ininterrompu aux ressources lorsque vous en avez besoin. Cet outil teste plusieurs miroirs pour afficher leur disponibilité en temps réel."
+      },
+      {
+        "question": "Comment fonctionne l'outil Moniteur ZLibrary ?",
+        "answer": "L'outil effectue deux types de vérifications : des tests côté client à partir de votre navigateur pour évaluer l'accès depuis votre emplacement et des tests côté serveur pour obtenir une vue d'ensemble de la disponibilité mondiale. Il affiche le code d'état HTTP, le temps de réponse et un indicateur d'état 'en ligne/hors ligne' pour chaque site testé, vous aidant à identifier les liens fonctionnels."
+      },
+      {
+        "question": "L'utilisation de cet outil de surveillance est-elle légale ?",
+        "answer": "Oui, l'outil de surveillance lui-même est entièrement légal. Il ne vérifie que la connectivité des sites web et n'interagit pas avec le contenu de ZLibrary ni ne le héberge. Toutefois, consultez toujours les lois sur le droit d'auteur de votre pays en ce qui concerne l'accès aux bibliothèques en ligne, car les implications juridiques de l'utilisation de ZLibrary peuvent varier selon les régions."
+      },
+      {
+        "question": "Pourquoi ne peux-je pas accéder à ZLibrary depuis mon emplacement ?",
+        "answer": "Des raisons possibles incluent : <li>1) Votre fournisseur d'accès internet (FAI) ou votre réseau local bloque les domaines de ZLibrary,</li><li>2) Le miroir que vous utilisez est temporairement inaccessible,</li><li>3) Le domaine a été changé ou suspendu,</li><li>4) Des problèmes de connectivité réseau entre votre appareil et le serveur.</li>Utilisez cet outil pour identifier les miroirs fonctionnels et résoudre les problèmes de connectivité."
+      }
+    ]
   }
 ]

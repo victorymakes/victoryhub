@@ -1290,5 +1290,45 @@
         "answer": "Possíveis causas: <li>1) problemas técnicos ou queda do servidor do domínio,</li> <li>2) bloqueio pelo seu provedor (ISP) por exigências legais,</li> <li>3) mudança ou remoção do domínio,</li><li>4) problemas de conectividade entre sua rede e o servidor.</li> A ferramenta ajuda a saber se é um problema local ou global."
       }
     ]
+  },
+  {
+    "slug": "zlibrary-monitor",
+    "name": "Monitor ZLibrary – Verifique o status do ZLibrary e seus mirrors",
+    "description": "Ferramenta de monitoramento em tempo real para o ZLibrary (Z-Library) e seus sites espelho. Verifique instantaneamente se o ZLibrary está offline, exiba os mirrors acessíveis e solucione problemas de conexão a partir de sua localização.",
+    "category": "monitoramento",
+    "keywords": [
+      "verificação de status do ZLibrary",
+      "ferramenta de monitoramento do ZLibrary",
+      "status dos mirrors do ZLibrary",
+      "o ZLibrary está offline?",
+      "verificador de ZLibrary",
+      "disponibilidade do ZLibrary",
+      "verificador de mirrors do ZLibrary",
+      "tempo de funcionamento do ZLibrary",
+      "mirrors ativos do ZLibrary",
+      "links alternativos do ZLibrary"
+    ],
+    "faq": [
+      {
+        "question": "O que é o ZLibrary (Z-Library)?",
+        "answer": "O ZLibrary é uma popular biblioteca digital que oferece acesso gratuito a milhões de livros e artigos acadêmicos. Ele opera através de uma rede de sites espelho para manter sua disponibilidade, pois o domínio principal pode sofrer restrições ou tempo de inatividade periódicas."
+      },
+      {
+        "question": "Por que devo monitorar o status do ZLibrary?",
+        "answer": "O ZLibrary e seus mirrors podem enfrentar problemas de acesso devido a bloqueios de domínio, falhas de servidor ou medidas legais. O monitoramento ajuda você a encontrar rapidamente os mirrors ativos quando precisar, garantindo acesso ininterrupto aos recursos. Esta ferramenta testa vários mirrors e exibe a disponibilidade em tempo real."
+      },
+      {
+        "question": "Como funciona a Ferramenta Monitor ZLibrary?",
+        "answer": "A ferramenta realiza dois tipos de verificações: testes no lado do cliente a partir de seu navegador para avaliar o acesso a partir de sua localização e testes no lado do servidor para fornecer uma visão global da disponibilidade. Ela exibe o código de status HTTP, o tempo de resposta e um status claro de 'online/offline' para cada site testado, ajudando você a identificar os links funcionais."
+      },
+      {
+        "question": "É legal usar esta ferramenta de monitoramento?",
+        "answer": "Sim, a própria ferramenta de monitoramento é completamente legal. Ela apenas verifica a conectividade dos sites e não interage com ou hospeda conteúdo do ZLibrary. No entanto, é importante revisar as leis de direitos autorais de seu país regarding o acesso a bibliotecas online, pois as implicações legais do uso do ZLibrary podem variar según a região."
+      },
+      {
+        "question": "Por que não consigo acessar o ZLibrary a partir da minha localização?",
+        "answer": "As possíveis razões incluem: <li>1) Seu provedor de Internet (ISP) ou rede local bloqueia os domínios do ZLibrary,</li><li>2) O mirror que você está usando está temporariamente offline,</li><li>3) O domínio foi alterado ou suspendido,</li><li>4) Problemas de conexão de rede entre seu dispositivo e o servidor.</li>Use esta ferramenta para identificar os mirrors funcionais e solucionar problemas de conexão."
+      }
+    ]
   }
 ]
