@@ -1325,5 +1325,44 @@
         "answer": "Möjliga orsaker är: <li>1) Din ISP eller lokala nätverk blockerar ZLibrary-domäner,</li><li>2) Den spegel du använder är tillfälligt nere,</li><li>3) Domänen har ändrats eller suspendits,</li><li>4) Allmänna nätverksproblem mellan ditt enhet och servern.</li>Använd detta verktyg för att identifiera fungerande speglar och lösa anslutningsproblem."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Bildstorleksändare – Ändra storlek på JPEG-, PNG- & WebP-bilder online",
+    "description": "Ändra storlek på bilder till exakta dimensioner samtidigt som du behåller kvaliteten. Stödjer JPG, PNG och WebP. Idealisk för webbsidor, sociala medier och e-postbilagor.",
+    "category": "media",
+    "keywords": [
+      "bildstorleksändare",
+      "ändra bildstorlek online",
+      "ändra bilddimensioner",
+      "ändra PNG-storlek",
+      "ändra JPEG-storlek",
+      "bildskalverktyg",
+      "ändra bild för webben",
+      "ändra bild utan att förlora kvalitet",
+      "behåll bildförhållande"
+    ],
+    "faq": [
+      {
+        "question": "Hur justerar Bildstorleksändaren bilddimensioner utan förvrängning?",
+        "answer": "Bildstorleksändaren låter dig ange exakta bredde- och höjdvärden samtidigt som du behåller det ursprungliga bildförhållandet om så önskas. Den använder webbläsarbaserad canvas-storleksändning, vilket säkerställer exakt dimensionstekning med minimalt kvalitetsförlust. Detta gör den idealisk för att ändra storlek på bilder för webbsidor, miniatyrer eller innehållsleverans utan att kompromissa bildstrukturen."
+      },
+      {
+        "question": "Kan jag ändra storlek på bilder utan att förlora kvalitet eller skärpa?",
+        "answer": "Ja. När du minskar bildstorleken behålls vanligtvis kvaliteten. Verktyget använder högkvalitativa nedskaleringsalgoritmer för att bevara detaljer. Att förstora bilder kan leda till mjuka effekter eller oskärpa på grund av pixelinterpolation, men resultaten förblir visuellt acceptabla för måttlig förstoring."
+      },
+      {
+        "question": "Är det säkert att ändra storlek på bilder i detta verktyg?",
+        "answer": "Helt säkert. All storleksändning görs i din webbläsare med hjälp av JavaScript. Bilder lämnar aldrig din dator, vilket säkerställer att privata eller känsliga filer förblir lokala och säkra. Ingen data laddas upp eller lagras externt."
+      },
+      {
+        "question": "Vilka bildformat stödjs för storleksändning?",
+        "answer": "Du kan ladda upp JPEG-, PNG- och WebP-bilder. Dessa är vanliga format som används för fotografi, skärmdumpar och webbdesign. Bilder med ändrad storlek sparas som standard i JPEG-format för maximal kompatibilitet och minimal filstorlek."
+      },
+      {
+        "question": "Hur låser jag bildförhållandet när jag ändrar storlek på en bild?",
+        "answer": "Verktyget har en växel för att låsa det ursprungliga bildförhållandet. När den är aktiverad kommer inmatning av en ny bredd att automatiskt beräkna den proportionella höjden, och vice versa. Detta hjälper till att undvika sträckta eller komprimerade bilder, särskilt användbart för produktbilder eller inlägg på sociala medier."
+      }
+    ]
   }
 ]

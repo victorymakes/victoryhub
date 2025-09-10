@@ -1330,5 +1330,44 @@
         "answer": "Las posibles razones incluyen: <li>1) Tu proveedor de Internet (ISP) o red local bloquea los dominios de ZLibrary,</li><li>2) El sitio espejo que estás usando está temporalmente caído,</li><li>3) El dominio ha sido cambiado o suspendido,</li><li>4) Problemas de conexión de red entre tu dispositivo y el servidor.</li>Utiliza esta herramienta para identificar los espejos funcionales y solucionar problemas de conexión."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Redimensionador de imágenes – Redimensiona imágenes JPEG, PNG y WebP en línea",
+    "description": "Redimensiona imágenes a dimensiones exactas manteniendo la calidad. Soporta JPG, PNG y WebP. Ideal para sitios web, redes sociales y archivos adjuntos de correo electrónico.",
+    "category": "media",
+    "keywords": [
+      "redimensionador de imágenes",
+      "redimensionar imagen en línea",
+      "cambiar dimensiones de imagen",
+      "redimensionar PNG",
+      "redimensionar JPEG",
+      "herramienta de escalado de imágenes",
+      "redimensionar foto para web",
+      "redimensionar imagen sin perder calidad",
+      "mantener relación de aspecto"
+    ],
+    "faq": [
+      {
+        "question": "¿Cómo ajusta el Redimensionador de imágenes las dimensiones sin distorsionar？",
+        "answer": "El Redimensionador de imágenes te permite establecer valores precisos de ancho y alto, manteniendo la relación de aspecto original si es necesario. Utiliza la tecnología de redimensionamiento por canvas en el navegador, lo que garantiza un escalado preciso con pérdida mínima de calidad. Esto lo hace ideal para redimensionar imágenes para sitios web, miniaturas o distribución de contenido, sin comprometer la estructura de la imagen."
+      },
+      {
+        "question": "¿Puedo redimensionar imágenes sin perder calidad ni nitidez？",
+        "answer": "Sí. Al reducir el tamaño de la imagen, la calidad se mantiene generalmente. La herramienta aprovecha algoritmos de downscaling de alta calidad para preservar los detalles. Al agrandar imágenes, puede haber suavizado o borros debido a la interpolación de píxeles, pero los resultados siguen siendo visualmente aceptables para agrandamientos moderados."
+      },
+      {
+        "question": "¿Es seguro redimensionar imágenes con esta herramienta？",
+        "answer": "Absolutamente. Todo el redimensionamiento se realiza en tu navegador mediante JavaScript. Las imágenes nunca dejan tu computadora, por lo que los archivos privados o sensibles permanecen locales y seguros. Ningún dato se sube ni se almacena externamente."
+      },
+      {
+        "question": "¿Qué formatos de imágenes son compatibles con el redimensionamiento？",
+        "answer": "Puedes subir imágenes en formatos JPEG, PNG y WebP. Estos son formatos comunes para fotografía, capturas de pantalla y gráficos web. Las imágenes redimensionadas se guardan por defecto en formato JPEG para maximizar la compatibilidad y minimizar el tamaño del archivo."
+      },
+      {
+        "question": "¿Cómo bloqueo la relación de aspecto al redimensionar una imagen？",
+        "answer": "La herramienta tiene un interruptor para bloquear la relación de aspecto original. Cuando está activado, al ingresar un nuevo ancho, se calcula automáticamente la altura proporcional, y viceversa. Esto evita que las imágenes se estiren o apachen, especialmente útil para fotos de productos o publicaciones en redes sociales."
+      }
+    ]
   }
 ]

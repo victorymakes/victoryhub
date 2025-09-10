@@ -1326,5 +1326,44 @@
         "answer": "Mogelijke redenen zijn: <li>1)Uw ISP of lokale netwerk blokkeert ZLibrary-domeinen,</li><li>2)De spiegel die u gebruikt is tijdelijk down,</li><li>3)Het domein is gewijzigd of opgeschort,</li><li>4)Algemene netwerkproblemen tussen uw apparaat en de server.</li>Gebruik dit tool om functionerende spiegels te identificeren en verbindingsproblemen op te lossen."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Afbeeldingsresizer – Pas JPEG-, PNG- & WebP-afbeeldingen online aan",
+    "description": "Pas afbeeldingen aan naar exacte afmetingen zonder kwaliteit te verliezen. Ondersteunt JPG, PNG en WebP. Ideaal voor websites, sociale media en e-mailbijlagen.",
+    "category": "media",
+    "keywords": [
+      "afbeeldingsresizer",
+      "afbeelding online aanpassen",
+      "afbeeldingsafmetingen wijzigen",
+      "PNG aanpassen",
+      "JPEG aanpassen",
+      "afbeeldingsschalingshulpmiddel",
+      "foto voor web aanpassen",
+      "afbeelding zonder kwaliteitsverlies aanpassen",
+      "aspectverhouding behouden"
+    ],
+    "faq": [
+      {
+        "question": "Hoe past de Afbeeldingsresizer afmetingen aan zonder vervorming？",
+        "answer": "Met de Afbeeldingsresizer kun je exacte breedte- en hoogtewaarden instellen, terwijl je de originele aspectverhouding indien nodig behoudt. Het gebruikt browsergebaseerde canvasresizing-techniek, die nauwkeurige schaling met minimale kwaliteitsverlies garandeert. Dit maakt het ideaal om afbeeldingen aan te passen voor websites, thumbnails of contentdistributie, zonder de opbouw van de afbeelding te schaden."
+      },
+      {
+        "question": "Kan ik afbeeldingen aanpassen zonder kwaliteit of scherpte te verliezen？",
+        "answer": "Ja. Bij het verkleinen van afbeeldingen blijft de kwaliteit over het algemeen behouden. Het hulpmiddel maakt gebruik van hoogwaardige downscaling-algoritmen om details te bewaren. Bij het vergroten van afbeeldingen kan er door pixelinterpolatie zachting of wazigheid ontstaan, maar de resultaten blijven visueel acceptabel bij matig vergroten."
+      },
+      {
+        "question": "Is het veilig om afbeeldingen met dit hulpmiddel aan te passen？",
+        "answer": "Absoluut veilig. Alle aanpassingen gebeuren in je browser met behulp van JavaScript. Afbeeldingen verlaten je computer nooit, zodat privé- of gevoelige bestanden lokaal en veilig blijven. Geen gegevens worden extern geüpload of opgeslagen."
+      },
+      {
+        "question": "Welke afbeeldingsformaten worden ondersteund voor aanpassing？",
+        "answer": "Je kunt JPEG-, PNG- en WebP-afbeeldingen uploaden. Dit zijn gangbare formaten voor fotografie, screenshots en webgrafieken. Aangepaste afbeeldingen worden standaard opgeslagen in JPEG-formaat voor maximale compatibiliteit en minimale bestandsgrootte."
+      },
+      {
+        "question": "Hoe blokkeer ik de aspectverhouding bij het aanpassen van een afbeelding？",
+        "answer": "Het hulpmiddel heeft een schakelaar om de originele aspectverhouding te blokkeren. Wanneer deze is ingeschakeld, berekent het systeem automatisch de proportionele hoogte als je een nieuwe breedte invoert, en vice versa. Dit voorkomt gespannen of samengedrukte afbeeldingen, vooral handig voor productfoto's of posts op sociale media."
+      }
+    ]
   }
 ]

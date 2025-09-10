@@ -1326,5 +1326,44 @@
         "answer": "Mahdolliset syyt ovat: <li>1) Internet-yhteysantaja (ISP) tai paikallinen verkko estävät ZLibraryn domænit,</li><li>2) Käytössäsi oleva siirtosivu on väliaikaisesti offline,</li><li>3) Domæni on muutettu tai suspenditu,</li><li>4) Yhteysongelmia laitteellesi ja serverin välillä.</li>Käytä tätä työkalua tunnistamaan toimivia siirtosivuja ja ratkaisemaan yhteyspääntöjä."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Kuvan kokoajuri – Muuta JPEG-, PNG- ja WebP-kuvien kokoa verkossa",
+    "description": "Muuta kuvien kokoa tarkkoihin mittoihin säilyttäen laadun. Tukee JPG-, PNG- ja WebP-muotoja. Sopii täydellisesti verkkosivustoihin, sosiaaliseen mediaan ja sähköpostin liitteisiin.",
+    "category": "media",
+    "keywords": [
+      "kuvan kokoajuri",
+      "muuta kuvan kokoa verkossa",
+      "muuta kuvan mittoja",
+      "muuta PNG:n kokoa",
+      "muuta JPEG:n kokoa",
+      "kuvan skaalaustyökalu",
+      "muuta kuvaa verkkokäyttöä varten",
+      "muuta kuvan kokoa ilman laadun menettämistä",
+      "säilytä kuvasuhteen"
+    ],
+    "faq": [
+      {
+        "question": "Miten Kuvan kokoajuri säilyttää kuvan muodon ilman vääristymistä?",
+        "answer": "Kuvan kokoajuri sallii tarkkojen leveys- ja korkeusarvojen määrittämisen, samalla kun se säilyttää alkuperäisen kuvasuhteen tarvittaessa. Se käyttää verkkoselaimen perustuvaa canvas-kokoamista, mikä takaa tarkasti mittojen skaalauksen最小äällä laadun menettämisellä. Tämä tekee siitä täydellisen kuvien kokoamiseksi verkkosivustoille, esikatseluiksi tai sisällön jakeluun ilman kuvan rakenteen vahingoittamista."
+      },
+      {
+        "question": "Voinko muuttaa kuvan kokoa ilman laadun tai terävyyden menettämistä?",
+        "answer": "Kyllä. Kun vähennät kuvan kokoa, laatu säilytetään yleensä. Työkalu käyttää korkealaatuisia alijäähdytysalgoritmeja tarkkuuksien säilyttämiseksi. Kuvan suurennettaessa voi tapahtua pehmeyttä tai epäselvyyttä pikselien interpolointiin johtuen, mutta tulokset pysyvät visuaalisesti hyväksyttävinä kohtuulliselle suurennykselle."
+      },
+      {
+        "question": "Onko turvallista muuttaa kuvan kokoa tässä työkalussa?",
+        "answer": "Täysin turvallista. Kaikki kokoamistytoimenpiteet suoritetaan verkkoselaimessasi JavaScriptin avulla. Kuvat eivät koskaan leave äät tietokoneesi, mikä takaa, että yksityiset tai arkaluontoiset tiedostot pysyvät paikallisina ja turvallisina. Mitään tietoa ei ladata ylös eikä tallenneta ulkoisesti."
+      },
+      {
+        "question": "Mitkä kuvamuodot tuetaan kokoamiselle?",
+        "answer": "Voit ladata ylös JPEG-, PNG- ja WebP-kuvia. Nämä ovat yleisiä muotoja, joita käytetään valokuvaus-, ruudunotto- ja verkkografiikatöihin. Koon muutetut kuvat tallennetaan oletuksena JPEG-muotoon maksimaalisen yhteensopivuuden ja最小äällä tiedostokoon saavuttamiseksi."
+      },
+      {
+        "question": "Miten lukitsen kuvasuhteen kuvan kokoamiseksi?",
+        "answer": "Työkalu sisältää kytkimen alkuperäisen kuvasuhteen lukitsemiseen. Kun se on aktivoitu, uuden leveyden syöttäminen laskee automaattisesti suhteellisen korkeuden, ja päinvastoin. Tämä auttaa välttämään venytettyjä tai tiivistettyjä kuvia, erityisen hyödyllistä tuotekuville tai sosiaalisen median julkaisuille."
+      }
+    ]
   }
 ]

@@ -1325,5 +1325,44 @@
         "answer": "Mulige grunner er: <li>1) Din ISP eller lokale nettverk blokkerer ZLibrary-domenene,</li><li>2) Den speilsiden du bruker er midlertidig nede,</li><li>3) Domenen er endret eller suspendert,</li><li>4) Generelle nettverksproblemer mellom ditt enhet og serveren.</li>Bruk dette verktøyet til å identifisere fungerende speilsider og løse forbindelssproblemer."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Bildeendrer – Endre størrelse på JPEG-, PNG- & WebP-bilder online",
+    "description": "Endre størrelse på bilder til nøyaktige dimensjoner mens du beholder kvaliteten. Støtter JPG, PNG og WebP. Ideelt for nettsider, sosiale medier og e-postvedlegg.",
+    "category": "media",
+    "keywords": [
+      "bildeendrer",
+      "endre bildeStørrelse online",
+      "endre bildedimensjoner",
+      "endre PNG-størrelse",
+      "endre JPEG-størrelse",
+      "bilderaskaleringsverktøy",
+      "endre bilde for web",
+      "endre bilde uten å miste kvalitet",
+      "behold aspektforhold"
+    ],
+    "faq": [
+      {
+        "question": "Hvordan justerer Bildeendrerbildedimensjoner uten forvrengning?",
+        "answer": "Bildeendrer lar deg angi nøyaktige bredde- og høydevinkler mens du beholder det opprinnelige aspektforholdet hvis ønskelig. Den bruker nettleserbasert canvas-størrelsesendring, som sikrer nøyaktig dimensjonskalering med minimal kvalitetstap. Dette gjør den ideelt for å endre størrelse på bilder til nettsider, miniatyrbilder eller innholdslevering uten å kompromittere bildestrukturen."
+      },
+      {
+        "question": "Kan jeg endre størrelse på bilder uten å miste kvalitet eller skarpthet?",
+        "answer": "Ja. Når du minsker bildestørrelsen, beholdes kvaliteten vanligvis. Verktøyet bruker høykvalitative nedskaleringsalgoritmer for å bevare detaljer. Å forstørre bilder kan føre til mykning eller uklarthet på grunn av pikselinterpolasjon, men resultatene forblir visuelt akseptable for moderat forstørrelse."
+      },
+      {
+        "question": "Er det sikkert å endre størrelse på bilder i dette verktøyet?",
+        "answer": "Helt sikkert. Alle størrelsesendringer utføres i nettleseren din ved hjelp av JavaScript. Bilder forlater aldri datamaskinen din, noe som sikrer at private eller sensitive filer forblir lokale og sikre. Ingen data lastes opp eller lagres eksternt."
+      },
+      {
+        "question": "Hvilke bildeformater støttes for størrelsesendring?",
+        "answer": "Du kan laste opp JPEG-, PNG- og WebP-bilder. Disse er vanlige formater brukt for fotografi, skjermbilder og webgrafikk. Bilder med endret størrelse lagres som standard i JPEG-format for maksimal kompatibilitet og minimal filstørrelse."
+      },
+      {
+        "question": "Hvordan låser jeg aspektforholdet når jeg endrer størrelse på et bilde?",
+        "answer": "Verktøyet har en bryter for å låse det opprinnelige aspektforholdet. Når det er aktivert, vil innføring av en ny bredde automatisk beregne den proporsjonale høyden, og omvendt. Dette hjelper til å unngå strakte eller komprimerte bilder, spesielt nyttig for produktbilder eller innlegg på sosiale medier."
+      }
+    ]
   }
 ]

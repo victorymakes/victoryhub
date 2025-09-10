@@ -1330,5 +1330,44 @@
         "answer": "Mögliche Gründe sind: <li>1) Ihr ISP oder Ihr lokales Netzwerk blockiert ZLibrary-Domänen,</li><li>2) Die von Ihnen verwendete Spiegelseite ist vorübergehend down,</li><li>3) Die Domain wurde geändert oder suspendiert,</li><li>4) Allgemeine Netzwerkprobleme zwischen Ihrem Gerät und dem Server.</li>Verwenden Sie dieses Tool, um funktionierende Spiegelseiten zu identifizieren und Verbindungsprobleme zu beheben."
       }
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "name": "Bildresizer – JPEG-, PNG- & WebP-Bilder online ändern",
+    "description": "Passe Bilder auf exakte Abmessungen an, ohne an Qualität einzubüßen. Unterstützt JPG, PNG und WebP. Ideal für Websites, soziale Medien und E-Mail-Anhänge.",
+    "category": "media",
+    "keywords": [
+      "Bildresizer",
+      "Bild online ändern",
+      "Bildabmessungen ändern",
+      "PNG ändern",
+      "JPEG ändern",
+      "Bildskalierungstool",
+      "Bild für Web ändern",
+      "Bild ohne Qualitätsverlust ändern",
+      "Seitenverhältnis beibehalten"
+    ],
+    "faq": [
+      {
+        "question": "Wie passt der Bildresizer Bildabmessungen ohne Verzerrung an？",
+        "answer": "Mit dem Bildresizer kannst du genaue Breiten- und Höhenwerte festlegen, dabei aber das ursprüngliche Seitenverhältnis bei Bedarf beibehalten. Er nutzt browserbasierte Canvas-Resizer-Technik, die eine genaue Bildskalierung mit minimalem Qualitätsverlust gewährleistet. Das macht ihn ideal für die Anpassung von Bildern für Websites, Thumbnails oder Content-Verteilung – ohne die Bildstruktur zu beeinträchtigen."
+      },
+      {
+        "question": "Kann ich Bilder ohne Qualitäts- oder Schärfeverlust ändern？",
+        "answer": "Ja. Bei der Verkleinerung von Bildern bleibt die Qualität in der Regel erhalten. Das Tool nutzt hochwertige Downscaling-Algorithmen, um Details zu bewahren. Bei der Vergrößerung von Bildern kann es aufgrund von Pixelinterpolation zu Weichzeichnung oder Unschärfe kommen, aber bei mäßiger Vergrößerung bleiben die Ergebnisse visuell akzeptabel."
+      },
+      {
+        "question": "Ist es sicher, Bilder mit diesem Tool zu ändern？",
+        "answer": "Absolut sicher. Alle Resizer-Vorgänge erfolgen in deinem Browser mithilfe von JavaScript. Bilder verlassen deinen Computer niemals – so bleiben private oder sensible Dateien lokal und sicher. Keine Daten werden extern hochgeladen oder gespeichert."
+      },
+      {
+        "question": "Welche Bildformate werden für die Resizer-Unterstützt？",
+        "answer": "Du kannst JPEG-, PNG- und WebP-Bilder hochladen. Diese sind gängige Formate für Fotografie, Screenshots und Webgrafiken. Zur Maximierung der Kompatibilität und Minimierung der Dateigröße werden geänderte Bilder standardmäßig im JPEG-Format gespeichert."
+      },
+      {
+        "question": "Wie passe ich ein Bild an, ohne das Seitenverhältnis zu verändern？",
+        "answer": "Das Tool bietet einen Toggle-Schalter, um das ursprüngliche Seitenverhältnis zu sperren. Wenn er aktiviert ist, berechnet das Tool automatisch die proportionale Höhe, wenn du eine neue Breite eingibst – und umgekehrt. Das verhindert gestreckte oder zusammengedrückte Bilder, besonders nützlich für Produktfotos oder Beiträge in sozialen Medien."
+      }
+    ]
   }
 ]
