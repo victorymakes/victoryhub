@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { config } from "@/lib/config";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 export function Analytics() {
     return (
@@ -55,7 +56,12 @@ export function Analytics() {
                 </Script>
             )}
 
-            {config.analytics.vercel.enabled && <VercelAnalytics />}
+            {config.analytics.vercel.enabled && (
+                <>
+                    <VercelAnalytics />
+                    <VercelSpeedInsights />
+                </>
+            )}
         </>
     );
 }
