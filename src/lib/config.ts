@@ -31,6 +31,9 @@ export const config = {
             host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
             enabled: Boolean(process.env.NEXT_PUBLIC_POSTHOG_KEY),
         },
+        vercel: {
+            enabled: Boolean(process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ENABLED),
+        },
     },
 } as const;
 
