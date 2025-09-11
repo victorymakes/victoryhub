@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
-    "@iarna/toml": "^2.2.5",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^15.5.2",
@@ -59,6 +58,7 @@
     "recharts": "^3.1.2",
     "remark-gfm": "^4.0.1",
     "schema-dts": "^1.1.5",
+    "smol-toml": "^1.4.2",
     "sonner": "^2.0.6",
     "tailwind-merge": "^3.3.1"
   },

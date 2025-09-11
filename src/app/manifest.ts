@@ -1,8 +1,6 @@
 import { MetadataRoute } from "next";
 import { config } from "@/lib/config";
 
-export const revalidate = 86400 * 7; // 7 days
-
 export default function manifest(): MetadataRoute.Manifest {
     return {
         name: config.siteName,

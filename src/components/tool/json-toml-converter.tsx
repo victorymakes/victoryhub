@@ -10,9 +10,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { trackToolUsage } from "@/lib/analytics";
-
-// Import TOML library
-import * as TOML from "@iarna/toml";
+import TOML from "smol-toml";
 
 // Function to convert JSON to TOML
 const jsonToToml = (json: string): string => {
