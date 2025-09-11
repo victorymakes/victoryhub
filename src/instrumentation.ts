@@ -2,8 +2,8 @@ import { config } from "./lib/config";
 import { getMessages } from "./service/message-service";
 import { getToolDB } from "./service/tool-service";
 
-export async function register() {
-    await initCache();
+export function register() {
+    initCache();
 }
 
 const initCache = async () => {

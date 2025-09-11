@@ -6,8 +6,8 @@
     "pre-build": "tsx scripts/pre-build.ts",
     "dev": "npm run pre-build && next dev",
     "build": "npm run pre-build && next build",
-    "start": "npm run pre-build && next start",
-    "lint": "next lint",
+    "start": "next start",
+    "lint": "eslint .",
     "format": "prettier . --write"
   },
   "dependencies": {
