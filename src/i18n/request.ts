@@ -1,14 +1,7 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "./routing";
-import { cache } from "../lib/cache";
-
-const getMergedMessages = (locale: string) =>
-    cache(async () => {
-        return await import(`../../messages/${locale}.json`).then(
-            (m) => m.default,
-        );
-    }, ["i18n", locale])();
+import { getMessages } from "../service/message-service";
 
 export default getRequestConfig(async ({ requestLocale }) => {
     // Typically corresponds to the `[locale]` segment
@@ -19,6 +12,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
     return {
         locale,
-        messages: await getMergedMessages(locale),
+        messages: await getMessages(locale),
     };
 });
