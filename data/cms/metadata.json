@@ -1,6 +1,57 @@
 {
   "da": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen & Z-Library Monitorer — Fungerende spejle? Læs dette først (status, sikkerhed, tips)",
+      "description": "Før du jagter “working Libgen” eller “Z-Library mirrors”, så tjek vores læser-først statussider. Få offentlige signaler, sikkerhedstips og rolig kontekst—så du gætter mindre og læser mere. Ingen downloads, ingen konti. Kun til public domain og Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "E-bøger"
+        },
+        {
+          "id": "reading",
+          "name": "Læsning"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webværktøjer"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Privatliv og sikkerhed"
+        },
+        {
+          "id": "monitoring",
+          "name": "Overvågning"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Spejle"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Livsstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "da",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Hvorfor du bør bekymre dig om URL-trackere og hvordan du fjerner dem",
       "description": "Lær hvordan URL-trackere påvirker dit privatliv og få overblik over de mest almindelige sporingsparametre. Find ud af, hvorfor det er vigtigt at fjerne trackere, og hvordan vores værktøj hjælper dig med at dele rene og sikre links.",
@@ -223,6 +274,57 @@
     }
   ],
   "de": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen & Z-Library-Monitore — Funktionierende Mirrors? Lies das zuerst (Status, Sicherheit, Tipps)",
+      "description": "Bevor du „working Libgen“ oder „Z-Library mirrors“ hinterherjagst, prüfe unsere leserorientierten Status-Monitore. Öffentliche Signale, Sicherheitstipps und ruhige Einordnung – damit du weniger rätst und mehr liest. Keine Downloads, keine Accounts. Für Public Domain und Open Access gedacht.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "E-Books"
+        },
+        {
+          "id": "reading",
+          "name": "Lesen"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web-Tools"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Datenschutz & Sicherheit"
+        },
+        {
+          "id": "monitoring",
+          "name": "Monitoring"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Spiegel"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Lebensstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "de",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Warum URL-Tracker wichtig sind und wie man sie entfernt",
@@ -447,6 +549,57 @@
   ],
   "en": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen & Z-Library Monitors — Working Mirrors? Read This First (Status, Safety, Tips)",
+      "description": "Before you chase 'working Libgen' or 'Z-Library mirrors', check our reader-first status monitors. Get public signals, safety tips, and calm context—so you spend less time guessing and more time reading. No downloads, no accounts. For public-domain and Open Access use.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "eBooks"
+        },
+        {
+          "id": "reading",
+          "name": "Reading"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web Tools"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Privacy & Safety"
+        },
+        {
+          "id": "monitoring",
+          "name": "Monitoring"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Mirrors"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Lifestyle"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "en",
+      "readingTime": 5,
+      "cover": "/images/covers/libgen-zlibrary-status-monitors.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Why You Should Care About URL Trackers and How to Remove Them",
       "description": "Learn how URL trackers affect your privacy and discover the most common tracking parameters explained in detail. Find out why removing trackers matters and how our URL Tracker Remover tool helps you share clean, private, and secure links.",
@@ -669,6 +822,57 @@
     }
   ],
   "es": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Monitores de Libgen y Z-Library — ¿Mirrors que funcionan? Lee esto primero (estado, seguridad, consejos)",
+      "description": "Antes de perseguir “working Libgen” o “Z-Library mirrors”, revisa nuestros monitores con enfoque en el lector. Obtén señales públicas, consejos de seguridad y contexto sereno, para que adivines menos y leas más. Sin descargas ni cuentas. Para uso en dominio público y Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "Libros electrónicos"
+        },
+        {
+          "id": "reading",
+          "name": "Lectura"
+        },
+        {
+          "id": "web-tools",
+          "name": "Herramientas web"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Privacidad y seguridad"
+        },
+        {
+          "id": "monitoring",
+          "name": "Monitoreo"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Mirrors"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Estilo de vida"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "es",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Por qué deberías preocuparte por los rastreadores de URL y cómo eliminarlos",
@@ -893,6 +1097,57 @@
   ],
   "fi": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen- ja Z-Library-monitorit — Toimivia peilejä? Lue tämä ensin (tila, turvallisuus, vinkit)",
+      "description": "Ennen kuin jahtaat “working Libgen”- tai “Z-Library mirrors” -hakutuloksia, tarkista lukijaa ensisijaisesti palvelevat tilamonitorimme. Saat julkisia signaaleja, turvallisuusvinkkejä ja rauhallista kontekstia—vähemmän arvaamista, enemmän lukemista. Ei latauksia, ei tilejä. Vain julkiselle omaisuudelle (public domain) ja Open Access -käyttöön.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "E-kirjat"
+        },
+        {
+          "id": "reading",
+          "name": "Lukeminen"
+        },
+        {
+          "id": "web-tools",
+          "name": "Verkkotyökalut"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Yksityisyys & turvallisuus"
+        },
+        {
+          "id": "monitoring",
+          "name": "Seuranta"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Peilit"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Elämäntapa"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fi",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Miksi URL-seurannasta kannattaa välittää ja miten ne poistetaan",
       "description": "Opi, miten URL-seuranta vaikuttaa yksityisyyteesi ja tutustu yleisimpiin seurantaparametreihin. Selvitä, miksi seurannan poistaminen on tärkeää ja miten työkalu auttaa jakamaan puhtaita ja turvallisia linkkejä.",
@@ -1115,6 +1370,57 @@
     }
   ],
   "fr": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Moniteurs Libgen & Z-Library — Miroirs fonctionnels ? Lisez ceci d’abord (statut, sécurité, conseils)",
+      "description": "Avant de courir après « working Libgen » ou « Z-Library mirrors », consultez nos moniteurs pensés pour les lecteurs. Obtenez des signaux publics, des conseils de sécurité et un contexte serein — pour moins deviner et plus lire. Sans téléchargements, sans comptes. Pour l’usage de contenus du domaine public et en Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "Livres numériques"
+        },
+        {
+          "id": "reading",
+          "name": "Lecture"
+        },
+        {
+          "id": "web-tools",
+          "name": "Outils Web"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Confidentialité & sécurité"
+        },
+        {
+          "id": "monitoring",
+          "name": "Suivi"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Miroirs"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Mode de vie"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "fr",
+      "readingTime": 6,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Pourquoi les traceurs d'URL comptent et comment les supprimer",
@@ -1339,6 +1645,57 @@
   ],
   "it": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Monitor di Libgen e Z-Library — Mirror funzionanti? Leggi questo prima (stato, sicurezza, consigli)",
+      "description": "Prima di inseguire “working Libgen” o “Z-Library mirrors”, controlla i nostri monitor pensati per i lettori. Segnali pubblici, consigli di sicurezza e contesto pacato—così passi meno tempo a indovinare e più a leggere. Nessun download, nessun account. Solo per dominio pubblico e Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "Ebook"
+        },
+        {
+          "id": "reading",
+          "name": "Lettura"
+        },
+        {
+          "id": "web-tools",
+          "name": "Strumenti Web"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Privacy e sicurezza"
+        },
+        {
+          "id": "monitoring",
+          "name": "Monitoraggio"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Mirror"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Stile di vita"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "it",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Perché dovresti preoccuparti dei tracker URL e come rimuoverli",
       "description": "Scopri come i tracker URL influenzano la tua privacy e conosci i parametri di tracciamento più comuni. Scopri perché è importante rimuoverli e come il nostro strumento ti aiuta a condividere link puliti e sicuri.",
@@ -1562,6 +1919,57 @@
   ],
   "ja": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen と Z-Library モニター — 動作するミラー？まずはこれを読もう（ステータス・安全・ヒント）",
+      "description": "「動作する Libgen」や「Z-Library のミラー」を追いかける前に、読者優先のステータスモニターをチェックしましょう。公開シグナル、安全ヒント、落ち着いた文脈を提供し、推測に費やす時間を減らして読書の時間を増やします。ダウンロード不要、アカウント不要。パブリックドメインとオープンアクセスの利用を想定しています。",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "電子書籍"
+        },
+        {
+          "id": "reading",
+          "name": "読書"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web ツール"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "プライバシーと安全"
+        },
+        {
+          "id": "monitoring",
+          "name": "モニタリング"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "ミラー"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "ライフスタイル"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ja",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "URLトラッカーを気にすべき理由と削除方法",
       "description": "URLトラッカーがプライバシーに与える影響や、よく使われるトラッキングパラメータの詳細を解説。なぜトラッカーを削除すべきか、そして当サイトのURLトラッカー除去ツールで安全・クリーンなリンクを共有する方法を紹介します。",
@@ -1784,6 +2192,57 @@
     }
   ],
   "ko": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen & Z-Library 모니터 — 작동하는 미러? 먼저 이것을 읽어보세요 (상태, 안전, 팁)",
+      "description": "‘작동하는 Libgen’이나 ‘Z-Library 미러’를 쫓기 전에, 독자 우선 상태 모니터를 확인하세요. 공개 신호, 안전 팁, 차분한 맥락을 제공해 추측에 쓰는 시간을 줄이고 독서 시간을 늘립니다. 다운로드 없음, 계정 없음. 퍼블릭 도메인과 오픈 액세스 용도에 한합니다.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "전자책"
+        },
+        {
+          "id": "reading",
+          "name": "독서"
+        },
+        {
+          "id": "web-tools",
+          "name": "웹 도구"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "프라이버시와 안전"
+        },
+        {
+          "id": "monitoring",
+          "name": "모니터링"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "미러"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "라이프스타일"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ko",
+      "readingTime": 4,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "URL 추적기를 신경 써야 하는 이유와 제거 방법",
@@ -2231,6 +2690,57 @@
   ],
   "no": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen- og Z-Library-monitorer — Fungerende speil? Les dette først (status, sikkerhet, tips)",
+      "description": "Før du jager etter «working Libgen» eller «Z-Library mirrors», sjekk våre leser-først statusmonitorer. Få offentlige signaler, sikkerhetstips og rolig kontekst—slik at du gjetter mindre og leser mer. Ingen nedlastinger, ingen kontoer. For bruk av innhold i offentlig domene og Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "E-bøker"
+        },
+        {
+          "id": "reading",
+          "name": "Lesing"
+        },
+        {
+          "id": "web-tools",
+          "name": "Nettverktøy"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Personvern og sikkerhet"
+        },
+        {
+          "id": "monitoring",
+          "name": "Overvåking"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Speil"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Livsstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "no",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Hvorfor du bør bry deg om URL-trackere og hvordan du fjerner dem",
       "description": "Lær hvordan URL-trackere påvirker personvernet ditt og få oversikt over de vanligste sporingsparametrene. Finn ut hvorfor det er viktig å fjerne trackere og hvordan vårt verktøy hjelper deg å dele rene og sikre lenker.",
@@ -2453,6 +2963,57 @@
     }
   ],
   "pt": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Monitores de Libgen e Z-Library — Espelhos funcionando? Leia isto primeiro (status, segurança, dicas)",
+      "description": "Antes de sair atrás de “working Libgen” ou “Z-Library mirrors”, confira nossos monitores com foco no leitor. Obtenha sinais públicos, dicas de segurança e contexto sereno — para gastar menos tempo chutando e mais tempo lendo. Sem downloads, sem contas. Apenas para domínio público e Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "eBooks"
+        },
+        {
+          "id": "reading",
+          "name": "Leitura"
+        },
+        {
+          "id": "web-tools",
+          "name": "Ferramentas Web"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Privacidade e segurança"
+        },
+        {
+          "id": "monitoring",
+          "name": "Monitoramento"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Mirrors"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Estilo de vida"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "pt",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Por que você deve se preocupar com rastreadores de URL e como removê-los",
@@ -2677,6 +3238,57 @@
   ],
   "ru": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Мониторы Libgen и Z-Library — Рабочие зеркала? Сначала прочтите это (статус, безопасность, советы)",
+      "description": "Прежде чем гнаться за «working Libgen» или «Z-Library mirrors», посмотрите наши ориентированные на читателя мониторы статуса. Публичные сигналы, советы по безопасности и спокойный контекст — чтобы меньше гадать и больше читать. Никаких загрузок и аккаунтов. Только для материалов из общественного достояния (Public Domain) и Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "Электронные книги"
+        },
+        {
+          "id": "reading",
+          "name": "Чтение"
+        },
+        {
+          "id": "web-tools",
+          "name": "Веб-инструменты"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Конфиденциальность и безопасность"
+        },
+        {
+          "id": "monitoring",
+          "name": "Мониторинг"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Зеркала"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Образ жизни"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ru",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Почему важно заботиться о URL-трекерах и как их удалить",
       "description": "Узнайте, как URL-трекеры влияют на вашу приватность, и ознакомьтесь с самыми распространёнными параметрами отслеживания. Поймите, почему важно удалять трекеры, и как наш инструмент помогает делиться чистыми и безопасными ссылками.",
@@ -2899,6 +3511,57 @@
     }
   ],
   "sv": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen- och Z-Library-monitorer — Fungerande speglar? Läs detta först (status, säkerhet, tips)",
+      "description": "Innan du jagar efter ”working Libgen” eller ”Z-Library mirrors”, kolla våra läsarcentrerade statusmonitorer. Få offentliga signaler, säkerhetstips och lugn kontext — så gissar du mindre och läser mer. Inga nedladdningar, inga konton. Endast för Public Domain och Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "E-böcker"
+        },
+        {
+          "id": "reading",
+          "name": "Läsning"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webbverktyg"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Integritet och säkerhet"
+        },
+        {
+          "id": "monitoring",
+          "name": "Övervakning"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Speglar"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Livsstil"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "sv",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
     {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "Varför du bör bry dig om URL-spårare och hur du tar bort dem",
@@ -3123,6 +3786,57 @@
   ],
   "zh": [
     {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen 与 Z-Library 监控 —— 可用镜像？先读这一篇（状态、安全、提示）",
+      "description": "在你去追“可用的 Libgen”或“Z-Library 镜像”之前，先看看我们以读者为先的状态监控。获取公开信号、安全提示与冷静背景信息——让你少猜测，多阅读。无需下载、无需账号。仅用于公有领域与开放获取内容。",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "电子书"
+        },
+        {
+          "id": "reading",
+          "name": "阅读"
+        },
+        {
+          "id": "web-tools",
+          "name": "Web 工具"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "隐私与安全"
+        },
+        {
+          "id": "monitoring",
+          "name": "监测"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "镜像"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "生活方式"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "zh",
+      "readingTime": 2,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
+      "type": "blog"
+    },
+    {
       "slug": "blog/why-you-should-care-about-url-trackers-and-how-to-remove-them",
       "title": "为什么你应该关心URL跟踪器以及如何去除它们",
       "description": "了解URL跟踪器如何影响你的隐私，详细解释最常见的跟踪参数。了解为什么去除跟踪器很重要，以及我们的URL跟踪器清理工具如何帮助你分享更干净、更私密、更安全的链接。",
@@ -3341,6 +4055,59 @@
       "locale": "zh",
       "readingTime": 2,
       "cover": "https://i.postimg.cc/6pcJXQR4/victoryhub.png",
+      "type": "blog"
+    }
+  ],
+  "ni": [
+    {
+      "slug": "blog/shadow-library-mirror-monitors",
+      "title": "Libgen- en Z-Library-monitoren — Werkende mirrors? Lees dit eerst (status, veiligheid, tips)",
+      "description": "Voordat je achter ‘working Libgen’ of ‘Z-Library mirrors’ aangaat, bekijk onze lezersgerichte statusmonitoren. Krijg publieke signalen, veiligheidstips en rustige context—zodat je minder hoeft te gokken en meer kunt lezen. Geen downloads, geen accounts. Voor gebruik met publiek domein en Open Access.",
+      "date": "2025-09-19",
+      "author": "Victory",
+      "tags": [
+        {
+          "id": "ebooks",
+          "name": "E-books"
+        },
+        {
+          "id": "reading",
+          "name": "Lezen"
+        },
+        {
+          "id": "web-tools",
+          "name": "Webtools"
+        },
+        {
+          "id": "privacy-safety",
+          "name": "Privacy & veiligheid"
+        },
+        {
+          "id": "monitoring",
+          "name": "Monitoring"
+        },
+        {
+          "id": "libgen",
+          "name": "Libgen"
+        },
+        {
+          "id": "zlibrary",
+          "name": "Z-Library"
+        },
+        {
+          "id": "mirrors",
+          "name": "Mirrors"
+        }
+      ],
+      "category": {
+        "id": "lifestyle",
+        "name": "Levensstijl"
+      },
+      "featured": false,
+      "draft": false,
+      "locale": "ni",
+      "readingTime": 5,
+      "cover": "https://i.postimg.cc/RCWpcHZw/image.png",
       "type": "blog"
     }
   ]
