@@ -54,6 +54,7 @@ export default async function LocaleLayout({
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
                 <link rel="manifest" href="/manifest.webmanifest" />
                 <meta name="theme-color" content="#000000" />
+                <meta name="google-adsense-account" content="ca-pub-4716399974730338" />
             </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
