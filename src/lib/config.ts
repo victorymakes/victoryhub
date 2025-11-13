@@ -9,7 +9,7 @@ export const config = {
         email: "support@victoryhub.cc",
         twitter: {
             handle: "@Victory",
-            url: "https://twitter.com/victoryhub_cc",
+            url: "https://twitter.com/victorymakes",
         },
     },
     analytics: {
