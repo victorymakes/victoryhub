@@ -2,6 +2,37 @@ import Container from "@/components/common/container";
 import { Link } from "@/i18n/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { getCategories } from "@/service/tool-service";
+import { Button } from "@/components/ui/button";
+import { LuMail } from "react-icons/lu";
+import { SiDiscord, SiGithub, SiX, SiXiaohongshu } from "react-icons/si";
+
+const socialLinks = [
+    {
+        icon: SiGithub,
+        title: "GitHub",
+        href: "https://github.com/victorymakes/victoryhub",
+    },
+    {
+        icon: SiX,
+        title: "Twitter",
+        href: "https://x.com/victorymakes",
+    },
+    {
+        icon: SiDiscord,
+        title: "Discord",
+        href: "https://discord.gg/2jXtp466",
+    },
+    {
+        icon: SiXiaohongshu,
+        title: "Xiaohongshu",
+        href: "https://www.xiaohongshu.com/user/profile/605834f00000000001002dfc",
+    },
+    {
+        icon: LuMail,
+        title: "Author",
+        href: "https://me.victoryhub.cc/#contact",
+    },
+];
 
 export async function Footer() {
     const tNav = await getTranslations("Navigation");
@@ -30,6 +61,30 @@ export async function Footer() {
                         <p className="text-sm text-muted-foreground mb-4">
                             {tFooter("description")}
                         </p>
+
+                        {/* Social Links */}
+                        <div className="flex items-center gap-3">
+                            {socialLinks.map((link) => {
+                                const Icon = link.icon;
+                                return (
+                                    <Button
+                                        key={link.title}
+                                        variant="ghost"
+                                        size="icon"
+                                        asChild
+                                        className="text-muted-foreground hover:text-foreground"
+                                    >
+                                        <Link
+                                            href={link.href}
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            <Icon className="size-4" />
+                                        </Link>
+                                    </Button>
+                                );
+                            })}
+                        </div>
                     </div>
 
                     {/* Tools Section */}
