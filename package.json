@@ -7,7 +7,8 @@
     "dev": "pnpm run pre-build && next dev",
     "build": "pnpm run pre-build && next build",
     "start": "next start",
-    "format": "biome check --write ."
+    "format": "biome check --write .",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
