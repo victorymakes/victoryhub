@@ -1,663 +1,598 @@
 "use client";
 
-import React, { useState, useRef, useCallback, useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { AlertTriangle, Copy, Trash2, Download } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { Badge } from "@/components/ui/badge";
-import { toast } from "sonner";
-import { trackToolUsage } from "@/lib/analytics";
-import UploadFiles from "@/components/tool/upload-files";
+import { AlertTriangle, Copy, Download, Trash2 } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import type React from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
+import UploadFiles from "@/components/tool/upload-files";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { trackToolUsage } from "@/lib/analytics";
 
 interface Pos {
-    x: number;
-    y: number;
+  x: number;
+  y: number;
 }
 
 interface ColorInfo {
-    hex: string;
-    rgb: string;
-    hsl: string;
-    pos?: Pos;
+  hex: string;
+  rgb: string;
+  hsl: string;
+  pos?: Pos;
 }
 
 interface DominantColor {
-    color: string;
-    count: number;
-    percentage: number;
-    pos?: Pos;
+  color: string;
+  count: number;
+  percentage: number;
+  pos?: Pos;
 }
 
+// Color utility functions — module-level for stable references
+const rgbToHex = (r: number, g: number, b: number): string => {
+  r = Math.max(0, Math.min(255, Math.round(r)));
+  g = Math.max(0, Math.min(255, Math.round(g)));
+  b = Math.max(0, Math.min(255, Math.round(b)));
+  return (
+    "#" +
+    [r, g, b]
+      .map((x) => {
+        const hex = x.toString(16);
+        return hex.length === 1 ? `0${hex}` : hex;
+      })
+      .join("")
+  );
+};
+
+const hexToRgb = (hex: string): [number, number, number] | null => {
+  const normalizedHex = hex.replace(/^#/, "").toLowerCase();
+  if (!/^[0-9a-f]{6}$/i.test(normalizedHex)) {
+    console.warn(`Invalid hex color format: ${hex}`);
+    return null;
+  }
+  try {
+    return [
+      parseInt(normalizedHex.slice(0, 2), 16),
+      parseInt(normalizedHex.slice(2, 4), 16),
+      parseInt(normalizedHex.slice(4, 6), 16),
+    ];
+  } catch (error) {
+    console.error(`Error parsing hex color ${hex}:`, error);
+    return null;
+  }
+};
+
+const rgbToHsl = (
+  r: number,
+  g: number,
+  b: number,
+): [number, number, number] => {
+  r /= 255;
+  g /= 255;
+  b /= 255;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  let h = 0,
+    s = 0;
+  const l = (max + min) / 2;
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      case b:
+        h = (r - g) / d + 4;
+        break;
+    }
+    h /= 6;
+  }
+  return [Math.round(h * 360), Math.round(s * 100), Math.round(l * 100)];
+};
+
+const canvasToCssPos = (
+  canvas: HTMLCanvasElement,
+  pos: Pos,
+): { x: number; y: number } => {
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = rect.width / canvas.width;
+  const scaleY = rect.height / canvas.height;
+  return { x: pos.x * scaleX, y: pos.y * scaleY };
+};
+
+const clientToCanvasPos = (
+  canvas: HTMLCanvasElement,
+  clientX: number,
+  clientY: number,
+): Pos => {
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  const x = Math.floor((clientX - rect.left) * scaleX);
+  const y = Math.floor((clientY - rect.top) * scaleY);
+  return { x, y };
+};
+
 const ImageColorPicker: React.FC = () => {
-    const t = useTranslations("ImageColorPicker");
-    const [image, setImage] = useState<File | null>(null);
-    const [imageUrl, setImageUrl] = useState<string | null>(null);
-    const [selectedColor, setSelectedColor] = useState<ColorInfo | null>(null);
-    const [dominantColors, setDominantColors] = useState<DominantColor[]>([]);
-    const [error, setError] = useState<string | null>(null);
-    const [isProcessing, setIsProcessing] = useState(false);
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    const imageRef = useRef<HTMLImageElement>(null);
+  const t = useTranslations("ImageColorPicker");
+  const [image, setImage] = useState<File | null>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<ColorInfo | null>(null);
+  const [dominantColors, setDominantColors] = useState<DominantColor[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
 
-    // Handle file upload
-    const handleFileChange = useCallback(
-        (files: File[] | FileList) => {
-            if (files.length === 0) return;
+  // Handle file upload
+  const handleFileChange = useCallback(
+    (files: File[] | FileList) => {
+      if (files.length === 0) return;
 
-            const file = files[0];
-            if (!file.type.startsWith("image/")) {
-                setError(t("errors.invalidFileType"));
-                return;
-            }
+      const file = files[0];
+      if (!file.type.startsWith("image/")) {
+        setError(t("errors.invalidFileType"));
+        return;
+      }
 
-            // Check file size (10MB limit)
-            if (file.size > 10 * 1024 * 1024) {
-                setError(t("errors.fileTooLarge"));
-                return;
-            }
+      // Check file size (10MB limit)
+      if (file.size > 10 * 1024 * 1024) {
+        setError(t("errors.fileTooLarge"));
+        return;
+      }
 
-            setImage(file);
-            setError(null);
-            setSelectedColor(null);
-            setDominantColors([]);
+      setImage(file);
+      setError(null);
+      setSelectedColor(null);
+      setDominantColors([]);
 
-            // Track usage
-            trackToolUsage("image-color-picker");
-        },
-        [t],
-    );
+      // Track usage
+      trackToolUsage("image-color-picker");
+    },
+    [t],
+  );
 
-    const domainColorToColorInfo = useCallback(
-        (color: DominantColor): ColorInfo | null => {
-            const rgb = hexToRgb(color.color);
-            if (!rgb) {
-                return null;
-            }
+  const domainColorToColorInfo = useCallback(
+    (color: DominantColor): ColorInfo | null => {
+      const rgb = hexToRgb(color.color);
+      if (!rgb) {
+        return null;
+      }
 
-            const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
-            return {
-                hex: color.color,
-                rgb: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`,
-                hsl: `hsl(${h}, ${s}%, ${l}%)`,
-                pos: color.pos,
-            };
-        },
-        [],
-    );
+      const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+      return {
+        hex: color.color,
+        rgb: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`,
+        hsl: `hsl(${h}, ${s}%, ${l}%)`,
+        pos: color.pos,
+      };
+    },
+    [],
+  );
 
-    // Extract dominant colors from the image
-    const extractDominantColors = useCallback(
-        (ctx: CanvasRenderingContext2D, width: number, height: number) => {
-            const colorMap: Record<string, { count: number; pos: Pos }> = {};
-            let sampledPixelCount = 0;
+  // Extract dominant colors from the image
+  const extractDominantColors = useCallback(
+    (ctx: CanvasRenderingContext2D, width: number, height: number) => {
+      const colorMap: Record<string, { count: number; pos: Pos }> = {};
+      let sampledPixelCount = 0;
 
-            // single read for better perf
-            const imgData = ctx.getImageData(0, 0, width, height).data;
+      // single read for better perf
+      const imgData = ctx.getImageData(0, 0, width, height).data;
 
-            // Adaptive sampling based on image size
-            const sampleSize = Math.max(
-                1,
-                Math.floor(Math.sqrt((width * height) / 10000)),
-            );
-            const step = 16; // Reduced quantization step for better color accuracy
-            const alphaThreshold = 10; // Skip pixels that are nearly transparent
+      // Adaptive sampling based on image size
+      const sampleSize = Math.max(
+        1,
+        Math.floor(Math.sqrt((width * height) / 10000)),
+      );
+      const step = 16; // Reduced quantization step for better color accuracy
+      const alphaThreshold = 10; // Skip pixels that are nearly transparent
 
-            for (let x = 0; x < width; x += sampleSize) {
-                for (let y = 0; y < height; y += sampleSize) {
-                    const sx = Math.min(x, width - 1);
-                    const sy = Math.min(y, height - 1);
-                    const idx = (sy * width + sx) * 4;
+      for (let x = 0; x < width; x += sampleSize) {
+        for (let y = 0; y < height; y += sampleSize) {
+          const sx = Math.min(x, width - 1);
+          const sy = Math.min(y, height - 1);
+          const idx = (sy * width + sx) * 4;
 
-                    // Skip transparent pixels
-                    const alpha = imgData[idx + 3];
-                    if (alpha < alphaThreshold) continue;
+          // Skip transparent pixels
+          const alpha = imgData[idx + 3];
+          if (alpha < alphaThreshold) continue;
 
-                    const rRaw = imgData[idx];
-                    const gRaw = imgData[idx + 1];
-                    const bRaw = imgData[idx + 2];
+          const rRaw = imgData[idx];
+          const gRaw = imgData[idx + 1];
+          const bRaw = imgData[idx + 2];
 
-                    // quantize and clamp to [0,255] to avoid values like 256
-                    const q = (v: number) =>
-                        Math.min(255, Math.max(0, Math.round(v / step) * step));
-                    const r = q(rRaw);
-                    const g = q(gRaw);
-                    const b = q(bRaw);
+          // quantize and clamp to [0,255] to avoid values like 256
+          const q = (v: number) =>
+            Math.min(255, Math.max(0, Math.round(v / step) * step));
+          const r = q(rRaw);
+          const g = q(gRaw);
+          const b = q(bRaw);
 
-                    const hex = rgbToHex(r, g, b);
+          const hex = rgbToHex(r, g, b);
 
-                    if (colorMap[hex]) {
-                        colorMap[hex].count += 1;
-                    } else {
-                        colorMap[hex] = { count: 1, pos: { x: sx, y: sy } };
-                    }
-                    sampledPixelCount++;
-                }
-            }
+          if (colorMap[hex]) {
+            colorMap[hex].count += 1;
+          } else {
+            colorMap[hex] = { count: 1, pos: { x: sx, y: sy } };
+          }
+          sampledPixelCount++;
+        }
+      }
 
-            //  Sort by count and filter out colors with very low occurrence (likely noise)
-            const minCount = Math.max(1, sampledPixelCount * 0.001); // At least 0.1% occurrence
-            const colors = Object.entries(colorMap)
-                .map(([color, data]) => ({
-                    color,
-                    count: data.count,
-                    percentage: (data.count / sampledPixelCount) * 100,
-                    pos: data.pos,
-                }))
-                .filter((color) => color.count >= minCount)
-                .sort((a, b) => b.count - a.count);
+      //  Sort by count and filter out colors with very low occurrence (likely noise)
+      const minCount = Math.max(1, sampledPixelCount * 0.001); // At least 0.1% occurrence
+      const colors = Object.entries(colorMap)
+        .map(([color, data]) => ({
+          color,
+          count: data.count,
+          percentage: (data.count / sampledPixelCount) * 100,
+          pos: data.pos,
+        }))
+        .filter((color) => color.count >= minCount)
+        .sort((a, b) => b.count - a.count);
 
-            // helper to ensure diverse colors
-            const getDiverseColors = (colors: DominantColor[]) => {
-                // Helper function to calculate color distance
-                const colorDistance = (hex1: string, hex2: string): number => {
-                    const rgb1 = hexToRgb(hex1);
-                    const rgb2 = hexToRgb(hex2);
-                    if (!rgb1 || !rgb2) return 1000; // Large distance if invalid colors
+      // helper to ensure diverse colors
+      const getDiverseColors = (colors: DominantColor[]) => {
+        // Helper function to calculate color distance
+        const colorDistance = (hex1: string, hex2: string): number => {
+          const rgb1 = hexToRgb(hex1);
+          const rgb2 = hexToRgb(hex2);
+          if (!rgb1 || !rgb2) return 1000; // Large distance if invalid colors
 
-                    return Math.sqrt(
-                        Math.pow(rgb1[0] - rgb2[0], 2) +
-                            Math.pow(rgb1[1] - rgb2[1], 2) +
-                            Math.pow(rgb1[2] - rgb2[2], 2),
-                    );
-                };
+          return Math.sqrt(
+            (rgb1[0] - rgb2[0]) ** 2 +
+              (rgb1[1] - rgb2[1]) ** 2 +
+              (rgb1[2] - rgb2[2]) ** 2,
+          );
+        };
 
-                // Then ensure color diversity by removing very similar colors
-                const diverseColors: DominantColor[] = [];
-                const similarityThreshold = 25; // RGB distance threshold
+        // Then ensure color diversity by removing very similar colors
+        const diverseColors: DominantColor[] = [];
+        const similarityThreshold = 25; // RGB distance threshold
 
-                for (const color of colors) {
-                    // Check if this color is too similar to any already selected color
-                    const isTooSimilar = diverseColors.some(
-                        (selected) =>
-                            colorDistance(color.color, selected.color) <
-                            similarityThreshold,
-                    );
+        for (const color of colors) {
+          // Check if this color is too similar to any already selected color
+          const isTooSimilar = diverseColors.some(
+            (selected) =>
+              colorDistance(color.color, selected.color) < similarityThreshold,
+          );
 
-                    if (!isTooSimilar) {
-                        diverseColors.push(color);
-                        if (diverseColors.length >= 10) break;
-                    }
-                }
-
-                return diverseColors;
-            };
-
-            const domainColors = getDiverseColors(colors);
-            setDominantColors(domainColors);
-            setSelectedColor(domainColorToColorInfo(domainColors[0]));
-        },
-        [domainColorToColorInfo],
-    );
-
-    // Handle image load and extract dominant colors
-    const handleImageLoad = useCallback(() => {
-        if (!imageRef.current || !canvasRef.current) return;
-
-        const img = imageRef.current;
-        const canvas = canvasRef.current;
-
-        // Wait until natural size is available
-        if (!img.naturalWidth || !img.naturalHeight) {
-            // try again on next frame; avoids calling getImageData with zero size
-            requestAnimationFrame(() => handleImageLoad());
-            return;
+          if (!isTooSimilar) {
+            diverseColors.push(color);
+            if (diverseColors.length >= 10) break;
+          }
         }
 
-        const ctx = canvas.getContext("2d", { willReadFrequently: true });
-        if (!ctx) return;
+        return diverseColors;
+      };
 
-        // Set canvas dimensions to match image
-        canvas.width = img.naturalWidth;
-        canvas.height = img.naturalHeight;
+      const domainColors = getDiverseColors(colors);
+      setDominantColors(domainColors);
+      setSelectedColor(domainColorToColorInfo(domainColors[0]));
+    },
+    [domainColorToColorInfo],
+  );
 
-        // Draw image on canvas
-        ctx.drawImage(img, 0, 0);
+  // Handle image load and extract dominant colors
+  const handleImageLoad = useCallback(() => {
+    if (!imageRef.current || !canvasRef.current) return;
 
-        // Extract dominant colors
-        extractDominantColors(ctx, canvas.width, canvas.height);
+    const img = imageRef.current;
+    const canvas = canvasRef.current;
 
-        setIsProcessing(false);
-    }, [extractDominantColors]);
+    // Wait until natural size is available
+    if (!img.naturalWidth || !img.naturalHeight) {
+      // try again on next frame; avoids calling getImageData with zero size
+      requestAnimationFrame(() => handleImageLoad());
+      return;
+    }
 
-    // Handle canvas click to pick a color
-    const handleCanvasClick = useCallback(
-        (e: React.MouseEvent<HTMLCanvasElement>) => {
-            if (!canvasRef.current) return;
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
+    if (!ctx) return;
 
-            const canvas = canvasRef.current;
-            const { x, y } = clientToCanvasPos(canvas, e.clientX, e.clientY);
+    // Set canvas dimensions to match image
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
 
-            const ctx = canvas.getContext("2d", { willReadFrequently: true });
-            if (!ctx) return;
+    // Draw image on canvas
+    ctx.drawImage(img, 0, 0);
 
-            const pixelData = ctx.getImageData(x, y, 1, 1).data;
-            const r = pixelData[0];
-            const g = pixelData[1];
-            const b = pixelData[2];
+    // Extract dominant colors
+    extractDominantColors(ctx, canvas.width, canvas.height);
 
-            const hex = rgbToHex(r, g, b);
-            const rgb = `rgb(${r}, ${g}, ${b})`;
-            const [h, s, l] = rgbToHsl(r, g, b);
-            const hsl = `hsl(${h}, ${s}%, ${l}%)`;
+    setIsProcessing(false);
+  }, [extractDominantColors]);
 
-            setSelectedColor({ hex, rgb, hsl, pos: { x, y } });
-        },
-        [],
-    );
+  // Handle canvas click to pick a color
+  const handleCanvasClick = useCallback(
+    (e: React.MouseEvent<HTMLCanvasElement>) => {
+      if (!canvasRef.current) return;
 
-    // Copy color to clipboard
-    const copyToClipboard = useCallback(
-        (text: string) => {
-            navigator.clipboard
-                .writeText(text)
-                .then(() => {
-                    toast.success(t("colorCopied"));
-                })
-                .catch(() => {
-                    toast.error(t("errors.copyFailed"));
-                });
-        },
-        [t],
-    );
+      const canvas = canvasRef.current;
+      const { x, y } = clientToCanvasPos(canvas, e.clientX, e.clientY);
 
-    // Clear the current image
-    const clearImage = useCallback(() => {
-        setImage(null);
-        setImageUrl(null);
-        setSelectedColor(null);
-        setDominantColors([]);
-    }, []);
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      if (!ctx) return;
 
-    // Download color palette
-    const downloadPalette = useCallback(() => {
-        if (dominantColors.length === 0) return;
+      const pixelData = ctx.getImageData(x, y, 1, 1).data;
+      const r = pixelData[0];
+      const g = pixelData[1];
+      const b = pixelData[2];
 
-        const paletteData = dominantColors.map((color) => {
-            const hex = color.color;
-            const rgb = hexToRgb(hex);
-            const [h, s, l] = rgb
-                ? rgbToHsl(rgb[0], rgb[1], rgb[2])
-                : [0, 0, 0];
+      const hex = rgbToHex(r, g, b);
+      const rgb = `rgb(${r}, ${g}, ${b})`;
+      const [h, s, l] = rgbToHsl(r, g, b);
+      const hsl = `hsl(${h}, ${s}%, ${l}%)`;
 
-            return {
-                hex,
-                rgb: rgb ? `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})` : "",
-                hsl: `hsl(${h}, ${s}%, ${l}%)`,
-                percentage: color.percentage.toFixed(2) + "%",
-            };
+      setSelectedColor({ hex, rgb, hsl, pos: { x, y } });
+    },
+    [],
+  );
+
+  // Copy color to clipboard
+  const copyToClipboard = useCallback(
+    (text: string) => {
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          toast.success(t("colorCopied"));
+        })
+        .catch(() => {
+          toast.error(t("errors.copyFailed"));
         });
+    },
+    [t],
+  );
 
-        const jsonString = JSON.stringify(paletteData, null, 2);
-        const blob = new Blob([jsonString], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
+  // Clear the current image
+  const clearImage = useCallback(() => {
+    setImage(null);
+    setImageUrl(null);
+    setSelectedColor(null);
+    setDominantColors([]);
+  }, []);
 
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "color-palette.json";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+  // Download color palette
+  const downloadPalette = useCallback(() => {
+    if (dominantColors.length === 0) return;
 
-        toast.success(t("paletteDownloaded"));
-    }, [dominantColors, t]);
+    const paletteData = dominantColors.map((color) => {
+      const hex = color.color;
+      const rgb = hexToRgb(hex);
+      const [h, s, l] = rgb ? rgbToHsl(rgb[0], rgb[1], rgb[2]) : [0, 0, 0];
 
-    // Utility functions for color conversion
-    const rgbToHex = (r: number, g: number, b: number): string => {
-        // Ensure values are within valid range (0-255)
-        r = Math.max(0, Math.min(255, Math.round(r)));
-        g = Math.max(0, Math.min(255, Math.round(g)));
-        b = Math.max(0, Math.min(255, Math.round(b)));
+      return {
+        hex,
+        rgb: rgb ? `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})` : "",
+        hsl: `hsl(${h}, ${s}%, ${l}%)`,
+        percentage: `${color.percentage.toFixed(2)}%`,
+      };
+    });
 
-        return (
-            "#" +
-            [r, g, b]
-                .map((x) => {
-                    const hex = x.toString(16);
-                    return hex.length === 1 ? "0" + hex : hex;
-                })
-                .join("")
-        );
+    const jsonString = JSON.stringify(paletteData, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "color-palette.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    toast.success(t("paletteDownloaded"));
+  }, [dominantColors, t]);
+
+  // Process the image when it's uploaded
+  useEffect(() => {
+    if (!image) {
+      setImageUrl(null);
+      return;
+    }
+
+    const objectUrl = URL.createObjectURL(image);
+    setImageUrl(objectUrl);
+    setIsProcessing(true);
+
+    // Clean up the object URL when component unmounts or image changes
+    return () => {
+      URL.revokeObjectURL(objectUrl);
     };
+  }, [image]);
 
-    const hexToRgb = (hex: string): [number, number, number] | null => {
-        // Normalize hex value by removing # if present and ensuring lowercase
-        const normalizedHex = hex.replace(/^#/, "").toLowerCase();
+  return (
+    <Card>
+      <CardContent className="px-6 space-y-4">
+        {error && (
+          <Alert variant="destructive">
+            <AlertTriangle className="h-4 w-4" />
+            <AlertDescription>{error}</AlertDescription>
+          </Alert>
+        )}
+        {!image ? (
+          <UploadFiles
+            onFilesSelected={(files) => handleFileChange(Array.from(files))}
+            accept="image/*"
+            multiple={false}
+            dragInactiveText={t("dropImageHere")}
+            selectButtonText={t("chooseImage")}
+          />
+        ) : (
+          <div className="space-y-4">
+            <div className="flex flex-wrap gap-2">
+              <Button variant="outline" size="sm" onClick={clearImage}>
+                <Trash2 className="h-4 w-4" />
+                {t("clearImage")}
+              </Button>
 
-        // Check if it's a valid 6-digit hex color
-        if (!/^[0-9a-f]{6}$/i.test(normalizedHex)) {
-            console.warn(`Invalid hex color format: ${hex}`);
-            return null;
-        }
+              {dominantColors.length > 0 && (
+                <Button variant="outline" size="sm" onClick={downloadPalette}>
+                  <Download className="h-4 w-4" />
+                  {t("downloadPalette")}
+                </Button>
+              )}
+            </div>
 
-        try {
-            return [
-                parseInt(normalizedHex.slice(0, 2), 16),
-                parseInt(normalizedHex.slice(2, 4), 16),
-                parseInt(normalizedHex.slice(4, 6), 16),
-            ];
-        } catch (error) {
-            console.error(`Error parsing hex color ${hex}:`, error);
-            return null;
-        }
-    };
+            <div className="relative border rounded-md overflow-hidden cursor-crosshair flex justify-center">
+              {imageUrl && (
+                <>
+                  <Image
+                    ref={imageRef}
+                    src={imageUrl}
+                    alt="Uploaded image"
+                    className="max-w-full object-contain h-auto"
+                    style={{ display: "none" }}
+                    onLoad={handleImageLoad}
+                    width={800}
+                    height={600}
+                  />
+                  <canvas
+                    ref={canvasRef}
+                    onClick={handleCanvasClick}
+                    className="w-full h-auto cursor-crosshair"
+                  />
+                </>
+              )}
 
-    const rgbToHsl = (
-        r: number,
-        g: number,
-        b: number,
-    ): [number, number, number] => {
-        r /= 255;
-        g /= 255;
-        b /= 255;
-
-        const max = Math.max(r, g, b);
-        const min = Math.min(r, g, b);
-        let h = 0,
-            s = 0;
-        const l = (max + min) / 2;
-
-        if (max !== min) {
-            const d = max - min;
-            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-            switch (max) {
-                case r:
-                    h = (g - b) / d + (g < b ? 6 : 0);
-                    break;
-                case g:
-                    h = (b - r) / d + 2;
-                    break;
-                case b:
-                    h = (r - g) / d + 4;
-                    break;
-            }
-
-            h /= 6;
-        }
-
-        return [Math.round(h * 360), Math.round(s * 100), Math.round(l * 100)];
-    };
-
-    const canvasToCssPos = (
-        canvas: HTMLCanvasElement,
-        pos: Pos,
-    ): { x: number; y: number } => {
-        const rect = canvas.getBoundingClientRect();
-        const scaleX = rect.width / canvas.width;
-        const scaleY = rect.height / canvas.height;
-        return {
-            x: pos.x * scaleX,
-            y: pos.y * scaleY,
-        };
-    };
-
-    const clientToCanvasPos = (
-        canvas: HTMLCanvasElement,
-        clientX: number,
-        clientY: number,
-    ): Pos => {
-        const rect = canvas.getBoundingClientRect();
-        const scaleX = canvas.width / rect.width;
-        const scaleY = canvas.height / rect.height;
-        const x = Math.floor((clientX - rect.left) * scaleX);
-        const y = Math.floor((clientY - rect.top) * scaleY);
-        return { x, y };
-    };
-
-    // Process the image when it's uploaded
-    useEffect(() => {
-        if (!image) {
-            setImageUrl(null);
-            return;
-        }
-
-        const objectUrl = URL.createObjectURL(image);
-        setImageUrl(objectUrl);
-        setIsProcessing(true);
-
-        // Clean up the object URL when component unmounts or image changes
-        return () => {
-            URL.revokeObjectURL(objectUrl);
-        };
-    }, [image]);
-
-    return (
-        <Card>
-            <CardContent className="px-6 space-y-4">
-                {error && (
-                    <Alert variant="destructive">
-                        <AlertTriangle className="h-4 w-4" />
-                        <AlertDescription>{error}</AlertDescription>
-                    </Alert>
-                )}
-                {!image ? (
-                    <UploadFiles
-                        onFilesSelected={(files) =>
-                            handleFileChange(Array.from(files))
-                        }
-                        accept="image/*"
-                        multiple={false}
-                        dragInactiveText={t("dropImageHere")}
-                        selectButtonText={t("chooseImage")}
+              {selectedColor?.pos &&
+                canvasRef.current &&
+                (() => {
+                  const css = canvasToCssPos(
+                    canvasRef.current,
+                    selectedColor.pos,
+                  );
+                  return (
+                    <div
+                      style={{
+                        position: "absolute",
+                        left: css.x,
+                        top: css.y,
+                        transform: "translate(-50%, -50%)",
+                        width: 36,
+                        height: 36,
+                        borderRadius: "50%",
+                        border: "2px solid #fff",
+                        boxShadow: "0 0 0 2px #3b82f6",
+                        pointerEvents: "none",
+                        background: selectedColor.hex,
+                      }}
                     />
-                ) : (
-                    <div className="space-y-4">
-                        <div className="flex flex-wrap gap-2">
-                            <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={clearImage}
-                            >
-                                <Trash2 className="h-4 w-4" />
-                                {t("clearImage")}
-                            </Button>
+                  );
+                })()}
+              {isProcessing && (
+                <div className="absolute inset-0 flex items-center justify-center bg-background/80">
+                  <div className="text-center space-y-2">
+                    <div className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full mx-auto"></div>
+                    <p>{t("processingImage")}</p>
+                  </div>
+                </div>
+              )}
+            </div>
 
-                            {dominantColors.length > 0 && (
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    onClick={downloadPalette}
-                                >
-                                    <Download className="h-4 w-4" />
-                                    {t("downloadPalette")}
-                                </Button>
-                            )}
+            {selectedColor && (
+              <div className="space-y-2">
+                <h3 className="text-lg font-medium">{t("selectedColor")}</h3>
+                <div className="p-4 border rounded-md ">
+                  <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <div
+                      className="w-16 h-16 rounded-md border"
+                      style={{
+                        backgroundColor: selectedColor.hex,
+                      }}
+                    ></div>
+                    <div className="space-y-2 flex-1">
+                      <div className="flex items-center justify-between">
+                        <Badge variant="outline">HEX</Badge>
+                        <div className="flex items-center gap-2">
+                          <code>{selectedColor.hex}</code>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-6 w-6"
+                            onClick={() => copyToClipboard(selectedColor.hex)}
+                          >
+                            <Copy className="h-3 w-3" />
+                          </Button>
                         </div>
-
-                        <div className="relative border rounded-md overflow-hidden cursor-crosshair flex justify-center">
-                            {imageUrl && (
-                                <>
-                                    <Image
-                                        ref={imageRef}
-                                        src={imageUrl}
-                                        alt="Uploaded image"
-                                        className="max-w-full object-contain h-auto"
-                                        style={{ display: "none" }}
-                                        onLoad={handleImageLoad}
-                                        width={800}
-                                        height={600}
-                                    />
-                                    <canvas
-                                        ref={canvasRef}
-                                        onClick={handleCanvasClick}
-                                        className="w-full h-auto cursor-crosshair"
-                                    />
-                                </>
-                            )}
-
-                            {selectedColor?.pos &&
-                                canvasRef.current &&
-                                (() => {
-                                    const css = canvasToCssPos(
-                                        canvasRef.current,
-                                        selectedColor.pos!,
-                                    );
-                                    return (
-                                        <div
-                                            style={{
-                                                position: "absolute",
-                                                left: css.x,
-                                                top: css.y,
-                                                transform:
-                                                    "translate(-50%, -50%)",
-                                                width: 36,
-                                                height: 36,
-                                                borderRadius: "50%",
-                                                border: "2px solid #fff",
-                                                boxShadow: "0 0 0 2px #3b82f6",
-                                                pointerEvents: "none",
-                                                background: selectedColor.hex,
-                                            }}
-                                        />
-                                    );
-                                })()}
-                            {isProcessing && (
-                                <div className="absolute inset-0 flex items-center justify-center bg-background/80">
-                                    <div className="text-center space-y-2">
-                                        <div className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full mx-auto"></div>
-                                        <p>{t("processingImage")}</p>
-                                    </div>
-                                </div>
-                            )}
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <Badge variant="outline">RGB</Badge>
+                        <div className="flex items-center gap-2">
+                          <code>{selectedColor.rgb}</code>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-6 w-6"
+                            onClick={() => copyToClipboard(selectedColor.rgb)}
+                          >
+                            <Copy className="h-3 w-3" />
+                          </Button>
                         </div>
-
-                        {selectedColor && (
-                            <div className="space-y-2">
-                                <h3 className="text-lg font-medium">
-                                    {t("selectedColor")}
-                                </h3>
-                                <div className="p-4 border rounded-md ">
-                                    <div className="flex flex-col sm:flex-row gap-4 items-center">
-                                        <div
-                                            className="w-16 h-16 rounded-md border"
-                                            style={{
-                                                backgroundColor:
-                                                    selectedColor.hex,
-                                            }}
-                                        ></div>
-                                        <div className="space-y-2 flex-1">
-                                            <div className="flex items-center justify-between">
-                                                <Badge variant="outline">
-                                                    HEX
-                                                </Badge>
-                                                <div className="flex items-center gap-2">
-                                                    <code>
-                                                        {selectedColor.hex}
-                                                    </code>
-                                                    <Button
-                                                        variant="ghost"
-                                                        size="icon"
-                                                        className="h-6 w-6"
-                                                        onClick={() =>
-                                                            copyToClipboard(
-                                                                selectedColor.hex,
-                                                            )
-                                                        }
-                                                    >
-                                                        <Copy className="h-3 w-3" />
-                                                    </Button>
-                                                </div>
-                                            </div>
-                                            <div className="flex items-center justify-between">
-                                                <Badge variant="outline">
-                                                    RGB
-                                                </Badge>
-                                                <div className="flex items-center gap-2">
-                                                    <code>
-                                                        {selectedColor.rgb}
-                                                    </code>
-                                                    <Button
-                                                        variant="ghost"
-                                                        size="icon"
-                                                        className="h-6 w-6"
-                                                        onClick={() =>
-                                                            copyToClipboard(
-                                                                selectedColor.rgb,
-                                                            )
-                                                        }
-                                                    >
-                                                        <Copy className="h-3 w-3" />
-                                                    </Button>
-                                                </div>
-                                            </div>
-                                            <div className="flex items-center justify-between">
-                                                <Badge variant="outline">
-                                                    HSL
-                                                </Badge>
-                                                <div className="flex items-center gap-2">
-                                                    <code>
-                                                        {selectedColor.hsl}
-                                                    </code>
-                                                    <Button
-                                                        variant="ghost"
-                                                        size="icon"
-                                                        className="h-6 w-6"
-                                                        onClick={() =>
-                                                            copyToClipboard(
-                                                                selectedColor.hsl,
-                                                            )
-                                                        }
-                                                    >
-                                                        <Copy className="h-3 w-3" />
-                                                    </Button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-
-                        {dominantColors.length > 0 && (
-                            <div className="space-y-2">
-                                <h3 className="text-lg font-medium">
-                                    {t("dominantColors")}
-                                </h3>
-                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-                                    {dominantColors.map((color, index) => (
-                                        <div
-                                            key={index}
-                                            className={`border rounded-md overflow-hidden hover:shadow-md transition-shadow ${selectedColor?.hex === color.color && "ring-2 ring-primary"}`}
-                                            onClick={() => {
-                                                setSelectedColor(
-                                                    domainColorToColorInfo(
-                                                        color,
-                                                    ),
-                                                );
-                                            }}
-                                        >
-                                            <div
-                                                className="h-16 w-full"
-                                                style={{
-                                                    backgroundColor:
-                                                        color.color,
-                                                }}
-                                            ></div>
-                                            <div className="p-2 text-xs">
-                                                <div className="font-mono">
-                                                    {color.color}
-                                                </div>
-                                                <div className="text-muted-foreground">
-                                                    {color.percentage.toFixed(
-                                                        1,
-                                                    )}
-                                                    %
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <Badge variant="outline">HSL</Badge>
+                        <div className="flex items-center gap-2">
+                          <code>{selectedColor.hsl}</code>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-6 w-6"
+                            onClick={() => copyToClipboard(selectedColor.hsl)}
+                          >
+                            <Copy className="h-3 w-3" />
+                          </Button>
+                        </div>
+                      </div>
                     </div>
-                )}
-            </CardContent>
-        </Card>
-    );
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {dominantColors.length > 0 && (
+              <div className="space-y-2">
+                <h3 className="text-lg font-medium">{t("dominantColors")}</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                  {dominantColors.map((color) => (
+                    <button
+                      type="button"
+                      key={color.color}
+                      className={`border rounded-md overflow-hidden hover:shadow-md transition-shadow cursor-pointer text-left w-full ${selectedColor?.hex === color.color && "ring-2 ring-primary"}`}
+                      onClick={() =>
+                        setSelectedColor(domainColorToColorInfo(color))
+                      }
+                    >
+                      <div
+                        className="h-16 w-full"
+                        style={{
+                          backgroundColor: color.color,
+                        }}
+                      ></div>
+                      <div className="p-2 text-xs">
+                        <div className="font-mono">{color.color}</div>
+                        <div className="text-muted-foreground">
+                          {color.percentage.toFixed(1)}%
+                        </div>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+      </CardContent>
+    </Card>
+  );
 };
 
 export default ImageColorPicker;

@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Alle Tools",
-        "description": "Alle verfügbaren Tools aus allen Kategorien anzeigen",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Entwicklung",
-        "description": "Entwickler-Dienstprogramme wie UUID-Generator, Zeitstempel-Konverter, URL-Encoder/Decoder und mehr",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Datenschutz & Sicherheit",
-        "description": "Prüfen, bereinigen und sicher teilen — Datenschutz-Werkzeuge für Dateien, Links und Texte.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Medien & Bilder",
-        "description": "Tools für Bild-, Medien- und Dateiverarbeitung",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Rechner",
-        "description": "Schnellrechner, Einheitenumrechnungen sowie Finanz- und Gesundheitsrechner.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Überwachung & Status",
-        "description": "Website-Erreichbarkeit, Spiegel-Verfügbarkeit, Latenz und DNS-Status prüfen.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Dienstprogramme",
-        "description": "Zufallsauswahl und weitere praktische Mini-Tools.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Alle Tools",
+    "description": "Alle verfügbaren Tools aus allen Kategorien anzeigen",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Entwicklung",
+    "description": "Entwickler-Dienstprogramme wie UUID-Generator, Zeitstempel-Konverter, URL-Encoder/Decoder und mehr",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Datenschutz & Sicherheit",
+    "description": "Prüfen, bereinigen und sicher teilen — Datenschutz-Werkzeuge für Dateien, Links und Texte.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Medien & Bilder",
+    "description": "Tools für Bild-, Medien- und Dateiverarbeitung",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Rechner",
+    "description": "Schnellrechner, Einheitenumrechnungen sowie Finanz- und Gesundheitsrechner.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Überwachung & Status",
+    "description": "Website-Erreichbarkeit, Spiegel-Verfügbarkeit, Latenz und DNS-Status prüfen.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Dienstprogramme",
+    "description": "Zufallsauswahl und weitere praktische Mini-Tools.",
+    "icon": "activity"
+  }
 ]

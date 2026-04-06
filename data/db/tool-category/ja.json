@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "all",
-        "name": "全ツール",
-        "description": "すべてのカテゴリのツールを表示",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "開発",
-        "description": "UUID生成器、タイムスタンプ変換器、URLエンコーダー/デコーダーなどの開発者向けユーティリティ",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "プライバシーと安全",
-        "description": "検査、サニタイズ、安全に共有 — ファイル、リンク、テキストのためのプライバシー ユーティリティ。",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "メディア・画像",
-        "description": "画像やメディア、ファイル処理のためのツール",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "計算ツール",
-        "description": "クイック計算、単位変換、金融・健康の計算ツール。",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "監視とステータス",
-        "description": "ウェブサイトの到達性、ミラーの可用性、レイテンシー、DNS 状態をチェック。",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "ユーティリティ",
-        "description": "ランダムピッカーなどの便利なミニツール。",
-        "icon": "activity"
-    }
+  {
+    "slug": "all",
+    "name": "全ツール",
+    "description": "すべてのカテゴリのツールを表示",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "開発",
+    "description": "UUID生成器、タイムスタンプ変換器、URLエンコーダー/デコーダーなどの開発者向けユーティリティ",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "プライバシーと安全",
+    "description": "検査、サニタイズ、安全に共有 — ファイル、リンク、テキストのためのプライバシー ユーティリティ。",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "メディア・画像",
+    "description": "画像やメディア、ファイル処理のためのツール",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "計算ツール",
+    "description": "クイック計算、単位変換、金融・健康の計算ツール。",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "監視とステータス",
+    "description": "ウェブサイトの到達性、ミラーの可用性、レイテンシー、DNS 状態をチェック。",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "ユーティリティ",
+    "description": "ランダムピッカーなどの便利なミニツール。",
+    "icon": "activity"
+  }
 ]

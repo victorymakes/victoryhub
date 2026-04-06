@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Alle verktøy",
-        "description": "Se alle tilgjengelige verktøy på tvers av alle kategorier",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Utvikling",
-        "description": "Utviklerverktøy som UUID-generator, tidsstempelkonverter, URL-koder/dekoder og mer",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Personvern og Sikkerhet",
-        "description": "Inspiser, rens og del trygt — personvernsverktøy for filer, lenker og tekst.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Media og bilder",
-        "description": "Verktøy for bilde-, medie- og filbehandling",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Kalkulatorer",
-        "description": "Raske beregninger, enhetskonvertering samt finans- og helsekalkulatorer.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Overvåking og status",
-        "description": "Sjekk nettstedets tilgjengelighet, speiltilgjengelighet, latens og DNS-status.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Verktøy",
-        "description": "Tilfeldig velger og andre nyttige mini-verktøy.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Alle verktøy",
+    "description": "Se alle tilgjengelige verktøy på tvers av alle kategorier",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Utvikling",
+    "description": "Utviklerverktøy som UUID-generator, tidsstempelkonverter, URL-koder/dekoder og mer",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Personvern og Sikkerhet",
+    "description": "Inspiser, rens og del trygt — personvernsverktøy for filer, lenker og tekst.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Media og bilder",
+    "description": "Verktøy for bilde-, medie- og filbehandling",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Kalkulatorer",
+    "description": "Raske beregninger, enhetskonvertering samt finans- og helsekalkulatorer.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Overvåking og status",
+    "description": "Sjekk nettstedets tilgjengelighet, speiltilgjengelighet, latens og DNS-status.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Verktøy",
+    "description": "Tilfeldig velger og andre nyttige mini-verktøy.",
+    "icon": "activity"
+  }
 ]

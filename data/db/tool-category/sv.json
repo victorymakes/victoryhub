@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Alla verktyg",
-        "description": "Visa alla tillgängliga verktyg i alla kategorier",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Utveckling",
-        "description": "Utvecklarverktyg som UUID-generator, tidsstämpelkonverterare, URL-kodare/avkodare och mer",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Integritet & Säkerhet",
-        "description": "Inspektera, rensa och dela säkert — sekretessverktyg för filer, länkar och text.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Media & Bild",
-        "description": "Verktyg för bild-, medie- och filbehandling",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Kalkylatorer",
-        "description": "Snabba beräkningar, enhetsomvandlingar samt finans- och hälsokalkylatorer.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Övervakning & status",
-        "description": "Kontrollera webbplatsers nåbarhet, speglars tillgänglighet, latens och DNS-status.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Verktyg",
-        "description": "Slumpväljare och andra praktiska miniverktyg.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Alla verktyg",
+    "description": "Visa alla tillgängliga verktyg i alla kategorier",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Utveckling",
+    "description": "Utvecklarverktyg som UUID-generator, tidsstämpelkonverterare, URL-kodare/avkodare och mer",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Integritet & Säkerhet",
+    "description": "Inspektera, rensa och dela säkert — sekretessverktyg för filer, länkar och text.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Media & Bild",
+    "description": "Verktyg för bild-, medie- och filbehandling",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Kalkylatorer",
+    "description": "Snabba beräkningar, enhetsomvandlingar samt finans- och hälsokalkylatorer.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Övervakning & status",
+    "description": "Kontrollera webbplatsers nåbarhet, speglars tillgänglighet, latens och DNS-status.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Verktyg",
+    "description": "Slumpväljare och andra praktiska miniverktyg.",
+    "icon": "activity"
+  }
 ]

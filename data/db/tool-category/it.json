@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Tutti gli strumenti",
-        "description": "Visualizza tutti gli strumenti disponibili in tutte le categorie",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Sviluppo",
-        "description": "Utilità per sviluppatori come generatore UUID, convertitore di timestamp, codificatore/decodificatore URL e altro",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Privacy e Sicurezza",
-        "description": "Ispeziona, sanifica e condividi in sicurezza — strumenti di privacy per file, link e testo.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Media e Immagini",
-        "description": "Strumenti per l'elaborazione di immagini, media e file",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Calcolatrici",
-        "description": "Calcoli rapidi, conversioni di unità e calcolatrici finanziarie e per la salute.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Monitoraggio e stato",
-        "description": "Controlla raggiungibilità dei siti, disponibilità dei mirror, latenza e stato DNS.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Utilità",
-        "description": "Selettore casuale e altre comode mini-utility.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Tutti gli strumenti",
+    "description": "Visualizza tutti gli strumenti disponibili in tutte le categorie",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Sviluppo",
+    "description": "Utilità per sviluppatori come generatore UUID, convertitore di timestamp, codificatore/decodificatore URL e altro",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Privacy e Sicurezza",
+    "description": "Ispeziona, sanifica e condividi in sicurezza — strumenti di privacy per file, link e testo.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Media e Immagini",
+    "description": "Strumenti per l'elaborazione di immagini, media e file",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Calcolatrici",
+    "description": "Calcoli rapidi, conversioni di unità e calcolatrici finanziarie e per la salute.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Monitoraggio e stato",
+    "description": "Controlla raggiungibilità dei siti, disponibilità dei mirror, latenza e stato DNS.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Utilità",
+    "description": "Selettore casuale e altre comode mini-utility.",
+    "icon": "activity"
+  }
 ]

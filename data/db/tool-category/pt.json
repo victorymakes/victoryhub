@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Todas as ferramentas",
-        "description": "Ver todas as ferramentas disponíveis em todas as categorias",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Desenvolvimento",
-        "description": "Utilitários para desenvolvedores como gerador de UUID, conversor de timestamp, codificador/decodificador de URL e mais",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Privacidade & Segurança",
-        "description": "Inspecione, higienize e compartilhe com segurança — utilitários de privacidade para arquivos, links e texto.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Mídia e Imagem",
-        "description": "Ferramentas para processamento de imagens, mídia e arquivos",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Calculadoras",
-        "description": "Cálculos rápidos, conversões de unidades e calculadoras financeiras e de saúde.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Monitoramento e status",
-        "description": "Verificar acessibilidade de sites, disponibilidade de espelhos, latência e status do DNS.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Utilitários",
-        "description": "Seletor aleatório e outros miniutilitários úteis.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Todas as ferramentas",
+    "description": "Ver todas as ferramentas disponíveis em todas as categorias",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Desenvolvimento",
+    "description": "Utilitários para desenvolvedores como gerador de UUID, conversor de timestamp, codificador/decodificador de URL e mais",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Privacidade & Segurança",
+    "description": "Inspecione, higienize e compartilhe com segurança — utilitários de privacidade para arquivos, links e texto.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Mídia e Imagem",
+    "description": "Ferramentas para processamento de imagens, mídia e arquivos",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Calculadoras",
+    "description": "Cálculos rápidos, conversões de unidades e calculadoras financeiras e de saúde.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Monitoramento e status",
+    "description": "Verificar acessibilidade de sites, disponibilidade de espelhos, latência e status do DNS.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Utilitários",
+    "description": "Seletor aleatório e outros miniutilitários úteis.",
+    "icon": "activity"
+  }
 ]

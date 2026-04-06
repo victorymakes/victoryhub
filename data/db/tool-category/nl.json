@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Alle tools",
-        "description": "Bekijk alle beschikbare tools in alle categorieën",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Ontwikkeling",
-        "description": "Ontwikkelaarstools zoals UUID-generator, tijdstempelconverter, URL-encoder/decoder en meer",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Privacy & Veiligheid",
-        "description": "Inspecteer, schoonmaken en veilig delen — privacy-hulpmiddelen voor bestanden, links en tekst.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Media & Afbeeldingen",
-        "description": "Tools voor het verwerken van afbeeldingen, media en bestanden",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Rekenmachines",
-        "description": "Snelle berekeningen, eenheidsconversies en rekenmachines voor financiën en gezondheid.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Monitoring & status",
-        "description": "Controleer website-bereikbaarheid, mirror-beschikbaarheid, latentie en DNS-status.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Hulpprogramma's",
-        "description": "Willekeurige kiezer en andere handige mini-tools.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Alle tools",
+    "description": "Bekijk alle beschikbare tools in alle categorieën",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Ontwikkeling",
+    "description": "Ontwikkelaarstools zoals UUID-generator, tijdstempelconverter, URL-encoder/decoder en meer",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Privacy & Veiligheid",
+    "description": "Inspecteer, schoonmaken en veilig delen — privacy-hulpmiddelen voor bestanden, links en tekst.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Media & Afbeeldingen",
+    "description": "Tools voor het verwerken van afbeeldingen, media en bestanden",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Rekenmachines",
+    "description": "Snelle berekeningen, eenheidsconversies en rekenmachines voor financiën en gezondheid.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Monitoring & status",
+    "description": "Controleer website-bereikbaarheid, mirror-beschikbaarheid, latentie en DNS-status.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Hulpprogramma's",
+    "description": "Willekeurige kiezer en andere handige mini-tools.",
+    "icon": "activity"
+  }
 ]

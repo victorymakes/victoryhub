@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "all",
-        "name": "모든 도구",
-        "description": "모든 카테고리의 도구 보기",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "개발",
-        "description": "UUID 생성기, 타임스탬프 변환기, URL 인코더/디코더 등 개발자 유틸리티",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "개인정보 보호 및 안전",
-        "description": "검사하고, 정화하고, 안전하게 공유하세요 — 파일, 링크, 텍스트를 위한 개인정보 보호 유틸리티.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "미디어/이미지",
-        "description": "이미지, 미디어, 파일 처리를 위한 도구",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "계산기",
-        "description": "빠른 계산, 단위 변환, 금융·건강 계산기.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "모니터링 및 상태",
-        "description": "웹사이트 도달성, 미러 가용성, 지연 시간, DNS 상태 확인.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "유틸리티",
-        "description": "랜덤 선택기 등 유용한 미니 도구.",
-        "icon": "activity"
-    }
+  {
+    "slug": "all",
+    "name": "모든 도구",
+    "description": "모든 카테고리의 도구 보기",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "개발",
+    "description": "UUID 생성기, 타임스탬프 변환기, URL 인코더/디코더 등 개발자 유틸리티",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "개인정보 보호 및 안전",
+    "description": "검사하고, 정화하고, 안전하게 공유하세요 — 파일, 링크, 텍스트를 위한 개인정보 보호 유틸리티.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "미디어/이미지",
+    "description": "이미지, 미디어, 파일 처리를 위한 도구",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "계산기",
+    "description": "빠른 계산, 단위 변환, 금융·건강 계산기.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "모니터링 및 상태",
+    "description": "웹사이트 도달성, 미러 가용성, 지연 시간, DNS 상태 확인.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "유틸리티",
+    "description": "랜덤 선택기 등 유용한 미니 도구.",
+    "icon": "activity"
+  }
 ]

@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Tous les outils",
-        "description": "Voir tous les outils disponibles dans toutes les catégories",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Développement",
-        "description": "Utilitaires pour développeurs comme générateur d'UUID, convertisseur d'horodatage, encodeur/décodeur d'URL et plus",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Confidentialité & Sécurité",
-        "description": "Inspecter, assainir et partager en toute sécurité — outils de confidentialité pour fichiers, liens et textes.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Médias & Images",
-        "description": "Outils pour le traitement d'images, de médias et de fichiers",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Calculatrices",
-        "description": "Calcul rapide, conversions d’unités, calculateurs financiers et de santé.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Surveillance & Statut",
-        "description": "Vérifier l’accessibilité des sites Web, la disponibilité des miroirs, la latence et l’état DNS.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Utilitaires",
-        "description": "Sélecteur aléatoire et autres mini-outils pratiques.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Tous les outils",
+    "description": "Voir tous les outils disponibles dans toutes les catégories",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Développement",
+    "description": "Utilitaires pour développeurs comme générateur d'UUID, convertisseur d'horodatage, encodeur/décodeur d'URL et plus",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Confidentialité & Sécurité",
+    "description": "Inspecter, assainir et partager en toute sécurité — outils de confidentialité pour fichiers, liens et textes.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Médias & Images",
+    "description": "Outils pour le traitement d'images, de médias et de fichiers",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Calculatrices",
+    "description": "Calcul rapide, conversions d’unités, calculateurs financiers et de santé.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Surveillance & Statut",
+    "description": "Vérifier l’accessibilité des sites Web, la disponibilité des miroirs, la latence et l’état DNS.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Utilitaires",
+    "description": "Sélecteur aléatoire et autres mini-outils pratiques.",
+    "icon": "activity"
+  }
 ]

@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Kaikki työkalut",
-        "description": "Näytä kaikki saatavilla olevat työkalut kaikissa kategorioissa",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Kehitys",
-        "description": "Kehittäjätyökalut kuten UUID-generaattori, aikaleiman muunnin, URL-kooderi/dekooderi ja muut",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Tietosuoja ja Turvallisuus",
-        "description": "Tarkista, puhdista ja jaa turvallisesti — tietosuojatyökalut tiedostoille, linkeille ja tekstille.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Media & Kuvat",
-        "description": "Työkalut kuvien, median ja tiedostojen käsittelyyn",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Laskurit",
-        "description": "Nopeat laskut, yksikkömuunnokset sekä talous- ja terveyslaskurit.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Valvonta ja tila",
-        "description": "Tarkista verkkosivuston saavutettavuus, peilien saatavuus, latenssi ja DNS-tila.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Apuohjelmat",
-        "description": "Satunnaisvalitsin ja muut kätevät minityökalut.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Kaikki työkalut",
+    "description": "Näytä kaikki saatavilla olevat työkalut kaikissa kategorioissa",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Kehitys",
+    "description": "Kehittäjätyökalut kuten UUID-generaattori, aikaleiman muunnin, URL-kooderi/dekooderi ja muut",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Tietosuoja ja Turvallisuus",
+    "description": "Tarkista, puhdista ja jaa turvallisesti — tietosuojatyökalut tiedostoille, linkeille ja tekstille.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Media & Kuvat",
+    "description": "Työkalut kuvien, median ja tiedostojen käsittelyyn",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Laskurit",
+    "description": "Nopeat laskut, yksikkömuunnokset sekä talous- ja terveyslaskurit.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Valvonta ja tila",
+    "description": "Tarkista verkkosivuston saavutettavuus, peilien saatavuus, latenssi ja DNS-tila.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Apuohjelmat",
+    "description": "Satunnaisvalitsin ja muut kätevät minityökalut.",
+    "icon": "activity"
+  }
 ]

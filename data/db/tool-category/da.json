@@ -1,44 +1,44 @@
 [
-    {
-        "slug": "",
-        "name": "Alle værktøjer",
-        "description": "Se alle tilgængelige værktøjer på tværs af alle kategorier",
-        "icon": "grid"
-    },
-    {
-        "slug": "development",
-        "name": "Udvikling",
-        "description": "Udviklerværktøjer som UUID-generator, tidsstempelkonverter, URL-encoder/decoder og mere",
-        "icon": "code"
-    },
-    {
-        "slug": "privacy",
-        "name": "Privatliv & Sikkerhed",
-        "description": "Inspicér, rens og del sikkert — privatlivsværktøjer til filer, links og tekst.",
-        "icon": "shield"
-    },
-    {
-        "slug": "media",
-        "name": "Medier & Billeder",
-        "description": "Værktøjer til behandling af billeder, medier og filer",
-        "icon": "image"
-    },
-    {
-        "slug": "calculator",
-        "name": "Beregnere",
-        "description": "Hurtige beregninger, enhedsomregning samt finans- og sundhedsberegnere.",
-        "icon": "calculator"
-    },
-    {
-        "slug": "monitoring",
-        "name": "Overvågning og status",
-        "description": "Tjek websteders tilgængelighed, spejl-tilgængelighed, latens og DNS-status.",
-        "icon": "server"
-    },
-    {
-        "slug": "utilities",
-        "name": "Værktøjer",
-        "description": "Tilfældig vælger og andre nyttige miniværktøjer.",
-        "icon": "activity"
-    }
+  {
+    "slug": "",
+    "name": "Alle værktøjer",
+    "description": "Se alle tilgængelige værktøjer på tværs af alle kategorier",
+    "icon": "grid"
+  },
+  {
+    "slug": "development",
+    "name": "Udvikling",
+    "description": "Udviklerværktøjer som UUID-generator, tidsstempelkonverter, URL-encoder/decoder og mere",
+    "icon": "code"
+  },
+  {
+    "slug": "privacy",
+    "name": "Privatliv & Sikkerhed",
+    "description": "Inspicér, rens og del sikkert — privatlivsværktøjer til filer, links og tekst.",
+    "icon": "shield"
+  },
+  {
+    "slug": "media",
+    "name": "Medier & Billeder",
+    "description": "Værktøjer til behandling af billeder, medier og filer",
+    "icon": "image"
+  },
+  {
+    "slug": "calculator",
+    "name": "Beregnere",
+    "description": "Hurtige beregninger, enhedsomregning samt finans- og sundhedsberegnere.",
+    "icon": "calculator"
+  },
+  {
+    "slug": "monitoring",
+    "name": "Overvågning og status",
+    "description": "Tjek websteders tilgængelighed, spejl-tilgængelighed, latens og DNS-status.",
+    "icon": "server"
+  },
+  {
+    "slug": "utilities",
+    "name": "Værktøjer",
+    "description": "Tilfældig vælger og andre nyttige miniværktøjer.",
+    "icon": "activity"
+  }
 ]
